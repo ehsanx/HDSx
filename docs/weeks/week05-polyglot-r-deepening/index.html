@@ -572,6 +572,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../weeks/week06-visualization/worked-example-ggplot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Worked Example: Descriptive BMI Visualization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../weeks/week06-visualization/activity-ai-visual-audit.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Activity: AI Visual Audit</span></a>
   </div>
@@ -591,6 +597,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week07-eda-ai-audit/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Exploring Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week07-eda-ai-audit/worked-example-table1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Worked Example: EDA and Table 1</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -739,6 +751,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../assignments/assignment05-visualization/README.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Assignment 5: Visualization Audit and Revision</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../assignments/assignment06-eda-ai-audit/README.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Assignment 6: EDA, Table 1, and AI Audit</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../milestones/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Project Milestones</span></a>
   </div>
@@ -857,8 +881,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../assistant-playbook/nhanes-equity-case-study.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">NHANES Equity Case Study Teaching Notes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../syllabus/topic-coverage-audit.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Syllabus-to-Content Coverage Audit</span></span></a>
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Syllabus-to-Content Coverage Audit</span></span></a>
   </div>
 </li>
       </ul>
@@ -874,6 +904,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#case-study-data-analysis" id="toc-case-study-data-analysis" class="nav-link" data-scroll-target="#case-study-data-analysis">Case Study Data Analysis</a></li>
   <li><a href="#python1.qmd-concepts-python-vs-rwhen-and-why" id="toc-python1.qmd-concepts-python-vs-rwhen-and-why" class="nav-link" data-scroll-target="#python1.qmd-concepts-python-vs-rwhen-and-why"><code>python1.qmd</code> Concepts: Python vs R—When and Why?</a>
   <ul class="collapse">
   <li><a href="#two-languages-one-codespace" id="toc-two-languages-one-codespace" class="nav-link" data-scroll-target="#two-languages-one-codespace">Two Languages, One Codespace</a></li>
@@ -966,6 +997,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Use <code>reticulate</code> to call R from Python (or vice versa) for a simple interoperability demo.</li>
 <li>Avoid “Frankenstein code” via the <strong>One Step, One Cell</strong> AI workflow.</li>
 <li>Apply Week 4 Git skills to track Python translations with meaningful commits.</li>
+</ul>
+</section>
+<section id="case-study-data-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="case-study-data-analysis">Case Study Data Analysis</h2>
+<p>The <strong>NHANES Health Equity data spine</strong> now supports code-reading, EDA, visualization, and reproducibility checks. Use the cached CSV/RDS for routine class work; any CDC retrieval pipeline is optional or instructor-directed.</p>
+<ul>
+<li>Cached RDS: <code>examples/nhanes-equity/data/nhanes_equity_v6.rds</code></li>
+<li>CSV snapshot: <code>examples/nhanes-equity/data/nhanes_equity_v6.csv</code></li>
+<li>Case-study README: <code>examples/nhanes-equity/README.md</code></li>
+</ul>
+<p>The default classroom path is to use the cached data so the analysis work is reproducible without internet access.</p>
+<p>Mini-tasks for Week 5:</p>
+<ul>
+<li>Load <code>examples/nhanes-equity/data/nhanes_equity_v6.csv</code> in R and Python.</li>
+<li>Compare row counts and column names across the two languages.</li>
+<li>Choose one summary, such as mean BMI by sex, and check whether R and Python agree.</li>
+<li>Treat any mismatch as an audit prompt: check data types, missing values, and grouping logic before changing code.</li>
 </ul>
 <hr>
 </section>

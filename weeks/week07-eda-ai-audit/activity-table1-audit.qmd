@@ -4,19 +4,35 @@
 
 Students create a descriptive summary and audit AI-generated code or interpretation for planted errors.
 
-## TODO Before Release
+## Inputs
 
-::: {.callout-warning}
-## Content TODO
+- Student worked example: `weeks/week07-eda-ai-audit/worked-example-table1.qmd`
+- Dataset: `examples/nhanes-equity/data/nhanes_equity_v6.csv`
+- Planted-error starter: distributed by the instructor or TA during the activity
 
-- Add the starter data path.
-- Add the expected Table 1 variables.
-- Add planted errors in code, summary text, and at least one visualization.
-- Add an answer key for instructors or TAs outside the student-facing page.
-:::
+## Activity Steps
 
-## Student Output
+1. Review the worked example and identify the cohort definition, missingness check, and Table 1 labels.
+2. Open the planted-error starter provided by the instructor.
+3. Run or read the starter code and annotate at least five issues.
+4. Categorize each issue as **correctness**, **reproducibility**, or **interpretation**.
+5. Produce a corrected EDA note and Table 1.
 
-- A rendered Quarto EDA note.
-- A Table 1 or equivalent descriptive summary.
-- A written audit note listing detected errors and fixes.
+## Required Outputs
+
+- `eda-note.qmd`: a rerunnable Quarto note with cohort definition, missingness table, and Table 1.
+- `eda-note.html`: rendered output from the Quarto note.
+- `table1.csv`: exported Table 1 or equivalent descriptive summary.
+- `audit-note.md`: at least five detected issues with category, why it matters, and corrected approach.
+- `ai-use-note.md`: if you used AI, explain what it helped with and how you verified the result.
+
+## Minimum Table 1 Requirements
+
+- Cohort: age 20-80, unless your instructor approves a different cohort.
+- Stratifier: `IncomeGroup`, unless your instructor assigns a different grouping variable.
+- Variables: N, BMI mean (SD), and age mean (SD).
+- Methods note: state that the table is descriptive, unweighted, and non-causal.
+
+## Completion Check
+
+Your submission is complete when another student can rerun your `eda-note.qmd`, see exactly who is included, understand how missingness was handled, and identify why the planted-error starter was misleading.

@@ -1,0 +1,7 @@
+The **NHANES Health Equity data spine** now supports code-reading, EDA, visualization, and reproducibility checks. Use the cached CSV/RDS for routine class work; any CDC retrieval pipeline is optional or instructor-directed.
+
+- Cached RDS: `examples/nhanes-equity/data/nhanes_equity_v6.rds`
+- CSV snapshot: `examples/nhanes-equity/data/nhanes_equity_v6.csv`
+- Case-study README: `examples/nhanes-equity/README.md`
+
+The default classroom path is to use the cached data so the analysis work is reproducible without internet access.

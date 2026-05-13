@@ -16,6 +16,17 @@
 - Stage, commit, and sync changes using the VS Code Source Control panel.
 - Stop your Codespace to conserve your free monthly hours.
 
+## Case Study Data Spine
+
+{{< include ../../examples/nhanes-equity/snippets/case-study-data-only.qmd >}}
+
+Mini-tasks for Week 2:
+
+- Locate the app, data, script, and snippet folders in the Explorer.
+- Explain why the app uses relative paths instead of machine-specific paths.
+- Confirm that the weekly page includes the shared snippet rather than duplicating instructions.
+- Render the book from the repository root and confirm this page updates in the rendered output.
+
 ---
 
 ## `workflows1.qmd` The Analogy: Public Computer and Cloud Drive

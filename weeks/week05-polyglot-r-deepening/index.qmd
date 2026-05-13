@@ -15,6 +15,17 @@
 -   Avoid "Frankenstein code" via the **One Step, One Cell** AI workflow.
 -   Apply Week 4 Git skills to track Python translations with meaningful commits.
 
+## Case Study Data Analysis
+
+{{< include ../../examples/nhanes-equity/snippets/case-study-data-analysis.qmd >}}
+
+Mini-tasks for Week 5:
+
+- Load `examples/nhanes-equity/data/nhanes_equity_v6.csv` in R and Python.
+- Compare row counts and column names across the two languages.
+- Choose one summary, such as mean BMI by sex, and check whether R and Python agree.
+- Treat any mismatch as an audit prompt: check data types, missing values, and grouping logic before changing code.
+
 ------------------------------------------------------------------------
 
 ## `python1.qmd` Concepts: Python vs R---When and Why?

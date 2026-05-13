@@ -14,6 +14,17 @@ This chapter sets the stage by defining the core philosophy of the course: data 
 
 > **Note:** Week 1 is **light on code** and **heavy on awareness**. There is **no graded assignment submission** this week. Instead, you will complete a "Data Intake Card" to prepare for your future portfolio.
 
+## Case Study Data Spine
+
+{{< include ../../examples/nhanes-equity/snippets/case-study-data-only.qmd >}}
+
+Mini-tasks for Week 1:
+
+- Use the case-study dataset as a practice entry for the Data Intake Card.
+- Identify the public source, local cached file, and the README that describes the case study.
+- Write one KT framing sentence: who might use this dashboard, and what decision could it support?
+- Name one ethics or stewardship question to verify before publishing a dashboard based on public health survey data.
+
 ------------------------------------------------------------------------
 
 ## The Open Data Landscape

@@ -229,7 +229,7 @@
 
 \title{Health Data Science: AI and Knowledge Translation}
 \author{M. Ehsan. Karim}
-\date{2026-05-12}
+\date{2026-05-13}
 \begin{document}
 \maketitle
 
@@ -312,7 +312,7 @@ We are on a mission to:
 Embark on a journey through our structured modules, designed to take you
 from data literacy to advanced AI workflows.
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-note-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-note-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, toptitle=1mm, colframe=quarto-callout-note-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-note-color!10!white]
 
 The tutorials are designed with a consistent structure to provide a
 cohesive learning experience. Here is what you can expect in each
@@ -820,7 +820,7 @@ expectations.
 
 \markright{TODO Before Release}
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-warning-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-warning-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Content TODO}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Content TODO}, toptitle=1mm, colframe=quarto-callout-warning-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-warning-color!10!white]
 
 \begin{itemize}
 \tightlist
@@ -909,6 +909,49 @@ awareness}. There is \textbf{no graded assignment submission} this week.
 Instead, you will complete a ``Data Intake Card'' to prepare for your
 future portfolio.
 \end{quote}
+
+\section*{Case Study Data Spine}\label{case-study-data-spine}
+\addcontentsline{toc}{section}{Case Study Data Spine}
+
+\markright{Case Study Data Spine}
+
+The \textbf{NHANES Health Equity data spine} is the recurring dataset
+thread for this course. In the early weeks, use it only as a documented
+public-health data artifact: provenance, ethics, file organization, and
+reproducible paths.
+
+\begin{itemize}
+\tightlist
+\item
+  Cached RDS:
+  \texttt{examples/nhanes-equity/data/nhanes\_equity\_v6.rds}
+\item
+  CSV snapshot:
+  \texttt{examples/nhanes-equity/data/nhanes\_equity\_v6.csv}
+\item
+  Case-study README: \texttt{examples/nhanes-equity/README.md}
+\end{itemize}
+
+The cached files are provided so early work can happen without internet
+access.
+
+Mini-tasks for Week 1:
+
+\begin{itemize}
+\tightlist
+\item
+  Use the case-study dataset as a practice entry for the Data Intake
+  Card.
+\item
+  Identify the public source, local cached file, and the README that
+  describes the case study.
+\item
+  Write one KT framing sentence: who might use this dashboard, and what
+  decision could it support?
+\item
+  Name one ethics or stewardship question to verify before publishing a
+  dashboard based on public health survey data.
+\end{itemize}
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -1254,6 +1297,78 @@ To prepare for next week:
 Students practice evaluating whether a health dataset is usable,
 ethical, documented, and appropriate for reproducible analysis.
 
+\section*{Approved Starter Portals (choose
+one)}\label{approved-starter-portals-choose-one}
+\addcontentsline{toc}{section}{Approved Starter Portals (choose one)}
+
+\markright{Approved Starter Portals (choose one)}
+
+Choose \textbf{one} dataset/indicator page from one of the portals below
+(pick something you care about). You are \textbf{not} required to use
+the same dataset as other students.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\tightlist
+\item
+  \textbf{Survey-style microdata (person-level):} NHANES or NHIS (see
+  Reference: Data Sources)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Good if you want person-level variables (age, sex, BMI, smoking,
+    etc.)
+  \item
+    Expect: codebooks, sampling notes, and data dictionaries
+  \end{itemize}
+\item
+  \textbf{Indicators (aggregated country/province-level): WHO Global
+  Health Observatory (GHO)}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Good if you want country-level trends (life expectancy, mortality,
+    vaccination coverage, etc.)
+  \item
+    Expect: ``indicator metadata'' (definition + method), downloadable
+    CSV, \textbf{not} person-level records
+  \end{itemize}
+
+  \textbf{How to use GHO quickly (what to click):}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Pick \textbf{one indicator} (e.g., ``Life expectancy at birth'',
+    ``Maternal mortality ratio'', ``Diabetes prevalence'')
+  \item
+    Pick \textbf{one geography} (Canada or another country/region)
+  \item
+    Find: indicator definition / metadata, time coverage, and the
+    download option
+  \end{itemize}
+\item
+  \textbf{Canadian open data portal:} BC Data Catalogue or Open
+  Government Portal (Canada)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Good if you want Canadian administrative/open datasets
+  \item
+    Expect: variable definitions vary widely (sometimes excellent,
+    sometimes minimal)
+  \end{itemize}
+\end{enumerate}
+
+\begin{quote}
+Tip: If you're unsure whether your selection is microdata or aggregated
+indicators, write ``unknown'' in \texttt{data\_level} and explain what
+you observed on the download page.
+\end{quote}
+
 \section*{Student Template}\label{student-template}
 \addcontentsline{toc}{section}{Student Template}
 
@@ -1264,10 +1379,11 @@ ethical, documented, and appropriate for reproducible analysis.
 \FunctionTok{dataset\_name}\KeywordTok{:}\AttributeTok{ }\StringTok{""}
 \FunctionTok{publisher\_org}\KeywordTok{:}\AttributeTok{ }\StringTok{""}
 \FunctionTok{permalink\_url}\KeywordTok{:}\AttributeTok{ }\StringTok{""}
+\FunctionTok{date\_accessed}\KeywordTok{:}\AttributeTok{ }\StringTok{"YYYY{-}MM{-}DD"}
 \FunctionTok{license\_terms}\KeywordTok{:}\AttributeTok{ }\StringTok{""}
 \FunctionTok{geography}\KeywordTok{:}\AttributeTok{ }\StringTok{""}
 \FunctionTok{time\_coverage}\KeywordTok{:}\AttributeTok{ }\StringTok{""}
-\FunctionTok{data\_level}\KeywordTok{:}\AttributeTok{ }\StringTok{""}
+\FunctionTok{data\_level}\KeywordTok{:}\AttributeTok{ }\StringTok{""}\CommentTok{   \# microdata / aggregated / unknown}
 \FunctionTok{variables\_of\_interest}\KeywordTok{:}
 \AttributeTok{  }\KeywordTok{{-}}\AttributeTok{ }\FunctionTok{name}\KeywordTok{:}\AttributeTok{ }\StringTok{""}
 \AttributeTok{    }\FunctionTok{definition}\KeywordTok{:}\AttributeTok{ }\StringTok{""}
@@ -1278,24 +1394,120 @@ ethical, documented, and appropriate for reproducible analysis.
 \end{Highlighting}
 \end{Shaded}
 
-\section*{TODO Before Release}\label{todo-before-release-1}
-\addcontentsline{toc}{section}{TODO Before Release}
+\section*{Example (Completed Data Intake Card ---
+sample)}\label{example-completed-data-intake-card-sample}
+\addcontentsline{toc}{section}{Example (Completed Data Intake Card ---
+sample)}
 
-\markright{TODO Before Release}
+\markright{Example (Completed Data Intake Card --- sample)}
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-warning-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-warning-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Content TODO}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\subsection*{WHO}\label{who}
+\addcontentsline{toc}{subsection}{WHO}
+
+This example uses \textbf{one WHO indicator} to demonstrate what
+``Complete'' looks like. You may choose a different portal and topic.
+
+\begin{Shaded}
+\begin{Highlighting}[numbers=left,,]
+\FunctionTok{dataset\_name}\KeywordTok{:}\AttributeTok{ }\StringTok{"Life expectancy at birth (years)"}
+\FunctionTok{publisher\_org}\KeywordTok{:}\AttributeTok{ }\StringTok{"World Health Organization (WHO)"}
+\FunctionTok{permalink\_url}\KeywordTok{:}\AttributeTok{ }\StringTok{"https://www.who.int/data/gho"}
+\FunctionTok{license\_terms}\KeywordTok{:}\AttributeTok{ }\StringTok{"See WHO terms on the portal; record as provided"}
+\FunctionTok{geography}\KeywordTok{:}\AttributeTok{ }\StringTok{"Canada (and global comparison)"}
+\FunctionTok{time\_coverage}\KeywordTok{:}\AttributeTok{ }\StringTok{"2000–2023 (varies by country)"}
+\FunctionTok{data\_level}\KeywordTok{:}\AttributeTok{ }\StringTok{"Aggregated indicators (country{-}level)"}
+\FunctionTok{variables\_of\_interest}\KeywordTok{:}
+\AttributeTok{  }\KeywordTok{{-}}\AttributeTok{ }\FunctionTok{name}\KeywordTok{:}\AttributeTok{ }\StringTok{"Life expectancy at birth (years)"}
+\AttributeTok{    }\FunctionTok{definition}\KeywordTok{:}\AttributeTok{ }\StringTok{"Expected years of life at birth (method described in WHO metadata)"}
+\AttributeTok{    }\FunctionTok{known\_limitations}\KeywordTok{:}\AttributeTok{ }\StringTok{"Model{-}based estimates; depends on reporting quality; not person{-}level"}
+\FunctionTok{stewardship\_notes}\KeywordTok{:}\AttributeTok{ }\StringTok{"No individual{-}level data; still avoid overclaiming causality; cite metadata."}
+\FunctionTok{ai\_use\_note}\KeywordTok{:}\AttributeTok{ }\StringTok{"Used AI to draft a plain{-}language summary of the indicator; verified against WHO metadata page."}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection*{NHANES}\label{nhanes}
+\addcontentsline{toc}{subsection}{NHANES}
+
+\begin{Shaded}
+\begin{Highlighting}[numbers=left,,]
+\FunctionTok{dataset\_name}\KeywordTok{:}\AttributeTok{ }\StringTok{"NHANES 2017–2018 Demographics (example)"}
+\FunctionTok{publisher\_org}\KeywordTok{:}\AttributeTok{ }\StringTok{"CDC / NCHS"}
+\FunctionTok{permalink\_url}\KeywordTok{:}\AttributeTok{ }\StringTok{"https://wwwn.cdc.gov/nchs/nhanes/"}
+\FunctionTok{date\_accessed}\KeywordTok{:}\AttributeTok{ }\StringTok{"YYYY{-}MM{-}DD"}
+\FunctionTok{license\_terms}\KeywordTok{:}\AttributeTok{ }\StringTok{"Public{-}use (see NHANES guidance on site)"}
+\FunctionTok{geography}\KeywordTok{:}\AttributeTok{ }\StringTok{"United States"}
+\FunctionTok{time\_coverage}\KeywordTok{:}\AttributeTok{ }\StringTok{"2017–2018"}
+\FunctionTok{data\_level}\KeywordTok{:}\AttributeTok{ }\StringTok{"Microdata (person{-}level)"}
+\FunctionTok{variables\_of\_interest}\KeywordTok{:}
+\AttributeTok{  }\KeywordTok{{-}}\AttributeTok{ }\FunctionTok{name}\KeywordTok{:}\AttributeTok{ }\StringTok{"RIAGENDR"}
+\AttributeTok{    }\FunctionTok{definition}\KeywordTok{:}\AttributeTok{ }\StringTok{"Gender (coded categories per documentation)"}
+\FunctionTok{known\_limitations}\KeywordTok{:}
+\AttributeTok{  }\KeywordTok{{-}}\AttributeTok{ }\StringTok{"Complex survey design; weights needed for population inference"}
+\FunctionTok{stewardship\_notes}\KeywordTok{:}\AttributeTok{ }\StringTok{"De{-}identified public{-}use microdata; still avoid reporting small cell counts."}
+\FunctionTok{ai\_use\_note}\KeywordTok{:}\AttributeTok{ }\StringTok{"Used AI to summarize the codebook section for RIAGENDR; verified against official documentation."}
+\end{Highlighting}
+\end{Shaded}
+
+\section*{Completion Checklist (Complete /
+Incomplete)}\label{completion-checklist-complete-incomplete}
+\addcontentsline{toc}{section}{Completion Checklist (Complete /
+Incomplete)}
+
+\markright{Completion Checklist (Complete / Incomplete)}
+
+To be marked \textbf{Complete}, your card must include:
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  A stable link (or link + date accessed)
+\item[$\square$]
+  Publisher/organization named
+\item[$\square$]
+  License/terms noted (even if ``see portal terms'')
+\item[$\square$]
+  Data level identified (microdata vs aggregated indicators)
+\item[$\square$]
+  At least \textbf{one} variable with a definition grounded in
+  documentation (not AI guesswork)
+\item[$\square$]
+  One limitation or risk of misuse (privacy, over-interpretation,
+  stewardship)
+\item[$\square$]
+  AI-use note (what you used AI for + how you verified)
+\end{itemize}
+
+\begin{quote}
+If you're uncertain about something, write \textbf{unknown} and explain
+what you looked for. \#\# TODO Before Release
+\end{quote}
+
+\section*{Submission (Week 1)}\label{submission-week-1}
+\addcontentsline{toc}{section}{Submission (Week 1)}
+
+\markright{Submission (Week 1)}
+
+This is \textbf{not graded}, but you must complete it because you'll
+reuse it later.
+
+Submit by: - \textbf{Option A (recommended):} paste your completed card
+into Canvas (Week 1 module) - \textbf{Option B:} commit a
+\texttt{data-intake-card.md} file to your repo (we'll do this starting
+Week 2)
+
+Instructor will confirm the submission route on Canvas.
+
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Content TODO}, toptitle=1mm, colframe=quarto-callout-warning-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-warning-color!10!white]
 
 \begin{itemize}
 \tightlist
 \item
   Add 2-3 approved starter portals from Canvas.
 \item
-  Add one completed sample Data Intake Card.
-\item
   Add a short rubric for provenance, licensing, variable clarity, and
   stewardship.
 \item
-  Decide whether students submit this on Canvas, GitHub, or both.
+  Explain that students will submit this on Canvas.
 \end{itemize}
 
 \end{tcolorbox}
@@ -1368,6 +1580,48 @@ Codespaces.
   panel.
 \item
   Stop your Codespace to conserve your free monthly hours.
+\end{itemize}
+
+\section*{Case Study Data Spine}\label{case-study-data-spine-1}
+\addcontentsline{toc}{section}{Case Study Data Spine}
+
+\markright{Case Study Data Spine}
+
+The \textbf{NHANES Health Equity data spine} is the recurring dataset
+thread for this course. In the early weeks, use it only as a documented
+public-health data artifact: provenance, ethics, file organization, and
+reproducible paths.
+
+\begin{itemize}
+\tightlist
+\item
+  Cached RDS:
+  \texttt{examples/nhanes-equity/data/nhanes\_equity\_v6.rds}
+\item
+  CSV snapshot:
+  \texttt{examples/nhanes-equity/data/nhanes\_equity\_v6.csv}
+\item
+  Case-study README: \texttt{examples/nhanes-equity/README.md}
+\end{itemize}
+
+The cached files are provided so early work can happen without internet
+access.
+
+Mini-tasks for Week 2:
+
+\begin{itemize}
+\tightlist
+\item
+  Locate the app, data, script, and snippet folders in the Explorer.
+\item
+  Explain why the app uses relative paths instead of machine-specific
+  paths.
+\item
+  Confirm that the weekly page includes the shared snippet rather than
+  duplicating instructions.
+\item
+  Render the book from the repository root and confirm this page updates
+  in the rendered output.
 \end{itemize}
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
@@ -1471,7 +1725,7 @@ If you do not already have one:
   portfolio later in the course.
 \end{enumerate}
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, toptitle=1mm, colframe=quarto-callout-tip-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-tip-color!10!white]
 
 \textbf{Portfolio thinking:} Your GitHub profile will become part of
 your professional presence. Pick a username you would be comfortable
@@ -1540,7 +1794,7 @@ Codespace}
 The first launch takes 2--3 minutes while the environment builds.
 Subsequent launches are faster.
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-note-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-note-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, toptitle=1mm, colframe=quarto-callout-note-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-note-color!10!white]
 
 \textbf{Reopening an existing Codespace:} After you stop or close your
 Codespace, do \textbf{not} create a new one each time. Go to
@@ -1587,7 +1841,7 @@ The \textbf{engine room} where R and Python actually run. You will not
 type commands here often --- most of your work happens in the Editor ---
 but this is where output and error messages appear.
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, toptitle=1mm, colframe=quarto-callout-tip-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-tip-color!10!white]
 
 \textbf{Lost a panel?} Use the top menu: \textbf{View → Explorer} or
 \textbf{View → Terminal} to bring them back. You can also press
@@ -1818,7 +2072,7 @@ Click the \textbf{Render} button (blue arrow icon at the top of the
 editor). A preview window appears showing your formatted report with
 code output embedded.
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, toptitle=1mm, colframe=quarto-callout-tip-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-tip-color!10!white]
 
 \textbf{What just happened:} Quarto ran every code chunk, captured the
 results, combined them with your Markdown text, and produced an HTML
@@ -1856,7 +2110,7 @@ Hover over a changed file name. Click the \textbf{+} icon that appears.
 This \textbf{stages} the file --- it tells Git ``I want to include this
 change in my next snapshot.''
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-note-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-note-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, toptitle=1mm, colframe=quarto-callout-note-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-note-color!10!white]
 
 \textbf{Staging vs committing:} Staging selects \emph{which} changes to
 include. Committing takes the snapshot. Think of staging as putting
@@ -1895,7 +2149,7 @@ Drive.
 \href{https://github.com}{github.com} and confirm that your changes
 appear. You should see your commit message next to the updated file.
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-warning-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-warning-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, toptitle=1mm, colframe=quarto-callout-warning-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-warning-color!10!white]
 
 \textbf{If you skip the Sync step}, your commit exists only on the
 Codespace. If the Codespace is deleted, the commit goes with it. Always
@@ -1940,7 +2194,7 @@ Tab?}
 The Codespace runs for another 30 minutes before it times out
 automatically. That is 30 minutes of wasted credits every time.
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-warning-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-warning-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, toptitle=1mm, colframe=quarto-callout-warning-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-warning-color!10!white]
 
 \textbf{Policy:} It is your responsibility to manage your compute hours.
 If you run out before the month resets, you will need to wait or pay out
@@ -1999,7 +2253,7 @@ If nothing else works:
 This shuts down and rebuilds the entire environment from scratch. It
 solves nearly all technical glitches but takes a few minutes.
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-warning-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-warning-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, toptitle=1mm, colframe=quarto-callout-warning-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-warning-color!10!white]
 
 \textbf{Before rebuilding:} Make sure you have committed and synced your
 work. Uncommitted changes may survive a rebuild, but there is no
@@ -3131,6 +3385,49 @@ every line before it flies.
   Commit incrementally as you work (reinforcing Week 2 Git basics).
 \end{itemize}
 
+\section*{Case Study Data Analysis}\label{case-study-data-analysis}
+\addcontentsline{toc}{section}{Case Study Data Analysis}
+
+\markright{Case Study Data Analysis}
+
+The \textbf{NHANES Health Equity data spine} now supports code-reading,
+EDA, visualization, and reproducibility checks. Use the cached CSV/RDS
+for routine class work; any CDC retrieval pipeline is optional or
+instructor-directed.
+
+\begin{itemize}
+\tightlist
+\item
+  Cached RDS:
+  \texttt{examples/nhanes-equity/data/nhanes\_equity\_v6.rds}
+\item
+  CSV snapshot:
+  \texttt{examples/nhanes-equity/data/nhanes\_equity\_v6.csv}
+\item
+  Case-study README: \texttt{examples/nhanes-equity/README.md}
+\end{itemize}
+
+The default classroom path is to use the cached data so the analysis
+work is reproducible without internet access.
+
+Mini-tasks for Week 3:
+
+\begin{itemize}
+\tightlist
+\item
+  Load the CSV snapshot and inspect column names, row count, and
+  missingness.
+\item
+  Summarize one numeric variable and one grouping variable with clear
+  \texttt{NA} handling.
+\item
+  Ask an AI assistant to comment on your code, then audit whether the
+  comments match the actual operations.
+\item
+  Note one place where an AI assistant could hallucinate a variable name
+  or overstate what the descriptive summary means.
+\end{itemize}
+
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 \section*{\texorpdfstring{\texttt{r1.qmd} Packages: Opening the
@@ -3160,7 +3457,7 @@ Toolbox}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-note-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-note-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, toptitle=1mm, colframe=quarto-callout-note-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-note-color!10!white]
 
 If you see an error like
 \texttt{there\ is\ no\ package\ called\ \textquotesingle{}tidyverse\textquotesingle{}},
@@ -3194,7 +3491,7 @@ R has no memory unless you store results in a named box using
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-warning-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-warning-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, toptitle=1mm, colframe=quarto-callout-warning-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-warning-color!10!white]
 
 \textbf{Case sensitivity:} \texttt{Age}, \texttt{age}, and \texttt{AGE}
 are three different boxes. This is one of the most common bugs in
@@ -3243,7 +3540,7 @@ The pipe passes the result of one step into the next. Think of it as
 Read this as: \emph{``Take the data, and then keep only patients over
 65, and then calculate the average BMI.''}
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, toptitle=1mm, colframe=quarto-callout-tip-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-tip-color!10!white]
 
 You will see two pipe symbols in the wild: \texttt{\%\textgreater{}\%}
 (from the \texttt{magrittr} / \texttt{tidyverse} packages) and
@@ -3312,7 +3609,7 @@ Open the \textbf{Environment} pane (top-right in RStudio or via the R
 extension) to see your variables and click a data frame to view it in a
 grid.
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-warning-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-warning-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, toptitle=1mm, colframe=quarto-callout-warning-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-warning-color!10!white]
 
 \textbf{Health data reality:} Real datasets like NHANES have substantial
 missingness. Knowing \emph{where} and \emph{how much} is missing is not
@@ -3413,7 +3710,7 @@ Using \texttt{dplyr}, filter my dataset to patients over 65, group by
 sex, and calculate the mean BMI for each group. Handle missing values.
 \end{quote}
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, toptitle=1mm, colframe=quarto-callout-tip-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-tip-color!10!white]
 
 \textbf{Audit the AI output:} After running the AI-generated code, check
 that (a) the column names match your actual data, (b)
@@ -3471,7 +3768,7 @@ research question, or did the AI pick an arbitrary number?
 Could this be replaced with a simpler vectorized operation (e.g.,
 \texttt{summarise(across(...))})?
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-note-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-note-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, toptitle=1mm, colframe=quarto-callout-note-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-note-color!10!white]
 
 In R, loops are rarely the best tool. If AI gives you a loop, ask:
 \emph{``Can this be done without a loop using dplyr or purrr?''} The
@@ -3598,7 +3895,7 @@ on a text/factor column \\
 \texttt{unexpected\ symbol} & Missing comma, parenthesis, or pipe \\
 \end{longtable}
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-warning-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-warning-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, toptitle=1mm, colframe=quarto-callout-warning-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-warning-color!10!white]
 
 \textbf{AI debugging guardrail:} When AI suggests a fix, re-read the
 corrected code before running it. Does the fix address the \emph{actual}
@@ -3672,7 +3969,7 @@ up where you left off.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, toptitle=1mm, colframe=quarto-callout-tip-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-tip-color!10!white]
 
 \textbf{Reproducibility habit:} Your Quarto document should contain
 \emph{every step} from raw data to clean export. Anyone (including your
@@ -4395,6 +4692,47 @@ research workflow.
   term project.
 \end{itemize}
 
+\section*{Case Study Data Analysis}\label{case-study-data-analysis-1}
+\addcontentsline{toc}{section}{Case Study Data Analysis}
+
+\markright{Case Study Data Analysis}
+
+The \textbf{NHANES Health Equity data spine} now supports code-reading,
+EDA, visualization, and reproducibility checks. Use the cached CSV/RDS
+for routine class work; any CDC retrieval pipeline is optional or
+instructor-directed.
+
+\begin{itemize}
+\tightlist
+\item
+  Cached RDS:
+  \texttt{examples/nhanes-equity/data/nhanes\_equity\_v6.rds}
+\item
+  CSV snapshot:
+  \texttt{examples/nhanes-equity/data/nhanes\_equity\_v6.csv}
+\item
+  Case-study README: \texttt{examples/nhanes-equity/README.md}
+\end{itemize}
+
+The default classroom path is to use the cached data so the analysis
+work is reproducible without internet access.
+
+Mini-tasks for Week 4:
+
+\begin{itemize}
+\tightlist
+\item
+  Create a branch for a tiny dashboard documentation change.
+\item
+  Edit only a label, caption, or README sentence; do not change analytic
+  logic.
+\item
+  Open a pull request and use the diff to confirm the change is limited.
+\item
+  In the pull request description, state how you verified the change is
+  documentation-only.
+\end{itemize}
+
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 \section*{\texorpdfstring{\texttt{git1.qmd} Concepts: The ``Save Game''
@@ -4472,7 +4810,7 @@ Hover over the file name in the Source Control panel and click
 \textbf{Discard Changes} (the curved arrow) to restore the file to the
 \textbf{last committed} version.
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, toptitle=1mm, colframe=quarto-callout-tip-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-tip-color!10!white]
 
 \textbf{Key takeaway:} Saving writes to disk. Committing writes to
 \emph{history}. Only committed work can be recovered by Git.
@@ -4542,7 +4880,7 @@ Always use \textbf{relative paths} in your code (e.g.,
 \texttt{read.csv("/home/user/Documents/nhanes.csv")}). This ensures your
 analysis runs on \emph{any} machine---including your grader's Codespace.
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-warning-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-warning-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, toptitle=1mm, colframe=quarto-callout-warning-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-warning-color!10!white]
 
 \textbf{Reproducibility rule:} Your term project must run from start to
 finish in a \emph{fresh} Codespace. Absolute paths guarantee failure.
@@ -4654,7 +4992,7 @@ PR}\label{tutorial-open-your-first-pr}
   request} → \textbf{Confirm merge}.
 \end{enumerate}
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, toptitle=1mm, colframe=quarto-callout-tip-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-tip-color!10!white]
 
 \textbf{Collaboration norm:} In your term project, agree with your group
 that changes go through PRs rather than directly to \texttt{main}. This
@@ -4721,7 +5059,7 @@ What does it mean in simple terms, and which \textbf{buttons in the VS
 Code UI} should I click to fix it?''
 \end{quote}
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-warning-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-warning-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, toptitle=1mm, colframe=quarto-callout-warning-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-warning-color!10!white]
 
 \textbf{Strict Guardrail:} Never run random terminal commands suggested
 by an AI (especially \texttt{-\/-force} or \texttt{reset\ -\/-hard}).
@@ -4774,7 +5112,7 @@ this session to establish your collaboration workflow.
   \texttt{README.md}) and pushes it to confirm access.
 \end{enumerate}
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-note-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-note-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, toptitle=1mm, colframe=quarto-callout-note-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-note-color!10!white]
 
 \textbf{Milestone 0 due Friday:} Confirm your group formation on Canvas
 and ensure everyone can commit to the shared repository.
@@ -5314,6 +5652,48 @@ Python expert; you need to be great at \emph{directing the AI} and
   commits.
 \end{itemize}
 
+\section*{Case Study Data Analysis}\label{case-study-data-analysis-2}
+\addcontentsline{toc}{section}{Case Study Data Analysis}
+
+\markright{Case Study Data Analysis}
+
+The \textbf{NHANES Health Equity data spine} now supports code-reading,
+EDA, visualization, and reproducibility checks. Use the cached CSV/RDS
+for routine class work; any CDC retrieval pipeline is optional or
+instructor-directed.
+
+\begin{itemize}
+\tightlist
+\item
+  Cached RDS:
+  \texttt{examples/nhanes-equity/data/nhanes\_equity\_v6.rds}
+\item
+  CSV snapshot:
+  \texttt{examples/nhanes-equity/data/nhanes\_equity\_v6.csv}
+\item
+  Case-study README: \texttt{examples/nhanes-equity/README.md}
+\end{itemize}
+
+The default classroom path is to use the cached data so the analysis
+work is reproducible without internet access.
+
+Mini-tasks for Week 5:
+
+\begin{itemize}
+\tightlist
+\item
+  Load \texttt{examples/nhanes-equity/data/nhanes\_equity\_v6.csv} in R
+  and Python.
+\item
+  Compare row counts and column names across the two languages.
+\item
+  Choose one summary, such as mean BMI by sex, and check whether R and
+  Python agree.
+\item
+  Treat any mismatch as an audit prompt: check data types, missing
+  values, and grouping logic before changing code.
+\end{itemize}
+
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 \section*{\texorpdfstring{\texttt{python1.qmd} Concepts: Python vs
@@ -5415,7 +5795,7 @@ After running a cell that creates a variable, open the
 to open an ``Excel-like'' grid view---your best friend for verifying
 that data loaded correctly.
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, toptitle=1mm, colframe=quarto-callout-tip-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-tip-color!10!white]
 
 If notebook features (Variables, Data Viewer) are missing, ensure the
 \textbf{Jupyter} extension is enabled in your Codespace. Check the
@@ -5488,7 +5868,7 @@ seaborn==0.13.2
   \texttt{pip\ install\ -r\ requirements.txt} automatically on launch.
 \end{enumerate}
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-warning-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-warning-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, toptitle=1mm, colframe=quarto-callout-warning-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-warning-color!10!white]
 
 \textbf{Reproducibility rule:} Never install packages by running
 \texttt{pip\ install\ X} in the terminal and forgetting about it. Always
@@ -5750,7 +6130,7 @@ console)}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-note-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-note-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, toptitle=1mm, colframe=quarto-callout-note-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-note-color!10!white]
 
 This demo runs inside your Codespace where both R and Python are
 available. You do not need to install anything locally. The goal is
@@ -5820,7 +6200,7 @@ Not everything belongs in a notebook. When you have a reusable utility
   Stage and commit both files with a descriptive message.
 \end{enumerate}
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, toptitle=1mm, colframe=quarto-callout-tip-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-tip-color!10!white]
 
 \textbf{When to use which:} Notebook for exploratory analysis and
 narrative. Script for functions you will reuse across notebooks or
@@ -5856,7 +6236,7 @@ Apply your Week 4 skills:
   commit.
 \end{enumerate}
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-warning-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-warning-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, toptitle=1mm, colframe=quarto-callout-warning-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-warning-color!10!white]
 
 \textbf{Jupyter notebooks and Git:} \texttt{.ipynb} files contain cell
 outputs (images, tables) in their JSON. This makes diffs noisy. Consider
@@ -5896,7 +6276,7 @@ Your proposal should include:
   visualizations you envision.
 \end{itemize}
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, toptitle=1mm, colframe=quarto-callout-tip-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-tip-color!10!white]
 
 Use what you learned this week: load your candidate dataset in
 \emph{both} R and Python to confirm it works. This early check prevents
@@ -6540,27 +6920,70 @@ aesthetics. The lesson emphasizes detecting misleading AI-generated
 visuals and ``steering'' the code to tell a truthful and compelling data
 story.
 
-\section*{TODO Before Release}\label{todo-before-release-2}
-\addcontentsline{toc}{section}{TODO Before Release}
+\section*{Case Study Data Analysis}\label{case-study-data-analysis-3}
+\addcontentsline{toc}{section}{Case Study Data Analysis}
 
-\markright{TODO Before Release}
+\markright{Case Study Data Analysis}
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-warning-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-warning-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Content TODO}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+The \textbf{NHANES Health Equity data spine} now supports code-reading,
+EDA, visualization, and reproducibility checks. Use the cached CSV/RDS
+for routine class work; any CDC retrieval pipeline is optional or
+instructor-directed.
 
 \begin{itemize}
 \tightlist
 \item
-  Add a worked ggplot2 example using the shared NHANES data.
+  Cached RDS:
+  \texttt{examples/nhanes-equity/data/nhanes\_equity\_v6.rds}
 \item
-  Add one intentionally misleading AI-generated chart for students to
-  audit.
+  CSV snapshot:
+  \texttt{examples/nhanes-equity/data/nhanes\_equity\_v6.csv}
 \item
-  Add a plotly or interactive chart extension.
+  Case-study README: \texttt{examples/nhanes-equity/README.md}
+\end{itemize}
+
+The default classroom path is to use the cached data so the analysis
+work is reproducible without internet access.
+
+Mini-tasks for Week 6:
+
+\begin{itemize}
+\tightlist
 \item
-  Add Assignment 5 instructions in
-  \texttt{assignments/assignment05-visualization/}.
+  Work through the \href{worked-example-ggplot.qmd}{ggplot worked
+  example} using the CSV snapshot.
 \item
-  Add expected captions and accessibility checks for figures.
+  Audit the flawed plot provided in the visual-audit activity and
+  identify at least three issues.
+\item
+  Revise the plot so the title, scale, grouping, and caption support
+  descriptive interpretation.
+\item
+  Explain what changed and why, including any AI assistance you used.
+\end{itemize}
+
+\section*{Instructor Decisions}\label{instructor-decisions}
+\addcontentsline{toc}{section}{Instructor Decisions}
+
+\markright{Instructor Decisions}
+
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Before Release}, toptitle=1mm, colframe=quarto-callout-warning-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-warning-color!10!white]
+
+\begin{itemize}
+\tightlist
+\item
+  Confirm whether the Week 6 worked example becomes required pre-class
+  work or in-class practice.
+\item
+  Decide whether the instructor-provided flawed chart is released as
+  code, image, or both.
+\item
+  Decide whether a plotly or interactive chart extension is required or
+  optional.
+\item
+  Confirm the Assignment 5 submission route in Canvas or the repo.
+\item
+  Confirm whether the caption checklist is graded or formative.
 \end{itemize}
 
 \end{tcolorbox}
@@ -6581,12 +7004,166 @@ story.
   All example plots render in a fresh Codespace.
 \end{itemize}
 
+\chapter*{Worked Example: Descriptive BMI
+Visualization}\label{worked-example-descriptive-bmi-visualization}
+\addcontentsline{toc}{chapter}{Worked Example: Descriptive BMI
+Visualization}
+
+\markboth{Worked Example: Descriptive BMI Visualization}{Worked Example:
+Descriptive BMI Visualization}
+
+\section*{Goal}\label{goal-1}
+\addcontentsline{toc}{section}{Goal}
+
+\markright{Goal}
+
+This worked example uses the NHANES Health Equity CSV snapshot to build
+one descriptive visualization. The plot summarizes mean BMI by income
+group across NHANES cycle. It is \textbf{unweighted} and should be
+interpreted as a classroom visualization exercise, not a population
+estimate.
+
+\begin{Shaded}
+\begin{Highlighting}[numbers=left,,]
+\FunctionTok{library}\NormalTok{(readr)}
+\FunctionTok{library}\NormalTok{(dplyr)}
+\FunctionTok{library}\NormalTok{(ggplot2)}
+
+\NormalTok{candidate\_paths }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}
+  \StringTok{"examples/nhanes{-}equity/data/nhanes\_equity\_v6.csv"}\NormalTok{,}
+  \StringTok{"../../examples/nhanes{-}equity/data/nhanes\_equity\_v6.csv"}
+\NormalTok{)}
+
+\NormalTok{data\_path }\OtherTok{\textless{}{-}}\NormalTok{ candidate\_paths[}\FunctionTok{file.exists}\NormalTok{(candidate\_paths)][}\DecValTok{1}\NormalTok{]}
+\ControlFlowTok{if}\NormalTok{ (}\FunctionTok{is.na}\NormalTok{(data\_path)) \{}
+  \FunctionTok{stop}\NormalTok{(}\StringTok{"Could not find examples/nhanes{-}equity/data/nhanes\_equity\_v6.csv"}\NormalTok{)}
+\NormalTok{\}}
+
+\NormalTok{nhanes }\OtherTok{\textless{}{-}} \FunctionTok{read\_csv}\NormalTok{(data\_path, }\AttributeTok{show\_col\_types =} \ConstantTok{FALSE}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\section*{Prepare a Descriptive
+Summary}\label{prepare-a-descriptive-summary}
+\addcontentsline{toc}{section}{Prepare a Descriptive Summary}
+
+\markright{Prepare a Descriptive Summary}
+
+Keep the summary intentionally simple. We are describing the prepared
+class dataset, not estimating a national trend.
+
+\begin{Shaded}
+\begin{Highlighting}[numbers=left,,]
+\NormalTok{bmi\_by\_income\_cycle }\OtherTok{\textless{}{-}}\NormalTok{ nhanes }\SpecialCharTok{|\textgreater{}}
+  \FunctionTok{filter}\NormalTok{(}
+    \SpecialCharTok{!}\FunctionTok{is.na}\NormalTok{(BMI),}
+    \SpecialCharTok{!}\FunctionTok{is.na}\NormalTok{(IncomeGroup),}
+    \SpecialCharTok{!}\FunctionTok{is.na}\NormalTok{(Cycle),}
+\NormalTok{    Age }\SpecialCharTok{\textgreater{}=} \DecValTok{20}\NormalTok{,}
+\NormalTok{    Age }\SpecialCharTok{\textless{}=} \DecValTok{80}
+\NormalTok{  ) }\SpecialCharTok{|\textgreater{}}
+  \FunctionTok{group\_by}\NormalTok{(Cycle, IncomeGroup) }\SpecialCharTok{|\textgreater{}}
+  \FunctionTok{summarise}\NormalTok{(}
+    \AttributeTok{n =} \FunctionTok{n}\NormalTok{(),}
+    \AttributeTok{mean\_bmi =} \FunctionTok{mean}\NormalTok{(BMI),}
+    \AttributeTok{.groups =} \StringTok{"drop"}
+\NormalTok{  ) }\SpecialCharTok{|\textgreater{}}
+  \FunctionTok{filter}\NormalTok{(n }\SpecialCharTok{\textgreater{}=} \DecValTok{30}\NormalTok{)}
+
+\NormalTok{bmi\_by\_income\_cycle}
+\CommentTok{\#\textgreater{} \# A tibble: 33 x 4}
+\CommentTok{\#\textgreater{}    Cycle     IncomeGroup            n mean\_bmi}
+\CommentTok{\#\textgreater{}    \textless{}chr\textgreater{}     \textless{}chr\textgreater{}              \textless{}int\textgreater{}    \textless{}dbl\textgreater{}}
+\CommentTok{\#\textgreater{}  1 1999{-}2000 High Income (\textgreater{}3.5)  1123     27.9}
+\CommentTok{\#\textgreater{}  2 1999{-}2000 Low Income (\textless{}1.3)   1091     28.8}
+\CommentTok{\#\textgreater{}  3 1999{-}2000 Middle Income       1327     29.0}
+\CommentTok{\#\textgreater{}  4 2001{-}2002 High Income (\textgreater{}3.5)  1491     28.1}
+\CommentTok{\#\textgreater{}  5 2001{-}2002 Low Income (\textless{}1.3)   1089     28.7}
+\CommentTok{\#\textgreater{}  6 2001{-}2002 Middle Income       1561     28.3}
+\CommentTok{\#\textgreater{}  7 2003{-}2004 High Income (\textgreater{}3.5)  1284     28.4}
+\CommentTok{\#\textgreater{}  8 2003{-}2004 Low Income (\textless{}1.3)   1183     28.6}
+\CommentTok{\#\textgreater{}  9 2003{-}2004 Middle Income       1573     28.8}
+\CommentTok{\#\textgreater{} 10 2005{-}2006 High Income (\textgreater{}3.5)  1480     28.5}
+\CommentTok{\#\textgreater{} \# i 23 more rows}
+\end{Highlighting}
+\end{Shaded}
+
+\section*{Plot}\label{plot}
+\addcontentsline{toc}{section}{Plot}
+
+\markright{Plot}
+
+\begin{Shaded}
+\begin{Highlighting}[numbers=left,,]
+\FunctionTok{ggplot}\NormalTok{(}
+\NormalTok{  bmi\_by\_income\_cycle,}
+  \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ Cycle, }\AttributeTok{y =}\NormalTok{ mean\_bmi, }\AttributeTok{color =}\NormalTok{ IncomeGroup, }\AttributeTok{group =}\NormalTok{ IncomeGroup)}
+\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{geom\_line}\NormalTok{(}\AttributeTok{linewidth =} \FloatTok{0.8}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{geom\_point}\NormalTok{(}\AttributeTok{size =} \DecValTok{2}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}
+    \AttributeTok{title =} \StringTok{"Mean BMI by income group across NHANES cycle"}\NormalTok{,}
+    \AttributeTok{subtitle =} \StringTok{"Adults age 20{-}80 in the prepared class dataset; unweighted descriptive summary"}\NormalTok{,}
+    \AttributeTok{x =} \StringTok{"NHANES cycle"}\NormalTok{,}
+    \AttributeTok{y =} \StringTok{"Mean BMI"}\NormalTok{,}
+    \AttributeTok{color =} \StringTok{"Income group"}\NormalTok{,}
+    \AttributeTok{caption =} \StringTok{"Caption template: Mean BMI is summarized descriptively from the cached class dataset. Values are unweighted, exclude missing BMI/income/cycle values, and should not be interpreted as causal effects or population estimates."}
+\NormalTok{  ) }\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{(}\AttributeTok{base\_size =} \DecValTok{12}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}
+    \AttributeTok{axis.text.x =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{angle =} \DecValTok{45}\NormalTok{, }\AttributeTok{hjust =} \DecValTok{1}\NormalTok{),}
+    \AttributeTok{legend.position =} \StringTok{"bottom"}
+\NormalTok{  )}
+\end{Highlighting}
+\end{Shaded}
+
+\pandocbounded{\includegraphics[keepaspectratio]{weeks/week06-visualization/worked-example-ggplot_files/figure-pdf/plot-bmi-by-income-cycle-1.pdf}}
+
+\section*{Caption Template}\label{caption-template}
+\addcontentsline{toc}{section}{Caption Template}
+
+\markright{Caption Template}
+
+Use this structure when revising your own plot:
+
+\begin{quote}
+This figure shows {[}measure{]} by {[}group{]} across
+{[}time/category{]} using the prepared NHANES Health Equity classroom
+dataset. The summary is descriptive and unweighted. Records with missing
+{[}variables{]} were excluded. The plot supports comparison of patterns,
+not causal claims or population-level estimates.
+\end{quote}
+
+\section*{Mini Visual Audit
+Checklist}\label{mini-visual-audit-checklist}
+\addcontentsline{toc}{section}{Mini Visual Audit Checklist}
+
+\markright{Mini Visual Audit Checklist}
+
+\begin{itemize}
+\tightlist
+\item
+  Does the title describe what is plotted without overstating the claim?
+\item
+  Is it clear whether the statistic is weighted or unweighted?
+\item
+  Are axes, groups, and units labeled plainly?
+\item
+  Are missing values or exclusions disclosed?
+\item
+  Is the scale chosen to support honest comparison rather than
+  exaggeration?
+\item
+  Does the caption state the limitation that this is descriptive, not
+  causal?
+\end{itemize}
+
 \chapter*{Activity: AI Visual Audit}\label{activity-ai-visual-audit}
 \addcontentsline{toc}{chapter}{Activity: AI Visual Audit}
 
 \markboth{Activity: AI Visual Audit}{Activity: AI Visual Audit}
 
-\section*{Goal}\label{goal-1}
+\section*{Goal}\label{goal-2}
 \addcontentsline{toc}{section}{Goal}
 
 \markright{Goal}
@@ -6594,40 +7171,99 @@ story.
 Students evaluate AI-generated visualizations for correctness, clarity,
 bias, aggregation choices, and misleading design.
 
-\section*{TODO Before Release}\label{todo-before-release-3}
-\addcontentsline{toc}{section}{TODO Before Release}
+\section*{Inputs}\label{inputs}
+\addcontentsline{toc}{section}{Inputs}
 
-\markright{TODO Before Release}
-
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-warning-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-warning-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Content TODO}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\markright{Inputs}
 
 \begin{itemize}
 \tightlist
 \item
-  Add a starter dataset and prompt.
+  Student worked example:
+  \texttt{weeks/week06-visualization/worked-example-ggplot.qmd}
 \item
-  Add one flawed AI-generated plot and one corrected version.
+  Dataset: \texttt{examples/nhanes-equity/data/nhanes\_equity\_v6.csv}
 \item
-  Add a short answer template for students to identify what changed and
-  why.
+  Flawed plot/code: provided by your instructor or TA during the
+  activity
 \end{itemize}
 
-\end{tcolorbox}
+\section*{Activity Steps}\label{activity-steps}
+\addcontentsline{toc}{section}{Activity Steps}
 
-\section*{Student Output}\label{student-output}
-\addcontentsline{toc}{section}{Student Output}
+\markright{Activity Steps}
 
-\markright{Student Output}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Review the worked example and note how it labels the data source,
+  statistic, and limitation.
+\item
+  Inspect the flawed plot or code provided by the instructor.
+\item
+  Identify at least three issues that could mislead a reader.
+\item
+  Revise the plot so the title, scale, grouping, and caption match the
+  evidence.
+\item
+  Write a short note explaining what changed and why.
+\end{enumerate}
+
+\section*{Required Outputs}\label{required-outputs}
+\addcontentsline{toc}{section}{Required Outputs}
+
+\markright{Required Outputs}
 
 \begin{itemize}
 \tightlist
 \item
-  One original AI-generated plot.
+  \texttt{visual-audit-note.md}: an audit note listing at least three
+  issues.
 \item
-  One revised plot.
+  \texttt{corrected-plot.qmd}: a rerunnable Quarto file that creates the
+  corrected plot.
 \item
-  A short audit note explaining at least three changes.
+  \texttt{corrected-plot.png}: the exported corrected plot.
+\item
+  \texttt{caption.md}: a caption that states the statistic, data source,
+  exclusions, and limitations.
+\item
+  \texttt{ai-use-note.md}: if you used AI, explain what it helped with
+  and how you checked the result.
 \end{itemize}
+
+\section*{Audit Categories}\label{audit-categories}
+\addcontentsline{toc}{section}{Audit Categories}
+
+\markright{Audit Categories}
+
+Use these categories in your audit note:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Correctness:} Does the plot show what the title and labels
+  claim?
+\item
+  \textbf{Design:} Do scale, color, ordering, and geometry support fair
+  comparison?
+\item
+  \textbf{Interpretation:} Does the caption avoid causal or
+  population-level claims that the plot cannot support?
+\item
+  \textbf{Reproducibility:} Can another person rerun the code from the
+  repository root using relative paths?
+\end{itemize}
+
+\section*{Completion Check}\label{completion-check}
+\addcontentsline{toc}{section}{Completion Check}
+
+\markright{Completion Check}
+
+Your submission is complete when a peer can rerun your corrected plot,
+identify the main comparison without reading your code, and see at least
+one explicit limitation in the caption.
 
 \part{Week 7: EDA, Table 1 \& AI Auditing}
 
@@ -6649,25 +7285,65 @@ exclusion criteria in a reproducible Quarto log, ensuring that your path
 from raw data to analysis dataset is transparent and repeatable by
 anyone.
 
-\section*{TODO Before Release}\label{todo-before-release-4}
-\addcontentsline{toc}{section}{TODO Before Release}
+\section*{Case Study Data Analysis}\label{case-study-data-analysis-4}
+\addcontentsline{toc}{section}{Case Study Data Analysis}
 
-\markright{TODO Before Release}
+\markright{Case Study Data Analysis}
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-warning-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-warning-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Content TODO}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+The \textbf{NHANES Health Equity data spine} now supports code-reading,
+EDA, visualization, and reproducibility checks. Use the cached CSV/RDS
+for routine class work; any CDC retrieval pipeline is optional or
+instructor-directed.
 
 \begin{itemize}
 \tightlist
 \item
-  Build a worked EDA using the NHANES example files in
-  \texttt{examples/data/}.
+  Cached RDS:
+  \texttt{examples/nhanes-equity/data/nhanes\_equity\_v6.rds}
 \item
-  Add Table 1 expectations and an example table.
+  CSV snapshot:
+  \texttt{examples/nhanes-equity/data/nhanes\_equity\_v6.csv}
 \item
-  Add a planted-error AI audit exercise.
+  Case-study README: \texttt{examples/nhanes-equity/README.md}
+\end{itemize}
+
+The default classroom path is to use the cached data so the analysis
+work is reproducible without internet access.
+
+Mini-tasks for Week 7:
+
+\begin{itemize}
+\tightlist
 \item
-  Add Assignment 6 instructions in
-  \texttt{assignments/assignment06-eda-ai-audit/}.
+  Work through the \href{worked-example-table1.qmd}{Table 1 worked
+  example} using the CSV snapshot.
+\item
+  Define and document an analysis cohort before summarizing.
+\item
+  Create a Table 1-style summary with N, BMI mean (SD), and age mean
+  (SD).
+\item
+  Audit the planted-error starter and categorize at least five issues as
+  correctness, reproducibility, or interpretation problems.
+\end{itemize}
+
+\section*{Instructor Decisions}\label{instructor-decisions-1}
+\addcontentsline{toc}{section}{Instructor Decisions}
+
+\markright{Instructor Decisions}
+
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Before Release}, toptitle=1mm, colframe=quarto-callout-warning-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-warning-color!10!white]
+
+\begin{itemize}
+\tightlist
+\item
+  Confirm whether the Table 1 worked example becomes required pre-class
+  work or in-class practice.
+\item
+  Decide whether the planted-error starter is distributed as-is or
+  copied into student assignment repos.
+\item
+  Confirm the Assignment 6 submission route in Canvas or the repo.
 \item
   Connect the activity to Milestone 2 preliminary analysis.
 \end{itemize}
@@ -6690,6 +7366,185 @@ anyone.
   The EDA renders without manual intervention.
 \end{itemize}
 
+\chapter*{Worked Example: EDA and Table
+1}\label{worked-example-eda-and-table-1}
+\addcontentsline{toc}{chapter}{Worked Example: EDA and Table 1}
+
+\markboth{Worked Example: EDA and Table 1}{Worked Example: EDA and Table
+1}
+
+\section*{Goal}\label{goal-3}
+\addcontentsline{toc}{section}{Goal}
+
+\markright{Goal}
+
+This worked example creates a small Table 1-style descriptive summary
+from the NHANES Health Equity CSV snapshot. The goal is transparent EDA:
+define the cohort, check missingness, summarize key variables, and write
+a methods note that does not overclaim.
+
+\begin{Shaded}
+\begin{Highlighting}[numbers=left,,]
+\FunctionTok{library}\NormalTok{(readr)}
+\FunctionTok{library}\NormalTok{(dplyr)}
+\FunctionTok{library}\NormalTok{(knitr)}
+
+\NormalTok{candidate\_paths }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}
+  \StringTok{"examples/nhanes{-}equity/data/nhanes\_equity\_v6.csv"}\NormalTok{,}
+  \StringTok{"../../examples/nhanes{-}equity/data/nhanes\_equity\_v6.csv"}
+\NormalTok{)}
+
+\NormalTok{data\_path }\OtherTok{\textless{}{-}}\NormalTok{ candidate\_paths[}\FunctionTok{file.exists}\NormalTok{(candidate\_paths)][}\DecValTok{1}\NormalTok{]}
+\ControlFlowTok{if}\NormalTok{ (}\FunctionTok{is.na}\NormalTok{(data\_path)) \{}
+  \FunctionTok{stop}\NormalTok{(}\StringTok{"Could not find examples/nhanes{-}equity/data/nhanes\_equity\_v6.csv"}\NormalTok{)}
+\NormalTok{\}}
+
+\NormalTok{nhanes }\OtherTok{\textless{}{-}} \FunctionTok{read\_csv}\NormalTok{(data\_path, }\AttributeTok{show\_col\_types =} \ConstantTok{FALSE}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\section*{Define the Analysis Cohort}\label{define-the-analysis-cohort}
+\addcontentsline{toc}{section}{Define the Analysis Cohort}
+
+\markright{Define the Analysis Cohort}
+
+Decision: restrict to adults age 20-80. This keeps the example focused
+on adult BMI summaries and avoids mixing children, adolescents, and the
+oldest age-coded records into one classroom table.
+
+\begin{Shaded}
+\begin{Highlighting}[numbers=left,,]
+\NormalTok{analysis\_df }\OtherTok{\textless{}{-}}\NormalTok{ nhanes }\SpecialCharTok{|\textgreater{}}
+  \FunctionTok{filter}\NormalTok{(Age }\SpecialCharTok{\textgreater{}=} \DecValTok{20}\NormalTok{, Age }\SpecialCharTok{\textless{}=} \DecValTok{80}\NormalTok{)}
+
+\NormalTok{cohort\_counts }\OtherTok{\textless{}{-}} \FunctionTok{tibble}\NormalTok{(}
+  \AttributeTok{step =} \FunctionTok{c}\NormalTok{(}\StringTok{"Prepared CSV rows"}\NormalTok{, }\StringTok{"Rows after age 20{-}80 restriction"}\NormalTok{),}
+  \AttributeTok{n =} \FunctionTok{c}\NormalTok{(}\FunctionTok{nrow}\NormalTok{(nhanes), }\FunctionTok{nrow}\NormalTok{(analysis\_df))}
+\NormalTok{)}
+
+\FunctionTok{kable}\NormalTok{(cohort\_counts)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{longtable}[]{@{}lr@{}}
+\toprule\noalign{}
+step & n \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Prepared CSV rows & 105626 \\
+Rows after age 20-80 restriction & 57137 \\
+\end{longtable}
+
+\section*{Missingness Check}\label{missingness-check}
+\addcontentsline{toc}{section}{Missingness Check}
+
+\markright{Missingness Check}
+
+\begin{Shaded}
+\begin{Highlighting}[numbers=left,,]
+\NormalTok{key\_vars }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\StringTok{"BMI"}\NormalTok{, }\StringTok{"Age"}\NormalTok{, }\StringTok{"IncomeGroup"}\NormalTok{, }\StringTok{"Gender"}\NormalTok{, }\StringTok{"Race"}\NormalTok{, }\StringTok{"Cycle"}\NormalTok{)}
+
+\NormalTok{missingness }\OtherTok{\textless{}{-}} \FunctionTok{tibble}\NormalTok{(}\AttributeTok{variable =}\NormalTok{ key\_vars) }\SpecialCharTok{|\textgreater{}}
+  \FunctionTok{mutate}\NormalTok{(}
+    \AttributeTok{missing\_n =} \FunctionTok{vapply}\NormalTok{(analysis\_df[key\_vars], }\ControlFlowTok{function}\NormalTok{(x) }\FunctionTok{sum}\NormalTok{(}\FunctionTok{is.na}\NormalTok{(x)), }\FunctionTok{numeric}\NormalTok{(}\DecValTok{1}\NormalTok{)),}
+    \AttributeTok{missing\_percent =} \FunctionTok{round}\NormalTok{(}\DecValTok{100} \SpecialCharTok{*}\NormalTok{ missing\_n }\SpecialCharTok{/} \FunctionTok{nrow}\NormalTok{(analysis\_df), }\DecValTok{1}\NormalTok{)}
+\NormalTok{  )}
+
+\FunctionTok{kable}\NormalTok{(missingness)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{longtable}[]{@{}lrr@{}}
+\toprule\noalign{}
+variable & missing\_n & missing\_percent \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+BMI & 1009 & 1.8 \\
+Age & 0 & 0.0 \\
+IncomeGroup & 5395 & 9.4 \\
+Gender & 0 & 0.0 \\
+Race & 0 & 0.0 \\
+Cycle & 0 & 0.0 \\
+\end{longtable}
+
+\section*{Table 1-Style Summary}\label{table-1-style-summary}
+\addcontentsline{toc}{section}{Table 1-Style Summary}
+
+\markright{Table 1-Style Summary}
+
+This example stratifies by \texttt{IncomeGroup} and reports N plus mean
+(SD) for BMI and age. It is unweighted and descriptive.
+
+\begin{Shaded}
+\begin{Highlighting}[numbers=left,,]
+\NormalTok{mean\_sd }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(x) \{}
+  \FunctionTok{sprintf}\NormalTok{(}\StringTok{"\%.1f (\%.1f)"}\NormalTok{, }\FunctionTok{mean}\NormalTok{(x, }\AttributeTok{na.rm =} \ConstantTok{TRUE}\NormalTok{), }\FunctionTok{sd}\NormalTok{(x, }\AttributeTok{na.rm =} \ConstantTok{TRUE}\NormalTok{))}
+\NormalTok{\}}
+
+\NormalTok{table1 }\OtherTok{\textless{}{-}}\NormalTok{ analysis\_df }\SpecialCharTok{|\textgreater{}}
+  \FunctionTok{filter}\NormalTok{(}\SpecialCharTok{!}\FunctionTok{is.na}\NormalTok{(IncomeGroup)) }\SpecialCharTok{|\textgreater{}}
+  \FunctionTok{group\_by}\NormalTok{(IncomeGroup) }\SpecialCharTok{|\textgreater{}}
+  \FunctionTok{summarise}\NormalTok{(}
+    \AttributeTok{N =} \FunctionTok{n}\NormalTok{(),}
+    \StringTok{\textasciigrave{}}\AttributeTok{BMI, mean (SD)}\StringTok{\textasciigrave{}} \OtherTok{=} \FunctionTok{mean\_sd}\NormalTok{(BMI),}
+    \StringTok{\textasciigrave{}}\AttributeTok{Age, mean (SD)}\StringTok{\textasciigrave{}} \OtherTok{=} \FunctionTok{mean\_sd}\NormalTok{(Age),}
+    \AttributeTok{.groups =} \StringTok{"drop"}
+\NormalTok{  )}
+
+\FunctionTok{kable}\NormalTok{(table1)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{longtable}[]{@{}lrll@{}}
+\toprule\noalign{}
+IncomeGroup & N & BMI, mean (SD) & Age, mean (SD) \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+High Income (\textgreater3.5) & 16520 & 28.6 (6.3) & 49.7 (16.0) \\
+Low Income (\textless1.3) & 15646 & 29.4 (7.5) & 47.4 (18.1) \\
+Middle Income & 19576 & 29.3 (7.0) & 50.0 (18.4) \\
+\end{longtable}
+
+\section*{Methods Note Template}\label{methods-note-template}
+\addcontentsline{toc}{section}{Methods Note Template}
+
+\markright{Methods Note Template}
+
+\begin{quote}
+We used the prepared NHANES Health Equity classroom CSV snapshot. The
+analysis cohort included records with age 20-80. We summarized BMI and
+age by income group using unweighted descriptive statistics. Missing
+values were checked before summarizing. These summaries describe the
+prepared class dataset and should not be interpreted as causal effects
+or population estimates.
+\end{quote}
+
+\section*{Reproducibility Notes}\label{reproducibility-notes}
+\addcontentsline{toc}{section}{Reproducibility Notes}
+
+\markright{Reproducibility Notes}
+
+\begin{itemize}
+\tightlist
+\item
+  The data path is relative to the repository.
+\item
+  The cohort restriction is stated before the table.
+\item
+  Missingness is reported before complete-case summaries.
+\item
+  The table labels distinguish N, mean, and SD.
+\item
+  The methods note states that the analysis is descriptive and
+  non-causal.
+\end{itemize}
+
 \chapter*{Activity: Table 1 and AI
 Audit}\label{activity-table-1-and-ai-audit}
 \addcontentsline{toc}{chapter}{Activity: Table 1 and AI Audit}
@@ -6697,7 +7552,7 @@ Audit}\label{activity-table-1-and-ai-audit}
 \markboth{Activity: Table 1 and AI Audit}{Activity: Table 1 and AI
 Audit}
 
-\section*{Goal}\label{goal-2}
+\section*{Goal}\label{goal-4}
 \addcontentsline{toc}{section}{Goal}
 
 \markright{Goal}
@@ -6705,43 +7560,97 @@ Audit}
 Students create a descriptive summary and audit AI-generated code or
 interpretation for planted errors.
 
-\section*{TODO Before Release}\label{todo-before-release-5}
-\addcontentsline{toc}{section}{TODO Before Release}
+\section*{Inputs}\label{inputs-1}
+\addcontentsline{toc}{section}{Inputs}
 
-\markright{TODO Before Release}
-
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-warning-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-warning-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Content TODO}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\markright{Inputs}
 
 \begin{itemize}
 \tightlist
 \item
-  Add the starter data path.
+  Student worked example:
+  \texttt{weeks/week07-eda-ai-audit/worked-example-table1.qmd}
 \item
-  Add the expected Table 1 variables.
+  Dataset: \texttt{examples/nhanes-equity/data/nhanes\_equity\_v6.csv}
 \item
-  Add planted errors in code, summary text, and at least one
-  visualization.
-\item
-  Add an answer key for instructors or TAs outside the student-facing
-  page.
+  Planted-error starter: distributed by the instructor or TA during the
+  activity
 \end{itemize}
 
-\end{tcolorbox}
+\section*{Activity Steps}\label{activity-steps-1}
+\addcontentsline{toc}{section}{Activity Steps}
 
-\section*{Student Output}\label{student-output-1}
-\addcontentsline{toc}{section}{Student Output}
+\markright{Activity Steps}
 
-\markright{Student Output}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Review the worked example and identify the cohort definition,
+  missingness check, and Table 1 labels.
+\item
+  Open the planted-error starter provided by the instructor.
+\item
+  Run or read the starter code and annotate at least five issues.
+\item
+  Categorize each issue as \textbf{correctness},
+  \textbf{reproducibility}, or \textbf{interpretation}.
+\item
+  Produce a corrected EDA note and Table 1.
+\end{enumerate}
+
+\section*{Required Outputs}\label{required-outputs-1}
+\addcontentsline{toc}{section}{Required Outputs}
+
+\markright{Required Outputs}
 
 \begin{itemize}
 \tightlist
 \item
-  A rendered Quarto EDA note.
+  \texttt{eda-note.qmd}: a rerunnable Quarto note with cohort
+  definition, missingness table, and Table 1.
 \item
-  A Table 1 or equivalent descriptive summary.
+  \texttt{eda-note.html}: rendered output from the Quarto note.
 \item
-  A written audit note listing detected errors and fixes.
+  \texttt{table1.csv}: exported Table 1 or equivalent descriptive
+  summary.
+\item
+  \texttt{audit-note.md}: at least five detected issues with category,
+  why it matters, and corrected approach.
+\item
+  \texttt{ai-use-note.md}: if you used AI, explain what it helped with
+  and how you verified the result.
 \end{itemize}
+
+\section*{Minimum Table 1
+Requirements}\label{minimum-table-1-requirements}
+\addcontentsline{toc}{section}{Minimum Table 1 Requirements}
+
+\markright{Minimum Table 1 Requirements}
+
+\begin{itemize}
+\tightlist
+\item
+  Cohort: age 20-80, unless your instructor approves a different cohort.
+\item
+  Stratifier: \texttt{IncomeGroup}, unless your instructor assigns a
+  different grouping variable.
+\item
+  Variables: N, BMI mean (SD), and age mean (SD).
+\item
+  Methods note: state that the table is descriptive, unweighted, and
+  non-causal.
+\end{itemize}
+
+\section*{Completion Check}\label{completion-check-1}
+\addcontentsline{toc}{section}{Completion Check}
+
+\markright{Completion Check}
+
+Your submission is complete when another student can rerun your
+\texttt{eda-note.qmd}, see exactly who is included, understand how
+missingness was handled, and identify why the planted-error starter was
+misleading.
 
 \part{Week 8: Dashboard Prototypes for KT}
 
@@ -6763,12 +7672,63 @@ will learn the best practices of user interface design for health data
 and deploy your first live dashboard to the web via GitHub Pages or
 Shinylive.
 
-\section*{TODO Before Release}\label{todo-before-release-6}
+\section*{Dashboard Case Study: NHANES
+Equity}\label{dashboard-case-study-nhanes-equity}
+\addcontentsline{toc}{section}{Dashboard Case Study: NHANES Equity}
+
+\markright{Dashboard Case Study: NHANES Equity}
+
+The \textbf{NHANES Health Equity Dashboard} is now the foreground case
+study. Use it as a small knowledge-translation product built on the
+cached NHANES equity dataset.
+
+\begin{itemize}
+\tightlist
+\item
+  App code: \texttt{examples/nhanes-equity/app/app.R}
+\item
+  Cached data:
+  \texttt{examples/nhanes-equity/data/nhanes\_equity\_v6.rds} and
+  \texttt{examples/nhanes-equity/data/nhanes\_equity\_v6.csv}
+\item
+  Optional rebuild script:
+  \texttt{examples/nhanes-equity/scripts/build\_nhanes\_equity.R}
+\end{itemize}
+
+Run the dashboard from the repository root:
+
+\begin{Shaded}
+\begin{Highlighting}[numbers=left,,]
+\NormalTok{shiny}\SpecialCharTok{::}\FunctionTok{runApp}\NormalTok{(}\StringTok{"examples/nhanes{-}equity/app"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+The app is offline-first: it loads the local RDS cache when available.
+Rebuilding from CDC uses \texttt{nhanesA}, requires internet access, and
+is optional unless assigned.
+
+Mini-tasks for Week 8:
+
+\begin{itemize}
+\tightlist
+\item
+  Run the app and describe the intended audience in one sentence.
+\item
+  Make one audience-facing improvement to a label, help text, or
+  interpretation note.
+\item
+  Verify the app still loads the cached RDS after your change.
+\item
+  Treat deployment as optional unless the instructor explicitly assigns
+  it.
+\end{itemize}
+
+\section*{TODO Before Release}\label{todo-before-release-1}
 \addcontentsline{toc}{section}{TODO Before Release}
 
 \markright{TODO Before Release}
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-warning-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-warning-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Content TODO}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Content TODO}, toptitle=1mm, colframe=quarto-callout-warning-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-warning-color!10!white]
 
 \begin{itemize}
 \tightlist
@@ -6811,19 +7771,19 @@ Shinylive.
 
 \markboth{Starter Dashboard}{Starter Dashboard}
 
-\section*{Goal}\label{goal-3}
+\section*{Goal}\label{goal-5}
 \addcontentsline{toc}{section}{Goal}
 
 \markright{Goal}
 
 Students adapt a minimal dashboard-style knowledge translation product.
 
-\section*{TODO Before Release}\label{todo-before-release-7}
+\section*{TODO Before Release}\label{todo-before-release-2}
 \addcontentsline{toc}{section}{TODO Before Release}
 
 \markright{TODO Before Release}
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-warning-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-warning-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Content TODO}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Content TODO}, toptitle=1mm, colframe=quarto-callout-warning-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-warning-color!10!white]
 
 \begin{itemize}
 \tightlist
@@ -6878,12 +7838,63 @@ slide decks using Quarto. You will practice peer review and learn to use
 LLMs to simplify jargon without losing scientific accuracy, ensuring
 your work can impact policy and practice.
 
-\section*{TODO Before Release}\label{todo-before-release-8}
+\section*{Dashboard Case Study: NHANES
+Equity}\label{dashboard-case-study-nhanes-equity-1}
+\addcontentsline{toc}{section}{Dashboard Case Study: NHANES Equity}
+
+\markright{Dashboard Case Study: NHANES Equity}
+
+The \textbf{NHANES Health Equity Dashboard} is now the foreground case
+study. Use it as a small knowledge-translation product built on the
+cached NHANES equity dataset.
+
+\begin{itemize}
+\tightlist
+\item
+  App code: \texttt{examples/nhanes-equity/app/app.R}
+\item
+  Cached data:
+  \texttt{examples/nhanes-equity/data/nhanes\_equity\_v6.rds} and
+  \texttt{examples/nhanes-equity/data/nhanes\_equity\_v6.csv}
+\item
+  Optional rebuild script:
+  \texttt{examples/nhanes-equity/scripts/build\_nhanes\_equity.R}
+\end{itemize}
+
+Run the dashboard from the repository root:
+
+\begin{Shaded}
+\begin{Highlighting}[numbers=left,,]
+\NormalTok{shiny}\SpecialCharTok{::}\FunctionTok{runApp}\NormalTok{(}\StringTok{"examples/nhanes{-}equity/app"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+The app is offline-first: it loads the local RDS cache when available.
+Rebuilding from CDC uses \texttt{nhanesA}, requires internet access, and
+is optional unless assigned.
+
+Mini-tasks for Week 9:
+
+\begin{itemize}
+\tightlist
+\item
+  Build a 3-5 slide outline explaining one dashboard plot.
+\item
+  Include one plain-language takeaway and one limitation.
+\item
+  Add a source note for CDC NHANES and state whether you used the cached
+  data or rebuilt it.
+\item
+  Ask a peer whether the claim is understandable without seeing the
+  code.
+\end{itemize}
+
+\section*{TODO Before Release}\label{todo-before-release-3}
 \addcontentsline{toc}{section}{TODO Before Release}
 
 \markright{TODO Before Release}
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-warning-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-warning-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Content TODO}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Content TODO}, toptitle=1mm, colframe=quarto-callout-warning-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-warning-color!10!white]
 
 \begin{itemize}
 \tightlist
@@ -6922,7 +7933,7 @@ your work can impact policy and practice.
 
 \markboth{Revealjs and Peer Feedback}{Revealjs and Peer Feedback}
 
-\section*{Goal}\label{goal-4}
+\section*{Goal}\label{goal-6}
 \addcontentsline{toc}{section}{Goal}
 
 \markright{Goal}
@@ -6930,12 +7941,12 @@ your work can impact policy and practice.
 Students turn analysis outputs into a short scientific communication
 product and practice structured peer feedback.
 
-\section*{TODO Before Release}\label{todo-before-release-9}
+\section*{TODO Before Release}\label{todo-before-release-4}
 \addcontentsline{toc}{section}{TODO Before Release}
 
 \markright{TODO Before Release}
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-warning-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-warning-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Content TODO}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Content TODO}, toptitle=1mm, colframe=quarto-callout-warning-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-warning-color!10!white]
 
 \begin{itemize}
 \tightlist
@@ -6985,12 +7996,65 @@ numbers and figures if the data changes. You will explore advanced
 publishing workflows to create professional, citation-ready portfolios
 that demonstrate your ability to execute end-to-end data science.
 
-\section*{TODO Before Release}\label{todo-before-release-10}
+\section*{Dashboard Case Study: NHANES
+Equity}\label{dashboard-case-study-nhanes-equity-2}
+\addcontentsline{toc}{section}{Dashboard Case Study: NHANES Equity}
+
+\markright{Dashboard Case Study: NHANES Equity}
+
+The \textbf{NHANES Health Equity Dashboard} is now the foreground case
+study. Use it as a small knowledge-translation product built on the
+cached NHANES equity dataset.
+
+\begin{itemize}
+\tightlist
+\item
+  App code: \texttt{examples/nhanes-equity/app/app.R}
+\item
+  Cached data:
+  \texttt{examples/nhanes-equity/data/nhanes\_equity\_v6.rds} and
+  \texttt{examples/nhanes-equity/data/nhanes\_equity\_v6.csv}
+\item
+  Optional rebuild script:
+  \texttt{examples/nhanes-equity/scripts/build\_nhanes\_equity.R}
+\end{itemize}
+
+Run the dashboard from the repository root:
+
+\begin{Shaded}
+\begin{Highlighting}[numbers=left,,]
+\NormalTok{shiny}\SpecialCharTok{::}\FunctionTok{runApp}\NormalTok{(}\StringTok{"examples/nhanes{-}equity/app"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+The app is offline-first: it loads the local RDS cache when available.
+Rebuilding from CDC uses \texttt{nhanesA}, requires internet access, and
+is optional unless assigned.
+
+Mini-tasks for Week 10:
+
+\begin{itemize}
+\tightlist
+\item
+  Draft a short Quarto report that complements the dashboard rather than
+  duplicating it.
+\item
+  Include a data source paragraph, one figure or table, and a
+  limitations note.
+\item
+  Add a source note for CDC NHANES and the \texttt{nhanesA} retrieval
+  pathway.
+\item
+  Confirm that the report uses relative paths and documents whether
+  results came from the cached data.
+\end{itemize}
+
+\section*{TODO Before Release}\label{todo-before-release-5}
 \addcontentsline{toc}{section}{TODO Before Release}
 
 \markright{TODO Before Release}
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-warning-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-warning-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Content TODO}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Content TODO}, toptitle=1mm, colframe=quarto-callout-warning-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-warning-color!10!white]
 
 \begin{itemize}
 \tightlist
@@ -7033,12 +8097,12 @@ that demonstrate your ability to execute end-to-end data science.
 
 \markboth{Report Template}{Report Template}
 
-\section*{TODO Before Release}\label{todo-before-release-11}
+\section*{TODO Before Release}\label{todo-before-release-6}
 \addcontentsline{toc}{section}{TODO Before Release}
 
 \markright{TODO Before Release}
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-warning-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-warning-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Content TODO}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Content TODO}, toptitle=1mm, colframe=quarto-callout-warning-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-warning-color!10!white]
 
 \begin{itemize}
 \tightlist
@@ -7096,12 +8160,75 @@ You will act as a peer reviewer to identify reproducibility failures in
 others' code, fixing broken paths and missing seeds, to ensure your
 final project stands up to scientific scrutiny.
 
-\section*{TODO Before Release}\label{todo-before-release-12}
+\section*{Dashboard Case Study: NHANES
+Equity}\label{dashboard-case-study-nhanes-equity-3}
+\addcontentsline{toc}{section}{Dashboard Case Study: NHANES Equity}
+
+\markright{Dashboard Case Study: NHANES Equity}
+
+The \textbf{NHANES Health Equity Dashboard} is now the foreground case
+study. Use it as a small knowledge-translation product built on the
+cached NHANES equity dataset.
+
+\begin{itemize}
+\tightlist
+\item
+  App code: \texttt{examples/nhanes-equity/app/app.R}
+\item
+  Cached data:
+  \texttt{examples/nhanes-equity/data/nhanes\_equity\_v6.rds} and
+  \texttt{examples/nhanes-equity/data/nhanes\_equity\_v6.csv}
+\item
+  Optional rebuild script:
+  \texttt{examples/nhanes-equity/scripts/build\_nhanes\_equity.R}
+\end{itemize}
+
+Run the dashboard from the repository root:
+
+\begin{Shaded}
+\begin{Highlighting}[numbers=left,,]
+\NormalTok{shiny}\SpecialCharTok{::}\FunctionTok{runApp}\NormalTok{(}\StringTok{"examples/nhanes{-}equity/app"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+The app is offline-first: it loads the local RDS cache when available.
+Rebuilding from CDC uses \texttt{nhanesA}, requires internet access, and
+is optional unless assigned.
+
+Mini-tasks for Week 11:
+
+\begin{itemize}
+\tightlist
+\item
+  Run a fresh-session test: can the app launch from the repository root?
+\item
+  Confirm the cached RDS path works before attempting a CDC rebuild.
+\item
+  Optionally run the rebuild script only if internet access and time are
+  available.
+\item
+  Optionally draft a static dashboard extension using a CSV snapshot and
+  no Shiny server.
+\item
+  Log any dependency, path, or README issues as reproducibility risks.
+\end{itemize}
+
+\subsection*{Optional Extension: Static Dashboard (No
+Server)}\label{optional-extension-static-dashboard-no-server}
+\addcontentsline{toc}{subsection}{Optional Extension: Static Dashboard
+(No Server)}
+
+Advanced students can compare the Shiny workflow with the draft
+\href{static-dashboard-ojs.qmd}{static dashboard source file}. This
+extension reads from a CSV snapshot and does not require a Shiny server;
+render it as a standalone dashboard if assigned.
+
+\section*{TODO Before Release}\label{todo-before-release-7}
 \addcontentsline{toc}{section}{TODO Before Release}
 
 \markright{TODO Before Release}
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-warning-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-warning-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Content TODO}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Content TODO}, toptitle=1mm, colframe=quarto-callout-warning-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-warning-color!10!white]
 
 \begin{itemize}
 \tightlist
@@ -7143,7 +8270,7 @@ Test}\label{reproducibility-stress-test}
 
 \markboth{Reproducibility Stress Test}{Reproducibility Stress Test}
 
-\section*{Goal}\label{goal-5}
+\section*{Goal}\label{goal-7}
 \addcontentsline{toc}{section}{Goal}
 
 \markright{Goal}
@@ -7151,12 +8278,12 @@ Test}\label{reproducibility-stress-test}
 Students test whether a project can run in a fresh environment and
 document every failure before final submission.
 
-\section*{TODO Before Release}\label{todo-before-release-13}
+\section*{TODO Before Release}\label{todo-before-release-8}
 \addcontentsline{toc}{section}{TODO Before Release}
 
 \markright{TODO Before Release}
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-warning-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-warning-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Content TODO}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Content TODO}, toptitle=1mm, colframe=quarto-callout-warning-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-warning-color!10!white]
 
 \begin{itemize}
 \tightlist
@@ -7210,12 +8337,12 @@ This session is the first presentation block for Milestone 5. Students
 present their portfolio work with an emphasis on scientific clarity,
 knowledge translation, reproducibility, and auditability.
 
-\section*{TODO Before Release}\label{todo-before-release-14}
+\section*{TODO Before Release}\label{todo-before-release-9}
 \addcontentsline{toc}{section}{TODO Before Release}
 
 \markright{TODO Before Release}
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-warning-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-warning-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Content TODO}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Content TODO}, toptitle=1mm, colframe=quarto-callout-warning-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-warning-color!10!white]
 
 \begin{itemize}
 \tightlist
@@ -7264,12 +8391,12 @@ This session completes Milestone 5 presentations and gives students a
 final opportunity to collect feedback before the Final Portfolio
 deadline.
 
-\section*{TODO Before Release}\label{todo-before-release-15}
+\section*{TODO Before Release}\label{todo-before-release-10}
 \addcontentsline{toc}{section}{TODO Before Release}
 
 \markright{TODO Before Release}
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-warning-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-warning-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Content TODO}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Content TODO}, toptitle=1mm, colframe=quarto-callout-warning-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-warning-color!10!white]
 
 \begin{itemize}
 \tightlist
@@ -7362,7 +8489,7 @@ Assignment 10 & 11 & Portfolio surgery and reproducibility test &
 
 \markright{TODO}
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-warning-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-warning-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, toptitle=1mm, colframe=quarto-callout-warning-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-warning-color!10!white]
 
 Create a student-facing \texttt{README.md} in each assignment folder
 from \texttt{assignments/assignment-template.qmd}.
@@ -7452,6 +8579,256 @@ Use this template for all weekly applied assignments.
   Honest limitations and AI-use note.
 \end{itemize}
 
+\chapter{Assignment 5: Visualization Audit and
+Revision}\label{assignment-5-visualization-audit-and-revision}
+
+\section{Purpose}\label{purpose-1}
+
+Create a clear, honest health-data visualization from the NHANES Health
+Equity classroom dataset. You will audit a flawed or AI-assisted plot,
+revise it, and explain why your version is more accurate and useful for
+a non-technical audience.
+
+\section{Inputs}\label{inputs-2}
+
+\begin{itemize}
+\tightlist
+\item
+  Dataset: \texttt{examples/nhanes-equity/data/nhanes\_equity\_v6.csv}
+\item
+  Worked example:
+  \texttt{weeks/week06-visualization/worked-example-ggplot.qmd}
+\item
+  Activity prompt:
+  \texttt{weeks/week06-visualization/activity-ai-visual-audit.qmd}
+\end{itemize}
+
+\section{Step-by-Step Tasks}\label{step-by-step-tasks}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Review the Week 6 worked example and note how it labels data source,
+  statistic, and limitations.
+\item
+  Choose one comparison from the NHANES Health Equity CSV snapshot.
+\item
+  Draft an initial plot using R and \texttt{ggplot2}.
+\item
+  Audit the plot for misleading scale choices, unclear labels, missing
+  context, and overclaiming.
+\item
+  Revise the plot so it supports descriptive interpretation.
+\item
+  Write a caption and short audit note.
+\item
+  If AI helped you write or revise code, document what it did and how
+  you verified it.
+\end{enumerate}
+
+\section{What To Submit}\label{what-to-submit}
+
+Place all submission files in:
+
+\begin{Shaded}
+\begin{Highlighting}[numbers=left,,]
+\NormalTok{assignments/assignment05{-}visualization/submission/}
+\end{Highlighting}
+\end{Shaded}
+
+Submit these files:
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{visualization.qmd}: rerunnable Quarto file that loads the CSV
+  with a relative path and creates the final plot.
+\item
+  \texttt{visualization.html}: rendered output.
+\item
+  \texttt{corrected-plot.png}: exported final plot.
+\item
+  \texttt{audit-note.md}: at least three issues you checked or
+  corrected.
+\item
+  \texttt{caption.md}: final figure caption with data source, statistic,
+  exclusions, and limitation.
+\item
+  \texttt{ai-use-note.md}: required if AI was used; otherwise include a
+  one-sentence note saying AI was not used.
+\end{itemize}
+
+\section{Submission Location}\label{submission-location}
+
+TODO: Instructor to confirm Canvas upload, repository link, or both.
+
+\section{Grading Checklist}\label{grading-checklist-1}
+
+Complete:
+
+\begin{itemize}
+\tightlist
+\item
+  Uses \texttt{examples/nhanes-equity/data/nhanes\_equity\_v6.csv} with
+  a relative path.
+\item
+  Plot is rerunnable from the submitted Quarto file.
+\item
+  Title, axes, legend, and caption match the statistic shown.
+\item
+  Audit note identifies at least three meaningful issues.
+\item
+  Caption states that the result is descriptive and non-causal.
+\item
+  AI-use note is present and specific.
+\end{itemize}
+
+Needs work:
+
+\begin{itemize}
+\tightlist
+\item
+  Uses an absolute or machine-specific path.
+\item
+  Plot title or caption overclaims causality or population inference.
+\item
+  Missing caption, audit note, or AI-use note.
+\item
+  Code does not run from the repository.
+\item
+  Revised plot is not materially different from the flawed or draft
+  version.
+\end{itemize}
+
+\chapter{Assignment 6: EDA, Table 1, and AI
+Audit}\label{assignment-6-eda-table-1-and-ai-audit}
+
+\section{Purpose}\label{purpose-2}
+
+Produce a transparent descriptive EDA note and Table 1-style summary
+from the NHANES Health Equity classroom dataset. You will also audit a
+planted-error starter to practice catching correctness, reproducibility,
+and interpretation problems.
+
+\section{Inputs}\label{inputs-3}
+
+\begin{itemize}
+\tightlist
+\item
+  Dataset: \texttt{examples/nhanes-equity/data/nhanes\_equity\_v6.csv}
+\item
+  Worked example:
+  \texttt{weeks/week07-eda-ai-audit/worked-example-table1.qmd}
+\item
+  Activity prompt:
+  \texttt{weeks/week07-eda-ai-audit/activity-table1-audit.qmd}
+\item
+  Planted-error starter: distributed by the instructor or TA
+\end{itemize}
+
+\section{Step-by-Step Tasks}\label{step-by-step-tasks-1}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Load the CSV snapshot with a relative path.
+\item
+  Define and document an analysis cohort, using age 20-80 unless
+  instructed otherwise.
+\item
+  Create a missingness table for key variables.
+\item
+  Produce a Table 1-style summary by \texttt{IncomeGroup}.
+\item
+  Include at minimum N, BMI mean (SD), and age mean (SD).
+\item
+  Write a short methods note that states the analysis is descriptive,
+  unweighted, and non-causal.
+\item
+  Audit the planted-error starter and list at least five issues.
+\item
+  Categorize each issue as correctness, reproducibility, or
+  interpretation.
+\end{enumerate}
+
+\section{What To Submit}\label{what-to-submit-1}
+
+Place all submission files in:
+
+\begin{Shaded}
+\begin{Highlighting}[numbers=left,,]
+\NormalTok{assignments/assignment06{-}eda{-}ai{-}audit/submission/}
+\end{Highlighting}
+\end{Shaded}
+
+Submit these files:
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{eda-note.qmd}: rerunnable Quarto file with cohort definition,
+  missingness table, Table 1, and methods note.
+\item
+  \texttt{eda-note.html}: rendered output.
+\item
+  \texttt{table1.csv}: exported Table 1 or equivalent descriptive
+  summary.
+\item
+  \texttt{audit-note.md}: at least five planted issues with category,
+  why it matters, and corrected approach.
+\item
+  \texttt{ai-use-note.md}: required if AI was used; otherwise include a
+  one-sentence note saying AI was not used.
+\end{itemize}
+
+\section{Submission Location}\label{submission-location-1}
+
+TODO: Instructor to confirm Canvas upload, repository link, or both.
+
+\section{Grading Checklist}\label{grading-checklist-2}
+
+Complete:
+
+\begin{itemize}
+\tightlist
+\item
+  Uses \texttt{examples/nhanes-equity/data/nhanes\_equity\_v6.csv} with
+  a relative path.
+\item
+  Cohort definition is stated before summarizing.
+\item
+  Missingness is checked and reported.
+\item
+  Table 1 includes N, BMI mean (SD), and age mean (SD) by group.
+\item
+  Methods note avoids causal or population-level overclaims.
+\item
+  Audit note identifies at least five issues across correctness,
+  reproducibility, and interpretation.
+\item
+  AI-use note is present and specific.
+\end{itemize}
+
+Needs work:
+
+\begin{itemize}
+\tightlist
+\item
+  Uses an absolute or machine-specific path.
+\item
+  Cohort is unclear or inconsistent with the code.
+\item
+  Rows are dropped silently without missingness documentation.
+\item
+  Statistics are mislabeled or missing variability measures.
+\item
+  Interpretation overclaims causality.
+\item
+  Code does not render from the repository.
+\end{itemize}
+
 \chapter*{Project Milestones}\label{project-milestones}
 \addcontentsline{toc}{chapter}{Project Milestones}
 
@@ -7495,7 +8872,7 @@ Final Portfolio & Dec 11 Friday & Complete reproducible portfolio \\
 
 \markright{TODO}
 
-\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-warning-color-frame, toptitle=1mm, colback=white, leftrule=.75mm, toprule=.15mm, colbacktitle=quarto-callout-warning-color!10!white, breakable, bottomrule=.15mm, opacityback=0, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, rightrule=.15mm, bottomtitle=1mm, opacitybacktitle=0.6, titlerule=0mm, arc=.35mm, left=2mm, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, opacitybacktitle=0.6, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, toptitle=1mm, colframe=quarto-callout-warning-color-frame, leftrule=.75mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, bottomrule=.15mm, arc=.35mm, titlerule=0mm, coltitle=black, colbacktitle=quarto-callout-warning-color!10!white]
 
 Create detailed milestone briefs in each \texttt{milestones/} subfolder
 from \texttt{milestones/milestone-template.qmd}.
@@ -9500,6 +10877,247 @@ Checklists}\label{definition-of-done-checklists}
   Security, privacy, and bias risks are considered.
 \item
   The final text does not cite sources invented by AI.
+\end{itemize}
+
+\chapter*{NHANES Equity Case Study Teaching
+Notes}\label{nhanes-equity-case-study-teaching-notes}
+\addcontentsline{toc}{chapter}{NHANES Equity Case Study Teaching Notes}
+
+\markboth{NHANES Equity Case Study Teaching Notes}{NHANES Equity Case
+Study Teaching Notes}
+
+\section*{Purpose}\label{purpose-3}
+\addcontentsline{toc}{section}{Purpose}
+
+\markright{Purpose}
+
+This note gives RAs and instructors the teaching plan for the recurring
+NHANES Health Equity Dashboard case study. The case study should
+function as a course spine: students revisit the same app, data, and
+workflow from different angles as their skills mature. It should not
+become a second term project.
+
+\section*{What Was Implemented}\label{what-was-implemented}
+\addcontentsline{toc}{section}{What Was Implemented}
+
+\markright{What Was Implemented}
+
+The case study now lives in one self-contained folder:
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{examples/nhanes-equity/app/app.R}
+\item
+  \texttt{examples/nhanes-equity/data/nhanes\_equity\_v6.rds}
+\item
+  \texttt{examples/nhanes-equity/data/nhanes\_equity\_v6.csv}
+\item
+  \texttt{examples/nhanes-equity/scripts/build\_nhanes\_equity.R}
+\item
+  \texttt{examples/nhanes-equity/snippets/case-study-data-only.qmd}
+\item
+  \texttt{examples/nhanes-equity/snippets/case-study-data-analysis.qmd}
+\item
+  \texttt{examples/nhanes-equity/snippets/case-study-dashboard.qmd}
+\item
+  \texttt{examples/nhanes-equity/README.md}
+\end{itemize}
+
+The app was adapted from \texttt{examples/bmi39.R}. The original task
+brief referred to \texttt{examples/bmi.39.R}, but that file was not
+present in this checkout.
+
+The cached data are stored in \texttt{examples/nhanes-equity/data/} so
+the case-study app, script, README, and weekly snippets all use one
+consistent location. Legacy copies under \texttt{examples/data/} were
+left untouched to avoid breaking older references.
+
+The weekly index pages for Weeks 1-11 now include phased case-study
+sections. Weeks 1-7 use data-first headings and snippets; Weeks 8-11 use
+the dashboard-forward snippet once app work becomes central.
+
+\section*{Pedagogical Design}\label{pedagogical-design}
+\addcontentsline{toc}{section}{Pedagogical Design}
+
+\markright{Pedagogical Design}
+
+The strongest use of this case study is incremental. Students should
+first learn to inspect and document a provided artifact, then audit and
+compare code, then critique visual and KT choices, and only later
+perform a fresh-run reproducibility stress test.
+
+The progression is:
+
+\begin{itemize}
+\tightlist
+\item
+  Weeks 1-2: provenance, ethics, folder structure, relative paths, and
+  rendering; no app run instructions.
+\item
+  Weeks 3-5: data loading, missingness checks, AI audit comments,
+  documentation-only Git changes, and R/Python parity checks using the
+  CSV snapshot.
+\item
+  Weeks 6-7: visualization critique, flawed-plot audit, EDA, Table 1,
+  and planted-error audit.
+\item
+  Week 8: first week where running the Shiny app is central.
+\item
+  Weeks 9-10: slides, reports, source notes, limitations, and
+  audience-specific communication.
+\item
+  Week 11: fresh-session reproducibility testing and optional rebuild
+  from CDC if internet access is available.
+\end{itemize}
+
+The cached RDS is the default classroom path. Rebuilding from CDC
+through \texttt{nhanesA} is valuable, but it is network-dependent and
+can be slow. Treat CDC rebuilds as an instructor demo or Week 11
+challenge unless the course explicitly allocates time for them.
+
+\section*{Week-by-Week Instructor
+Notes}\label{week-by-week-instructor-notes}
+\addcontentsline{toc}{section}{Week-by-Week Instructor Notes}
+
+\markright{Week-by-Week Instructor Notes}
+
+Week 1 introduces the case study through the Data Intake Card. Keep the
+focus on provenance, stewardship, and KT framing. Students do not need
+to run the app.
+
+Week 2 uses the case study to make repo structure concrete. Students
+should locate the app, data, script, and snippet; confirm that paths are
+relative; and render the book.
+
+Week 3 uses the CSV snapshot as a code-reading and data-inspection
+object. Students load, inspect, summarize, and ask AI to comment on
+code, then audit the comments against the actual operations.
+
+Week 4 uses the case study for Git practice. The safest PR-sized change
+is documentation-only: label, caption, README wording, or a limitation
+note. Avoid asking students to add new analytic variables during the Git
+week.
+
+Week 5 uses the CSV snapshot for R/Python parity. The goal is not Python
+mastery; it is learning how plausible outputs can diverge because of
+missing values, data types, or grouping choices.
+
+Week 6 uses the worked ggplot example, flawed instructor plot, and
+visual-audit activity. Prefer instructor-provided flawed examples over
+asking students to invent misleading visuals from scratch.
+
+Week 7 uses the worked Table 1 example and planted-error starter. Survey
+weights, strata, and PSU columns can be identified, but design-based
+standard errors should be instructor/demo material unless already
+taught.
+
+Week 8 is the first app-forward week. Students should run the app,
+identify an audience, and improve one audience-facing label, help text,
+caption, or interpretation note. Deployment should remain optional
+unless explicitly assigned.
+
+Week 9 uses one dashboard plot or table as the basis for a short slide
+explanation. Students should include a plain-language takeaway, a
+limitation, and a source note.
+
+Week 10 turns the dashboard into a companion report. The report should
+document data, methods, limitations, and source notes rather than
+duplicating the dashboard interface.
+
+Week 11 stress-tests reproducibility. Students should launch the app
+from a fresh session, confirm the cached RDS path, and optionally
+rebuild from CDC if internet access and time allow.
+
+\section*{What RAs Should Watch For}\label{what-ras-should-watch-for}
+\addcontentsline{toc}{section}{What RAs Should Watch For}
+
+\markright{What RAs Should Watch For}
+
+\begin{itemize}
+\tightlist
+\item
+  Students may confuse the cached case-study dataset with raw NHANES
+  microdata.
+\item
+  The app's Download CSV button exports the currently summarized table
+  output, not raw NHANES microdata.
+\item
+  The CDC rebuild path requires internet access and the \texttt{nhanesA}
+  package.
+\item
+  Week pages should include the shared snippet rather than duplicating
+  instructions.
+\item
+  Weeks 1-2 should not instruct students to run the app.
+\item
+  Week 8 is the first week where app running is central.
+\item
+  Student changes should stay small unless the instructor explicitly
+  assigns a dashboard feature.
+\item
+  Relative paths are part of the lesson; discourage absolute
+  machine-specific paths.
+\end{itemize}
+
+\section*{TODO Decisions}\label{todo-decisions}
+\addcontentsline{toc}{section}{TODO Decisions}
+
+\markright{TODO Decisions}
+
+\begin{itemize}
+\tightlist
+\item
+  TODO: Decide whether the legacy files in \texttt{examples/data/}
+  should stay for backward compatibility or be retired after all
+  references are updated.
+\item
+  TODO: Decide whether \texttt{examples/bmi39.R} remains as a historical
+  source file or becomes a short redirect note to
+  \texttt{examples/nhanes-equity/app/app.R}.
+\item
+  TODO: Decide whether CDC-rebuilt data should be committed each term or
+  treated as generated output.
+\item
+  TODO: Decide whether Week 5's R/Python parity check is optional
+  practice or part of an assignment.
+\item
+  TODO: Decide whether Week 8 includes only local app use or also
+  demonstrates deployment.
+\item
+  TODO: Decide whether the Week 6 flawed plot is distributed as code,
+  image, or both.
+\item
+  TODO: Decide whether the Week 7 planted-error starter is distributed
+  from the instructor folder or copied into student assignment repos.
+\item
+  TODO: Choose any additional required Table 1 variables for Week 7
+  beyond N, BMI mean (SD), and age mean (SD).
+\end{itemize}
+
+\section*{Definition of Done for This Case
+Study}\label{definition-of-done-for-this-case-study}
+\addcontentsline{toc}{section}{Definition of Done for This Case Study}
+
+\markright{Definition of Done for This Case Study}
+
+\begin{itemize}
+\tightlist
+\item
+  The book renders from the repo root.
+\item
+  Weeks 1-11 each include a short case-study touchpoint.
+\item
+  The case-study folder contains runnable app code, cached data, rebuild
+  script, shared snippet, and README.
+\item
+  Weeks 6-7 include worked examples, student-facing activities, and
+  instructor-only keys.
+\item
+  Students can complete the default classroom path without internet.
+\item
+  CDC rebuilds are documented as optional, network-dependent
+  reproducibility work.
 \end{itemize}
 
 \chapter{Syllabus-to-Content Coverage

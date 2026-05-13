@@ -537,6 +537,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../weeks/week06-visualization/worked-example-ggplot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Worked Example: Descriptive BMI Visualization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../weeks/week06-visualization/activity-ai-visual-audit.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Activity: AI Visual Audit</span></a>
   </div>
@@ -556,6 +562,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week07-eda-ai-audit/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Exploring Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week07-eda-ai-audit/worked-example-table1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Worked Example: EDA and Table 1</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -704,6 +716,18 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../assignments/assignment05-visualization/README.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Assignment 5: Visualization Audit and Revision</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../assignments/assignment06-eda-ai-audit/README.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Assignment 6: EDA, Table 1, and AI Audit</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../milestones/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Project Milestones</span></a>
   </div>
@@ -822,8 +846,14 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../assistant-playbook/nhanes-equity-case-study.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">NHANES Equity Case Study Teaching Notes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../syllabus/topic-coverage-audit.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Syllabus-to-Content Coverage Audit</span></span></a>
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Syllabus-to-Content Coverage Audit</span></span></a>
   </div>
 </li>
       </ul>
@@ -839,6 +869,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#case-study-data-analysis" id="toc-case-study-data-analysis" class="nav-link" data-scroll-target="#case-study-data-analysis">Case Study Data Analysis</a></li>
   <li><a href="#git1.qmd-concepts-the-save-game-of-reproducible-science" id="toc-git1.qmd-concepts-the-save-game-of-reproducible-science" class="nav-link" data-scroll-target="#git1.qmd-concepts-the-save-game-of-reproducible-science"><code>git1.qmd</code> Concepts: The “Save Game” of Reproducible Science</a>
   <ul class="collapse">
   <li><a href="#why-git-matters-in-health-research" id="toc-why-git-matters-in-health-research" class="nav-link" data-scroll-target="#why-git-matters-in-health-research">Why Git Matters in Health Research</a></li>
@@ -918,6 +949,23 @@ ul.task-list li input[type="checkbox"] {
 <li>Configure <code>.gitignore</code> and use relative paths for repo hygiene.</li>
 <li>Use AI to translate diffs into clear, professional audit logs.</li>
 <li>Set up a group repository and agree on collaboration norms for the term project.</li>
+</ul>
+</section>
+<section id="case-study-data-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="case-study-data-analysis">Case Study Data Analysis</h2>
+<p>The <strong>NHANES Health Equity data spine</strong> now supports code-reading, EDA, visualization, and reproducibility checks. Use the cached CSV/RDS for routine class work; any CDC retrieval pipeline is optional or instructor-directed.</p>
+<ul>
+<li>Cached RDS: <code>examples/nhanes-equity/data/nhanes_equity_v6.rds</code></li>
+<li>CSV snapshot: <code>examples/nhanes-equity/data/nhanes_equity_v6.csv</code></li>
+<li>Case-study README: <code>examples/nhanes-equity/README.md</code></li>
+</ul>
+<p>The default classroom path is to use the cached data so the analysis work is reproducible without internet access.</p>
+<p>Mini-tasks for Week 4:</p>
+<ul>
+<li>Create a branch for a tiny dashboard documentation change.</li>
+<li>Edit only a label, caption, or README sentence; do not change analytic logic.</li>
+<li>Open a pull request and use the diff to confirm the change is limited.</li>
+<li>In the pull request description, state how you verified the change is documentation-only.</li>
 </ul>
 <hr>
 </section>

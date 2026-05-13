@@ -15,6 +15,17 @@
 -   Use AI to translate diffs into clear, professional audit logs.
 -   Set up a group repository and agree on collaboration norms for the term project.
 
+## Case Study Data Analysis
+
+{{< include ../../examples/nhanes-equity/snippets/case-study-data-analysis.qmd >}}
+
+Mini-tasks for Week 4:
+
+- Create a branch for a tiny dashboard documentation change.
+- Edit only a label, caption, or README sentence; do not change analytic logic.
+- Open a pull request and use the diff to confirm the change is limited.
+- In the pull request description, state how you verified the change is documentation-only.
+
 ------------------------------------------------------------------------
 
 ## `git1.qmd` Concepts: The "Save Game" of Reproducible Science

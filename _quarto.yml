@@ -1,6 +1,8 @@
 project:
   type: book
   output-dir: docs
+  resources:
+    - weeks/week11-portfolio-surgery/static-dashboard-ojs.qmd
 execute:
   freeze: auto
 book:
@@ -94,10 +96,12 @@ book:
     - part: "Week 6: Data Visualization"
       chapters:
         - weeks/week06-visualization/index.qmd
+        - weeks/week06-visualization/worked-example-ggplot.qmd
         - weeks/week06-visualization/activity-ai-visual-audit.qmd
     - part: "Week 7: EDA, Table 1 & AI Auditing"
       chapters:
         - weeks/week07-eda-ai-audit/index.qmd
+        - weeks/week07-eda-ai-audit/worked-example-table1.qmd
         - weeks/week07-eda-ai-audit/activity-table1-audit.qmd
     - part: "Week 8: Dashboard Prototypes for KT"
       chapters:
@@ -123,6 +127,8 @@ book:
       chapters:
         - assignments/index.qmd
         - assignments/assignment-template.qmd
+        - assignments/assignment05-visualization/README.md
+        - assignments/assignment06-eda-ai-audit/README.md
         - milestones/index.qmd
         - milestones/milestone-template.qmd
     - part: "Reference: Data Sources"
@@ -143,6 +149,7 @@ book:
       chapters:
         - assistant-playbook/index.qmd
         - assistant-playbook/definition-of-done.qmd
+        - assistant-playbook/nhanes-equity-case-study.qmd
         - syllabus/topic-coverage-audit.md
 
 bibliography: references.bib

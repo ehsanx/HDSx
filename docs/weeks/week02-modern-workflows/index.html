@@ -572,6 +572,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../weeks/week06-visualization/worked-example-ggplot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Worked Example: Descriptive BMI Visualization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../weeks/week06-visualization/activity-ai-visual-audit.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Activity: AI Visual Audit</span></a>
   </div>
@@ -591,6 +597,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week07-eda-ai-audit/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Exploring Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week07-eda-ai-audit/worked-example-table1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Worked Example: EDA and Table 1</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -739,6 +751,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../assignments/assignment05-visualization/README.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Assignment 5: Visualization Audit and Revision</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../assignments/assignment06-eda-ai-audit/README.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Assignment 6: EDA, Table 1, and AI Audit</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../milestones/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Project Milestones</span></a>
   </div>
@@ -857,8 +881,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../assistant-playbook/nhanes-equity-case-study.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">NHANES Equity Case Study Teaching Notes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../syllabus/topic-coverage-audit.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Syllabus-to-Content Coverage Audit</span></span></a>
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Syllabus-to-Content Coverage Audit</span></span></a>
   </div>
 </li>
       </ul>
@@ -874,6 +904,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#case-study-data-spine" id="toc-case-study-data-spine" class="nav-link" data-scroll-target="#case-study-data-spine">Case Study Data Spine</a></li>
   <li><a href="#workflows1.qmd-the-analogy-public-computer-and-cloud-drive" id="toc-workflows1.qmd-the-analogy-public-computer-and-cloud-drive" class="nav-link" data-scroll-target="#workflows1.qmd-the-analogy-public-computer-and-cloud-drive"><code>workflows1.qmd</code> The Analogy: Public Computer and Cloud Drive</a>
   <ul class="collapse">
   <li><a href="#the-repository-your-cloud-drive" id="toc-the-repository-your-cloud-drive" class="nav-link" data-scroll-target="#the-repository-your-cloud-drive">The Repository (Your Cloud Drive)</a></li>
@@ -982,6 +1013,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Maintain a reproducible project structure using the <code>data/</code> and <code>output/</code> folder convention.</li>
 <li>Stage, commit, and sync changes using the VS Code Source Control panel.</li>
 <li>Stop your Codespace to conserve your free monthly hours.</li>
+</ul>
+</section>
+<section id="case-study-data-spine" class="level2">
+<h2 class="anchored" data-anchor-id="case-study-data-spine">Case Study Data Spine</h2>
+<p>The <strong>NHANES Health Equity data spine</strong> is the recurring dataset thread for this course. In the early weeks, use it only as a documented public-health data artifact: provenance, ethics, file organization, and reproducible paths.</p>
+<ul>
+<li>Cached RDS: <code>examples/nhanes-equity/data/nhanes_equity_v6.rds</code></li>
+<li>CSV snapshot: <code>examples/nhanes-equity/data/nhanes_equity_v6.csv</code></li>
+<li>Case-study README: <code>examples/nhanes-equity/README.md</code></li>
+</ul>
+<p>The cached files are provided so early work can happen without internet access.</p>
+<p>Mini-tasks for Week 2:</p>
+<ul>
+<li>Locate the app, data, script, and snippet folders in the Explorer.</li>
+<li>Explain why the app uses relative paths instead of machine-specific paths.</li>
+<li>Confirm that the weekly page includes the shared snippet rather than duplicating instructions.</li>
+<li>Render the book from the repository root and confirm this page updates in the rendered output.</li>
 </ul>
 <hr>
 </section>

@@ -31,7 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
 <link href="../../weeks/week08-dashboard-kt/index.html" rel="next">
-<link href="../../weeks/week07-eda-ai-audit/index.html" rel="prev">
+<link href="../../weeks/week07-eda-ai-audit/worked-example-table1.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -537,6 +537,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../weeks/week06-visualization/worked-example-ggplot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Worked Example: Descriptive BMI Visualization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../weeks/week06-visualization/activity-ai-visual-audit.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Activity: AI Visual Audit</span></a>
   </div>
@@ -556,6 +562,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week07-eda-ai-audit/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Exploring Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week07-eda-ai-audit/worked-example-table1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Worked Example: EDA and Table 1</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -704,6 +716,18 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../assignments/assignment05-visualization/README.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Assignment 5: Visualization Audit and Revision</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../assignments/assignment06-eda-ai-audit/README.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Assignment 6: EDA, Table 1, and AI Audit</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../milestones/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Project Milestones</span></a>
   </div>
@@ -822,8 +846,14 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../assistant-playbook/nhanes-equity-case-study.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">NHANES Equity Case Study Teaching Notes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../syllabus/topic-coverage-audit.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Syllabus-to-Content Coverage Audit</span></span></a>
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Syllabus-to-Content Coverage Audit</span></span></a>
   </div>
 </li>
       </ul>
@@ -839,8 +869,11 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#goal" id="toc-goal" class="nav-link active" data-scroll-target="#goal">Goal</a></li>
-  <li><a href="#todo-before-release" id="toc-todo-before-release" class="nav-link" data-scroll-target="#todo-before-release">TODO Before Release</a></li>
-  <li><a href="#student-output" id="toc-student-output" class="nav-link" data-scroll-target="#student-output">Student Output</a></li>
+  <li><a href="#inputs" id="toc-inputs" class="nav-link" data-scroll-target="#inputs">Inputs</a></li>
+  <li><a href="#activity-steps" id="toc-activity-steps" class="nav-link" data-scroll-target="#activity-steps">Activity Steps</a></li>
+  <li><a href="#required-outputs" id="toc-required-outputs" class="nav-link" data-scroll-target="#required-outputs">Required Outputs</a></li>
+  <li><a href="#minimum-table-1-requirements" id="toc-minimum-table-1-requirements" class="nav-link" data-scroll-target="#minimum-table-1-requirements">Minimum Table 1 Requirements</a></li>
+  <li><a href="#completion-check" id="toc-completion-check" class="nav-link" data-scroll-target="#completion-check">Completion Check</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ehsanx/Health-AI-KT/edit/main/weeks/week07-eda-ai-audit/activity-table1-audit.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ehsanx/Health-AI-KT/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -870,34 +903,46 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="goal">Goal</h2>
 <p>Students create a descriptive summary and audit AI-generated code or interpretation for planted errors.</p>
 </section>
-<section id="todo-before-release" class="level2">
-<h2 class="anchored" data-anchor-id="todo-before-release">TODO Before Release</h2>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Content TODO
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<section id="inputs" class="level2">
+<h2 class="anchored" data-anchor-id="inputs">Inputs</h2>
 <ul>
-<li>Add the starter data path.</li>
-<li>Add the expected Table 1 variables.</li>
-<li>Add planted errors in code, summary text, and at least one visualization.</li>
-<li>Add an answer key for instructors or TAs outside the student-facing page.</li>
+<li>Student worked example: <code>weeks/week07-eda-ai-audit/worked-example-table1.qmd</code></li>
+<li>Dataset: <code>examples/nhanes-equity/data/nhanes_equity_v6.csv</code></li>
+<li>Planted-error starter: distributed by the instructor or TA during the activity</li>
 </ul>
-</div>
-</div>
 </section>
-<section id="student-output" class="level2">
-<h2 class="anchored" data-anchor-id="student-output">Student Output</h2>
+<section id="activity-steps" class="level2">
+<h2 class="anchored" data-anchor-id="activity-steps">Activity Steps</h2>
+<ol type="1">
+<li>Review the worked example and identify the cohort definition, missingness check, and Table 1 labels.</li>
+<li>Open the planted-error starter provided by the instructor.</li>
+<li>Run or read the starter code and annotate at least five issues.</li>
+<li>Categorize each issue as <strong>correctness</strong>, <strong>reproducibility</strong>, or <strong>interpretation</strong>.</li>
+<li>Produce a corrected EDA note and Table 1.</li>
+</ol>
+</section>
+<section id="required-outputs" class="level2">
+<h2 class="anchored" data-anchor-id="required-outputs">Required Outputs</h2>
 <ul>
-<li>A rendered Quarto EDA note.</li>
-<li>A Table 1 or equivalent descriptive summary.</li>
-<li>A written audit note listing detected errors and fixes.</li>
+<li><code>eda-note.qmd</code>: a rerunnable Quarto note with cohort definition, missingness table, and Table 1.</li>
+<li><code>eda-note.html</code>: rendered output from the Quarto note.</li>
+<li><code>table1.csv</code>: exported Table 1 or equivalent descriptive summary.</li>
+<li><code>audit-note.md</code>: at least five detected issues with category, why it matters, and corrected approach.</li>
+<li><code>ai-use-note.md</code>: if you used AI, explain what it helped with and how you verified the result.</li>
 </ul>
+</section>
+<section id="minimum-table-1-requirements" class="level2">
+<h2 class="anchored" data-anchor-id="minimum-table-1-requirements">Minimum Table 1 Requirements</h2>
+<ul>
+<li>Cohort: age 20-80, unless your instructor approves a different cohort.</li>
+<li>Stratifier: <code>IncomeGroup</code>, unless your instructor assigns a different grouping variable.</li>
+<li>Variables: N, BMI mean (SD), and age mean (SD).</li>
+<li>Methods note: state that the table is descriptive, unweighted, and non-causal.</li>
+</ul>
+</section>
+<section id="completion-check" class="level2">
+<h2 class="anchored" data-anchor-id="completion-check">Completion Check</h2>
+<p>Your submission is complete when another student can rerun your <code>eda-note.qmd</code>, see exactly who is included, understand how missingness was handled, and identify why the planted-error starter was misleading.</p>
 
 
 </section>
@@ -1355,8 +1400,8 @@ Content TODO
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../weeks/week07-eda-ai-audit/index.html" class="pagination-link" aria-label="Exploring Data">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Exploring Data</span>
+      <a href="../../weeks/week07-eda-ai-audit/worked-example-table1.html" class="pagination-link" aria-label="Worked Example: EDA and Table 1">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Worked Example: EDA and Table 1</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

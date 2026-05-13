@@ -1,0 +1,80 @@
+---
+title: "Static NHANES Equity Dashboard Draft"
+format:
+  dashboard:
+    orientation: rows
+---
+
+# Sidebar {.sidebar}
+
+This optional extension sketches a no-server dashboard using a CSV snapshot and Observable JS. It is advanced material for students who want to compare a static dashboard pattern with the Shiny app.
+
+```{ojs}
+nhanes = FileAttachment("../../examples/nhanes-equity/data/nhanes_equity_v6.csv").csv({typed: true})
+incomeGroups = Array.from(new Set(nhanes.map(d => d.IncomeGroup).filter(d => d))).sort()
+viewof selectedIncome = Inputs.select(["All"].concat(incomeGroups), {
+  label: "Income group",
+  value: "All"
+})
+```
+
+# Row
+
+## Mean BMI Across Cycle
+
+```{ojs}
+filtered = selectedIncome === "All"
+  ? nhanes
+  : nhanes.filter(d => d.IncomeGroup === selectedIncome)
+
+adultRows = filtered.filter(d =>
+  d.BMI != null &&
+  d.Age >= 20 &&
+  d.Age <= 80 &&
+  d.Cycle != null
+)
+
+cycleSummary = Array.from(
+  d3.rollup(
+    adultRows,
+    rows => ({
+      n: rows.length,
+      mean_bmi: d3.mean(rows, d => d.BMI)
+    }),
+    d => d.Cycle
+  ),
+  ([Cycle, values]) => ({
+    Cycle,
+    n: values.n,
+    mean_bmi: values.mean_bmi
+  })
+).sort((a, b) => d3.ascending(a.Cycle, b.Cycle))
+
+Plot.plot({
+  height: 360,
+  marginBottom: 70,
+  y: {label: "Mean BMI"},
+  x: {label: "NHANES cycle", tickRotate: -45},
+  marks: [
+    Plot.lineY(cycleSummary, {x: "Cycle", y: "mean_bmi"}),
+    Plot.dot(cycleSummary, {x: "Cycle", y: "mean_bmi", r: 4}),
+    Plot.ruleY([0])
+  ]
+})
+```
+
+## Summary Table
+
+```{ojs}
+Inputs.table(cycleSummary.map(d => ({
+  Cycle: d.Cycle,
+  N: d.n,
+  "Mean BMI": d.mean_bmi == null ? null : d.mean_bmi.toFixed(1)
+})))
+```
+
+# Row
+
+## Interpretation Note
+
+This dashboard uses the cached CSV snapshot and runs entirely in the browser. It is descriptive, unweighted, and not a replacement for the Shiny app or a survey-weighted analysis. Use it as a portfolio extension only after the core reproducibility checks are complete.

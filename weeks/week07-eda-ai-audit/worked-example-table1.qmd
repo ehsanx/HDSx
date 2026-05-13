@@ -1,0 +1,93 @@
+# Worked Example: EDA and Table 1 {.unnumbered}
+
+## Goal
+
+This worked example creates a small Table 1-style descriptive summary from the NHANES Health Equity CSV snapshot. The goal is transparent EDA: define the cohort, check missingness, summarize key variables, and write a methods note that does not overclaim.
+
+```{r}
+#| label: load-nhanes-equity-table1
+#| message: false
+#| warning: false
+library(readr)
+library(dplyr)
+library(knitr)
+
+candidate_paths <- c(
+  "examples/nhanes-equity/data/nhanes_equity_v6.csv",
+  "../../examples/nhanes-equity/data/nhanes_equity_v6.csv"
+)
+
+data_path <- candidate_paths[file.exists(candidate_paths)][1]
+if (is.na(data_path)) {
+  stop("Could not find examples/nhanes-equity/data/nhanes_equity_v6.csv")
+}
+
+nhanes <- read_csv(data_path, show_col_types = FALSE)
+```
+
+## Define the Analysis Cohort
+
+Decision: restrict to adults age 20-80. This keeps the example focused on adult BMI summaries and avoids mixing children, adolescents, and the oldest age-coded records into one classroom table.
+
+```{r}
+#| label: define-analysis-cohort
+analysis_df <- nhanes |>
+  filter(Age >= 20, Age <= 80)
+
+cohort_counts <- tibble(
+  step = c("Prepared CSV rows", "Rows after age 20-80 restriction"),
+  n = c(nrow(nhanes), nrow(analysis_df))
+)
+
+kable(cohort_counts)
+```
+
+## Missingness Check
+
+```{r}
+#| label: missingness-table
+key_vars <- c("BMI", "Age", "IncomeGroup", "Gender", "Race", "Cycle")
+
+missingness <- tibble(variable = key_vars) |>
+  mutate(
+    missing_n = vapply(analysis_df[key_vars], function(x) sum(is.na(x)), numeric(1)),
+    missing_percent = round(100 * missing_n / nrow(analysis_df), 1)
+  )
+
+kable(missingness)
+```
+
+## Table 1-Style Summary
+
+This example stratifies by `IncomeGroup` and reports N plus mean (SD) for BMI and age. It is unweighted and descriptive.
+
+```{r}
+#| label: table1-by-income-group
+mean_sd <- function(x) {
+  sprintf("%.1f (%.1f)", mean(x, na.rm = TRUE), sd(x, na.rm = TRUE))
+}
+
+table1 <- analysis_df |>
+  filter(!is.na(IncomeGroup)) |>
+  group_by(IncomeGroup) |>
+  summarise(
+    N = n(),
+    `BMI, mean (SD)` = mean_sd(BMI),
+    `Age, mean (SD)` = mean_sd(Age),
+    .groups = "drop"
+  )
+
+kable(table1)
+```
+
+## Methods Note Template
+
+> We used the prepared NHANES Health Equity classroom CSV snapshot. The analysis cohort included records with age 20-80. We summarized BMI and age by income group using unweighted descriptive statistics. Missing values were checked before summarizing. These summaries describe the prepared class dataset and should not be interpreted as causal effects or population estimates.
+
+## Reproducibility Notes
+
+- The data path is relative to the repository.
+- The cohort restriction is stated before the table.
+- Missingness is reported before complete-case summaries.
+- The table labels distinguish N, mean, and SD.
+- The methods note states that the analysis is descriptive and non-causal.

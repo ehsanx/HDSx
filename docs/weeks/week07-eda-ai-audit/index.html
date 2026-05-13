@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../weeks/week07-eda-ai-audit/activity-table1-audit.html" rel="next">
+<link href="../../weeks/week07-eda-ai-audit/worked-example-table1.html" rel="next">
 <link href="../../weeks/week06-visualization/activity-ai-visual-audit.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -537,6 +537,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../weeks/week06-visualization/worked-example-ggplot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Worked Example: Descriptive BMI Visualization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../weeks/week06-visualization/activity-ai-visual-audit.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Activity: AI Visual Audit</span></a>
   </div>
@@ -556,6 +562,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week07-eda-ai-audit/index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Exploring Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week07-eda-ai-audit/worked-example-table1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Worked Example: EDA and Table 1</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -704,6 +716,18 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../assignments/assignment05-visualization/README.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Assignment 5: Visualization Audit and Revision</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../assignments/assignment06-eda-ai-audit/README.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Assignment 6: EDA, Table 1, and AI Audit</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../milestones/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Project Milestones</span></a>
   </div>
@@ -822,8 +846,14 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../assistant-playbook/nhanes-equity-case-study.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">NHANES Equity Case Study Teaching Notes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../syllabus/topic-coverage-audit.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Syllabus-to-Content Coverage Audit</span></span></a>
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Syllabus-to-Content Coverage Audit</span></span></a>
   </div>
 </li>
       </ul>
@@ -839,7 +869,8 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#todo-before-release" id="toc-todo-before-release" class="nav-link" data-scroll-target="#todo-before-release">TODO Before Release</a></li>
+  <li><a href="#case-study-data-analysis" id="toc-case-study-data-analysis" class="nav-link" data-scroll-target="#case-study-data-analysis">Case Study Data Analysis</a></li>
+  <li><a href="#instructor-decisions" id="toc-instructor-decisions" class="nav-link" data-scroll-target="#instructor-decisions">Instructor Decisions</a></li>
   <li><a href="#definition-of-done" id="toc-definition-of-done" class="nav-link" data-scroll-target="#definition-of-done">Definition of Done</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ehsanx/Health-AI-KT/edit/main/weeks/week07-eda-ai-audit/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ehsanx/Health-AI-KT/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -870,23 +901,39 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>Before modeling, you must understand your data. This chapter guides students through the rigorous process of Exploratory Data Analysis (EDA) and the creation of the standard “Table 1” for demographic characteristics. You will learn to document every cleaning decision and exclusion criteria in a reproducible Quarto log, ensuring that your path from raw data to analysis dataset is transparent and repeatable by anyone.</p>
 </section>
-<section id="todo-before-release" class="level2">
-<h2 class="anchored" data-anchor-id="todo-before-release">TODO Before Release</h2>
+<section id="case-study-data-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="case-study-data-analysis">Case Study Data Analysis</h2>
+<p>The <strong>NHANES Health Equity data spine</strong> now supports code-reading, EDA, visualization, and reproducibility checks. Use the cached CSV/RDS for routine class work; any CDC retrieval pipeline is optional or instructor-directed.</p>
+<ul>
+<li>Cached RDS: <code>examples/nhanes-equity/data/nhanes_equity_v6.rds</code></li>
+<li>CSV snapshot: <code>examples/nhanes-equity/data/nhanes_equity_v6.csv</code></li>
+<li>Case-study README: <code>examples/nhanes-equity/README.md</code></li>
+</ul>
+<p>The default classroom path is to use the cached data so the analysis work is reproducible without internet access.</p>
+<p>Mini-tasks for Week 7:</p>
+<ul>
+<li>Work through the <a href="../../weeks/week07-eda-ai-audit/worked-example-table1.html">Table 1 worked example</a> using the CSV snapshot.</li>
+<li>Define and document an analysis cohort before summarizing.</li>
+<li>Create a Table 1-style summary with N, BMI mean (SD), and age mean (SD).</li>
+<li>Audit the planted-error starter and categorize at least five issues as correctness, reproducibility, or interpretation problems.</li>
+</ul>
+</section>
+<section id="instructor-decisions" class="level2">
+<h2 class="anchored" data-anchor-id="instructor-decisions">Instructor Decisions</h2>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Content TODO
+Before Release
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>Build a worked EDA using the NHANES example files in <code>examples/data/</code>.</li>
-<li>Add Table 1 expectations and an example table.</li>
-<li>Add a planted-error AI audit exercise.</li>
-<li>Add Assignment 6 instructions in <code>assignments/assignment06-eda-ai-audit/</code>.</li>
+<li>Confirm whether the Table 1 worked example becomes required pre-class work or in-class practice.</li>
+<li>Decide whether the planted-error starter is distributed as-is or copied into student assignment repos.</li>
+<li>Confirm the Assignment 6 submission route in Canvas or the repo.</li>
 <li>Connect the activity to Milestone 2 preliminary analysis.</li>
 </ul>
 </div>
@@ -1361,8 +1408,8 @@ Content TODO
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../weeks/week07-eda-ai-audit/activity-table1-audit.html" class="pagination-link" aria-label="Activity: Table 1 and AI Audit">
-        <span class="nav-page-text">Activity: Table 1 and AI Audit</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../weeks/week07-eda-ai-audit/worked-example-table1.html" class="pagination-link" aria-label="Worked Example: EDA and Table 1">
+        <span class="nav-page-text">Worked Example: EDA and Table 1</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

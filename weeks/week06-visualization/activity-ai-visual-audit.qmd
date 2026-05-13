@@ -4,18 +4,37 @@
 
 Students evaluate AI-generated visualizations for correctness, clarity, bias, aggregation choices, and misleading design.
 
-## TODO Before Release
+## Inputs
 
-::: {.callout-warning}
-## Content TODO
+- Student worked example: `weeks/week06-visualization/worked-example-ggplot.qmd`
+- Dataset: `examples/nhanes-equity/data/nhanes_equity_v6.csv`
+- Flawed plot/code: provided by your instructor or TA during the activity
 
-- Add a starter dataset and prompt.
-- Add one flawed AI-generated plot and one corrected version.
-- Add a short answer template for students to identify what changed and why.
-:::
+## Activity Steps
 
-## Student Output
+1. Review the worked example and note how it labels the data source, statistic, and limitation.
+2. Inspect the flawed plot or code provided by the instructor.
+3. Identify at least three issues that could mislead a reader.
+4. Revise the plot so the title, scale, grouping, and caption match the evidence.
+5. Write a short note explaining what changed and why.
 
-- One original AI-generated plot.
-- One revised plot.
-- A short audit note explaining at least three changes.
+## Required Outputs
+
+- `visual-audit-note.md`: an audit note listing at least three issues.
+- `corrected-plot.qmd`: a rerunnable Quarto file that creates the corrected plot.
+- `corrected-plot.png`: the exported corrected plot.
+- `caption.md`: a caption that states the statistic, data source, exclusions, and limitations.
+- `ai-use-note.md`: if you used AI, explain what it helped with and how you checked the result.
+
+## Audit Categories
+
+Use these categories in your audit note:
+
+- **Correctness:** Does the plot show what the title and labels claim?
+- **Design:** Do scale, color, ordering, and geometry support fair comparison?
+- **Interpretation:** Does the caption avoid causal or population-level claims that the plot cannot support?
+- **Reproducibility:** Can another person rerun the code from the repository root using relative paths?
+
+## Completion Check
+
+Your submission is complete when a peer can rerun your corrected plot, identify the main comparison without reading your code, and see at least one explicit limitation in the caption.

@@ -17,6 +17,17 @@
 - Document your analysis in Quarto by weaving code chunks with Markdown narrative.
 - Commit incrementally as you work (reinforcing Week 2 Git basics).
 
+## Case Study Data Analysis
+
+{{< include ../../examples/nhanes-equity/snippets/case-study-data-analysis.qmd >}}
+
+Mini-tasks for Week 3:
+
+- Load the CSV snapshot and inspect column names, row count, and missingness.
+- Summarize one numeric variable and one grouping variable with clear `NA` handling.
+- Ask an AI assistant to comment on your code, then audit whether the comments match the actual operations.
+- Note one place where an AI assistant could hallucinate a variable name or overstate what the descriptive summary means.
+
 ---
 
 ## `r1.qmd` Packages: Opening the Toolbox

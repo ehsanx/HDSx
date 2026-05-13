@@ -4,6 +4,17 @@
 
 Static PDF reports often sit unread, so this chapter introduces dynamic Knowledge Translation through Shiny apps and dashboards. Students will take their prior EDA results and transform them into interactive web tools that allow users to filter and explore the data themselves. You will learn the best practices of user interface design for health data and deploy your first live dashboard to the web via GitHub Pages or Shinylive.
 
+## Dashboard Case Study: NHANES Equity
+
+{{< include ../../examples/nhanes-equity/snippets/case-study-dashboard.qmd >}}
+
+Mini-tasks for Week 8:
+
+- Run the app and describe the intended audience in one sentence.
+- Make one audience-facing improvement to a label, help text, or interpretation note.
+- Verify the app still loads the cached RDS after your change.
+- Treat deployment as optional unless the instructor explicitly assigns it.
+
 ## TODO Before Release
 
 ::: {.callout-warning}

@@ -4,16 +4,41 @@
 
 Students practice evaluating whether a health dataset is usable, ethical, documented, and appropriate for reproducible analysis.
 
+## Approved Starter Portals (choose one)
+
+Choose **one** dataset/indicator page from one of the portals below (pick something you care about).
+You are **not** required to use the same dataset as other students.
+
+1) **Survey-style microdata (person-level):** NHANES or NHIS (see Reference: Data Sources)  
+   - Good if you want person-level variables (age, sex, BMI, smoking, etc.)
+   - Expect: codebooks, sampling notes, and data dictionaries
+
+2) **Indicators (aggregated country/province-level): WHO Global Health Observatory (GHO)**  
+   - Good if you want country-level trends (life expectancy, mortality, vaccination coverage, etc.)
+   - Expect: “indicator metadata” (definition + method), downloadable CSV, **not** person-level records
+
+   **How to use GHO quickly (what to click):**
+   - Pick **one indicator** (e.g., “Life expectancy at birth”, “Maternal mortality ratio”, “Diabetes prevalence”)
+   - Pick **one geography** (Canada or another country/region)
+   - Find: indicator definition / metadata, time coverage, and the download option
+
+3) **Canadian open data portal:** BC Data Catalogue or Open Government Portal (Canada)  
+   - Good if you want Canadian administrative/open datasets
+   - Expect: variable definitions vary widely (sometimes excellent, sometimes minimal)
+
+> Tip: If you’re unsure whether your selection is microdata or aggregated indicators, write “unknown” in `data_level` and explain what you observed on the download page.
+
 ## Student Template
 
 ```yaml
 dataset_name: ""
 publisher_org: ""
 permalink_url: ""
+date_accessed: "YYYY-MM-DD"
 license_terms: ""
 geography: ""
 time_coverage: ""
-data_level: ""
+data_level: ""   # microdata / aggregated / unknown
 variables_of_interest:
   - name: ""
     definition: ""
@@ -23,15 +48,80 @@ stewardship_notes: ""
 ai_use_note: ""
 ```
 
+## Example (Completed Data Intake Card — sample)
+
+### WHO
+
+This example uses **one WHO indicator** to demonstrate what “Complete” looks like.
+You may choose a different portal and topic.
+
+```yaml
+dataset_name: "Life expectancy at birth (years)"
+publisher_org: "World Health Organization (WHO)"
+permalink_url: "https://www.who.int/data/gho"
+license_terms: "See WHO terms on the portal; record as provided"
+geography: "Canada (and global comparison)"
+time_coverage: "2000–2023 (varies by country)"
+data_level: "Aggregated indicators (country-level)"
+variables_of_interest:
+  - name: "Life expectancy at birth (years)"
+    definition: "Expected years of life at birth (method described in WHO metadata)"
+    known_limitations: "Model-based estimates; depends on reporting quality; not person-level"
+stewardship_notes: "No individual-level data; still avoid overclaiming causality; cite metadata."
+ai_use_note: "Used AI to draft a plain-language summary of the indicator; verified against WHO metadata page."
+```
+
+### NHANES
+
+```yaml
+dataset_name: "NHANES 2017–2018 Demographics (example)"
+publisher_org: "CDC / NCHS"
+permalink_url: "https://wwwn.cdc.gov/nchs/nhanes/"
+date_accessed: "YYYY-MM-DD"
+license_terms: "Public-use (see NHANES guidance on site)"
+geography: "United States"
+time_coverage: "2017–2018"
+data_level: "Microdata (person-level)"
+variables_of_interest:
+  - name: "RIAGENDR"
+    definition: "Gender (coded categories per documentation)"
+known_limitations:
+  - "Complex survey design; weights needed for population inference"
+stewardship_notes: "De-identified public-use microdata; still avoid reporting small cell counts."
+ai_use_note: "Used AI to summarize the codebook section for RIAGENDR; verified against official documentation."
+```
+
+## Completion Checklist (Complete / Incomplete)
+
+To be marked **Complete**, your card must include:
+
+- [ ] A stable link (or link + date accessed)
+- [ ] Publisher/organization named
+- [ ] License/terms noted (even if “see portal terms”)
+- [ ] Data level identified (microdata vs aggregated indicators)
+- [ ] At least **one** variable with a definition grounded in documentation (not AI guesswork)
+- [ ] One limitation or risk of misuse (privacy, over-interpretation, stewardship)
+- [ ] AI-use note (what you used AI for + how you verified)
+
+> If you’re uncertain about something, write **unknown** and explain what you looked for.
 ## TODO Before Release
+
+## Submission (Week 1)
+
+This is **not graded**, but you must complete it because you’ll reuse it later.
+
+Submit by:
+- **Option A (recommended):** paste your completed card into Canvas (Week 1 module)
+- **Option B:** commit a `data-intake-card.md` file to your repo (we’ll do this starting Week 2)
+
+Instructor will confirm the submission route on Canvas.
 
 ::: {.callout-warning}
 ## Content TODO
 
 - Add 2-3 approved starter portals from Canvas.
-- Add one completed sample Data Intake Card.
 - Add a short rubric for provenance, licensing, variable clarity, and stewardship.
-- Decide whether students submit this on Canvas, GitHub, or both.
+- Explain that students will submit this on Canvas.
 :::
 
 ## Reproducibility Check
