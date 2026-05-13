@@ -1,0 +1,15 @@
+# AI Auditing {.unnumbered}
+
+Use these prompts with your AI assistant:
+
+-   **Audit:** "I am about to commit these changes. Explain what I changed in plain English. Did I delete anything important?"
+
+    Use this to spot accidental deletions or unintended edits before you commit.
+
+-   **Scribe:** "Based on this diff, write a one-sentence, professional commit message for my Quarto document."
+
+    Check that the message captures the **intent** (e.g., `"Filter patient cohort to age ≥ 65 per protocol"`), not just the action (`"changed line 42"`).
+
+-   **Panic:** "VS Code shows this error: \[PASTE ERROR\]. What does it mean in simple terms and what buttons should I click?"
+
+    Never run random terminal commands suggested by an AI (especially `--force` or `reset --hard`). Prefer the VS Code visual interface, which is safer. If the AI suggests a terminal command, ask it for the GUI equivalent first.

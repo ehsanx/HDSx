@@ -1,0 +1,9 @@
+# Knowledge Check {.unnumbered}
+
+1.  **Saving vs. Committing:** Saving = disk; Committing = history.
+2.  **Red line:** Deletion.
+3.  **Restore:** Discard Changes button.
+4.  **.gitignore:** Prevents tracking junk/secrets.
+5.  **Branch:** Parallel experimental workspace.
+6.  **PR:** A peer review workflow for merging code.
+7.  **Relative Paths:** Ensures the project runs on any machine.

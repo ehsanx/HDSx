@@ -1,0 +1,385 @@
+# Modern Workflows {.unnumbered}
+
+## Overview
+
+**Summary:** This week you set up the computational environment you will use for the rest of the course. By the end, the technology should fade into the background so you can focus on health data science, not installation errors. We adopt a **"Zero to AI Co-Pilot"** approach: you do not need to install R, Python, or Git on your personal laptop. Everything runs in a cloud-native environment called GitHub Codespaces.
+
+**Learning Objectives:**
+
+- Understand the "public computer vs cloud drive" analogy for cloud computing.
+- Create a GitHub account, join the course GitHub Classroom, and accept the starter assignment.
+- Launch a Codespace and identify the three key areas of the VS Code interface.
+- Distinguish between an IDE, a notebook, and a script, and explain why this course uses Quarto notebooks.
+- Explain the concept of literate programming and why it matters for reproducible health research.
+- Edit and render a Quarto (`.qmd`) document: YAML header, Markdown text, and code chunks.
+- Maintain a reproducible project structure using the `data/` and `output/` folder convention.
+- Stage, commit, and sync changes using the VS Code Source Control panel.
+- Stop your Codespace to conserve your free monthly hours.
+
+---
+
+## `workflows1.qmd` The Analogy: Public Computer and Cloud Drive
+
+To understand how we work in this course, forget about "servers" and "clients." Imagine you are working in a university computer lab.
+
+### The Repository (Your Cloud Drive)
+
+Think of **GitHub** as your personal **Google Drive or Dropbox**.
+
+- It is where your files live permanently.
+- If your laptop crashes, the files are still here.
+- **Key concept:** This is your "Master Copy."
+
+### The Codespace (The Public Computer)
+
+Think of a **Codespace** as a **public computer in the library**.
+
+- It is a temporary machine you borrow to do your work.
+- It comes pre-installed with all the software you need (R, Python, Quarto), so you don't have to install anything on your own laptop.
+- **Crucial difference:** Just like a public library computer, it can be wiped clean. If you close the browser without sending your work back to your Cloud Drive, your changes may be lost.
+
+### The Workflow
+
+1. **Log in:** Launch your Codespace (open the public computer).
+2. **Work:** Edit files using the computer's software.
+3. **Save to the cloud:** Commit and push your work back to your Cloud Drive (GitHub).
+4. **Log off:** Stop the Codespace to save your free hours.
+
+This cycle --- launch, work, commit, stop --- is the rhythm of every week in this course.
+
+---
+
+## `workflows2.qmd` Getting Started: GitHub Account and Classroom
+
+### Step 1: Create a GitHub Account
+
+If you do not already have one:
+
+1. Go to [github.com](https://github.com) and click **Sign up**.
+2. Use your UBC email address (this helps with student benefits).
+3. Choose a professional username --- this will appear on your public portfolio later in the course.
+
+::: {.callout-tip}
+**Portfolio thinking:** Your GitHub profile will become part of your professional presence. Pick a username you would be comfortable putting on a CV (e.g., `jchen-epi` rather than `xXcoolcoder99Xx`).
+:::
+
+### Step 2: Join the Course GitHub Classroom
+
+1. Open the **GitHub Classroom** invitation link posted on Canvas.
+2. Accept the invitation. This connects your GitHub account to the course roster.
+3. Accept the **starter assignment**. GitHub Classroom will automatically create a personal repository for you, pre-loaded with the files you need for this week.
+
+### Step 3: Confirm Your Repository
+
+Navigate to the repository that was just created. You should see:
+
+- A file list including `practice_report.qmd`, `README.md`, and a `data/` folder.
+- A formatted README below the file list explaining the project.
+
+If you see these, you are ready to launch your Codespace.
+
+---
+
+## `workflows3.qmd` Launching Your Codespace
+
+1. On your repository page, click the green **<> Code** button.
+2. Select the **Codespaces** tab.
+3. Click **Create codespace on main**.
+
+The first launch takes 2--3 minutes while the environment builds. Subsequent launches are faster.
+
+::: {.callout-note}
+**Reopening an existing Codespace:** After you stop or close your Codespace, do **not** create a new one each time. Go to [github.com/codespaces](https://github.com/codespaces), find your existing Codespace, and click its name to restart it. Creating multiple Codespaces wastes your hours and causes confusion.
+:::
+
+---
+
+## `workflows4.qmd` Tour of VS Code: The "Big Three" Zones
+
+The VS Code interface can look intimidating --- it is designed for professional software engineers. You only need to know three areas. Safely ignore 90% of the buttons.
+
+### 1. The Explorer (Left Sidebar)
+
+Your **file cabinet**. It shows folders and files in your project. You will use this to open `.qmd` files, navigate the `data/` folder, and create new files.
+
+### 2. The Editor (Center)
+
+Your **work area**. This is where you read and write code and text. You can have multiple files open in tabs.
+
+### 3. The Terminal (Bottom Panel)
+
+The **engine room** where R and Python actually run. You will not type commands here often --- most of your work happens in the Editor --- but this is where output and error messages appear.
+
+::: {.callout-tip}
+**Lost a panel?** Use the top menu: **View → Explorer** or **View → Terminal** to bring them back. You can also press `` Ctrl+` `` (backtick) to toggle the Terminal.
+:::
+
+---
+
+## `workflows5.qmd` Concepts: IDE, Notebook, Script
+
+The syllabus mentions three ways to write code. Understanding the difference helps you choose the right tool throughout the course.
+
+### IDE (Integrated Development Environment)
+
+VS Code is an **IDE** --- a text editor with superpowers: file browsing, syntax highlighting, built-in terminal, extensions, and version control. It is the container that holds everything else.
+
+### Script
+
+A plain text file containing only code (e.g., `.R` or `.py`). Runs top-to-bottom. Best for reusable utilities and automation. You will write your first script in Week 5.
+
+### Notebook
+
+A document that **interleaves code and narrative**. You run code in chunks and see results inline. Examples include Jupyter notebooks (`.ipynb`, Week 5) and Quarto documents (`.qmd`, which you use starting today).
+
+**This course primarily uses Quarto notebooks** because they combine the strengths of notebooks (interactivity, narrative) with the ability to produce publication-quality reports, slides, and websites --- all from a single file.
+
+---
+
+## `workflows6.qmd` Concepts: Literate Programming
+
+### The Big Idea
+
+Traditional workflows separate code from writing: you run an analysis in one program, copy results into a Word document, and hope nothing changes. **Literate programming** weaves code, results, and interpretation into a single document. When the data changes, you re-render and the entire report updates automatically.
+
+This is not just convenient --- it is a **scientific obligation**. In health research, reviewers and regulators need to see exactly how you went from raw data to conclusions. A literate document is a transparent, auditable record of your reasoning.
+
+### How Quarto Implements This
+
+A `.qmd` file has three ingredients:
+
+1. **YAML header** (metadata at the top, between `---` lines)
+2. **Markdown text** (human-readable prose)
+3. **Code chunks** (executable R or Python code in fenced blocks)
+
+When you **Render**, Quarto runs every code chunk, captures the output (tables, figures, numbers), and weaves everything into a finished HTML, PDF, or Word document.
+
+You will use literate programming in every subsequent week of this course: your assignments, your EDA (Week 7), your reports (Week 10), and your final portfolio are all Quarto documents.
+
+---
+
+## `workflows7.qmd` Project Structure: Files and Folders
+
+A reproducible project needs a consistent folder structure. This course uses the following convention:
+
+```
+my-project/
+├── data/           ← Raw data. Never edit files here directly.
+├── output/         ← Cleaned data, figures, and tables generated by your code.
+├── practice_report.qmd   ← Your Quarto notebook.
+├── README.md       ← Explains what this project is.
+└── .gitignore      ← Tells Git which files to ignore (more in Week 4).
+```
+
+### Rules
+
+- **`data/` is read-only.** Import from it; never save into it.
+- **`output/` is generated.** Your code writes cleaned data and figures here. In Week 3, you will export `output/clean_data.csv`.
+- **Use relative paths.** Always refer to files relative to the project root (e.g., `"data/patients.csv"`), never absolute paths (e.g., `"/home/user/Documents/patients.csv"`). This ensures your code runs on any machine.
+
+**Activity:** In the Explorer pane, click the **New Folder** icon and create the `output/` folder if it does not already exist.
+
+---
+
+## `workflows8.qmd` Tutorial: Your First Quarto Document
+
+### Step 1: Open the Starter File
+
+In the Explorer, click `practice_report.qmd`. It opens in the Editor.
+
+### Step 2: Understand the YAML Header
+
+At the very top, between `---` lines, you will see something like:
+
+```yaml
+---
+title: "My First Report"
+author: "Your Name"
+format: html
+---
+```
+
+Change `author:` to your actual name. The YAML header controls metadata and output format.
+
+### Step 3: Read the Markdown
+
+Below the YAML, you will see plain text with formatting:
+
+- `# Heading` creates a section title.
+- `**bold**` makes text **bold**.
+- `- item` creates a bullet point.
+
+This is **Markdown** --- a lightweight way to format text without a word processor.
+
+### Step 4: Read the Code Chunks
+
+Look for grey blocks that start with ```` ```{r} ```` and end with ```` ``` ````. These are **code chunks**. Everything inside them is R code that will execute when you render.
+
+```{{r}}
+# This is a code chunk
+2 + 2
+```
+
+### Step 5: Edit a Code Chunk
+
+Find a code chunk in the starter file. Make a small change --- for example, change a number or add a comment. This is your first edit.
+
+### Step 6: Render
+
+Click the **Render** button (blue arrow icon at the top of the editor). A preview window appears showing your formatted report with code output embedded.
+
+::: {.callout-tip}
+**What just happened:** Quarto ran every code chunk, captured the results, combined them with your Markdown text, and produced an HTML document. This is literate programming in action.
+:::
+
+---
+
+## `workflows9.qmd` Tutorial: Stage, Commit, and Sync
+
+Your work currently exists only on the public computer (Codespace). To save it permanently to your Cloud Drive (GitHub), you need to **commit**.
+
+### Step 1: Open Source Control
+
+Click the **Source Control** icon on the left sidebar (it looks like a branching graph). You will see a list of files that have changed since your last commit.
+
+### Step 2: Stage Your Changes
+
+Hover over a changed file name. Click the **+** icon that appears. This **stages** the file --- it tells Git "I want to include this change in my next snapshot."
+
+::: {.callout-note}
+**Staging vs committing:** Staging selects *which* changes to include. Committing takes the snapshot. Think of staging as putting items on the conveyor belt; committing is pressing the "scan" button at checkout.
+:::
+
+### Step 3: Write a Commit Message
+
+In the text box at the top of the Source Control panel, type a short, descriptive message:
+
+> Updated author name and edited first code chunk in practice report
+
+A good commit message answers: *what did I change and why?*
+
+### Step 4: Commit
+
+Click the **✔ Commit** button (checkmark). Your changes are now saved as a snapshot in your local history.
+
+### Step 5: Sync with GitHub
+
+Click **Sync Changes** (in the Source Control panel or the status bar at the bottom). This pushes your commit to GitHub --- your Cloud Drive.
+
+**Verify:** Go to your repository on [github.com](https://github.com) and confirm that your changes appear. You should see your commit message next to the updated file.
+
+::: {.callout-warning}
+**If you skip the Sync step**, your commit exists only on the Codespace. If the Codespace is deleted, the commit goes with it. Always Sync.
+:::
+
+---
+
+## `workflows10.qmd` Stopping Your Codespace (Saving Credits)
+
+GitHub Codespaces gives you a monthly allowance of free hours (approximately 60 core-hours). **If you leave the browser tab open, the meter keeps running**, even if you are not actively working.
+
+### The Right Way to Stop
+
+1. Go to [github.com/codespaces](https://github.com/codespaces).
+2. Find your active Codespace.
+3. Click the **three dots (...)** → **Stop codespace**.
+
+### What Happens If You Just Close the Tab?
+
+The Codespace runs for another 30 minutes before it times out automatically. That is 30 minutes of wasted credits every time.
+
+::: {.callout-warning}
+**Policy:** It is your responsibility to manage your compute hours. If you run out before the month resets, you will need to wait or pay out of pocket. Get in the habit of stopping your Codespace at the end of every session.
+:::
+
+---
+
+## `workflows11.qmd` Troubleshooting
+
+Sometimes things break. Here is a graduated approach --- try the simplest fix first.
+
+### Level 1: Reload the Window
+
+Press `F1` (or `Ctrl+Shift+P` / `Cmd+Shift+P`) to open the **Command Palette**. Type `Reload Window` and select it. This restarts VS Code without rebuilding the entire environment.
+
+### Level 2: Restart the R or Python Session
+
+If R or Python is frozen, open the Command Palette → type `R: Restart R Session` (or the equivalent for Python). This clears the session without touching your files.
+
+### Level 3: Rebuild the Container (Nuclear Option)
+
+If nothing else works:
+
+1. Open the **Command Palette**.
+2. Type `Rebuild Container`.
+3. Select **Codespaces: Rebuild Container**.
+
+This shuts down and rebuilds the entire environment from scratch. It solves nearly all technical glitches but takes a few minutes.
+
+::: {.callout-warning}
+**Before rebuilding:** Make sure you have committed and synced your work. Uncommitted changes may survive a rebuild, but there is no guarantee.
+:::
+
+---
+
+## `workflows12.qmd` Knowledge Check
+
+1. In the analogy, what is the "Cloud Drive" and what is the "Public Computer"?
+2. Why don't you need to install R or Python on your laptop for this course?
+3. Name the "Big Three" zones of the VS Code interface and what each is for.
+4. What is the difference between an IDE, a notebook, and a script?
+5. What is literate programming, and why does it matter for health research?
+6. What are the three ingredients of a `.qmd` file?
+7. What is the difference between **staging** and **committing**?
+8. Why must you click **Sync Changes** after committing?
+9. How do you properly stop a Codespace to save your free hours?
+
+---
+
+## `workflows13.qmd` Assignment 1: Your First Quarto Report
+
+**Due Friday 4 pm.** Submit via Canvas.
+
+### Task
+
+Edit and render the starter `practice_report.qmd`, demonstrating that you can navigate your Codespace, edit Quarto, and commit your work.
+
+### Step-by-Step Workflow
+
+1. **Launch** your Codespace from the GitHub Classroom repository.
+2. **Edit the YAML:** Change `author:` to your name.
+3. **Add a Markdown section:** Below the existing content, add a new heading (`## My Notes`) and write 2--3 sentences about what you learned this week. Use at least one Markdown feature (bold, italics, or a bullet list).
+4. **Edit a code chunk:** Modify an existing code chunk or add a new one. For example:
+
+```{{r}}
+# My first R calculation
+2 + 2
+```
+
+5. **Render** the document. Confirm the output looks correct.
+6. **Commit and Sync:**
+   - Open Source Control.
+   - Stage your changed files (**+**).
+   - Write a commit message: e.g., `"Complete Week 2 assignment: edit YAML, add notes, render report"`.
+   - Click **✔ Commit**, then **Sync Changes**.
+7. **Stop** your Codespace.
+8. **Verify** on github.com that your commit appears in the repository.
+9. **Submit** the repository link on Canvas.
+
+---
+
+## `workflows14.qmd` Quick Reference
+
+| Action | How |
+|---|---|
+| Launch Codespace | Repository → green **<> Code** → Codespaces → **Create codespace on main** |
+| Reopen Codespace | [github.com/codespaces](https://github.com/codespaces) → click Codespace name |
+| Stop Codespace | [github.com/codespaces](https://github.com/codespaces) → **...** → **Stop codespace** |
+| Open Explorer | **View → Explorer** or click file icon (left sidebar) |
+| Open Terminal | **View → Terminal** or `` Ctrl+` `` |
+| Render Quarto | Click **Render** button (blue arrow) at top of editor |
+| Stage a file | Source Control → hover file → click **+** |
+| Commit | Type message → click **✔** |
+| Sync to GitHub | Click **Sync Changes** |
+| Reload window | Command Palette (`F1`) → `Reload Window` |
+| Rebuild container | Command Palette (`F1`) → `Codespaces: Rebuild Container` |

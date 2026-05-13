@@ -1,0 +1,22 @@
+# Activity: Table 1 and AI Audit {.unnumbered}
+
+## Goal
+
+Students create a descriptive summary and audit AI-generated code or interpretation for planted errors.
+
+## TODO Before Release
+
+::: {.callout-warning}
+## Content TODO
+
+- Add the starter data path.
+- Add the expected Table 1 variables.
+- Add planted errors in code, summary text, and at least one visualization.
+- Add an answer key for instructors or TAs outside the student-facing page.
+:::
+
+## Student Output
+
+- A rendered Quarto EDA note.
+- A Table 1 or equivalent descriptive summary.
+- A written audit note listing detected errors and fixes.

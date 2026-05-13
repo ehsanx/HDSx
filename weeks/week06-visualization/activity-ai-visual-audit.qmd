@@ -1,0 +1,21 @@
+# Activity: AI Visual Audit {.unnumbered}
+
+## Goal
+
+Students evaluate AI-generated visualizations for correctness, clarity, bias, aggregation choices, and misleading design.
+
+## TODO Before Release
+
+::: {.callout-warning}
+## Content TODO
+
+- Add a starter dataset and prompt.
+- Add one flawed AI-generated plot and one corrected version.
+- Add a short answer template for students to identify what changed and why.
+:::
+
+## Student Output
+
+- One original AI-generated plot.
+- One revised plot.
+- A short audit note explaining at least three changes.

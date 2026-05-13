@@ -1,0 +1,28 @@
+# Tutorial 4: Common Translation Traps
+
+## Trap 1: The Zero-Index
+
+R starts counting at **1**. Python starts counting at **0**.
+
+**R:** `data[1]` is the first item. Note data\[0\] will return nothing
+
+![](../../assets/images/python4/p2.png)
+
+**Python:** `data[0]` is the first item.
+
+![](../../images/paste-1.png)
+
+**Slicing:** `df.iloc[0:5]` returns rows 0, 1, 2, 3, and 4 (5 rows total).
+
+## Trap 2: Indentation
+
+Python uses **indentation** (spaces) instead of curly braces `{}` to group code. Misaligned spaces will cause an `IndentationError`.
+
+![](../../assets/images/python4/p3.png)
+
+![](../../assets/images/python4/p4.png)
+
+## Trap 3: Assignment
+
+-   **R:** Uses `<-` (or `=`).
+-   **Python:** Uses `=` exclusively for assignment.

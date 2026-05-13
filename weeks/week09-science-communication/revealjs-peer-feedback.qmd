@@ -1,0 +1,22 @@
+# Revealjs and Peer Feedback {.unnumbered}
+
+## Goal
+
+Students turn analysis outputs into a short scientific communication product and practice structured peer feedback.
+
+## TODO Before Release
+
+::: {.callout-warning}
+## Content TODO
+
+- Add a minimal `format: revealjs` YAML example.
+- Add a three-slide starter structure.
+- Add a peer feedback form.
+:::
+
+## Peer Feedback Prompts
+
+- What is the main message?
+- What evidence supports it?
+- What is unclear or overclaimed?
+- What would improve reproducibility or audience fit?

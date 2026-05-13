@@ -1,0 +1,33 @@
+# The Setup (The Cockpit)
+
+Before we start flying, we need to check our instruments in **VS Code**. If your environment isn't set up correctly, your code will not run.
+
+## Verify Your AI Extensions
+1. Click the **Extensions** icon on the far-left sidebar (it looks like four squares).
+2. In the search bar, ensure both **GitHub Copilot Chat** and **R** are installed and active. 
+
+![](../../assets/images/week3/r1.png)
+
+## Set the AI Model to "0x"
+1. Open the Copilot Chat sidebar (Shortcut: **Ctrl+Alt+I** or **Cmd+Option+I** on Mac).
+2. Look for the model selector dropdown at the bottom of the chat window. 
+3. **Crucial Check:** Choose a model with a **"0x" multiplier** (like GPT-4o 0x). If you do not do this, you will quickly run out of your free student quota.
+   * *Troubleshooting:* If the Chat asks you to "Sign In" or "Subscribe," your Student Pack is not active. Use your institutional login at `copilot.microsoft.com` or authenticate via your university email at `https://m365.cloud.microsoft/chat/`.
+   
+## Interface Review: Where does R actually live?
+To learn R, we are going to start in the "sandbox." Here is how your screen is laid out:
+
+* **The Console (Bottom):** Your **Engine Room**. *Start here!* This is where you can type R commands directly next to the `>` prompt and press Enter to see immediate results. If you make a mistake, it will show up here in red text. 
+* **The Environment (Top Right):** Your **Work Bench**. Whenever you save a piece of data (like a patient's age), it will appear in a list here so you can verify R actually "remembers" it.
+* **The Explorer (Left Sidebar):** Your **File Cabinet**. This is where you find your `data/` folder containing your CSV files.
+* **The Editor (Top Center):** Your **Laboratory Notebook**. Typing in the Console is great for testing, but it forgets everything when you close the window. Later in the lesson, we will use the Editor to write and save our permanent code.   
+
+## Interface Review: Working with .qmd and .Rmd files
+When you open a `.qmd` (Quarto) or `.Rmd` (RMarkdown) file, you must know where to look. Here is how your coding workflow maps to your screen:
+
+* **The Explorer (Left Sidebar):** Your **File Cabinet**. This is where you find your reports and your `data/` folder. You cannot run code here; you only click files to open them.
+* **The Editor (Top Center):** Your **Laboratory Notebook**. This is where you write your text narrative and your R code. 
+    * *Note:* R code must be placed inside grey **Code Chunks** (starting with ` ```{r} ` and ending with ` ``` `). To run a chunk, click the small green "Play" triangle in the top right corner of that specific grey box.
+* **The Console (Bottom):** Your **Engine Room**. When you click the green "Play" button in the Editor, the code is sent down here to be executed. If there is an error, it will show up here in red. 
+    * *Pro Tip:* You can type quick math directly into the console (like `100 / 4`), but it will not be saved in your final report.
+* **The Environment (Top Right):** Your **Work Bench**. Whenever you load data or save a calculation, it will appear in a list here so you can verify R actually "remembers" it.

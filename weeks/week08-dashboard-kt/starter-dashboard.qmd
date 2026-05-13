@@ -1,0 +1,24 @@
+# Starter Dashboard {.unnumbered}
+
+## Goal
+
+Students adapt a minimal dashboard-style knowledge translation product.
+
+## TODO Before Release
+
+::: {.callout-warning}
+## Content TODO
+
+- Add the starter dashboard code.
+- Add a screenshot or rendered preview.
+- Add a fallback static version for students who cannot deploy.
+- Add a checklist for audience, filter labels, chart captions, and limitations.
+:::
+
+## Required Elements
+
+- One audience-specific question.
+- One interactive or dashboard-style control.
+- One visualization.
+- One plain-language interpretation.
+- One limitation or caution.

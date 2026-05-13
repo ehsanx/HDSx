@@ -1,0 +1,13 @@
+# Assignment: The “Mad Libs” Report
+
+1.  Open `week3_assignment.qmd`.
+
+2.  Use Copilot to import the Week 1 dataset.
+
+3.  Use the **Pipe** to filter and summarize one variable.
+
+4.  **Audit:** Add a `#` comment explaining your prompt.
+
+5.  **Render** the file to HTML.
+
+6.  **Commit and Push** to GitHub.

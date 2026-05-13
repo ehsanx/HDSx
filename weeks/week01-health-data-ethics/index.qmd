@@ -1,0 +1,171 @@
+# Health Data & Ethics {.unnumbered}
+
+## Overview
+
+This chapter sets the stage by defining the core philosophy of the course: data science does not end with a p-value, but with Knowledge Translation (KT). Students are introduced to the "Last Mile" of research—communicating findings effectively—and the ethical landscape of modern health data, including Indigenous Data Sovereignty (OCAP® principles) and the risks of AI hallucinations. You will explore open data sources like NHANES and establish the ground rules for privacy and security before touching a single line of code.
+
+## Learning Objectives
+
+-   Explore the landscape of **open health data** (e.g., NHANES, WHO, World Bank, BC Data Catalogue) and learn where high‑quality public datasets live.
+-   Practice finding a dataset, skimming its description/metadata, and recording basic provenance.
+-   Review **privacy and ethics** for public data and **responsible GenAI use**.
+-   Learn the meaning and importance of **Indigenous Data Sovereignty** (specifically OCAP® for First Nations) and CARE principles.
+-   Identify common **file formats** and **metadata** to support reproducibility.
+
+> **Note:** Week 1 is **light on code** and **heavy on awareness**. There is **no graded assignment submission** this week. Instead, you will complete a "Data Intake Card" to prepare for your future portfolio.
+
+------------------------------------------------------------------------
+
+## The Open Data Landscape
+
+Open data can accelerate health research—**if** we understand **what** we're downloading and **how** to use it responsibly. This week, we locate credible sources and map what "good" looks like.
+
+### Typical Sources (Examples)
+
+-   **National health surveys** (e.g., *NHANES* style): De‑identified microdata with documentation and codebooks.
+-   **International agencies** (e.g., *WHO Global Health Observatory* style): Indicators aggregated by country/region over time.
+-   **Government open data portals** (e.g., *BC Data Catalogue* style): Administrative or program data with varying schemas.
+-   **Multilateral / development banks** (e.g., *World Bank Data* style): Socio‑economic indicators for cross‑country comparisons.
+
+> **Instructor Note:** In class, we will share specific links via Canvas. The goal today is *pattern recognition*—you should be able to recognize a trustworthy portal, find the **About/Documentation**, and locate a **download** link.
+
+### What to Look For on a Portal
+
+1.  A human‑readable **About** page for the dataset.
+2.  Clear **licensing/terms of use**.
+3.  **Metadata** (definitions of variables, units, time coverage).
+4.  A **download** button (CSV/JSON, etc.) and/or API.
+5.  A **citation** suggestion.
+
+### Mini‑Activity (10 minutes)
+
+Pick any reputable portal (from Canvas links). Find a dataset you personally care about (e.g., smoking prevalence, hypertension, BMI). Write down:
+
+-   Dataset name + link (URL)
+-   Who publishes it
+-   Time coverage
+-   One variable you understand immediately
+-   One variable whose meaning is unclear
+
+------------------------------------------------------------------------
+
+## How to Find, Evaluate, and Cite a Dataset
+
+### A. Finding & Quick Evaluation
+
+When you land on a dataset page, scan for:
+
+-   **Scope:** Population, geography, years.
+-   **Data Level:** Individual/micro vs. aggregated indicators.
+-   **Update Cadence:** Last updated date.
+-   **Documentation:** Codebook, methodology PDF.
+
+If any of these are missing, reconsider using it or document the gap.
+
+### B. The Data Intake Card (Copy this block into your notes)
+
+Use this template every time you bring a dataset into your project.
+
+``` yaml
+dataset_name: ""
+publisher_org: ""
+permalink_url: ""
+publisher_contact_or_about: ""
+license_terms: ""        # e.g., CC BY 4.0; "public domain"; "restricted"
+geography: ""            # e.g., Canada, global, BC, health authority
+time_coverage: ""        # e.g., 2005–2024, point-in-time
+data_level: ""           # microdata, aggregate indicators
+variables_of_interest:
+  - name: ""
+    definition: ""
+    unit: ""
+    caveats: ""
+potential_risks:
+  - privacy: "low/med/high (why?)"
+  - misinterpretation: "what could be misunderstood?"
+indigenous_data_relevance: "yes/no/unknown (explain if yes)"
+how_to_cite: ""          # copy the suggested citation if provided
+date_accessed: "YYYY-MM-DD"
+```
+
+------------------------------------------------------------------------
+
+## Privacy, Ethics, and Responsible GenAI Use
+
+Even open data can be used irresponsibly. This course expects **ethical use**: - **No Personal Identifiers:** We only use public, de‑identified data in Week 1. - **Attribution:** Acknowledge sources and licenses. - **Context:** Avoid overstating what aggregate indicators can support.
+
+### Using GenAI Responsibly This Week
+
+GenAI (e.g., a coding co‑pilot or chat assistant) may be used to:
+
+-   **Summarize** a dataset description into plain language.
+-   **Draft** a first pass of a data dictionary from a codebook.
+-   **Suggest** variable interpretations you will verify.
+
+You must:
+
+-   **Disclose** in your notes when AI is used (what prompt, what output).
+-   **Verify** with the official documentation.
+-   **Accept Accountability** for errors (AI is not a source of truth).
+
+> We will return to GenAI auditing later in the term; this week is limited to **summaries** and **notes**—**no data uploads** to AI tools.
+
+------------------------------------------------------------------------
+
+## Indigenous Data Sovereignty (OCAP® & CARE) — Awareness
+
+Before downloading or using data about Indigenous Peoples, be aware that **Indigenous Data Sovereignty** affirms rights and interests in data that pertain to Indigenous Peoples. Two widely cited frameworks you should **know exist**:
+
+-   **OCAP® Principles:** specifically referring to **First Nations** ownership, control, access, and possession of data.
+-   **CARE Principles:** Collective benefit, Authority to control, Responsibility, Ethics.
+
+**What this means for Week 1:** - If your chosen dataset includes Indigenous content, flag it on your **Data Intake Card**. - Read the publisher’s guidance and respect any use conditions. - When in doubt, **ask the instructor** before using or publishing analyses.
+
+> We acknowledge these frameworks now and revisit concrete applications later in the course.
+
+------------------------------------------------------------------------
+
+## File Formats & Metadata (What You Need to Know Now)
+
+**Common formats you’ll meet:**
+
+-   **CSV:** Rows/columns; simplest to start.
+-   **JSON:** Nested; common for APIs.
+-   **XLSX:** Spreadsheets; watch for merged cells and headers.
+-   **GeoJSON / Shapefile:** Spatial data; used for maps (later weeks).
+
+**Best practices this week:**
+
+-   **Download** the smallest useful file (e.g., one year) to explore the structure. - Keep the raw file **unchanged** in a `data/` folder (we will create this next week).
+-   Create a short **README section** in your notes describing:
+    -   Where you got it.
+    -   What the columns mean (link to codebook).
+    -   Any obvious pitfalls (missing values, units).
+
+------------------------------------------------------------------------
+
+## Looking Ahead: The Lab Bench
+
+Next week, we leave the browser and enter the lab. We will introduce **GitHub Codespaces**, your cloud-based "Public Computer" where we will load this data.
+
+To prepare for next week:
+
+1.  Ensure you have a **GitHub Account**.
+2.  Ensure you can access the course repository link on Canvas.
+
+------------------------------------------------------------------------
+
+## Portfolio Prep (Ungraded)
+
+**Your Week 1 task (Complete/Incomplete):**
+
+1.  Choose **one** dataset page from a reputable portal (links on Canvas).
+2.  Fill out the **Data Intake Card** (copy/paste the YAML block and complete it).
+3.  Save this card; you will use this dataset for your first real project in Week 5.
+
+**I confirm I understand:**
+
+-   [ ] The difference between open **aggregate indicators** and microdata.
+-   [ ] How to find documentation/metadata for a dataset.
+-   [ ] My responsibility when using GenAI (disclose, verify, be accountable).
+-   [ ] That datasets involving Indigenous Peoples require extra care and may need instructor guidance before use.

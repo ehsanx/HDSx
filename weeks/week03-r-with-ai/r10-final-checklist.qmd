@@ -1,0 +1,15 @@
+# Final Summary Checklist
+
+-   [ ] Extensions are active (Copilot + R).
+
+-   [ ] Using **0x model** in Chat.
+
+-   [ ] Loaded `library(tidyverse)`.
+
+-   [ ] Data imported via **Relative Path**.
+
+-   [ ] All code chunks have an **Audit Comment** (`#`).
+
+-   [ ] Handled **NA** values correctly.
+
+-   [ ] Document **Rendered** and **Pushed**.

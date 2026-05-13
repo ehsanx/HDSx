@@ -1,0 +1,10 @@
+# Quick Reference {.unnumbered}
+
+| Action    | How-To                                                      |
+|:----------|:------------------------------------------------------------|
+| Stage     | Source Control (+)                                          |
+| Commit    | Type msg + ✔                                                |
+| View Diff | Click file in Source Control                                |
+| Discard   | Left click file in source control and click discard changes |
+| Branch    | Bottom-left status bar                                      |
+| Sync      | Sync Changes button                                         |

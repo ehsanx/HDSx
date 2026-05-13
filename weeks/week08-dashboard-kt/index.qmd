@@ -1,0 +1,23 @@
+# Interactive Dashboards {.unnumbered}
+
+## Overview
+
+Static PDF reports often sit unread, so this chapter introduces dynamic Knowledge Translation through Shiny apps and dashboards. Students will take their prior EDA results and transform them into interactive web tools that allow users to filter and explore the data themselves. You will learn the best practices of user interface design for health data and deploy your first live dashboard to the web via GitHub Pages or Shinylive.
+
+## TODO Before Release
+
+::: {.callout-warning}
+## Content TODO
+
+- Decide the required core pathway: Quarto dashboard, Shiny, or static HTML/JS.
+- Add a minimal dashboard starter with one filter, one chart, and one plain-language interpretation.
+- Add testing instructions for Codespaces.
+- Add Assignment 7 instructions in `assignments/assignment07-dashboard/`.
+- Add guidance for privacy-safe dashboard publishing.
+:::
+
+## Definition of Done
+
+- Students can produce a small dashboard-style KT artifact from prior EDA outputs.
+- The dashboard runs or renders in the supported workflow.
+- The page distinguishes required core work from optional deployment extensions.

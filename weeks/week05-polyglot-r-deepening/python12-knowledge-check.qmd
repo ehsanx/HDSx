@@ -1,0 +1,9 @@
+# Tutorial 12: Python Knowledge Check
+
+Answer these in a new Markdown cell in your notebook:
+
+1\. Why does `my_list[1]` in Python return the *second* element?
+
+2\. What is `requirements.txt` and why is it essential for reproducibility?
+
+3\. Why should you clear notebook outputs before committing to Git? 4. What is the "One Step, One Cell" rule?

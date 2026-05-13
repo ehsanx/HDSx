@@ -1,0 +1,24 @@
+# Assignments {.unnumbered}
+
+Weekly assignments are scaffolded practice. Assignments 1-3 are foundational gates; Assignments 4-10 support the project portfolio and use the best-5-of-7 grading policy described in the syllabus.
+
+## Assignment Map
+
+| Assignment | Week | Focus | Template folder |
+|---|---:|---|---|
+| Assignment 1 | 2 | Codespaces, Quarto, commit/sync | `assignments/assignment01-workflows/` |
+| Assignment 2 | 3 | R with AI, tidyverse, functions, `renv` | `assignments/assignment02-r-with-ai/` |
+| Assignment 3 | 4 | Git collaboration and repo hygiene | `assignments/assignment03-git/` |
+| Assignment 4 | 5 | Polyglot awareness and R deepening | `assignments/assignment04-polyglot/` |
+| Assignment 5 | 6 | Visualization and AI visual audit | `assignments/assignment05-visualization/` |
+| Assignment 6 | 7 | EDA, Table 1, planted-error audit | `assignments/assignment06-eda-ai-audit/` |
+| Assignment 7 | 8 | Dashboard-style KT prototype | `assignments/assignment07-dashboard/` |
+| Assignment 8 | 9 | Scientific communication and peer feedback | `assignments/assignment08-communication/` |
+| Assignment 9 | 10 | Reporting, citations, publishing | `assignments/assignment09-reporting/` |
+| Assignment 10 | 11 | Portfolio surgery and reproducibility test | `assignments/assignment10-portfolio-surgery/` |
+
+## TODO
+
+::: {.callout-warning}
+Create a student-facing `README.md` in each assignment folder from `assignments/assignment-template.qmd`.
+:::

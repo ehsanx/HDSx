@@ -1,0 +1,183 @@
+project:
+  type: book
+  output-dir: docs
+execute:
+  freeze: false
+book:
+  title: "Health Data Science: AI and Knowledge Translation"
+  author: 
+  - name: M. Ehsan. Karim
+    affiliation: School of Population and Public Health, The University of British Columbia
+  #- name: HDS-AI-KT team
+  #  affiliation: TBA
+  reader-mode: true
+  page-navigation: true
+  twitter-card: true
+  sidebar:
+    style: docked
+    search: true
+    background: light
+  date: today
+  downloads: [pdf]
+  repo-url: https://github.com/ehsanx/Health-AI-KT
+  repo-actions: [edit, issue]
+
+  chapters:
+    - index.qmd
+    - part: "Course Planning"
+      chapters:
+        - syllabus/syllabus-inventory-completion-matrix.md
+    - part: "Week 0: Asynchronous Onboarding"
+      chapters:
+        - weeks/week00-onboarding/index.qmd
+    - part: "Week 1: Health Data, KT & Ethics"
+      chapters:
+        - weeks/week01-health-data-ethics/index.qmd
+        - weeks/week01-health-data-ethics/activity-data-intake-card.qmd
+    - part: "Week 2: Modern Workflows"
+      chapters:
+        - weeks/week02-modern-workflows/index.qmd
+        - weeks/week02-modern-workflows/workflows01-cloud-drive.qmd
+        - weeks/week02-modern-workflows/workflows02-repository-tour.qmd
+        - weeks/week02-modern-workflows/workflows03-open-codespace.qmd
+        - weeks/week02-modern-workflows/workflows04-reopen-codespace.qmd
+        - weeks/week02-modern-workflows/workflows05-vscode-orientation.qmd
+        - weeks/week02-modern-workflows/workflows06-files-folders.qmd
+        - weeks/week02-modern-workflows/workflows07-render-quarto.qmd
+        - weeks/week02-modern-workflows/workflows08-commit-work.qmd
+        - weeks/week02-modern-workflows/workflows09-troubleshooting.qmd
+        - weeks/week02-modern-workflows/workflows10-stop-codespace.qmd
+        - weeks/week02-modern-workflows/workflows11-checklist.qmd
+    - part: "Week 3: R with AI"
+      chapters:
+        - weeks/week03-r-with-ai/index.qmd
+        - weeks/week03-r-with-ai/r01-setup.qmd
+        - weeks/week03-r-with-ai/r02-packages.qmd
+        - weeks/week03-r-with-ai/r03-basics.qmd
+        - weeks/week03-r-with-ai/r04-control-flow.qmd
+        - weeks/week03-r-with-ai/r05-data-import.qmd
+        - weeks/week03-r-with-ai/r06-debugging.qmd
+        - weeks/week03-r-with-ai/r07-ai-audit-checklist.qmd
+        - weeks/week03-r-with-ai/r08-comments.qmd
+        - weeks/week03-r-with-ai/r09-assignment-mad-libs.qmd
+        - weeks/week03-r-with-ai/r10-final-checklist.qmd
+    - part: "Week 4: Git & Collaboration"
+      chapters:
+        - weeks/week04-git-collaboration/index.qmd
+        - weeks/week04-git-collaboration/git01-concepts.qmd
+        - weeks/week04-git-collaboration/git02-tutorial.qmd
+        - weeks/week04-git-collaboration/git03-repo-hygiene.qmd
+        - weeks/week04-git-collaboration/git04-branching.qmd
+        - weeks/week04-git-collaboration/git05-pull-requests.qmd
+        - weeks/week04-git-collaboration/git06-ai-auditing.qmd
+        - weeks/week04-git-collaboration/git07-group-repository.qmd
+        - weeks/week04-git-collaboration/git08-knowledge-check.qmd
+        - weeks/week04-git-collaboration/git09-practice-exercise.qmd
+        - weeks/week04-git-collaboration/git10-quick-reference.qmd
+    - part: "Week 5: Polyglot Awareness & R Deepening"
+      chapters:
+        - weeks/week05-polyglot-r-deepening/index.qmd
+        - weeks/week05-polyglot-r-deepening/python01-when-and-why.qmd
+        - weeks/week05-polyglot-r-deepening/python02-environment.qmd
+        - weeks/week05-polyglot-r-deepening/python03-packages-reproducibility.qmd
+        - weeks/week05-polyglot-r-deepening/python04-translation-traps.qmd
+        - weeks/week05-polyglot-r-deepening/python05-load-inspect-data.qmd
+        - weeks/week05-polyglot-r-deepening/python06-tracebacks.qmd
+        - weeks/week05-polyglot-r-deepening/python07-one-step-one-cell.qmd
+        - weeks/week05-polyglot-r-deepening/python08-mixing-r-python.qmd
+        - weeks/week05-polyglot-r-deepening/python09-reusable-scripts.qmd
+        - weeks/week05-polyglot-r-deepening/python10-git-progress.qmd
+        - weeks/week05-polyglot-r-deepening/python11-project-milestone.qmd
+        - weeks/week05-polyglot-r-deepening/python12-knowledge-check.qmd
+        - weeks/week05-polyglot-r-deepening/python13-translation-exercise.qmd
+        - weeks/week05-polyglot-r-deepening/python14-cheat-sheet.qmd
+    - part: "Week 6: Data Visualization"
+      chapters:
+        - weeks/week06-visualization/index.qmd
+        - weeks/week06-visualization/activity-ai-visual-audit.qmd
+    - part: "Week 7: EDA, Table 1 & AI Auditing"
+      chapters:
+        - weeks/week07-eda-ai-audit/index.qmd
+        - weeks/week07-eda-ai-audit/activity-table1-audit.qmd
+    - part: "Week 8: Dashboard Prototypes for KT"
+      chapters:
+        - weeks/week08-dashboard-kt/index.qmd
+        - weeks/week08-dashboard-kt/starter-dashboard.qmd
+    - part: "Week 9: Communication of Scientific Findings"
+      chapters:
+        - weeks/week09-science-communication/index.qmd
+        - weeks/week09-science-communication/revealjs-peer-feedback.qmd
+    - part: "Week 10: Writing & Publishing Reports"
+      chapters:
+        - weeks/week10-reporting-publishing/index.qmd
+        - weeks/week10-reporting-publishing/report-template.qmd
+    - part: "Week 11: Portfolio Surgery"
+      chapters:
+        - weeks/week11-portfolio-surgery/index.qmd
+        - weeks/week11-portfolio-surgery/reproducibility-test.qmd
+    - part: "Weeks 12-13: Project Presentations"
+      chapters:
+        - weeks/week12-presentations/index.qmd
+        - weeks/week13-presentations/index.qmd
+    - part: "Assignments and Milestones"
+      chapters:
+        - assignments/index.qmd
+        - assignments/assignment-template.qmd
+        - milestones/index.qmd
+        - milestones/milestone-template.qmd
+    - part: "Reference: Data Sources"
+      chapters:
+        - references/data-sources/nhis.qmd
+        - references/data-sources/nhanes.qmd
+        - references/data-sources/brfss.qmd
+        - references/data-sources/ccs.qmd
+        - references/data-sources/cads.qmd
+        - references/data-sources/ctns.qmd
+        - references/data-sources/csads.qmd
+        - references/data-sources/phac-infobase.qmd
+        - references/data-sources/ccdss.qmd
+        - references/data-sources/gho.qmd
+        - references/data-sources/open-portal.qmd
+        - references/data-sources/bc-data-catalogue.qmd
+    - part: "Assistant Playbook"
+      chapters:
+        - assistant-playbook/index.qmd
+        - assistant-playbook/definition-of-done.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    toc: true
+    theme: cosmo
+    df-print: paged
+    code-fold: false
+    code-overflow: wrap
+    code-copy: hover
+    code-line-numbers: true
+    code-link: true
+    code-summary: "Show the code"
+    code-tools: 
+      source: false
+      toggle: true
+      caption: none
+  pdf:
+    toc: true
+    toc-depth: 2
+    toc-title: "Table of contents"
+    code-line-numbers: true
+    pdf-engine: xelatex
+    colorlinks: true
+    keep-tex: true
+    papersize: letter
+    
+prefer-html: true
+
+knitr:
+  opts_chunk: 
+    collapse: true
+    comment: "#>" 
+    R.options:
+      knitr.graphics.auto_pdf: true
+
+editor: visual

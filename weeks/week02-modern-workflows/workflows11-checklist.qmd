@@ -1,0 +1,15 @@
+# Final Checklist
+
+-   [ ] I understand repository vs Codespace\
+-   [ ] I rendered a `.qmd` file\
+-   [ ] I committed changes\
+-   [ ] I know how to rebuild container\
+-   [ ] I know how to stop Codespace
+
+## Reflection
+
+Write 2–3 sentences:
+
+-   What was easiest?
+-   What was confusing?
+-   What questions do you still have?

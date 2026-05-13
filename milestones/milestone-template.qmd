@@ -1,0 +1,25 @@
+# Milestone Template {.unnumbered}
+
+Use this template for project milestones M0-M5 and the Final Portfolio.
+
+## Deliverable
+
+- **Milestone:**
+- **Due:**
+- **Submit:**
+- **Main artifact:**
+
+## Required Evidence
+
+- Repository link.
+- Rendered report, dashboard, slides, or review document.
+- Commit history showing meaningful progress.
+- AI-use note.
+- Reproducibility check result.
+
+## Definition of Done
+
+- The artifact opens or renders in the supported workflow.
+- Data provenance and stewardship decisions are documented.
+- The work avoids unsupported causal or predictive claims.
+- A peer or TA can rerun the project from a fresh environment.

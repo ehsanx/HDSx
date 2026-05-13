@@ -1,0 +1,21 @@
+# Branching {.unnumbered}
+
+1.  **Create:**
+
+Click branch name (bottom-left).
+
+![](../../assets/images/git4/git4_1.png)
+
+This will pop up a menu where you have the option to `Create new branch`.
+
+![](../../assets/images/git4/git4_2.png)
+
+Select this and call it first-branch. Note branch names may not have any spaces and limited special characters, the system will let you know if a name is invalid.
+
+![](../../assets/images/git4/git4_3.png)
+
+2.  **Work:** Make changes, like those in the previous tutorial and commit your changes on your branch.
+
+3.  **Switch:** Click the branch button on the bottom left again and once this menu pops up, select `main`. Note that your changes vanish (they are safely in the other branch). If you decide to switch back to your branch, your changes will reappear. This is amazing for multitasking on different features and keeping code clean.
+
+    ![](../../assets/images/git4/git4_5.png)

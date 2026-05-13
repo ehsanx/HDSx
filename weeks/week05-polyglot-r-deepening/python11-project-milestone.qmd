@@ -1,0 +1,13 @@
+# Tutorial 11: Term Project Milestone 1
+
+## Submission Checklist
+
+Your proposal is due this Friday. Ensure it includes:
+
+\- **Research Question:** A focused health data question.
+
+\- **Data Source:** A confirmed dataset (NHANES, Kaggle, etc.).
+
+\- **Feasibility Check:** Can you load and preview the data in a Codespace?
+
+**Pro-Tip:** Load your dataset in **both** R and Python now to ensure there are no surprises later in the term.

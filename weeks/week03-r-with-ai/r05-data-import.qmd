@@ -1,0 +1,11 @@
+# The Loading Dock (Data Import)
+
+Don't type file paths from memory; you will likely make a typo.
+
+1.  Find a data file in the **Explorer** (left sidebar).
+
+2.  **Right-click** the file → Select **Copy Relative Path**.
+
+    ![](../../assets/images/week3/r5.png)
+
+3.  Ask AI: *"Read the CSV at \[Paste Path Here\] and save it as my_data."*

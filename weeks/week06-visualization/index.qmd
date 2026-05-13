@@ -1,0 +1,23 @@
+# Visual Storytelling {.unnumbered}
+
+## Overview
+
+This chapter challenges students to move beyond default charts and create publication-quality visualizations. You will use AI tools to generate initial code for complex plots in ggplot2 or plotly, and then apply human judgment to refine them for clarity, accuracy, and aesthetics. The lesson emphasizes detecting misleading AI-generated visuals and "steering" the code to tell a truthful and compelling data story.
+
+## TODO Before Release
+
+::: {.callout-warning}
+## Content TODO
+
+- Add a worked ggplot2 example using the shared NHANES data.
+- Add one intentionally misleading AI-generated chart for students to audit.
+- Add a plotly or interactive chart extension.
+- Add Assignment 5 instructions in `assignments/assignment05-visualization/`.
+- Add expected captions and accessibility checks for figures.
+:::
+
+## Definition of Done
+
+- Students can generate, critique, revise, and caption at least one health data visualization.
+- The activity includes a concrete visual audit checklist.
+- All example plots render in a fresh Codespace.

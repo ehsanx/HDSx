@@ -1,0 +1,26 @@
+# Reproducibility Stress Test {.unnumbered}
+
+## Goal
+
+Students test whether a project can run in a fresh environment and document every failure before final submission.
+
+## TODO Before Release
+
+::: {.callout-warning}
+## Content TODO
+
+- Add step-by-step fresh Codespace test instructions.
+- Add a failure log template.
+- Add peer review roles and timing.
+- Add final repair checklist.
+:::
+
+## Failure Log Template
+
+| Check | Result | Fix needed | Owner |
+|---|---|---|---|
+| Repository opens in fresh Codespace |  |  |  |
+| Packages install or restore |  |  |  |
+| Report renders |  |  |  |
+| Dashboard runs or renders |  |  |  |
+| README instructions are accurate |  |  |  |

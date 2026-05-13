@@ -1,0 +1,29 @@
+# Basics: Boxes & Toasters
+
+R is a system of storage (Boxes) and transformation (Toasters).
+
+## Variables (The Box)
+
+Use `<-` to save data into a name.
+
+Code snippet
+
+```         
+Save the number 55 into a variable called patient_age patient_age
+```
+
+## Functions (The Toaster)
+
+Functions take input, perform an action, and return output. Look at the snippet below
+
+Code snippet
+
+```         
+calculate_rectangle_area <- function(length, width) {
+  area <- length * width
+  return(area)
+}
+
+# Example usage:
+calculate_rectangle_area(10, 5) # Returns 50
+```

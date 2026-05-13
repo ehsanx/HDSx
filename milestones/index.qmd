@@ -1,0 +1,19 @@
+# Project Milestones {.unnumbered}
+
+The term project is built through staged milestones so students practice reproducibility, feedback, and knowledge translation before the final submission.
+
+| Milestone | Due | Deliverable |
+|---|---|---|
+| M0 | Week 4 Monday | Group formation and repository setup |
+| M1 | Week 6 Monday | Proposal, dataset selection, provenance/stewardship statement |
+| M2 | Week 7 Monday | Preliminary analysis, Table 1 or descriptive summary, runnable repository |
+| M3 | Week 10 Monday | Draft report and dashboard-style KT product for review |
+| M4 | Week 11 Monday | Peer review with reproducibility and auditability checks |
+| M5 | Weeks 12-13 | In-class presentation |
+| Final Portfolio | Dec 11 Friday | Complete reproducible portfolio |
+
+## TODO
+
+::: {.callout-warning}
+Create detailed milestone briefs in each `milestones/` subfolder from `milestones/milestone-template.qmd`.
+:::

@@ -1,0 +1,30 @@
+# Week 0: Asynchronous Onboarding {.unnumbered}
+
+## Purpose
+
+Students complete the basic account and orientation work before the first class so Week 1 can focus on health data, ethics, and course expectations.
+
+## Required Student Tasks
+
+- Create a GitHub account using a professional username.
+- Watch the course workflow orientation video posted on Canvas.
+- Complete the pre-course survey.
+- Confirm access to Canvas and the course GitHub entry point.
+
+## TODO Before Release
+
+::: {.callout-warning}
+## Content TODO
+
+- Add the final Canvas orientation video link.
+- Add the pre-course survey link or instructions.
+- Add a screenshot walkthrough for creating a GitHub account with a professional username.
+- Add a brief troubleshooting note for students who already have a GitHub account.
+:::
+
+## Definition of Done
+
+- The page gives students one clear path to complete onboarding without installing local software.
+- All external links have been checked in a fresh browser session.
+- The GitHub username guidance is privacy-aware and professional.
+- The page states what students should bring to Week 1.

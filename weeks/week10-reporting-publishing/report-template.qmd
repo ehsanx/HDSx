@@ -1,0 +1,22 @@
+# Report Template {.unnumbered}
+
+## TODO Before Release
+
+::: {.callout-warning}
+## Content TODO
+
+- Convert this into a copyable Quarto report starter.
+- Add bibliography setup instructions.
+- Add a small example table and figure.
+- Add an AI-use note template.
+:::
+
+## Suggested Sections
+
+- Research or KT question
+- Data source and stewardship notes
+- Methods and reproducibility notes
+- Results
+- Limitations
+- Plain-language summary
+- AI-use and audit note

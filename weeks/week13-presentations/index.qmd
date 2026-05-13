@@ -1,0 +1,21 @@
+# Week 13: Term Project Presentations, Part 2 {.unnumbered}
+
+## Overview
+
+This session completes Milestone 5 presentations and gives students a final opportunity to collect feedback before the Final Portfolio deadline.
+
+## TODO Before Release
+
+::: {.callout-warning}
+## Content TODO
+
+- Confirm which groups present in Part 2.
+- Add final reminders for the Dec 11 portfolio submission.
+- Add a closing reflection prompt on reproducibility and knowledge translation.
+:::
+
+## Definition of Done
+
+- Remaining presentations are complete.
+- Peer feedback has been returned to presenters.
+- Students know exactly what must change before final portfolio submission.

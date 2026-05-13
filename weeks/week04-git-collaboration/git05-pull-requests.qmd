@@ -1,0 +1,27 @@
+# Pull Requests {.unnumbered}
+
+A **Pull Request (PR)** is a GitHub feature that says: *"I have changes on a branch. Please review them before they go into `main`."* PRs are how professional teams and researchers collaborate. You will use them for peer review later in this course. This is also the best way to merge your own changes into main, as it forces you to see what has been change and allows one to check what they are submitting to the main branch, the backbone or "trunck" of the tree
+
+1.  **Sync:** Click "Sync Changes" to push your branch to GitHub. This can be blue or green or say publish branch or not. Whichever the case, clicking this button will make everything on your computer update to the online github repo.
+
+    ![](../../assets/images/git5/git5_1.png)
+
+2.  **PR:** Go to your repo on github online and click "Compare & pull request."
+
+    ![](../../assets/images/git5/git5_3.png)
+
+    We are then presented with the screen below. Press the big green button "New Pull Request"
+
+    ![](../../assets/images/git5/git5_2.png)
+
+    Then you are presented this menu. This shows all the different branches that can be merged into main. Select on the one you want to merge into main.
+
+    ![](../../assets/images/git5/git5_4.png)
+
+    Once you select the one, you can make a pull request! Select this.
+
+    ![](../../assets/images/git5/git5_5.png)
+
+3.  **Merge:** Review the diff, then click "Merge pull request." If there are merge conflicts, ask AI the best way to resolve them.
+
+    ![](../../assets/images/git5/git6_6.png)

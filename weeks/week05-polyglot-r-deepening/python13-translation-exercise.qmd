@@ -1,0 +1,11 @@
+# Tutorial 13: The Bilingual Translation Exercise
+
+## Cleaning Your Notebooks
+
+**Task:** Create a Python version of your Week 3 R analysis.
+
+1\. Create `translation.ipynb`.
+
+2\. Use an LLM to translate your R steps to Python **one cell at a time**.
+
+3.  After each cell, verify output using the **Data Viewer**. 4. Extract one function into `helpers.py`. 5. Clear outputs and commit to Git.

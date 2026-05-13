@@ -1,0 +1,23 @@
+# Dynamic Presentations {.unnumbered}
+
+## Overview
+
+Data analysis is useless if it cannot be understood by key stakeholders. This chapter focuses on "Audience-Specific KT," teaching you to convert technical findings into plain language summaries and engaging slide decks using Quarto. You will practice peer review and learn to use LLMs to simplify jargon without losing scientific accuracy, ensuring your work can impact policy and practice.
+
+## TODO Before Release
+
+::: {.callout-warning}
+## Content TODO
+
+- Add a revealjs starter deck.
+- Add a plain-language summary exercise.
+- Add a peer feedback template.
+- Add Assignment 8 instructions in `assignments/assignment08-communication/`.
+- Add slide accessibility and citation expectations.
+:::
+
+## Definition of Done
+
+- Students can render a short Quarto slide deck.
+- Each slide has one clear purpose.
+- Peer feedback checks clarity, evidence, limitations, and KT value.

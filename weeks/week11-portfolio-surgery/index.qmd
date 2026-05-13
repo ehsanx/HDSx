@@ -1,0 +1,23 @@
+# Advanced Topics {.unnumbered}
+
+## Overview
+
+Before the final submission, students must "bulletproof" their work. This chapter focuses on advanced project hygiene, dependency management (ensuring your code runs on someone else's machine), and auditability. You will act as a peer reviewer to identify reproducibility failures in others' code, fixing broken paths and missing seeds, to ensure your final project stands up to scientific scrutiny.
+
+## TODO Before Release
+
+::: {.callout-warning}
+## Content TODO
+
+- Add a fresh Codespace stress-test protocol.
+- Add a broken-project debugging exercise.
+- Add Assignment 10 instructions in `assignments/assignment10-portfolio-surgery/`.
+- Add Milestone 4 peer review instructions.
+- Add a final portfolio readiness checklist.
+:::
+
+## Definition of Done
+
+- A peer can clone or open the repository in a fresh Codespace and reproduce the core outputs.
+- Broken paths, missing dependencies, unclear READMEs, and ungrounded AI claims are fixed.
+- The final portfolio checklist is linked from this page.

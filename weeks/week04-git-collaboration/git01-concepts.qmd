@@ -1,0 +1,23 @@
+# Concepts {.unnumbered}
+
+-   **The Audit Trail:** Git records *who* changed *what*.
+
+    ![](../../assets/images/git1/git1_1.png)
+
+    Selecting any line will show who changed that line and when they did so.
+
+-   **The Timeline:** A sequence of safe checkpoints (commits). This shows the reason behind each change and what was change. These checkpoints can always be reverted back to if the need be.
+
+    ![This tree shows every commit (checkpoints)](../../assets/images/git1/git1_2.png)
+
+-   **The Language of Diffs:**
+
+    -   `Red (-)`: Removed lines.
+
+    -   `Green (+)`: Added lines.
+
+        ![](../../assets/images/git1/git1_3.png)
+
+        Observbing this image, we see that line 11 was replaced, the old data on line 11 is colored red, while the new changes are shown in green.
+
+> **Key Rule:** Saving writes to disk on your commuter. Committing and pushing to the repo writes to history.

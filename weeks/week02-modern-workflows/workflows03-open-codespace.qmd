@@ -1,0 +1,34 @@
+# Opening Your First Codespace
+
+This process is like walking into the library and turning on a computer. You are creating a fresh, temporary environment in the cloud.
+
+## Steps
+
+1.  Click the green **Code** button
+
+    -   This button is usually for downloading files, but we are using it to launch a computer.
+
+    ![Code button](../../assets/images/workflow3/code.png)
+
+2.  Click the **Codespaces** tab
+
+    -   **Crucial Choice:** You will see two tabs: "Local" and "Codespaces."
+    -   **Local:** Means downloading to your own messy laptop (Hard mode).
+    -   **Codespaces:** Means using the pre-installed cloud computer (Easy mode). Always choose this.
+
+    ![Codespaces tab](../../assets/images/workflow3/codespaces.png)
+
+3.  Click **Create Codespace on main**
+
+    -   This tells GitHub to build a new computer for you from scratch.
+
+    ![Create Codespace](../../assets/images/workflow3/create.png)
+
+## The "Boot Up" Phase
+
+**Wait 2–3 minutes.**
+
+-   **What is happening?** GitHub is silently installing R, Python, Quarto, and all the course libraries for you.
+-   **The Analogy:** Think of this as the "ventilation system" starting up in a lab. It takes a moment to get the environment ready.
+
+**Success:** You should see **VS Code** (a dark-themed code editor) appear in your browser window.

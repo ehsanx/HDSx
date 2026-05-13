@@ -1,0 +1,23 @@
+# Exploring Data {.unnumbered}
+
+## Overview
+
+Before modeling, you must understand your data. This chapter guides students through the rigorous process of Exploratory Data Analysis (EDA) and the creation of the standard "Table 1" for demographic characteristics. You will learn to document every cleaning decision and exclusion criteria in a reproducible Quarto log, ensuring that your path from raw data to analysis dataset is transparent and repeatable by anyone.
+
+## TODO Before Release
+
+::: {.callout-warning}
+## Content TODO
+
+- Build a worked EDA using the NHANES example files in `examples/data/`.
+- Add Table 1 expectations and an example table.
+- Add a planted-error AI audit exercise.
+- Add Assignment 6 instructions in `assignments/assignment06-eda-ai-audit/`.
+- Connect the activity to Milestone 2 preliminary analysis.
+:::
+
+## Definition of Done
+
+- Students can document cleaning decisions from raw or starter data to an analysis-ready table.
+- The planted-error exercise has an instructor key.
+- The EDA renders without manual intervention.

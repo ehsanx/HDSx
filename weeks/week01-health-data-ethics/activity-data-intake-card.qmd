@@ -1,0 +1,42 @@
+# Activity: Data Intake Card {.unnumbered}
+
+## Goal
+
+Students practice evaluating whether a health dataset is usable, ethical, documented, and appropriate for reproducible analysis.
+
+## Student Template
+
+```yaml
+dataset_name: ""
+publisher_org: ""
+permalink_url: ""
+license_terms: ""
+geography: ""
+time_coverage: ""
+data_level: ""
+variables_of_interest:
+  - name: ""
+    definition: ""
+known_limitations:
+  - ""
+stewardship_notes: ""
+ai_use_note: ""
+```
+
+## TODO Before Release
+
+::: {.callout-warning}
+## Content TODO
+
+- Add 2-3 approved starter portals from Canvas.
+- Add one completed sample Data Intake Card.
+- Add a short rubric for provenance, licensing, variable clarity, and stewardship.
+- Decide whether students submit this on Canvas, GitHub, or both.
+:::
+
+## Reproducibility Check
+
+- The dataset link is stable or includes an access date.
+- The publisher and license are named.
+- Variable definitions come from source documentation, not AI guesses.
+- The student records what they asked AI and how they verified the answer.

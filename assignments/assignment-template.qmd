@@ -1,0 +1,34 @@
+# Assignment Template {.unnumbered}
+
+Use this template for all weekly applied assignments.
+
+## Student-Facing Brief
+
+- **Purpose:**
+- **Inputs:**
+- **Expected output:**
+- **Submission location:**
+- **Due date:**
+
+## Required Files
+
+- `README.md`
+- One rendered Quarto output or dashboard preview.
+- Source `.qmd`, `.R`, `.py`, or supporting files needed to rerun the work.
+- Data files, or clear instructions for obtaining them, when redistribution is not allowed.
+
+## Reproducibility Contract
+
+- The work runs in a fresh GitHub Codespace.
+- Paths are relative to the project root.
+- Required packages are declared.
+- Outputs can be regenerated without manual editing.
+- AI-generated code or text is audited and documented.
+
+## Grading Checklist
+
+- Clear question or task.
+- Correct and reproducible code.
+- Evidence of verification.
+- Clear writing and captions.
+- Honest limitations and AI-use note.

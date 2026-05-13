@@ -1,0 +1,22 @@
+# Week 12: Term Project Presentations, Part 1 {.unnumbered}
+
+## Overview
+
+This session is the first presentation block for Milestone 5. Students present their portfolio work with an emphasis on scientific clarity, knowledge translation, reproducibility, and auditability.
+
+## TODO Before Release
+
+::: {.callout-warning}
+## Content TODO
+
+- Add final presentation timing rules.
+- Add slide submission instructions.
+- Add the peer feedback form or link.
+- Add the presentation rubric from `milestones/m5-presentation/`.
+:::
+
+## Definition of Done
+
+- Slides render before class.
+- The project repository link is available to reviewers.
+- The presenter can explain the dataset, workflow, major findings, limitations, and AI-use audit trail.

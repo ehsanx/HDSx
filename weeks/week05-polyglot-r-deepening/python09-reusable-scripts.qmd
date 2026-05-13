@@ -1,0 +1,25 @@
+# Tutorial 9: Creating Reusable Python Scripts
+
+## When to Use a Script
+
+Use a `.py` script for reusable functions (like data cleaning) that you want to use across different notebooks.
+
+1.  Create a new file: `helpers.py`.
+
+2.  Add a cleaning function:
+
+    ```{python}
+    import pandas as pd     
+
+    def load_and_preview(filepath):         
+        df = pd.read_csv(filepath)         
+        print(f"Loaded {len(df)} rows.")         
+        return df.head()
+    ```
+
+3.  **Import it** in your notebook:
+
+    ```{python}
+    from helpers import load_and_preview     
+    load_and_preview("data/patients.csv")
+    ```
