@@ -1,0 +1,4 @@
+id,age,sex,bmi,placeholder_note
+1,72,Female,27.4,"Placeholder data for rendering and relative-path examples; replace before analysis."
+2,54,Male,31.2,"Placeholder data for rendering and relative-path examples; replace before analysis."
+3,67,Female,24.8,"Placeholder data for rendering and relative-path examples; replace before analysis."

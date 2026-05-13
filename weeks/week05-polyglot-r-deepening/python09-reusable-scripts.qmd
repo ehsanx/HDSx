@@ -9,17 +9,22 @@ Use a `.py` script for reusable functions (like data cleaning) that you want to 
 2.  Add a cleaning function:
 
     ```{python}
-    import pandas as pd     
-
-    def load_and_preview(filepath):         
-        df = pd.read_csv(filepath)         
-        print(f"Loaded {len(df)} rows.")         
-        return df.head()
+      # # weeks/week05-polyglot-r-deepening/helpers.py
+      # from pathlib import Path
+      # import pandas as pd
+      # 
+      # def load_and_preview(path, n=5):
+      #     p = Path(path)
+      #     if not p.exists():
+      #         raise FileNotFoundError(f"Could not find file: {p.resolve()}")
+      #     df = pd.read_csv(p)
+      #     print(df.head(n))
+      #     return df
     ```
 
 3.  **Import it** in your notebook:
 
     ```{python}
-    from helpers import load_and_preview     
-    load_and_preview("data/patients.csv")
+    # from helpers import load_and_preview
+    # load_and_preview("data/patients.csv")
     ```

@@ -3,7 +3,7 @@
 | Task         | R                         | Python                             |
 |:-----------------------|:-----------------------|:-----------------------|
 | Load Library | `library(dplyr)`          | `import pandas as pd`              |
-| Load CSV     | `read.csv("f.csv")`       | `pd.read_csv("f.csv")`             |
+| Load CSV     | `read.csv("data/f.csv")`  | `pd.read_csv("data/f.csv")`        |
 | Row Count    | `nrow(df)`                | `len(df)`                          |
 | Filter       | `filter(df, age > 65)`    | `df[df['age'] > 65]`               |
 | New Column   | `mutate(df, bmi = w/h^2)` | `df['bmi'] = df['w'] / df['h']**2` |

@@ -1,6 +1,6 @@
 ## Data Source: PHAC Health Infobase {.unnumbered}
 
-The Health Infobase is a comprehensive digital platform maintained by the Public Health Agency of Canada (PHAC). The Infobase provides access to a wide range of health-related data tools, infographics, charts and blogs. There are 182 data sources available on the Infobase. The Health Infobase serves as a central hub for national surveillance data, interactive data tools, and public health reports. The platform is frequently updated with the latest surveillance data. 
+The Health Infobase is a comprehensive digital platform maintained by the Public Health Agency of Canada (PHAC). The Infobase provides access to a wide range of health-related data tools, infographics, charts and blogs. There are 182 data sources available on the Infobase. The Health Infobase serves as a central hub for national surveillance data, interactive data tools, and public health reports. The platform is frequently updated with the latest surveillance data.
 
 ```{r infobase1, echo=FALSE, cache=TRUE, out.width = '90%', fig.align='center'}
 knitr::include_graphics("../../assets/images/data8/infobase1.png")
@@ -12,19 +12,19 @@ knitr::include_graphics("../../assets/images/data8/infobase1.png")
 
 ### Data Categories
 
-The Infobase provides access to health data under six categories: 
+The Infobase provides access to health data under six categories:
 
-- `Diseases and disorders`: Comprehensive tracking of chronic conditions such as cancer, cardiovascular diseases, and COVID-19.
+-   `Diseases and disorders`: Comprehensive tracking of chronic conditions such as cancer, cardiovascular diseases, and COVID-19.
 
-- `Drugs and vaccines`: Data on prescription drugs, vaccine coverage, and immunization rates across the country.
-`
-- `Mental health, healthy living and environment`: Information on mental health indicators, physical activity levels, nutrition, and environmental factors such as wildfires.
+-   `Drugs and vaccines`: Data on prescription drugs, vaccine coverage, and immunization rates across the country. \`
 
-- `Injuries and death`: Data on death, suicide, violence, and drowning across regions.
+-   `Mental health, healthy living and environment`: Information on mental health indicators, physical activity levels, nutrition, and environmental factors such as wildfires.
 
-- `Population groups and demography`: Data on birth, maternity, children, family, and disabilities. 
+-   `Injuries and death`: Data on death, suicide, violence, and drowning across regions.
 
-- `Substance use`: Data on substance use such as alcohol, cannabis use, opioids, and smoking. 
+-   `Population groups and demography`: Data on birth, maternity, children, family, and disabilities.
+
+-   `Substance use`: Data on substance use such as alcohol, cannabis use, opioids, and smoking.
 
 Under each category, users can select the data for specific health topics. The three top categories are `Respiratory diseases`, `Opioids` and `Mental health`.
 
@@ -42,7 +42,7 @@ You can filter the data by category, by format, or by typing in keywords.
 knitr::include_graphics("../../assets/images/data8/infobase4.png")
 ```
 
-You can also filter the data by type, such as blog, infographic, or report. 
+You can also filter the data by type, such as blog, infographic, or report.
 
 ```{r infobase5, echo=FALSE, cache=TRUE, out.width = '90%', fig.align='center'}
 knitr::include_graphics("../../assets/images/data8/infobase5.png")
@@ -73,4 +73,3 @@ knitr::include_graphics("../../assets/images/data8/infobase9.png")
 ```{r infobase10, echo=FALSE, cache=TRUE, out.width = '90%', fig.align='center'}
 knitr::include_graphics("../../assets/images/data8/infobase10.png")
 ```
-

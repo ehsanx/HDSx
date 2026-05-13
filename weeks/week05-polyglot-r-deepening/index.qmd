@@ -324,7 +324,7 @@ Use what you learned this week: load your candidate dataset in *both* R and Pyth
 | R | Python | Notes |
 |------------------------|------------------------|------------------------|
 | `library(dplyr)` | `import pandas as pd` | Load data manipulation library |
-| `read.csv("f.csv")` | `pd.read_csv("f.csv")` | Always use relative paths |
+| `read.csv("data/f.csv")` | `pd.read_csv("data/f.csv")` | Always use relative paths |
 | `head(df)` | `df.head()` | First 5 rows |
 | `nrow(df)` | `len(df)` | Row count |
 | `names(df)` | `df.columns.tolist()` | Column names |

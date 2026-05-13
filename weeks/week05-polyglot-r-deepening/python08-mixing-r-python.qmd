@@ -19,12 +19,13 @@ Then you are able to use the results of that python code in R! Super cool!
 ### Demo (Run in R)
 
 ```{r}
-library(reticulate) # Run Python code inside R
-py_run_string("import pandas as pd; df = pd.read_csv('data/patients.csv')")
+#library(reticulate) # Run Python code inside R
+#py_run_string("import pandas as pd; df = pd.read_csv('data/patients.csv')")
 ```
 
 Access that Python object as an R object
 
 ```{r}
-py_df <- py$df head(py_df)
+#py_df <- py$df
+#head(py_df)
 ```
