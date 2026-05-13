@@ -1,0 +1,21 @@
+{
+  "hash": "576d66fda456506d1bd5b3fe119df4ed",
+  "result": {
+    "engine": "knitr",
+    "markdown": "# Tutorial 8: Mixing R and Python\"\n\n## Why Interoperability?\n\nThe R package `reticulate` lets you call Python from an R session. This is perfect when you need a Python-only package but want to keep your analysis in R.\n\nFirst define the package as seen below\n\n![](../../assets/images/python8/p1.png)\n\nThen build python code as shown\n\n![](../../assets/images/python8/p2.png)\n\nThen you are able to use the results of that python code in R! Super cool!\n\n![](../../assets/images/python8/p3.png)\n\n### Demo (Run in R)\n\n\n::: {.cell}\n\n```{.r .cell-code}\n#library(reticulate) # Run Python code inside R\n#py_run_string(\"import pandas as pd; df = pd.read_csv('data/patients.csv')\")\n```\n:::\n\n\nAccess that Python object as an R object\n\n\n::: {.cell}\n\n```{.r .cell-code}\n#py_df <- py$df\n#head(py_df)\n```\n:::\n\n",
+    "supporting": [
+      "python08-mixing-r-python_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {
+      "knitr": [
+        "{\"type\":\"list\",\"attributes\":{},\"value\":[]}"
+      ]
+    },
+    "preserve": null,
+    "postProcess": false
+  }
+}

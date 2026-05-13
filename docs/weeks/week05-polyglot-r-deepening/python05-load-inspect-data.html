@@ -106,7 +106,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
 
+
+
 <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
 
 
 <meta name="twitter:title" content="27&nbsp; Tutorial 5: Loading and Inspecting Health Data – Health Data Science: AI and Knowledge Translation">
@@ -859,6 +862,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Definition-of-Done Checklists</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../syllabus/topic-coverage-audit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Syllabus-to-Content Coverage Audit</span></span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -900,12 +909,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="loading-data-with-pandas" class="level2" data-number="27.1">
 <h2 data-number="27.1" class="anchored" data-anchor-id="loading-data-with-pandas"><span class="header-section-number">27.1</span> Loading Data with Pandas</h2>
 <p>In your notebook, use the following code to load your health data:</p>
-<div id="f06aed6f" class="cell" data-execution_count="1">
+<div id="f65e2175" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2"></a>data <span class="op">=</span> pd.read_csv(<span class="st">"data/patients.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>The code below allows you to view the dataset</p>
-<div id="f0727f08" class="cell" data-execution_count="2">
+<div id="2d051a67" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a>data.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="2">
 <div>

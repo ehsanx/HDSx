@@ -1,0 +1,19 @@
+{
+  "hash": "9c0a90fe097bbc301376fa187a6e4594",
+  "result": {
+    "engine": "knitr",
+    "markdown": "## Data Source: Open Portal {.unnumbered}\n\nOpen Government Portal Canada is a platform that provides access to searching for a wide range of public data. Users can explore and download data in different formats under the [Open Government Licence - Canada](https://open.canada.ca/en/open-government-licence-canada). \n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](../../assets/images/data11/open1.png){fig-align='center' width=90%}\n:::\n:::\n\n\n::: column-margin\n[Open Government Portal Canada](https://open.canada.ca/en)\n:::\n\n### Search for Open Data\n\nTo search for open data, you can use the search bar on the Open Government Portal Canada homepage. For example, if you are interested in finding data on \"hospital locations\", you can enter that term in the search bar and click the search icon. There are many filter options to narrow your search results, such as format and organization.\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](../../assets/images/data11/open2.png){fig-align='center' width=90%}\n:::\n:::\n\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](../../assets/images/data11/open3.png){fig-align='center' width=90%}\n:::\n:::\n\n\nTo explore a specific dataset, click its title. This will take you to a page with more information about the dataset, including its description, format options, and download links. For example, if you click on the \"Health care facilities - 50k\" dataset, you will find detailed information about the location of Yukon's hospitals and health centres.\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](../../assets/images/data11/open4.png){fig-align='center' width=90%}\n:::\n:::\n\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](../../assets/images/data11/open5.png){fig-align='center' width=90%}\n:::\n:::\n\n\nUnder the ``Data and Resources`` tab, you can find the available formats for downloading the location of Yukon's hospitals and health centres. \n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](../../assets/images/data11/open6.png){fig-align='center' width=90%}\n:::\n:::\n\n\nSimilarly, say we are interested in \"opioid use\" and want to find open data related to that topic. We can enter \"opioid use\" into the search bar and filter by `Open data`: \n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](../../assets/images/data11/open7.png){fig-align='center' width=90%}\n:::\n:::\n\n\nTo explore the data on opioid agonist treatment, we can click the dataset title. This will take us to a page with more information about the dataset, including its description, format options, and download links.\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](../../assets/images/data11/open8.png){fig-align='center' width=90%}\n:::\n:::\n\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](../../assets/images/data11/open9.png){fig-align='center' width=90%}\n:::\n:::\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {
+      "knitr": [
+        "{\"type\":\"list\",\"attributes\":{},\"value\":[]}"
+      ]
+    },
+    "preserve": null,
+    "postProcess": false
+  }
+}

@@ -2,7 +2,7 @@ project:
   type: book
   output-dir: docs
 execute:
-  freeze: false
+  freeze: auto
 book:
   title: "Health Data Science: AI and Knowledge Translation"
   author: 
@@ -143,6 +143,7 @@ book:
       chapters:
         - assistant-playbook/index.qmd
         - assistant-playbook/definition-of-done.qmd
+        - syllabus/topic-coverage-audit.md
 
 bibliography: references.bib
 
