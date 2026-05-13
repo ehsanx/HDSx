@@ -2,18 +2,7 @@
 
 ## Goal
 
-Students adapt a minimal dashboard-style knowledge translation product.
-
-## TODO Before Release
-
-::: {.callout-warning}
-## Content TODO
-
-- Add the starter dashboard code.
-- Add a screenshot or rendered preview.
-- Add a fallback static version for students who cannot deploy.
-- Add a checklist for audience, filter labels, chart captions, and limitations.
-:::
+Students adapt a minimal dashboard-style knowledge translation product by changing text and interpretation before changing analytic logic.
 
 ## Required Elements
 
@@ -22,3 +11,29 @@ Students adapt a minimal dashboard-style knowledge translation product.
 - One visualization.
 - One plain-language interpretation.
 - One limitation or caution.
+
+## Minimal Review Workflow
+
+1. Run the NHANES dashboard from the repository root.
+2. Choose a stakeholder audience, such as a public-health analyst, student team, or community-facing briefing group.
+3. Identify one label, caption, help text, or interpretation note that could be clearer for that audience.
+4. Make a documentation-only or UI-text-only change.
+5. Rerun the dashboard and verify the cached dataset loads.
+6. Record the change, audience, and limitation in a short note.
+
+## Student Output
+
+Submit a short dashboard adaptation note containing:
+
+- Audience sentence.
+- Before/after text change.
+- One screenshot or description of the affected dashboard area.
+- Limitation statement.
+- Reproducibility note describing how the app was run locally.
+
+## Privacy-Safe Publishing Check
+
+- Do not publish row-level data.
+- Avoid small-cell claims.
+- State that dashboard outputs are descriptive.
+- Keep the cached classroom data separate from raw NHANES retrieval work.

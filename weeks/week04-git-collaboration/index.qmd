@@ -15,16 +15,22 @@
 -   Use AI to translate diffs into clear, professional audit logs.
 -   Set up a group repository and agree on collaboration norms for the term project.
 
+## Connection
+
+Week 3 focused on writing and auditing small R summaries. This week treats each edit as a reviewable change with a clear history. Next week you will compare equivalent summaries across R and Python.
+
 ## Case Study Data Analysis
 
 {{< include ../../examples/nhanes-equity/snippets/case-study-data-analysis.qmd >}}
 
-Mini-tasks for Week 4:
+## In-Class Activity
 
 - Create a branch for a tiny dashboard documentation change.
 - Edit only a label, caption, or README sentence; do not change analytic logic.
-- Open a pull request and use the diff to confirm the change is limited.
+- Open a pull request and use the diff to verify the change is limited.
 - In the pull request description, state how you verified the change is documentation-only.
+
+Student output: a documentation-only pull request with a short audit note. Assignment link: `../../assignments/assignment03-git/README.md`.
 
 ------------------------------------------------------------------------
 
@@ -46,7 +52,7 @@ You already know how to stage, commit, and sync in your Codespace. This week, we
 
 *Scenario:* We will intentionally break last week's R script and use Git to rescue it.
 
-### Step 1: Confirm Your Baseline
+### Step 1: Verify Your Baseline
 
 Open your `.qmd` from last week. Make a small, meaningful edit (e.g., improve a comment). Stage (**+**), write a descriptive commit message, and commit (**✔**). This is your safety net.
 
@@ -143,7 +149,7 @@ A **Pull Request (PR)** is a GitHub feature that says: *"I have changes on a bra
 2.  Open your repository on **github.com**. You should see a banner: *"add-age-filter had recent pushes."* Click **Compare & pull request**.
 3.  Write a title and short description explaining what you changed and why.
 4.  Click **Create pull request**.
-5.  For now, review the diff on GitHub, then click **Merge pull request** → **Confirm merge**.
+5.  For now, review the diff on GitHub, then click **Merge pull request** and complete the merge.
 
 ::: callout-tip
 **Collaboration norm:** In your term project, agree with your group that changes go through PRs rather than directly to `main`. This creates a built-in review step.
@@ -195,10 +201,10 @@ This week you form your term project groups (**Milestone 0**). Use this session 
     -   All changes go through **branches → PRs** (no direct pushes to `main`).
     -   Commit messages should be descriptive (use the AI auto-scribe technique).
     -   Keep the repo clean: use `.gitignore`, relative paths, and a clear folder structure.
-4.  Each member makes a small "hello" commit (e.g., add your name to the `README.md`) and pushes it to confirm access.
+4.  Each member makes a small "hello" commit (e.g., add your name to the `README.md`) and pushes it to verify access.
 
 ::: callout-note
-**Milestone 0 due Friday:** Confirm your group formation on Canvas and ensure everyone can commit to the shared repository.
+**Milestone 0 due Friday:** Record your group formation on Canvas and ensure everyone can commit to the shared repository.
 :::
 
 ------------------------------------------------------------------------

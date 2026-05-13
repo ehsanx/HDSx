@@ -4,28 +4,22 @@
 
 This chapter challenges students to move beyond default charts and create publication-quality visualizations. You will use AI tools to generate initial code for complex plots in ggplot2 or plotly, and then apply human judgment to refine them for clarity, accuracy, and aesthetics. The lesson emphasizes detecting misleading AI-generated visuals and "steering" the code to tell a truthful and compelling data story.
 
+## Connection
+
+Week 5 checked that summaries agree across languages. This week turns a descriptive summary into a visual claim and asks whether the design helps or misleads the audience. Next week you will document the same dataset with EDA and a Table 1.
+
 ## Case Study Data Analysis
 
 {{< include ../../examples/nhanes-equity/snippets/case-study-data-analysis.qmd >}}
 
-Mini-tasks for Week 6:
+## In-Class Activity
 
 - Work through the [ggplot worked example](worked-example-ggplot.qmd) using the CSV snapshot.
 - Audit the flawed plot provided in the visual-audit activity and identify at least three issues.
 - Revise the plot so the title, scale, grouping, and caption support descriptive interpretation.
 - Explain what changed and why, including any AI assistance you used.
 
-## Instructor Decisions
-
-::: {.callout-warning}
-## Before Release
-
-- Confirm whether the Week 6 worked example becomes required pre-class work or in-class practice.
-- Decide whether the instructor-provided flawed chart is released as code, image, or both.
-- Decide whether a plotly or interactive chart extension is required or optional.
-- Confirm the Assignment 5 submission route in Canvas or the repo.
-- Confirm whether the caption checklist is graded or formative.
-:::
+Student output: a corrected plot, caption, audit note, and AI-use note. Assignment link: `../../assignments/assignment05-visualization/README.md`.
 
 ## Definition of Done
 

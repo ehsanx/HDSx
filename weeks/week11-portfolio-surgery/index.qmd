@@ -4,33 +4,27 @@
 
 Before the final submission, students must "bulletproof" their work. This chapter focuses on advanced project hygiene, dependency management (ensuring your code runs on someone else's machine), and auditability. You will act as a peer reviewer to identify reproducibility failures in others' code, fixing broken paths and missing seeds, to ensure your final project stands up to scientific scrutiny.
 
+## Connection
+
+Week 10 produced a report with code-generated outputs and citations. This week tests whether the report, dashboard, and instructions survive a fresh environment. The final portfolio should leave a reviewer able to rerun the core work without private setup knowledge.
+
 ## Dashboard Case Study: NHANES Equity
 
 {{< include ../../examples/nhanes-equity/snippets/case-study-dashboard.qmd >}}
 
-Mini-tasks for Week 11:
+## In-Class Activity
 
 - Run a fresh-session test: can the app launch from the repository root?
-- Confirm the cached RDS path works before attempting a CDC rebuild.
+- Verify the cached RDS path works before attempting a CDC rebuild.
 - Optionally run the rebuild script only if internet access and time are available.
 - Optionally draft a static dashboard extension using a CSV snapshot and no Shiny server.
 - Log any dependency, path, or README issues as reproducibility risks.
 
-### Optional Extension: Static Dashboard (No Server)
+Student output: a reproducibility test log, repaired README or path issues, and a final risk list. Assignment link: `../../assignments/assignment10-portfolio-surgery/README.md`.
 
-Advanced students can compare the Shiny workflow with the draft [static dashboard source file](static-dashboard-ojs.qmd). This extension reads from a CSV snapshot and does not require a Shiny server; render it as a standalone dashboard if assigned.
+## Static Dashboard Demo
 
-## TODO Before Release
-
-::: {.callout-warning}
-## Content TODO
-
-- Add a fresh Codespace stress-test protocol.
-- Add a broken-project debugging exercise.
-- Add Assignment 10 instructions in `assignments/assignment10-portfolio-surgery/`.
-- Add Milestone 4 peer review instructions.
-- Add a final portfolio readiness checklist.
-:::
+The completed [static dashboard source file](static-dashboard-ojs.qmd) demonstrates a no-server alternative that reads the NHANES CSV snapshot in the browser. Use it as an exemplar for optional portfolio extensions after the core Shiny and report workflows are reproducible.
 
 ## Definition of Done
 

@@ -11,3 +11,8 @@ shiny::runApp("examples/nhanes-equity/app")
 ```
 
 The app is offline-first: it loads the local RDS cache when available. Rebuilding from CDC uses `nhanesA`, requires internet access, and is optional unless assigned.
+
+Companion materials:
+
+- Week 10 report template: `weeks/week10-reporting-publishing/report-template.qmd`
+- Week 11 static dashboard demo: `weeks/week11-portfolio-surgery/static-dashboard-ojs.qmd`

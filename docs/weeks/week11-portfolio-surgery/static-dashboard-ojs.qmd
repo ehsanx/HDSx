@@ -1,5 +1,5 @@
 ---
-title: "Static NHANES Equity Dashboard Draft"
+title: "Static NHANES Equity Dashboard"
 format:
   dashboard:
     orientation: rows
@@ -7,7 +7,7 @@ format:
 
 # Sidebar {.sidebar}
 
-This optional extension sketches a no-server dashboard using a CSV snapshot and Observable JS. It is advanced material for students who want to compare a static dashboard pattern with the Shiny app.
+This no-server dashboard reads the cached NHANES Health Equity CSV snapshot in the browser. It is descriptive, unweighted, and intended as a static portfolio extension.
 
 ```{ojs}
 nhanes = FileAttachment("../../examples/nhanes-equity/data/nhanes_equity_v6.csv").csv({typed: true})
@@ -16,6 +16,11 @@ viewof selectedIncome = Inputs.select(["All"].concat(incomeGroups), {
   label: "Income group",
   value: "All"
 })
+viewof ageRange = Inputs.range([20, 80], {
+  label: "Age range",
+  step: 5,
+  value: [20, 80]
+})
 ```
 
 # Row
@@ -23,20 +28,17 @@ viewof selectedIncome = Inputs.select(["All"].concat(incomeGroups), {
 ## Mean BMI Across Cycle
 
 ```{ojs}
-filtered = selectedIncome === "All"
-  ? nhanes
-  : nhanes.filter(d => d.IncomeGroup === selectedIncome)
-
-adultRows = filtered.filter(d =>
+filtered = nhanes.filter(d =>
+  (selectedIncome === "All" || d.IncomeGroup === selectedIncome) &&
   d.BMI != null &&
-  d.Age >= 20 &&
-  d.Age <= 80 &&
+  d.Age >= ageRange[0] &&
+  d.Age <= ageRange[1] &&
   d.Cycle != null
 )
 
 cycleSummary = Array.from(
   d3.rollup(
-    adultRows,
+    filtered,
     rows => ({
       n: rows.length,
       mean_bmi: d3.mean(rows, d => d.BMI)
@@ -53,7 +55,7 @@ cycleSummary = Array.from(
 Plot.plot({
   height: 360,
   marginBottom: 70,
-  y: {label: "Mean BMI"},
+  y: {label: "Mean BMI", zero: true},
   x: {label: "NHANES cycle", tickRotate: -45},
   marks: [
     Plot.lineY(cycleSummary, {x: "Cycle", y: "mean_bmi"}),
@@ -77,4 +79,4 @@ Inputs.table(cycleSummary.map(d => ({
 
 ## Interpretation Note
 
-This dashboard uses the cached CSV snapshot and runs entirely in the browser. It is descriptive, unweighted, and not a replacement for the Shiny app or a survey-weighted analysis. Use it as a portfolio extension only after the core reproducibility checks are complete.
+This static dashboard filters the cached classroom dataset by income group and age range. The chart and table show unweighted descriptive summaries only. The static version is useful for portfolios because it does not require a running Shiny server, but it does not replace a documented report or survey-weighted analysis.

@@ -15,16 +15,22 @@
 -   Avoid "Frankenstein code" via the **One Step, One Cell** AI workflow.
 -   Apply Week 4 Git skills to track Python translations with meaningful commits.
 
+## Connection
+
+Week 4 made small changes reviewable. This week checks whether the same dataset gives the same answer when you move between R and Python. Next week you will turn those summaries into clearer visual explanations.
+
 ## Case Study Data Analysis
 
 {{< include ../../examples/nhanes-equity/snippets/case-study-data-analysis.qmd >}}
 
-Mini-tasks for Week 5:
+## In-Class Activity
 
 - Load `examples/nhanes-equity/data/nhanes_equity_v6.csv` in R and Python.
 - Compare row counts and column names across the two languages.
 - Choose one summary, such as mean BMI by sex, and check whether R and Python agree.
 - Treat any mismatch as an audit prompt: check data types, missing values, and grouping logic before changing code.
+
+Student output: a parity-check note with row counts, column checks, and one matched R/Python summary. Assignment link: `../../assignments/assignment04-polyglot/README.md`.
 
 ------------------------------------------------------------------------
 
@@ -148,7 +154,7 @@ data.head()
 
 ### Verify in the Data Viewer
 
-After running the cell above, open the **Variables** pane → double-click `data` → confirm the columns and row count match what you expect from your R analysis.
+After running the cell above, open the **Variables** pane → double-click `data` → check that the columns and row count match what you expect from your R analysis.
 
 **AI Prompt:**
 
@@ -291,12 +297,12 @@ Apply your Week 4 skills:
 Your proposal should include:
 
 -   **Research question:** A clear, focused question about health data.
--   **Data source:** Which dataset you will use (e.g., NHANES, a Kaggle health dataset). Confirm it is accessible and appropriately sized.
+-   **Data source:** Which dataset you will use (e.g., NHANES, a Kaggle health dataset). Check that it is accessible and appropriately sized.
 -   **Feasibility check:** Can you load and preview the data in a Codespace? (Try it before submitting.)
 -   **Planned approach:** A brief sketch of what analyses and visualizations you envision.
 
 ::: callout-tip
-Use what you learned this week: load your candidate dataset in *both* R and Python to confirm it works. This early check prevents surprises later.
+Use what you learned this week: load your candidate dataset in *both* R and Python to check that it works. This early check prevents surprises later.
 :::
 
 ------------------------------------------------------------------------

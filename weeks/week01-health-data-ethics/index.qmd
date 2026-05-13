@@ -14,16 +14,22 @@ This chapter sets the stage by defining the core philosophy of the course: data 
 
 > **Note:** Week 1 is **light on code** and **heavy on awareness**. There is **no graded assignment submission** this week. Instead, you will complete a "Data Intake Card" to prepare for your future portfolio.
 
+## Connection
+
+This first week starts with provenance, ethics, and KT framing before any dashboard work. Next week you will place the same dataset inside a reproducible project structure.
+
 ## Case Study Data Spine
 
 {{< include ../../examples/nhanes-equity/snippets/case-study-data-only.qmd >}}
 
-Mini-tasks for Week 1:
+## In-Class Activity
 
 - Use the case-study dataset as a practice entry for the Data Intake Card.
 - Identify the public source, local cached file, and the README that describes the case study.
 - Write one KT framing sentence: who might use this dashboard, and what decision could it support?
 - Name one ethics or stewardship question to verify before publishing a dashboard based on public health survey data.
+
+Student output: a completed Data Intake Card entry for either the NHANES case-study dataset or another approved public-health dataset.
 
 ------------------------------------------------------------------------
 
@@ -174,7 +180,7 @@ To prepare for next week:
 2.  Fill out the **Data Intake Card** (copy/paste the YAML block and complete it).
 3.  Save this card; you will use this dataset for your first real project in Week 5.
 
-**I confirm I understand:**
+**I understand:**
 
 -   [ ] The difference between open **aggregate indicators** and microdata.
 -   [ ] How to find documentation/metadata for a dataset.

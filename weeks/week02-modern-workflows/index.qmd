@@ -16,16 +16,22 @@
 - Stage, commit, and sync changes using the VS Code Source Control panel.
 - Stop your Codespace to conserve your free monthly hours.
 
+## Connection
+
+Week 1 focused on whether a dataset is trustworthy enough to use. This week focuses on where that dataset lives in a project and how relative paths make the same work portable across machines. Next week you will start inspecting the data with R.
+
 ## Case Study Data Spine
 
 {{< include ../../examples/nhanes-equity/snippets/case-study-data-only.qmd >}}
 
-Mini-tasks for Week 2:
+## In-Class Activity
 
-- Locate the app, data, script, and snippet folders in the Explorer.
-- Explain why the app uses relative paths instead of machine-specific paths.
-- Confirm that the weekly page includes the shared snippet rather than duplicating instructions.
-- Render the book from the repository root and confirm this page updates in the rendered output.
+- Locate the case-study data, README, and snippet folders in the Explorer.
+- Explain why the data example uses relative paths instead of machine-specific paths.
+- Check that the weekly page includes the shared snippet rather than duplicating instructions.
+- Render the book from the repository root and check that this page updates in the rendered output.
+
+Student output: a rendered Quarto page and one commit showing a small, reproducible edit. Assignment link: `../../assignments/assignment01-workflows/README.md`.
 
 ---
 
@@ -80,7 +86,7 @@ If you do not already have one:
 2. Accept the invitation. This connects your GitHub account to the course roster.
 3. Accept the **starter assignment**. GitHub Classroom will automatically create a personal repository for you, pre-loaded with the files you need for this week.
 
-### Step 3: Confirm Your Repository
+### Step 3: Verify Your Repository
 
 Navigate to the repository that was just created. You should see:
 
@@ -277,7 +283,7 @@ Click the **✔ Commit** button (checkmark). Your changes are now saved as a sna
 
 Click **Sync Changes** (in the Source Control panel or the status bar at the bottom). This pushes your commit to GitHub --- your Cloud Drive.
 
-**Verify:** Go to your repository on [github.com](https://github.com) and confirm that your changes appear. You should see your commit message next to the updated file.
+**Verify:** Go to your repository on [github.com](https://github.com) and check that your changes appear. You should see your commit message next to the updated file.
 
 ::: {.callout-warning}
 **If you skip the Sync step**, your commit exists only on the Codespace. If the Codespace is deleted, the commit goes with it. Always Sync.
@@ -367,7 +373,7 @@ Edit and render the starter `practice_report.qmd`, demonstrating that you can na
 2 + 2
 ```
 
-5. **Render** the document. Confirm the output looks correct.
+5. **Render** the document. Check that the output looks correct.
 6. **Commit and Sync:**
    - Open Source Control.
    - Stage your changed files (**+**).

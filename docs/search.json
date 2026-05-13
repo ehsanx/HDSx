@@ -214,11 +214,33 @@
     ]
   },
   {
+    "objectID": "weeks/week01-health-data-ethics/index.html#connection",
+    "href": "weeks/week01-health-data-ethics/index.html#connection",
+    "title": "Health Data & Ethics",
+    "section": "Connection",
+    "text": "Connection\nThis first week starts with provenance, ethics, and KT framing before any dashboard work. Next week you will place the same dataset inside a reproducible project structure.",
+    "crumbs": [
+      "Week 1: Health Data, KT & Ethics",
+      "Health Data & Ethics"
+    ]
+  },
+  {
     "objectID": "weeks/week01-health-data-ethics/index.html#case-study-data-spine",
     "href": "weeks/week01-health-data-ethics/index.html#case-study-data-spine",
     "title": "Health Data & Ethics",
     "section": "Case Study Data Spine",
-    "text": "Case Study Data Spine\nThe NHANES Health Equity data spine is the recurring dataset thread for this course. In the early weeks, use it only as a documented public-health data artifact: provenance, ethics, file organization, and reproducible paths.\n\nCached RDS: examples/nhanes-equity/data/nhanes_equity_v6.rds\nCSV snapshot: examples/nhanes-equity/data/nhanes_equity_v6.csv\nCase-study README: examples/nhanes-equity/README.md\n\nThe cached files are provided so early work can happen without internet access.\nMini-tasks for Week 1:\n\nUse the case-study dataset as a practice entry for the Data Intake Card.\nIdentify the public source, local cached file, and the README that describes the case study.\nWrite one KT framing sentence: who might use this dashboard, and what decision could it support?\nName one ethics or stewardship question to verify before publishing a dashboard based on public health survey data.",
+    "text": "Case Study Data Spine\nThe NHANES Health Equity data spine is the recurring dataset thread for this course. In the early weeks, use it only as a documented public-health data artifact: provenance, ethics, file organization, and reproducible paths.\n\nCached RDS: examples/nhanes-equity/data/nhanes_equity_v6.rds\nCSV snapshot: examples/nhanes-equity/data/nhanes_equity_v6.csv\nCase-study README: examples/nhanes-equity/README.md\n\nThe cached files are provided so early work can happen without internet access.\n\nlibrary(readr)\nlibrary(dplyr)\n\ncandidate_paths &lt;- c(\n  \"examples/nhanes-equity/data/nhanes_equity_v6.csv\",\n  \"../../examples/nhanes-equity/data/nhanes_equity_v6.csv\"\n)\n\nnhanes_path &lt;- candidate_paths[file.exists(candidate_paths)][1]\nif (is.na(nhanes_path)) {\n  stop(\"Could not find examples/nhanes-equity/data/nhanes_equity_v6.csv\")\n}\n\nnhanes_spine &lt;- read_csv(nhanes_path, show_col_types = FALSE)\n\ndim(nhanes_spine)\n#&gt; [1] 105626     18\nglimpse(nhanes_spine)\n#&gt; Rows: 105,626\n#&gt; Columns: 18\n#&gt; $ Cycle          &lt;chr&gt; \"1999-2000\", \"1999-2000\", \"1999-2000\", \"1999-2000\", \"19…\n#&gt; $ BMI            &lt;dbl&gt; 14.90, 24.90, 17.63, NA, 29.10, 22.56, 29.39, 15.51, 18…\n#&gt; $ Weight         &lt;dbl&gt; 12.5, 75.4, 32.9, 13.3, 92.5, 59.2, 78.0, 40.7, 45.5, 1…\n#&gt; $ Height         &lt;dbl&gt; 91.6, 174.0, 136.6, NA, 178.3, 162.0, 162.9, 162.0, 156…\n#&gt; $ Waist          &lt;dbl&gt; 45.7, 98.0, 64.7, NA, 99.9, 81.6, 90.7, 64.1, 64.6, 108…\n#&gt; $ WeightMEC      &lt;dbl&gt; 10982.899, 28325.385, 46192.257, 10251.260, 99445.066, …\n#&gt; $ Strata         &lt;dbl&gt; 5, 1, 7, 2, 8, 2, 4, 6, 9, 7, 1, 6, 13, 12, 11, 11, 5, …\n#&gt; $ PSU            &lt;dbl&gt; 1, 3, 2, 1, 2, 2, 2, 1, 2, 1, 2, 2, 2, 1, 2, 1, 1, 1, 2…\n#&gt; $ Gender         &lt;chr&gt; \"Female\", \"Male\", \"Female\", \"Male\", \"Male\", \"Female\", \"…\n#&gt; $ Race           &lt;chr&gt; \"Non-Hispanic Black\", \"Non-Hispanic White\", \"Non-Hispan…\n#&gt; $ Education      &lt;chr&gt; NA, \"College Grad\", NA, NA, \"College Grad\", NA, \"HS or …\n#&gt; $ Marital        &lt;chr&gt; NA, NA, NA, NA, \"Married/Partner\", \"Never Married\", \"Ma…\n#&gt; $ Age            &lt;dbl&gt; 2, 77, 10, 1, 49, 19, 59, 13, 11, 43, 15, 37, 70, 81, 3…\n#&gt; $ PIR            &lt;dbl&gt; 0.86, 5.00, 1.47, 0.57, 5.00, 1.21, NA, 0.53, NA, NA, 1…\n#&gt; $ EducationClean &lt;chr&gt; NA, \"College Grad\", NA, NA, \"College Grad\", NA, \"HS or …\n#&gt; $ MaritalClean   &lt;chr&gt; NA, NA, NA, NA, \"Married/Partner\", \"Never Married\", \"Ma…\n#&gt; $ IncomeGroup    &lt;chr&gt; \"Low Income (&lt;1.3)\", \"High Income (&gt;3.5)\", \"Middle Inco…\n#&gt; $ WHtR           &lt;dbl&gt; 0.4989083, 0.5632184, 0.4736457, NA, 0.5602916, 0.50370…",
+    "crumbs": [
+      "Week 1: Health Data, KT & Ethics",
+      "Health Data & Ethics"
+    ]
+  },
+  {
+    "objectID": "weeks/week01-health-data-ethics/index.html#in-class-activity",
+    "href": "weeks/week01-health-data-ethics/index.html#in-class-activity",
+    "title": "Health Data & Ethics",
+    "section": "In-Class Activity",
+    "text": "In-Class Activity\n\nUse the case-study dataset as a practice entry for the Data Intake Card.\nIdentify the public source, local cached file, and the README that describes the case study.\nWrite one KT framing sentence: who might use this dashboard, and what decision could it support?\nName one ethics or stewardship question to verify before publishing a dashboard based on public health survey data.\n\nStudent output: a completed Data Intake Card entry for either the NHANES case-study dataset or another approved public-health dataset.",
     "crumbs": [
       "Week 1: Health Data, KT & Ethics",
       "Health Data & Ethics"
@@ -295,7 +317,7 @@
     "href": "weeks/week01-health-data-ethics/index.html#portfolio-prep-ungraded",
     "title": "Health Data & Ethics",
     "section": "Portfolio Prep (Ungraded)",
-    "text": "Portfolio Prep (Ungraded)\nYour Week 1 task (Complete/Incomplete):\n\nChoose one dataset page from a reputable portal (links on Canvas).\nFill out the Data Intake Card (copy/paste the YAML block and complete it).\nSave this card; you will use this dataset for your first real project in Week 5.\n\nI confirm I understand:\n\nThe difference between open aggregate indicators and microdata.\nHow to find documentation/metadata for a dataset.\nMy responsibility when using GenAI (disclose, verify, be accountable).\nThat datasets involving Indigenous Peoples require extra care and may need instructor guidance before use.",
+    "text": "Portfolio Prep (Ungraded)\nYour Week 1 task (Complete/Incomplete):\n\nChoose one dataset page from a reputable portal (links on Canvas).\nFill out the Data Intake Card (copy/paste the YAML block and complete it).\nSave this card; you will use this dataset for your first real project in Week 5.\n\nI understand:\n\nThe difference between open aggregate indicators and microdata.\nHow to find documentation/metadata for a dataset.\nMy responsibility when using GenAI (disclose, verify, be accountable).\nThat datasets involving Indigenous Peoples require extra care and may need instructor guidance before use.",
     "crumbs": [
       "Week 1: Health Data, KT & Ethics",
       "Health Data & Ethics"
@@ -313,11 +335,11 @@
     ]
   },
   {
-    "objectID": "weeks/week01-health-data-ethics/activity-data-intake-card.html#approved-starter-portals-choose-one",
-    "href": "weeks/week01-health-data-ethics/activity-data-intake-card.html#approved-starter-portals-choose-one",
+    "objectID": "weeks/week01-health-data-ethics/activity-data-intake-card.html#approved-starter-portals",
+    "href": "weeks/week01-health-data-ethics/activity-data-intake-card.html#approved-starter-portals",
     "title": "Activity: Data Intake Card",
-    "section": "Approved Starter Portals (choose one)",
-    "text": "Approved Starter Portals (choose one)\nChoose one dataset/indicator page from one of the portals below (pick something you care about). You are not required to use the same dataset as other students.\n\nSurvey-style microdata (person-level): NHANES or NHIS (see Reference: Data Sources)\n\nGood if you want person-level variables (age, sex, BMI, smoking, etc.)\nExpect: codebooks, sampling notes, and data dictionaries\n\nIndicators (aggregated country/province-level): WHO Global Health Observatory (GHO)\n\nGood if you want country-level trends (life expectancy, mortality, vaccination coverage, etc.)\nExpect: “indicator metadata” (definition + method), downloadable CSV, not person-level records\n\nHow to use GHO quickly (what to click):\n\nPick one indicator (e.g., “Life expectancy at birth”, “Maternal mortality ratio”, “Diabetes prevalence”)\nPick one geography (Canada or another country/region)\nFind: indicator definition / metadata, time coverage, and the download option\n\nCanadian open data portal: BC Data Catalogue or Open Government Portal (Canada)\n\nGood if you want Canadian administrative/open datasets\nExpect: variable definitions vary widely (sometimes excellent, sometimes minimal)\n\n\n\nTip: If you’re unsure whether your selection is microdata or aggregated indicators, write “unknown” in data_level and explain what you observed on the download page.",
+    "section": "Approved Starter Portals",
+    "text": "Approved Starter Portals\nChoose one dataset or indicator page from one of the portals below.\n\nSurvey-style microdata: NHANES or NHIS from CDC/NCHS.\nAggregated indicators: WHO Global Health Observatory.\nCanadian open data: BC Data Catalogue or the Open Government Portal.\n\nThe NHANES Health Equity data spine can be used as the shared practice example when students need a common dataset.",
     "crumbs": [
       "Week 1: Health Data, KT & Ethics",
       "Activity: Data Intake Card"
@@ -335,33 +357,44 @@
     ]
   },
   {
-    "objectID": "weeks/week01-health-data-ethics/activity-data-intake-card.html#example-completed-data-intake-card-sample",
-    "href": "weeks/week01-health-data-ethics/activity-data-intake-card.html#example-completed-data-intake-card-sample",
+    "objectID": "weeks/week01-health-data-ethics/activity-data-intake-card.html#completed-example-nhanes",
+    "href": "weeks/week01-health-data-ethics/activity-data-intake-card.html#completed-example-nhanes",
     "title": "Activity: Data Intake Card",
-    "section": "Example (Completed Data Intake Card — sample)",
-    "text": "Example (Completed Data Intake Card — sample)\n\nWHO\nThis example uses one WHO indicator to demonstrate what “Complete” looks like. You may choose a different portal and topic.\ndataset_name: \"Life expectancy at birth (years)\"\npublisher_org: \"World Health Organization (WHO)\"\npermalink_url: \"https://www.who.int/data/gho\"\nlicense_terms: \"See WHO terms on the portal; record as provided\"\ngeography: \"Canada (and global comparison)\"\ntime_coverage: \"2000–2023 (varies by country)\"\ndata_level: \"Aggregated indicators (country-level)\"\nvariables_of_interest:\n  - name: \"Life expectancy at birth (years)\"\n    definition: \"Expected years of life at birth (method described in WHO metadata)\"\n    known_limitations: \"Model-based estimates; depends on reporting quality; not person-level\"\nstewardship_notes: \"No individual-level data; still avoid overclaiming causality; cite metadata.\"\nai_use_note: \"Used AI to draft a plain-language summary of the indicator; verified against WHO metadata page.\"\n\n\nNHANES\ndataset_name: \"NHANES 2017–2018 Demographics (example)\"\npublisher_org: \"CDC / NCHS\"\npermalink_url: \"https://wwwn.cdc.gov/nchs/nhanes/\"\ndate_accessed: \"YYYY-MM-DD\"\nlicense_terms: \"Public-use (see NHANES guidance on site)\"\ngeography: \"United States\"\ntime_coverage: \"2017–2018\"\ndata_level: \"Microdata (person-level)\"\nvariables_of_interest:\n  - name: \"RIAGENDR\"\n    definition: \"Gender (coded categories per documentation)\"\nknown_limitations:\n  - \"Complex survey design; weights needed for population inference\"\nstewardship_notes: \"De-identified public-use microdata; still avoid reporting small cell counts.\"\nai_use_note: \"Used AI to summarize the codebook section for RIAGENDR; verified against official documentation.\"",
+    "section": "Completed Example: NHANES",
+    "text": "Completed Example: NHANES\ndataset_name: \"NHANES Health Equity classroom dataset\"\npublisher_org: \"CDC / National Center for Health Statistics\"\npermalink_url: \"https://wwwn.cdc.gov/nchs/nhanes/\"\ndate_accessed: \"YYYY-MM-DD\"\nlicense_terms: \"Public-use NHANES files; cite CDC/NCHS documentation\"\ngeography: \"United States\"\ntime_coverage: \"Multiple NHANES cycles represented in the prepared class file\"\ndata_level: \"Microdata-derived classroom dataset\"\nvariables_of_interest:\n  - name: \"BMI\"\n    definition: \"Body mass index from NHANES body measures data\"\nknown_limitations:\n  - \"Prepared class dataset is descriptive and should not be treated as a causal analysis\"\n  - \"Population inference requires attention to NHANES survey design and weights\"\nstewardship_notes: \"Use public-use data responsibly, avoid small-cell disclosure, and state limitations plainly.\"\nai_use_note: \"AI may help draft plain-language summaries, but source documentation must be checked directly.\"",
     "crumbs": [
       "Week 1: Health Data, KT & Ethics",
       "Activity: Data Intake Card"
     ]
   },
   {
-    "objectID": "weeks/week01-health-data-ethics/activity-data-intake-card.html#completion-checklist-complete-incomplete",
-    "href": "weeks/week01-health-data-ethics/activity-data-intake-card.html#completion-checklist-complete-incomplete",
+    "objectID": "weeks/week01-health-data-ethics/activity-data-intake-card.html#completion-checklist",
+    "href": "weeks/week01-health-data-ethics/activity-data-intake-card.html#completion-checklist",
     "title": "Activity: Data Intake Card",
-    "section": "Completion Checklist (Complete / Incomplete)",
-    "text": "Completion Checklist (Complete / Incomplete)\nTo be marked Complete, your card must include:\n\nA stable link (or link + date accessed)\nPublisher/organization named\nLicense/terms noted (even if “see portal terms”)\nData level identified (microdata vs aggregated indicators)\nAt least one variable with a definition grounded in documentation (not AI guesswork)\nOne limitation or risk of misuse (privacy, over-interpretation, stewardship)\nAI-use note (what you used AI for + how you verified)\n\n\nIf you’re uncertain about something, write unknown and explain what you looked for. ## TODO Before Release",
+    "section": "Completion Checklist",
+    "text": "Completion Checklist\nTo be marked Complete, your card must include:\n\nA stable link or access date.\nPublisher or organization.\nLicense or terms of use.\nData level: microdata, aggregated indicator, or unknown with explanation.\nAt least one variable definition grounded in documentation.\nOne limitation or stewardship risk.\nAI-use note explaining what was drafted and how it was checked.",
     "crumbs": [
       "Week 1: Health Data, KT & Ethics",
       "Activity: Data Intake Card"
     ]
   },
   {
-    "objectID": "weeks/week01-health-data-ethics/activity-data-intake-card.html#submission-week-1",
-    "href": "weeks/week01-health-data-ethics/activity-data-intake-card.html#submission-week-1",
+    "objectID": "weeks/week01-health-data-ethics/activity-data-intake-card.html#submission",
+    "href": "weeks/week01-health-data-ethics/activity-data-intake-card.html#submission",
     "title": "Activity: Data Intake Card",
-    "section": "Submission (Week 1)",
-    "text": "Submission (Week 1)\nThis is not graded, but you must complete it because you’ll reuse it later.\nSubmit by: - Option A (recommended): paste your completed card into Canvas (Week 1 module) - Option B: commit a data-intake-card.md file to your repo (we’ll do this starting Week 2)\nInstructor will confirm the submission route on Canvas.\n\n\n\n\n\n\nContent TODO\n\n\n\n\nAdd 2-3 approved starter portals from Canvas.\nAdd a short rubric for provenance, licensing, variable clarity, and stewardship.\nExplain that students will submit this on Canvas.",
+    "section": "Submission",
+    "text": "Submission\nSubmit your completed card in Canvas under the Week 1 module. Starting in Week 2, keep a copy in your course repository as data-intake-card.md.",
+    "crumbs": [
+      "Week 1: Health Data, KT & Ethics",
+      "Activity: Data Intake Card"
+    ]
+  },
+  {
+    "objectID": "weeks/week01-health-data-ethics/activity-data-intake-card.html#scoring-guide",
+    "href": "weeks/week01-health-data-ethics/activity-data-intake-card.html#scoring-guide",
+    "title": "Activity: Data Intake Card",
+    "section": "Scoring Guide",
+    "text": "Scoring Guide\n\nComplete: Stable source, publisher, terms, data level, documented variable definition, limitation/stewardship note, and AI-use note are present.\nNeeds work: Source documentation is missing, license/terms are unclear, variable definitions are guessed, or limitations are absent.",
     "crumbs": [
       "Week 1: Health Data, KT & Ethics",
       "Activity: Data Intake Card"
@@ -372,7 +405,7 @@
     "href": "weeks/week01-health-data-ethics/activity-data-intake-card.html#reproducibility-check",
     "title": "Activity: Data Intake Card",
     "section": "Reproducibility Check",
-    "text": "Reproducibility Check\n\nThe dataset link is stable or includes an access date.\nThe publisher and license are named.\nVariable definitions come from source documentation, not AI guesses.\nThe student records what they asked AI and how they verified the answer.",
+    "text": "Reproducibility Check\n\nThe dataset link is stable or includes an access date.\nThe publisher and license are named.\nVariable definitions come from source documentation, not AI guesses.\nThe AI-use note states how the student checked AI-assisted text.",
     "crumbs": [
       "Week 1: Health Data, KT & Ethics",
       "Activity: Data Intake Card"
@@ -401,11 +434,33 @@
     ]
   },
   {
+    "objectID": "weeks/week02-modern-workflows/index.html#connection",
+    "href": "weeks/week02-modern-workflows/index.html#connection",
+    "title": "Modern Workflows",
+    "section": "Connection",
+    "text": "Connection\nWeek 1 focused on whether a dataset is trustworthy enough to use. This week focuses on where that dataset lives in a project and how relative paths make the same work portable across machines. Next week you will start inspecting the data with R.",
+    "crumbs": [
+      "Week 2: Modern Workflows",
+      "Modern Workflows"
+    ]
+  },
+  {
     "objectID": "weeks/week02-modern-workflows/index.html#case-study-data-spine",
     "href": "weeks/week02-modern-workflows/index.html#case-study-data-spine",
     "title": "Modern Workflows",
     "section": "Case Study Data Spine",
-    "text": "Case Study Data Spine\nThe NHANES Health Equity data spine is the recurring dataset thread for this course. In the early weeks, use it only as a documented public-health data artifact: provenance, ethics, file organization, and reproducible paths.\n\nCached RDS: examples/nhanes-equity/data/nhanes_equity_v6.rds\nCSV snapshot: examples/nhanes-equity/data/nhanes_equity_v6.csv\nCase-study README: examples/nhanes-equity/README.md\n\nThe cached files are provided so early work can happen without internet access.\nMini-tasks for Week 2:\n\nLocate the app, data, script, and snippet folders in the Explorer.\nExplain why the app uses relative paths instead of machine-specific paths.\nConfirm that the weekly page includes the shared snippet rather than duplicating instructions.\nRender the book from the repository root and confirm this page updates in the rendered output.",
+    "text": "Case Study Data Spine\nThe NHANES Health Equity data spine is the recurring dataset thread for this course. In the early weeks, use it only as a documented public-health data artifact: provenance, ethics, file organization, and reproducible paths.\n\nCached RDS: examples/nhanes-equity/data/nhanes_equity_v6.rds\nCSV snapshot: examples/nhanes-equity/data/nhanes_equity_v6.csv\nCase-study README: examples/nhanes-equity/README.md\n\nThe cached files are provided so early work can happen without internet access.\n\nlibrary(readr)\nlibrary(dplyr)\n\ncandidate_paths &lt;- c(\n  \"examples/nhanes-equity/data/nhanes_equity_v6.csv\",\n  \"../../examples/nhanes-equity/data/nhanes_equity_v6.csv\"\n)\n\nnhanes_path &lt;- candidate_paths[file.exists(candidate_paths)][1]\nif (is.na(nhanes_path)) {\n  stop(\"Could not find examples/nhanes-equity/data/nhanes_equity_v6.csv\")\n}\n\nnhanes_spine &lt;- read_csv(nhanes_path, show_col_types = FALSE)\n\ndim(nhanes_spine)\n#&gt; [1] 105626     18\nglimpse(nhanes_spine)\n#&gt; Rows: 105,626\n#&gt; Columns: 18\n#&gt; $ Cycle          &lt;chr&gt; \"1999-2000\", \"1999-2000\", \"1999-2000\", \"1999-2000\", \"19…\n#&gt; $ BMI            &lt;dbl&gt; 14.90, 24.90, 17.63, NA, 29.10, 22.56, 29.39, 15.51, 18…\n#&gt; $ Weight         &lt;dbl&gt; 12.5, 75.4, 32.9, 13.3, 92.5, 59.2, 78.0, 40.7, 45.5, 1…\n#&gt; $ Height         &lt;dbl&gt; 91.6, 174.0, 136.6, NA, 178.3, 162.0, 162.9, 162.0, 156…\n#&gt; $ Waist          &lt;dbl&gt; 45.7, 98.0, 64.7, NA, 99.9, 81.6, 90.7, 64.1, 64.6, 108…\n#&gt; $ WeightMEC      &lt;dbl&gt; 10982.899, 28325.385, 46192.257, 10251.260, 99445.066, …\n#&gt; $ Strata         &lt;dbl&gt; 5, 1, 7, 2, 8, 2, 4, 6, 9, 7, 1, 6, 13, 12, 11, 11, 5, …\n#&gt; $ PSU            &lt;dbl&gt; 1, 3, 2, 1, 2, 2, 2, 1, 2, 1, 2, 2, 2, 1, 2, 1, 1, 1, 2…\n#&gt; $ Gender         &lt;chr&gt; \"Female\", \"Male\", \"Female\", \"Male\", \"Male\", \"Female\", \"…\n#&gt; $ Race           &lt;chr&gt; \"Non-Hispanic Black\", \"Non-Hispanic White\", \"Non-Hispan…\n#&gt; $ Education      &lt;chr&gt; NA, \"College Grad\", NA, NA, \"College Grad\", NA, \"HS or …\n#&gt; $ Marital        &lt;chr&gt; NA, NA, NA, NA, \"Married/Partner\", \"Never Married\", \"Ma…\n#&gt; $ Age            &lt;dbl&gt; 2, 77, 10, 1, 49, 19, 59, 13, 11, 43, 15, 37, 70, 81, 3…\n#&gt; $ PIR            &lt;dbl&gt; 0.86, 5.00, 1.47, 0.57, 5.00, 1.21, NA, 0.53, NA, NA, 1…\n#&gt; $ EducationClean &lt;chr&gt; NA, \"College Grad\", NA, NA, \"College Grad\", NA, \"HS or …\n#&gt; $ MaritalClean   &lt;chr&gt; NA, NA, NA, NA, \"Married/Partner\", \"Never Married\", \"Ma…\n#&gt; $ IncomeGroup    &lt;chr&gt; \"Low Income (&lt;1.3)\", \"High Income (&gt;3.5)\", \"Middle Inco…\n#&gt; $ WHtR           &lt;dbl&gt; 0.4989083, 0.5632184, 0.4736457, NA, 0.5602916, 0.50370…",
+    "crumbs": [
+      "Week 2: Modern Workflows",
+      "Modern Workflows"
+    ]
+  },
+  {
+    "objectID": "weeks/week02-modern-workflows/index.html#in-class-activity",
+    "href": "weeks/week02-modern-workflows/index.html#in-class-activity",
+    "title": "Modern Workflows",
+    "section": "In-Class Activity",
+    "text": "In-Class Activity\n\nLocate the case-study data, README, and snippet folders in the Explorer.\nExplain why the data example uses relative paths instead of machine-specific paths.\nCheck that the weekly page includes the shared snippet rather than duplicating instructions.\nRender the book from the repository root and check that this page updates in the rendered output.\n\nStudent output: a rendered Quarto page and one commit showing a small, reproducible edit. Assignment link: ../../assignments/assignment01-workflows/README.md.",
     "crumbs": [
       "Week 2: Modern Workflows",
       "Modern Workflows"
@@ -427,7 +482,7 @@
     "href": "weeks/week02-modern-workflows/index.html#workflows2.qmd-getting-started-github-account-and-classroom",
     "title": "Modern Workflows",
     "section": "workflows2.qmd Getting Started: GitHub Account and Classroom",
-    "text": "workflows2.qmd Getting Started: GitHub Account and Classroom\n\nStep 1: Create a GitHub Account\nIf you do not already have one:\n\nGo to github.com and click Sign up.\nUse your UBC email address (this helps with student benefits).\nChoose a professional username — this will appear on your public portfolio later in the course.\n\n\n\n\n\n\n\nTip\n\n\n\nPortfolio thinking: Your GitHub profile will become part of your professional presence. Pick a username you would be comfortable putting on a CV (e.g., jchen-epi rather than xXcoolcoder99Xx).\n\n\n\n\nStep 2: Join the Course GitHub Classroom\n\nOpen the GitHub Classroom invitation link posted on Canvas.\nAccept the invitation. This connects your GitHub account to the course roster.\nAccept the starter assignment. GitHub Classroom will automatically create a personal repository for you, pre-loaded with the files you need for this week.\n\n\n\nStep 3: Confirm Your Repository\nNavigate to the repository that was just created. You should see:\n\nA file list including practice_report.qmd, README.md, and a data/ folder.\nA formatted README below the file list explaining the project.\n\nIf you see these, you are ready to launch your Codespace.",
+    "text": "workflows2.qmd Getting Started: GitHub Account and Classroom\n\nStep 1: Create a GitHub Account\nIf you do not already have one:\n\nGo to github.com and click Sign up.\nUse your UBC email address (this helps with student benefits).\nChoose a professional username — this will appear on your public portfolio later in the course.\n\n\n\n\n\n\n\nTip\n\n\n\nPortfolio thinking: Your GitHub profile will become part of your professional presence. Pick a username you would be comfortable putting on a CV (e.g., jchen-epi rather than xXcoolcoder99Xx).\n\n\n\n\nStep 2: Join the Course GitHub Classroom\n\nOpen the GitHub Classroom invitation link posted on Canvas.\nAccept the invitation. This connects your GitHub account to the course roster.\nAccept the starter assignment. GitHub Classroom will automatically create a personal repository for you, pre-loaded with the files you need for this week.\n\n\n\nStep 3: Verify Your Repository\nNavigate to the repository that was just created. You should see:\n\nA file list including practice_report.qmd, README.md, and a data/ folder.\nA formatted README below the file list explaining the project.\n\nIf you see these, you are ready to launch your Codespace.",
     "crumbs": [
       "Week 2: Modern Workflows",
       "Modern Workflows"
@@ -504,7 +559,7 @@
     "href": "weeks/week02-modern-workflows/index.html#workflows9.qmd-tutorial-stage-commit-and-sync",
     "title": "Modern Workflows",
     "section": "workflows9.qmd Tutorial: Stage, Commit, and Sync",
-    "text": "workflows9.qmd Tutorial: Stage, Commit, and Sync\nYour work currently exists only on the public computer (Codespace). To save it permanently to your Cloud Drive (GitHub), you need to commit.\n\nStep 1: Open Source Control\nClick the Source Control icon on the left sidebar (it looks like a branching graph). You will see a list of files that have changed since your last commit.\n\n\nStep 2: Stage Your Changes\nHover over a changed file name. Click the + icon that appears. This stages the file — it tells Git “I want to include this change in my next snapshot.”\n\n\n\n\n\n\nNote\n\n\n\nStaging vs committing: Staging selects which changes to include. Committing takes the snapshot. Think of staging as putting items on the conveyor belt; committing is pressing the “scan” button at checkout.\n\n\n\n\nStep 3: Write a Commit Message\nIn the text box at the top of the Source Control panel, type a short, descriptive message:\n\nUpdated author name and edited first code chunk in practice report\n\nA good commit message answers: what did I change and why?\n\n\nStep 4: Commit\nClick the ✔ Commit button (checkmark). Your changes are now saved as a snapshot in your local history.\n\n\nStep 5: Sync with GitHub\nClick Sync Changes (in the Source Control panel or the status bar at the bottom). This pushes your commit to GitHub — your Cloud Drive.\nVerify: Go to your repository on github.com and confirm that your changes appear. You should see your commit message next to the updated file.\n\n\n\n\n\n\nWarning\n\n\n\nIf you skip the Sync step, your commit exists only on the Codespace. If the Codespace is deleted, the commit goes with it. Always Sync.",
+    "text": "workflows9.qmd Tutorial: Stage, Commit, and Sync\nYour work currently exists only on the public computer (Codespace). To save it permanently to your Cloud Drive (GitHub), you need to commit.\n\nStep 1: Open Source Control\nClick the Source Control icon on the left sidebar (it looks like a branching graph). You will see a list of files that have changed since your last commit.\n\n\nStep 2: Stage Your Changes\nHover over a changed file name. Click the + icon that appears. This stages the file — it tells Git “I want to include this change in my next snapshot.”\n\n\n\n\n\n\nNote\n\n\n\nStaging vs committing: Staging selects which changes to include. Committing takes the snapshot. Think of staging as putting items on the conveyor belt; committing is pressing the “scan” button at checkout.\n\n\n\n\nStep 3: Write a Commit Message\nIn the text box at the top of the Source Control panel, type a short, descriptive message:\n\nUpdated author name and edited first code chunk in practice report\n\nA good commit message answers: what did I change and why?\n\n\nStep 4: Commit\nClick the ✔ Commit button (checkmark). Your changes are now saved as a snapshot in your local history.\n\n\nStep 5: Sync with GitHub\nClick Sync Changes (in the Source Control panel or the status bar at the bottom). This pushes your commit to GitHub — your Cloud Drive.\nVerify: Go to your repository on github.com and check that your changes appear. You should see your commit message next to the updated file.\n\n\n\n\n\n\nWarning\n\n\n\nIf you skip the Sync step, your commit exists only on the Codespace. If the Codespace is deleted, the commit goes with it. Always Sync.",
     "crumbs": [
       "Week 2: Modern Workflows",
       "Modern Workflows"
@@ -548,7 +603,7 @@
     "href": "weeks/week02-modern-workflows/index.html#workflows13.qmd-assignment-1-your-first-quarto-report",
     "title": "Modern Workflows",
     "section": "workflows13.qmd Assignment 1: Your First Quarto Report",
-    "text": "workflows13.qmd Assignment 1: Your First Quarto Report\nDue Friday 4 pm. Submit via Canvas.\n\nTask\nEdit and render the starter practice_report.qmd, demonstrating that you can navigate your Codespace, edit Quarto, and commit your work.\n\n\nStep-by-Step Workflow\n\nLaunch your Codespace from the GitHub Classroom repository.\nEdit the YAML: Change author: to your name.\nAdd a Markdown section: Below the existing content, add a new heading (## My Notes) and write 2–3 sentences about what you learned this week. Use at least one Markdown feature (bold, italics, or a bullet list).\nEdit a code chunk: Modify an existing code chunk or add a new one. For example:\n\n```{r}\n# My first R calculation\n2 + 2\n```\n\nRender the document. Confirm the output looks correct.\nCommit and Sync:\n\nOpen Source Control.\nStage your changed files (+).\nWrite a commit message: e.g., \"Complete Week 2 assignment: edit YAML, add notes, render report\".\nClick ✔ Commit, then Sync Changes.\n\nStop your Codespace.\nVerify on github.com that your commit appears in the repository.\nSubmit the repository link on Canvas.",
+    "text": "workflows13.qmd Assignment 1: Your First Quarto Report\nDue Friday 4 pm. Submit via Canvas.\n\nTask\nEdit and render the starter practice_report.qmd, demonstrating that you can navigate your Codespace, edit Quarto, and commit your work.\n\n\nStep-by-Step Workflow\n\nLaunch your Codespace from the GitHub Classroom repository.\nEdit the YAML: Change author: to your name.\nAdd a Markdown section: Below the existing content, add a new heading (## My Notes) and write 2–3 sentences about what you learned this week. Use at least one Markdown feature (bold, italics, or a bullet list).\nEdit a code chunk: Modify an existing code chunk or add a new one. For example:\n\n```{r}\n# My first R calculation\n2 + 2\n```\n\nRender the document. Check that the output looks correct.\nCommit and Sync:\n\nOpen Source Control.\nStage your changed files (+).\nWrite a commit message: e.g., \"Complete Week 2 assignment: edit YAML, add notes, render report\".\nClick ✔ Commit, then Sync Changes.\n\nStop your Codespace.\nVerify on github.com that your commit appears in the repository.\nSubmit the repository link on Canvas.",
     "crumbs": [
       "Week 2: Modern Workflows",
       "Modern Workflows"
@@ -856,7 +911,7 @@
     "href": "weeks/week02-modern-workflows/workflows08-commit-work.html#steps",
     "title": "9  Commit Your Work",
     "section": "",
-    "text": "Click the Source Control icon\n\nIt looks like a blue bubble or a connect-the-dots graph on the far left sidebar.\nThis opens the “Shipping Department.” You will see a list of every file you changed.\n\n\n\n\nSource control icon circled in red\n\n\nType a Commit Message\n\nThe Label: You cannot ship a package without a label.\nWhat to write: Be descriptive but brief. Imagine you are leaving a note for your future self about what you did.\nExample: “Updated author name in practice report”.\nBad Example: “stuff” or “fix”.\n\n\n\n\nThis is required\n\n\nClick Commit and Sync (or Commit and Push)\n\nThis is the “Send” button.\nAction: It wraps up your changes, stamps them with the time and your message, and teleports them to the Cloud Vault.\nNote: You might be asked to click “Always” or “Yes” to confirm the sync.\n\n\n\n\nThis will push your changes to the remote branch",
+    "text": "Click the Source Control icon\n\nIt looks like a blue bubble or a connect-the-dots graph on the far left sidebar.\nThis opens the “Shipping Department.” You will see a list of every file you changed.\n\n\n\n\nSource control icon circled in red\n\n\nType a Commit Message\n\nThe Label: You cannot ship a package without a label.\nWhat to write: Be descriptive but brief. Imagine you are leaving a note for your future self about what you did.\nExample: “Updated author name in practice report”.\nBad Example: “stuff” or “fix”.\n\n\n\n\nThis is required\n\n\nClick Commit and Sync (or Commit and Push)\n\nThis is the “Send” button.\nAction: It wraps up your changes, stamps them with the time and your message, and teleports them to the Cloud Vault.\nNote: You might be asked to click “Always” or “Yes” to approve the sync.\n\n\n\n\nThis will push your changes to the remote branch",
     "crumbs": [
       "Week 2: Modern Workflows",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Commit Your Work</span>"
@@ -973,11 +1028,33 @@
     ]
   },
   {
+    "objectID": "weeks/week03-r-with-ai/index.html#connection",
+    "href": "weeks/week03-r-with-ai/index.html#connection",
+    "title": "Week 3: R with AI",
+    "section": "Connection",
+    "text": "Connection\nWeek 2 made the project structure reproducible. This week you use that structure to load, inspect, summarize, and audit R code with AI support. Next week you will put those edits under version control.",
+    "crumbs": [
+      "Week 3: R with AI",
+      "Week 3: R with AI"
+    ]
+  },
+  {
     "objectID": "weeks/week03-r-with-ai/index.html#case-study-data-analysis",
     "href": "weeks/week03-r-with-ai/index.html#case-study-data-analysis",
     "title": "Week 3: R with AI",
     "section": "Case Study Data Analysis",
-    "text": "Case Study Data Analysis\nThe NHANES Health Equity data spine now supports code-reading, EDA, visualization, and reproducibility checks. Use the cached CSV/RDS for routine class work; any CDC retrieval pipeline is optional or instructor-directed.\n\nCached RDS: examples/nhanes-equity/data/nhanes_equity_v6.rds\nCSV snapshot: examples/nhanes-equity/data/nhanes_equity_v6.csv\nCase-study README: examples/nhanes-equity/README.md\n\nThe default classroom path is to use the cached data so the analysis work is reproducible without internet access.\nMini-tasks for Week 3:\n\nLoad the CSV snapshot and inspect column names, row count, and missingness.\nSummarize one numeric variable and one grouping variable with clear NA handling.\nAsk an AI assistant to comment on your code, then audit whether the comments match the actual operations.\nNote one place where an AI assistant could hallucinate a variable name or overstate what the descriptive summary means.",
+    "text": "Case Study Data Analysis\nThe NHANES Health Equity data spine now supports code-reading, EDA, visualization, and reproducibility checks. Use the cached CSV/RDS for routine class work; a CDC retrieval script exists for advanced users.\n\nCached RDS: examples/nhanes-equity/data/nhanes_equity_v6.rds\nCSV snapshot: examples/nhanes-equity/data/nhanes_equity_v6.csv\nCase-study README: examples/nhanes-equity/README.md\n\nThe default classroom path is to use the cached data so the analysis work is reproducible without internet access.\n\nlibrary(readr)\nlibrary(dplyr)\n\ncandidate_paths &lt;- c(\n  \"examples/nhanes-equity/data/nhanes_equity_v6.csv\",\n  \"../../examples/nhanes-equity/data/nhanes_equity_v6.csv\"\n)\n\nnhanes_path &lt;- candidate_paths[file.exists(candidate_paths)][1]\nif (is.na(nhanes_path)) {\n  stop(\"Could not find examples/nhanes-equity/data/nhanes_equity_v6.csv\")\n}\n\nnhanes_analysis &lt;- read_csv(nhanes_path, show_col_types = FALSE)\n\nnhanes_analysis |&gt;\n  summarise(\n    rows = n(),\n    missing_bmi = sum(is.na(BMI)),\n    missing_income = sum(is.na(IncomeGroup))\n  )\n\n\n  \n\n\n\nnhanes_analysis |&gt;\n  filter(!is.na(BMI), !is.na(IncomeGroup), Age &gt;= 20, Age &lt;= 80) |&gt;\n  group_by(IncomeGroup) |&gt;\n  summarise(\n    n = n(),\n    mean_bmi = round(mean(BMI), 1),\n    .groups = \"drop\"\n  )",
+    "crumbs": [
+      "Week 3: R with AI",
+      "Week 3: R with AI"
+    ]
+  },
+  {
+    "objectID": "weeks/week03-r-with-ai/index.html#in-class-activity",
+    "href": "weeks/week03-r-with-ai/index.html#in-class-activity",
+    "title": "Week 3: R with AI",
+    "section": "In-Class Activity",
+    "text": "In-Class Activity\n\nLoad the CSV snapshot and inspect column names, row count, and missingness.\nSummarize one numeric variable and one grouping variable with clear NA handling.\nAsk an AI assistant to comment on your code, then audit whether the comments match the actual operations.\nNote one place where an AI assistant could hallucinate a variable name or overstate what the descriptive summary means.\n\nStudent output: a short Quarto note with one data inspection, one summary, and one AI-audit comment. Assignment link: ../../assignments/assignment02-r-with-ai/README.md.",
     "crumbs": [
       "Week 3: R with AI",
       "Week 3: R with AI"
@@ -1109,7 +1186,7 @@
     "href": "weeks/week03-r-with-ai/index.html#r12.qmd-assignment-the-mad-libs-report",
     "title": "Week 3: R with AI",
     "section": "r12.qmd Assignment: The “Mad Libs” Report",
-    "text": "r12.qmd Assignment: The “Mad Libs” Report\nTask: Build a short Quarto report that loads, inspects, transforms, and summarizes a health dataset — using your AI co-pilot for code generation and your own judgment for verification.\n\nStep-by-Step Workflow\n\nOpen week3_assignment.qmd in your Codespace.\nLoad packages and data: Use AI to write the library() and read_csv() calls. Verify the data loaded correctly with dim() and glimpse().\nInspect missingness: Run colSums(is.na(...)). Add a Markdown paragraph interpreting what you see.\nTransform: Use dplyr verbs to:\n\nFilter to a meaningful subgroup (e.g., age ≥ 18).\nCreate at least one new column with mutate().\nProduce a grouped summary with group_by() + summarise().\n\nWrite a function: Create (or adapt from AI) a reusable summary function. Call it on at least two different columns.\nExport: Save your cleaned data to output/clean_data.csv.\nDocument: Every code chunk should have:\n\nA # comment stating what you asked the AI and what you verified.\nA Markdown paragraph below interpreting the result.\n\nRender the document to confirm it runs cleanly from top to bottom.\nGit: Stage, write a descriptive commit message, Commit, and Sync.\n\n\n\nDeliverable\nA rendered .qmd that a reader can follow as a narrative: what data you started with, what you did to it, what you found, and why your decisions were justified.",
+    "text": "r12.qmd Assignment: The “Mad Libs” Report\nTask: Build a short Quarto report that loads, inspects, transforms, and summarizes a health dataset — using your AI co-pilot for code generation and your own judgment for verification.\n\nStep-by-Step Workflow\n\nOpen week3_assignment.qmd in your Codespace.\nLoad packages and data: Use AI to write the library() and read_csv() calls. Verify the data loaded correctly with dim() and glimpse().\nInspect missingness: Run colSums(is.na(...)). Add a Markdown paragraph interpreting what you see.\nTransform: Use dplyr verbs to:\n\nFilter to a meaningful subgroup (e.g., age ≥ 18).\nCreate at least one new column with mutate().\nProduce a grouped summary with group_by() + summarise().\n\nWrite a function: Create (or adapt from AI) a reusable summary function. Call it on at least two different columns.\nExport: Save your cleaned data to output/clean_data.csv.\nDocument: Every code chunk should have:\n\nA # comment stating what you asked the AI and what you verified.\nA Markdown paragraph below interpreting the result.\n\nRender the document to verify it runs cleanly from top to bottom.\nGit: Stage, write a descriptive commit message, Commit, and Sync.\n\n\n\nDeliverable\nA rendered .qmd that a reader can follow as a narrative: what data you started with, what you did to it, what you found, and why your decisions were justified.",
     "crumbs": [
       "Week 3: R with AI",
       "Week 3: R with AI"
@@ -1402,11 +1479,33 @@
     ]
   },
   {
+    "objectID": "weeks/week04-git-collaboration/index.html#connection",
+    "href": "weeks/week04-git-collaboration/index.html#connection",
+    "title": "Git & Collaboration",
+    "section": "Connection",
+    "text": "Connection\nWeek 3 focused on writing and auditing small R summaries. This week treats each edit as a reviewable change with a clear history. Next week you will compare equivalent summaries across R and Python.",
+    "crumbs": [
+      "Week 4: Git & Collaboration",
+      "Git & Collaboration"
+    ]
+  },
+  {
     "objectID": "weeks/week04-git-collaboration/index.html#case-study-data-analysis",
     "href": "weeks/week04-git-collaboration/index.html#case-study-data-analysis",
     "title": "Git & Collaboration",
     "section": "Case Study Data Analysis",
-    "text": "Case Study Data Analysis\nThe NHANES Health Equity data spine now supports code-reading, EDA, visualization, and reproducibility checks. Use the cached CSV/RDS for routine class work; any CDC retrieval pipeline is optional or instructor-directed.\n\nCached RDS: examples/nhanes-equity/data/nhanes_equity_v6.rds\nCSV snapshot: examples/nhanes-equity/data/nhanes_equity_v6.csv\nCase-study README: examples/nhanes-equity/README.md\n\nThe default classroom path is to use the cached data so the analysis work is reproducible without internet access.\nMini-tasks for Week 4:\n\nCreate a branch for a tiny dashboard documentation change.\nEdit only a label, caption, or README sentence; do not change analytic logic.\nOpen a pull request and use the diff to confirm the change is limited.\nIn the pull request description, state how you verified the change is documentation-only.",
+    "text": "Case Study Data Analysis\nThe NHANES Health Equity data spine now supports code-reading, EDA, visualization, and reproducibility checks. Use the cached CSV/RDS for routine class work; a CDC retrieval script exists for advanced users.\n\nCached RDS: examples/nhanes-equity/data/nhanes_equity_v6.rds\nCSV snapshot: examples/nhanes-equity/data/nhanes_equity_v6.csv\nCase-study README: examples/nhanes-equity/README.md\n\nThe default classroom path is to use the cached data so the analysis work is reproducible without internet access.\n\nlibrary(readr)\nlibrary(dplyr)\n\ncandidate_paths &lt;- c(\n  \"examples/nhanes-equity/data/nhanes_equity_v6.csv\",\n  \"../../examples/nhanes-equity/data/nhanes_equity_v6.csv\"\n)\n\nnhanes_path &lt;- candidate_paths[file.exists(candidate_paths)][1]\nif (is.na(nhanes_path)) {\n  stop(\"Could not find examples/nhanes-equity/data/nhanes_equity_v6.csv\")\n}\n\nnhanes_analysis &lt;- read_csv(nhanes_path, show_col_types = FALSE)\n\nnhanes_analysis |&gt;\n  summarise(\n    rows = n(),\n    missing_bmi = sum(is.na(BMI)),\n    missing_income = sum(is.na(IncomeGroup))\n  )\n\n\n  \n\n\n\nnhanes_analysis |&gt;\n  filter(!is.na(BMI), !is.na(IncomeGroup), Age &gt;= 20, Age &lt;= 80) |&gt;\n  group_by(IncomeGroup) |&gt;\n  summarise(\n    n = n(),\n    mean_bmi = round(mean(BMI), 1),\n    .groups = \"drop\"\n  )",
+    "crumbs": [
+      "Week 4: Git & Collaboration",
+      "Git & Collaboration"
+    ]
+  },
+  {
+    "objectID": "weeks/week04-git-collaboration/index.html#in-class-activity",
+    "href": "weeks/week04-git-collaboration/index.html#in-class-activity",
+    "title": "Git & Collaboration",
+    "section": "In-Class Activity",
+    "text": "In-Class Activity\n\nCreate a branch for a tiny dashboard documentation change.\nEdit only a label, caption, or README sentence; do not change analytic logic.\nOpen a pull request and use the diff to verify the change is limited.\nIn the pull request description, state how you verified the change is documentation-only.\n\nStudent output: a documentation-only pull request with a short audit note. Assignment link: ../../assignments/assignment03-git/README.md.",
     "crumbs": [
       "Week 4: Git & Collaboration",
       "Git & Collaboration"
@@ -1428,7 +1527,7 @@
     "href": "weeks/week04-git-collaboration/index.html#git2.qmd-tutorial-time-travel-in-codespaces",
     "title": "Git & Collaboration",
     "section": "git2.qmd Tutorial: Time Travel in Codespaces",
-    "text": "git2.qmd Tutorial: Time Travel in Codespaces\nScenario: We will intentionally break last week’s R script and use Git to rescue it.\n\nStep 1: Confirm Your Baseline\nOpen your .qmd from last week. Make a small, meaningful edit (e.g., improve a comment). Stage (+), write a descriptive commit message, and commit (✔). This is your safety net.\n\n\nStep 2: The Disaster\nDelete a crucial line of R code in a chunk (e.g., the line that loads the data). Save the file (Ctrl/Cmd + S).\n\n\nStep 3: Assess the Damage\nOpen Source Control → click the modified file → view the side-by-side diff to see exactly what changed. Practice reading the red (removed) and green (added) lines.\n\n\nStep 4: The Undo Button\nHover over the file name in the Source Control panel and click Discard Changes (the curved arrow) to restore the file to the last committed version.\n\n\n\n\n\n\nTip\n\n\n\nKey takeaway: Saving writes to disk. Committing writes to history. Only committed work can be recovered by Git.",
+    "text": "git2.qmd Tutorial: Time Travel in Codespaces\nScenario: We will intentionally break last week’s R script and use Git to rescue it.\n\nStep 1: Verify Your Baseline\nOpen your .qmd from last week. Make a small, meaningful edit (e.g., improve a comment). Stage (+), write a descriptive commit message, and commit (✔). This is your safety net.\n\n\nStep 2: The Disaster\nDelete a crucial line of R code in a chunk (e.g., the line that loads the data). Save the file (Ctrl/Cmd + S).\n\n\nStep 3: Assess the Damage\nOpen Source Control → click the modified file → view the side-by-side diff to see exactly what changed. Practice reading the red (removed) and green (added) lines.\n\n\nStep 4: The Undo Button\nHover over the file name in the Source Control panel and click Discard Changes (the curved arrow) to restore the file to the last committed version.\n\n\n\n\n\n\nTip\n\n\n\nKey takeaway: Saving writes to disk. Committing writes to history. Only committed work can be recovered by Git.",
     "crumbs": [
       "Week 4: Git & Collaboration",
       "Git & Collaboration"
@@ -1461,7 +1560,7 @@
     "href": "weeks/week04-git-collaboration/index.html#git5.qmd-pull-requests-the-peer-review-gateway",
     "title": "Git & Collaboration",
     "section": "git5.qmd Pull Requests: The Peer Review Gateway",
-    "text": "git5.qmd Pull Requests: The Peer Review Gateway\n\nWhat Is a Pull Request?\nA Pull Request (PR) is a GitHub feature that says: “I have changes on a branch. Please review them before they go into main.” PRs are how professional teams and researchers collaborate. You will use them for peer review later in this course.\n\n\nTutorial: Open Your First PR\n\nAfter committing changes to a branch (see git4.qmd), click Sync Changes to push the branch to GitHub.\nOpen your repository on github.com. You should see a banner: “add-age-filter had recent pushes.” Click Compare & pull request.\nWrite a title and short description explaining what you changed and why.\nClick Create pull request.\nFor now, review the diff on GitHub, then click Merge pull request → Confirm merge.\n\n\n\n\n\n\n\nTip\n\n\n\nCollaboration norm: In your term project, agree with your group that changes go through PRs rather than directly to main. This creates a built-in review step.",
+    "text": "git5.qmd Pull Requests: The Peer Review Gateway\n\nWhat Is a Pull Request?\nA Pull Request (PR) is a GitHub feature that says: “I have changes on a branch. Please review them before they go into main.” PRs are how professional teams and researchers collaborate. You will use them for peer review later in this course.\n\n\nTutorial: Open Your First PR\n\nAfter committing changes to a branch (see git4.qmd), click Sync Changes to push the branch to GitHub.\nOpen your repository on github.com. You should see a banner: “add-age-filter had recent pushes.” Click Compare & pull request.\nWrite a title and short description explaining what you changed and why.\nClick Create pull request.\nFor now, review the diff on GitHub, then click Merge pull request and complete the merge.\n\n\n\n\n\n\n\nTip\n\n\n\nCollaboration norm: In your term project, agree with your group that changes go through PRs rather than directly to main. This creates a built-in review step.",
     "crumbs": [
       "Week 4: Git & Collaboration",
       "Git & Collaboration"
@@ -1483,7 +1582,7 @@
     "href": "weeks/week04-git-collaboration/index.html#git7.qmd-setting-up-your-group-repository",
     "title": "Git & Collaboration",
     "section": "git7.qmd Setting Up Your Group Repository",
-    "text": "git7.qmd Setting Up Your Group Repository\nThis week you form your term project groups (Milestone 0). Use this session to establish your collaboration workflow.\n\nSteps\n\nOne member creates the group repository from the GitHub Classroom link (provided on Canvas).\nAll other members accept the invitation and clone the repo by launching a Codespace from it.\nAs a group, agree on norms:\n\nAll changes go through branches → PRs (no direct pushes to main).\nCommit messages should be descriptive (use the AI auto-scribe technique).\nKeep the repo clean: use .gitignore, relative paths, and a clear folder structure.\n\nEach member makes a small “hello” commit (e.g., add your name to the README.md) and pushes it to confirm access.\n\n\n\n\n\n\n\nNote\n\n\n\nMilestone 0 due Friday: Confirm your group formation on Canvas and ensure everyone can commit to the shared repository.",
+    "text": "git7.qmd Setting Up Your Group Repository\nThis week you form your term project groups (Milestone 0). Use this session to establish your collaboration workflow.\n\nSteps\n\nOne member creates the group repository from the GitHub Classroom link (provided on Canvas).\nAll other members accept the invitation and clone the repo by launching a Codespace from it.\nAs a group, agree on norms:\n\nAll changes go through branches → PRs (no direct pushes to main).\nCommit messages should be descriptive (use the AI auto-scribe technique).\nKeep the repo clean: use .gitignore, relative paths, and a clear folder structure.\n\nEach member makes a small “hello” commit (e.g., add your name to the README.md) and pushes it to verify access.\n\n\n\n\n\n\n\nNote\n\n\n\nMilestone 0 due Friday: Record your group formation on Canvas and ensure everyone can commit to the shared repository.",
     "crumbs": [
       "Week 4: Git & Collaboration",
       "Git & Collaboration"
@@ -1593,7 +1692,7 @@
     "href": "weeks/week04-git-collaboration/git07-group-repository.html",
     "title": "Setting Up Your Group Repository",
     "section": "",
-    "text": "Invite: One member creates the repo; others accept the invite.\nClone: Everyone launches their own Codespace.\nNorms: Agree: “No direct pushes to main.”\nTest: Everyone makes a README.md update to confirm access.",
+    "text": "Invite: One member creates the repo; others accept the invite.\nClone: Everyone launches their own Codespace.\nNorms: Agree: “No direct pushes to main.”\nTest: Everyone makes a README.md update to verify access.",
     "crumbs": [
       "Week 4: Git & Collaboration",
       "Setting Up Your Group Repository"
@@ -1655,11 +1754,33 @@
     ]
   },
   {
+    "objectID": "weeks/week05-polyglot-r-deepening/index.html#connection",
+    "href": "weeks/week05-polyglot-r-deepening/index.html#connection",
+    "title": "Python with AI",
+    "section": "Connection",
+    "text": "Connection\nWeek 4 made small changes reviewable. This week checks whether the same dataset gives the same answer when you move between R and Python. Next week you will turn those summaries into clearer visual explanations.",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "Python with AI"
+    ]
+  },
+  {
     "objectID": "weeks/week05-polyglot-r-deepening/index.html#case-study-data-analysis",
     "href": "weeks/week05-polyglot-r-deepening/index.html#case-study-data-analysis",
     "title": "Python with AI",
     "section": "Case Study Data Analysis",
-    "text": "Case Study Data Analysis\nThe NHANES Health Equity data spine now supports code-reading, EDA, visualization, and reproducibility checks. Use the cached CSV/RDS for routine class work; any CDC retrieval pipeline is optional or instructor-directed.\n\nCached RDS: examples/nhanes-equity/data/nhanes_equity_v6.rds\nCSV snapshot: examples/nhanes-equity/data/nhanes_equity_v6.csv\nCase-study README: examples/nhanes-equity/README.md\n\nThe default classroom path is to use the cached data so the analysis work is reproducible without internet access.\nMini-tasks for Week 5:\n\nLoad examples/nhanes-equity/data/nhanes_equity_v6.csv in R and Python.\nCompare row counts and column names across the two languages.\nChoose one summary, such as mean BMI by sex, and check whether R and Python agree.\nTreat any mismatch as an audit prompt: check data types, missing values, and grouping logic before changing code.",
+    "text": "Case Study Data Analysis\nThe NHANES Health Equity data spine now supports code-reading, EDA, visualization, and reproducibility checks. Use the cached CSV/RDS for routine class work; a CDC retrieval script exists for advanced users.\n\nCached RDS: examples/nhanes-equity/data/nhanes_equity_v6.rds\nCSV snapshot: examples/nhanes-equity/data/nhanes_equity_v6.csv\nCase-study README: examples/nhanes-equity/README.md\n\nThe default classroom path is to use the cached data so the analysis work is reproducible without internet access.\n\nlibrary(readr)\nlibrary(dplyr)\n\ncandidate_paths &lt;- c(\n  \"examples/nhanes-equity/data/nhanes_equity_v6.csv\",\n  \"../../examples/nhanes-equity/data/nhanes_equity_v6.csv\"\n)\n\nnhanes_path &lt;- candidate_paths[file.exists(candidate_paths)][1]\nif (is.na(nhanes_path)) {\n  stop(\"Could not find examples/nhanes-equity/data/nhanes_equity_v6.csv\")\n}\n\nnhanes_analysis &lt;- read_csv(nhanes_path, show_col_types = FALSE)\n\nnhanes_analysis |&gt;\n  summarise(\n    rows = n(),\n    missing_bmi = sum(is.na(BMI)),\n    missing_income = sum(is.na(IncomeGroup))\n  )\n\n\n  \n\n\n\nnhanes_analysis |&gt;\n  filter(!is.na(BMI), !is.na(IncomeGroup), Age &gt;= 20, Age &lt;= 80) |&gt;\n  group_by(IncomeGroup) |&gt;\n  summarise(\n    n = n(),\n    mean_bmi = round(mean(BMI), 1),\n    .groups = \"drop\"\n  )",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "Python with AI"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/index.html#in-class-activity",
+    "href": "weeks/week05-polyglot-r-deepening/index.html#in-class-activity",
+    "title": "Python with AI",
+    "section": "In-Class Activity",
+    "text": "In-Class Activity\n\nLoad examples/nhanes-equity/data/nhanes_equity_v6.csv in R and Python.\nCompare row counts and column names across the two languages.\nChoose one summary, such as mean BMI by sex, and check whether R and Python agree.\nTreat any mismatch as an audit prompt: check data types, missing values, and grouping logic before changing code.\n\nStudent output: a parity-check note with row counts, column checks, and one matched R/Python summary. Assignment link: ../../assignments/assignment04-polyglot/README.md.",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
       "Python with AI"
@@ -1714,7 +1835,7 @@
     "href": "weeks/week05-polyglot-r-deepening/index.html#python5.qmd-tutorial-loading-and-viewing-data",
     "title": "Python with AI",
     "section": "python5.qmd Tutorial: Loading and Viewing Data",
-    "text": "python5.qmd Tutorial: Loading and Viewing Data\n\nStep-by-Step\nimport pandas as pd\n\n# Load (relative path!)\ndata = pd.read_csv(\"data/patients.csv\")\n\n# Peek at the first 5 rows\ndata.head()\n\n\nVerify in the Data Viewer\nAfter running the cell above, open the Variables pane → double-click data → confirm the columns and row count match what you expect from your R analysis.\nAI Prompt:\n\nI have data/patients.csv in my Codespace. Write the Python pandas code to import it and show the first 5 rows. Also show how to check the number of rows and column names.",
+    "text": "python5.qmd Tutorial: Loading and Viewing Data\n\nStep-by-Step\nimport pandas as pd\n\n# Load (relative path!)\ndata = pd.read_csv(\"data/patients.csv\")\n\n# Peek at the first 5 rows\ndata.head()\n\n\nVerify in the Data Viewer\nAfter running the cell above, open the Variables pane → double-click data → check that the columns and row count match what you expect from your R analysis.\nAI Prompt:\n\nI have data/patients.csv in my Codespace. Write the Python pandas code to import it and show the first 5 rows. Also show how to check the number of rows and column names.",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
       "Python with AI"
@@ -1780,7 +1901,7 @@
     "href": "weeks/week05-polyglot-r-deepening/index.html#python11.qmd-term-project-milestone-1",
     "title": "Python with AI",
     "section": "python11.qmd Term Project: Milestone 1",
-    "text": "python11.qmd Term Project: Milestone 1\nDue this Friday: Submit your project proposal on Canvas.\nYour proposal should include:\n\nResearch question: A clear, focused question about health data.\nData source: Which dataset you will use (e.g., NHANES, a Kaggle health dataset). Confirm it is accessible and appropriately sized.\nFeasibility check: Can you load and preview the data in a Codespace? (Try it before submitting.)\nPlanned approach: A brief sketch of what analyses and visualizations you envision.\n\n\n\n\n\n\n\nTip\n\n\n\nUse what you learned this week: load your candidate dataset in both R and Python to confirm it works. This early check prevents surprises later.",
+    "text": "python11.qmd Term Project: Milestone 1\nDue this Friday: Submit your project proposal on Canvas.\nYour proposal should include:\n\nResearch question: A clear, focused question about health data.\nData source: Which dataset you will use (e.g., NHANES, a Kaggle health dataset). Check that it is accessible and appropriately sized.\nFeasibility check: Can you load and preview the data in a Codespace? (Try it before submitting.)\nPlanned approach: A brief sketch of what analyses and visualizations you envision.\n\n\n\n\n\n\n\nTip\n\n\n\nUse what you learned this week: load your candidate dataset in both R and Python to check that it works. This early check prevents surprises later.",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
       "Python with AI"
@@ -2055,7 +2176,7 @@
     "href": "weeks/week05-polyglot-r-deepening/python11-project-milestone.html",
     "title": "33  Tutorial 11: Term Project Milestone 1",
     "section": "",
-    "text": "33.1 Submission Checklist\nYour proposal is due this Friday. Ensure it includes:\n- Research Question: A focused health data question.\n- Data Source: A confirmed dataset (NHANES, Kaggle, etc.).\n- Feasibility Check: Can you load and preview the data in a Codespace?\nPro-Tip: Load your dataset in both R and Python now to ensure there are no surprises later in the term.",
+    "text": "33.1 Submission Checklist\nYour proposal is due this Friday. Ensure it includes:\n- Research Question: A focused health data question.\n- Data Source: A verified dataset (NHANES, Kaggle, etc.).\n- Feasibility Check: Can you load and preview the data in a Codespace?\nPro-Tip: Load your dataset in both R and Python now to ensure there are no surprises later in the term.",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
       "<span class='chapter-number'>33</span>  <span class='chapter-title'>Tutorial 11: Term Project Milestone 1</span>"
@@ -2117,22 +2238,33 @@
     ]
   },
   {
-    "objectID": "weeks/week06-visualization/index.html#case-study-data-analysis",
-    "href": "weeks/week06-visualization/index.html#case-study-data-analysis",
+    "objectID": "weeks/week06-visualization/index.html#connection",
+    "href": "weeks/week06-visualization/index.html#connection",
     "title": "Visual Storytelling",
-    "section": "Case Study Data Analysis",
-    "text": "Case Study Data Analysis\nThe NHANES Health Equity data spine now supports code-reading, EDA, visualization, and reproducibility checks. Use the cached CSV/RDS for routine class work; any CDC retrieval pipeline is optional or instructor-directed.\n\nCached RDS: examples/nhanes-equity/data/nhanes_equity_v6.rds\nCSV snapshot: examples/nhanes-equity/data/nhanes_equity_v6.csv\nCase-study README: examples/nhanes-equity/README.md\n\nThe default classroom path is to use the cached data so the analysis work is reproducible without internet access.\nMini-tasks for Week 6:\n\nWork through the ggplot worked example using the CSV snapshot.\nAudit the flawed plot provided in the visual-audit activity and identify at least three issues.\nRevise the plot so the title, scale, grouping, and caption support descriptive interpretation.\nExplain what changed and why, including any AI assistance you used.",
+    "section": "Connection",
+    "text": "Connection\nWeek 5 checked that summaries agree across languages. This week turns a descriptive summary into a visual claim and asks whether the design helps or misleads the audience. Next week you will document the same dataset with EDA and a Table 1.",
     "crumbs": [
       "Week 6: Data Visualization",
       "Visual Storytelling"
     ]
   },
   {
-    "objectID": "weeks/week06-visualization/index.html#instructor-decisions",
-    "href": "weeks/week06-visualization/index.html#instructor-decisions",
+    "objectID": "weeks/week06-visualization/index.html#case-study-data-analysis",
+    "href": "weeks/week06-visualization/index.html#case-study-data-analysis",
     "title": "Visual Storytelling",
-    "section": "Instructor Decisions",
-    "text": "Instructor Decisions\n\n\n\n\n\n\nBefore Release\n\n\n\n\nConfirm whether the Week 6 worked example becomes required pre-class work or in-class practice.\nDecide whether the instructor-provided flawed chart is released as code, image, or both.\nDecide whether a plotly or interactive chart extension is required or optional.\nConfirm the Assignment 5 submission route in Canvas or the repo.\nConfirm whether the caption checklist is graded or formative.",
+    "section": "Case Study Data Analysis",
+    "text": "Case Study Data Analysis\nThe NHANES Health Equity data spine now supports code-reading, EDA, visualization, and reproducibility checks. Use the cached CSV/RDS for routine class work; a CDC retrieval script exists for advanced users.\n\nCached RDS: examples/nhanes-equity/data/nhanes_equity_v6.rds\nCSV snapshot: examples/nhanes-equity/data/nhanes_equity_v6.csv\nCase-study README: examples/nhanes-equity/README.md\n\nThe default classroom path is to use the cached data so the analysis work is reproducible without internet access.\n\nlibrary(readr)\nlibrary(dplyr)\n\ncandidate_paths &lt;- c(\n  \"examples/nhanes-equity/data/nhanes_equity_v6.csv\",\n  \"../../examples/nhanes-equity/data/nhanes_equity_v6.csv\"\n)\n\nnhanes_path &lt;- candidate_paths[file.exists(candidate_paths)][1]\nif (is.na(nhanes_path)) {\n  stop(\"Could not find examples/nhanes-equity/data/nhanes_equity_v6.csv\")\n}\n\nnhanes_analysis &lt;- read_csv(nhanes_path, show_col_types = FALSE)\n\nnhanes_analysis |&gt;\n  summarise(\n    rows = n(),\n    missing_bmi = sum(is.na(BMI)),\n    missing_income = sum(is.na(IncomeGroup))\n  )\n\n\n  \n\n\n\nnhanes_analysis |&gt;\n  filter(!is.na(BMI), !is.na(IncomeGroup), Age &gt;= 20, Age &lt;= 80) |&gt;\n  group_by(IncomeGroup) |&gt;\n  summarise(\n    n = n(),\n    mean_bmi = round(mean(BMI), 1),\n    .groups = \"drop\"\n  )",
+    "crumbs": [
+      "Week 6: Data Visualization",
+      "Visual Storytelling"
+    ]
+  },
+  {
+    "objectID": "weeks/week06-visualization/index.html#in-class-activity",
+    "href": "weeks/week06-visualization/index.html#in-class-activity",
+    "title": "Visual Storytelling",
+    "section": "In-Class Activity",
+    "text": "In-Class Activity\n\nWork through the ggplot worked example using the CSV snapshot.\nAudit the flawed plot provided in the visual-audit activity and identify at least three issues.\nRevise the plot so the title, scale, grouping, and caption support descriptive interpretation.\nExplain what changed and why, including any AI assistance you used.\n\nStudent output: a corrected plot, caption, audit note, and AI-use note. Assignment link: ../../assignments/assignment05-visualization/README.md.",
     "crumbs": [
       "Week 6: Data Visualization",
       "Visual Storytelling"
@@ -2282,22 +2414,33 @@
     ]
   },
   {
-    "objectID": "weeks/week07-eda-ai-audit/index.html#case-study-data-analysis",
-    "href": "weeks/week07-eda-ai-audit/index.html#case-study-data-analysis",
+    "objectID": "weeks/week07-eda-ai-audit/index.html#connection",
+    "href": "weeks/week07-eda-ai-audit/index.html#connection",
     "title": "Exploring Data",
-    "section": "Case Study Data Analysis",
-    "text": "Case Study Data Analysis\nThe NHANES Health Equity data spine now supports code-reading, EDA, visualization, and reproducibility checks. Use the cached CSV/RDS for routine class work; any CDC retrieval pipeline is optional or instructor-directed.\n\nCached RDS: examples/nhanes-equity/data/nhanes_equity_v6.rds\nCSV snapshot: examples/nhanes-equity/data/nhanes_equity_v6.csv\nCase-study README: examples/nhanes-equity/README.md\n\nThe default classroom path is to use the cached data so the analysis work is reproducible without internet access.\nMini-tasks for Week 7:\n\nWork through the Table 1 worked example using the CSV snapshot.\nDefine and document an analysis cohort before summarizing.\nCreate a Table 1-style summary with N, BMI mean (SD), and age mean (SD).\nAudit the planted-error starter and categorize at least five issues as correctness, reproducibility, or interpretation problems.",
+    "section": "Connection",
+    "text": "Connection\nWeek 6 focused on whether visual design makes a descriptive claim honest and clear. This week documents the analysis cohort, missingness, and Table 1 so that later dashboard and report outputs have an auditable foundation.",
     "crumbs": [
       "Week 7: EDA, Table 1 & AI Auditing",
       "Exploring Data"
     ]
   },
   {
-    "objectID": "weeks/week07-eda-ai-audit/index.html#instructor-decisions",
-    "href": "weeks/week07-eda-ai-audit/index.html#instructor-decisions",
+    "objectID": "weeks/week07-eda-ai-audit/index.html#case-study-data-analysis",
+    "href": "weeks/week07-eda-ai-audit/index.html#case-study-data-analysis",
     "title": "Exploring Data",
-    "section": "Instructor Decisions",
-    "text": "Instructor Decisions\n\n\n\n\n\n\nBefore Release\n\n\n\n\nConfirm whether the Table 1 worked example becomes required pre-class work or in-class practice.\nDecide whether the planted-error starter is distributed as-is or copied into student assignment repos.\nConfirm the Assignment 6 submission route in Canvas or the repo.\nConnect the activity to Milestone 2 preliminary analysis.",
+    "section": "Case Study Data Analysis",
+    "text": "Case Study Data Analysis\nThe NHANES Health Equity data spine now supports code-reading, EDA, visualization, and reproducibility checks. Use the cached CSV/RDS for routine class work; a CDC retrieval script exists for advanced users.\n\nCached RDS: examples/nhanes-equity/data/nhanes_equity_v6.rds\nCSV snapshot: examples/nhanes-equity/data/nhanes_equity_v6.csv\nCase-study README: examples/nhanes-equity/README.md\n\nThe default classroom path is to use the cached data so the analysis work is reproducible without internet access.\n\nlibrary(readr)\nlibrary(dplyr)\n\ncandidate_paths &lt;- c(\n  \"examples/nhanes-equity/data/nhanes_equity_v6.csv\",\n  \"../../examples/nhanes-equity/data/nhanes_equity_v6.csv\"\n)\n\nnhanes_path &lt;- candidate_paths[file.exists(candidate_paths)][1]\nif (is.na(nhanes_path)) {\n  stop(\"Could not find examples/nhanes-equity/data/nhanes_equity_v6.csv\")\n}\n\nnhanes_analysis &lt;- read_csv(nhanes_path, show_col_types = FALSE)\n\nnhanes_analysis |&gt;\n  summarise(\n    rows = n(),\n    missing_bmi = sum(is.na(BMI)),\n    missing_income = sum(is.na(IncomeGroup))\n  )\n\n\n  \n\n\n\nnhanes_analysis |&gt;\n  filter(!is.na(BMI), !is.na(IncomeGroup), Age &gt;= 20, Age &lt;= 80) |&gt;\n  group_by(IncomeGroup) |&gt;\n  summarise(\n    n = n(),\n    mean_bmi = round(mean(BMI), 1),\n    .groups = \"drop\"\n  )",
+    "crumbs": [
+      "Week 7: EDA, Table 1 & AI Auditing",
+      "Exploring Data"
+    ]
+  },
+  {
+    "objectID": "weeks/week07-eda-ai-audit/index.html#in-class-activity",
+    "href": "weeks/week07-eda-ai-audit/index.html#in-class-activity",
+    "title": "Exploring Data",
+    "section": "In-Class Activity",
+    "text": "In-Class Activity\n\nWork through the Table 1 worked example using the CSV snapshot.\nDefine and document an analysis cohort before summarizing.\nCreate a Table 1-style summary with N, BMI mean (SD), and age mean (SD).\nAudit the planted-error starter and categorize at least five issues as correctness, reproducibility, or interpretation problems.\n\nStudent output: a rerunnable EDA note, Table 1, planted-error audit, and AI-use note. Assignment link: ../../assignments/assignment06-eda-ai-audit/README.md.",
     "crumbs": [
       "Week 7: EDA, Table 1 & AI Auditing",
       "Exploring Data"
@@ -2458,22 +2601,33 @@
     ]
   },
   {
-    "objectID": "weeks/week08-dashboard-kt/index.html#dashboard-case-study-nhanes-equity",
-    "href": "weeks/week08-dashboard-kt/index.html#dashboard-case-study-nhanes-equity",
+    "objectID": "weeks/week08-dashboard-kt/index.html#connection",
+    "href": "weeks/week08-dashboard-kt/index.html#connection",
     "title": "Interactive Dashboards",
-    "section": "Dashboard Case Study: NHANES Equity",
-    "text": "Dashboard Case Study: NHANES Equity\nThe NHANES Health Equity Dashboard is now the foreground case study. Use it as a small knowledge-translation product built on the cached NHANES equity dataset.\n\nApp code: examples/nhanes-equity/app/app.R\nCached data: examples/nhanes-equity/data/nhanes_equity_v6.rds and examples/nhanes-equity/data/nhanes_equity_v6.csv\nOptional rebuild script: examples/nhanes-equity/scripts/build_nhanes_equity.R\n\nRun the dashboard from the repository root:\nshiny::runApp(\"examples/nhanes-equity/app\")\nThe app is offline-first: it loads the local RDS cache when available. Rebuilding from CDC uses nhanesA, requires internet access, and is optional unless assigned.\nMini-tasks for Week 8:\n\nRun the app and describe the intended audience in one sentence.\nMake one audience-facing improvement to a label, help text, or interpretation note.\nVerify the app still loads the cached RDS after your change.\nTreat deployment as optional unless the instructor explicitly assigns it.",
+    "section": "Connection",
+    "text": "Connection\nWeek 7 established an auditable descriptive foundation. This week is the first app-forward week: students run the NHANES dashboard, identify an audience, and improve one audience-facing element. Next week turns one dashboard finding into a short scientific communication product.",
     "crumbs": [
       "Week 8: Dashboard Prototypes for KT",
       "Interactive Dashboards"
     ]
   },
   {
-    "objectID": "weeks/week08-dashboard-kt/index.html#todo-before-release",
-    "href": "weeks/week08-dashboard-kt/index.html#todo-before-release",
+    "objectID": "weeks/week08-dashboard-kt/index.html#dashboard-case-study-nhanes-equity",
+    "href": "weeks/week08-dashboard-kt/index.html#dashboard-case-study-nhanes-equity",
     "title": "Interactive Dashboards",
-    "section": "TODO Before Release",
-    "text": "TODO Before Release\n\n\n\n\n\n\nContent TODO\n\n\n\n\nDecide the required core pathway: Quarto dashboard, Shiny, or static HTML/JS.\nAdd a minimal dashboard starter with one filter, one chart, and one plain-language interpretation.\nAdd testing instructions for Codespaces.\nAdd Assignment 7 instructions in assignments/assignment07-dashboard/.\nAdd guidance for privacy-safe dashboard publishing.",
+    "section": "Dashboard Case Study: NHANES Equity",
+    "text": "Dashboard Case Study: NHANES Equity\nThe NHANES Health Equity Dashboard is now the foreground case study. Use it as a small knowledge-translation product built on the cached NHANES equity dataset.\n\nApp code: examples/nhanes-equity/app/app.R\nCached data: examples/nhanes-equity/data/nhanes_equity_v6.rds and examples/nhanes-equity/data/nhanes_equity_v6.csv\nOptional rebuild script: examples/nhanes-equity/scripts/build_nhanes_equity.R\n\nRun the dashboard from the repository root:\nshiny::runApp(\"examples/nhanes-equity/app\")\nThe app is offline-first: it loads the local RDS cache when available. Rebuilding from CDC uses nhanesA, requires internet access, and is optional unless assigned.\nCompanion materials:\n\nWeek 10 report template: weeks/week10-reporting-publishing/report-template.qmd\nWeek 11 static dashboard demo: weeks/week11-portfolio-surgery/static-dashboard-ojs.qmd",
+    "crumbs": [
+      "Week 8: Dashboard Prototypes for KT",
+      "Interactive Dashboards"
+    ]
+  },
+  {
+    "objectID": "weeks/week08-dashboard-kt/index.html#in-class-activity",
+    "href": "weeks/week08-dashboard-kt/index.html#in-class-activity",
+    "title": "Interactive Dashboards",
+    "section": "In-Class Activity",
+    "text": "In-Class Activity\n\nRun the app and describe the intended audience in one sentence.\nMake one audience-facing improvement to a label, help text, or interpretation note.\nVerify the app still loads the cached RDS after your change.\nWrite one limitation statement that belongs inside or beside the dashboard.\n\nStudent output: a local app run note, one audience-facing text improvement, and a limitation statement. Assignment link: ../../assignments/assignment07-dashboard/README.md.",
     "crumbs": [
       "Week 8: Dashboard Prototypes for KT",
       "Interactive Dashboards"
@@ -2495,18 +2649,7 @@
     "href": "weeks/week08-dashboard-kt/starter-dashboard.html",
     "title": "Starter Dashboard",
     "section": "",
-    "text": "Goal\nStudents adapt a minimal dashboard-style knowledge translation product.",
-    "crumbs": [
-      "Week 8: Dashboard Prototypes for KT",
-      "Starter Dashboard"
-    ]
-  },
-  {
-    "objectID": "weeks/week08-dashboard-kt/starter-dashboard.html#todo-before-release",
-    "href": "weeks/week08-dashboard-kt/starter-dashboard.html#todo-before-release",
-    "title": "Starter Dashboard",
-    "section": "TODO Before Release",
-    "text": "TODO Before Release\n\n\n\n\n\n\nContent TODO\n\n\n\n\nAdd the starter dashboard code.\nAdd a screenshot or rendered preview.\nAdd a fallback static version for students who cannot deploy.\nAdd a checklist for audience, filter labels, chart captions, and limitations.",
+    "text": "Goal\nStudents adapt a minimal dashboard-style knowledge translation product by changing text and interpretation before changing analytic logic.",
     "crumbs": [
       "Week 8: Dashboard Prototypes for KT",
       "Starter Dashboard"
@@ -2524,6 +2667,39 @@
     ]
   },
   {
+    "objectID": "weeks/week08-dashboard-kt/starter-dashboard.html#minimal-review-workflow",
+    "href": "weeks/week08-dashboard-kt/starter-dashboard.html#minimal-review-workflow",
+    "title": "Starter Dashboard",
+    "section": "Minimal Review Workflow",
+    "text": "Minimal Review Workflow\n\nRun the NHANES dashboard from the repository root.\nChoose a stakeholder audience, such as a public-health analyst, student team, or community-facing briefing group.\nIdentify one label, caption, help text, or interpretation note that could be clearer for that audience.\nMake a documentation-only or UI-text-only change.\nRerun the dashboard and verify the cached dataset loads.\nRecord the change, audience, and limitation in a short note.",
+    "crumbs": [
+      "Week 8: Dashboard Prototypes for KT",
+      "Starter Dashboard"
+    ]
+  },
+  {
+    "objectID": "weeks/week08-dashboard-kt/starter-dashboard.html#student-output",
+    "href": "weeks/week08-dashboard-kt/starter-dashboard.html#student-output",
+    "title": "Starter Dashboard",
+    "section": "Student Output",
+    "text": "Student Output\nSubmit a short dashboard adaptation note containing:\n\nAudience sentence.\nBefore/after text change.\nOne screenshot or description of the affected dashboard area.\nLimitation statement.\nReproducibility note describing how the app was run locally.",
+    "crumbs": [
+      "Week 8: Dashboard Prototypes for KT",
+      "Starter Dashboard"
+    ]
+  },
+  {
+    "objectID": "weeks/week08-dashboard-kt/starter-dashboard.html#privacy-safe-publishing-check",
+    "href": "weeks/week08-dashboard-kt/starter-dashboard.html#privacy-safe-publishing-check",
+    "title": "Starter Dashboard",
+    "section": "Privacy-Safe Publishing Check",
+    "text": "Privacy-Safe Publishing Check\n\nDo not publish row-level data.\nAvoid small-cell claims.\nState that dashboard outputs are descriptive.\nKeep the cached classroom data separate from raw NHANES retrieval work.",
+    "crumbs": [
+      "Week 8: Dashboard Prototypes for KT",
+      "Starter Dashboard"
+    ]
+  },
+  {
     "objectID": "weeks/week09-science-communication/index.html",
     "href": "weeks/week09-science-communication/index.html",
     "title": "Dynamic Presentations",
@@ -2535,22 +2711,33 @@
     ]
   },
   {
-    "objectID": "weeks/week09-science-communication/index.html#dashboard-case-study-nhanes-equity",
-    "href": "weeks/week09-science-communication/index.html#dashboard-case-study-nhanes-equity",
+    "objectID": "weeks/week09-science-communication/index.html#connection",
+    "href": "weeks/week09-science-communication/index.html#connection",
     "title": "Dynamic Presentations",
-    "section": "Dashboard Case Study: NHANES Equity",
-    "text": "Dashboard Case Study: NHANES Equity\nThe NHANES Health Equity Dashboard is now the foreground case study. Use it as a small knowledge-translation product built on the cached NHANES equity dataset.\n\nApp code: examples/nhanes-equity/app/app.R\nCached data: examples/nhanes-equity/data/nhanes_equity_v6.rds and examples/nhanes-equity/data/nhanes_equity_v6.csv\nOptional rebuild script: examples/nhanes-equity/scripts/build_nhanes_equity.R\n\nRun the dashboard from the repository root:\nshiny::runApp(\"examples/nhanes-equity/app\")\nThe app is offline-first: it loads the local RDS cache when available. Rebuilding from CDC uses nhanesA, requires internet access, and is optional unless assigned.\nMini-tasks for Week 9:\n\nBuild a 3-5 slide outline explaining one dashboard plot.\nInclude one plain-language takeaway and one limitation.\nAdd a source note for CDC NHANES and state whether you used the cached data or rebuilt it.\nAsk a peer whether the claim is understandable without seeing the code.",
+    "section": "Connection",
+    "text": "Connection\nWeek 8 made the dashboard audience-facing. This week turns one dashboard plot or table into a short slide story with a clear takeaway, evidence, and limitation. Next week you will expand that communication into a reproducible report.",
     "crumbs": [
       "Week 9: Communication of Scientific Findings",
       "Dynamic Presentations"
     ]
   },
   {
-    "objectID": "weeks/week09-science-communication/index.html#todo-before-release",
-    "href": "weeks/week09-science-communication/index.html#todo-before-release",
+    "objectID": "weeks/week09-science-communication/index.html#dashboard-case-study-nhanes-equity",
+    "href": "weeks/week09-science-communication/index.html#dashboard-case-study-nhanes-equity",
     "title": "Dynamic Presentations",
-    "section": "TODO Before Release",
-    "text": "TODO Before Release\n\n\n\n\n\n\nContent TODO\n\n\n\n\nAdd a revealjs starter deck.\nAdd a plain-language summary exercise.\nAdd a peer feedback template.\nAdd Assignment 8 instructions in assignments/assignment08-communication/.\nAdd slide accessibility and citation expectations.",
+    "section": "Dashboard Case Study: NHANES Equity",
+    "text": "Dashboard Case Study: NHANES Equity\nThe NHANES Health Equity Dashboard is now the foreground case study. Use it as a small knowledge-translation product built on the cached NHANES equity dataset.\n\nApp code: examples/nhanes-equity/app/app.R\nCached data: examples/nhanes-equity/data/nhanes_equity_v6.rds and examples/nhanes-equity/data/nhanes_equity_v6.csv\nOptional rebuild script: examples/nhanes-equity/scripts/build_nhanes_equity.R\n\nRun the dashboard from the repository root:\nshiny::runApp(\"examples/nhanes-equity/app\")\nThe app is offline-first: it loads the local RDS cache when available. Rebuilding from CDC uses nhanesA, requires internet access, and is optional unless assigned.\nCompanion materials:\n\nWeek 10 report template: weeks/week10-reporting-publishing/report-template.qmd\nWeek 11 static dashboard demo: weeks/week11-portfolio-surgery/static-dashboard-ojs.qmd",
+    "crumbs": [
+      "Week 9: Communication of Scientific Findings",
+      "Dynamic Presentations"
+    ]
+  },
+  {
+    "objectID": "weeks/week09-science-communication/index.html#in-class-activity",
+    "href": "weeks/week09-science-communication/index.html#in-class-activity",
+    "title": "Dynamic Presentations",
+    "section": "In-Class Activity",
+    "text": "In-Class Activity\n\nBuild a 3-5 slide outline explaining one dashboard plot.\nInclude one plain-language takeaway and one limitation.\nAdd a source note for CDC NHANES and state whether you used the cached data or rebuilt it.\nAsk a peer whether the claim is understandable without seeing the code.\n\nStudent output: a 3-5 slide outline plus peer feedback notes. Assignment link: ../../assignments/assignment08-communication/README.md.",
     "crumbs": [
       "Week 9: Communication of Scientific Findings",
       "Dynamic Presentations"
@@ -2572,29 +2759,51 @@
     "href": "weeks/week09-science-communication/revealjs-peer-feedback.html",
     "title": "Revealjs and Peer Feedback",
     "section": "",
-    "text": "Goal\nStudents turn analysis outputs into a short scientific communication product and practice structured peer feedback.",
+    "text": "Goal\nStudents turn one dashboard finding into a short scientific communication product and practice structured peer feedback.",
     "crumbs": [
       "Week 9: Communication of Scientific Findings",
       "Revealjs and Peer Feedback"
     ]
   },
   {
-    "objectID": "weeks/week09-science-communication/revealjs-peer-feedback.html#todo-before-release",
-    "href": "weeks/week09-science-communication/revealjs-peer-feedback.html#todo-before-release",
+    "objectID": "weeks/week09-science-communication/revealjs-peer-feedback.html#minimal-revealjs-starter",
+    "href": "weeks/week09-science-communication/revealjs-peer-feedback.html#minimal-revealjs-starter",
     "title": "Revealjs and Peer Feedback",
-    "section": "TODO Before Release",
-    "text": "TODO Before Release\n\n\n\n\n\n\nContent TODO\n\n\n\n\nAdd a minimal format: revealjs YAML example.\nAdd a three-slide starter structure.\nAdd a peer feedback form.",
+    "section": "Minimal Revealjs Starter",
+    "text": "Minimal Revealjs Starter\n---\ntitle: \"NHANES Equity Dashboard Finding\"\nformat: revealjs\n---",
     "crumbs": [
       "Week 9: Communication of Scientific Findings",
       "Revealjs and Peer Feedback"
     ]
   },
   {
-    "objectID": "weeks/week09-science-communication/revealjs-peer-feedback.html#peer-feedback-prompts",
-    "href": "weeks/week09-science-communication/revealjs-peer-feedback.html#peer-feedback-prompts",
+    "objectID": "weeks/week09-science-communication/revealjs-peer-feedback.html#three-slide-structure",
+    "href": "weeks/week09-science-communication/revealjs-peer-feedback.html#three-slide-structure",
     "title": "Revealjs and Peer Feedback",
-    "section": "Peer Feedback Prompts",
-    "text": "Peer Feedback Prompts\n\nWhat is the main message?\nWhat evidence supports it?\nWhat is unclear or overclaimed?\nWhat would improve reproducibility or audience fit?",
+    "section": "Three-Slide Structure",
+    "text": "Three-Slide Structure\n\nQuestion and audience: Who needs this finding, and why?\nEvidence: Show one dashboard plot or table and state the descriptive pattern.\nLimitation and action: Name what the data can and cannot support, then state the next decision or question.",
+    "crumbs": [
+      "Week 9: Communication of Scientific Findings",
+      "Revealjs and Peer Feedback"
+    ]
+  },
+  {
+    "objectID": "weeks/week09-science-communication/revealjs-peer-feedback.html#peer-feedback-form",
+    "href": "weeks/week09-science-communication/revealjs-peer-feedback.html#peer-feedback-form",
+    "title": "Revealjs and Peer Feedback",
+    "section": "Peer Feedback Form",
+    "text": "Peer Feedback Form\n\n\n\nPrompt\nPeer note\n\n\n\n\nWhat is the main message?\n\n\n\nWhat evidence supports it?\n\n\n\nWhat is unclear or overclaimed?\n\n\n\nIs the limitation visible?\n\n\n\nWhat would improve audience fit?",
+    "crumbs": [
+      "Week 9: Communication of Scientific Findings",
+      "Revealjs and Peer Feedback"
+    ]
+  },
+  {
+    "objectID": "weeks/week09-science-communication/revealjs-peer-feedback.html#student-output",
+    "href": "weeks/week09-science-communication/revealjs-peer-feedback.html#student-output",
+    "title": "Revealjs and Peer Feedback",
+    "section": "Student Output",
+    "text": "Student Output\nSubmit a rendered slide deck or slide outline with the completed peer feedback form. Include a source note for CDC NHANES and an AI-use note if AI helped draft the wording.",
     "crumbs": [
       "Week 9: Communication of Scientific Findings",
       "Revealjs and Peer Feedback"
@@ -2612,22 +2821,33 @@
     ]
   },
   {
-    "objectID": "weeks/week10-reporting-publishing/index.html#dashboard-case-study-nhanes-equity",
-    "href": "weeks/week10-reporting-publishing/index.html#dashboard-case-study-nhanes-equity",
+    "objectID": "weeks/week10-reporting-publishing/index.html#connection",
+    "href": "weeks/week10-reporting-publishing/index.html#connection",
     "title": "Reproducible Reporting",
-    "section": "Dashboard Case Study: NHANES Equity",
-    "text": "Dashboard Case Study: NHANES Equity\nThe NHANES Health Equity Dashboard is now the foreground case study. Use it as a small knowledge-translation product built on the cached NHANES equity dataset.\n\nApp code: examples/nhanes-equity/app/app.R\nCached data: examples/nhanes-equity/data/nhanes_equity_v6.rds and examples/nhanes-equity/data/nhanes_equity_v6.csv\nOptional rebuild script: examples/nhanes-equity/scripts/build_nhanes_equity.R\n\nRun the dashboard from the repository root:\nshiny::runApp(\"examples/nhanes-equity/app\")\nThe app is offline-first: it loads the local RDS cache when available. Rebuilding from CDC uses nhanesA, requires internet access, and is optional unless assigned.\nMini-tasks for Week 10:\n\nDraft a short Quarto report that complements the dashboard rather than duplicating it.\nInclude a data source paragraph, one figure or table, and a limitations note.\nAdd a source note for CDC NHANES and the nhanesA retrieval pathway.\nConfirm that the report uses relative paths and documents whether results came from the cached data.",
+    "section": "Connection",
+    "text": "Connection\nWeek 9 turned one result into a short slide story. This week expands the same evidence into a reproducible report with code-generated outputs, citations, and limitations. Next week you will stress-test whether the report and dashboard work in a fresh environment.",
     "crumbs": [
       "Week 10: Writing & Publishing Reports",
       "Reproducible Reporting"
     ]
   },
   {
-    "objectID": "weeks/week10-reporting-publishing/index.html#todo-before-release",
-    "href": "weeks/week10-reporting-publishing/index.html#todo-before-release",
+    "objectID": "weeks/week10-reporting-publishing/index.html#dashboard-case-study-nhanes-equity",
+    "href": "weeks/week10-reporting-publishing/index.html#dashboard-case-study-nhanes-equity",
     "title": "Reproducible Reporting",
-    "section": "TODO Before Release",
-    "text": "TODO Before Release\n\n\n\n\n\n\nContent TODO\n\n\n\n\nAdd a report skeleton with sections for question, data, methods, findings, limitations, and AI-use note.\nAdd citation examples using references.bib.\nAdd GitHub Pages setup screenshots or a private submission alternative.\nAdd Assignment 9 instructions in assignments/assignment09-reporting/.\nAdd a citation and grounding audit.",
+    "section": "Dashboard Case Study: NHANES Equity",
+    "text": "Dashboard Case Study: NHANES Equity\nThe NHANES Health Equity Dashboard is now the foreground case study. Use it as a small knowledge-translation product built on the cached NHANES equity dataset.\n\nApp code: examples/nhanes-equity/app/app.R\nCached data: examples/nhanes-equity/data/nhanes_equity_v6.rds and examples/nhanes-equity/data/nhanes_equity_v6.csv\nOptional rebuild script: examples/nhanes-equity/scripts/build_nhanes_equity.R\n\nRun the dashboard from the repository root:\nshiny::runApp(\"examples/nhanes-equity/app\")\nThe app is offline-first: it loads the local RDS cache when available. Rebuilding from CDC uses nhanesA, requires internet access, and is optional unless assigned.\nCompanion materials:\n\nWeek 10 report template: weeks/week10-reporting-publishing/report-template.qmd\nWeek 11 static dashboard demo: weeks/week11-portfolio-surgery/static-dashboard-ojs.qmd",
+    "crumbs": [
+      "Week 10: Writing & Publishing Reports",
+      "Reproducible Reporting"
+    ]
+  },
+  {
+    "objectID": "weeks/week10-reporting-publishing/index.html#in-class-activity",
+    "href": "weeks/week10-reporting-publishing/index.html#in-class-activity",
+    "title": "Reproducible Reporting",
+    "section": "In-Class Activity",
+    "text": "In-Class Activity\n\nDraft a short Quarto report that complements the dashboard rather than duplicating it.\nInclude a data source paragraph, one figure or table, and a limitations note.\nAdd a source note for CDC NHANES and the nhanesA retrieval pathway.\nVerify that the report uses relative paths and documents whether results came from the cached data.\n\nStudent output: a rendered Quarto report with one figure, one table, citations, limitations, and an AI-use note. Assignment link: ../../assignments/assignment09-reporting/README.md.",
     "crumbs": [
       "Week 10: Writing & Publishing Reports",
       "Reproducible Reporting"
@@ -2647,34 +2867,89 @@
   {
     "objectID": "weeks/week10-reporting-publishing/report-template.html",
     "href": "weeks/week10-reporting-publishing/report-template.html",
-    "title": "Report Template",
+    "title": "Report Template: NHANES Equity Summary",
     "section": "",
-    "text": "TODO Before Release",
+    "text": "Purpose\nThis runnable template shows how to pair a dashboard with a short reproducible report. The dashboard supports exploration; the report fixes one question, documents the data, and cites the source.",
     "crumbs": [
       "Week 10: Writing & Publishing Reports",
-      "Report Template"
+      "Report Template: NHANES Equity Summary"
     ]
   },
   {
-    "objectID": "weeks/week10-reporting-publishing/report-template.html#todo-before-release",
-    "href": "weeks/week10-reporting-publishing/report-template.html#todo-before-release",
-    "title": "Report Template",
-    "section": "",
-    "text": "Content TODO\n\n\n\n\nConvert this into a copyable Quarto report starter.\nAdd bibliography setup instructions.\nAdd a small example table and figure.\nAdd an AI-use note template.",
+    "objectID": "weeks/week10-reporting-publishing/report-template.html#question",
+    "href": "weeks/week10-reporting-publishing/report-template.html#question",
+    "title": "Report Template: NHANES Equity Summary",
+    "section": "Question",
+    "text": "Question\nHow does mean BMI vary by income group among adults age 20-80 in the prepared NHANES Health Equity classroom dataset?",
     "crumbs": [
       "Week 10: Writing & Publishing Reports",
-      "Report Template"
+      "Report Template: NHANES Equity Summary"
     ]
   },
   {
-    "objectID": "weeks/week10-reporting-publishing/report-template.html#suggested-sections",
-    "href": "weeks/week10-reporting-publishing/report-template.html#suggested-sections",
-    "title": "Report Template",
-    "section": "Suggested Sections",
-    "text": "Suggested Sections\n\nResearch or KT question\nData source and stewardship notes\nMethods and reproducibility notes\nResults\nLimitations\nPlain-language summary\nAI-use and audit note",
+    "objectID": "weeks/week10-reporting-publishing/report-template.html#data-source",
+    "href": "weeks/week10-reporting-publishing/report-template.html#data-source",
+    "title": "Report Template: NHANES Equity Summary",
+    "section": "Data Source",
+    "text": "Data Source\nThe report uses the cached CSV snapshot at examples/nhanes-equity/data/nhanes_equity_v6.csv. The source data are derived from CDC/NCHS NHANES public-use files (Centers for Disease Control and Prevention, National Center for Health Statistics 2026).\n\nlibrary(readr)\nlibrary(dplyr)\nlibrary(ggplot2)\nlibrary(knitr)\n\ncandidate_paths &lt;- c(\n  \"examples/nhanes-equity/data/nhanes_equity_v6.csv\",\n  \"../../examples/nhanes-equity/data/nhanes_equity_v6.csv\"\n)\n\ndata_path &lt;- candidate_paths[file.exists(candidate_paths)][1]\nif (is.na(data_path)) {\n  stop(\"Could not find examples/nhanes-equity/data/nhanes_equity_v6.csv\")\n}\n\nnhanes &lt;- read_csv(data_path, show_col_types = FALSE)",
     "crumbs": [
       "Week 10: Writing & Publishing Reports",
-      "Report Template"
+      "Report Template: NHANES Equity Summary"
+    ]
+  },
+  {
+    "objectID": "weeks/week10-reporting-publishing/report-template.html#methods",
+    "href": "weeks/week10-reporting-publishing/report-template.html#methods",
+    "title": "Report Template: NHANES Equity Summary",
+    "section": "Methods",
+    "text": "Methods\nWe restricted the classroom dataset to adults age 20-80 and summarized BMI by income group. The summaries are unweighted and descriptive. They should not be interpreted as causal effects or national population estimates.\n\nanalysis_df &lt;- nhanes |&gt;\n  filter(Age &gt;= 20, Age &lt;= 80)\n\nmissingness &lt;- analysis_df |&gt;\n  summarise(\n    rows = n(),\n    missing_bmi = sum(is.na(BMI)),\n    missing_income = sum(is.na(IncomeGroup)),\n    missing_age = sum(is.na(Age))\n  )\n\nkable(missingness, caption = \"Missingness check for key report variables.\")\n\n\nMissingness check for key report variables.\n\n\nrows\nmissing_bmi\nmissing_income\nmissing_age\n\n\n\n\n57137\n1009\n5395\n0",
+    "crumbs": [
+      "Week 10: Writing & Publishing Reports",
+      "Report Template: NHANES Equity Summary"
+    ]
+  },
+  {
+    "objectID": "weeks/week10-reporting-publishing/report-template.html#results",
+    "href": "weeks/week10-reporting-publishing/report-template.html#results",
+    "title": "Report Template: NHANES Equity Summary",
+    "section": "Results",
+    "text": "Results\n\nincome_summary &lt;- analysis_df |&gt;\n  filter(!is.na(BMI), !is.na(IncomeGroup)) |&gt;\n  group_by(IncomeGroup) |&gt;\n  summarise(\n    n = n(),\n    mean_bmi = mean(BMI),\n    sd_bmi = sd(BMI),\n    .groups = \"drop\"\n  ) |&gt;\n  mutate(\n    `BMI, mean (SD)` = sprintf(\"%.1f (%.1f)\", mean_bmi, sd_bmi)\n  ) |&gt;\n  select(IncomeGroup, n, `BMI, mean (SD)`)\n\nkable(income_summary, caption = \"Descriptive BMI summary by income group.\")\n\n\nDescriptive BMI summary by income group.\n\n\nIncomeGroup\nn\nBMI, mean (SD)\n\n\n\n\nHigh Income (&gt;3.5)\n16330\n28.6 (6.3)\n\n\nLow Income (&lt;1.3)\n15293\n29.4 (7.5)\n\n\nMiddle Income\n19228\n29.3 (7.0)\n\n\n\n\n\n\nplot_df &lt;- analysis_df |&gt;\n  filter(!is.na(BMI), !is.na(IncomeGroup)) |&gt;\n  group_by(IncomeGroup) |&gt;\n  summarise(\n    n = n(),\n    mean_bmi = mean(BMI),\n    .groups = \"drop\"\n  )\n\nggplot(plot_df, aes(x = IncomeGroup, y = mean_bmi)) +\n  geom_col(fill = \"#2C7FB8\") +\n  geom_text(aes(label = paste0(\"n=\", n)), vjust = -0.4, size = 3.5) +\n  labs(\n    title = \"Mean BMI by income group\",\n    subtitle = \"Adults age 20-80; unweighted descriptive summary\",\n    x = \"Income group\",\n    y = \"Mean BMI\"\n  ) +\n  expand_limits(y = 0) +\n  theme_minimal(base_size = 12)\n\n\n\n\nMean BMI by income group among adults age 20-80 in the prepared NHANES Health Equity classroom dataset. Values are unweighted and descriptive.",
+    "crumbs": [
+      "Week 10: Writing & Publishing Reports",
+      "Report Template: NHANES Equity Summary"
+    ]
+  },
+  {
+    "objectID": "weeks/week10-reporting-publishing/report-template.html#limitations",
+    "href": "weeks/week10-reporting-publishing/report-template.html#limitations",
+    "title": "Report Template: NHANES Equity Summary",
+    "section": "Limitations",
+    "text": "Limitations\n\nThe table and figure use a prepared classroom dataset rather than raw NHANES files.\nThe summaries are unweighted.\nThe comparison is descriptive and does not establish causality.\nMissing BMI or income group values are excluded from the grouped summary.",
+    "crumbs": [
+      "Week 10: Writing & Publishing Reports",
+      "Report Template: NHANES Equity Summary"
+    ]
+  },
+  {
+    "objectID": "weeks/week10-reporting-publishing/report-template.html#plain-language-summary",
+    "href": "weeks/week10-reporting-publishing/report-template.html#plain-language-summary",
+    "title": "Report Template: NHANES Equity Summary",
+    "section": "Plain-Language Summary",
+    "text": "Plain-Language Summary\nIn this classroom dataset, mean BMI differs across income groups. The result is useful for practicing reproducible reporting and dashboard interpretation, but it should be described as a descriptive pattern rather than a causal finding.",
+    "crumbs": [
+      "Week 10: Writing & Publishing Reports",
+      "Report Template: NHANES Equity Summary"
+    ]
+  },
+  {
+    "objectID": "weeks/week10-reporting-publishing/report-template.html#ai-use-and-audit-note",
+    "href": "weeks/week10-reporting-publishing/report-template.html#ai-use-and-audit-note",
+    "title": "Report Template: NHANES Equity Summary",
+    "section": "AI-Use and Audit Note",
+    "text": "AI-Use and Audit Note\nDocument any AI assistance used to draft code, captions, or interpretation. State exactly which output you checked against the code, data dictionary, or rendered report.\n\n\n\n\nCenters for Disease Control and Prevention, National Center for Health Statistics. 2026. “National Health and Nutrition Examination Survey.” https://wwwn.cdc.gov/nchs/nhanes/.",
+    "crumbs": [
+      "Week 10: Writing & Publishing Reports",
+      "Report Template: NHANES Equity Summary"
     ]
   },
   {
@@ -2689,22 +2964,44 @@
     ]
   },
   {
-    "objectID": "weeks/week11-portfolio-surgery/index.html#dashboard-case-study-nhanes-equity",
-    "href": "weeks/week11-portfolio-surgery/index.html#dashboard-case-study-nhanes-equity",
+    "objectID": "weeks/week11-portfolio-surgery/index.html#connection",
+    "href": "weeks/week11-portfolio-surgery/index.html#connection",
     "title": "Advanced Topics",
-    "section": "Dashboard Case Study: NHANES Equity",
-    "text": "Dashboard Case Study: NHANES Equity\nThe NHANES Health Equity Dashboard is now the foreground case study. Use it as a small knowledge-translation product built on the cached NHANES equity dataset.\n\nApp code: examples/nhanes-equity/app/app.R\nCached data: examples/nhanes-equity/data/nhanes_equity_v6.rds and examples/nhanes-equity/data/nhanes_equity_v6.csv\nOptional rebuild script: examples/nhanes-equity/scripts/build_nhanes_equity.R\n\nRun the dashboard from the repository root:\nshiny::runApp(\"examples/nhanes-equity/app\")\nThe app is offline-first: it loads the local RDS cache when available. Rebuilding from CDC uses nhanesA, requires internet access, and is optional unless assigned.\nMini-tasks for Week 11:\n\nRun a fresh-session test: can the app launch from the repository root?\nConfirm the cached RDS path works before attempting a CDC rebuild.\nOptionally run the rebuild script only if internet access and time are available.\nOptionally draft a static dashboard extension using a CSV snapshot and no Shiny server.\nLog any dependency, path, or README issues as reproducibility risks.\n\n\nOptional Extension: Static Dashboard (No Server)\nAdvanced students can compare the Shiny workflow with the draft static dashboard source file. This extension reads from a CSV snapshot and does not require a Shiny server; render it as a standalone dashboard if assigned.",
+    "section": "Connection",
+    "text": "Connection\nWeek 10 produced a report with code-generated outputs and citations. This week tests whether the report, dashboard, and instructions survive a fresh environment. The final portfolio should leave a reviewer able to rerun the core work without private setup knowledge.",
     "crumbs": [
       "Week 11: Portfolio Surgery",
       "Advanced Topics"
     ]
   },
   {
-    "objectID": "weeks/week11-portfolio-surgery/index.html#todo-before-release",
-    "href": "weeks/week11-portfolio-surgery/index.html#todo-before-release",
+    "objectID": "weeks/week11-portfolio-surgery/index.html#dashboard-case-study-nhanes-equity",
+    "href": "weeks/week11-portfolio-surgery/index.html#dashboard-case-study-nhanes-equity",
     "title": "Advanced Topics",
-    "section": "TODO Before Release",
-    "text": "TODO Before Release\n\n\n\n\n\n\nContent TODO\n\n\n\n\nAdd a fresh Codespace stress-test protocol.\nAdd a broken-project debugging exercise.\nAdd Assignment 10 instructions in assignments/assignment10-portfolio-surgery/.\nAdd Milestone 4 peer review instructions.\nAdd a final portfolio readiness checklist.",
+    "section": "Dashboard Case Study: NHANES Equity",
+    "text": "Dashboard Case Study: NHANES Equity\nThe NHANES Health Equity Dashboard is now the foreground case study. Use it as a small knowledge-translation product built on the cached NHANES equity dataset.\n\nApp code: examples/nhanes-equity/app/app.R\nCached data: examples/nhanes-equity/data/nhanes_equity_v6.rds and examples/nhanes-equity/data/nhanes_equity_v6.csv\nOptional rebuild script: examples/nhanes-equity/scripts/build_nhanes_equity.R\n\nRun the dashboard from the repository root:\nshiny::runApp(\"examples/nhanes-equity/app\")\nThe app is offline-first: it loads the local RDS cache when available. Rebuilding from CDC uses nhanesA, requires internet access, and is optional unless assigned.\nCompanion materials:\n\nWeek 10 report template: weeks/week10-reporting-publishing/report-template.qmd\nWeek 11 static dashboard demo: weeks/week11-portfolio-surgery/static-dashboard-ojs.qmd",
+    "crumbs": [
+      "Week 11: Portfolio Surgery",
+      "Advanced Topics"
+    ]
+  },
+  {
+    "objectID": "weeks/week11-portfolio-surgery/index.html#in-class-activity",
+    "href": "weeks/week11-portfolio-surgery/index.html#in-class-activity",
+    "title": "Advanced Topics",
+    "section": "In-Class Activity",
+    "text": "In-Class Activity\n\nRun a fresh-session test: can the app launch from the repository root?\nVerify the cached RDS path works before attempting a CDC rebuild.\nOptionally run the rebuild script only if internet access and time are available.\nOptionally draft a static dashboard extension using a CSV snapshot and no Shiny server.\nLog any dependency, path, or README issues as reproducibility risks.\n\nStudent output: a reproducibility test log, repaired README or path issues, and a final risk list. Assignment link: ../../assignments/assignment10-portfolio-surgery/README.md.",
+    "crumbs": [
+      "Week 11: Portfolio Surgery",
+      "Advanced Topics"
+    ]
+  },
+  {
+    "objectID": "weeks/week11-portfolio-surgery/index.html#static-dashboard-demo",
+    "href": "weeks/week11-portfolio-surgery/index.html#static-dashboard-demo",
+    "title": "Advanced Topics",
+    "section": "Static Dashboard Demo",
+    "text": "Static Dashboard Demo\nThe completed static dashboard source file demonstrates a no-server alternative that reads the NHANES CSV snapshot in the browser. Use it as an exemplar for optional portfolio extensions after the core Shiny and report workflows are reproducible.",
     "crumbs": [
       "Week 11: Portfolio Surgery",
       "Advanced Topics"
@@ -2733,22 +3030,44 @@
     ]
   },
   {
-    "objectID": "weeks/week11-portfolio-surgery/reproducibility-test.html#todo-before-release",
-    "href": "weeks/week11-portfolio-surgery/reproducibility-test.html#todo-before-release",
+    "objectID": "weeks/week11-portfolio-surgery/reproducibility-test.html#fresh-environment-protocol",
+    "href": "weeks/week11-portfolio-surgery/reproducibility-test.html#fresh-environment-protocol",
     "title": "Reproducibility Stress Test",
-    "section": "TODO Before Release",
-    "text": "TODO Before Release\n\n\n\n\n\n\nContent TODO\n\n\n\n\nAdd step-by-step fresh Codespace test instructions.\nAdd a failure log template.\nAdd peer review roles and timing.\nAdd final repair checklist.",
+    "section": "Fresh Environment Protocol",
+    "text": "Fresh Environment Protocol\nComplete these steps in a new Codespace or equivalent clean environment.\n\nOpen the repository from GitHub.\nLocate the project README and follow only the documented setup steps.\nRender the Quarto book or report.\nRun the NHANES dashboard from the repository root.\nOpen the Week 11 static dashboard source and render it as a standalone Quarto dashboard.\nCheck that all data paths are relative.\nRecord every failure, warning, unclear instruction, and repair.\nCommit repairs with clear messages.",
     "crumbs": [
       "Week 11: Portfolio Surgery",
       "Reproducibility Stress Test"
     ]
   },
   {
-    "objectID": "weeks/week11-portfolio-surgery/reproducibility-test.html#failure-log-template",
-    "href": "weeks/week11-portfolio-surgery/reproducibility-test.html#failure-log-template",
+    "objectID": "weeks/week11-portfolio-surgery/reproducibility-test.html#failure-log",
+    "href": "weeks/week11-portfolio-surgery/reproducibility-test.html#failure-log",
     "title": "Reproducibility Stress Test",
-    "section": "Failure Log Template",
-    "text": "Failure Log Template\n\n\n\nCheck\nResult\nFix needed\nOwner\n\n\n\n\nRepository opens in fresh Codespace\n\n\n\n\n\nPackages install or restore\n\n\n\n\n\nReport renders\n\n\n\n\n\nDashboard runs or renders\n\n\n\n\n\nREADME instructions are accurate",
+    "section": "Failure Log",
+    "text": "Failure Log\n\n\n\nCheck\nResult\nFix made\nOwner\n\n\n\n\nRepository opens in fresh environment\n\n\n\n\n\nPackages install or load\n\n\n\n\n\nReport renders\n\n\n\n\n\nDashboard runs locally\n\n\n\n\n\nStatic dashboard renders\n\n\n\n\n\nREADME instructions are accurate\n\n\n\n\n\nRelative paths work",
+    "crumbs": [
+      "Week 11: Portfolio Surgery",
+      "Reproducibility Stress Test"
+    ]
+  },
+  {
+    "objectID": "weeks/week11-portfolio-surgery/reproducibility-test.html#peer-review-roles",
+    "href": "weeks/week11-portfolio-surgery/reproducibility-test.html#peer-review-roles",
+    "title": "Reproducibility Stress Test",
+    "section": "Peer Review Roles",
+    "text": "Peer Review Roles\n\nDriver: Runs the project exactly as documented.\nNavigator: Reads instructions aloud and logs ambiguity.\nAuditor: Checks paths, data provenance, citations, and AI-use notes.\n\nRotate roles after the first major failure or after 20 minutes.",
+    "crumbs": [
+      "Week 11: Portfolio Surgery",
+      "Reproducibility Stress Test"
+    ]
+  },
+  {
+    "objectID": "weeks/week11-portfolio-surgery/reproducibility-test.html#final-repair-checklist",
+    "href": "weeks/week11-portfolio-surgery/reproducibility-test.html#final-repair-checklist",
+    "title": "Reproducibility Stress Test",
+    "section": "Final Repair Checklist",
+    "text": "Final Repair Checklist\n\nAll required outputs render or run from a fresh environment.\nREADME instructions match the actual workflow.\nData paths are relative.\nCached data files needed for offline work are present.\nCitations resolve.\nAI-use notes identify what was drafted and how it was checked.\nRemaining risks are documented in the failure log.",
     "crumbs": [
       "Week 11: Portfolio Surgery",
       "Reproducibility Stress Test"
@@ -2913,7 +3232,7 @@
     "href": "assignments/assignment05-visualization/README.html",
     "title": "37  Assignment 5: Visualization Audit and Revision",
     "section": "",
-    "text": "37.1 Purpose\nCreate a clear, honest health-data visualization from the NHANES Health Equity classroom dataset. You will audit a flawed or AI-assisted plot, revise it, and explain why your version is more accurate and useful for a non-technical audience.",
+    "text": "37.1 Purpose\nCreate a clear, honest health-data visualization from the NHANES Health Equity classroom dataset. You will audit a flawed or AI-assisted plot, revise it, and explain why the revision is more accurate and useful for a non-technical audience.",
     "crumbs": [
       "Assignments and Milestones",
       "<span class='chapter-number'>37</span>  <span class='chapter-title'>Assignment 5: Visualization Audit and Revision</span>"
@@ -2935,7 +3254,7 @@
     "href": "assignments/assignment05-visualization/README.html#step-by-step-tasks",
     "title": "37  Assignment 5: Visualization Audit and Revision",
     "section": "37.3 Step-by-Step Tasks",
-    "text": "37.3 Step-by-Step Tasks\n\nReview the Week 6 worked example and note how it labels data source, statistic, and limitations.\nChoose one comparison from the NHANES Health Equity CSV snapshot.\nDraft an initial plot using R and ggplot2.\nAudit the plot for misleading scale choices, unclear labels, missing context, and overclaiming.\nRevise the plot so it supports descriptive interpretation.\nWrite a caption and short audit note.\nIf AI helped you write or revise code, document what it did and how you verified it.",
+    "text": "37.3 Step-by-Step Tasks\n\nReview the Week 6 worked example.\nChoose one comparison from the NHANES Health Equity CSV snapshot.\nDraft an initial plot using R and ggplot2.\nAudit the plot for scale choices, labels, missing context, and overclaiming.\nRevise the plot so it supports descriptive interpretation.\nWrite a caption and short audit note.\nIf AI helped you write or revise code, document what it did and how you checked it.",
     "crumbs": [
       "Assignments and Milestones",
       "<span class='chapter-number'>37</span>  <span class='chapter-title'>Assignment 5: Visualization Audit and Revision</span>"
@@ -2953,11 +3272,11 @@
     ]
   },
   {
-    "objectID": "assignments/assignment05-visualization/README.html#submission-location",
-    "href": "assignments/assignment05-visualization/README.html#submission-location",
+    "objectID": "assignments/assignment05-visualization/README.html#submission-route",
+    "href": "assignments/assignment05-visualization/README.html#submission-route",
     "title": "37  Assignment 5: Visualization Audit and Revision",
-    "section": "37.5 Submission Location",
-    "text": "37.5 Submission Location\nTODO: Instructor to confirm Canvas upload, repository link, or both.",
+    "section": "37.5 Submission Route",
+    "text": "37.5 Submission Route\nSubmit a Canvas assignment entry that contains a link to the repository folder assignments/assignment05-visualization/submission/.",
     "crumbs": [
       "Assignments and Milestones",
       "<span class='chapter-number'>37</span>  <span class='chapter-title'>Assignment 5: Visualization Audit and Revision</span>"
@@ -2968,7 +3287,7 @@
     "href": "assignments/assignment05-visualization/README.html#grading-checklist",
     "title": "37  Assignment 5: Visualization Audit and Revision",
     "section": "37.6 Grading Checklist",
-    "text": "37.6 Grading Checklist\nComplete:\n\nUses examples/nhanes-equity/data/nhanes_equity_v6.csv with a relative path.\nPlot is rerunnable from the submitted Quarto file.\nTitle, axes, legend, and caption match the statistic shown.\nAudit note identifies at least three meaningful issues.\nCaption states that the result is descriptive and non-causal.\nAI-use note is present and specific.\n\nNeeds work:\n\nUses an absolute or machine-specific path.\nPlot title or caption overclaims causality or population inference.\nMissing caption, audit note, or AI-use note.\nCode does not run from the repository.\nRevised plot is not materially different from the flawed or draft version.",
+    "text": "37.6 Grading Checklist\nComplete:\n\nUses examples/nhanes-equity/data/nhanes_equity_v6.csv with a relative path.\nPlot is rerunnable from the submitted Quarto file.\nTitle, axes, legend, and caption match the statistic shown.\nAudit note identifies at least three meaningful issues.\nCaption states that the result is descriptive and non-causal.\nAI-use note is present and specific.\n\nNeeds work:\n\nUses an absolute or machine-specific path.\nPlot title or caption overclaims causality or population inference.\nMissing caption, audit note, or AI-use note.\nCode does not run from the repository.\nRevised plot is not materially different from the draft version.",
     "crumbs": [
       "Assignments and Milestones",
       "<span class='chapter-number'>37</span>  <span class='chapter-title'>Assignment 5: Visualization Audit and Revision</span>"
@@ -2990,7 +3309,7 @@
     "href": "assignments/assignment06-eda-ai-audit/README.html#inputs",
     "title": "38  Assignment 6: EDA, Table 1, and AI Audit",
     "section": "38.2 Inputs",
-    "text": "38.2 Inputs\n\nDataset: examples/nhanes-equity/data/nhanes_equity_v6.csv\nWorked example: weeks/week07-eda-ai-audit/worked-example-table1.qmd\nActivity prompt: weeks/week07-eda-ai-audit/activity-table1-audit.qmd\nPlanted-error starter: distributed by the instructor or TA",
+    "text": "38.2 Inputs\n\nDataset: examples/nhanes-equity/data/nhanes_equity_v6.csv\nWorked example: weeks/week07-eda-ai-audit/worked-example-table1.qmd\nActivity prompt: weeks/week07-eda-ai-audit/activity-table1-audit.qmd\nPlanted-error starter: weeks/week07-eda-ai-audit/instructor/planted-error-starter.qmd",
     "crumbs": [
       "Assignments and Milestones",
       "<span class='chapter-number'>38</span>  <span class='chapter-title'>Assignment 6: EDA, Table 1, and AI Audit</span>"
@@ -3001,7 +3320,7 @@
     "href": "assignments/assignment06-eda-ai-audit/README.html#step-by-step-tasks",
     "title": "38  Assignment 6: EDA, Table 1, and AI Audit",
     "section": "38.3 Step-by-Step Tasks",
-    "text": "38.3 Step-by-Step Tasks\n\nLoad the CSV snapshot with a relative path.\nDefine and document an analysis cohort, using age 20-80 unless instructed otherwise.\nCreate a missingness table for key variables.\nProduce a Table 1-style summary by IncomeGroup.\nInclude at minimum N, BMI mean (SD), and age mean (SD).\nWrite a short methods note that states the analysis is descriptive, unweighted, and non-causal.\nAudit the planted-error starter and list at least five issues.\nCategorize each issue as correctness, reproducibility, or interpretation.",
+    "text": "38.3 Step-by-Step Tasks\n\nLoad the CSV snapshot with a relative path.\nDefine and document an analysis cohort using age 20-80.\nCreate a missingness table for key variables.\nProduce a Table 1-style summary by IncomeGroup.\nInclude N, BMI mean (SD), and age mean (SD).\nWrite a short methods note stating that the analysis is descriptive, unweighted, and non-causal.\nAudit the planted-error starter and list at least five issues.\nCategorize each issue as correctness, reproducibility, or interpretation.",
     "crumbs": [
       "Assignments and Milestones",
       "<span class='chapter-number'>38</span>  <span class='chapter-title'>Assignment 6: EDA, Table 1, and AI Audit</span>"
@@ -3019,11 +3338,11 @@
     ]
   },
   {
-    "objectID": "assignments/assignment06-eda-ai-audit/README.html#submission-location",
-    "href": "assignments/assignment06-eda-ai-audit/README.html#submission-location",
+    "objectID": "assignments/assignment06-eda-ai-audit/README.html#submission-route",
+    "href": "assignments/assignment06-eda-ai-audit/README.html#submission-route",
     "title": "38  Assignment 6: EDA, Table 1, and AI Audit",
-    "section": "38.5 Submission Location",
-    "text": "38.5 Submission Location\nTODO: Instructor to confirm Canvas upload, repository link, or both.",
+    "section": "38.5 Submission Route",
+    "text": "38.5 Submission Route\nSubmit a Canvas assignment entry that contains a link to the repository folder assignments/assignment06-eda-ai-audit/submission/.",
     "crumbs": [
       "Assignments and Milestones",
       "<span class='chapter-number'>38</span>  <span class='chapter-title'>Assignment 6: EDA, Table 1, and AI Audit</span>"

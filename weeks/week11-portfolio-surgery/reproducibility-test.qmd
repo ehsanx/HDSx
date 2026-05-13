@@ -4,23 +4,45 @@
 
 Students test whether a project can run in a fresh environment and document every failure before final submission.
 
-## TODO Before Release
+## Fresh Environment Protocol
 
-::: {.callout-warning}
-## Content TODO
+Complete these steps in a new Codespace or equivalent clean environment.
 
-- Add step-by-step fresh Codespace test instructions.
-- Add a failure log template.
-- Add peer review roles and timing.
-- Add final repair checklist.
-:::
+1. Open the repository from GitHub.
+2. Locate the project README and follow only the documented setup steps.
+3. Render the Quarto book or report.
+4. Run the NHANES dashboard from the repository root.
+5. Open the Week 11 static dashboard source and render it as a standalone Quarto dashboard.
+6. Check that all data paths are relative.
+7. Record every failure, warning, unclear instruction, and repair.
+8. Commit repairs with clear messages.
 
-## Failure Log Template
+## Failure Log
 
-| Check | Result | Fix needed | Owner |
+| Check | Result | Fix made | Owner |
 |---|---|---|---|
-| Repository opens in fresh Codespace |  |  |  |
-| Packages install or restore |  |  |  |
+| Repository opens in fresh environment |  |  |  |
+| Packages install or load |  |  |  |
 | Report renders |  |  |  |
-| Dashboard runs or renders |  |  |  |
+| Dashboard runs locally |  |  |  |
+| Static dashboard renders |  |  |  |
 | README instructions are accurate |  |  |  |
+| Relative paths work |  |  |  |
+
+## Peer Review Roles
+
+- **Driver:** Runs the project exactly as documented.
+- **Navigator:** Reads instructions aloud and logs ambiguity.
+- **Auditor:** Checks paths, data provenance, citations, and AI-use notes.
+
+Rotate roles after the first major failure or after 20 minutes.
+
+## Final Repair Checklist
+
+- [ ] All required outputs render or run from a fresh environment.
+- [ ] README instructions match the actual workflow.
+- [ ] Data paths are relative.
+- [ ] Cached data files needed for offline work are present.
+- [ ] Citations resolve.
+- [ ] AI-use notes identify what was drafted and how it was checked.
+- [ ] Remaining risks are documented in the failure log.

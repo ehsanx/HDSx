@@ -17,16 +17,22 @@
 - Document your analysis in Quarto by weaving code chunks with Markdown narrative.
 - Commit incrementally as you work (reinforcing Week 2 Git basics).
 
+## Connection
+
+Week 2 made the project structure reproducible. This week you use that structure to load, inspect, summarize, and audit R code with AI support. Next week you will put those edits under version control.
+
 ## Case Study Data Analysis
 
 {{< include ../../examples/nhanes-equity/snippets/case-study-data-analysis.qmd >}}
 
-Mini-tasks for Week 3:
+## In-Class Activity
 
 - Load the CSV snapshot and inspect column names, row count, and missingness.
 - Summarize one numeric variable and one grouping variable with clear `NA` handling.
 - Ask an AI assistant to comment on your code, then audit whether the comments match the actual operations.
 - Note one place where an AI assistant could hallucinate a variable name or overstate what the descriptive summary means.
+
+Student output: a short Quarto note with one data inspection, one summary, and one AI-audit comment. Assignment link: `../../assignments/assignment02-r-with-ai/README.md`.
 
 ---
 
@@ -387,7 +393,7 @@ This interleaving of code and prose is **literate programming** --- the methodol
 7. **Document:** Every code chunk should have:
    - A `#` comment stating what you asked the AI and what you verified.
    - A Markdown paragraph below interpreting the result.
-8. **Render** the document to confirm it runs cleanly from top to bottom.
+8. **Render** the document to verify it runs cleanly from top to bottom.
 9. **Git:** Stage, write a descriptive commit message, Commit, and Sync.
 
 ### Deliverable

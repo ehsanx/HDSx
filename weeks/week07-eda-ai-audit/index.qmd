@@ -4,27 +4,22 @@
 
 Before modeling, you must understand your data. This chapter guides students through the rigorous process of Exploratory Data Analysis (EDA) and the creation of the standard "Table 1" for demographic characteristics. You will learn to document every cleaning decision and exclusion criteria in a reproducible Quarto log, ensuring that your path from raw data to analysis dataset is transparent and repeatable by anyone.
 
+## Connection
+
+Week 6 focused on whether visual design makes a descriptive claim honest and clear. This week documents the analysis cohort, missingness, and Table 1 so that later dashboard and report outputs have an auditable foundation.
+
 ## Case Study Data Analysis
 
 {{< include ../../examples/nhanes-equity/snippets/case-study-data-analysis.qmd >}}
 
-Mini-tasks for Week 7:
+## In-Class Activity
 
 - Work through the [Table 1 worked example](worked-example-table1.qmd) using the CSV snapshot.
 - Define and document an analysis cohort before summarizing.
 - Create a Table 1-style summary with N, BMI mean (SD), and age mean (SD).
 - Audit the planted-error starter and categorize at least five issues as correctness, reproducibility, or interpretation problems.
 
-## Instructor Decisions
-
-::: {.callout-warning}
-## Before Release
-
-- Confirm whether the Table 1 worked example becomes required pre-class work or in-class practice.
-- Decide whether the planted-error starter is distributed as-is or copied into student assignment repos.
-- Confirm the Assignment 6 submission route in Canvas or the repo.
-- Connect the activity to Milestone 2 preliminary analysis.
-:::
+Student output: a rerunnable EDA note, Table 1, planted-error audit, and AI-use note. Assignment link: `../../assignments/assignment06-eda-ai-audit/README.md`.
 
 ## Definition of Done
 

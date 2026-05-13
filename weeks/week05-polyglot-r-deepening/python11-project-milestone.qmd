@@ -6,7 +6,7 @@ Your proposal is due this Friday. Ensure it includes:
 
 \- **Research Question:** A focused health data question.
 
-\- **Data Source:** A confirmed dataset (NHANES, Kaggle, etc.).
+\- **Data Source:** A verified dataset (NHANES, Kaggle, etc.).
 
 \- **Feasibility Check:** Can you load and preview the data in a Codespace?
 

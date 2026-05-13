@@ -5,3 +5,25 @@ The **NHANES Health Equity data spine** is the recurring dataset thread for this
 - Case-study README: `examples/nhanes-equity/README.md`
 
 The cached files are provided so early work can happen without internet access.
+
+```{r}
+#| message: false
+#| warning: false
+library(readr)
+library(dplyr)
+
+candidate_paths <- c(
+  "examples/nhanes-equity/data/nhanes_equity_v6.csv",
+  "../../examples/nhanes-equity/data/nhanes_equity_v6.csv"
+)
+
+nhanes_path <- candidate_paths[file.exists(candidate_paths)][1]
+if (is.na(nhanes_path)) {
+  stop("Could not find examples/nhanes-equity/data/nhanes_equity_v6.csv")
+}
+
+nhanes_spine <- read_csv(nhanes_path, show_col_types = FALSE)
+
+dim(nhanes_spine)
+glimpse(nhanes_spine)
+```

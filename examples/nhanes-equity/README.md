@@ -53,8 +53,9 @@ examples/nhanes-equity/data/nhanes_equity_v6.csv
 
 The dashboard's **Download CSV** button downloads the currently summarized table output based on the selected filters and grouping. It does **not** download raw NHANES microdata.
 
-## Instructor TODOs
+## Course Decisions
 
-- TODO: Confirm whether the legacy copies in `examples/data/` should remain for backward compatibility or be retired later.
-- TODO: Confirm whether `examples/bmi39.R` should stay as a historical source file or become a redirect note.
-- TODO: Confirm whether CDC-rebuilt data should be committed each term or treated as generated output.
+- The canonical classroom dataset lives in `examples/nhanes-equity/data/`.
+- Legacy copies outside this package are not used by the NHANES case-study thread.
+- `examples/bmi39.R` remains the historical source used to create `app/app.R`.
+- The cached CSV/RDS files are committed for offline-first teaching; CDC rebuilds are advanced reproducibility work.

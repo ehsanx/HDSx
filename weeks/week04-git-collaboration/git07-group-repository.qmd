@@ -3,4 +3,4 @@
 1.  **Invite:** One member creates the repo; others accept the invite.
 2.  **Clone:** Everyone launches their own Codespace.
 3.  **Norms:** Agree: "No direct pushes to `main`."
-4.  **Test:** Everyone makes a `README.md` update to confirm access.
+4.  **Test:** Everyone makes a `README.md` update to verify access.

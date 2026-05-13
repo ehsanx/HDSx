@@ -1,0 +1,21 @@
+{
+  "hash": "b0c23cc5d5dc5517b2bb8a042e9a37d7",
+  "result": {
+    "engine": "knitr",
+    "markdown": "# Exploring Data {.unnumbered}\n\n## Overview\n\nBefore modeling, you must understand your data. This chapter guides students through the rigorous process of Exploratory Data Analysis (EDA) and the creation of the standard \"Table 1\" for demographic characteristics. You will learn to document every cleaning decision and exclusion criteria in a reproducible Quarto log, ensuring that your path from raw data to analysis dataset is transparent and repeatable by anyone.\n\n## Connection\n\nWeek 6 focused on whether visual design makes a descriptive claim honest and clear. This week documents the analysis cohort, missingness, and Table 1 so that later dashboard and report outputs have an auditable foundation.\n\n## Case Study Data Analysis\n\nThe **NHANES Health Equity data spine** now supports code-reading, EDA, visualization, and reproducibility checks. Use the cached CSV/RDS for routine class work; a CDC retrieval script exists for advanced users.\n\n- Cached RDS: `examples/nhanes-equity/data/nhanes_equity_v6.rds`\n- CSV snapshot: `examples/nhanes-equity/data/nhanes_equity_v6.csv`\n- Case-study README: `examples/nhanes-equity/README.md`\n\nThe default classroom path is to use the cached data so the analysis work is reproducible without internet access.\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(readr)\nlibrary(dplyr)\n\ncandidate_paths <- c(\n  \"examples/nhanes-equity/data/nhanes_equity_v6.csv\",\n  \"../../examples/nhanes-equity/data/nhanes_equity_v6.csv\"\n)\n\nnhanes_path <- candidate_paths[file.exists(candidate_paths)][1]\nif (is.na(nhanes_path)) {\n  stop(\"Could not find examples/nhanes-equity/data/nhanes_equity_v6.csv\")\n}\n\nnhanes_analysis <- read_csv(nhanes_path, show_col_types = FALSE)\n\nnhanes_analysis |>\n  summarise(\n    rows = n(),\n    missing_bmi = sum(is.na(BMI)),\n    missing_income = sum(is.na(IncomeGroup))\n  )\n#> # A tibble: 1 x 3\n#>     rows missing_bmi missing_income\n#>    <int>       <int>          <int>\n#> 1 105626        9356           9415\n\nnhanes_analysis |>\n  filter(!is.na(BMI), !is.na(IncomeGroup), Age >= 20, Age <= 80) |>\n  group_by(IncomeGroup) |>\n  summarise(\n    n = n(),\n    mean_bmi = round(mean(BMI), 1),\n    .groups = \"drop\"\n  )\n#> # A tibble: 3 x 3\n#>   IncomeGroup            n mean_bmi\n#>   <chr>              <int>    <dbl>\n#> 1 High Income (>3.5) 16330     28.6\n#> 2 Low Income (<1.3)  15293     29.4\n#> 3 Middle Income      19228     29.3\n```\n:::\n\n\n\n## In-Class Activity\n\n- Work through the [Table 1 worked example](worked-example-table1.qmd) using the CSV snapshot.\n- Define and document an analysis cohort before summarizing.\n- Create a Table 1-style summary with N, BMI mean (SD), and age mean (SD).\n- Audit the planted-error starter and categorize at least five issues as correctness, reproducibility, or interpretation problems.\n\nStudent output: a rerunnable EDA note, Table 1, planted-error audit, and AI-use note. Assignment link: `../../assignments/assignment06-eda-ai-audit/README.md`.\n\n## Definition of Done\n\n- Students can document cleaning decisions from raw or starter data to an analysis-ready table.\n- The planted-error exercise has an instructor key.\n- The EDA renders without manual intervention.\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {
+      "knitr": [
+        "{\"type\":\"list\",\"attributes\":{},\"value\":[]}"
+      ]
+    },
+    "preserve": null,
+    "postProcess": false
+  }
+}

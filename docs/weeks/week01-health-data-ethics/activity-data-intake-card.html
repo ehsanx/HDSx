@@ -677,7 +677,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week10-reporting-publishing/report-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Report Template</span></a>
+ <span class="menu-text">Report Template: NHANES Equity Summary</span></a>
   </div>
 </li>
       </ul>
@@ -904,15 +904,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#goal" id="toc-goal" class="nav-link active" data-scroll-target="#goal">Goal</a></li>
-  <li><a href="#approved-starter-portals-choose-one" id="toc-approved-starter-portals-choose-one" class="nav-link" data-scroll-target="#approved-starter-portals-choose-one">Approved Starter Portals (choose one)</a></li>
+  <li><a href="#approved-starter-portals" id="toc-approved-starter-portals" class="nav-link" data-scroll-target="#approved-starter-portals">Approved Starter Portals</a></li>
   <li><a href="#student-template" id="toc-student-template" class="nav-link" data-scroll-target="#student-template">Student Template</a></li>
-  <li><a href="#example-completed-data-intake-card-sample" id="toc-example-completed-data-intake-card-sample" class="nav-link" data-scroll-target="#example-completed-data-intake-card-sample">Example (Completed Data Intake Card — sample)</a>
-  <ul class="collapse">
-  <li><a href="#who" id="toc-who" class="nav-link" data-scroll-target="#who">WHO</a></li>
-  <li><a href="#nhanes" id="toc-nhanes" class="nav-link" data-scroll-target="#nhanes">NHANES</a></li>
-  </ul></li>
-  <li><a href="#completion-checklist-complete-incomplete" id="toc-completion-checklist-complete-incomplete" class="nav-link" data-scroll-target="#completion-checklist-complete-incomplete">Completion Checklist (Complete / Incomplete)</a></li>
-  <li><a href="#submission-week-1" id="toc-submission-week-1" class="nav-link" data-scroll-target="#submission-week-1">Submission (Week 1)</a></li>
+  <li><a href="#completed-example-nhanes" id="toc-completed-example-nhanes" class="nav-link" data-scroll-target="#completed-example-nhanes">Completed Example: NHANES</a></li>
+  <li><a href="#completion-checklist" id="toc-completion-checklist" class="nav-link" data-scroll-target="#completion-checklist">Completion Checklist</a></li>
+  <li><a href="#submission" id="toc-submission" class="nav-link" data-scroll-target="#submission">Submission</a></li>
+  <li><a href="#scoring-guide" id="toc-scoring-guide" class="nav-link" data-scroll-target="#scoring-guide">Scoring Guide</a></li>
   <li><a href="#reproducibility-check" id="toc-reproducibility-check" class="nav-link" data-scroll-target="#reproducibility-check">Reproducibility Check</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ehsanx/Health-AI-KT/edit/main/weeks/week01-health-data-ethics/activity-data-intake-card.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ehsanx/Health-AI-KT/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -943,35 +940,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="goal">Goal</h2>
 <p>Students practice evaluating whether a health dataset is usable, ethical, documented, and appropriate for reproducible analysis.</p>
 </section>
-<section id="approved-starter-portals-choose-one" class="level2">
-<h2 class="anchored" data-anchor-id="approved-starter-portals-choose-one">Approved Starter Portals (choose one)</h2>
-<p>Choose <strong>one</strong> dataset/indicator page from one of the portals below (pick something you care about). You are <strong>not</strong> required to use the same dataset as other students.</p>
+<section id="approved-starter-portals" class="level2">
+<h2 class="anchored" data-anchor-id="approved-starter-portals">Approved Starter Portals</h2>
+<p>Choose <strong>one</strong> dataset or indicator page from one of the portals below.</p>
 <ol type="1">
-<li><strong>Survey-style microdata (person-level):</strong> NHANES or NHIS (see Reference: Data Sources)
-<ul>
-<li>Good if you want person-level variables (age, sex, BMI, smoking, etc.)</li>
-<li>Expect: codebooks, sampling notes, and data dictionaries</li>
-</ul></li>
-<li><strong>Indicators (aggregated country/province-level): WHO Global Health Observatory (GHO)</strong>
-<ul>
-<li>Good if you want country-level trends (life expectancy, mortality, vaccination coverage, etc.)</li>
-<li>Expect: “indicator metadata” (definition + method), downloadable CSV, <strong>not</strong> person-level records</li>
-</ul>
-<strong>How to use GHO quickly (what to click):</strong>
-<ul>
-<li>Pick <strong>one indicator</strong> (e.g., “Life expectancy at birth”, “Maternal mortality ratio”, “Diabetes prevalence”)</li>
-<li>Pick <strong>one geography</strong> (Canada or another country/region)</li>
-<li>Find: indicator definition / metadata, time coverage, and the download option</li>
-</ul></li>
-<li><strong>Canadian open data portal:</strong> BC Data Catalogue or Open Government Portal (Canada)
-<ul>
-<li>Good if you want Canadian administrative/open datasets</li>
-<li>Expect: variable definitions vary widely (sometimes excellent, sometimes minimal)</li>
-</ul></li>
+<li><strong>Survey-style microdata:</strong> NHANES or NHIS from CDC/NCHS.</li>
+<li><strong>Aggregated indicators:</strong> WHO Global Health Observatory.</li>
+<li><strong>Canadian open data:</strong> BC Data Catalogue or the Open Government Portal.</li>
 </ol>
-<blockquote class="blockquote">
-<p>Tip: If you’re unsure whether your selection is microdata or aggregated indicators, write “unknown” in <code>data_level</code> and explain what you observed on the download page.</p>
-</blockquote>
+<p>The NHANES Health Equity data spine can be used as the shared practice example when students need a common dataset.</p>
 </section>
 <section id="student-template" class="level2">
 <h2 class="anchored" data-anchor-id="student-template">Student Template</h2>
@@ -991,82 +968,48 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-14"><a href="#cb1-14"></a><span class="fu">stewardship_notes</span><span class="kw">:</span><span class="at"> </span><span class="st">""</span></span>
 <span id="cb1-15"><a href="#cb1-15"></a><span class="fu">ai_use_note</span><span class="kw">:</span><span class="at"> </span><span class="st">""</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="example-completed-data-intake-card-sample" class="level2">
-<h2 class="anchored" data-anchor-id="example-completed-data-intake-card-sample">Example (Completed Data Intake Card — sample)</h2>
-<section id="who" class="level3">
-<h3 class="anchored" data-anchor-id="who">WHO</h3>
-<p>This example uses <strong>one WHO indicator</strong> to demonstrate what “Complete” looks like. You may choose a different portal and topic.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">dataset_name</span><span class="kw">:</span><span class="at"> </span><span class="st">"Life expectancy at birth (years)"</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a><span class="fu">publisher_org</span><span class="kw">:</span><span class="at"> </span><span class="st">"World Health Organization (WHO)"</span></span>
-<span id="cb2-3"><a href="#cb2-3"></a><span class="fu">permalink_url</span><span class="kw">:</span><span class="at"> </span><span class="st">"https://www.who.int/data/gho"</span></span>
-<span id="cb2-4"><a href="#cb2-4"></a><span class="fu">license_terms</span><span class="kw">:</span><span class="at"> </span><span class="st">"See WHO terms on the portal; record as provided"</span></span>
-<span id="cb2-5"><a href="#cb2-5"></a><span class="fu">geography</span><span class="kw">:</span><span class="at"> </span><span class="st">"Canada (and global comparison)"</span></span>
-<span id="cb2-6"><a href="#cb2-6"></a><span class="fu">time_coverage</span><span class="kw">:</span><span class="at"> </span><span class="st">"2000–2023 (varies by country)"</span></span>
-<span id="cb2-7"><a href="#cb2-7"></a><span class="fu">data_level</span><span class="kw">:</span><span class="at"> </span><span class="st">"Aggregated indicators (country-level)"</span></span>
-<span id="cb2-8"><a href="#cb2-8"></a><span class="fu">variables_of_interest</span><span class="kw">:</span></span>
-<span id="cb2-9"><a href="#cb2-9"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> </span><span class="st">"Life expectancy at birth (years)"</span></span>
-<span id="cb2-10"><a href="#cb2-10"></a><span class="at">    </span><span class="fu">definition</span><span class="kw">:</span><span class="at"> </span><span class="st">"Expected years of life at birth (method described in WHO metadata)"</span></span>
-<span id="cb2-11"><a href="#cb2-11"></a><span class="at">    </span><span class="fu">known_limitations</span><span class="kw">:</span><span class="at"> </span><span class="st">"Model-based estimates; depends on reporting quality; not person-level"</span></span>
-<span id="cb2-12"><a href="#cb2-12"></a><span class="fu">stewardship_notes</span><span class="kw">:</span><span class="at"> </span><span class="st">"No individual-level data; still avoid overclaiming causality; cite metadata."</span></span>
-<span id="cb2-13"><a href="#cb2-13"></a><span class="fu">ai_use_note</span><span class="kw">:</span><span class="at"> </span><span class="st">"Used AI to draft a plain-language summary of the indicator; verified against WHO metadata page."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="completed-example-nhanes" class="level2">
+<h2 class="anchored" data-anchor-id="completed-example-nhanes">Completed Example: NHANES</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">dataset_name</span><span class="kw">:</span><span class="at"> </span><span class="st">"NHANES Health Equity classroom dataset"</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="fu">publisher_org</span><span class="kw">:</span><span class="at"> </span><span class="st">"CDC / National Center for Health Statistics"</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="fu">permalink_url</span><span class="kw">:</span><span class="at"> </span><span class="st">"https://wwwn.cdc.gov/nchs/nhanes/"</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="fu">date_accessed</span><span class="kw">:</span><span class="at"> </span><span class="st">"YYYY-MM-DD"</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="fu">license_terms</span><span class="kw">:</span><span class="at"> </span><span class="st">"Public-use NHANES files; cite CDC/NCHS documentation"</span></span>
+<span id="cb2-6"><a href="#cb2-6"></a><span class="fu">geography</span><span class="kw">:</span><span class="at"> </span><span class="st">"United States"</span></span>
+<span id="cb2-7"><a href="#cb2-7"></a><span class="fu">time_coverage</span><span class="kw">:</span><span class="at"> </span><span class="st">"Multiple NHANES cycles represented in the prepared class file"</span></span>
+<span id="cb2-8"><a href="#cb2-8"></a><span class="fu">data_level</span><span class="kw">:</span><span class="at"> </span><span class="st">"Microdata-derived classroom dataset"</span></span>
+<span id="cb2-9"><a href="#cb2-9"></a><span class="fu">variables_of_interest</span><span class="kw">:</span></span>
+<span id="cb2-10"><a href="#cb2-10"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> </span><span class="st">"BMI"</span></span>
+<span id="cb2-11"><a href="#cb2-11"></a><span class="at">    </span><span class="fu">definition</span><span class="kw">:</span><span class="at"> </span><span class="st">"Body mass index from NHANES body measures data"</span></span>
+<span id="cb2-12"><a href="#cb2-12"></a><span class="fu">known_limitations</span><span class="kw">:</span></span>
+<span id="cb2-13"><a href="#cb2-13"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="st">"Prepared class dataset is descriptive and should not be treated as a causal analysis"</span></span>
+<span id="cb2-14"><a href="#cb2-14"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="st">"Population inference requires attention to NHANES survey design and weights"</span></span>
+<span id="cb2-15"><a href="#cb2-15"></a><span class="fu">stewardship_notes</span><span class="kw">:</span><span class="at"> </span><span class="st">"Use public-use data responsibly, avoid small-cell disclosure, and state limitations plainly."</span></span>
+<span id="cb2-16"><a href="#cb2-16"></a><span class="fu">ai_use_note</span><span class="kw">:</span><span class="at"> </span><span class="st">"AI may help draft plain-language summaries, but source documentation must be checked directly."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="nhanes" class="level3">
-<h3 class="anchored" data-anchor-id="nhanes">NHANES</h3>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">dataset_name</span><span class="kw">:</span><span class="at"> </span><span class="st">"NHANES 2017–2018 Demographics (example)"</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a><span class="fu">publisher_org</span><span class="kw">:</span><span class="at"> </span><span class="st">"CDC / NCHS"</span></span>
-<span id="cb3-3"><a href="#cb3-3"></a><span class="fu">permalink_url</span><span class="kw">:</span><span class="at"> </span><span class="st">"https://wwwn.cdc.gov/nchs/nhanes/"</span></span>
-<span id="cb3-4"><a href="#cb3-4"></a><span class="fu">date_accessed</span><span class="kw">:</span><span class="at"> </span><span class="st">"YYYY-MM-DD"</span></span>
-<span id="cb3-5"><a href="#cb3-5"></a><span class="fu">license_terms</span><span class="kw">:</span><span class="at"> </span><span class="st">"Public-use (see NHANES guidance on site)"</span></span>
-<span id="cb3-6"><a href="#cb3-6"></a><span class="fu">geography</span><span class="kw">:</span><span class="at"> </span><span class="st">"United States"</span></span>
-<span id="cb3-7"><a href="#cb3-7"></a><span class="fu">time_coverage</span><span class="kw">:</span><span class="at"> </span><span class="st">"2017–2018"</span></span>
-<span id="cb3-8"><a href="#cb3-8"></a><span class="fu">data_level</span><span class="kw">:</span><span class="at"> </span><span class="st">"Microdata (person-level)"</span></span>
-<span id="cb3-9"><a href="#cb3-9"></a><span class="fu">variables_of_interest</span><span class="kw">:</span></span>
-<span id="cb3-10"><a href="#cb3-10"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> </span><span class="st">"RIAGENDR"</span></span>
-<span id="cb3-11"><a href="#cb3-11"></a><span class="at">    </span><span class="fu">definition</span><span class="kw">:</span><span class="at"> </span><span class="st">"Gender (coded categories per documentation)"</span></span>
-<span id="cb3-12"><a href="#cb3-12"></a><span class="fu">known_limitations</span><span class="kw">:</span></span>
-<span id="cb3-13"><a href="#cb3-13"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="st">"Complex survey design; weights needed for population inference"</span></span>
-<span id="cb3-14"><a href="#cb3-14"></a><span class="fu">stewardship_notes</span><span class="kw">:</span><span class="at"> </span><span class="st">"De-identified public-use microdata; still avoid reporting small cell counts."</span></span>
-<span id="cb3-15"><a href="#cb3-15"></a><span class="fu">ai_use_note</span><span class="kw">:</span><span class="at"> </span><span class="st">"Used AI to summarize the codebook section for RIAGENDR; verified against official documentation."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-</section>
-<section id="completion-checklist-complete-incomplete" class="level2">
-<h2 class="anchored" data-anchor-id="completion-checklist-complete-incomplete">Completion Checklist (Complete / Incomplete)</h2>
+<section id="completion-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="completion-checklist">Completion Checklist</h2>
 <p>To be marked <strong>Complete</strong>, your card must include:</p>
 <ul class="task-list">
-<li><label><input type="checkbox">A stable link (or link + date accessed)</label></li>
-<li><label><input type="checkbox">Publisher/organization named</label></li>
-<li><label><input type="checkbox">License/terms noted (even if “see portal terms”)</label></li>
-<li><label><input type="checkbox">Data level identified (microdata vs aggregated indicators)</label></li>
-<li><label><input type="checkbox">At least <strong>one</strong> variable with a definition grounded in documentation (not AI guesswork)</label></li>
-<li><label><input type="checkbox">One limitation or risk of misuse (privacy, over-interpretation, stewardship)</label></li>
-<li><label><input type="checkbox">AI-use note (what you used AI for + how you verified)</label></li>
+<li><label><input type="checkbox">A stable link or access date.</label></li>
+<li><label><input type="checkbox">Publisher or organization.</label></li>
+<li><label><input type="checkbox">License or terms of use.</label></li>
+<li><label><input type="checkbox">Data level: microdata, aggregated indicator, or unknown with explanation.</label></li>
+<li><label><input type="checkbox">At least one variable definition grounded in documentation.</label></li>
+<li><label><input type="checkbox">One limitation or stewardship risk.</label></li>
+<li><label><input type="checkbox">AI-use note explaining what was drafted and how it was checked.</label></li>
 </ul>
-<blockquote class="blockquote">
-<p>If you’re uncertain about something, write <strong>unknown</strong> and explain what you looked for. ## TODO Before Release</p>
-</blockquote>
 </section>
-<section id="submission-week-1" class="level2">
-<h2 class="anchored" data-anchor-id="submission-week-1">Submission (Week 1)</h2>
-<p>This is <strong>not graded</strong>, but you must complete it because you’ll reuse it later.</p>
-<p>Submit by: - <strong>Option A (recommended):</strong> paste your completed card into Canvas (Week 1 module) - <strong>Option B:</strong> commit a <code>data-intake-card.md</code> file to your repo (we’ll do this starting Week 2)</p>
-<p>Instructor will confirm the submission route on Canvas.</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Content TODO
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<section id="submission" class="level2">
+<h2 class="anchored" data-anchor-id="submission">Submission</h2>
+<p>Submit your completed card in Canvas under the Week 1 module. Starting in Week 2, keep a copy in your course repository as <code>data-intake-card.md</code>.</p>
+</section>
+<section id="scoring-guide" class="level2">
+<h2 class="anchored" data-anchor-id="scoring-guide">Scoring Guide</h2>
 <ul>
-<li>Add 2-3 approved starter portals from Canvas.</li>
-<li>Add a short rubric for provenance, licensing, variable clarity, and stewardship.</li>
-<li>Explain that students will submit this on Canvas.</li>
+<li><strong>Complete:</strong> Stable source, publisher, terms, data level, documented variable definition, limitation/stewardship note, and AI-use note are present.</li>
+<li><strong>Needs work:</strong> Source documentation is missing, license/terms are unclear, variable definitions are guessed, or limitations are absent.</li>
 </ul>
-</div>
-</div>
 </section>
 <section id="reproducibility-check" class="level2">
 <h2 class="anchored" data-anchor-id="reproducibility-check">Reproducibility Check</h2>
@@ -1074,7 +1017,7 @@ Content TODO
 <li>The dataset link is stable or includes an access date.</li>
 <li>The publisher and license are named.</li>
 <li>Variable definitions come from source documentation, not AI guesses.</li>
-<li>The student records what they asked AI and how they verified the answer.</li>
+<li>The AI-use note states how the student checked AI-assisted text.</li>
 </ul>
 
 

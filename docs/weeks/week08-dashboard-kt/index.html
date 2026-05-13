@@ -677,7 +677,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week10-reporting-publishing/report-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Report Template</span></a>
+ <span class="menu-text">Report Template: NHANES Equity Summary</span></a>
   </div>
 </li>
       </ul>
@@ -904,8 +904,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#connection" id="toc-connection" class="nav-link" data-scroll-target="#connection">Connection</a></li>
   <li><a href="#dashboard-case-study-nhanes-equity" id="toc-dashboard-case-study-nhanes-equity" class="nav-link" data-scroll-target="#dashboard-case-study-nhanes-equity">Dashboard Case Study: NHANES Equity</a></li>
-  <li><a href="#todo-before-release" id="toc-todo-before-release" class="nav-link" data-scroll-target="#todo-before-release">TODO Before Release</a></li>
+  <li><a href="#in-class-activity" id="toc-in-class-activity" class="nav-link" data-scroll-target="#in-class-activity">In-Class Activity</a></li>
   <li><a href="#definition-of-done" id="toc-definition-of-done" class="nav-link" data-scroll-target="#definition-of-done">Definition of Done</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ehsanx/Health-AI-KT/edit/main/weeks/week08-dashboard-kt/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ehsanx/Health-AI-KT/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -936,6 +937,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>Static PDF reports often sit unread, so this chapter introduces dynamic Knowledge Translation through Shiny apps and dashboards. Students will take their prior EDA results and transform them into interactive web tools that allow users to filter and explore the data themselves. You will learn the best practices of user interface design for health data and deploy your first live dashboard to the web via GitHub Pages or Shinylive.</p>
 </section>
+<section id="connection" class="level2">
+<h2 class="anchored" data-anchor-id="connection">Connection</h2>
+<p>Week 7 established an auditable descriptive foundation. This week is the first app-forward week: students run the NHANES dashboard, identify an audience, and improve one audience-facing element. Next week turns one dashboard finding into a short scientific communication product.</p>
+</section>
 <section id="dashboard-case-study-nhanes-equity" class="level2">
 <h2 class="anchored" data-anchor-id="dashboard-case-study-nhanes-equity">Dashboard Case Study: NHANES Equity</h2>
 <p>The <strong>NHANES Health Equity Dashboard</strong> is now the foreground case study. Use it as a small knowledge-translation product built on the cached NHANES equity dataset.</p>
@@ -947,35 +952,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Run the dashboard from the repository root:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>shiny<span class="sc">::</span><span class="fu">runApp</span>(<span class="st">"examples/nhanes-equity/app"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>The app is offline-first: it loads the local RDS cache when available. Rebuilding from CDC uses <code>nhanesA</code>, requires internet access, and is optional unless assigned.</p>
-<p>Mini-tasks for Week 8:</p>
+<p>Companion materials:</p>
+<ul>
+<li>Week 10 report template: <code>weeks/week10-reporting-publishing/report-template.qmd</code></li>
+<li>Week 11 static dashboard demo: <code>weeks/week11-portfolio-surgery/static-dashboard-ojs.qmd</code></li>
+</ul>
+</section>
+<section id="in-class-activity" class="level2">
+<h2 class="anchored" data-anchor-id="in-class-activity">In-Class Activity</h2>
 <ul>
 <li>Run the app and describe the intended audience in one sentence.</li>
 <li>Make one audience-facing improvement to a label, help text, or interpretation note.</li>
 <li>Verify the app still loads the cached RDS after your change.</li>
-<li>Treat deployment as optional unless the instructor explicitly assigns it.</li>
+<li>Write one limitation statement that belongs inside or beside the dashboard.</li>
 </ul>
-</section>
-<section id="todo-before-release" class="level2">
-<h2 class="anchored" data-anchor-id="todo-before-release">TODO Before Release</h2>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Content TODO
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>Decide the required core pathway: Quarto dashboard, Shiny, or static HTML/JS.</li>
-<li>Add a minimal dashboard starter with one filter, one chart, and one plain-language interpretation.</li>
-<li>Add testing instructions for Codespaces.</li>
-<li>Add Assignment 7 instructions in <code>assignments/assignment07-dashboard/</code>.</li>
-<li>Add guidance for privacy-safe dashboard publishing.</li>
-</ul>
-</div>
-</div>
+<p>Student output: a local app run note, one audience-facing text improvement, and a limitation statement. Assignment link: <code>../../assignments/assignment07-dashboard/README.md</code>.</p>
 </section>
 <section id="definition-of-done" class="level2">
 <h2 class="anchored" data-anchor-id="definition-of-done">Definition of Done</h2>

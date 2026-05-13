@@ -26,7 +26,7 @@ Your work is currently only on the "Rented Desk" (Codespace). It is a **Draft**.
 
     -   This is the **"Send"** button.
     -   **Action:** It wraps up your changes, stamps them with the time and your message, and teleports them to the Cloud Vault.
-    -   *Note:* You might be asked to click "Always" or "Yes" to confirm the sync.
+    -   *Note:* You might be asked to click "Always" or "Yes" to approve the sync.
 
     ![This will push your changes to the remote branch](../../assets/images/workflow8/commitpush.png)
 

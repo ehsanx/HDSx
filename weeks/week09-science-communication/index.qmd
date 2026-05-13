@@ -4,28 +4,22 @@
 
 Data analysis is useless if it cannot be understood by key stakeholders. This chapter focuses on "Audience-Specific KT," teaching you to convert technical findings into plain language summaries and engaging slide decks using Quarto. You will practice peer review and learn to use LLMs to simplify jargon without losing scientific accuracy, ensuring your work can impact policy and practice.
 
+## Connection
+
+Week 8 made the dashboard audience-facing. This week turns one dashboard plot or table into a short slide story with a clear takeaway, evidence, and limitation. Next week you will expand that communication into a reproducible report.
+
 ## Dashboard Case Study: NHANES Equity
 
 {{< include ../../examples/nhanes-equity/snippets/case-study-dashboard.qmd >}}
 
-Mini-tasks for Week 9:
+## In-Class Activity
 
 - Build a 3-5 slide outline explaining one dashboard plot.
 - Include one plain-language takeaway and one limitation.
 - Add a source note for CDC NHANES and state whether you used the cached data or rebuilt it.
 - Ask a peer whether the claim is understandable without seeing the code.
 
-## TODO Before Release
-
-::: {.callout-warning}
-## Content TODO
-
-- Add a revealjs starter deck.
-- Add a plain-language summary exercise.
-- Add a peer feedback template.
-- Add Assignment 8 instructions in `assignments/assignment08-communication/`.
-- Add slide accessibility and citation expectations.
-:::
+Student output: a 3-5 slide outline plus peer feedback notes. Assignment link: `../../assignments/assignment08-communication/README.md`.
 
 ## Definition of Done
 

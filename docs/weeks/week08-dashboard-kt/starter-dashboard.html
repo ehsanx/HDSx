@@ -642,7 +642,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week10-reporting-publishing/report-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Report Template</span></a>
+ <span class="menu-text">Report Template: NHANES Equity Summary</span></a>
   </div>
 </li>
       </ul>
@@ -869,8 +869,10 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#goal" id="toc-goal" class="nav-link active" data-scroll-target="#goal">Goal</a></li>
-  <li><a href="#todo-before-release" id="toc-todo-before-release" class="nav-link" data-scroll-target="#todo-before-release">TODO Before Release</a></li>
   <li><a href="#required-elements" id="toc-required-elements" class="nav-link" data-scroll-target="#required-elements">Required Elements</a></li>
+  <li><a href="#minimal-review-workflow" id="toc-minimal-review-workflow" class="nav-link" data-scroll-target="#minimal-review-workflow">Minimal Review Workflow</a></li>
+  <li><a href="#student-output" id="toc-student-output" class="nav-link" data-scroll-target="#student-output">Student Output</a></li>
+  <li><a href="#privacy-safe-publishing-check" id="toc-privacy-safe-publishing-check" class="nav-link" data-scroll-target="#privacy-safe-publishing-check">Privacy-Safe Publishing Check</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ehsanx/Health-AI-KT/edit/main/weeks/week08-dashboard-kt/starter-dashboard.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ehsanx/Health-AI-KT/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -898,28 +900,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="goal" class="level2">
 <h2 class="anchored" data-anchor-id="goal">Goal</h2>
-<p>Students adapt a minimal dashboard-style knowledge translation product.</p>
-</section>
-<section id="todo-before-release" class="level2">
-<h2 class="anchored" data-anchor-id="todo-before-release">TODO Before Release</h2>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Content TODO
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>Add the starter dashboard code.</li>
-<li>Add a screenshot or rendered preview.</li>
-<li>Add a fallback static version for students who cannot deploy.</li>
-<li>Add a checklist for audience, filter labels, chart captions, and limitations.</li>
-</ul>
-</div>
-</div>
+<p>Students adapt a minimal dashboard-style knowledge translation product by changing text and interpretation before changing analytic logic.</p>
 </section>
 <section id="required-elements" class="level2">
 <h2 class="anchored" data-anchor-id="required-elements">Required Elements</h2>
@@ -929,6 +910,37 @@ Content TODO
 <li>One visualization.</li>
 <li>One plain-language interpretation.</li>
 <li>One limitation or caution.</li>
+</ul>
+</section>
+<section id="minimal-review-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="minimal-review-workflow">Minimal Review Workflow</h2>
+<ol type="1">
+<li>Run the NHANES dashboard from the repository root.</li>
+<li>Choose a stakeholder audience, such as a public-health analyst, student team, or community-facing briefing group.</li>
+<li>Identify one label, caption, help text, or interpretation note that could be clearer for that audience.</li>
+<li>Make a documentation-only or UI-text-only change.</li>
+<li>Rerun the dashboard and verify the cached dataset loads.</li>
+<li>Record the change, audience, and limitation in a short note.</li>
+</ol>
+</section>
+<section id="student-output" class="level2">
+<h2 class="anchored" data-anchor-id="student-output">Student Output</h2>
+<p>Submit a short dashboard adaptation note containing:</p>
+<ul>
+<li>Audience sentence.</li>
+<li>Before/after text change.</li>
+<li>One screenshot or description of the affected dashboard area.</li>
+<li>Limitation statement.</li>
+<li>Reproducibility note describing how the app was run locally.</li>
+</ul>
+</section>
+<section id="privacy-safe-publishing-check" class="level2">
+<h2 class="anchored" data-anchor-id="privacy-safe-publishing-check">Privacy-Safe Publishing Check</h2>
+<ul>
+<li>Do not publish row-level data.</li>
+<li>Avoid small-cell claims.</li>
+<li>State that dashboard outputs are descriptive.</li>
+<li>Keep the cached classroom data separate from raw NHANES retrieval work.</li>
 </ul>
 
 

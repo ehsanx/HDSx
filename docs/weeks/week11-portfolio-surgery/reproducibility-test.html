@@ -642,7 +642,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week10-reporting-publishing/report-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Report Template</span></a>
+ <span class="menu-text">Report Template: NHANES Equity Summary</span></a>
   </div>
 </li>
       </ul>
@@ -869,8 +869,10 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#goal" id="toc-goal" class="nav-link active" data-scroll-target="#goal">Goal</a></li>
-  <li><a href="#todo-before-release" id="toc-todo-before-release" class="nav-link" data-scroll-target="#todo-before-release">TODO Before Release</a></li>
-  <li><a href="#failure-log-template" id="toc-failure-log-template" class="nav-link" data-scroll-target="#failure-log-template">Failure Log Template</a></li>
+  <li><a href="#fresh-environment-protocol" id="toc-fresh-environment-protocol" class="nav-link" data-scroll-target="#fresh-environment-protocol">Fresh Environment Protocol</a></li>
+  <li><a href="#failure-log" id="toc-failure-log" class="nav-link" data-scroll-target="#failure-log">Failure Log</a></li>
+  <li><a href="#peer-review-roles" id="toc-peer-review-roles" class="nav-link" data-scroll-target="#peer-review-roles">Peer Review Roles</a></li>
+  <li><a href="#final-repair-checklist" id="toc-final-repair-checklist" class="nav-link" data-scroll-target="#final-repair-checklist">Final Repair Checklist</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ehsanx/Health-AI-KT/edit/main/weeks/week11-portfolio-surgery/reproducibility-test.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ehsanx/Health-AI-KT/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -900,47 +902,40 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="goal">Goal</h2>
 <p>Students test whether a project can run in a fresh environment and document every failure before final submission.</p>
 </section>
-<section id="todo-before-release" class="level2">
-<h2 class="anchored" data-anchor-id="todo-before-release">TODO Before Release</h2>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Content TODO
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>Add step-by-step fresh Codespace test instructions.</li>
-<li>Add a failure log template.</li>
-<li>Add peer review roles and timing.</li>
-<li>Add final repair checklist.</li>
-</ul>
-</div>
-</div>
+<section id="fresh-environment-protocol" class="level2">
+<h2 class="anchored" data-anchor-id="fresh-environment-protocol">Fresh Environment Protocol</h2>
+<p>Complete these steps in a new Codespace or equivalent clean environment.</p>
+<ol type="1">
+<li>Open the repository from GitHub.</li>
+<li>Locate the project README and follow only the documented setup steps.</li>
+<li>Render the Quarto book or report.</li>
+<li>Run the NHANES dashboard from the repository root.</li>
+<li>Open the Week 11 static dashboard source and render it as a standalone Quarto dashboard.</li>
+<li>Check that all data paths are relative.</li>
+<li>Record every failure, warning, unclear instruction, and repair.</li>
+<li>Commit repairs with clear messages.</li>
+</ol>
 </section>
-<section id="failure-log-template" class="level2">
-<h2 class="anchored" data-anchor-id="failure-log-template">Failure Log Template</h2>
+<section id="failure-log" class="level2">
+<h2 class="anchored" data-anchor-id="failure-log">Failure Log</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
 <th>Check</th>
 <th>Result</th>
-<th>Fix needed</th>
+<th>Fix made</th>
 <th>Owner</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Repository opens in fresh Codespace</td>
+<td>Repository opens in fresh environment</td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="even">
-<td>Packages install or restore</td>
+<td>Packages install or load</td>
 <td></td>
 <td></td>
 <td></td>
@@ -952,19 +947,52 @@ Content TODO
 <td></td>
 </tr>
 <tr class="even">
-<td>Dashboard runs or renders</td>
+<td>Dashboard runs locally</td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="odd">
+<td>Static dashboard renders</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
 <td>README instructions are accurate</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Relative paths work</td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 </tbody>
 </table>
+</section>
+<section id="peer-review-roles" class="level2">
+<h2 class="anchored" data-anchor-id="peer-review-roles">Peer Review Roles</h2>
+<ul>
+<li><strong>Driver:</strong> Runs the project exactly as documented.</li>
+<li><strong>Navigator:</strong> Reads instructions aloud and logs ambiguity.</li>
+<li><strong>Auditor:</strong> Checks paths, data provenance, citations, and AI-use notes.</li>
+</ul>
+<p>Rotate roles after the first major failure or after 20 minutes.</p>
+</section>
+<section id="final-repair-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="final-repair-checklist">Final Repair Checklist</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">All required outputs render or run from a fresh environment.</label></li>
+<li><label><input type="checkbox">README instructions match the actual workflow.</label></li>
+<li><label><input type="checkbox">Data paths are relative.</label></li>
+<li><label><input type="checkbox">Cached data files needed for offline work are present.</label></li>
+<li><label><input type="checkbox">Citations resolve.</label></li>
+<li><label><input type="checkbox">AI-use notes identify what was drafted and how it was checked.</label></li>
+<li><label><input type="checkbox">Remaining risks are documented in the failure log.</label></li>
+</ul>
 
 
 </section>

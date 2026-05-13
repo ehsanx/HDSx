@@ -677,7 +677,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week10-reporting-publishing/report-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Report Template</span></a>
+ <span class="menu-text">Report Template: NHANES Equity Summary</span></a>
   </div>
 </li>
       </ul>
@@ -904,8 +904,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#connection" id="toc-connection" class="nav-link" data-scroll-target="#connection">Connection</a></li>
   <li><a href="#dashboard-case-study-nhanes-equity" id="toc-dashboard-case-study-nhanes-equity" class="nav-link" data-scroll-target="#dashboard-case-study-nhanes-equity">Dashboard Case Study: NHANES Equity</a></li>
-  <li><a href="#todo-before-release" id="toc-todo-before-release" class="nav-link" data-scroll-target="#todo-before-release">TODO Before Release</a></li>
+  <li><a href="#in-class-activity" id="toc-in-class-activity" class="nav-link" data-scroll-target="#in-class-activity">In-Class Activity</a></li>
   <li><a href="#definition-of-done" id="toc-definition-of-done" class="nav-link" data-scroll-target="#definition-of-done">Definition of Done</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ehsanx/Health-AI-KT/edit/main/weeks/week10-reporting-publishing/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ehsanx/Health-AI-KT/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -936,6 +937,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>This chapter simulates the final stretch of a research project: writing the manuscript. Students learn to assemble their analysis, code, and writing into a single “dynamic report” that automatically updates numbers and figures if the data changes. You will explore advanced publishing workflows to create professional, citation-ready portfolios that demonstrate your ability to execute end-to-end data science.</p>
 </section>
+<section id="connection" class="level2">
+<h2 class="anchored" data-anchor-id="connection">Connection</h2>
+<p>Week 9 turned one result into a short slide story. This week expands the same evidence into a reproducible report with code-generated outputs, citations, and limitations. Next week you will stress-test whether the report and dashboard work in a fresh environment.</p>
+</section>
 <section id="dashboard-case-study-nhanes-equity" class="level2">
 <h2 class="anchored" data-anchor-id="dashboard-case-study-nhanes-equity">Dashboard Case Study: NHANES Equity</h2>
 <p>The <strong>NHANES Health Equity Dashboard</strong> is now the foreground case study. Use it as a small knowledge-translation product built on the cached NHANES equity dataset.</p>
@@ -947,35 +952,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Run the dashboard from the repository root:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>shiny<span class="sc">::</span><span class="fu">runApp</span>(<span class="st">"examples/nhanes-equity/app"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>The app is offline-first: it loads the local RDS cache when available. Rebuilding from CDC uses <code>nhanesA</code>, requires internet access, and is optional unless assigned.</p>
-<p>Mini-tasks for Week 10:</p>
+<p>Companion materials:</p>
+<ul>
+<li>Week 10 report template: <code>weeks/week10-reporting-publishing/report-template.qmd</code></li>
+<li>Week 11 static dashboard demo: <code>weeks/week11-portfolio-surgery/static-dashboard-ojs.qmd</code></li>
+</ul>
+</section>
+<section id="in-class-activity" class="level2">
+<h2 class="anchored" data-anchor-id="in-class-activity">In-Class Activity</h2>
 <ul>
 <li>Draft a short Quarto report that complements the dashboard rather than duplicating it.</li>
 <li>Include a data source paragraph, one figure or table, and a limitations note.</li>
 <li>Add a source note for CDC NHANES and the <code>nhanesA</code> retrieval pathway.</li>
-<li>Confirm that the report uses relative paths and documents whether results came from the cached data.</li>
+<li>Verify that the report uses relative paths and documents whether results came from the cached data.</li>
 </ul>
-</section>
-<section id="todo-before-release" class="level2">
-<h2 class="anchored" data-anchor-id="todo-before-release">TODO Before Release</h2>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Content TODO
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>Add a report skeleton with sections for question, data, methods, findings, limitations, and AI-use note.</li>
-<li>Add citation examples using <code>references.bib</code>.</li>
-<li>Add GitHub Pages setup screenshots or a private submission alternative.</li>
-<li>Add Assignment 9 instructions in <code>assignments/assignment09-reporting/</code>.</li>
-<li>Add a citation and grounding audit.</li>
-</ul>
-</div>
-</div>
+<p>Student output: a rendered Quarto report with one figure, one table, citations, limitations, and an AI-use note. Assignment link: <code>../../assignments/assignment09-reporting/README.md</code>.</p>
 </section>
 <section id="definition-of-done" class="level2">
 <h2 class="anchored" data-anchor-id="definition-of-done">Definition of Done</h2>
@@ -1447,8 +1438,8 @@ Content TODO
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../weeks/week10-reporting-publishing/report-template.html" class="pagination-link" aria-label="Report Template">
-        <span class="nav-page-text">Report Template</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../weeks/week10-reporting-publishing/report-template.html" class="pagination-link" aria-label="Report Template: NHANES Equity Summary">
+        <span class="nav-page-text">Report Template: NHANES Equity Summary</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

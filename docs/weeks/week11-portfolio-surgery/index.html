@@ -677,7 +677,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week10-reporting-publishing/report-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Report Template</span></a>
+ <span class="menu-text">Report Template: NHANES Equity Summary</span></a>
   </div>
 </li>
       </ul>
@@ -904,11 +904,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#dashboard-case-study-nhanes-equity" id="toc-dashboard-case-study-nhanes-equity" class="nav-link" data-scroll-target="#dashboard-case-study-nhanes-equity">Dashboard Case Study: NHANES Equity</a>
-  <ul class="collapse">
-  <li><a href="#optional-extension-static-dashboard-no-server" id="toc-optional-extension-static-dashboard-no-server" class="nav-link" data-scroll-target="#optional-extension-static-dashboard-no-server">Optional Extension: Static Dashboard (No Server)</a></li>
-  </ul></li>
-  <li><a href="#todo-before-release" id="toc-todo-before-release" class="nav-link" data-scroll-target="#todo-before-release">TODO Before Release</a></li>
+  <li><a href="#connection" id="toc-connection" class="nav-link" data-scroll-target="#connection">Connection</a></li>
+  <li><a href="#dashboard-case-study-nhanes-equity" id="toc-dashboard-case-study-nhanes-equity" class="nav-link" data-scroll-target="#dashboard-case-study-nhanes-equity">Dashboard Case Study: NHANES Equity</a></li>
+  <li><a href="#in-class-activity" id="toc-in-class-activity" class="nav-link" data-scroll-target="#in-class-activity">In-Class Activity</a></li>
+  <li><a href="#static-dashboard-demo" id="toc-static-dashboard-demo" class="nav-link" data-scroll-target="#static-dashboard-demo">Static Dashboard Demo</a></li>
   <li><a href="#definition-of-done" id="toc-definition-of-done" class="nav-link" data-scroll-target="#definition-of-done">Definition of Done</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ehsanx/Health-AI-KT/edit/main/weeks/week11-portfolio-surgery/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ehsanx/Health-AI-KT/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -939,6 +938,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>Before the final submission, students must “bulletproof” their work. This chapter focuses on advanced project hygiene, dependency management (ensuring your code runs on someone else’s machine), and auditability. You will act as a peer reviewer to identify reproducibility failures in others’ code, fixing broken paths and missing seeds, to ensure your final project stands up to scientific scrutiny.</p>
 </section>
+<section id="connection" class="level2">
+<h2 class="anchored" data-anchor-id="connection">Connection</h2>
+<p>Week 10 produced a report with code-generated outputs and citations. This week tests whether the report, dashboard, and instructions survive a fresh environment. The final portfolio should leave a reviewer able to rerun the core work without private setup knowledge.</p>
+</section>
 <section id="dashboard-case-study-nhanes-equity" class="level2">
 <h2 class="anchored" data-anchor-id="dashboard-case-study-nhanes-equity">Dashboard Case Study: NHANES Equity</h2>
 <p>The <strong>NHANES Health Equity Dashboard</strong> is now the foreground case study. Use it as a small knowledge-translation product built on the cached NHANES equity dataset.</p>
@@ -950,40 +953,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Run the dashboard from the repository root:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>shiny<span class="sc">::</span><span class="fu">runApp</span>(<span class="st">"examples/nhanes-equity/app"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>The app is offline-first: it loads the local RDS cache when available. Rebuilding from CDC uses <code>nhanesA</code>, requires internet access, and is optional unless assigned.</p>
-<p>Mini-tasks for Week 11:</p>
+<p>Companion materials:</p>
+<ul>
+<li>Week 10 report template: <code>weeks/week10-reporting-publishing/report-template.qmd</code></li>
+<li>Week 11 static dashboard demo: <code>weeks/week11-portfolio-surgery/static-dashboard-ojs.qmd</code></li>
+</ul>
+</section>
+<section id="in-class-activity" class="level2">
+<h2 class="anchored" data-anchor-id="in-class-activity">In-Class Activity</h2>
 <ul>
 <li>Run a fresh-session test: can the app launch from the repository root?</li>
-<li>Confirm the cached RDS path works before attempting a CDC rebuild.</li>
+<li>Verify the cached RDS path works before attempting a CDC rebuild.</li>
 <li>Optionally run the rebuild script only if internet access and time are available.</li>
 <li>Optionally draft a static dashboard extension using a CSV snapshot and no Shiny server.</li>
 <li>Log any dependency, path, or README issues as reproducibility risks.</li>
 </ul>
-<section id="optional-extension-static-dashboard-no-server" class="level3">
-<h3 class="anchored" data-anchor-id="optional-extension-static-dashboard-no-server">Optional Extension: Static Dashboard (No Server)</h3>
-<p>Advanced students can compare the Shiny workflow with the draft <a href="static-dashboard-ojs.qmd">static dashboard source file</a>. This extension reads from a CSV snapshot and does not require a Shiny server; render it as a standalone dashboard if assigned.</p>
+<p>Student output: a reproducibility test log, repaired README or path issues, and a final risk list. Assignment link: <code>../../assignments/assignment10-portfolio-surgery/README.md</code>.</p>
 </section>
-</section>
-<section id="todo-before-release" class="level2">
-<h2 class="anchored" data-anchor-id="todo-before-release">TODO Before Release</h2>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Content TODO
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>Add a fresh Codespace stress-test protocol.</li>
-<li>Add a broken-project debugging exercise.</li>
-<li>Add Assignment 10 instructions in <code>assignments/assignment10-portfolio-surgery/</code>.</li>
-<li>Add Milestone 4 peer review instructions.</li>
-<li>Add a final portfolio readiness checklist.</li>
-</ul>
-</div>
-</div>
+<section id="static-dashboard-demo" class="level2">
+<h2 class="anchored" data-anchor-id="static-dashboard-demo">Static Dashboard Demo</h2>
+<p>The completed <a href="static-dashboard-ojs.qmd">static dashboard source file</a> demonstrates a no-server alternative that reads the NHANES CSV snapshot in the browser. Use it as an exemplar for optional portfolio extensions after the core Shiny and report workflows are reproducible.</p>
 </section>
 <section id="definition-of-done" class="level2">
 <h2 class="anchored" data-anchor-id="definition-of-done">Definition of Done</h2>
@@ -1449,8 +1438,8 @@ Content TODO
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../weeks/week10-reporting-publishing/report-template.html" class="pagination-link" aria-label="Report Template">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Report Template</span>
+      <a href="../../weeks/week10-reporting-publishing/report-template.html" class="pagination-link" aria-label="Report Template: NHANES Equity Summary">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Report Template: NHANES Equity Summary</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

@@ -2,21 +2,33 @@
 
 ## Goal
 
-Students turn analysis outputs into a short scientific communication product and practice structured peer feedback.
+Students turn one dashboard finding into a short scientific communication product and practice structured peer feedback.
 
-## TODO Before Release
+## Minimal Revealjs Starter
 
-::: {.callout-warning}
-## Content TODO
+```yaml
+---
+title: "NHANES Equity Dashboard Finding"
+format: revealjs
+---
+```
 
-- Add a minimal `format: revealjs` YAML example.
-- Add a three-slide starter structure.
-- Add a peer feedback form.
-:::
+## Three-Slide Structure
 
-## Peer Feedback Prompts
+1. **Question and audience:** Who needs this finding, and why?
+2. **Evidence:** Show one dashboard plot or table and state the descriptive pattern.
+3. **Limitation and action:** Name what the data can and cannot support, then state the next decision or question.
 
-- What is the main message?
-- What evidence supports it?
-- What is unclear or overclaimed?
-- What would improve reproducibility or audience fit?
+## Peer Feedback Form
+
+| Prompt | Peer note |
+|---|---|
+| What is the main message? |  |
+| What evidence supports it? |  |
+| What is unclear or overclaimed? |  |
+| Is the limitation visible? |  |
+| What would improve audience fit? |  |
+
+## Student Output
+
+Submit a rendered slide deck or slide outline with the completed peer feedback form. Include a source note for CDC NHANES and an AI-use note if AI helped draft the wording.

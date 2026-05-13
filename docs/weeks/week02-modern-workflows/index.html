@@ -104,6 +104,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<link href="../../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+
+<script src="../../site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+
 
 
 <meta name="twitter:title" content="Modern Workflows – Health Data Science: AI and Knowledge Translation">
@@ -677,7 +681,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week10-reporting-publishing/report-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Report Template</span></a>
+ <span class="menu-text">Report Template: NHANES Equity Summary</span></a>
   </div>
 </li>
       </ul>
@@ -904,7 +908,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#connection" id="toc-connection" class="nav-link" data-scroll-target="#connection">Connection</a></li>
   <li><a href="#case-study-data-spine" id="toc-case-study-data-spine" class="nav-link" data-scroll-target="#case-study-data-spine">Case Study Data Spine</a></li>
+  <li><a href="#in-class-activity" id="toc-in-class-activity" class="nav-link" data-scroll-target="#in-class-activity">In-Class Activity</a></li>
   <li><a href="#workflows1.qmd-the-analogy-public-computer-and-cloud-drive" id="toc-workflows1.qmd-the-analogy-public-computer-and-cloud-drive" class="nav-link" data-scroll-target="#workflows1.qmd-the-analogy-public-computer-and-cloud-drive"><code>workflows1.qmd</code> The Analogy: Public Computer and Cloud Drive</a>
   <ul class="collapse">
   <li><a href="#the-repository-your-cloud-drive" id="toc-the-repository-your-cloud-drive" class="nav-link" data-scroll-target="#the-repository-your-cloud-drive">The Repository (Your Cloud Drive)</a></li>
@@ -915,7 +921,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#step-1-create-a-github-account" id="toc-step-1-create-a-github-account" class="nav-link" data-scroll-target="#step-1-create-a-github-account">Step 1: Create a GitHub Account</a></li>
   <li><a href="#step-2-join-the-course-github-classroom" id="toc-step-2-join-the-course-github-classroom" class="nav-link" data-scroll-target="#step-2-join-the-course-github-classroom">Step 2: Join the Course GitHub Classroom</a></li>
-  <li><a href="#step-3-confirm-your-repository" id="toc-step-3-confirm-your-repository" class="nav-link" data-scroll-target="#step-3-confirm-your-repository">Step 3: Confirm Your Repository</a></li>
+  <li><a href="#step-3-verify-your-repository" id="toc-step-3-verify-your-repository" class="nav-link" data-scroll-target="#step-3-verify-your-repository">Step 3: Verify Your Repository</a></li>
   </ul></li>
   <li><a href="#workflows3.qmd-launching-your-codespace" id="toc-workflows3.qmd-launching-your-codespace" class="nav-link" data-scroll-target="#workflows3.qmd-launching-your-codespace"><code>workflows3.qmd</code> Launching Your Codespace</a></li>
   <li><a href="#workflows4.qmd-tour-of-vs-code-the-big-three-zones" id="toc-workflows4.qmd-tour-of-vs-code-the-big-three-zones" class="nav-link" data-scroll-target="#workflows4.qmd-tour-of-vs-code-the-big-three-zones"><code>workflows4.qmd</code> Tour of VS Code: The “Big Three” Zones</a>
@@ -1015,6 +1021,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Stop your Codespace to conserve your free monthly hours.</li>
 </ul>
 </section>
+<section id="connection" class="level2">
+<h2 class="anchored" data-anchor-id="connection">Connection</h2>
+<p>Week 1 focused on whether a dataset is trustworthy enough to use. This week focuses on where that dataset lives in a project and how relative paths make the same work portable across machines. Next week you will start inspecting the data with R.</p>
+</section>
 <section id="case-study-data-spine" class="level2">
 <h2 class="anchored" data-anchor-id="case-study-data-spine">Case Study Data Spine</h2>
 <p>The <strong>NHANES Health Equity data spine</strong> is the recurring dataset thread for this course. In the early weeks, use it only as a documented public-health data artifact: provenance, ethics, file organization, and reproducible paths.</p>
@@ -1024,13 +1034,56 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Case-study README: <code>examples/nhanes-equity/README.md</code></li>
 </ul>
 <p>The cached files are provided so early work can happen without internet access.</p>
-<p>Mini-tasks for Week 2:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-3"><a href="#cb1-3"></a></span>
+<span id="cb1-4"><a href="#cb1-4"></a>candidate_paths <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb1-5"><a href="#cb1-5"></a>  <span class="st">"examples/nhanes-equity/data/nhanes_equity_v6.csv"</span>,</span>
+<span id="cb1-6"><a href="#cb1-6"></a>  <span class="st">"../../examples/nhanes-equity/data/nhanes_equity_v6.csv"</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a>)</span>
+<span id="cb1-8"><a href="#cb1-8"></a></span>
+<span id="cb1-9"><a href="#cb1-9"></a>nhanes_path <span class="ot">&lt;-</span> candidate_paths[<span class="fu">file.exists</span>(candidate_paths)][<span class="dv">1</span>]</span>
+<span id="cb1-10"><a href="#cb1-10"></a><span class="cf">if</span> (<span class="fu">is.na</span>(nhanes_path)) {</span>
+<span id="cb1-11"><a href="#cb1-11"></a>  <span class="fu">stop</span>(<span class="st">"Could not find examples/nhanes-equity/data/nhanes_equity_v6.csv"</span>)</span>
+<span id="cb1-12"><a href="#cb1-12"></a>}</span>
+<span id="cb1-13"><a href="#cb1-13"></a></span>
+<span id="cb1-14"><a href="#cb1-14"></a>nhanes_spine <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(nhanes_path, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb1-15"><a href="#cb1-15"></a></span>
+<span id="cb1-16"><a href="#cb1-16"></a><span class="fu">dim</span>(nhanes_spine)</span>
+<span id="cb1-17"><a href="#cb1-17"></a><span class="co">#&gt; [1] 105626     18</span></span>
+<span id="cb1-18"><a href="#cb1-18"></a><span class="fu">glimpse</span>(nhanes_spine)</span>
+<span id="cb1-19"><a href="#cb1-19"></a><span class="co">#&gt; Rows: 105,626</span></span>
+<span id="cb1-20"><a href="#cb1-20"></a><span class="co">#&gt; Columns: 18</span></span>
+<span id="cb1-21"><a href="#cb1-21"></a><span class="co">#&gt; $ Cycle          &lt;chr&gt; "1999-2000", "1999-2000", "1999-2000", "1999-2000", "19…</span></span>
+<span id="cb1-22"><a href="#cb1-22"></a><span class="co">#&gt; $ BMI            &lt;dbl&gt; 14.90, 24.90, 17.63, NA, 29.10, 22.56, 29.39, 15.51, 18…</span></span>
+<span id="cb1-23"><a href="#cb1-23"></a><span class="co">#&gt; $ Weight         &lt;dbl&gt; 12.5, 75.4, 32.9, 13.3, 92.5, 59.2, 78.0, 40.7, 45.5, 1…</span></span>
+<span id="cb1-24"><a href="#cb1-24"></a><span class="co">#&gt; $ Height         &lt;dbl&gt; 91.6, 174.0, 136.6, NA, 178.3, 162.0, 162.9, 162.0, 156…</span></span>
+<span id="cb1-25"><a href="#cb1-25"></a><span class="co">#&gt; $ Waist          &lt;dbl&gt; 45.7, 98.0, 64.7, NA, 99.9, 81.6, 90.7, 64.1, 64.6, 108…</span></span>
+<span id="cb1-26"><a href="#cb1-26"></a><span class="co">#&gt; $ WeightMEC      &lt;dbl&gt; 10982.899, 28325.385, 46192.257, 10251.260, 99445.066, …</span></span>
+<span id="cb1-27"><a href="#cb1-27"></a><span class="co">#&gt; $ Strata         &lt;dbl&gt; 5, 1, 7, 2, 8, 2, 4, 6, 9, 7, 1, 6, 13, 12, 11, 11, 5, …</span></span>
+<span id="cb1-28"><a href="#cb1-28"></a><span class="co">#&gt; $ PSU            &lt;dbl&gt; 1, 3, 2, 1, 2, 2, 2, 1, 2, 1, 2, 2, 2, 1, 2, 1, 1, 1, 2…</span></span>
+<span id="cb1-29"><a href="#cb1-29"></a><span class="co">#&gt; $ Gender         &lt;chr&gt; "Female", "Male", "Female", "Male", "Male", "Female", "…</span></span>
+<span id="cb1-30"><a href="#cb1-30"></a><span class="co">#&gt; $ Race           &lt;chr&gt; "Non-Hispanic Black", "Non-Hispanic White", "Non-Hispan…</span></span>
+<span id="cb1-31"><a href="#cb1-31"></a><span class="co">#&gt; $ Education      &lt;chr&gt; NA, "College Grad", NA, NA, "College Grad", NA, "HS or …</span></span>
+<span id="cb1-32"><a href="#cb1-32"></a><span class="co">#&gt; $ Marital        &lt;chr&gt; NA, NA, NA, NA, "Married/Partner", "Never Married", "Ma…</span></span>
+<span id="cb1-33"><a href="#cb1-33"></a><span class="co">#&gt; $ Age            &lt;dbl&gt; 2, 77, 10, 1, 49, 19, 59, 13, 11, 43, 15, 37, 70, 81, 3…</span></span>
+<span id="cb1-34"><a href="#cb1-34"></a><span class="co">#&gt; $ PIR            &lt;dbl&gt; 0.86, 5.00, 1.47, 0.57, 5.00, 1.21, NA, 0.53, NA, NA, 1…</span></span>
+<span id="cb1-35"><a href="#cb1-35"></a><span class="co">#&gt; $ EducationClean &lt;chr&gt; NA, "College Grad", NA, NA, "College Grad", NA, "HS or …</span></span>
+<span id="cb1-36"><a href="#cb1-36"></a><span class="co">#&gt; $ MaritalClean   &lt;chr&gt; NA, NA, NA, NA, "Married/Partner", "Never Married", "Ma…</span></span>
+<span id="cb1-37"><a href="#cb1-37"></a><span class="co">#&gt; $ IncomeGroup    &lt;chr&gt; "Low Income (&lt;1.3)", "High Income (&gt;3.5)", "Middle Inco…</span></span>
+<span id="cb1-38"><a href="#cb1-38"></a><span class="co">#&gt; $ WHtR           &lt;dbl&gt; 0.4989083, 0.5632184, 0.4736457, NA, 0.5602916, 0.50370…</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="in-class-activity" class="level2">
+<h2 class="anchored" data-anchor-id="in-class-activity">In-Class Activity</h2>
 <ul>
-<li>Locate the app, data, script, and snippet folders in the Explorer.</li>
-<li>Explain why the app uses relative paths instead of machine-specific paths.</li>
-<li>Confirm that the weekly page includes the shared snippet rather than duplicating instructions.</li>
-<li>Render the book from the repository root and confirm this page updates in the rendered output.</li>
+<li>Locate the case-study data, README, and snippet folders in the Explorer.</li>
+<li>Explain why the data example uses relative paths instead of machine-specific paths.</li>
+<li>Check that the weekly page includes the shared snippet rather than duplicating instructions.</li>
+<li>Render the book from the repository root and check that this page updates in the rendered output.</li>
 </ul>
+<p>Student output: a rendered Quarto page and one commit showing a small, reproducible edit. Assignment link: <code>../../assignments/assignment01-workflows/README.md</code>.</p>
 <hr>
 </section>
 <section id="workflows1.qmd-the-analogy-public-computer-and-cloud-drive" class="level2">
@@ -1098,8 +1151,8 @@ Tip
 <li>Accept the <strong>starter assignment</strong>. GitHub Classroom will automatically create a personal repository for you, pre-loaded with the files you need for this week.</li>
 </ol>
 </section>
-<section id="step-3-confirm-your-repository" class="level3">
-<h3 class="anchored" data-anchor-id="step-3-confirm-your-repository">Step 3: Confirm Your Repository</h3>
+<section id="step-3-verify-your-repository" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-verify-your-repository">Step 3: Verify Your Repository</h3>
 <p>Navigate to the repository that was just created. You should see:</p>
 <ul>
 <li>A file list including <code>practice_report.qmd</code>, <code>README.md</code>, and a <code>data/</code> folder.</li>
@@ -1229,11 +1282,11 @@ Tip
 <section id="step-2-understand-the-yaml-header" class="level3">
 <h3 class="anchored" data-anchor-id="step-2-understand-the-yaml-header">Step 2: Understand the YAML Header</h3>
 <p>At the very top, between <code>---</code> lines, you will see something like:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1"></a><span class="pp">---</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My First Report"</span></span>
-<span id="cb2-3"><a href="#cb2-3"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> </span><span class="st">"Your Name"</span></span>
-<span id="cb2-4"><a href="#cb2-4"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span>
-<span id="cb2-5"><a href="#cb2-5"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1"></a><span class="pp">---</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My First Report"</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> </span><span class="st">"Your Name"</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Change <code>author:</code> to your actual name. The YAML header controls metadata and output format.</p>
 </section>
 <section id="step-3-read-the-markdown" class="level3">
@@ -1249,10 +1302,10 @@ Tip
 <section id="step-4-read-the-code-chunks" class="level3">
 <h3 class="anchored" data-anchor-id="step-4-read-the-code-chunks">Step 4: Read the Code Chunks</h3>
 <p>Look for grey blocks that start with <code>```{r}</code> and end with <code>```</code>. These are <strong>code chunks</strong>. Everything inside them is R code that will execute when you render.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1"></a><span class="in">```{r}</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a><span class="co"># This is a code chunk</span></span>
-<span id="cb3-3"><a href="#cb3-3"></a><span class="dv">2</span> <span class="sc">+</span> <span class="dv">2</span></span>
-<span id="cb3-4"><a href="#cb3-4"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1"></a><span class="in">```{r}</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="co"># This is a code chunk</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="dv">2</span> <span class="sc">+</span> <span class="dv">2</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="step-5-edit-a-code-chunk" class="level3">
 <h3 class="anchored" data-anchor-id="step-5-edit-a-code-chunk">Step 5: Edit a Code Chunk</h3>
@@ -1316,7 +1369,7 @@ Note
 <section id="step-5-sync-with-github" class="level3">
 <h3 class="anchored" data-anchor-id="step-5-sync-with-github">Step 5: Sync with GitHub</h3>
 <p>Click <strong>Sync Changes</strong> (in the Source Control panel or the status bar at the bottom). This pushes your commit to GitHub — your Cloud Drive.</p>
-<p><strong>Verify:</strong> Go to your repository on <a href="https://github.com">github.com</a> and confirm that your changes appear. You should see your commit message next to the updated file.</p>
+<p><strong>Verify:</strong> Go to your repository on <a href="https://github.com">github.com</a> and check that your changes appear. You should see your commit message next to the updated file.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1429,12 +1482,12 @@ Warning
 <li><strong>Add a Markdown section:</strong> Below the existing content, add a new heading (<code>## My Notes</code>) and write 2–3 sentences about what you learned this week. Use at least one Markdown feature (bold, italics, or a bullet list).</li>
 <li><strong>Edit a code chunk:</strong> Modify an existing code chunk or add a new one. For example:</li>
 </ol>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1"></a><span class="in">```{r}</span></span>
-<span id="cb4-2"><a href="#cb4-2"></a><span class="co"># My first R calculation</span></span>
-<span id="cb4-3"><a href="#cb4-3"></a><span class="dv">2</span> <span class="sc">+</span> <span class="dv">2</span></span>
-<span id="cb4-4"><a href="#cb4-4"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1"></a><span class="in">```{r}</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="co"># My first R calculation</span></span>
+<span id="cb5-3"><a href="#cb5-3"></a><span class="dv">2</span> <span class="sc">+</span> <span class="dv">2</span></span>
+<span id="cb5-4"><a href="#cb5-4"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ol start="5" type="1">
-<li><strong>Render</strong> the document. Confirm the output looks correct.</li>
+<li><strong>Render</strong> the document. Check that the output looks correct.</li>
 <li><strong>Commit and Sync:</strong>
 <ul>
 <li>Open Source Control.</li>

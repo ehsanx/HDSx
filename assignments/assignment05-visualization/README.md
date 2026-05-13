@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Create a clear, honest health-data visualization from the NHANES Health Equity classroom dataset. You will audit a flawed or AI-assisted plot, revise it, and explain why your version is more accurate and useful for a non-technical audience.
+Create a clear, honest health-data visualization from the NHANES Health Equity classroom dataset. You will audit a flawed or AI-assisted plot, revise it, and explain why the revision is more accurate and useful for a non-technical audience.
 
 ## Inputs
 
@@ -12,13 +12,13 @@ Create a clear, honest health-data visualization from the NHANES Health Equity c
 
 ## Step-by-Step Tasks
 
-1. Review the Week 6 worked example and note how it labels data source, statistic, and limitations.
+1. Review the Week 6 worked example.
 2. Choose one comparison from the NHANES Health Equity CSV snapshot.
 3. Draft an initial plot using R and `ggplot2`.
-4. Audit the plot for misleading scale choices, unclear labels, missing context, and overclaiming.
+4. Audit the plot for scale choices, labels, missing context, and overclaiming.
 5. Revise the plot so it supports descriptive interpretation.
 6. Write a caption and short audit note.
-7. If AI helped you write or revise code, document what it did and how you verified it.
+7. If AI helped you write or revise code, document what it did and how you checked it.
 
 ## What To Submit
 
@@ -37,9 +37,9 @@ Submit these files:
 - `caption.md`: final figure caption with data source, statistic, exclusions, and limitation.
 - `ai-use-note.md`: required if AI was used; otherwise include a one-sentence note saying AI was not used.
 
-## Submission Location
+## Submission Route
 
-TODO: Instructor to confirm Canvas upload, repository link, or both.
+Submit a Canvas assignment entry that contains a link to the repository folder `assignments/assignment05-visualization/submission/`.
 
 ## Grading Checklist
 
@@ -58,4 +58,4 @@ Needs work:
 - Plot title or caption overclaims causality or population inference.
 - Missing caption, audit note, or AI-use note.
 - Code does not run from the repository.
-- Revised plot is not materially different from the flawed or draft version.
+- Revised plot is not materially different from the draft version.

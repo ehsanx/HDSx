@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Report Template – Health Data Science: AI and Knowledge Translation</title>
+<title>Report Template: NHANES Equity Summary – Health Data Science: AI and Knowledge Translation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,62 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -69,10 +124,16 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<link href="../../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+
+<script src="../../site_libs/pagedtable-1.1/js/pagedtable.js"></script>
 
 
-<meta name="twitter:title" content="Report Template – Health Data Science: AI and Knowledge Translation">
-<meta name="twitter:card" content="summary">
+
+<meta name="twitter:title" content="Report Template: NHANES Equity Summary – Health Data Science: AI and Knowledge Translation">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="report-template_files/figure-html/unnamed-chunk-4-1.png">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -84,7 +145,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week10-reporting-publishing/index.html">Week 10: Writing &amp; Publishing Reports</a></li><li class="breadcrumb-item"><a href="../../weeks/week10-reporting-publishing/report-template.html">Report Template</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week10-reporting-publishing/index.html">Week 10: Writing &amp; Publishing Reports</a></li><li class="breadcrumb-item"><a href="../../weeks/week10-reporting-publishing/report-template.html">Report Template: NHANES Equity Summary</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -641,7 +702,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week10-reporting-publishing/report-template.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Report Template</span></a>
+ <span class="menu-text">Report Template: NHANES Equity Summary</span></a>
   </div>
 </li>
       </ul>
@@ -867,17 +928,23 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#todo-before-release" id="toc-todo-before-release" class="nav-link active" data-scroll-target="#todo-before-release">TODO Before Release</a></li>
-  <li><a href="#suggested-sections" id="toc-suggested-sections" class="nav-link" data-scroll-target="#suggested-sections">Suggested Sections</a></li>
+  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a></li>
+  <li><a href="#question" id="toc-question" class="nav-link" data-scroll-target="#question">Question</a></li>
+  <li><a href="#data-source" id="toc-data-source" class="nav-link" data-scroll-target="#data-source">Data Source</a></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
+  <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations">Limitations</a></li>
+  <li><a href="#plain-language-summary" id="toc-plain-language-summary" class="nav-link" data-scroll-target="#plain-language-summary">Plain-Language Summary</a></li>
+  <li><a href="#ai-use-and-audit-note" id="toc-ai-use-and-audit-note" class="nav-link" data-scroll-target="#ai-use-and-audit-note">AI-Use and Audit Note</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ehsanx/Health-AI-KT/edit/main/weeks/week10-reporting-publishing/report-template.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ehsanx/Health-AI-KT/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week10-reporting-publishing/index.html">Week 10: Writing &amp; Publishing Reports</a></li><li class="breadcrumb-item"><a href="../../weeks/week10-reporting-publishing/report-template.html">Report Template</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week10-reporting-publishing/index.html">Week 10: Writing &amp; Publishing Reports</a></li><li class="breadcrumb-item"><a href="../../weeks/week10-reporting-publishing/report-template.html">Report Template: NHANES Equity Summary</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Report Template</h1>
+<h1 class="title">Report Template: NHANES Equity Summary</h1>
 </div>
 
 
@@ -894,40 +961,177 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="todo-before-release" class="level2">
-<h2 class="anchored" data-anchor-id="todo-before-release">TODO Before Release</h2>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<section id="purpose" class="level2">
+<h2 class="anchored" data-anchor-id="purpose">Purpose</h2>
+<p>This runnable template shows how to pair a dashboard with a short reproducible report. The dashboard supports exploration; the report fixes one question, documents the data, and cites the source.</p>
+</section>
+<section id="question" class="level2">
+<h2 class="anchored" data-anchor-id="question">Question</h2>
+<p>How does mean BMI vary by income group among adults age 20-80 in the prepared NHANES Health Equity classroom dataset?</p>
+</section>
+<section id="data-source" class="level2">
+<h2 class="anchored" data-anchor-id="data-source">Data Source</h2>
+<p>The report uses the cached CSV snapshot at <code>examples/nhanes-equity/data/nhanes_equity_v6.csv</code>. The source data are derived from CDC/NCHS NHANES public-use files <span class="citation" data-cites="cdc-nhanes">(<a href="#ref-cdc-nhanes" role="doc-biblioref">Centers for Disease Control and Prevention, National Center for Health Statistics 2026</a>)</span>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="fu">library</span>(knitr)</span>
+<span id="cb1-5"><a href="#cb1-5"></a></span>
+<span id="cb1-6"><a href="#cb1-6"></a>candidate_paths <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb1-7"><a href="#cb1-7"></a>  <span class="st">"examples/nhanes-equity/data/nhanes_equity_v6.csv"</span>,</span>
+<span id="cb1-8"><a href="#cb1-8"></a>  <span class="st">"../../examples/nhanes-equity/data/nhanes_equity_v6.csv"</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a>)</span>
+<span id="cb1-10"><a href="#cb1-10"></a></span>
+<span id="cb1-11"><a href="#cb1-11"></a>data_path <span class="ot">&lt;-</span> candidate_paths[<span class="fu">file.exists</span>(candidate_paths)][<span class="dv">1</span>]</span>
+<span id="cb1-12"><a href="#cb1-12"></a><span class="cf">if</span> (<span class="fu">is.na</span>(data_path)) {</span>
+<span id="cb1-13"><a href="#cb1-13"></a>  <span class="fu">stop</span>(<span class="st">"Could not find examples/nhanes-equity/data/nhanes_equity_v6.csv"</span>)</span>
+<span id="cb1-14"><a href="#cb1-14"></a>}</span>
+<span id="cb1-15"><a href="#cb1-15"></a></span>
+<span id="cb1-16"><a href="#cb1-16"></a>nhanes <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(data_path, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="callout-title-container flex-fill">
-Content TODO
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>Convert this into a copyable Quarto report starter.</li>
-<li>Add bibliography setup instructions.</li>
-<li>Add a small example table and figure.</li>
-<li>Add an AI-use note template.</li>
-</ul>
+</section>
+<section id="methods" class="level2">
+<h2 class="anchored" data-anchor-id="methods">Methods</h2>
+<p>We restricted the classroom dataset to adults age 20-80 and summarized BMI by income group. The summaries are unweighted and descriptive. They should not be interpreted as causal effects or national population estimates.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>analysis_df <span class="ot">&lt;-</span> nhanes <span class="sc">|&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a>  <span class="fu">filter</span>(Age <span class="sc">&gt;=</span> <span class="dv">20</span>, Age <span class="sc">&lt;=</span> <span class="dv">80</span>)</span>
+<span id="cb2-3"><a href="#cb2-3"></a></span>
+<span id="cb2-4"><a href="#cb2-4"></a>missingness <span class="ot">&lt;-</span> analysis_df <span class="sc">|&gt;</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb2-6"><a href="#cb2-6"></a>    <span class="at">rows =</span> <span class="fu">n</span>(),</span>
+<span id="cb2-7"><a href="#cb2-7"></a>    <span class="at">missing_bmi =</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(BMI)),</span>
+<span id="cb2-8"><a href="#cb2-8"></a>    <span class="at">missing_income =</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(IncomeGroup)),</span>
+<span id="cb2-9"><a href="#cb2-9"></a>    <span class="at">missing_age =</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(Age))</span>
+<span id="cb2-10"><a href="#cb2-10"></a>  )</span>
+<span id="cb2-11"><a href="#cb2-11"></a></span>
+<span id="cb2-12"><a href="#cb2-12"></a><span class="fu">kable</span>(missingness, <span class="at">caption =</span> <span class="st">"Missingness check for key report variables."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Missingness check for key report variables.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: right;">rows</th>
+<th style="text-align: right;">missing_bmi</th>
+<th style="text-align: right;">missing_income</th>
+<th style="text-align: right;">missing_age</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">57137</td>
+<td style="text-align: right;">1009</td>
+<td style="text-align: right;">5395</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </section>
-<section id="suggested-sections" class="level2">
-<h2 class="anchored" data-anchor-id="suggested-sections">Suggested Sections</h2>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>income_summary <span class="ot">&lt;-</span> analysis_df <span class="sc">|&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(BMI), <span class="sc">!</span><span class="fu">is.na</span>(IncomeGroup)) <span class="sc">|&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a>  <span class="fu">group_by</span>(IncomeGroup) <span class="sc">|&gt;</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb3-5"><a href="#cb3-5"></a>    <span class="at">n =</span> <span class="fu">n</span>(),</span>
+<span id="cb3-6"><a href="#cb3-6"></a>    <span class="at">mean_bmi =</span> <span class="fu">mean</span>(BMI),</span>
+<span id="cb3-7"><a href="#cb3-7"></a>    <span class="at">sd_bmi =</span> <span class="fu">sd</span>(BMI),</span>
+<span id="cb3-8"><a href="#cb3-8"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb3-9"><a href="#cb3-9"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb3-10"><a href="#cb3-10"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb3-11"><a href="#cb3-11"></a>    <span class="st">`</span><span class="at">BMI, mean (SD)</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">sprintf</span>(<span class="st">"%.1f (%.1f)"</span>, mean_bmi, sd_bmi)</span>
+<span id="cb3-12"><a href="#cb3-12"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb3-13"><a href="#cb3-13"></a>  <span class="fu">select</span>(IncomeGroup, n, <span class="st">`</span><span class="at">BMI, mean (SD)</span><span class="st">`</span>)</span>
+<span id="cb3-14"><a href="#cb3-14"></a></span>
+<span id="cb3-15"><a href="#cb3-15"></a><span class="fu">kable</span>(income_summary, <span class="at">caption =</span> <span class="st">"Descriptive BMI summary by income group."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Descriptive BMI summary by income group.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">IncomeGroup</th>
+<th style="text-align: right;">n</th>
+<th style="text-align: left;">BMI, mean (SD)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">High Income (&gt;3.5)</td>
+<td style="text-align: right;">16330</td>
+<td style="text-align: left;">28.6 (6.3)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Low Income (&lt;1.3)</td>
+<td style="text-align: right;">15293</td>
+<td style="text-align: left;">29.4 (7.5)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Middle Income</td>
+<td style="text-align: right;">19228</td>
+<td style="text-align: left;">29.3 (7.0)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>plot_df <span class="ot">&lt;-</span> analysis_df <span class="sc">|&gt;</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(BMI), <span class="sc">!</span><span class="fu">is.na</span>(IncomeGroup)) <span class="sc">|&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a>  <span class="fu">group_by</span>(IncomeGroup) <span class="sc">|&gt;</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb4-5"><a href="#cb4-5"></a>    <span class="at">n =</span> <span class="fu">n</span>(),</span>
+<span id="cb4-6"><a href="#cb4-6"></a>    <span class="at">mean_bmi =</span> <span class="fu">mean</span>(BMI),</span>
+<span id="cb4-7"><a href="#cb4-7"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb4-8"><a href="#cb4-8"></a>  )</span>
+<span id="cb4-9"><a href="#cb4-9"></a></span>
+<span id="cb4-10"><a href="#cb4-10"></a><span class="fu">ggplot</span>(plot_df, <span class="fu">aes</span>(<span class="at">x =</span> IncomeGroup, <span class="at">y =</span> mean_bmi)) <span class="sc">+</span></span>
+<span id="cb4-11"><a href="#cb4-11"></a>  <span class="fu">geom_col</span>(<span class="at">fill =</span> <span class="st">"#2C7FB8"</span>) <span class="sc">+</span></span>
+<span id="cb4-12"><a href="#cb4-12"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">paste0</span>(<span class="st">"n="</span>, n)), <span class="at">vjust =</span> <span class="sc">-</span><span class="fl">0.4</span>, <span class="at">size =</span> <span class="fl">3.5</span>) <span class="sc">+</span></span>
+<span id="cb4-13"><a href="#cb4-13"></a>  <span class="fu">labs</span>(</span>
+<span id="cb4-14"><a href="#cb4-14"></a>    <span class="at">title =</span> <span class="st">"Mean BMI by income group"</span>,</span>
+<span id="cb4-15"><a href="#cb4-15"></a>    <span class="at">subtitle =</span> <span class="st">"Adults age 20-80; unweighted descriptive summary"</span>,</span>
+<span id="cb4-16"><a href="#cb4-16"></a>    <span class="at">x =</span> <span class="st">"Income group"</span>,</span>
+<span id="cb4-17"><a href="#cb4-17"></a>    <span class="at">y =</span> <span class="st">"Mean BMI"</span></span>
+<span id="cb4-18"><a href="#cb4-18"></a>  ) <span class="sc">+</span></span>
+<span id="cb4-19"><a href="#cb4-19"></a>  <span class="fu">expand_limits</span>(<span class="at">y =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb4-20"><a href="#cb4-20"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">12</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="report-template_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption>Mean BMI by income group among adults age 20-80 in the prepared NHANES Health Equity classroom dataset. Values are unweighted and descriptive.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="limitations" class="level2">
+<h2 class="anchored" data-anchor-id="limitations">Limitations</h2>
 <ul>
-<li>Research or KT question</li>
-<li>Data source and stewardship notes</li>
-<li>Methods and reproducibility notes</li>
-<li>Results</li>
-<li>Limitations</li>
-<li>Plain-language summary</li>
-<li>AI-use and audit note</li>
+<li>The table and figure use a prepared classroom dataset rather than raw NHANES files.</li>
+<li>The summaries are unweighted.</li>
+<li>The comparison is descriptive and does not establish causality.</li>
+<li>Missing BMI or income group values are excluded from the grouped summary.</li>
 </ul>
+</section>
+<section id="plain-language-summary" class="level2">
+<h2 class="anchored" data-anchor-id="plain-language-summary">Plain-Language Summary</h2>
+<p>In this classroom dataset, mean BMI differs across income groups. The result is useful for practicing reproducible reporting and dashboard interpretation, but it should be described as a descriptive pattern rather than a causal finding.</p>
+</section>
+<section id="ai-use-and-audit-note" class="level2">
+<h2 class="anchored" data-anchor-id="ai-use-and-audit-note">AI-Use and Audit Note</h2>
+<p>Document any AI assistance used to draft code, captions, or interpretation. State exactly which output you checked against the code, data dictionary, or rendered report.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-cdc-nhanes" class="csl-entry" role="listitem">
+Centers for Disease Control and Prevention, National Center for Health Statistics. 2026. <span>“National Health and Nutrition Examination Survey.”</span> <a href="https://wwwn.cdc.gov/nchs/nhanes/">https://wwwn.cdc.gov/nchs/nhanes/</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
