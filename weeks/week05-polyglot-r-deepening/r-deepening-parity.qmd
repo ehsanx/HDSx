@@ -1,0 +1,130 @@
+# R Deepening and Parity Check
+
+Week 5 is polyglot-aware, not Python-first. Your strongest analysis path remains R and the tidyverse. Python enters as a comparison language: it helps you read code from other sources, ask better AI translation questions, and verify that a translated result still means the same thing.
+
+## Learning Goals
+
+By the end of this activity, you should be able to:
+
+- write a clear R `dplyr` pipeline for a descriptive health-data summary;
+- refactor a repeated summary into a small R function;
+- translate the same task to Python/pandas one step at a time;
+- compare outputs across languages using row counts, grouping levels, and summary values;
+- document any mismatch before deciding which code to change.
+
+## Dataset
+
+Use the NHANES case-study snapshot:
+
+```text
+examples/nhanes-equity/data/nhanes_equity_v6.csv
+```
+
+If you are working from this Week 5 folder, the relative path is:
+
+```text
+../../examples/nhanes-equity/data/nhanes_equity_v6.csv
+```
+
+## Part A: R Pipeline
+
+Start with R. The goal is a descriptive, unweighted summary of BMI by income group and gender.
+
+```r
+library(readr)
+library(dplyr)
+
+nhanes <- read_csv("../../examples/nhanes-equity/data/nhanes_equity_v6.csv")
+
+r_summary <- nhanes |>
+  filter(!is.na(BMI), !is.na(IncomeGroup), !is.na(Gender)) |>
+  group_by(IncomeGroup, Gender) |>
+  summarise(
+    n = n(),
+    mean_bmi = round(mean(BMI), 2),
+    sd_bmi = round(sd(BMI), 2),
+    .groups = "drop"
+  ) |>
+  arrange(IncomeGroup, Gender)
+
+r_summary
+```
+
+## Part B: R Function
+
+Refactor the summary so the value and grouping variables are easy to change later.
+
+```r
+summarise_mean_sd <- function(data, value, group1, group2) {
+  data |>
+    filter(!is.na({{ value }}), !is.na({{ group1 }}), !is.na({{ group2 }})) |>
+    group_by({{ group1 }}, {{ group2 }}) |>
+    summarise(
+      n = n(),
+      mean_value = round(mean({{ value }}), 2),
+      sd_value = round(sd({{ value }}), 2),
+      .groups = "drop"
+    ) |>
+    arrange({{ group1 }}, {{ group2 }})
+}
+
+r_function_summary <- summarise_mean_sd(nhanes, BMI, IncomeGroup, Gender)
+r_function_summary
+```
+
+Before moving to Python, check that the function output has the same number of rows and the same grouping labels as the original pipeline.
+
+## Part C: Python Translation
+
+Translate one step at a time. Do not ask AI for a full script until you have verified each cell.
+
+```python
+import pandas as pd
+
+nhanes = pd.read_csv("../../examples/nhanes-equity/data/nhanes_equity_v6.csv")
+
+py_summary = (
+    nhanes
+    .dropna(subset=["BMI", "IncomeGroup", "Gender"])
+    .groupby(["IncomeGroup", "Gender"], as_index=False)
+    .agg(
+        n=("BMI", "size"),
+        mean_bmi=("BMI", "mean"),
+        sd_bmi=("BMI", "std")
+    )
+    .sort_values(["IncomeGroup", "Gender"])
+)
+
+py_summary["mean_bmi"] = py_summary["mean_bmi"].round(2)
+py_summary["sd_bmi"] = py_summary["sd_bmi"].round(2)
+
+py_summary
+```
+
+## Part D: Parity Audit
+
+Record the following checks in a short Quarto note:
+
+| Check | R command | Python command | What to record |
+|---|---|---|---|
+| Raw row count | `nrow(nhanes)` | `len(nhanes)` | Same number of rows |
+| Column names | `names(nhanes)` | `nhanes.columns.tolist()` | Same expected variables |
+| Analysis rows after missingness filter | `nrow(filter(nhanes, !is.na(BMI), !is.na(IncomeGroup), !is.na(Gender)))` | `len(nhanes.dropna(subset=["BMI", "IncomeGroup", "Gender"]))` | Same filtered row count |
+| Group count | `nrow(r_summary)` | `len(py_summary)` | Same number of grouped rows |
+| Summary values | inspect `mean_bmi` and `sd_bmi` | inspect `mean_bmi` and `sd_bmi` | Values match after rounding |
+
+## AI Audit Prompt
+
+Use this prompt only after you have a working R result:
+
+> Translate this R `dplyr` pipeline into Python/pandas one step at a time. For each step, explain the equivalent Python operation, the output I should inspect, and the parity check I should run against my R result. Do not combine steps or add new analysis choices.
+
+## Student Output
+
+Submit a short note with:
+
+- the R pipeline;
+- the R function;
+- the Python translation;
+- a parity table showing the checks above;
+- two sentences explaining any mismatch or confirming that the outputs agree.

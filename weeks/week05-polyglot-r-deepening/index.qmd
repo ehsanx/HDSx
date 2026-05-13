@@ -1,353 +1,144 @@
-# Python with AI {.unnumbered}
+# Polyglot Awareness & R Deepening {.unnumbered}
 
 ## Overview
 
-**Summary:** You know how to wrangle data in R (Week 3) and track your history with Git (Week 4). This week, you'll use Large Language Models to translate your existing R skills into Python---running everything inside your GitHub Codespace. You don't need to become a Python expert; you need to be great at *directing the AI* and *verifying the output*.
+Week 5 is about becoming a careful bilingual reader of data analysis code. R remains the core language for required course work. Python is introduced so you can read short `pandas` examples, translate small tasks with AI assistance, and verify that a translated result still answers the same question.
 
-**Learning Objectives:**
+The week has two linked goals:
 
--   Explain when and why a health data scientist might choose Python over R (and vice versa).
--   Create and run a Python Jupyter Notebook (`.ipynb`) and a Python script (`.py`) in your Codespace.
--   Use the VS Code **Variables** pane and Data Viewer to inspect Python data.
--   Map R mental models to Python equivalents (`dplyr` → `pandas`, `ggplot2` → `seaborn`/`matplotlib`).
--   Manage a reproducible Python environment using `requirements.txt`.
--   Use `reticulate` to call R from Python (or vice versa) for a simple interoperability demo.
--   Avoid "Frankenstein code" via the **One Step, One Cell** AI workflow.
--   Apply Week 4 Git skills to track Python translations with meaningful commits.
+- deepen R fluency with `dplyr`, functions, and clear summaries;
+- compare a small R result with a Python/pandas translation using explicit parity checks.
+
+## Learning Objectives
+
+By the end of this week, you should be able to:
+
+- explain when R is the better default and when Python may be useful;
+- write a clear R `dplyr` pipeline for a descriptive health-data summary;
+- refactor repeated R code into a small function;
+- create and run a Python notebook in Codespaces;
+- load and inspect a CSV with `pandas`;
+- identify common R-to-Python translation traps;
+- use AI one step at a time while auditing each translated output;
+- document Python dependencies in `requirements.txt`;
+- use Git to commit a clean translation workflow.
 
 ## Connection
 
-Week 4 made small changes reviewable. This week checks whether the same dataset gives the same answer when you move between R and Python. Next week you will turn those summaries into clearer visual explanations.
+Week 4 made small changes reviewable through Git. This week uses that review mindset inside the analysis itself: first build a trusted R result, then translate one step at a time and compare. Next week you will turn those checked summaries into clearer visual explanations.
 
 ## Case Study Data Analysis
 
 {{< include ../../examples/nhanes-equity/snippets/case-study-data-analysis.qmd >}}
 
-## In-Class Activity
+## R Deepening Studio
 
-- Load `examples/nhanes-equity/data/nhanes_equity_v6.csv` in R and Python.
-- Compare row counts and column names across the two languages.
-- Choose one summary, such as mean BMI by sex, and check whether R and Python agree.
-- Treat any mismatch as an audit prompt: check data types, missing values, and grouping logic before changing code.
+Start in R. Use the NHANES case-study CSV:
 
-Student output: a parity-check note with row counts, column checks, and one matched R/Python summary. Assignment link: `../../assignments/assignment04-polyglot/README.md`.
-
-------------------------------------------------------------------------
-
-## `python1.qmd` Concepts: Python vs R---When and Why?
-
-### Two Languages, One Codespace
-
-Both R and Python are first-class citizens in your GitHub Codespace. You are not choosing one forever; you are learning when each is the better tool.
-
-| Strength | R | Python |
-|------------------------|------------------------|------------------------|
-| Statistical modeling & `tidyverse`-style wrangling | Mature ecosystem (`dplyr`, `ggplot2`, `lme4`) | Possible, but more verbose |
-| Machine learning & deep learning | Growing (`tidymodels`, `torch`) | Dominant (`scikit-learn`, `tensorflow`, `pytorch`) |
-| Dashboards | Shiny (Week 8) | Streamlit, Dash |
-| General-purpose scripting & automation | Less common | Very common |
-
-**Bottom line for this course:** R remains your primary analysis language. Python is introduced so you can (a) read and adapt Python code you encounter in the wild, (b) leverage Python-only libraries when needed, and (c) demonstrate bilingual fluency in your portfolio.
-
-### Notebooks vs Scripts
-
--   **Notebook (`.ipynb`):** Best for exploration, teaching, and narrative analysis. Cells run interactively; output appears inline.
--   **Script (`.py`):** Best for reusable utilities, automation, and clean code. Runs top-to-bottom.
-
-In this week's activities, you will work primarily in a notebook but also create one short `.py` script to see the difference.
-
-------------------------------------------------------------------------
-
-## `python2.qmd` Setup: Jupyter in Codespaces
-
-### Create and Run a Notebook
-
-1.  **New file:** VS Code Explorer → **New File** → name it `translation.ipynb`.
-2.  **Select kernel:** Notebook toolbar → **Select Kernel** → choose the recommended Python environment.
-3.  **First cell:** Type `print("Hello from Python")` and press **Shift + Enter**.
-
-### The Variables Pane and Data Viewer
-
-After running a cell that creates a variable, open the **Variables** pane (notebook toolbar). Double-click any DataFrame to open an "Excel-like" grid view---your best friend for verifying that data loaded correctly.
-
-::: callout-tip
-If notebook features (Variables, Data Viewer) are missing, ensure the **Jupyter** extension is enabled in your Codespace. Check the Extensions panel (block icon on the left sidebar).
-:::
-
-------------------------------------------------------------------------
-
-## `python3.qmd` Packages and Environment Hygiene
-
-### R `library()` → Python `import`
-
-| R | Python equivalent |
-|------------------------------------|------------------------------------|
-| `library(dplyr)` / tidyverse | `import pandas as pd` |
-| `library(ggplot2)` | `import seaborn as sns` or `import matplotlib.pyplot as plt` |
-| `library(readr)` | `pd.read_csv(...)` (built into pandas) |
-
-### Why `requirements.txt` Matters
-
-Your course Codespace comes with core packages pre-installed. But your **term project must run in a fresh Codespace**. If you add a package, you must record it:
-
-1.  Open (or create) `requirements.txt` in your repo root.
-2.  Add the package name and version:
-
-```         
-pandas==2.2.0
-seaborn==0.13.2
+```text
+examples/nhanes-equity/data/nhanes_equity_v6.csv
 ```
 
-3.  To install from this file: the Codespace setup script runs `pip install -r requirements.txt` automatically on launch.
+If you are working from the Week 5 folder, the relative path is:
 
-::: callout-warning
-**Reproducibility rule:** Never install packages by running `pip install X` in the terminal and forgetting about it. Always update `requirements.txt`. This is the Python equivalent of R's `renv`---you will see `renv` in Week 11.
-:::
-
-### Documenting Your Decisions
-
-When you choose a package or approach, add a brief Markdown cell in your notebook explaining *why*. For example: "Using `seaborn` here because it produces cleaner default aesthetics for categorical comparisons than `matplotlib` alone." This habit satisfies the reproducibility expectation and helps your future self (and your grader).
-
-------------------------------------------------------------------------
-
-## `python4.qmd` Translation Traps: What Breaks When You Switch Languages
-
-### Trap 1: The Zero-Index
-
--   R indexes from **1**; Python indexes from **0**.
-    -   R: `my_vec[1]` → first element
-    -   Python: `my_list[0]` → first element
--   Python slicing is **end-exclusive**: `df.iloc[0:5]` returns rows 0--4 (five rows total).
-
-**AI Prompt:**
-
-> Translate `my_vector <- c(10, 20, 30); my_vector[1]` to Python. Explain 0-based indexing and why `my_list[0:2]` returns only two elements.
-
-### Trap 2: The Indentation Trap
-
--   R uses `{}` to define code blocks; Python uses **indentation** (spaces). Misaligned spaces cause `IndentationError`.
-
-**AI Prompt:**
-
-> Translate this R `if/else` block to Python. Explain how indentation replaces `{}` and show correct formatting for a Jupyter cell.
-
-### Trap 3: Assignment and Equality
-
--   R uses `<-` for assignment (though `=` works too); Python uses `=`.
--   Both use `==` for comparison, but Python's `None` check is `is None`, not `== None`.
-
-------------------------------------------------------------------------
-
-## `python5.qmd` Tutorial: Loading and Viewing Data
-
-### Step-by-Step
-
-``` python
-import pandas as pd
-
-# Load (relative path!)
-data = pd.read_csv("data/patients.csv")
-
-# Peek at the first 5 rows
-data.head()
+```text
+../../examples/nhanes-equity/data/nhanes_equity_v6.csv
 ```
 
-### Verify in the Data Viewer
+### R Pipeline
 
-After running the cell above, open the **Variables** pane → double-click `data` → check that the columns and row count match what you expect from your R analysis.
+```r
+library(readr)
+library(dplyr)
 
-**AI Prompt:**
+nhanes <- read_csv("../../examples/nhanes-equity/data/nhanes_equity_v6.csv")
 
-> I have `data/patients.csv` in my Codespace. Write the Python pandas code to import it and show the first 5 rows. Also show how to check the number of rows and column names.
+bmi_by_income <- nhanes |>
+  filter(!is.na(BMI), !is.na(IncomeGroup), !is.na(Gender)) |>
+  group_by(IncomeGroup, Gender) |>
+  summarise(
+    n = n(),
+    mean_bmi = round(mean(BMI), 2),
+    sd_bmi = round(sd(BMI), 2),
+    .groups = "drop"
+  ) |>
+  arrange(IncomeGroup, Gender)
 
-------------------------------------------------------------------------
-
-## `python6.qmd` Reading Tracebacks (Bottom-Up)
-
-Python errors display a **Traceback**---a stack of function calls. The most useful information is at the **bottom**.
-
-### Example
-
-```         
----------------------------------------------------------------------------
-FileNotFoundError                         Traceback (most recent call last)
-Cell In[3], line 2
-      1 import pandas as pd
-----> 2 data = pd.read_csv("Data/patients.csv")
-
-FileNotFoundError: [Errno 2] No such file or directory: 'Data/patients.csv'
+bmi_by_income
 ```
 
-**Reading it:** The bottom line tells you the file was not found. The capital "D" in `"Data/"` is the culprit---file paths are case-sensitive on Linux (your Codespace runs Linux).
+### R Function
 
-**AI Prompt:**
+```r
+summarise_mean_sd <- function(data, value, group1, group2) {
+  data |>
+    filter(!is.na({{ value }}), !is.na({{ group1 }}), !is.na({{ group2 }})) |>
+    group_by({{ group1 }}, {{ group2 }}) |>
+    summarise(
+      n = n(),
+      mean_value = round(mean({{ value }}), 2),
+      sd_value = round(sd({{ value }}), 2),
+      .groups = "drop"
+    ) |>
+    arrange({{ group1 }}, {{ group2 }})
+}
 
-> Here is a Python Traceback from my Codespace: \[paste\]. Read it bottom-up, explain the error in one sentence, and give corrected code.
-
-------------------------------------------------------------------------
-
-## `python7.qmd` The AI Workflow: One Step, One Cell
-
-### Rule 1: One Step, One Cell
-
-Ask your AI for **one atomic step** at a time: load data, then preview, then filter, then summarize. Run and verify each cell before requesting the next. This prevents "Frankenstein code"---a giant block of AI-generated code where one hidden error cascades through everything.
-
-### Rule 2: Reverse Translation
-
-When AI gives you unfamiliar Python, paste it back and ask:
-
-> Explain this Python code step by step as if translating it back to R's `dplyr`. What does each line do?
-
-This converts opaque Python into your familiar mental model.
-
-### Rule 3: Parity Audit
-
-After each translated step, compare Python output to your R output:
-
-| Check         | R                 | Python                     |
-|---------------|-------------------|----------------------------|
-| Row count     | `nrow(df)`        | `len(df)` or `df.shape[0]` |
-| Column names  | `names(df)`       | `df.columns.tolist()`      |
-| Unique levels | `unique(df$col)`  | `df['col'].unique()`       |
-| Summary stats | `summary(df$col)` | `df['col'].describe()`     |
-
-If the numbers don't match, something went wrong in translation. Fix it before moving on.
-
-------------------------------------------------------------------------
-
-## `python8.qmd` Interoperability: A Taste of `reticulate`
-
-### Why Interoperability?
-
-Sometimes you don't want to rewrite everything. The R package `reticulate` lets you call Python from an R session (and access Python objects as R objects). This is conceptual exposure---you are not expected to build full projects this way, but you should know it exists.
-
-### Demo (in an R Quarto document or R console)
-
-``` r
-library(reticulate)
-
-# Run a line of Python from R
-py_run_string("import pandas as pd; df = pd.read_csv('data/patients.csv')")
-
-# Access the Python object in R
-py_df <- py$df
-head(py_df)
+bmi_function_check <- summarise_mean_sd(nhanes, BMI, IncomeGroup, Gender)
+bmi_function_check
 ```
 
-::: callout-note
-This demo runs inside your Codespace where both R and Python are available. You do not need to install anything locally. The goal is awareness: when you encounter a Python-only package in a future project, you know you can call it from R without rewriting your entire pipeline.
-:::
+Before translating, compare the pipeline output and the function output. They should have the same grouping labels and the same number of rows.
 
-------------------------------------------------------------------------
+## In-Class Activity: R First, Python Second
 
-## `python9.qmd` Creating a Python Script (`.py`)
+Work in pairs. One partner reads the R output; the other reads the Python output.
 
-Not everything belongs in a notebook. When you have a reusable utility (e.g., a data-cleaning function), a `.py` script is cleaner.
+1. Load the NHANES CSV in R and Python.
+2. Record raw row count, column count, and missing `BMI` count in both languages.
+3. Produce mean and SD of `BMI` by `IncomeGroup` and `Gender` in R.
+4. Translate the same task to Python/pandas one step at a time.
+5. Fill in a parity table comparing row counts, grouping labels, and rounded summary values.
+6. If something does not match, write the likely reason before changing code.
 
-### Walkthrough
+Student output: a parity-check note with the R pipeline, R function, Python translation, parity table, and a short AI-use note.
 
-1.  In VS Code Explorer, create a new file: `helpers.py`.
-2.  Write a simple function:
+## Tutorial Map
 
-``` python
-import pandas as pd
+Use the child pages in this order:
 
-def load_and_preview(filepath, n_rows=5):
-    """Load a CSV and return the first n rows."""
-    df = pd.read_csv(filepath)
-    print(f"Loaded {len(df)} rows, {len(df.columns)} columns")
-    return df.head(n_rows)
-```
+1. [Python vs. R - When and Why?](python01-when-and-why.qmd)
+2. [Setting Up Your Python Environment](python02-environment.qmd)
+3. [Packages and Reproducibility](python03-packages-reproducibility.qmd)
+4. [Common Translation Traps](python04-translation-traps.qmd)
+5. [Loading and Inspecting Health Data](python05-load-inspect-data.qmd)
+6. [Reading Python Tracebacks](python06-tracebacks.qmd)
+7. [The One Step, One Cell AI Workflow](python07-one-step-one-cell.qmd)
+8. [Mixing R and Python](python08-mixing-r-python.qmd)
+9. [Creating Reusable Python Scripts](python09-reusable-scripts.qmd)
+10. [Tracking Your Progress With Git](python10-git-progress.qmd)
+11. [Project Proposal Readiness Check](python11-project-milestone.qmd)
+12. [Knowledge Check](python12-knowledge-check.qmd)
+13. [The Bilingual Translation Exercise](python13-translation-exercise.qmd)
+14. [R To Python Cheat Sheet](python14-cheat-sheet.qmd)
 
-3.  In your notebook, import and use it:
+For the explicit R mastery exercise, use [R Deepening and Parity Check](r-deepening-parity.qmd).
 
-``` python
-from helpers import load_and_preview
+## Assignment 4
 
-preview = load_and_preview("data/patients.csv")
-preview
-```
+Complete [Assignment 4: Polyglot Awareness & R Deepening](../../assignments/assignment04-polyglot/README.md).
 
-4.  Stage and commit both files with a descriptive message.
+Submit a repository link on Canvas after committing:
 
-::: callout-tip
-**When to use which:** Notebook for exploratory analysis and narrative. Script for functions you will reuse across notebooks or projects.
-:::
+- `assignments/assignment04-polyglot/submission/polyglot-parity.qmd`;
+- `assignments/assignment04-polyglot/submission/translation.ipynb`;
+- `assignments/assignment04-polyglot/submission/helpers.py`.
 
-------------------------------------------------------------------------
+## Knowledge Check
 
-## `python10.qmd` Git Integration: Track Your Translations
+Before leaving Week 5, answer these:
 
-Apply your Week 4 skills:
-
-1.  After completing each major translation step, **stage and commit** with a meaningful message.
-2.  Use AI to draft commit messages from your diffs (Week 4, `git6b.qmd`).
-3.  If AI-generated code breaks your notebook badly, use **Discard Changes** (curved arrow in Source Control) to revert to your last commit.
-
-::: callout-warning
-**Jupyter notebooks and Git:** `.ipynb` files contain cell outputs (images, tables) in their JSON. This makes diffs noisy. Consider clearing outputs before committing: **Command Palette** → `Notebook: Clear All Outputs` → then stage and commit. This keeps your diffs readable.
-:::
-
-------------------------------------------------------------------------
-
-## `python11.qmd` Term Project: Milestone 1
-
-**Due this Friday:** Submit your project proposal on Canvas.
-
-Your proposal should include:
-
--   **Research question:** A clear, focused question about health data.
--   **Data source:** Which dataset you will use (e.g., NHANES, a Kaggle health dataset). Check that it is accessible and appropriately sized.
--   **Feasibility check:** Can you load and preview the data in a Codespace? (Try it before submitting.)
--   **Planned approach:** A brief sketch of what analyses and visualizations you envision.
-
-::: callout-tip
-Use what you learned this week: load your candidate dataset in *both* R and Python to check that it works. This early check prevents surprises later.
-:::
-
-------------------------------------------------------------------------
-
-## `python12.qmd` Knowledge Check
-
-1.  Name one scenario where you would choose Python over R, and one where R is stronger.
-2.  What is the difference between a `.ipynb` notebook and a `.py` script?
-3.  Why does `my_list[1]` in Python return the *second* element?
-4.  How do you open the Data Viewer for a DataFrame in VS Code?
-5.  What is `requirements.txt` and why does it matter for reproducibility?
-6.  What does `reticulate` allow you to do?
-7.  Why should you clear notebook outputs before committing?
-8.  What is the "One Step, One Cell" rule, and what problem does it prevent?
-
-------------------------------------------------------------------------
-
-## `python13.qmd` Practice Exercise: The Bilingual Translation
-
-**Task:** Create a Python version of your Week 3 R analysis inside your Codespace.
-
-### Workflow
-
-1.  Create `translation.ipynb` and select the Python kernel.
-2.  Use your LLM to translate your R steps to Python (`pandas`) **one cell at a time**.
-3.  After each cell, verify output using the **Variables / Data Viewer** and run parity checks (row count, column names, summary stats) against your R results.
-4.  Extract at least one reusable function into a `helpers.py` script. Import and use it in your notebook.
-5.  Add a Markdown cell at the top documenting: which AI model you used, and any decisions you made (e.g., "Used `seaborn` instead of `matplotlib` for cleaner default bar charts").
-6.  Clear notebook outputs (**Command Palette** → `Notebook: Clear All Outputs`).
-7.  **Git:** Stage both files, write a professional commit message (use AI to draft it from the diff), **✔ Commit**, then **Sync Changes**.
-
-------------------------------------------------------------------------
-
-## `python14.qmd` Quick Reference
-
-| R | Python | Notes |
-|------------------------|------------------------|------------------------|
-| `library(dplyr)` | `import pandas as pd` | Load data manipulation library |
-| `read.csv("data/f.csv")` | `pd.read_csv("data/f.csv")` | Always use relative paths |
-| `head(df)` | `df.head()` | First 5 rows |
-| `nrow(df)` | `len(df)` | Row count |
-| `names(df)` | `df.columns.tolist()` | Column names |
-| `df$col` | `df['col']` | Access a column |
-| `filter(df, age > 65)` | `df[df['age'] > 65]` | Row filter |
-| `mutate(df, bmi = wt/ht^2)` | `df['bmi'] = df['wt'] / df['ht']**2` | New column |
-| `summary(df$col)` | `df['col'].describe()` | Summary statistics |
-| `unique(df$col)` | `df['col'].unique()` | Unique values |
-| `ggplot(df, aes(x, y)) + geom_point()` | `sns.scatterplot(data=df, x='x', y='y')` | Scatter plot |
+1. What is one analysis task you would keep in R?
+2. What is one task where Python may be useful?
+3. What are three parity checks you ran?
+4. What did AI help translate, and how did you verify it?
+5. What changed in your Git history from the beginning to the end of the week?

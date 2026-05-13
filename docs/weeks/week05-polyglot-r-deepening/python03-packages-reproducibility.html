@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>25&nbsp; Tutorial 3: Packages and Reproducibility – Health Data Science: AI and Knowledge Translation</title>
+<title>26&nbsp; Tutorial 3: Packages and Reproducibility – Health Data Science: AI and Knowledge Translation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -71,10 +106,9 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta name="twitter:title" content="25&nbsp; Tutorial 3: Packages and Reproducibility – Health Data Science: AI and Knowledge Translation">
+<meta name="twitter:title" content="26&nbsp; Tutorial 3: Packages and Reproducibility – Health Data Science: AI and Knowledge Translation">
 <meta name="twitter:description" content="">
-<meta name="twitter:image" content="../../assets/images/python3/p1.png">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -86,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week05-polyglot-r-deepening/index.html">Week 5: Polyglot Awareness &amp; R Deepening</a></li><li class="breadcrumb-item"><a href="../../weeks/week05-polyglot-r-deepening/python03-packages-reproducibility.html"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Tutorial 3: Packages and Reproducibility</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week05-polyglot-r-deepening/index.html">Week 5: Polyglot Awareness &amp; R Deepening</a></li><li class="breadcrumb-item"><a href="../../weeks/week05-polyglot-r-deepening/python03-packages-reproducibility.html"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Tutorial 3: Packages and Reproducibility</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -432,91 +466,97 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Python with AI</span></a>
+ <span class="menu-text">Polyglot Awareness &amp; R Deepening</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week05-polyglot-r-deepening/r-deepening-parity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">R Deepening and Parity Check</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python01-when-and-why.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Tutorial 1: Python vs.&nbsp;R - When and Why?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Tutorial 1: Python vs.&nbsp;R - When and Why?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python02-environment.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Tutorial 2: Setting Up Your Python Environment</span></span></a>
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Tutorial 2: Setting Up Your Python Environment</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python03-packages-reproducibility.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Tutorial 3: Packages and Reproducibility</span></span></a>
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Tutorial 3: Packages and Reproducibility</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python04-translation-traps.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Tutorial 4: Common Translation Traps</span></span></a>
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Tutorial 4: Common Translation Traps</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python05-load-inspect-data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Tutorial 5: Loading and Inspecting Health Data</span></span></a>
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Tutorial 5: Loading and Inspecting Health Data</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python06-tracebacks.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Reading Tracebacks</span></span></a>
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Tutorial 6: Reading Python Tracebacks</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python07-one-step-one-cell.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Tutorial 7: The ‘One Step, One Cell’ AI Workflow</span></span></a>
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Tutorial 7: The One Step, One Cell AI Workflow</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python08-mixing-r-python.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Tutorial 8: Mixing R and Python”</span></span></a>
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Tutorial 8: Mixing R and Python</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python09-reusable-scripts.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Tutorial 9: Creating Reusable Python Scripts</span></span></a>
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Tutorial 9: Creating Reusable Python Scripts</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python10-git-progress.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Tutorial 10: Tracking Your Progress with Git</span></span></a>
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Tutorial 10: Tracking Your Progress With Git</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python11-project-milestone.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Tutorial 11: Term Project Milestone 1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Tutorial 11: Project Proposal Readiness Check</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python12-knowledge-check.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Tutorial 12: Python Knowledge Check</span></span></a>
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Tutorial 12: Knowledge Check</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python13-translation-exercise.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Tutorial 13: The Bilingual Translation Exercise</span></span></a>
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Tutorial 13: The Bilingual Translation Exercise</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python14-cheat-sheet.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Tutorial 14: R to Python Cheat Sheet</span></span></a>
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Tutorial 14: R To Python Cheat Sheet</span></span></a>
   </div>
 </li>
       </ul>
@@ -717,14 +757,20 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../assignments/assignment04-polyglot/README.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Assignment 4: Polyglot Awareness &amp; R Deepening</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../assignments/assignment05-visualization/README.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Assignment 5: Visualization Audit and Revision</span></span></a>
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Assignment 5: Visualization Audit and Revision</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../assignments/assignment06-eda-ai-audit/README.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Assignment 6: EDA, Table 1, and AI Audit</span></span></a>
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Assignment 6: EDA, Table 1, and AI Audit</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -854,7 +900,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../syllabus/topic-coverage-audit.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Syllabus-to-Content Coverage Audit</span></span></a>
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Syllabus-to-Content Coverage Audit</span></span></a>
   </div>
 </li>
       </ul>
@@ -869,17 +915,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#r-library-vs.-python-import" id="toc-r-library-vs.-python-import" class="nav-link active" data-scroll-target="#r-library-vs.-python-import"><span class="header-section-number">25.1</span> R <code>library()</code> vs.&nbsp;Python <code>import</code></a></li>
-  <li><a href="#managing-requirements.txt" id="toc-managing-requirements.txt" class="nav-link" data-scroll-target="#managing-requirements.txt"><span class="header-section-number">25.2</span> Managing <code>requirements.txt</code></a></li>
+  <li><a href="#r-library-vs.-python-import" id="toc-r-library-vs.-python-import" class="nav-link active" data-scroll-target="#r-library-vs.-python-import"><span class="header-section-number">26.1</span> R <code>library()</code> vs.&nbsp;Python <code>import</code></a></li>
+  <li><a href="#why-requirements.txt-matters" id="toc-why-requirements.txt-matters" class="nav-link" data-scroll-target="#why-requirements.txt-matters"><span class="header-section-number">26.2</span> Why <code>requirements.txt</code> Matters</a></li>
+  <li><a href="#course-rule" id="toc-course-rule" class="nav-link" data-scroll-target="#course-rule"><span class="header-section-number">26.3</span> Course Rule</a></li>
+  <li><a href="#r-connection" id="toc-r-connection" class="nav-link" data-scroll-target="#r-connection"><span class="header-section-number">26.4</span> R Connection</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ehsanx/Health-AI-KT/edit/main/weeks/week05-polyglot-r-deepening/python03-packages-reproducibility.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ehsanx/Health-AI-KT/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week05-polyglot-r-deepening/index.html">Week 5: Polyglot Awareness &amp; R Deepening</a></li><li class="breadcrumb-item"><a href="../../weeks/week05-polyglot-r-deepening/python03-packages-reproducibility.html"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Tutorial 3: Packages and Reproducibility</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week05-polyglot-r-deepening/index.html">Week 5: Polyglot Awareness &amp; R Deepening</a></li><li class="breadcrumb-item"><a href="../../weeks/week05-polyglot-r-deepening/python03-packages-reproducibility.html"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Tutorial 3: Packages and Reproducibility</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Tutorial 3: Packages and Reproducibility</span></h1>
+<h1 class="title"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Tutorial 3: Packages and Reproducibility</span></h1>
 </div>
 
 
@@ -896,44 +944,62 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="r-library-vs.-python-import" class="level2" data-number="25.1">
-<h2 data-number="25.1" class="anchored" data-anchor-id="r-library-vs.-python-import"><span class="header-section-number">25.1</span> R <code>library()</code> vs.&nbsp;Python <code>import</code></h2>
-<p>In Python, we “import” packages and often give them nicknames (aliases).</p>
+<section id="r-library-vs.-python-import" class="level2" data-number="26.1">
+<h2 data-number="26.1" class="anchored" data-anchor-id="r-library-vs.-python-import"><span class="header-section-number">26.1</span> R <code>library()</code> vs.&nbsp;Python <code>import</code></h2>
+<p>Both languages require you to load packages before using them.</p>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">R</th>
-<th style="text-align: left;">Python Equivalent</th>
-<th style="text-align: left;">Purpose</th>
+<th>R</th>
+<th>Python</th>
+<th>Purpose</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><code>library(dplyr)</code></td>
-<td style="text-align: left;"><code>import pandas as pd</code></td>
-<td style="text-align: left;">Data wrangling</td>
+<td><code>library(readr)</code></td>
+<td><code>import pandas as pd</code></td>
+<td>read CSV files</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><code>library(ggplot2)</code></td>
-<td style="text-align: left;"><code>import seaborn as sns</code></td>
-<td style="text-align: left;">Visualization</td>
+<td><code>library(dplyr)</code></td>
+<td><code>import pandas as pd</code></td>
+<td>filter, group, and summarise data</td>
+</tr>
+<tr class="odd">
+<td><code>library(ggplot2)</code></td>
+<td><code>import seaborn as sns</code></td>
+<td>create plots</td>
+</tr>
+<tr class="even">
+<td><code>library(reticulate)</code></td>
+<td>not applicable</td>
+<td>call Python from R</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="managing-requirements.txt" class="level2" data-number="25.2">
-<h2 data-number="25.2" class="anchored" data-anchor-id="managing-requirements.txt"><span class="header-section-number">25.2</span> Managing <code>requirements.txt</code></h2>
-<p>Your project must be reproducible. If you use a package, you must record it in a file called <code>requirements.txt</code>.</p>
-<ol type="1">
-<li><p>Create a file named <code>requirements.txt</code> in your root folder.</p>
-<p><img src="../../assets/images/python3/p1.png" class="img-fluid"></p></li>
-<li><p>Add:</p>
-<p><code>pandas==2.2.0</code></p>
-<p><code>seaborn==0.13.2</code></p>
-<p><img src="../../assets/images/python3/p2.png" class="img-fluid"></p>
-<p>Certain versions of these packages behave differently. By explicitly setting your versions, you can make sure you code will have reproducible results regardless of who is running it.</p></li>
-<li><p><strong>The Rule:</strong> Never just <code>pip install</code> (method on installing packages, which you wouldn’t have to deal with in this class but perhaps the future) in the terminal and forget it; always update this file to document your steps.</p></li>
-</ol>
+<section id="why-requirements.txt-matters" class="level2" data-number="26.2">
+<h2 data-number="26.2" class="anchored" data-anchor-id="why-requirements.txt-matters"><span class="header-section-number">26.2</span> Why <code>requirements.txt</code> Matters</h2>
+<p>Python projects record package dependencies in <code>requirements.txt</code>. This is the Python-side equivalent of saying, “Here is what another person must install before my code will run.”</p>
+<p>For this week, a minimal file is enough:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a href="#cb1-1"></a>pandas</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>If you also create a plot in Python, add:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a href="#cb2-1"></a>seaborn</span>
+<span id="cb2-2"><a href="#cb2-2"></a>matplotlib</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="course-rule" class="level2" data-number="26.3">
+<h2 data-number="26.3" class="anchored" data-anchor-id="course-rule"><span class="header-section-number">26.3</span> Course Rule</h2>
+<p>If you install or rely on a Python package for submitted work, record it in <code>requirements.txt</code>. Do not leave package installation as an undocumented memory from your current Codespace.</p>
+</section>
+<section id="r-connection" class="level2" data-number="26.4">
+<h2 data-number="26.4" class="anchored" data-anchor-id="r-connection"><span class="header-section-number">26.4</span> R Connection</h2>
+<p>R reproducibility is handled through project documentation and, later in the course, <code>renv</code>. Week 5 is a bridge: you should be able to explain where dependencies are recorded in both languages.</p>
 
 
 </section>
@@ -1392,12 +1458,12 @@ ul.task-list li input[type="checkbox"] {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../../weeks/week05-polyglot-r-deepening/python02-environment.html" class="pagination-link" aria-label="Tutorial 2: Setting Up Your Python Environment">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Tutorial 2: Setting Up Your Python Environment</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Tutorial 2: Setting Up Your Python Environment</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../../weeks/week05-polyglot-r-deepening/python04-translation-traps.html" class="pagination-link" aria-label="Tutorial 4: Common Translation Traps">
-        <span class="nav-page-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Tutorial 4: Common Translation Traps</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Tutorial 4: Common Translation Traps</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

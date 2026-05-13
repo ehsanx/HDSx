@@ -24,7 +24,7 @@
     "href": "index.html#dive-into-our-modules",
     "title": "Health Data Science: AI and Knowledge Translation",
     "section": "Dive into Our Modules",
-    "text": "Dive into Our Modules\nEmbark on a journey through our structured modules, designed to take you from data literacy to advanced AI workflows.\n\n\n\n\n\nModule\nTopics\nDescriptions\n\n\n\n\n1\nHealth Data & Ethics\nNavigating open data (NHANES, WHO) and Data Sovereignty/Ethics.\n\n\n2\nModern Workflows\nSetting up modern research tools: IDEs, Quarto, and cloud notebooks.\n\n\n3\nR with AI\nMastering R fundamentals with an AI Co-Pilot for debugging and coding.\n\n\n4\nGit & Collaboration\nManaging version control and team workflows using Git and GitHub.\n\n\n5\nPython with AI\nSetting up Python environments and translating analysis between R and Python.\n\n\n6\nVisual Storytelling\nCommunicating complex health data using visual storytelling principles.\n\n\n7\nExploring Data\nExploratory Data Analysis (EDA) to clean messy data and find patterns.\n\n\n8\nInteractive Dashboards\nBuilding interactive web tools for knowledge translation (Shiny/Dash).\n\n\n9\nDynamic Presentations\nCreating auto-updating slide decks and summaries for diverse audiences.\n\n\n10\nReproducible Reporting\nAutomated manuscript generation and citation management with Quarto.\n\n\n11\nAdvanced Topics\nCloud computing and other advanced topics.\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nThe tutorials are designed with a consistent structure to provide a cohesive learning experience. Here is what you can expect in each chapter:\n\nOverview: A concise summary of learning objectives and topics.\nConcepts: Core theoretical materials (slides, video lessons).\nPolyglot Tutorials: In-depth walkthroughs with tabbed code blocks allowing you to toggle between R and Python solutions.\nAI Auditing: Specific sections dedicated to verifying and “stress-testing” AI-generated code for the chapter’s topic.\nKnowledge Check: Ungraded self-assessments to reinforce key concepts.\nPractice Exercises: Hands-on tasks using real-world health data to build your portfolio.",
+    "text": "Dive into Our Modules\nEmbark on a journey through our structured modules, designed to take you from data literacy to advanced AI workflows.\n\n\n\n\n\nModule\nTopics\nDescriptions\n\n\n\n\n1\nWeek 0: Onboarding\nAccount setup, orientation, and pre-course survey.\n\n\n2\nWeek 1: Health Data, KT & Ethics\nOpen data, NHANES, knowledge translation, ethics, privacy, and data stewardship.\n\n\n3\nWeek 2: Modern Research Workflows\nCodespaces, VS Code, Quarto, project structure, rendering, commits, and syncing.\n\n\n4\nWeek 3: R with AI\nR fundamentals, tidyverse wrangling, functions, debugging with AI, and reproducible notes.\n\n\n5\nWeek 4: Git & Collaboration\nGit provenance, branches, pull requests, peer review, repo hygiene, and group setup.\n\n\n6\nWeek 5: Polyglot Awareness & R Deepening\nPython/pandas awareness, R-to-Python translation, AI parity checks, and R mastery practice.\n\n\n7\nWeek 6: Data Visualization\nClear health data graphics, ggplot2 workflows, visual audits, and misleading plot repair.\n\n\n8\nWeek 7: EDA, Table 1 & AI Auditing\nEDA, missingness, Table 1 summaries, planted-error audits, and descriptive interpretation.\n\n\n9\nWeek 8: Dashboard Prototypes for KT\nDashboard-style knowledge translation products and the first required Shiny app run.\n\n\n10\nWeek 9: Communication of Scientific Findings\nPlain-language communication, revealjs slides, citations, and peer feedback.\n\n\n11\nWeek 10: Writing & Publishing Reports\nDynamic Quarto reports, figures, tables, citations, limitations, and publishing workflow.\n\n\n12\nWeek 11: Portfolio Surgery\nFresh-environment reproducibility testing, dependency repair, portfolio polish, and static dashboard extension.\n\n\n13\nWeeks 12-13: Project Presentations\nFinal project presentations, live Q&A, and peer review.\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nThe tutorials are designed with a consistent structure to provide a cohesive learning experience. Here is what you can expect in each chapter:\n\nOverview: A concise summary of learning objectives and topics.\nConcepts: Core theoretical materials (slides, video lessons).\nPolyglot Tutorials: In-depth walkthroughs with tabbed code blocks allowing you to toggle between R and Python solutions.\nAI Auditing: Specific sections dedicated to verifying and “stress-testing” AI-generated code for the chapter’s topic.\nKnowledge Check: Ungraded self-assessments to reinforce key concepts.\nPractice Exercises: Hands-on tasks using real-world health data to build your portfolio.",
     "crumbs": [
       "The Project"
     ]
@@ -54,7 +54,7 @@
     "href": "index.html#how-to-cite",
     "title": "Health Data Science: AI and Knowledge Translation",
     "section": "How to Cite",
-    "text": "How to Cite\n\n\n\n\n\nStyle\nCitation\n\n\n\n\nAPA\nKarim, M. E. (2026). Health Data Science: AI and Knowledge Translation. Retrieved from [https://ehsanx.github.io/Health-AI-KT/](https://ehsanx.github.io/Health-AI-KT/)\n\n\nVancouver\nKarim, M. E. Health Data Science: AI and Knowledge Translation. [Internet]. 2026 [cited May 12, 2026]. Available from: [https://ehsanx.github.io/Health-AI-KT/](https://ehsanx.github.io/Health-AI-KT/)\n\n\nIEEE\nKarim, M. E., \"Health Data Science: AI and Knowledge Translation,\" 2026. [Online]. Available: [https://ehsanx.github.io/Health-AI-KT/](https://ehsanx.github.io/Health-AI-KT/). Accessed on: May 12, 2026.\n\n\n\n\n\nThe BibTeX format can be downloaded from here.",
+    "text": "How to Cite\n\n\n\n\n\nStyle\nCitation\n\n\n\n\nAPA\nKarim, M. E. (2026). Health Data Science: AI and Knowledge Translation. Retrieved from https://ehsanx.github.io/Health-AI-KT/\n\n\nVancouver\nKarim, M. E. Health Data Science: AI and Knowledge Translation. [Internet]. 2026 [cited May 13, 2026]. Available from: https://ehsanx.github.io/Health-AI-KT/\n\n\nIEEE\nKarim, M. E., \"Health Data Science: AI and Knowledge Translation,\" 2026. [Online]. Available: https://ehsanx.github.io/Health-AI-KT/. Accessed on: May 13, 2026.\n\n\n\n\n\nThe BibTeX format can be downloaded from here.",
     "crumbs": [
       "The Project"
     ]
@@ -1734,496 +1734,903 @@
   {
     "objectID": "weeks/week05-polyglot-r-deepening/index.html",
     "href": "weeks/week05-polyglot-r-deepening/index.html",
-    "title": "Python with AI",
+    "title": "Polyglot Awareness & R Deepening",
     "section": "",
-    "text": "Overview\nSummary: You know how to wrangle data in R (Week 3) and track your history with Git (Week 4). This week, you’ll use Large Language Models to translate your existing R skills into Python—running everything inside your GitHub Codespace. You don’t need to become a Python expert; you need to be great at directing the AI and verifying the output.\nLearning Objectives:",
+    "text": "Overview\nWeek 5 is about becoming a careful bilingual reader of data analysis code. R remains the core language for required course work. Python is introduced so you can read short pandas examples, translate small tasks with AI assistance, and verify that a translated result still answers the same question.\nThe week has two linked goals:",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "Python with AI"
+      "Polyglot Awareness & R Deepening"
     ]
   },
   {
     "objectID": "weeks/week05-polyglot-r-deepening/index.html#overview",
     "href": "weeks/week05-polyglot-r-deepening/index.html#overview",
-    "title": "Python with AI",
+    "title": "Polyglot Awareness & R Deepening",
     "section": "",
-    "text": "Explain when and why a health data scientist might choose Python over R (and vice versa).\nCreate and run a Python Jupyter Notebook (.ipynb) and a Python script (.py) in your Codespace.\nUse the VS Code Variables pane and Data Viewer to inspect Python data.\nMap R mental models to Python equivalents (dplyr → pandas, ggplot2 → seaborn/matplotlib).\nManage a reproducible Python environment using requirements.txt.\nUse reticulate to call R from Python (or vice versa) for a simple interoperability demo.\nAvoid “Frankenstein code” via the One Step, One Cell AI workflow.\nApply Week 4 Git skills to track Python translations with meaningful commits.",
+    "text": "deepen R fluency with dplyr, functions, and clear summaries;\ncompare a small R result with a Python/pandas translation using explicit parity checks.",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "Python with AI"
+      "Polyglot Awareness & R Deepening"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/index.html#learning-objectives",
+    "href": "weeks/week05-polyglot-r-deepening/index.html#learning-objectives",
+    "title": "Polyglot Awareness & R Deepening",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of this week, you should be able to:\n\nexplain when R is the better default and when Python may be useful;\nwrite a clear R dplyr pipeline for a descriptive health-data summary;\nrefactor repeated R code into a small function;\ncreate and run a Python notebook in Codespaces;\nload and inspect a CSV with pandas;\nidentify common R-to-Python translation traps;\nuse AI one step at a time while auditing each translated output;\ndocument Python dependencies in requirements.txt;\nuse Git to commit a clean translation workflow.",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "Polyglot Awareness & R Deepening"
     ]
   },
   {
     "objectID": "weeks/week05-polyglot-r-deepening/index.html#connection",
     "href": "weeks/week05-polyglot-r-deepening/index.html#connection",
-    "title": "Python with AI",
+    "title": "Polyglot Awareness & R Deepening",
     "section": "Connection",
-    "text": "Connection\nWeek 4 made small changes reviewable. This week checks whether the same dataset gives the same answer when you move between R and Python. Next week you will turn those summaries into clearer visual explanations.",
+    "text": "Connection\nWeek 4 made small changes reviewable through Git. This week uses that review mindset inside the analysis itself: first build a trusted R result, then translate one step at a time and compare. Next week you will turn those checked summaries into clearer visual explanations.",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "Python with AI"
+      "Polyglot Awareness & R Deepening"
     ]
   },
   {
     "objectID": "weeks/week05-polyglot-r-deepening/index.html#case-study-data-analysis",
     "href": "weeks/week05-polyglot-r-deepening/index.html#case-study-data-analysis",
-    "title": "Python with AI",
+    "title": "Polyglot Awareness & R Deepening",
     "section": "Case Study Data Analysis",
     "text": "Case Study Data Analysis\nThe NHANES Health Equity data spine now supports code-reading, EDA, visualization, and reproducibility checks. Use the cached CSV/RDS for routine class work; a CDC retrieval script exists for advanced users.\n\nCached RDS: examples/nhanes-equity/data/nhanes_equity_v6.rds\nCSV snapshot: examples/nhanes-equity/data/nhanes_equity_v6.csv\nCase-study README: examples/nhanes-equity/README.md\n\nThe default classroom path is to use the cached data so the analysis work is reproducible without internet access.\n\nlibrary(readr)\nlibrary(dplyr)\n\ncandidate_paths &lt;- c(\n  \"examples/nhanes-equity/data/nhanes_equity_v6.csv\",\n  \"../../examples/nhanes-equity/data/nhanes_equity_v6.csv\"\n)\n\nnhanes_path &lt;- candidate_paths[file.exists(candidate_paths)][1]\nif (is.na(nhanes_path)) {\n  stop(\"Could not find examples/nhanes-equity/data/nhanes_equity_v6.csv\")\n}\n\nnhanes_analysis &lt;- read_csv(nhanes_path, show_col_types = FALSE)\n\nnhanes_analysis |&gt;\n  summarise(\n    rows = n(),\n    missing_bmi = sum(is.na(BMI)),\n    missing_income = sum(is.na(IncomeGroup))\n  )\n\n\n  \n\n\n\nnhanes_analysis |&gt;\n  filter(!is.na(BMI), !is.na(IncomeGroup), Age &gt;= 20, Age &lt;= 80) |&gt;\n  group_by(IncomeGroup) |&gt;\n  summarise(\n    n = n(),\n    mean_bmi = round(mean(BMI), 1),\n    .groups = \"drop\"\n  )",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "Python with AI"
+      "Polyglot Awareness & R Deepening"
     ]
   },
   {
-    "objectID": "weeks/week05-polyglot-r-deepening/index.html#in-class-activity",
-    "href": "weeks/week05-polyglot-r-deepening/index.html#in-class-activity",
-    "title": "Python with AI",
-    "section": "In-Class Activity",
-    "text": "In-Class Activity\n\nLoad examples/nhanes-equity/data/nhanes_equity_v6.csv in R and Python.\nCompare row counts and column names across the two languages.\nChoose one summary, such as mean BMI by sex, and check whether R and Python agree.\nTreat any mismatch as an audit prompt: check data types, missing values, and grouping logic before changing code.\n\nStudent output: a parity-check note with row counts, column checks, and one matched R/Python summary. Assignment link: ../../assignments/assignment04-polyglot/README.md.",
+    "objectID": "weeks/week05-polyglot-r-deepening/index.html#r-deepening-studio",
+    "href": "weeks/week05-polyglot-r-deepening/index.html#r-deepening-studio",
+    "title": "Polyglot Awareness & R Deepening",
+    "section": "R Deepening Studio",
+    "text": "R Deepening Studio\nStart in R. Use the NHANES case-study CSV:\nexamples/nhanes-equity/data/nhanes_equity_v6.csv\nIf you are working from the Week 5 folder, the relative path is:\n../../examples/nhanes-equity/data/nhanes_equity_v6.csv\n\nR Pipeline\nlibrary(readr)\nlibrary(dplyr)\n\nnhanes &lt;- read_csv(\"../../examples/nhanes-equity/data/nhanes_equity_v6.csv\")\n\nbmi_by_income &lt;- nhanes |&gt;\n  filter(!is.na(BMI), !is.na(IncomeGroup), !is.na(Gender)) |&gt;\n  group_by(IncomeGroup, Gender) |&gt;\n  summarise(\n    n = n(),\n    mean_bmi = round(mean(BMI), 2),\n    sd_bmi = round(sd(BMI), 2),\n    .groups = \"drop\"\n  ) |&gt;\n  arrange(IncomeGroup, Gender)\n\nbmi_by_income\n\n\nR Function\nsummarise_mean_sd &lt;- function(data, value, group1, group2) {\n  data |&gt;\n    filter(!is.na({{ value }}), !is.na({{ group1 }}), !is.na({{ group2 }})) |&gt;\n    group_by({{ group1 }}, {{ group2 }}) |&gt;\n    summarise(\n      n = n(),\n      mean_value = round(mean({{ value }}), 2),\n      sd_value = round(sd({{ value }}), 2),\n      .groups = \"drop\"\n    ) |&gt;\n    arrange({{ group1 }}, {{ group2 }})\n}\n\nbmi_function_check &lt;- summarise_mean_sd(nhanes, BMI, IncomeGroup, Gender)\nbmi_function_check\nBefore translating, compare the pipeline output and the function output. They should have the same grouping labels and the same number of rows.",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "Python with AI"
+      "Polyglot Awareness & R Deepening"
     ]
   },
   {
-    "objectID": "weeks/week05-polyglot-r-deepening/index.html#python1.qmd-concepts-python-vs-rwhen-and-why",
-    "href": "weeks/week05-polyglot-r-deepening/index.html#python1.qmd-concepts-python-vs-rwhen-and-why",
-    "title": "Python with AI",
-    "section": "python1.qmd Concepts: Python vs R—When and Why?",
-    "text": "python1.qmd Concepts: Python vs R—When and Why?\n\nTwo Languages, One Codespace\nBoth R and Python are first-class citizens in your GitHub Codespace. You are not choosing one forever; you are learning when each is the better tool.\n\n\n\n\n\n\n\n\nStrength\nR\nPython\n\n\n\n\nStatistical modeling & tidyverse-style wrangling\nMature ecosystem (dplyr, ggplot2, lme4)\nPossible, but more verbose\n\n\nMachine learning & deep learning\nGrowing (tidymodels, torch)\nDominant (scikit-learn, tensorflow, pytorch)\n\n\nDashboards\nShiny (Week 8)\nStreamlit, Dash\n\n\nGeneral-purpose scripting & automation\nLess common\nVery common\n\n\n\nBottom line for this course: R remains your primary analysis language. Python is introduced so you can (a) read and adapt Python code you encounter in the wild, (b) leverage Python-only libraries when needed, and (c) demonstrate bilingual fluency in your portfolio.\n\n\nNotebooks vs Scripts\n\nNotebook (.ipynb): Best for exploration, teaching, and narrative analysis. Cells run interactively; output appears inline.\nScript (.py): Best for reusable utilities, automation, and clean code. Runs top-to-bottom.\n\nIn this week’s activities, you will work primarily in a notebook but also create one short .py script to see the difference.",
+    "objectID": "weeks/week05-polyglot-r-deepening/index.html#in-class-activity-r-first-python-second",
+    "href": "weeks/week05-polyglot-r-deepening/index.html#in-class-activity-r-first-python-second",
+    "title": "Polyglot Awareness & R Deepening",
+    "section": "In-Class Activity: R First, Python Second",
+    "text": "In-Class Activity: R First, Python Second\nWork in pairs. One partner reads the R output; the other reads the Python output.\n\nLoad the NHANES CSV in R and Python.\nRecord raw row count, column count, and missing BMI count in both languages.\nProduce mean and SD of BMI by IncomeGroup and Gender in R.\nTranslate the same task to Python/pandas one step at a time.\nFill in a parity table comparing row counts, grouping labels, and rounded summary values.\nIf something does not match, write the likely reason before changing code.\n\nStudent output: a parity-check note with the R pipeline, R function, Python translation, parity table, and a short AI-use note.",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "Python with AI"
+      "Polyglot Awareness & R Deepening"
     ]
   },
   {
-    "objectID": "weeks/week05-polyglot-r-deepening/index.html#python2.qmd-setup-jupyter-in-codespaces",
-    "href": "weeks/week05-polyglot-r-deepening/index.html#python2.qmd-setup-jupyter-in-codespaces",
-    "title": "Python with AI",
-    "section": "python2.qmd Setup: Jupyter in Codespaces",
-    "text": "python2.qmd Setup: Jupyter in Codespaces\n\nCreate and Run a Notebook\n\nNew file: VS Code Explorer → New File → name it translation.ipynb.\nSelect kernel: Notebook toolbar → Select Kernel → choose the recommended Python environment.\nFirst cell: Type print(\"Hello from Python\") and press Shift + Enter.\n\n\n\nThe Variables Pane and Data Viewer\nAfter running a cell that creates a variable, open the Variables pane (notebook toolbar). Double-click any DataFrame to open an “Excel-like” grid view—your best friend for verifying that data loaded correctly.\n\n\n\n\n\n\nTip\n\n\n\nIf notebook features (Variables, Data Viewer) are missing, ensure the Jupyter extension is enabled in your Codespace. Check the Extensions panel (block icon on the left sidebar).",
+    "objectID": "weeks/week05-polyglot-r-deepening/index.html#tutorial-map",
+    "href": "weeks/week05-polyglot-r-deepening/index.html#tutorial-map",
+    "title": "Polyglot Awareness & R Deepening",
+    "section": "Tutorial Map",
+    "text": "Tutorial Map\nUse the child pages in this order:\n\nPython vs. R - When and Why?\nSetting Up Your Python Environment\nPackages and Reproducibility\nCommon Translation Traps\nLoading and Inspecting Health Data\nReading Python Tracebacks\nThe One Step, One Cell AI Workflow\nMixing R and Python\nCreating Reusable Python Scripts\nTracking Your Progress With Git\nProject Proposal Readiness Check\nKnowledge Check\nThe Bilingual Translation Exercise\nR To Python Cheat Sheet\n\nFor the explicit R mastery exercise, use R Deepening and Parity Check.",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "Python with AI"
+      "Polyglot Awareness & R Deepening"
     ]
   },
   {
-    "objectID": "weeks/week05-polyglot-r-deepening/index.html#python3.qmd-packages-and-environment-hygiene",
-    "href": "weeks/week05-polyglot-r-deepening/index.html#python3.qmd-packages-and-environment-hygiene",
-    "title": "Python with AI",
-    "section": "python3.qmd Packages and Environment Hygiene",
-    "text": "python3.qmd Packages and Environment Hygiene\n\nR library() → Python import\n\n\n\n\n\n\n\nR\nPython equivalent\n\n\n\n\nlibrary(dplyr) / tidyverse\nimport pandas as pd\n\n\nlibrary(ggplot2)\nimport seaborn as sns or import matplotlib.pyplot as plt\n\n\nlibrary(readr)\npd.read_csv(...) (built into pandas)\n\n\n\n\n\nWhy requirements.txt Matters\nYour course Codespace comes with core packages pre-installed. But your term project must run in a fresh Codespace. If you add a package, you must record it:\n\nOpen (or create) requirements.txt in your repo root.\nAdd the package name and version:\n\npandas==2.2.0\nseaborn==0.13.2\n\nTo install from this file: the Codespace setup script runs pip install -r requirements.txt automatically on launch.\n\n\n\n\n\n\n\nWarning\n\n\n\nReproducibility rule: Never install packages by running pip install X in the terminal and forgetting about it. Always update requirements.txt. This is the Python equivalent of R’s renv—you will see renv in Week 11.\n\n\n\n\nDocumenting Your Decisions\nWhen you choose a package or approach, add a brief Markdown cell in your notebook explaining why. For example: “Using seaborn here because it produces cleaner default aesthetics for categorical comparisons than matplotlib alone.” This habit satisfies the reproducibility expectation and helps your future self (and your grader).",
+    "objectID": "weeks/week05-polyglot-r-deepening/index.html#assignment-4",
+    "href": "weeks/week05-polyglot-r-deepening/index.html#assignment-4",
+    "title": "Polyglot Awareness & R Deepening",
+    "section": "Assignment 4",
+    "text": "Assignment 4\nComplete Assignment 4: Polyglot Awareness & R Deepening.\nSubmit a repository link on Canvas after committing:\n\nassignments/assignment04-polyglot/submission/polyglot-parity.qmd;\nassignments/assignment04-polyglot/submission/translation.ipynb;\nassignments/assignment04-polyglot/submission/helpers.py.",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "Python with AI"
+      "Polyglot Awareness & R Deepening"
     ]
   },
   {
-    "objectID": "weeks/week05-polyglot-r-deepening/index.html#python4.qmd-translation-traps-what-breaks-when-you-switch-languages",
-    "href": "weeks/week05-polyglot-r-deepening/index.html#python4.qmd-translation-traps-what-breaks-when-you-switch-languages",
-    "title": "Python with AI",
-    "section": "python4.qmd Translation Traps: What Breaks When You Switch Languages",
-    "text": "python4.qmd Translation Traps: What Breaks When You Switch Languages\n\nTrap 1: The Zero-Index\n\nR indexes from 1; Python indexes from 0.\n\nR: my_vec[1] → first element\nPython: my_list[0] → first element\n\nPython slicing is end-exclusive: df.iloc[0:5] returns rows 0–4 (five rows total).\n\nAI Prompt:\n\nTranslate my_vector &lt;- c(10, 20, 30); my_vector[1] to Python. Explain 0-based indexing and why my_list[0:2] returns only two elements.\n\n\n\nTrap 2: The Indentation Trap\n\nR uses {} to define code blocks; Python uses indentation (spaces). Misaligned spaces cause IndentationError.\n\nAI Prompt:\n\nTranslate this R if/else block to Python. Explain how indentation replaces {} and show correct formatting for a Jupyter cell.\n\n\n\nTrap 3: Assignment and Equality\n\nR uses &lt;- for assignment (though = works too); Python uses =.\nBoth use == for comparison, but Python’s None check is is None, not == None.",
+    "objectID": "weeks/week05-polyglot-r-deepening/index.html#knowledge-check",
+    "href": "weeks/week05-polyglot-r-deepening/index.html#knowledge-check",
+    "title": "Polyglot Awareness & R Deepening",
+    "section": "Knowledge Check",
+    "text": "Knowledge Check\nBefore leaving Week 5, answer these:\n\nWhat is one analysis task you would keep in R?\nWhat is one task where Python may be useful?\nWhat are three parity checks you ran?\nWhat did AI help translate, and how did you verify it?\nWhat changed in your Git history from the beginning to the end of the week?",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "Python with AI"
+      "Polyglot Awareness & R Deepening"
     ]
   },
   {
-    "objectID": "weeks/week05-polyglot-r-deepening/index.html#python5.qmd-tutorial-loading-and-viewing-data",
-    "href": "weeks/week05-polyglot-r-deepening/index.html#python5.qmd-tutorial-loading-and-viewing-data",
-    "title": "Python with AI",
-    "section": "python5.qmd Tutorial: Loading and Viewing Data",
-    "text": "python5.qmd Tutorial: Loading and Viewing Data\n\nStep-by-Step\nimport pandas as pd\n\n# Load (relative path!)\ndata = pd.read_csv(\"data/patients.csv\")\n\n# Peek at the first 5 rows\ndata.head()\n\n\nVerify in the Data Viewer\nAfter running the cell above, open the Variables pane → double-click data → check that the columns and row count match what you expect from your R analysis.\nAI Prompt:\n\nI have data/patients.csv in my Codespace. Write the Python pandas code to import it and show the first 5 rows. Also show how to check the number of rows and column names.",
+    "objectID": "weeks/week05-polyglot-r-deepening/r-deepening-parity.html",
+    "href": "weeks/week05-polyglot-r-deepening/r-deepening-parity.html",
+    "title": "23  R Deepening and Parity Check",
+    "section": "",
+    "text": "23.1 Learning Goals\nWeek 5 is polyglot-aware, not Python-first. Your strongest analysis path remains R and the tidyverse. Python enters as a comparison language: it helps you read code from other sources, ask better AI translation questions, and verify that a translated result still means the same thing.\nBy the end of this activity, you should be able to:",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "Python with AI"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>R Deepening and Parity Check</span>"
     ]
   },
   {
-    "objectID": "weeks/week05-polyglot-r-deepening/index.html#python6.qmd-reading-tracebacks-bottom-up",
-    "href": "weeks/week05-polyglot-r-deepening/index.html#python6.qmd-reading-tracebacks-bottom-up",
-    "title": "Python with AI",
-    "section": "python6.qmd Reading Tracebacks (Bottom-Up)",
-    "text": "python6.qmd Reading Tracebacks (Bottom-Up)\nPython errors display a Traceback—a stack of function calls. The most useful information is at the bottom.\n\nExample\n---------------------------------------------------------------------------\nFileNotFoundError                         Traceback (most recent call last)\nCell In[3], line 2\n      1 import pandas as pd\n----&gt; 2 data = pd.read_csv(\"Data/patients.csv\")\n\nFileNotFoundError: [Errno 2] No such file or directory: 'Data/patients.csv'\nReading it: The bottom line tells you the file was not found. The capital “D” in \"Data/\" is the culprit—file paths are case-sensitive on Linux (your Codespace runs Linux).\nAI Prompt:\n\nHere is a Python Traceback from my Codespace: [paste]. Read it bottom-up, explain the error in one sentence, and give corrected code.",
+    "objectID": "weeks/week05-polyglot-r-deepening/r-deepening-parity.html#learning-goals",
+    "href": "weeks/week05-polyglot-r-deepening/r-deepening-parity.html#learning-goals",
+    "title": "23  R Deepening and Parity Check",
+    "section": "",
+    "text": "write a clear R dplyr pipeline for a descriptive health-data summary;\nrefactor a repeated summary into a small R function;\ntranslate the same task to Python/pandas one step at a time;\ncompare outputs across languages using row counts, grouping levels, and summary values;\ndocument any mismatch before deciding which code to change.",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "Python with AI"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>R Deepening and Parity Check</span>"
     ]
   },
   {
-    "objectID": "weeks/week05-polyglot-r-deepening/index.html#python7.qmd-the-ai-workflow-one-step-one-cell",
-    "href": "weeks/week05-polyglot-r-deepening/index.html#python7.qmd-the-ai-workflow-one-step-one-cell",
-    "title": "Python with AI",
-    "section": "python7.qmd The AI Workflow: One Step, One Cell",
-    "text": "python7.qmd The AI Workflow: One Step, One Cell\n\nRule 1: One Step, One Cell\nAsk your AI for one atomic step at a time: load data, then preview, then filter, then summarize. Run and verify each cell before requesting the next. This prevents “Frankenstein code”—a giant block of AI-generated code where one hidden error cascades through everything.\n\n\nRule 2: Reverse Translation\nWhen AI gives you unfamiliar Python, paste it back and ask:\n\nExplain this Python code step by step as if translating it back to R’s dplyr. What does each line do?\n\nThis converts opaque Python into your familiar mental model.\n\n\nRule 3: Parity Audit\nAfter each translated step, compare Python output to your R output:\n\n\n\nCheck\nR\nPython\n\n\n\n\nRow count\nnrow(df)\nlen(df) or df.shape[0]\n\n\nColumn names\nnames(df)\ndf.columns.tolist()\n\n\nUnique levels\nunique(df$col)\ndf['col'].unique()\n\n\nSummary stats\nsummary(df$col)\ndf['col'].describe()\n\n\n\nIf the numbers don’t match, something went wrong in translation. Fix it before moving on.",
+    "objectID": "weeks/week05-polyglot-r-deepening/r-deepening-parity.html#dataset",
+    "href": "weeks/week05-polyglot-r-deepening/r-deepening-parity.html#dataset",
+    "title": "23  R Deepening and Parity Check",
+    "section": "23.2 Dataset",
+    "text": "23.2 Dataset\nUse the NHANES case-study snapshot:\nexamples/nhanes-equity/data/nhanes_equity_v6.csv\nIf you are working from this Week 5 folder, the relative path is:\n../../examples/nhanes-equity/data/nhanes_equity_v6.csv",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "Python with AI"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>R Deepening and Parity Check</span>"
     ]
   },
   {
-    "objectID": "weeks/week05-polyglot-r-deepening/index.html#python8.qmd-interoperability-a-taste-of-reticulate",
-    "href": "weeks/week05-polyglot-r-deepening/index.html#python8.qmd-interoperability-a-taste-of-reticulate",
-    "title": "Python with AI",
-    "section": "python8.qmd Interoperability: A Taste of reticulate",
-    "text": "python8.qmd Interoperability: A Taste of reticulate\n\nWhy Interoperability?\nSometimes you don’t want to rewrite everything. The R package reticulate lets you call Python from an R session (and access Python objects as R objects). This is conceptual exposure—you are not expected to build full projects this way, but you should know it exists.\n\n\nDemo (in an R Quarto document or R console)\nlibrary(reticulate)\n\n# Run a line of Python from R\npy_run_string(\"import pandas as pd; df = pd.read_csv('data/patients.csv')\")\n\n# Access the Python object in R\npy_df &lt;- py$df\nhead(py_df)\n\n\n\n\n\n\nNote\n\n\n\nThis demo runs inside your Codespace where both R and Python are available. You do not need to install anything locally. The goal is awareness: when you encounter a Python-only package in a future project, you know you can call it from R without rewriting your entire pipeline.",
+    "objectID": "weeks/week05-polyglot-r-deepening/r-deepening-parity.html#part-a-r-pipeline",
+    "href": "weeks/week05-polyglot-r-deepening/r-deepening-parity.html#part-a-r-pipeline",
+    "title": "23  R Deepening and Parity Check",
+    "section": "23.3 Part A: R Pipeline",
+    "text": "23.3 Part A: R Pipeline\nStart with R. The goal is a descriptive, unweighted summary of BMI by income group and gender.\nlibrary(readr)\nlibrary(dplyr)\n\nnhanes &lt;- read_csv(\"../../examples/nhanes-equity/data/nhanes_equity_v6.csv\")\n\nr_summary &lt;- nhanes |&gt;\n  filter(!is.na(BMI), !is.na(IncomeGroup), !is.na(Gender)) |&gt;\n  group_by(IncomeGroup, Gender) |&gt;\n  summarise(\n    n = n(),\n    mean_bmi = round(mean(BMI), 2),\n    sd_bmi = round(sd(BMI), 2),\n    .groups = \"drop\"\n  ) |&gt;\n  arrange(IncomeGroup, Gender)\n\nr_summary",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "Python with AI"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>R Deepening and Parity Check</span>"
     ]
   },
   {
-    "objectID": "weeks/week05-polyglot-r-deepening/index.html#python9.qmd-creating-a-python-script-.py",
-    "href": "weeks/week05-polyglot-r-deepening/index.html#python9.qmd-creating-a-python-script-.py",
-    "title": "Python with AI",
-    "section": "python9.qmd Creating a Python Script (.py)",
-    "text": "python9.qmd Creating a Python Script (.py)\nNot everything belongs in a notebook. When you have a reusable utility (e.g., a data-cleaning function), a .py script is cleaner.\n\nWalkthrough\n\nIn VS Code Explorer, create a new file: helpers.py.\nWrite a simple function:\n\nimport pandas as pd\n\ndef load_and_preview(filepath, n_rows=5):\n    \"\"\"Load a CSV and return the first n rows.\"\"\"\n    df = pd.read_csv(filepath)\n    print(f\"Loaded {len(df)} rows, {len(df.columns)} columns\")\n    return df.head(n_rows)\n\nIn your notebook, import and use it:\n\nfrom helpers import load_and_preview\n\npreview = load_and_preview(\"data/patients.csv\")\npreview\n\nStage and commit both files with a descriptive message.\n\n\n\n\n\n\n\nTip\n\n\n\nWhen to use which: Notebook for exploratory analysis and narrative. Script for functions you will reuse across notebooks or projects.",
+    "objectID": "weeks/week05-polyglot-r-deepening/r-deepening-parity.html#part-b-r-function",
+    "href": "weeks/week05-polyglot-r-deepening/r-deepening-parity.html#part-b-r-function",
+    "title": "23  R Deepening and Parity Check",
+    "section": "23.4 Part B: R Function",
+    "text": "23.4 Part B: R Function\nRefactor the summary so the value and grouping variables are easy to change later.\nsummarise_mean_sd &lt;- function(data, value, group1, group2) {\n  data |&gt;\n    filter(!is.na({{ value }}), !is.na({{ group1 }}), !is.na({{ group2 }})) |&gt;\n    group_by({{ group1 }}, {{ group2 }}) |&gt;\n    summarise(\n      n = n(),\n      mean_value = round(mean({{ value }}), 2),\n      sd_value = round(sd({{ value }}), 2),\n      .groups = \"drop\"\n    ) |&gt;\n    arrange({{ group1 }}, {{ group2 }})\n}\n\nr_function_summary &lt;- summarise_mean_sd(nhanes, BMI, IncomeGroup, Gender)\nr_function_summary\nBefore moving to Python, check that the function output has the same number of rows and the same grouping labels as the original pipeline.",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "Python with AI"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>R Deepening and Parity Check</span>"
     ]
   },
   {
-    "objectID": "weeks/week05-polyglot-r-deepening/index.html#python10.qmd-git-integration-track-your-translations",
-    "href": "weeks/week05-polyglot-r-deepening/index.html#python10.qmd-git-integration-track-your-translations",
-    "title": "Python with AI",
-    "section": "python10.qmd Git Integration: Track Your Translations",
-    "text": "python10.qmd Git Integration: Track Your Translations\nApply your Week 4 skills:\n\nAfter completing each major translation step, stage and commit with a meaningful message.\nUse AI to draft commit messages from your diffs (Week 4, git6b.qmd).\nIf AI-generated code breaks your notebook badly, use Discard Changes (curved arrow in Source Control) to revert to your last commit.\n\n\n\n\n\n\n\nWarning\n\n\n\nJupyter notebooks and Git: .ipynb files contain cell outputs (images, tables) in their JSON. This makes diffs noisy. Consider clearing outputs before committing: Command Palette → Notebook: Clear All Outputs → then stage and commit. This keeps your diffs readable.",
+    "objectID": "weeks/week05-polyglot-r-deepening/r-deepening-parity.html#part-c-python-translation",
+    "href": "weeks/week05-polyglot-r-deepening/r-deepening-parity.html#part-c-python-translation",
+    "title": "23  R Deepening and Parity Check",
+    "section": "23.5 Part C: Python Translation",
+    "text": "23.5 Part C: Python Translation\nTranslate one step at a time. Do not ask AI for a full script until you have verified each cell.\nimport pandas as pd\n\nnhanes = pd.read_csv(\"../../examples/nhanes-equity/data/nhanes_equity_v6.csv\")\n\npy_summary = (\n    nhanes\n    .dropna(subset=[\"BMI\", \"IncomeGroup\", \"Gender\"])\n    .groupby([\"IncomeGroup\", \"Gender\"], as_index=False)\n    .agg(\n        n=(\"BMI\", \"size\"),\n        mean_bmi=(\"BMI\", \"mean\"),\n        sd_bmi=(\"BMI\", \"std\")\n    )\n    .sort_values([\"IncomeGroup\", \"Gender\"])\n)\n\npy_summary[\"mean_bmi\"] = py_summary[\"mean_bmi\"].round(2)\npy_summary[\"sd_bmi\"] = py_summary[\"sd_bmi\"].round(2)\n\npy_summary",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "Python with AI"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>R Deepening and Parity Check</span>"
     ]
   },
   {
-    "objectID": "weeks/week05-polyglot-r-deepening/index.html#python11.qmd-term-project-milestone-1",
-    "href": "weeks/week05-polyglot-r-deepening/index.html#python11.qmd-term-project-milestone-1",
-    "title": "Python with AI",
-    "section": "python11.qmd Term Project: Milestone 1",
-    "text": "python11.qmd Term Project: Milestone 1\nDue this Friday: Submit your project proposal on Canvas.\nYour proposal should include:\n\nResearch question: A clear, focused question about health data.\nData source: Which dataset you will use (e.g., NHANES, a Kaggle health dataset). Check that it is accessible and appropriately sized.\nFeasibility check: Can you load and preview the data in a Codespace? (Try it before submitting.)\nPlanned approach: A brief sketch of what analyses and visualizations you envision.\n\n\n\n\n\n\n\nTip\n\n\n\nUse what you learned this week: load your candidate dataset in both R and Python to check that it works. This early check prevents surprises later.",
+    "objectID": "weeks/week05-polyglot-r-deepening/r-deepening-parity.html#part-d-parity-audit",
+    "href": "weeks/week05-polyglot-r-deepening/r-deepening-parity.html#part-d-parity-audit",
+    "title": "23  R Deepening and Parity Check",
+    "section": "23.6 Part D: Parity Audit",
+    "text": "23.6 Part D: Parity Audit\nRecord the following checks in a short Quarto note:\n\n\n\n\n\n\n\n\n\nCheck\nR command\nPython command\nWhat to record\n\n\n\n\nRaw row count\nnrow(nhanes)\nlen(nhanes)\nSame number of rows\n\n\nColumn names\nnames(nhanes)\nnhanes.columns.tolist()\nSame expected variables\n\n\nAnalysis rows after missingness filter\nnrow(filter(nhanes, !is.na(BMI), !is.na(IncomeGroup), !is.na(Gender)))\nlen(nhanes.dropna(subset=[\"BMI\", \"IncomeGroup\", \"Gender\"]))\nSame filtered row count\n\n\nGroup count\nnrow(r_summary)\nlen(py_summary)\nSame number of grouped rows\n\n\nSummary values\ninspect mean_bmi and sd_bmi\ninspect mean_bmi and sd_bmi\nValues match after rounding",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "Python with AI"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>R Deepening and Parity Check</span>"
     ]
   },
   {
-    "objectID": "weeks/week05-polyglot-r-deepening/index.html#python12.qmd-knowledge-check",
-    "href": "weeks/week05-polyglot-r-deepening/index.html#python12.qmd-knowledge-check",
-    "title": "Python with AI",
-    "section": "python12.qmd Knowledge Check",
-    "text": "python12.qmd Knowledge Check\n\nName one scenario where you would choose Python over R, and one where R is stronger.\nWhat is the difference between a .ipynb notebook and a .py script?\nWhy does my_list[1] in Python return the second element?\nHow do you open the Data Viewer for a DataFrame in VS Code?\nWhat is requirements.txt and why does it matter for reproducibility?\nWhat does reticulate allow you to do?\nWhy should you clear notebook outputs before committing?\nWhat is the “One Step, One Cell” rule, and what problem does it prevent?",
+    "objectID": "weeks/week05-polyglot-r-deepening/r-deepening-parity.html#ai-audit-prompt",
+    "href": "weeks/week05-polyglot-r-deepening/r-deepening-parity.html#ai-audit-prompt",
+    "title": "23  R Deepening and Parity Check",
+    "section": "23.7 AI Audit Prompt",
+    "text": "23.7 AI Audit Prompt\nUse this prompt only after you have a working R result:\n\nTranslate this R dplyr pipeline into Python/pandas one step at a time. For each step, explain the equivalent Python operation, the output I should inspect, and the parity check I should run against my R result. Do not combine steps or add new analysis choices.",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "Python with AI"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>R Deepening and Parity Check</span>"
     ]
   },
   {
-    "objectID": "weeks/week05-polyglot-r-deepening/index.html#python13.qmd-practice-exercise-the-bilingual-translation",
-    "href": "weeks/week05-polyglot-r-deepening/index.html#python13.qmd-practice-exercise-the-bilingual-translation",
-    "title": "Python with AI",
-    "section": "python13.qmd Practice Exercise: The Bilingual Translation",
-    "text": "python13.qmd Practice Exercise: The Bilingual Translation\nTask: Create a Python version of your Week 3 R analysis inside your Codespace.\n\nWorkflow\n\nCreate translation.ipynb and select the Python kernel.\nUse your LLM to translate your R steps to Python (pandas) one cell at a time.\nAfter each cell, verify output using the Variables / Data Viewer and run parity checks (row count, column names, summary stats) against your R results.\nExtract at least one reusable function into a helpers.py script. Import and use it in your notebook.\nAdd a Markdown cell at the top documenting: which AI model you used, and any decisions you made (e.g., “Used seaborn instead of matplotlib for cleaner default bar charts”).\nClear notebook outputs (Command Palette → Notebook: Clear All Outputs).\nGit: Stage both files, write a professional commit message (use AI to draft it from the diff), ✔ Commit, then Sync Changes.",
+    "objectID": "weeks/week05-polyglot-r-deepening/r-deepening-parity.html#student-output",
+    "href": "weeks/week05-polyglot-r-deepening/r-deepening-parity.html#student-output",
+    "title": "23  R Deepening and Parity Check",
+    "section": "23.8 Student Output",
+    "text": "23.8 Student Output\nSubmit a short note with:\n\nthe R pipeline;\nthe R function;\nthe Python translation;\na parity table showing the checks above;\ntwo sentences explaining any mismatch or confirming that the outputs agree.",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "Python with AI"
-    ]
-  },
-  {
-    "objectID": "weeks/week05-polyglot-r-deepening/index.html#python14.qmd-quick-reference",
-    "href": "weeks/week05-polyglot-r-deepening/index.html#python14.qmd-quick-reference",
-    "title": "Python with AI",
-    "section": "python14.qmd Quick Reference",
-    "text": "python14.qmd Quick Reference\n\n\n\n\n\n\n\n\nR\nPython\nNotes\n\n\n\n\nlibrary(dplyr)\nimport pandas as pd\nLoad data manipulation library\n\n\nread.csv(\"data/f.csv\")\npd.read_csv(\"data/f.csv\")\nAlways use relative paths\n\n\nhead(df)\ndf.head()\nFirst 5 rows\n\n\nnrow(df)\nlen(df)\nRow count\n\n\nnames(df)\ndf.columns.tolist()\nColumn names\n\n\ndf$col\ndf['col']\nAccess a column\n\n\nfilter(df, age &gt; 65)\ndf[df['age'] &gt; 65]\nRow filter\n\n\nmutate(df, bmi = wt/ht^2)\ndf['bmi'] = df['wt'] / df['ht']**2\nNew column\n\n\nsummary(df$col)\ndf['col'].describe()\nSummary statistics\n\n\nunique(df$col)\ndf['col'].unique()\nUnique values\n\n\nggplot(df, aes(x, y)) + geom_point()\nsns.scatterplot(data=df, x='x', y='y')\nScatter plot",
-    "crumbs": [
-      "Week 5: Polyglot Awareness & R Deepening",
-      "Python with AI"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>R Deepening and Parity Check</span>"
     ]
   },
   {
     "objectID": "weeks/week05-polyglot-r-deepening/python01-when-and-why.html",
     "href": "weeks/week05-polyglot-r-deepening/python01-when-and-why.html",
-    "title": "23  Tutorial 1: Python vs. R - When and Why?",
+    "title": "24  Tutorial 1: Python vs. R - When and Why?",
     "section": "",
-    "text": "23.1 Overview\nIn the health sciences, you don’t need to choose one language forever; you are learning when each is the better tool for the job. While R remains your primary language for statistical analysis, Python is essential for machine learning and general-purpose automation.",
+    "text": "24.1 The Course Position\nR remains the core language for required analysis in this course. Python is introduced so you can read short Python examples, translate small workflows with AI assistance, and recognize when Python may be useful in a health data project.\nYou are not choosing one language forever. You are learning how to move carefully between them.",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Tutorial 1: Python vs. R - When and Why?</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Tutorial 1: Python vs. R - When and Why?</span>"
     ]
   },
   {
-    "objectID": "weeks/week05-polyglot-r-deepening/python01-when-and-why.html#overview",
-    "href": "weeks/week05-polyglot-r-deepening/python01-when-and-why.html#overview",
-    "title": "23  Tutorial 1: Python vs. R - When and Why?",
-    "section": "",
-    "text": "23.1.1 Two Languages, One Codespace\nBoth R and Python are citizens in your GitHub Codespace. You are learning “bilingual fluency” to: 1. Read and adapt Python code found in research papers. 2. Leverage Python-only libraries for deep learning. 3. Automate repetitive tasks with general-purpose scripting.\n\n\n\n\n\n\n\n\nStrength\nR\nPython\n\n\n\n\nStats & Wrangling\nMature (dplyr, ggplot2)\nPossible, but still growing\n\n\nMachine Learning\nGrowing (tidymodels)\nDominant (scikit-learn)\n\n\nAutomation\nLess common\nVery common\n\n\n\n\n\n23.1.2 Notebooks vs. Scripts\n\nNotebooks (.ipynb): Best for exploration and teaching where output appears inline.\n\nScripts (.py): Best for reusable utilities and automation.",
+    "objectID": "weeks/week05-polyglot-r-deepening/python01-when-and-why.html#strengths-at-a-glance",
+    "href": "weeks/week05-polyglot-r-deepening/python01-when-and-why.html#strengths-at-a-glance",
+    "title": "24  Tutorial 1: Python vs. R - When and Why?",
+    "section": "24.2 Strengths At A Glance",
+    "text": "24.2 Strengths At A Glance\n\n\n\n\n\n\n\n\nTask\nR is often strongest for\nPython is often strongest for\n\n\n\n\nDescriptive epidemiology\ntidyverse, survey workflows, reports\npossible with pandas, but often more verbose\n\n\nVisualization\nggplot2, plotly, Quarto integration\nseaborn, matplotlib, interactive web libraries\n\n\nMachine learning\ntidymodels, torch\nscikit-learn, tensorflow, pytorch\n\n\nAutomation\nproject scripts and reports\ngeneral-purpose scripting and APIs\n\n\nCommunication\nQuarto reports, slides, dashboards\nweb apps, APIs, automation, notebooks",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Tutorial 1: Python vs. R - When and Why?</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Tutorial 1: Python vs. R - When and Why?</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python01-when-and-why.html#notebooks-vs.-scripts",
+    "href": "weeks/week05-polyglot-r-deepening/python01-when-and-why.html#notebooks-vs.-scripts",
+    "title": "24  Tutorial 1: Python vs. R - When and Why?",
+    "section": "24.3 Notebooks vs. Scripts",
+    "text": "24.3 Notebooks vs. Scripts\n\nA notebook (.ipynb) is useful for exploration, teaching, and step-by-step AI translation checks.\nA script (.py) is useful for reusable functions and automation.\nA Quarto document (.qmd) is best when your analysis needs narrative, code, figures, citations, and a rendered final product.",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Tutorial 1: Python vs. R - When and Why?</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python01-when-and-why.html#check-your-understanding",
+    "href": "weeks/week05-polyglot-r-deepening/python01-when-and-why.html#check-your-understanding",
+    "title": "24  Tutorial 1: Python vs. R - When and Why?",
+    "section": "24.4 Check Your Understanding",
+    "text": "24.4 Check Your Understanding\nWrite two sentences:\n\nOne task where you would stay in R.\nOne task where Python might be worth considering.",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Tutorial 1: Python vs. R - When and Why?</span>"
     ]
   },
   {
     "objectID": "weeks/week05-polyglot-r-deepening/python02-environment.html",
     "href": "weeks/week05-polyglot-r-deepening/python02-environment.html",
-    "title": "24  Tutorial 2: Setting Up Your Python Environment",
+    "title": "25  Tutorial 2: Setting Up Your Python Environment",
     "section": "",
-    "text": "24.1 Creating Your First Notebook\nFollow these steps to set up your environment in your GitHub Codespace:",
+    "text": "25.1 Create A Notebook\nIn your GitHub Codespace:",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Tutorial 2: Setting Up Your Python Environment</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Tutorial 2: Setting Up Your Python Environment</span>"
     ]
   },
   {
-    "objectID": "weeks/week05-polyglot-r-deepening/python02-environment.html#creating-your-first-notebook",
-    "href": "weeks/week05-polyglot-r-deepening/python02-environment.html#creating-your-first-notebook",
-    "title": "24  Tutorial 2: Setting Up Your Python Environment",
+    "objectID": "weeks/week05-polyglot-r-deepening/python02-environment.html#create-a-notebook",
+    "href": "weeks/week05-polyglot-r-deepening/python02-environment.html#create-a-notebook",
+    "title": "25  Tutorial 2: Setting Up Your Python Environment",
     "section": "",
-    "text": "New File: In the VS Code Explorer, click the New File icon and name it translation.ipynb.\n\n\nSelect Kernel: Look at the notebook toolbar in the top right. Click Select Kernel and choose the recommended Python 3.x environment.\n\nRun Code: Build print(\"Hello from Python! My workspace is ready.\") Press Shift + Enter to run it.",
+    "text": "Open the Week 5 folder.\nCreate a new file named translation.ipynb.\nSelect the recommended Python kernel when VS Code asks.\nRun this first cell:\n\nprint(\"Hello from Python. My Week 5 notebook is running.\")",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Tutorial 2: Setting Up Your Python Environment</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Tutorial 2: Setting Up Your Python Environment</span>"
     ]
   },
   {
-    "objectID": "weeks/week05-polyglot-r-deepening/python02-environment.html#the-variables-pane",
-    "href": "weeks/week05-polyglot-r-deepening/python02-environment.html#the-variables-pane",
-    "title": "24  Tutorial 2: Setting Up Your Python Environment",
-    "section": "24.2 The Variables Pane",
-    "text": "24.2 The Variables Pane\nUnlike RStudio, which shows variables by default, you must toggle the view in VS Code. 1. Click the Variables button in the notebook toolbar. 2. Run a cell that creates a variable (e.g., age = 25). 3. Observe age appearing in the pane at the bottom.",
+    "objectID": "weeks/week05-polyglot-r-deepening/python02-environment.html#use-the-variables-pane",
+    "href": "weeks/week05-polyglot-r-deepening/python02-environment.html#use-the-variables-pane",
+    "title": "25  Tutorial 2: Setting Up Your Python Environment",
+    "section": "25.2 Use The Variables Pane",
+    "text": "25.2 Use The Variables Pane\nThe Variables pane helps you audit Python objects the way the Environment pane helps you audit R objects.\nRun this cell:\nage = 25\ncourse = \"HDSx\"\nThen open the notebook Variables pane and check that both variables appear.",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Tutorial 2: Setting Up Your Python Environment</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Tutorial 2: Setting Up Your Python Environment</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python02-environment.html#load-a-tiny-dataframe",
+    "href": "weeks/week05-polyglot-r-deepening/python02-environment.html#load-a-tiny-dataframe",
+    "title": "25  Tutorial 2: Setting Up Your Python Environment",
+    "section": "25.3 Load A Tiny DataFrame",
+    "text": "25.3 Load A Tiny DataFrame\nimport pandas as pd\n\ndemo = pd.DataFrame({\n    \"group\": [\"A\", \"A\", \"B\"],\n    \"value\": [10, 15, 20]\n})\n\ndemo\nDouble-click demo in the Variables pane to open the Data Viewer. This is where you will inspect row counts, column names, and translated outputs later in the week.",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Tutorial 2: Setting Up Your Python Environment</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python02-environment.html#common-fixes",
+    "href": "weeks/week05-polyglot-r-deepening/python02-environment.html#common-fixes",
+    "title": "25  Tutorial 2: Setting Up Your Python Environment",
+    "section": "25.4 Common Fixes",
+    "text": "25.4 Common Fixes\n\n\n\n\n\n\n\nProblem\nFirst thing to try\n\n\n\n\nNo kernel appears\nWait for the Codespace to finish starting, then reload the window\n\n\nVariables pane is missing\nCheck that the Jupyter extension is enabled\n\n\nNotebook cell will not run\nSelect a Python kernel from the notebook toolbar\n\n\nPackage import fails\nCheck whether the package belongs in requirements.txt",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Tutorial 2: Setting Up Your Python Environment</span>"
     ]
   },
   {
     "objectID": "weeks/week05-polyglot-r-deepening/python03-packages-reproducibility.html",
     "href": "weeks/week05-polyglot-r-deepening/python03-packages-reproducibility.html",
-    "title": "25  Tutorial 3: Packages and Reproducibility",
+    "title": "26  Tutorial 3: Packages and Reproducibility",
     "section": "",
-    "text": "25.1 R library() vs. Python import\nIn Python, we “import” packages and often give them nicknames (aliases).",
+    "text": "26.1 R library() vs. Python import\nBoth languages require you to load packages before using them.",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Tutorial 3: Packages and Reproducibility</span>"
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Tutorial 3: Packages and Reproducibility</span>"
     ]
   },
   {
     "objectID": "weeks/week05-polyglot-r-deepening/python03-packages-reproducibility.html#r-library-vs.-python-import",
     "href": "weeks/week05-polyglot-r-deepening/python03-packages-reproducibility.html#r-library-vs.-python-import",
-    "title": "25  Tutorial 3: Packages and Reproducibility",
+    "title": "26  Tutorial 3: Packages and Reproducibility",
     "section": "",
-    "text": "R\nPython Equivalent\nPurpose\n\n\n\n\nlibrary(dplyr)\nimport pandas as pd\nData wrangling\n\n\nlibrary(ggplot2)\nimport seaborn as sns\nVisualization",
+    "text": "R\nPython\nPurpose\n\n\n\n\nlibrary(readr)\nimport pandas as pd\nread CSV files\n\n\nlibrary(dplyr)\nimport pandas as pd\nfilter, group, and summarise data\n\n\nlibrary(ggplot2)\nimport seaborn as sns\ncreate plots\n\n\nlibrary(reticulate)\nnot applicable\ncall Python from R",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Tutorial 3: Packages and Reproducibility</span>"
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Tutorial 3: Packages and Reproducibility</span>"
     ]
   },
   {
-    "objectID": "weeks/week05-polyglot-r-deepening/python03-packages-reproducibility.html#managing-requirements.txt",
-    "href": "weeks/week05-polyglot-r-deepening/python03-packages-reproducibility.html#managing-requirements.txt",
-    "title": "25  Tutorial 3: Packages and Reproducibility",
-    "section": "25.2 Managing requirements.txt",
-    "text": "25.2 Managing requirements.txt\nYour project must be reproducible. If you use a package, you must record it in a file called requirements.txt.\n\nCreate a file named requirements.txt in your root folder.\n\nAdd:\npandas==2.2.0\nseaborn==0.13.2\n\nCertain versions of these packages behave differently. By explicitly setting your versions, you can make sure you code will have reproducible results regardless of who is running it.\nThe Rule: Never just pip install (method on installing packages, which you wouldn’t have to deal with in this class but perhaps the future) in the terminal and forget it; always update this file to document your steps.",
+    "objectID": "weeks/week05-polyglot-r-deepening/python03-packages-reproducibility.html#why-requirements.txt-matters",
+    "href": "weeks/week05-polyglot-r-deepening/python03-packages-reproducibility.html#why-requirements.txt-matters",
+    "title": "26  Tutorial 3: Packages and Reproducibility",
+    "section": "26.2 Why requirements.txt Matters",
+    "text": "26.2 Why requirements.txt Matters\nPython projects record package dependencies in requirements.txt. This is the Python-side equivalent of saying, “Here is what another person must install before my code will run.”\nFor this week, a minimal file is enough:\npandas\nIf you also create a plot in Python, add:\nseaborn\nmatplotlib",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Tutorial 3: Packages and Reproducibility</span>"
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Tutorial 3: Packages and Reproducibility</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python03-packages-reproducibility.html#course-rule",
+    "href": "weeks/week05-polyglot-r-deepening/python03-packages-reproducibility.html#course-rule",
+    "title": "26  Tutorial 3: Packages and Reproducibility",
+    "section": "26.3 Course Rule",
+    "text": "26.3 Course Rule\nIf you install or rely on a Python package for submitted work, record it in requirements.txt. Do not leave package installation as an undocumented memory from your current Codespace.",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Tutorial 3: Packages and Reproducibility</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python03-packages-reproducibility.html#r-connection",
+    "href": "weeks/week05-polyglot-r-deepening/python03-packages-reproducibility.html#r-connection",
+    "title": "26  Tutorial 3: Packages and Reproducibility",
+    "section": "26.4 R Connection",
+    "text": "26.4 R Connection\nR reproducibility is handled through project documentation and, later in the course, renv. Week 5 is a bridge: you should be able to explain where dependencies are recorded in both languages.",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Tutorial 3: Packages and Reproducibility</span>"
     ]
   },
   {
     "objectID": "weeks/week05-polyglot-r-deepening/python04-translation-traps.html",
     "href": "weeks/week05-polyglot-r-deepening/python04-translation-traps.html",
-    "title": "26  Tutorial 4: Common Translation Traps",
+    "title": "27  Tutorial 4: Common Translation Traps",
     "section": "",
-    "text": "26.1 Trap 1: The Zero-Index\nR starts counting at 1. Python starts counting at 0.\nR: data[1] is the first item. Note data[0] will return nothing\nPython: data[0] is the first item.\nSlicing: df.iloc[0:5] returns rows 0, 1, 2, 3, and 4 (5 rows total).",
+    "text": "27.1 Trap 1: Indexing\nAI translation is useful, but it often hides small language differences. These are the traps to check first.\nR starts counting at 1. Python starts counting at 0.\nPython slices are end-exclusive:\nThis returns the first two values, not the first three.",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Tutorial 4: Common Translation Traps</span>"
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Tutorial 4: Common Translation Traps</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python04-translation-traps.html#trap-1-indexing",
+    "href": "weeks/week05-polyglot-r-deepening/python04-translation-traps.html#trap-1-indexing",
+    "title": "27  Tutorial 4: Common Translation Traps",
+    "section": "",
+    "text": "values &lt;- c(10, 20, 30)\nvalues[1]\nvalues = [10, 20, 30]\nvalues[0]\n\nvalues[0:2]",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Tutorial 4: Common Translation Traps</span>"
     ]
   },
   {
     "objectID": "weeks/week05-polyglot-r-deepening/python04-translation-traps.html#trap-2-indentation",
     "href": "weeks/week05-polyglot-r-deepening/python04-translation-traps.html#trap-2-indentation",
-    "title": "26  Tutorial 4: Common Translation Traps",
-    "section": "26.2 Trap 2: Indentation",
-    "text": "26.2 Trap 2: Indentation\nPython uses indentation (spaces) instead of curly braces {} to group code. Misaligned spaces will cause an IndentationError.",
+    "title": "27  Tutorial 4: Common Translation Traps",
+    "section": "27.2 Trap 2: Indentation",
+    "text": "27.2 Trap 2: Indentation\nR uses braces to mark code blocks. Python uses indentation.\nif (age &gt;= 20) {\n  \"adult\"\n} else {\n  \"not in adult cohort\"\n}\nif age &gt;= 20:\n    \"adult\"\nelse:\n    \"not in adult cohort\"\nIf Python indentation is inconsistent, the code may fail or run with a different meaning.",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Tutorial 4: Common Translation Traps</span>"
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Tutorial 4: Common Translation Traps</span>"
     ]
   },
   {
-    "objectID": "weeks/week05-polyglot-r-deepening/python04-translation-traps.html#trap-3-assignment",
-    "href": "weeks/week05-polyglot-r-deepening/python04-translation-traps.html#trap-3-assignment",
-    "title": "26  Tutorial 4: Common Translation Traps",
-    "section": "26.3 Trap 3: Assignment",
-    "text": "26.3 Trap 3: Assignment\n\nR: Uses &lt;- (or =).\nPython: Uses = exclusively for assignment.",
+    "objectID": "weeks/week05-polyglot-r-deepening/python04-translation-traps.html#trap-3-assignment-vs.-comparison",
+    "href": "weeks/week05-polyglot-r-deepening/python04-translation-traps.html#trap-3-assignment-vs.-comparison",
+    "title": "27  Tutorial 4: Common Translation Traps",
+    "section": "27.3 Trap 3: Assignment vs. Comparison",
+    "text": "27.3 Trap 3: Assignment vs. Comparison\n\n\n\nMeaning\nR\nPython\n\n\n\n\nassign a value\nx &lt;- 10\nx = 10\n\n\ncompare values\nx == 10\nx == 10\n\n\nmissing/null check\nis.na(x)\npd.isna(x) or x is None",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Tutorial 4: Common Translation Traps</span>"
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Tutorial 4: Common Translation Traps</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python04-translation-traps.html#trap-4-missing-values",
+    "href": "weeks/week05-polyglot-r-deepening/python04-translation-traps.html#trap-4-missing-values",
+    "title": "27  Tutorial 4: Common Translation Traps",
+    "section": "27.4 Trap 4: Missing Values",
+    "text": "27.4 Trap 4: Missing Values\nR and Python both have missing values, but they are handled by different functions. Always check missingness before comparing summaries.\nsum(is.na(nhanes$BMI))\nnhanes[\"BMI\"].isna().sum()",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Tutorial 4: Common Translation Traps</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python04-translation-traps.html#audit-habit",
+    "href": "weeks/week05-polyglot-r-deepening/python04-translation-traps.html#audit-habit",
+    "title": "27  Tutorial 4: Common Translation Traps",
+    "section": "27.5 Audit Habit",
+    "text": "27.5 Audit Habit\nWhen a translated result differs, check indexing, indentation, assignment/comparison, missingness handling, and grouping variables before assuming one language is “wrong.”",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Tutorial 4: Common Translation Traps</span>"
     ]
   },
   {
     "objectID": "weeks/week05-polyglot-r-deepening/python05-load-inspect-data.html",
     "href": "weeks/week05-polyglot-r-deepening/python05-load-inspect-data.html",
-    "title": "27  Tutorial 5: Loading and Inspecting Health Data",
+    "title": "28  Tutorial 5: Loading and Inspecting Health Data",
     "section": "",
-    "text": "27.1 Loading Data with Pandas\nIn your notebook, use the following code to load your health data:\nimport pandas as pd\ndata = pd.read_csv(\"data/patients.csv\")\nThe code below allows you to view the dataset\ndata.head()\n\n\n\n\n\n\n\n\nday\ndate\nstate.in_hospital.in\nstate.in_hospital.out\nstate.in_hospital.todate\nstate.in_hospital\nstate.in_hospital.covid\nstate.redzone\nstate.reg\nstate.reg.covid\n...\nstate.pbor.care.todate\nstate.pbor.care\nstate.pbor.deceased.care\nstate.pbor.deceased.care.todate\nstate.pbid.care.in\nstate.pbid.care.out\nstate.pbid.care.todate\nstate.pbid.care\nstate.pbid.deceased.care\nstate.pbid.deceased.care.todate\n\n\n\n\n0\n1\n2020-03-04\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\n...\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\n\n\n1\n2\n2020-03-05\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\n...\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\n\n\n2\n3\n2020-03-06\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\n...\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\n\n\n3\n4\n2020-03-07\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\n...\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\n\n\n4\n5\n2020-03-08\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\n...\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\n\n\n\n\n5 rows × 443 columns",
+    "text": "28.1 Load The NHANES Snapshot\nIn translation.ipynb, load the same CSV used in the R example:",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Tutorial 5: Loading and Inspecting Health Data</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Tutorial 5: Loading and Inspecting Health Data</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python05-load-inspect-data.html#load-the-nhanes-snapshot",
+    "href": "weeks/week05-polyglot-r-deepening/python05-load-inspect-data.html#load-the-nhanes-snapshot",
+    "title": "28  Tutorial 5: Loading and Inspecting Health Data",
+    "section": "",
+    "text": "import pandas as pd\n\nnhanes = pd.read_csv(\"../../examples/nhanes-equity/data/nhanes_equity_v6.csv\")",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Tutorial 5: Loading and Inspecting Health Data</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python05-load-inspect-data.html#inspect-before-summarising",
+    "href": "weeks/week05-polyglot-r-deepening/python05-load-inspect-data.html#inspect-before-summarising",
+    "title": "28  Tutorial 5: Loading and Inspecting Health Data",
+    "section": "28.2 Inspect Before Summarising",
+    "text": "28.2 Inspect Before Summarising\nnhanes.head()\nnhanes.shape\nnhanes.columns.tolist()\nnhanes[[\"BMI\", \"IncomeGroup\", \"Gender\"]].isna().sum()",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Tutorial 5: Loading and Inspecting Health Data</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python05-load-inspect-data.html#compare-to-r",
+    "href": "weeks/week05-polyglot-r-deepening/python05-load-inspect-data.html#compare-to-r",
+    "title": "28  Tutorial 5: Loading and Inspecting Health Data",
+    "section": "28.3 Compare To R",
+    "text": "28.3 Compare To R\n\n\n\n\n\n\n\n\nQuestion\nR\nPython\n\n\n\n\nHow many rows?\nnrow(nhanes)\nlen(nhanes)\n\n\nHow many columns?\nncol(nhanes)\nnhanes.shape[1]\n\n\nWhat are the column names?\nnames(nhanes)\nnhanes.columns.tolist()\n\n\nHow many missing BMI values?\nsum(is.na(nhanes$BMI))\nnhanes[\"BMI\"].isna().sum()",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Tutorial 5: Loading and Inspecting Health Data</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python05-load-inspect-data.html#student-check",
+    "href": "weeks/week05-polyglot-r-deepening/python05-load-inspect-data.html#student-check",
+    "title": "28  Tutorial 5: Loading and Inspecting Health Data",
+    "section": "28.4 Student Check",
+    "text": "28.4 Student Check\nBefore asking AI for any transformation, write down the raw row count, column count, and missingness count for BMI.",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Tutorial 5: Loading and Inspecting Health Data</span>"
     ]
   },
   {
     "objectID": "weeks/week05-polyglot-r-deepening/python06-tracebacks.html",
     "href": "weeks/week05-polyglot-r-deepening/python06-tracebacks.html",
-    "title": "28  Reading Tracebacks",
+    "title": "29  Tutorial 6: Reading Python Tracebacks",
     "section": "",
-    "text": "28.1 How to Read Errors\nPython errors (Tracebacks) display a stack of calls.",
+    "text": "29.1 The Bottom Line Is Usually At The Bottom\nPython errors often print several lines called a traceback. Read from the bottom upward:\nThis tells you the immediate problem: Python cannot find the file at the path you gave it.",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Reading Tracebacks</span>"
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Tutorial 6: Reading Python Tracebacks</span>"
     ]
   },
   {
-    "objectID": "weeks/week05-polyglot-r-deepening/python06-tracebacks.html#how-to-read-errors",
-    "href": "weeks/week05-polyglot-r-deepening/python06-tracebacks.html#how-to-read-errors",
-    "title": "28  Reading Tracebacks",
+    "objectID": "weeks/week05-polyglot-r-deepening/python06-tracebacks.html#the-bottom-line-is-usually-at-the-bottom",
+    "href": "weeks/week05-polyglot-r-deepening/python06-tracebacks.html#the-bottom-line-is-usually-at-the-bottom",
+    "title": "29  Tutorial 6: Reading Python Tracebacks",
     "section": "",
-    "text": "28.1.1 Common Example:\nFileNotFoundError: [Errno 2] No such file or directory: 'Data/patients.csv'\n\nThe first part of the message tells you what the error is, in this case the file was not found\nFileNotFoundError\nThe second part of the error tells you what is missing\nNo such file or directory: 'Data/patients.csv'\nAt the top of the trace, it tells you exactly where in your code the error was found.\n\nThe file wasn’t found. Because file paths are case-sensitive, Data/ is different from data/.",
+    "text": "FileNotFoundError: [Errno 2] No such file or directory: 'Data/patients.csv'",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Reading Tracebacks</span>"
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Tutorial 6: Reading Python Tracebacks</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python06-tracebacks.html#common-week-5-errors",
+    "href": "weeks/week05-polyglot-r-deepening/python06-tracebacks.html#common-week-5-errors",
+    "title": "29  Tutorial 6: Reading Python Tracebacks",
+    "section": "29.2 Common Week 5 Errors",
+    "text": "29.2 Common Week 5 Errors\n\n\n\n\n\n\n\n\nError\nLikely cause\nFirst fix\n\n\n\n\nFileNotFoundError\npath is wrong, file is in another folder, or capitalization differs\ncheck the relative path from the notebook location\n\n\nModuleNotFoundError\npackage is missing\nadd the package to requirements.txt and install it in the Codespace\n\n\nKeyError\ncolumn name is misspelled or not present\nrun nhanes.columns.tolist()\n\n\nIndentationError\nPython block spacing is inconsistent\nre-indent the block with four spaces\n\n\nNameError\nobject has not been created in the current kernel\nrerun earlier cells in order",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Tutorial 6: Reading Python Tracebacks</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python06-tracebacks.html#ai-debugging-prompt",
+    "href": "weeks/week05-polyglot-r-deepening/python06-tracebacks.html#ai-debugging-prompt",
+    "title": "29  Tutorial 6: Reading Python Tracebacks",
+    "section": "29.3 AI Debugging Prompt",
+    "text": "29.3 AI Debugging Prompt\n\nRead this Python traceback from the bottom up. Identify the error type, the exact object or path causing the issue, and the smallest code change that would fix it. Do not rewrite the full analysis.",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Tutorial 6: Reading Python Tracebacks</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python06-tracebacks.html#student-check",
+    "href": "weeks/week05-polyglot-r-deepening/python06-tracebacks.html#student-check",
+    "title": "29  Tutorial 6: Reading Python Tracebacks",
+    "section": "29.4 Student Check",
+    "text": "29.4 Student Check\nWhen you fix an error, add one sentence to your notebook explaining what failed and how you knew the fix worked.",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Tutorial 6: Reading Python Tracebacks</span>"
     ]
   },
   {
     "objectID": "weeks/week05-polyglot-r-deepening/python07-one-step-one-cell.html",
     "href": "weeks/week05-polyglot-r-deepening/python07-one-step-one-cell.html",
-    "title": "29  Tutorial 7: The ‘One Step, One Cell’ AI Workflow",
+    "title": "30  Tutorial 7: The One Step, One Cell AI Workflow",
     "section": "",
-    "text": "29.1 Rule 1: One Step, One Cell\nDon’t ask the AI for a giant analysis script at once. Ask for one atomic step (load, then filter, then summarize). Run and verify each cell before moving on.\nFirst ask AI to load\nThen ask it to filter by some value\nThen ask it to summarize",
+    "text": "30.1 Why This Rule Exists\nLarge AI-generated code blocks are hard to audit. A single hidden mistake in loading, filtering, grouping, or missingness handling can cascade into a polished but incorrect result.\nUse one cell per analytic step:",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Tutorial 7: The 'One Step, One Cell' AI Workflow</span>"
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Tutorial 7: The One Step, One Cell AI Workflow</span>"
     ]
   },
   {
-    "objectID": "weeks/week05-polyglot-r-deepening/python07-one-step-one-cell.html#rule-2-parity-audit",
-    "href": "weeks/week05-polyglot-r-deepening/python07-one-step-one-cell.html#rule-2-parity-audit",
-    "title": "29  Tutorial 7: The ‘One Step, One Cell’ AI Workflow",
-    "section": "29.2 Rule 2: Parity Audit",
-    "text": "29.2 Rule 2: Parity Audit\nObserve some of the differences between R and python below when it comes to data wrangling.\n\n\n\nCheck\nR\nPython\n\n\n\n\nRow count\nnrow(df)\nlen(df)\n\n\nColumn names\nnames(df)\ndf.columns.tolist()\n\n\nSummary stats\nsummary(df$col)\ndf['col'].describe()",
+    "objectID": "weeks/week05-polyglot-r-deepening/python07-one-step-one-cell.html#why-this-rule-exists",
+    "href": "weeks/week05-polyglot-r-deepening/python07-one-step-one-cell.html#why-this-rule-exists",
+    "title": "30  Tutorial 7: The One Step, One Cell AI Workflow",
+    "section": "",
+    "text": "load data;\ninspect rows and columns;\nfilter missing values;\ngroup and summarise;\ncompare with the R result.",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Tutorial 7: The 'One Step, One Cell' AI Workflow</span>"
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Tutorial 7: The One Step, One Cell AI Workflow</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python07-one-step-one-cell.html#good-ai-prompt",
+    "href": "weeks/week05-polyglot-r-deepening/python07-one-step-one-cell.html#good-ai-prompt",
+    "title": "30  Tutorial 7: The One Step, One Cell AI Workflow",
+    "section": "30.2 Good AI Prompt",
+    "text": "30.2 Good AI Prompt\n\nTranslate only the data-loading step from R to Python/pandas. Tell me what output I should inspect before moving to the next step.",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Tutorial 7: The One Step, One Cell AI Workflow</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python07-one-step-one-cell.html#risky-ai-prompt",
+    "href": "weeks/week05-polyglot-r-deepening/python07-one-step-one-cell.html#risky-ai-prompt",
+    "title": "30  Tutorial 7: The One Step, One Cell AI Workflow",
+    "section": "30.3 Risky AI Prompt",
+    "text": "30.3 Risky AI Prompt\n\nTranslate my full analysis, make the plots, and write the interpretation.\n\nThe risky prompt gives up too much control. It may change the analytic question without telling you.",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Tutorial 7: The One Step, One Cell AI Workflow</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python07-one-step-one-cell.html#parity-audit-checks",
+    "href": "weeks/week05-polyglot-r-deepening/python07-one-step-one-cell.html#parity-audit-checks",
+    "title": "30  Tutorial 7: The One Step, One Cell AI Workflow",
+    "section": "30.4 Parity Audit Checks",
+    "text": "30.4 Parity Audit Checks\n\n\n\n\n\n\n\n\nCheck\nR\nPython\n\n\n\n\nRow count\nnrow(df)\nlen(df) or df.shape[0]\n\n\nColumn names\nnames(df)\ndf.columns.tolist()\n\n\nUnique levels\nunique(df$IncomeGroup)\ndf[\"IncomeGroup\"].unique()\n\n\nMissing values\nsum(is.na(df$BMI))\ndf[\"BMI\"].isna().sum()\n\n\nSummary table rows\nnrow(summary_df)\nlen(summary_df)",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Tutorial 7: The One Step, One Cell AI Workflow</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python07-one-step-one-cell.html#notebook-habit",
+    "href": "weeks/week05-polyglot-r-deepening/python07-one-step-one-cell.html#notebook-habit",
+    "title": "30  Tutorial 7: The One Step, One Cell AI Workflow",
+    "section": "30.5 Notebook Habit",
+    "text": "30.5 Notebook Habit\nAfter each Python cell, add a short Markdown note:\nAudit check: this cell matches the R output because ...\nIf you cannot fill in that sentence, do not move to the next cell yet.",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Tutorial 7: The One Step, One Cell AI Workflow</span>"
     ]
   },
   {
     "objectID": "weeks/week05-polyglot-r-deepening/python08-mixing-r-python.html",
     "href": "weeks/week05-polyglot-r-deepening/python08-mixing-r-python.html",
-    "title": "30  Tutorial 8: Mixing R and Python”",
+    "title": "31  Tutorial 8: Mixing R and Python",
     "section": "",
-    "text": "30.1 Why Interoperability?\nThe R package reticulate lets you call Python from an R session. This is perfect when you need a Python-only package but want to keep your analysis in R.\nFirst define the package as seen below\nThen build python code as shown\nThen you are able to use the results of that python code in R! Super cool!",
+    "text": "31.1 Why Interoperability Matters\nSometimes a project has one useful Python tool, but the rest of the analysis is already in R. The reticulate package lets R call Python code and bring Python objects back into the R session. In this course, reticulate is awareness-level: you should know what it does and when it might be useful, but you are not expected to build a full mixed-language pipeline.",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Tutorial 8: Mixing R and Python\"</span>"
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Tutorial 8: Mixing R and Python</span>"
     ]
   },
   {
-    "objectID": "weeks/week05-polyglot-r-deepening/python08-mixing-r-python.html#why-interoperability",
-    "href": "weeks/week05-polyglot-r-deepening/python08-mixing-r-python.html#why-interoperability",
-    "title": "30  Tutorial 8: Mixing R and Python”",
-    "section": "",
-    "text": "30.1.1 Demo (Run in R)\n\n#library(reticulate) # Run Python code inside R\n#py_run_string(\"import pandas as pd; df = pd.read_csv('data/patients.csv')\")\n\nAccess that Python object as an R object\n\n#py_df &lt;- py$df\n#head(py_df)",
+    "objectID": "weeks/week05-polyglot-r-deepening/python08-mixing-r-python.html#minimal-demo",
+    "href": "weeks/week05-polyglot-r-deepening/python08-mixing-r-python.html#minimal-demo",
+    "title": "31  Tutorial 8: Mixing R and Python",
+    "section": "31.2 Minimal Demo",
+    "text": "31.2 Minimal Demo\nRun this in an R console or an R Quarto document if reticulate is available in your Codespace.\nlibrary(reticulate)\n\npy_run_string(\"\nimport pandas as pd\nnumbers = pd.DataFrame({'group': ['A', 'A', 'B'], 'value': [10, 15, 20]})\nsummary = numbers.groupby('group', as_index=False)['value'].mean()\n\")\n\npy$summary",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Tutorial 8: Mixing R and Python\"</span>"
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Tutorial 8: Mixing R and Python</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python08-mixing-r-python.html#health-data-example",
+    "href": "weeks/week05-polyglot-r-deepening/python08-mixing-r-python.html#health-data-example",
+    "title": "31  Tutorial 8: Mixing R and Python",
+    "section": "31.3 Health Data Example",
+    "text": "31.3 Health Data Example\nThe same idea works with the NHANES case-study CSV:\nlibrary(reticulate)\n\npy_run_string(\"\nimport pandas as pd\nnhanes = pd.read_csv('../../examples/nhanes-equity/data/nhanes_equity_v6.csv')\nbmi_rows = nhanes[['BMI', 'IncomeGroup']].dropna()\n\")\n\nbmi_rows &lt;- py$bmi_rows\nhead(bmi_rows)",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Tutorial 8: Mixing R and Python</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python08-mixing-r-python.html#when-to-use-it",
+    "href": "weeks/week05-polyglot-r-deepening/python08-mixing-r-python.html#when-to-use-it",
+    "title": "31  Tutorial 8: Mixing R and Python",
+    "section": "31.4 When To Use It",
+    "text": "31.4 When To Use It\nUse reticulate when:\n\na small Python library solves a specific problem better than the R ecosystem;\nthe rest of your report, tables, or dashboard are already in R;\nyou can document the Python dependency clearly.\n\nAvoid it when:\n\na clean R solution already exists;\nmixing languages makes the project harder to reproduce;\nthe Python step cannot run in a fresh Codespace.",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Tutorial 8: Mixing R and Python</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python08-mixing-r-python.html#check-your-understanding",
+    "href": "weeks/week05-polyglot-r-deepening/python08-mixing-r-python.html#check-your-understanding",
+    "title": "31  Tutorial 8: Mixing R and Python",
+    "section": "31.5 Check Your Understanding",
+    "text": "31.5 Check Your Understanding\nIn one sentence, explain what object moves from Python back into R in the NHANES example above.",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Tutorial 8: Mixing R and Python</span>"
     ]
   },
   {
     "objectID": "weeks/week05-polyglot-r-deepening/python09-reusable-scripts.html",
     "href": "weeks/week05-polyglot-r-deepening/python09-reusable-scripts.html",
-    "title": "31  Tutorial 9: Creating Reusable Python Scripts",
+    "title": "32  Tutorial 9: Creating Reusable Python Scripts",
     "section": "",
-    "text": "31.1 When to Use a Script\nUse a .py script for reusable functions (like data cleaning) that you want to use across different notebooks.",
+    "text": "32.1 Notebook or Script?\nUse a notebook when you are exploring, explaining, and checking outputs. Use a script when you have a helper function that should be reused without copying and pasting.\nThis mirrors the R pattern from Week 3: once a chunk of code has a clear job, turn it into a named function.",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Tutorial 9: Creating Reusable Python Scripts</span>"
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Tutorial 9: Creating Reusable Python Scripts</span>"
     ]
   },
   {
-    "objectID": "weeks/week05-polyglot-r-deepening/python09-reusable-scripts.html#when-to-use-a-script",
-    "href": "weeks/week05-polyglot-r-deepening/python09-reusable-scripts.html#when-to-use-a-script",
-    "title": "31  Tutorial 9: Creating Reusable Python Scripts",
-    "section": "",
-    "text": "Create a new file: helpers.py.\nAdd a cleaning function:\n\n  # # weeks/week05-polyglot-r-deepening/helpers.py\n  # from pathlib import Path\n  # import pandas as pd\n  # \n  # def load_and_preview(path, n=5):\n  #     p = Path(path)\n  #     if not p.exists():\n  #         raise FileNotFoundError(f\"Could not find file: {p.resolve()}\")\n  #     df = pd.read_csv(p)\n  #     print(df.head(n))\n  #     return df\n\nImport it in your notebook:\n\n# from helpers import load_and_preview\n# load_and_preview(\"data/patients.csv\")",
+    "objectID": "weeks/week05-polyglot-r-deepening/python09-reusable-scripts.html#create-helpers.py",
+    "href": "weeks/week05-polyglot-r-deepening/python09-reusable-scripts.html#create-helpers.py",
+    "title": "32  Tutorial 9: Creating Reusable Python Scripts",
+    "section": "32.2 Create helpers.py",
+    "text": "32.2 Create helpers.py\nIn the Week 5 folder, create a file named helpers.py with this function:\nfrom pathlib import Path\nimport pandas as pd\n\n\ndef load_and_preview(path, n_rows=5):\n    \"\"\"Load a CSV, print its shape, and return the first rows.\"\"\"\n    csv_path = Path(path)\n    if not csv_path.exists():\n        raise FileNotFoundError(f\"Could not find file: {csv_path}\")\n\n    data = pd.read_csv(csv_path)\n    print(f\"Loaded {data.shape[0]} rows and {data.shape[1]} columns\")\n    return data.head(n_rows)",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Tutorial 9: Creating Reusable Python Scripts</span>"
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Tutorial 9: Creating Reusable Python Scripts</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python09-reusable-scripts.html#import-it-in-a-notebook",
+    "href": "weeks/week05-polyglot-r-deepening/python09-reusable-scripts.html#import-it-in-a-notebook",
+    "title": "32  Tutorial 9: Creating Reusable Python Scripts",
+    "section": "32.3 Import It In A Notebook",
+    "text": "32.3 Import It In A Notebook\nIn translation.ipynb, import and use the helper:\nfrom helpers import load_and_preview\n\npreview = load_and_preview(\"../../examples/nhanes-equity/data/nhanes_equity_v6.csv\")\npreview",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Tutorial 9: Creating Reusable Python Scripts</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python09-reusable-scripts.html#reproducibility-check",
+    "href": "weeks/week05-polyglot-r-deepening/python09-reusable-scripts.html#reproducibility-check",
+    "title": "32  Tutorial 9: Creating Reusable Python Scripts",
+    "section": "32.4 Reproducibility Check",
+    "text": "32.4 Reproducibility Check\nBefore committing:\n\nverify that helpers.py is saved in the same folder as your notebook;\nrerun the notebook from a fresh kernel;\ncheck that the relative path starts from the notebook location;\ncommit both files together with a message such as Add Week 5 Python helper.",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Tutorial 9: Creating Reusable Python Scripts</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python09-reusable-scripts.html#student-output",
+    "href": "weeks/week05-polyglot-r-deepening/python09-reusable-scripts.html#student-output",
+    "title": "32  Tutorial 9: Creating Reusable Python Scripts",
+    "section": "32.5 Student Output",
+    "text": "32.5 Student Output\nFor Assignment 4, your reusable script should contain at least one function that is actually called from the notebook. A function that is written but never used does not demonstrate reproducibility.",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Tutorial 9: Creating Reusable Python Scripts</span>"
     ]
   },
   {
     "objectID": "weeks/week05-polyglot-r-deepening/python10-git-progress.html",
     "href": "weeks/week05-polyglot-r-deepening/python10-git-progress.html",
-    "title": "32  Tutorial 10: Tracking Your Progress with Git",
+    "title": "33  Tutorial 10: Tracking Your Progress With Git",
     "section": "",
-    "text": "32.1 Cleaning Your Notebooks\nJupyter notebooks (.ipynb) store images and tables inside the file, making Git history messy.\nBefore you commit: 1. Open the Command Palette (Ctrl+Shift+P). 2. Search for Notebook: Clear All Outputs. 3. Stage and commit your changes with a professional message.",
+    "text": "33.1 Commit The Audit Trail\nWeek 4 introduced Git as analysis provenance. Week 5 uses that skill to make translation auditable.\nCommit after meaningful checkpoints:",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Tutorial 10: Tracking Your Progress with Git</span>"
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Tutorial 10: Tracking Your Progress With Git</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python10-git-progress.html#commit-the-audit-trail",
+    "href": "weeks/week05-polyglot-r-deepening/python10-git-progress.html#commit-the-audit-trail",
+    "title": "33  Tutorial 10: Tracking Your Progress With Git",
+    "section": "",
+    "text": "R pipeline works.\nR function reproduces the pipeline.\nPython notebook loads the same data.\nPython summary matches the R summary.\nFinal parity note is complete.",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Tutorial 10: Tracking Your Progress With Git</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python10-git-progress.html#notebook-output-hygiene",
+    "href": "weeks/week05-polyglot-r-deepening/python10-git-progress.html#notebook-output-hygiene",
+    "title": "33  Tutorial 10: Tracking Your Progress With Git",
+    "section": "33.2 Notebook Output Hygiene",
+    "text": "33.2 Notebook Output Hygiene\nJupyter notebooks can store rendered tables and images inside the .ipynb file. That makes Git diffs noisy.\nBefore committing:\n\nOpen the Command Palette with Ctrl+Shift+P.\nRun Notebook: Clear All Outputs.\nSave the notebook.\nStage translation.ipynb, helpers.py, and your Quarto note together.",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Tutorial 10: Tracking Your Progress With Git</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python10-git-progress.html#example-commit-messages",
+    "href": "weeks/week05-polyglot-r-deepening/python10-git-progress.html#example-commit-messages",
+    "title": "33  Tutorial 10: Tracking Your Progress With Git",
+    "section": "33.3 Example Commit Messages",
+    "text": "33.3 Example Commit Messages\nAdd R BMI summary for Week 5 parity check\nTranslate BMI summary to pandas and verify row counts\nComplete Assignment 4 parity audit note",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Tutorial 10: Tracking Your Progress With Git</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python10-git-progress.html#student-check",
+    "href": "weeks/week05-polyglot-r-deepening/python10-git-progress.html#student-check",
+    "title": "33  Tutorial 10: Tracking Your Progress With Git",
+    "section": "33.4 Student Check",
+    "text": "33.4 Student Check\nYour Git history should show the work developing in steps, not one unexplained final upload.",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Tutorial 10: Tracking Your Progress With Git</span>"
     ]
   },
   {
     "objectID": "weeks/week05-polyglot-r-deepening/python11-project-milestone.html",
     "href": "weeks/week05-polyglot-r-deepening/python11-project-milestone.html",
-    "title": "33  Tutorial 11: Term Project Milestone 1",
+    "title": "34  Tutorial 11: Project Proposal Readiness Check",
     "section": "",
-    "text": "33.1 Submission Checklist\nYour proposal is due this Friday. Ensure it includes:\n- Research Question: A focused health data question.\n- Data Source: A verified dataset (NHANES, Kaggle, etc.).\n- Feasibility Check: Can you load and preview the data in a Codespace?\nPro-Tip: Load your dataset in both R and Python now to ensure there are no surprises later in the term.",
+    "text": "34.1 Why This Belongs In Week 5\nBefore the project proposal is due, you should know whether your chosen dataset can be loaded, inspected, and explained in the course workflow. Week 5 adds one extra test: can you verify the basic data shape in both R and Python?",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Tutorial 11: Term Project Milestone 1</span>"
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Tutorial 11: Project Proposal Readiness Check</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python11-project-milestone.html#proposal-readiness-checklist",
+    "href": "weeks/week05-polyglot-r-deepening/python11-project-milestone.html#proposal-readiness-checklist",
+    "title": "34  Tutorial 11: Project Proposal Readiness Check",
+    "section": "34.2 Proposal Readiness Checklist",
+    "text": "34.2 Proposal Readiness Checklist\nYour proposal should include:\n\na focused health-data question;\nthe dataset name and source;\na brief provenance and stewardship note;\na feasibility check showing the file can load in a Codespace;\none or two planned descriptive summaries or visualizations;\nany known privacy, licensing, or access limitations.",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Tutorial 11: Project Proposal Readiness Check</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python11-project-milestone.html#feasibility-check",
+    "href": "weeks/week05-polyglot-r-deepening/python11-project-milestone.html#feasibility-check",
+    "title": "34  Tutorial 11: Project Proposal Readiness Check",
+    "section": "34.3 Feasibility Check",
+    "text": "34.3 Feasibility Check\nFor your project dataset, record:\n\n\n\nCheck\nWhat to write\n\n\n\n\nFile path\nrelative path from the repo root\n\n\nFile format\nCSV, RDS, Excel, API, or other\n\n\nRow and column count\nbasic shape after loading\n\n\nKey variables\nnames and meanings of the fields you expect to use\n\n\nMissingness concern\none variable where missing values may matter\n\n\nR/Python check\nwhether both languages can load the file",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Tutorial 11: Project Proposal Readiness Check</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python11-project-milestone.html#student-output",
+    "href": "weeks/week05-polyglot-r-deepening/python11-project-milestone.html#student-output",
+    "title": "34  Tutorial 11: Project Proposal Readiness Check",
+    "section": "34.4 Student Output",
+    "text": "34.4 Student Output\nAdd this feasibility check to your project proposal notes. If your dataset does not load cleanly yet, describe the blocker honestly instead of hiding it.",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Tutorial 11: Project Proposal Readiness Check</span>"
     ]
   },
   {
     "objectID": "weeks/week05-polyglot-r-deepening/python12-knowledge-check.html",
     "href": "weeks/week05-polyglot-r-deepening/python12-knowledge-check.html",
-    "title": "34  Tutorial 12: Python Knowledge Check",
+    "title": "35  Tutorial 12: Knowledge Check",
     "section": "",
-    "text": "Answer these in a new Markdown cell in your notebook:\n1. Why does my_list[1] in Python return the second element?\n2. What is requirements.txt and why is it essential for reproducibility?\n3. Why should you clear notebook outputs before committing to Git? 4. What is the “One Step, One Cell” rule?",
+    "text": "35.1 Short Applied Check\nAnswer these in a Markdown cell or short Quarto note.\nGiven the R expression:\nWrite the Python/pandas equivalent and name the missingness check you would run before trusting it.",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Tutorial 12: Python Knowledge Check</span>"
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Tutorial 12: Knowledge Check</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python12-knowledge-check.html#short-applied-check",
+    "href": "weeks/week05-polyglot-r-deepening/python12-knowledge-check.html#short-applied-check",
+    "title": "35  Tutorial 12: Knowledge Check",
+    "section": "",
+    "text": "mean(nhanes$BMI, na.rm = TRUE)",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Tutorial 12: Knowledge Check</span>"
     ]
   },
   {
     "objectID": "weeks/week05-polyglot-r-deepening/python13-translation-exercise.html",
     "href": "weeks/week05-polyglot-r-deepening/python13-translation-exercise.html",
-    "title": "35  Tutorial 13: The Bilingual Translation Exercise",
+    "title": "36  Tutorial 13: The Bilingual Translation Exercise",
     "section": "",
-    "text": "35.1 Cleaning Your Notebooks\nTask: Create a Python version of your Week 3 R analysis.\n1. Create translation.ipynb.\n2. Use an LLM to translate your R steps to Python one cell at a time.",
+    "text": "36.1 Purpose\nThis exercise turns the week into a concrete artifact: one small R analysis, one Python translation, and one audit note showing that the outputs agree.",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Tutorial 13: The Bilingual Translation Exercise</span>"
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>Tutorial 13: The Bilingual Translation Exercise</span>"
     ]
   },
   {
-    "objectID": "weeks/week05-polyglot-r-deepening/python13-translation-exercise.html#cleaning-your-notebooks",
-    "href": "weeks/week05-polyglot-r-deepening/python13-translation-exercise.html#cleaning-your-notebooks",
-    "title": "35  Tutorial 13: The Bilingual Translation Exercise",
-    "section": "",
-    "text": "After each cell, verify output using the Data Viewer. 4. Extract one function into helpers.py. 5. Clear outputs and commit to Git.",
+    "objectID": "weeks/week05-polyglot-r-deepening/python13-translation-exercise.html#required-task",
+    "href": "weeks/week05-polyglot-r-deepening/python13-translation-exercise.html#required-task",
+    "title": "36  Tutorial 13: The Bilingual Translation Exercise",
+    "section": "36.2 Required Task",
+    "text": "36.2 Required Task\nTranslate the Week 5 R-deepening summary into Python/pandas:\n\nStart from the R pipeline in R Deepening and Parity Check.\nCreate translation.ipynb.\nLoad the NHANES CSV from ../../examples/nhanes-equity/data/nhanes_equity_v6.csv.\nRecreate the BMI-by-income-and-gender summary in Python.\nCompare the Python output to the R output using row counts, grouping labels, and rounded summary values.\nExtract one Python helper into helpers.py and call it from the notebook.\nAdd a Markdown cell explaining what AI helped with and how you verified the result.\nClear notebook outputs before committing.",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Tutorial 13: The Bilingual Translation Exercise</span>"
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>Tutorial 13: The Bilingual Translation Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python13-translation-exercise.html#parity-table-template",
+    "href": "weeks/week05-polyglot-r-deepening/python13-translation-exercise.html#parity-table-template",
+    "title": "36  Tutorial 13: The Bilingual Translation Exercise",
+    "section": "36.3 Parity Table Template",
+    "text": "36.3 Parity Table Template\n\n\n\nCheck\nR result\nPython result\nMatch?\nNotes\n\n\n\n\nRaw row count\n\n\n\n\n\n\nFiltered row count\n\n\n\n\n\n\nNumber of grouped rows\n\n\n\n\n\n\nMean BMI values after rounding\n\n\n\n\n\n\nGroup labels",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>Tutorial 13: The Bilingual Translation Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python13-translation-exercise.html#ai-prompt",
+    "href": "weeks/week05-polyglot-r-deepening/python13-translation-exercise.html#ai-prompt",
+    "title": "36  Tutorial 13: The Bilingual Translation Exercise",
+    "section": "36.4 AI Prompt",
+    "text": "36.4 AI Prompt\n\nI have a working R dplyr summary. Translate it to Python/pandas one step at a time. After each step, tell me exactly what output to compare with R. Do not add new variables, filters, plots, or interpretation.",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>Tutorial 13: The Bilingual Translation Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python13-translation-exercise.html#definition-of-done",
+    "href": "weeks/week05-polyglot-r-deepening/python13-translation-exercise.html#definition-of-done",
+    "title": "36  Tutorial 13: The Bilingual Translation Exercise",
+    "section": "36.5 Definition of Done",
+    "text": "36.5 Definition of Done\nYour exercise is complete when a reader can open the notebook, rerun the cells in order, and see why the R and Python outputs do or do not match.",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>Tutorial 13: The Bilingual Translation Exercise</span>"
     ]
   },
   {
     "objectID": "weeks/week05-polyglot-r-deepening/python14-cheat-sheet.html",
     "href": "weeks/week05-polyglot-r-deepening/python14-cheat-sheet.html",
-    "title": "36  Tutorial 14: R to Python Cheat Sheet",
+    "title": "37  Tutorial 14: R To Python Cheat Sheet",
     "section": "",
-    "text": "Task\nR\nPython\n\n\n\n\nLoad Library\nlibrary(dplyr)\nimport pandas as pd\n\n\nLoad CSV\nread.csv(\"data/f.csv\")\npd.read_csv(\"data/f.csv\")\n\n\nRow Count\nnrow(df)\nlen(df)\n\n\nFilter\nfilter(df, age &gt; 65)\ndf[df['age'] &gt; 65]\n\n\nNew Column\nmutate(df, bmi = w/h^2)\ndf['bmi'] = df['w'] / df['h']**2\n\n\nSummary\nsummary(df$col)\ndf['col'].describe()",
+    "text": "37.1 Translation Rule\nUse this as a translation aid, not as a substitute for checking outputs.\nThe translation is not finished when the code runs. It is finished when the R and Python outputs have been compared and the comparison is documented.",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
-      "<span class='chapter-number'>36</span>  <span class='chapter-title'>Tutorial 14: R to Python Cheat Sheet</span>"
+      "<span class='chapter-number'>37</span>  <span class='chapter-title'>Tutorial 14: R To Python Cheat Sheet</span>"
     ]
   },
   {
@@ -3228,135 +3635,190 @@
     ]
   },
   {
-    "objectID": "assignments/assignment05-visualization/README.html",
-    "href": "assignments/assignment05-visualization/README.html",
-    "title": "37  Assignment 5: Visualization Audit and Revision",
+    "objectID": "assignments/assignment04-polyglot/README.html",
+    "href": "assignments/assignment04-polyglot/README.html",
+    "title": "38  Assignment 4: Polyglot Awareness & R Deepening",
     "section": "",
-    "text": "37.1 Purpose\nCreate a clear, honest health-data visualization from the NHANES Health Equity classroom dataset. You will audit a flawed or AI-assisted plot, revise it, and explain why the revision is more accurate and useful for a non-technical audience.",
+    "text": "38.1 Purpose\nThis assignment asks you to strengthen an R analysis first, then translate a small piece of it to Python/pandas and verify that both languages give the same descriptive answer. The goal is not to become a Python expert. The goal is to become a careful bilingual reader who can audit AI-assisted translation.",
     "crumbs": [
       "Assignments and Milestones",
-      "<span class='chapter-number'>37</span>  <span class='chapter-title'>Assignment 5: Visualization Audit and Revision</span>"
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>Assignment 4: Polyglot Awareness & R Deepening</span>"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment04-polyglot/README.html#inputs",
+    "href": "assignments/assignment04-polyglot/README.html#inputs",
+    "title": "38  Assignment 4: Polyglot Awareness & R Deepening",
+    "section": "38.2 Inputs",
+    "text": "38.2 Inputs\nUse the canonical NHANES case-study CSV:\nexamples/nhanes-equity/data/nhanes_equity_v6.csv\nIf your notebook lives in weeks/week05-polyglot-r-deepening/, use:\n../../examples/nhanes-equity/data/nhanes_equity_v6.csv",
+    "crumbs": [
+      "Assignments and Milestones",
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>Assignment 4: Polyglot Awareness & R Deepening</span>"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment04-polyglot/README.html#step-by-step-tasks",
+    "href": "assignments/assignment04-polyglot/README.html#step-by-step-tasks",
+    "title": "38  Assignment 4: Polyglot Awareness & R Deepening",
+    "section": "38.3 Step-By-Step Tasks",
+    "text": "38.3 Step-By-Step Tasks\n\nCreate assignments/assignment04-polyglot/submission/.\nIn that folder, create polyglot-parity.qmd.\nIn R, load the NHANES CSV and produce a descriptive summary of BMI by IncomeGroup and Gender.\nRefactor the R summary into one small function.\nCreate translation.ipynb and translate the same summary to Python/pandas.\nCreate helpers.py with at least one reusable Python helper and call it from the notebook.\nFill in a parity table comparing row counts, filtered row counts, grouping labels, and rounded summary values.\nAdd a short AI-use note describing what the tool helped with and how you verified the output.\nClear notebook outputs before committing.\nCommit and sync your work.",
+    "crumbs": [
+      "Assignments and Milestones",
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>Assignment 4: Polyglot Awareness & R Deepening</span>"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment04-polyglot/README.html#what-to-submit",
+    "href": "assignments/assignment04-polyglot/README.html#what-to-submit",
+    "title": "38  Assignment 4: Polyglot Awareness & R Deepening",
+    "section": "38.4 What To Submit",
+    "text": "38.4 What To Submit\nSubmit the following files in assignments/assignment04-polyglot/submission/:\n\npolyglot-parity.qmd: your R analysis, R function, parity table, and AI-use note.\ntranslation.ipynb: your Python translation notebook.\nhelpers.py: your reusable Python helper script.\n\nSubmission route: submit your repository link on Canvas after committing and syncing the files above.",
+    "crumbs": [
+      "Assignments and Milestones",
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>Assignment 4: Polyglot Awareness & R Deepening</span>"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment04-polyglot/README.html#grading-checklist",
+    "href": "assignments/assignment04-polyglot/README.html#grading-checklist",
+    "title": "38  Assignment 4: Polyglot Awareness & R Deepening",
+    "section": "38.5 Grading Checklist",
+    "text": "38.5 Grading Checklist\n\n\n\n\n\n\n\n\nCriterion\nComplete\nNeeds work\n\n\n\n\nR pipeline loads the canonical NHANES CSV with a relative path\n\n\n\n\nR function correctly reproduces the summary task\n\n\n\n\nPython notebook translates the same analysis without changing the analytic question\n\n\n\n\nParity table compares row counts, groups, and rounded summary values\n\n\n\n\nDifferences are explained before any code is changed\n\n\n\n\nhelpers.py contains a reusable function that is called from the notebook\n\n\n\n\nAI-use note identifies what was generated, changed, and verified\n\n\n\n\nNotebook outputs are cleared before commit\n\n\n\n\nFiles are committed and synced in the required submission folder",
+    "crumbs": [
+      "Assignments and Milestones",
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>Assignment 4: Polyglot Awareness & R Deepening</span>"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment05-visualization/README.html",
+    "href": "assignments/assignment05-visualization/README.html",
+    "title": "39  Assignment 5: Visualization Audit and Revision",
+    "section": "",
+    "text": "39.1 Purpose\nCreate a clear, honest health-data visualization from the NHANES Health Equity classroom dataset. You will audit a flawed or AI-assisted plot, revise it, and explain why the revision is more accurate and useful for a non-technical audience.",
+    "crumbs": [
+      "Assignments and Milestones",
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>Assignment 5: Visualization Audit and Revision</span>"
     ]
   },
   {
     "objectID": "assignments/assignment05-visualization/README.html#inputs",
     "href": "assignments/assignment05-visualization/README.html#inputs",
-    "title": "37  Assignment 5: Visualization Audit and Revision",
-    "section": "37.2 Inputs",
-    "text": "37.2 Inputs\n\nDataset: examples/nhanes-equity/data/nhanes_equity_v6.csv\nWorked example: weeks/week06-visualization/worked-example-ggplot.qmd\nActivity prompt: weeks/week06-visualization/activity-ai-visual-audit.qmd",
+    "title": "39  Assignment 5: Visualization Audit and Revision",
+    "section": "39.2 Inputs",
+    "text": "39.2 Inputs\n\nDataset: examples/nhanes-equity/data/nhanes_equity_v6.csv\nWorked example: weeks/week06-visualization/worked-example-ggplot.qmd\nActivity prompt: weeks/week06-visualization/activity-ai-visual-audit.qmd",
     "crumbs": [
       "Assignments and Milestones",
-      "<span class='chapter-number'>37</span>  <span class='chapter-title'>Assignment 5: Visualization Audit and Revision</span>"
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>Assignment 5: Visualization Audit and Revision</span>"
     ]
   },
   {
     "objectID": "assignments/assignment05-visualization/README.html#step-by-step-tasks",
     "href": "assignments/assignment05-visualization/README.html#step-by-step-tasks",
-    "title": "37  Assignment 5: Visualization Audit and Revision",
-    "section": "37.3 Step-by-Step Tasks",
-    "text": "37.3 Step-by-Step Tasks\n\nReview the Week 6 worked example.\nChoose one comparison from the NHANES Health Equity CSV snapshot.\nDraft an initial plot using R and ggplot2.\nAudit the plot for scale choices, labels, missing context, and overclaiming.\nRevise the plot so it supports descriptive interpretation.\nWrite a caption and short audit note.\nIf AI helped you write or revise code, document what it did and how you checked it.",
+    "title": "39  Assignment 5: Visualization Audit and Revision",
+    "section": "39.3 Step-by-Step Tasks",
+    "text": "39.3 Step-by-Step Tasks\n\nReview the Week 6 worked example.\nChoose one comparison from the NHANES Health Equity CSV snapshot.\nDraft an initial plot using R and ggplot2.\nAudit the plot for scale choices, labels, missing context, and overclaiming.\nRevise the plot so it supports descriptive interpretation.\nWrite a caption and short audit note.\nIf AI helped you write or revise code, document what it did and how you checked it.",
     "crumbs": [
       "Assignments and Milestones",
-      "<span class='chapter-number'>37</span>  <span class='chapter-title'>Assignment 5: Visualization Audit and Revision</span>"
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>Assignment 5: Visualization Audit and Revision</span>"
     ]
   },
   {
     "objectID": "assignments/assignment05-visualization/README.html#what-to-submit",
     "href": "assignments/assignment05-visualization/README.html#what-to-submit",
-    "title": "37  Assignment 5: Visualization Audit and Revision",
-    "section": "37.4 What To Submit",
-    "text": "37.4 What To Submit\nPlace all submission files in:\nassignments/assignment05-visualization/submission/\nSubmit these files:\n\nvisualization.qmd: rerunnable Quarto file that loads the CSV with a relative path and creates the final plot.\nvisualization.html: rendered output.\ncorrected-plot.png: exported final plot.\naudit-note.md: at least three issues you checked or corrected.\ncaption.md: final figure caption with data source, statistic, exclusions, and limitation.\nai-use-note.md: required if AI was used; otherwise include a one-sentence note saying AI was not used.",
+    "title": "39  Assignment 5: Visualization Audit and Revision",
+    "section": "39.4 What To Submit",
+    "text": "39.4 What To Submit\nPlace all submission files in:\nassignments/assignment05-visualization/submission/\nSubmit these files:\n\nvisualization.qmd: rerunnable Quarto file that loads the CSV with a relative path and creates the final plot.\nvisualization.html: rendered output.\ncorrected-plot.png: exported final plot.\naudit-note.md: at least three issues you checked or corrected.\ncaption.md: final figure caption with data source, statistic, exclusions, and limitation.\nai-use-note.md: required if AI was used; otherwise include a one-sentence note saying AI was not used.",
     "crumbs": [
       "Assignments and Milestones",
-      "<span class='chapter-number'>37</span>  <span class='chapter-title'>Assignment 5: Visualization Audit and Revision</span>"
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>Assignment 5: Visualization Audit and Revision</span>"
     ]
   },
   {
     "objectID": "assignments/assignment05-visualization/README.html#submission-route",
     "href": "assignments/assignment05-visualization/README.html#submission-route",
-    "title": "37  Assignment 5: Visualization Audit and Revision",
-    "section": "37.5 Submission Route",
-    "text": "37.5 Submission Route\nSubmit a Canvas assignment entry that contains a link to the repository folder assignments/assignment05-visualization/submission/.",
+    "title": "39  Assignment 5: Visualization Audit and Revision",
+    "section": "39.5 Submission Route",
+    "text": "39.5 Submission Route\nSubmit a Canvas assignment entry that contains a link to the repository folder assignments/assignment05-visualization/submission/.",
     "crumbs": [
       "Assignments and Milestones",
-      "<span class='chapter-number'>37</span>  <span class='chapter-title'>Assignment 5: Visualization Audit and Revision</span>"
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>Assignment 5: Visualization Audit and Revision</span>"
     ]
   },
   {
     "objectID": "assignments/assignment05-visualization/README.html#grading-checklist",
     "href": "assignments/assignment05-visualization/README.html#grading-checklist",
-    "title": "37  Assignment 5: Visualization Audit and Revision",
-    "section": "37.6 Grading Checklist",
-    "text": "37.6 Grading Checklist\nComplete:\n\nUses examples/nhanes-equity/data/nhanes_equity_v6.csv with a relative path.\nPlot is rerunnable from the submitted Quarto file.\nTitle, axes, legend, and caption match the statistic shown.\nAudit note identifies at least three meaningful issues.\nCaption states that the result is descriptive and non-causal.\nAI-use note is present and specific.\n\nNeeds work:\n\nUses an absolute or machine-specific path.\nPlot title or caption overclaims causality or population inference.\nMissing caption, audit note, or AI-use note.\nCode does not run from the repository.\nRevised plot is not materially different from the draft version.",
+    "title": "39  Assignment 5: Visualization Audit and Revision",
+    "section": "39.6 Grading Checklist",
+    "text": "39.6 Grading Checklist\nComplete:\n\nUses examples/nhanes-equity/data/nhanes_equity_v6.csv with a relative path.\nPlot is rerunnable from the submitted Quarto file.\nTitle, axes, legend, and caption match the statistic shown.\nAudit note identifies at least three meaningful issues.\nCaption states that the result is descriptive and non-causal.\nAI-use note is present and specific.\n\nNeeds work:\n\nUses an absolute or machine-specific path.\nPlot title or caption overclaims causality or population inference.\nMissing caption, audit note, or AI-use note.\nCode does not run from the repository.\nRevised plot is not materially different from the draft version.",
     "crumbs": [
       "Assignments and Milestones",
-      "<span class='chapter-number'>37</span>  <span class='chapter-title'>Assignment 5: Visualization Audit and Revision</span>"
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>Assignment 5: Visualization Audit and Revision</span>"
     ]
   },
   {
     "objectID": "assignments/assignment06-eda-ai-audit/README.html",
     "href": "assignments/assignment06-eda-ai-audit/README.html",
-    "title": "38  Assignment 6: EDA, Table 1, and AI Audit",
+    "title": "40  Assignment 6: EDA, Table 1, and AI Audit",
     "section": "",
-    "text": "38.1 Purpose\nProduce a transparent descriptive EDA note and Table 1-style summary from the NHANES Health Equity classroom dataset. You will also audit a planted-error starter to practice catching correctness, reproducibility, and interpretation problems.",
+    "text": "40.1 Purpose\nProduce a transparent descriptive EDA note and Table 1-style summary from the NHANES Health Equity classroom dataset. You will also audit a planted-error starter to practice catching correctness, reproducibility, and interpretation problems.",
     "crumbs": [
       "Assignments and Milestones",
-      "<span class='chapter-number'>38</span>  <span class='chapter-title'>Assignment 6: EDA, Table 1, and AI Audit</span>"
+      "<span class='chapter-number'>40</span>  <span class='chapter-title'>Assignment 6: EDA, Table 1, and AI Audit</span>"
     ]
   },
   {
     "objectID": "assignments/assignment06-eda-ai-audit/README.html#inputs",
     "href": "assignments/assignment06-eda-ai-audit/README.html#inputs",
-    "title": "38  Assignment 6: EDA, Table 1, and AI Audit",
-    "section": "38.2 Inputs",
-    "text": "38.2 Inputs\n\nDataset: examples/nhanes-equity/data/nhanes_equity_v6.csv\nWorked example: weeks/week07-eda-ai-audit/worked-example-table1.qmd\nActivity prompt: weeks/week07-eda-ai-audit/activity-table1-audit.qmd\nPlanted-error starter: weeks/week07-eda-ai-audit/instructor/planted-error-starter.qmd",
+    "title": "40  Assignment 6: EDA, Table 1, and AI Audit",
+    "section": "40.2 Inputs",
+    "text": "40.2 Inputs\n\nDataset: examples/nhanes-equity/data/nhanes_equity_v6.csv\nWorked example: weeks/week07-eda-ai-audit/worked-example-table1.qmd\nActivity prompt: weeks/week07-eda-ai-audit/activity-table1-audit.qmd\nPlanted-error starter: weeks/week07-eda-ai-audit/instructor/planted-error-starter.qmd",
     "crumbs": [
       "Assignments and Milestones",
-      "<span class='chapter-number'>38</span>  <span class='chapter-title'>Assignment 6: EDA, Table 1, and AI Audit</span>"
+      "<span class='chapter-number'>40</span>  <span class='chapter-title'>Assignment 6: EDA, Table 1, and AI Audit</span>"
     ]
   },
   {
     "objectID": "assignments/assignment06-eda-ai-audit/README.html#step-by-step-tasks",
     "href": "assignments/assignment06-eda-ai-audit/README.html#step-by-step-tasks",
-    "title": "38  Assignment 6: EDA, Table 1, and AI Audit",
-    "section": "38.3 Step-by-Step Tasks",
-    "text": "38.3 Step-by-Step Tasks\n\nLoad the CSV snapshot with a relative path.\nDefine and document an analysis cohort using age 20-80.\nCreate a missingness table for key variables.\nProduce a Table 1-style summary by IncomeGroup.\nInclude N, BMI mean (SD), and age mean (SD).\nWrite a short methods note stating that the analysis is descriptive, unweighted, and non-causal.\nAudit the planted-error starter and list at least five issues.\nCategorize each issue as correctness, reproducibility, or interpretation.",
+    "title": "40  Assignment 6: EDA, Table 1, and AI Audit",
+    "section": "40.3 Step-by-Step Tasks",
+    "text": "40.3 Step-by-Step Tasks\n\nLoad the CSV snapshot with a relative path.\nDefine and document an analysis cohort using age 20-80.\nCreate a missingness table for key variables.\nProduce a Table 1-style summary by IncomeGroup.\nInclude N, BMI mean (SD), and age mean (SD).\nWrite a short methods note stating that the analysis is descriptive, unweighted, and non-causal.\nAudit the planted-error starter and list at least five issues.\nCategorize each issue as correctness, reproducibility, or interpretation.",
     "crumbs": [
       "Assignments and Milestones",
-      "<span class='chapter-number'>38</span>  <span class='chapter-title'>Assignment 6: EDA, Table 1, and AI Audit</span>"
+      "<span class='chapter-number'>40</span>  <span class='chapter-title'>Assignment 6: EDA, Table 1, and AI Audit</span>"
     ]
   },
   {
     "objectID": "assignments/assignment06-eda-ai-audit/README.html#what-to-submit",
     "href": "assignments/assignment06-eda-ai-audit/README.html#what-to-submit",
-    "title": "38  Assignment 6: EDA, Table 1, and AI Audit",
-    "section": "38.4 What To Submit",
-    "text": "38.4 What To Submit\nPlace all submission files in:\nassignments/assignment06-eda-ai-audit/submission/\nSubmit these files:\n\neda-note.qmd: rerunnable Quarto file with cohort definition, missingness table, Table 1, and methods note.\neda-note.html: rendered output.\ntable1.csv: exported Table 1 or equivalent descriptive summary.\naudit-note.md: at least five planted issues with category, why it matters, and corrected approach.\nai-use-note.md: required if AI was used; otherwise include a one-sentence note saying AI was not used.",
+    "title": "40  Assignment 6: EDA, Table 1, and AI Audit",
+    "section": "40.4 What To Submit",
+    "text": "40.4 What To Submit\nPlace all submission files in:\nassignments/assignment06-eda-ai-audit/submission/\nSubmit these files:\n\neda-note.qmd: rerunnable Quarto file with cohort definition, missingness table, Table 1, and methods note.\neda-note.html: rendered output.\ntable1.csv: exported Table 1 or equivalent descriptive summary.\naudit-note.md: at least five planted issues with category, why it matters, and corrected approach.\nai-use-note.md: required if AI was used; otherwise include a one-sentence note saying AI was not used.",
     "crumbs": [
       "Assignments and Milestones",
-      "<span class='chapter-number'>38</span>  <span class='chapter-title'>Assignment 6: EDA, Table 1, and AI Audit</span>"
+      "<span class='chapter-number'>40</span>  <span class='chapter-title'>Assignment 6: EDA, Table 1, and AI Audit</span>"
     ]
   },
   {
     "objectID": "assignments/assignment06-eda-ai-audit/README.html#submission-route",
     "href": "assignments/assignment06-eda-ai-audit/README.html#submission-route",
-    "title": "38  Assignment 6: EDA, Table 1, and AI Audit",
-    "section": "38.5 Submission Route",
-    "text": "38.5 Submission Route\nSubmit a Canvas assignment entry that contains a link to the repository folder assignments/assignment06-eda-ai-audit/submission/.",
+    "title": "40  Assignment 6: EDA, Table 1, and AI Audit",
+    "section": "40.5 Submission Route",
+    "text": "40.5 Submission Route\nSubmit a Canvas assignment entry that contains a link to the repository folder assignments/assignment06-eda-ai-audit/submission/.",
     "crumbs": [
       "Assignments and Milestones",
-      "<span class='chapter-number'>38</span>  <span class='chapter-title'>Assignment 6: EDA, Table 1, and AI Audit</span>"
+      "<span class='chapter-number'>40</span>  <span class='chapter-title'>Assignment 6: EDA, Table 1, and AI Audit</span>"
     ]
   },
   {
     "objectID": "assignments/assignment06-eda-ai-audit/README.html#grading-checklist",
     "href": "assignments/assignment06-eda-ai-audit/README.html#grading-checklist",
-    "title": "38  Assignment 6: EDA, Table 1, and AI Audit",
-    "section": "38.6 Grading Checklist",
-    "text": "38.6 Grading Checklist\nComplete:\n\nUses examples/nhanes-equity/data/nhanes_equity_v6.csv with a relative path.\nCohort definition is stated before summarizing.\nMissingness is checked and reported.\nTable 1 includes N, BMI mean (SD), and age mean (SD) by group.\nMethods note avoids causal or population-level overclaims.\nAudit note identifies at least five issues across correctness, reproducibility, and interpretation.\nAI-use note is present and specific.\n\nNeeds work:\n\nUses an absolute or machine-specific path.\nCohort is unclear or inconsistent with the code.\nRows are dropped silently without missingness documentation.\nStatistics are mislabeled or missing variability measures.\nInterpretation overclaims causality.\nCode does not render from the repository.",
+    "title": "40  Assignment 6: EDA, Table 1, and AI Audit",
+    "section": "40.6 Grading Checklist",
+    "text": "40.6 Grading Checklist\nComplete:\n\nUses examples/nhanes-equity/data/nhanes_equity_v6.csv with a relative path.\nCohort definition is stated before summarizing.\nMissingness is checked and reported.\nTable 1 includes N, BMI mean (SD), and age mean (SD) by group.\nMethods note avoids causal or population-level overclaims.\nAudit note identifies at least five issues across correctness, reproducibility, and interpretation.\nAI-use note is present and specific.\n\nNeeds work:\n\nUses an absolute or machine-specific path.\nCohort is unclear or inconsistent with the code.\nRows are dropped silently without missingness documentation.\nStatistics are mislabeled or missing variability measures.\nInterpretation overclaims causality.\nCode does not render from the repository.",
     "crumbs": [
       "Assignments and Milestones",
-      "<span class='chapter-number'>38</span>  <span class='chapter-title'>Assignment 6: EDA, Table 1, and AI Audit</span>"
+      "<span class='chapter-number'>40</span>  <span class='chapter-title'>Assignment 6: EDA, Table 1, and AI Audit</span>"
     ]
   },
   {
@@ -3758,78 +4220,78 @@
   {
     "objectID": "syllabus/topic-coverage-audit.html",
     "href": "syllabus/topic-coverage-audit.html",
-    "title": "39  Syllabus-to-Content Coverage Audit",
+    "title": "41  Syllabus-to-Content Coverage Audit",
     "section": "",
-    "text": "39.1 1) Executive Summary\nSource of truth: syllabus/SPPH-381H-Course-Outline-v4.qmd and syllabus/syllabus-inventory-completion-matrix.md.\nScope scanned: _quarto.yml, weeks/**.qmd, references/**.qmd, assignments/**, and milestones/**.\nDecision rule: Complete requires both narrative coverage and a runnable example, activity, exercise, or concrete student output. Needs Improvement means content exists but is incomplete, scaffold-only, TODO-heavy, or missing the exercise/example needed by the syllabus. Needs Review means evidence is weak, ambiguous, or outside the primary week/module.",
+    "text": "41.1 1) Executive Summary\nSource of truth: syllabus/SPPH-381H-Course-Outline-v4.qmd and syllabus/syllabus-inventory-completion-matrix.md.\nScope scanned: _quarto.yml, weeks/**.qmd, references/**.qmd, assignments/**, and milestones/**.\nDecision rule: Complete requires both narrative coverage and a runnable example, activity, exercise, or concrete student output. Needs Improvement means content exists but is incomplete, scaffold-only, TODO-heavy, or missing the exercise/example needed by the syllabus. Needs Review means evidence is weak, ambiguous, or outside the primary week/module.",
     "crumbs": [
       "Assistant Playbook",
-      "<span class='chapter-number'>39</span>  <span class='chapter-title'>Syllabus-to-Content Coverage Audit</span>"
+      "<span class='chapter-number'>41</span>  <span class='chapter-title'>Syllabus-to-Content Coverage Audit</span>"
     ]
   },
   {
     "objectID": "syllabus/topic-coverage-audit.html#executive-summary",
     "href": "syllabus/topic-coverage-audit.html#executive-summary",
-    "title": "39  Syllabus-to-Content Coverage Audit",
+    "title": "41  Syllabus-to-Content Coverage Audit",
     "section": "",
-    "text": "39.1.1 Status Counts\n\nComplete: 3 topics\nNeeds Improvement: 11 topics\nNot Covered: 0 topics\nNeeds Review: 1 topic\n\n\n\n39.1.2 Top 10 Highest-Priority Gaps\n\nWeeks 6-11 are scaffold-heavy. Each has an overview, but most pages still contain TODO Before Release / Content TODO blocks rather than worked examples.\nAssignment briefs A1-A10 are stubs. Every assignment README says TODO: Build from assignments/assignment-template.qmd.\nMilestone briefs M0-M5 and Final Portfolio are stubs and not in the Quarto TOC. The milestone index is in the book, but the individual README briefs are orphaned.\nrenv is promised in Week 3 but not taught with an activity. Evidence is limited to assignment focus text and syllabus wording.\nWeek 2 workflow mismatch: syllabus says fork a template, current content emphasizes GitHub Classroom.\nWeek 5 R deepening is weak. Python/pandas coverage is substantial, but the syllabus promise of R mastery exercises on dplyr and functions is not clearly implemented in Week 5.\nVisualization lacks runnable ggplot2/plotly examples. Week 6 explicitly says to add worked examples and flawed/corrected AI plots.\nDashboard pathway is undecided. Week 8 says to decide between Quarto dashboard, Shiny, or static HTML/JS.\nReporting/publishing lacks concrete citation and GitHub Pages workflow. Week 10 lists these as TODOs.\nPresentation weeks lack rubric/timing/submission details. Weeks 12-13 contain overviews but still call for presentation timing rules, peer feedback forms, and rubric links.",
+    "text": "41.1.1 Status Counts\n\nComplete: 3 topics\nNeeds Improvement: 11 topics\nNot Covered: 0 topics\nNeeds Review: 1 topic\n\n\n\n41.1.2 Top 10 Highest-Priority Gaps\n\nWeeks 6-11 are scaffold-heavy. Each has an overview, but most pages still contain TODO Before Release / Content TODO blocks rather than worked examples.\nAssignment briefs A1-A10 are stubs. Every assignment README says TODO: Build from assignments/assignment-template.qmd.\nMilestone briefs M0-M5 and Final Portfolio are stubs and not in the Quarto TOC. The milestone index is in the book, but the individual README briefs are orphaned.\nrenv is promised in Week 3 but not taught with an activity. Evidence is limited to assignment focus text and syllabus wording.\nWeek 2 workflow mismatch: syllabus says fork a template, current content emphasizes GitHub Classroom.\nWeek 5 R deepening is weak. Python/pandas coverage is substantial, but the syllabus promise of R mastery exercises on dplyr and functions is not clearly implemented in Week 5.\nVisualization lacks runnable ggplot2/plotly examples. Week 6 explicitly says to add worked examples and flawed/corrected AI plots.\nDashboard pathway is undecided. Week 8 says to decide between Quarto dashboard, Shiny, or static HTML/JS.\nReporting/publishing lacks concrete citation and GitHub Pages workflow. Week 10 lists these as TODOs.\nPresentation weeks lack rubric/timing/submission details. Weeks 12-13 contain overviews but still call for presentation timing rules, peer feedback forms, and rubric links.",
     "crumbs": [
       "Assistant Playbook",
-      "<span class='chapter-number'>39</span>  <span class='chapter-title'>Syllabus-to-Content Coverage Audit</span>"
+      "<span class='chapter-number'>41</span>  <span class='chapter-title'>Syllabus-to-Content Coverage Audit</span>"
     ]
   },
   {
     "objectID": "syllabus/topic-coverage-audit.html#coverage-matrix",
     "href": "syllabus/topic-coverage-audit.html#coverage-matrix",
-    "title": "39  Syllabus-to-Content Coverage Audit",
-    "section": "39.2 2) Coverage Matrix",
-    "text": "39.2 2) Coverage Matrix\n\n39.2.1 Week 0\n\nTopic name (exact from syllabus): Onboarding\nStatus: Needs Improvement\nEvidence:\n\nsyllabus/syllabus-inventory-completion-matrix.md / Extracted Schedule: “GitHub account, orientation video, pre-course survey.”\nweeks/week00-onboarding/index.qmd / Required Student Tasks: “Create a GitHub account”; “Watch the orientation video”; “Complete the pre-course survey”.\nweeks/week00-onboarding/index.qmd / Content TODO: “Add the actual Canvas orientation video link or placeholder.”\n\nWhat’s missing:\n\nActual orientation video link or durable placeholder.\nPre-course survey link or instructions.\nClear confirmation/submission route.\n\nRecommended next additions:\n\nAdd a Canvas-link placeholder with release instructions.\nAdd a short completion checklist students can self-verify.\nAdd expected support/contact path for account setup failures.\n\n\n\n\n39.2.2 Week 1\n\nTopic name (exact from syllabus): Health Data, KT & Ethics\nStatus: Complete\nEvidence:\n\nweeks/week01-health-data-ethics/index.qmd / Overview: “Knowledge Translation (KT)” and “ethical landscape of modern health data”.\nweeks/week01-health-data-ethics/index.qmd / The Open Data Landscape: “Explore 2-3 portals”.\nweeks/week01-health-data-ethics/index.qmd / The Data Intake Card: fields for dataset_name, portal_url, licence_terms, and stewardship_notes.\nweeks/week01-health-data-ethics/activity-data-intake-card.qmd / Student Template: copyable YAML-style template for the activity.\nreferences/data-sources/nhis.qmd / Data Source: NHIS; references/data-sources/nhanes.qmd / Data Source: NHANES; plus other data-source reference pages.\n\nWhat’s missing:\n\nThe activity page still has TODO Before Release.\nA short rubric for provenance/licensing/stewardship is requested but not present.\n\nRecommended next additions:\n\nAdd a student-facing rubric to activity-data-intake-card.qmd.\nAdd one filled example Data Intake Card.\nLink the Week 1 page directly to relevant reference data-source pages.\n\n\n\n\n39.2.3 Week 2\n\nTopic name (exact from syllabus): Modern Workflows\nStatus: Complete\nEvidence:\n\nweeks/week02-modern-workflows/index.qmd / Getting Started: GitHub Account and Classroom: account and repository setup steps.\nweeks/week02-modern-workflows/index.qmd / Launching Your Codespace: “Create Codespace”.\nweeks/week02-modern-workflows/index.qmd / Concepts: IDE, Notebook, Script: compares IDE, script, notebook.\nweeks/week02-modern-workflows/index.qmd / Concepts: Literate Programming: “Quarto documents mix Markdown text with code chunks.”\nweeks/week02-modern-workflows/index.qmd / Tutorial: Stage, Commit, and Sync: staged commit workflow.\nweeks/week02-modern-workflows/index.qmd / Assignment 1: Your First Quarto Report: concrete student task.\n\nWhat’s missing:\n\nSyllabus says “Fork course template repo”; current content says GitHub Classroom/repository.\nIndividual assignment folder is a stub even though the week page has a full assignment section.\n\nRecommended next additions:\n\nDecide whether the official workflow is fork-based or GitHub Classroom, then align Week 2 and syllabus language.\nMove or mirror the Week 2 assignment instructions into assignments/assignment01-workflows/README.md.\n\n\n\n\n39.2.4 Week 3\n\nTopic name (exact from syllabus): R with AI\nStatus: Needs Improvement\nEvidence:\n\nweeks/week03-r-with-ai/index.qmd / Core Constructs: variables, functions, and pipes.\nweeks/week03-r-with-ai/index.qmd / Data Import and First Contact: read_csv(\"data/patients.csv\").\nweeks/week03-r-with-ai/index.qmd / Data Transformation: The Five dplyr Verbs: filter, select, mutate, summarise, group_by.\nweeks/week03-r-with-ai/index.qmd / Writing a Simple Function: reusable summary function.\nweeks/week03-r-with-ai/index.qmd / Debugging: Reading the Red Text: “Fix It” loop.\nweeks/week03-r-with-ai/index.qmd / Assignment: The \"Mad Libs\" Report: step-by-step workflow and deliverable.\nassignments/assignment02-r-with-ai/README.md: “R basics, tidyverse transformations, custom functions, AI debugging, and renv awareness.”\n\nWhat’s missing:\n\nrenv is promised in the syllabus as “intro to renv for dependency management” and “initialize renv”, but no worked renv::init() / restore activity was found.\nAssignment 2 README is still a TODO stub.\n\nRecommended next additions:\n\nAdd a short renv tutorial/checkpoint to Week 3.\nAdd renv.lock expectations and a recovery note.\nExpand assignments/assignment02-r-with-ai/README.md from the template.\n\n\n\n\n39.2.5 Week 4\n\nTopic name (exact from syllabus): Git & Collaboration\nStatus: Complete\nEvidence:\n\nweeks/week04-git-collaboration/index.qmd / Save Game of Reproducible Science: Git as provenance.\nweeks/week04-git-collaboration/index.qmd / Repo Hygiene: .gitignore and relative paths.\nweeks/week04-git-collaboration/index.qmd / Branching: Safe Experimentation: branch creation/merge tutorial.\nweeks/week04-git-collaboration/index.qmd / Pull Requests: The Peer Review Gateway: PR concept and tutorial.\nweeks/week04-git-collaboration/index.qmd / Setting Up Your Group Repository: term project group repository steps.\nweeks/week04-git-collaboration/index.qmd / Practice Exercise: The Full Workflow Drill: concrete exercise.\n\nWhat’s missing:\n\nM0 brief exists but is a TODO stub.\nAssignment 3 README exists but is a TODO stub.\n\nRecommended next additions:\n\nExpand milestones/m0-group-formation/README.md with submission evidence.\nExpand assignments/assignment03-git/README.md with branch/PR screenshots or required proof.\n\n\n\n\n39.2.6 Week 5\n\nTopic name (exact from syllabus): Polyglot Awareness & R Deepening\nStatus: Needs Improvement\nEvidence:\n\nweeks/week05-polyglot-r-deepening/index.qmd / Python vs R--When and Why?: “R remains your primary analysis language.”\nweeks/week05-polyglot-r-deepening/index.qmd / Loading and Viewing Data: pd.read_csv(\"data/patients.csv\").\nweeks/week05-polyglot-r-deepening/index.qmd / Translation Traps: zero-index, indentation, assignment/equality.\nweeks/week05-polyglot-r-deepening/index.qmd / The AI Workflow: One Step, One Cell: parity audit rules.\nweeks/week05-polyglot-r-deepening/python13-translation-exercise.qmd / The Bilingual Translation Exercise: practice exercise.\nassignments/assignment04-polyglot/README.md: “reading Python/pandas, translating a small R task, and verifying parity.”\n\nWhat’s missing:\n\nWeek 5 has strong Python coverage but weak explicit R-deepening exercises.\nAssignment 4 README is a TODO stub.\nDependency documentation is covered for Python requirements.txt, but the syllabus framing of R deepening is not clearly tied to a student output.\n\nRecommended next additions:\n\nAdd one Week 5 exercise that repeats a task in R and Python and compares outputs.\nAdd a specific R dplyr/function refinement task.\nExpand Assignment 4 into a concrete submission brief.\n\n\n\n\n39.2.7 Week 6\n\nTopic name (exact from syllabus): Data Visualization\nStatus: Needs Improvement\nEvidence:\n\nweeks/week06-visualization/index.qmd / Overview: “publication-quality visualizations” and “ggplot2 or plotly”.\nweeks/week06-visualization/index.qmd / Content TODO: “Add a worked ggplot2 example”; “Add one intentionally misleading AI-generated chart”.\nweeks/week06-visualization/activity-ai-visual-audit.qmd / Goal: evaluate “correctness, clarity, bias, aggregation choices, and misleading design.”\nassignments/assignment05-visualization/README.md: “original plot, revised plot, and audit note.”\n\nWhat’s missing:\n\nWorked ggplot2 example.\nPlotly or interactive extension.\nFlawed AI chart plus corrected version.\nConcrete starter data and prompt.\n\nRecommended next additions:\n\nAdd a runnable ggplot2 tutorial using shared data.\nAdd one intentionally flawed chart and student audit questions.\nAdd a small plotly extension as optional enrichment.\n\n\n\n\n39.2.8 Week 7\n\nTopic name (exact from syllabus): EDA, Table 1 & AI Auditing\nStatus: Needs Improvement\nEvidence:\n\nweeks/week07-eda-ai-audit/index.qmd / Overview: EDA and “standard Table 1”.\nweeks/week07-eda-ai-audit/index.qmd / Content TODO: “Build a worked EDA”; “Add Table 1 expectations”; “Add a planted-error AI audit exercise.”\nweeks/week07-eda-ai-audit/activity-table1-audit.qmd / Goal: “create a descriptive summary and audit AI-generated code”.\nassignments/assignment06-eda-ai-audit/README.md: “EDA, Table 1 or equivalent descriptive summary, planted-error audit, and provenance notes.”\n\nWhat’s missing:\n\nWorked EDA with data path.\nTable 1 variables and example output.\nPlanted-error code/summary/visualization.\nInstructor key outside student page.\n\nRecommended next additions:\n\nBuild around examples/data/ or a week-local starter dataset.\nAdd a runnable Table 1 example.\nAdd AI audit prompts and expected fixes.\n\n\n\n\n39.2.9 Week 8\n\nTopic name (exact from syllabus): Dashboard Prototypes for KT\nStatus: Needs Improvement\nEvidence:\n\nweeks/week08-dashboard-kt/index.qmd / Overview: Shiny apps, dashboards, and KT.\nweeks/week08-dashboard-kt/index.qmd / Content TODO: “Decide the required core pathway”; “Add a minimal dashboard starter”.\nweeks/week08-dashboard-kt/starter-dashboard.qmd / Required Elements: audience-specific question, control, visualization, interpretation, limitation.\nassignments/assignment07-dashboard/README.md: “minimal dashboard-style KT product from EDA outputs.”\n\nWhat’s missing:\n\nActual dashboard code.\nRequired pathway decision: Quarto dashboard, Shiny, or static HTML/JS.\nCodespaces testing instructions.\nPrivacy-safe publishing guidance.\n\nRecommended next additions:\n\nAdd a minimal Quarto dashboard starter that renders.\nAdd a fallback static version.\nState which pathway is required and which are optional.\n\n\n\n\n39.2.10 Week 9\n\nTopic name (exact from syllabus): Communication of Scientific Findings\nStatus: Needs Improvement\nEvidence:\n\nweeks/week09-science-communication/index.qmd / Overview: “Audience-Specific KT”, plain language, slide decks, peer review.\nweeks/week09-science-communication/index.qmd / Content TODO: “Add a revealjs starter deck”; “Add a plain-language summary exercise.”\nweeks/week09-science-communication/revealjs-peer-feedback.qmd / Peer Feedback Prompts: main message, evidence, overclaiming, reproducibility/audience fit.\nassignments/assignment08-communication/README.md: “revealjs slides, plain-language summary, citations, and peer feedback.”\n\nWhat’s missing:\n\nMinimal format: revealjs example.\nThree-slide starter structure.\nPlain-language summary exercise.\nCitation and accessibility expectations.\n\nRecommended next additions:\n\nAdd a renderable revealjs starter.\nAdd a before/after plain-language translation activity.\nConvert peer prompts into a reusable feedback form.\n\n\n\n\n39.2.11 Week 10\n\nTopic name (exact from syllabus): Writing & Publishing Reports\nStatus: Needs Improvement\nEvidence:\n\nweeks/week10-reporting-publishing/index.qmd / Overview: dynamic report and publishing workflows.\nweeks/week10-reporting-publishing/index.qmd / Content TODO: report skeleton, citation examples, GitHub Pages setup, grounding audit.\nweeks/week10-reporting-publishing/report-template.qmd / Suggested Sections: question, data, methods, results, limitations, plain-language summary, AI-use note.\nassignments/assignment09-reporting/README.md: “Quarto report, citations, GitHub Pages or private equivalent, and grounding audit.”\n\nWhat’s missing:\n\nCopyable report starter with real YAML.\nBibliography setup and citation example.\nGitHub Pages setup or private submission alternative.\nInteractive element example.\n\nRecommended next additions:\n\nAdd a minimal report template that renders with references.bib.\nAdd a GitHub Pages checklist with screenshots or text-only steps.\nAdd citation grounding audit prompts.\n\n\n\n\n39.2.12 Week 11\n\nTopic name (exact from syllabus): Portfolio Surgery & Optional Advanced Deployment\nStatus: Needs Improvement\nEvidence:\n\nweeks/week11-portfolio-surgery/index.qmd / Overview: dependency management, auditability, and peer review.\nweeks/week11-portfolio-surgery/index.qmd / Content TODO: fresh Codespace test, broken-project exercise, Assignment 10, Milestone 4, final checklist.\nweeks/week11-portfolio-surgery/reproducibility-test.qmd / Failure Log Template: checks for repository, packages, report, dashboard, README.\nassignments/assignment10-portfolio-surgery/README.md: “fresh Codespace test, dependency/path repair, README clarity”.\nmilestones/m4-peer-review/README.md: peer review covering clarity, reproducibility, auditability, KT value.\n\nWhat’s missing:\n\nStep-by-step fresh Codespace protocol.\nBroken-project debugging exercise.\nFinal portfolio readiness checklist.\nOptional Python-flavoured pathway from syllabus is not clearly present here.\n\nRecommended next additions:\n\nExpand reproducibility-test.qmd into a runbook.\nAdd a sample failure log with fixes.\nAdd a final portfolio checklist linked from Week 11 and final portfolio README.\n\n\n\n\n39.2.13 Week 12\n\nTopic name (exact from syllabus): Term Project Presentations, Part 1\nStatus: Needs Improvement\nEvidence:\n\nweeks/week12-presentations/index.qmd / Overview: first presentation block and peer review.\nweeks/week12-presentations/index.qmd / Content TODO: timing rules, slide submission, peer feedback form, rubric.\nmilestones/m5-presentation/README.md: “presentation slides, live Q&A, and peer review feedback.”\n\nWhat’s missing:\n\nPresentation timing rules.\nSlide submission instructions.\nPeer feedback form.\nPresentation rubric.\n\nRecommended next additions:\n\nAdd a M5 rubric and link it from Week 12.\nAdd a slide checklist and submission timing.\nAdd a simple peer feedback form.\n\n\n\n\n39.2.14 Week 13\n\nTopic name (exact from syllabus): Term Project Presentations, Part 2\nStatus: Needs Improvement\nEvidence:\n\nweeks/week13-presentations/index.qmd / Overview: completes M5 and feedback before final portfolio.\nweeks/week13-presentations/index.qmd / Content TODO: group schedule, final reminders, closing reflection prompt.\nmilestones/m5-presentation/README.md: “slides render before class and claims are grounded”.\n\nWhat’s missing:\n\nGroup schedule or placeholder.\nFinal portfolio reminders.\nClosing reflection prompt.\n\nRecommended next additions:\n\nAdd a repeatable Part 2 logistics block.\nLink to final portfolio checklist.\nAdd a reflection prompt on reproducibility and KT.\n\n\n\n\n39.2.15 Final\n\nTopic name (exact from syllabus): Final Portfolio\nStatus: Needs Review\nEvidence:\n\nsyllabus/syllabus-inventory-completion-matrix.md / Extracted Schedule: “Final portfolio due Dec 11, Fri 4 PM.”\nmilestones/final-portfolio/README.md: “complete repository, reproducible report, dashboard-style KT product, presentation materials, and AI-use audit note.”\nmilestones/final-portfolio/README.md: TODO: Build from milestones/milestone-template.qmd.\nmilestones/index.qmd / milestone table: “Complete reproducible portfolio.”\n\nWhat’s missing:\n\nDetailed final portfolio checklist.\nSubmission instructions.\nExplicit mapping to reproducibility contract.\nPublic/private portfolio guidance from syllabus.\n\nRecommended next additions:\n\nConvert the syllabus reproducibility contract into a final checklist.\nExpand milestones/final-portfolio/README.md.\nAdd a source page to _quarto.yml or link from Week 13.",
+    "title": "41  Syllabus-to-Content Coverage Audit",
+    "section": "41.2 2) Coverage Matrix",
+    "text": "41.2 2) Coverage Matrix\n\n41.2.1 Week 0\n\nTopic name (exact from syllabus): Onboarding\nStatus: Needs Improvement\nEvidence:\n\nsyllabus/syllabus-inventory-completion-matrix.md / Extracted Schedule: “GitHub account, orientation video, pre-course survey.”\nweeks/week00-onboarding/index.qmd / Required Student Tasks: “Create a GitHub account”; “Watch the orientation video”; “Complete the pre-course survey”.\nweeks/week00-onboarding/index.qmd / Content TODO: “Add the actual Canvas orientation video link or placeholder.”\n\nWhat’s missing:\n\nActual orientation video link or durable placeholder.\nPre-course survey link or instructions.\nClear confirmation/submission route.\n\nRecommended next additions:\n\nAdd a Canvas-link placeholder with release instructions.\nAdd a short completion checklist students can self-verify.\nAdd expected support/contact path for account setup failures.\n\n\n\n\n41.2.2 Week 1\n\nTopic name (exact from syllabus): Health Data, KT & Ethics\nStatus: Complete\nEvidence:\n\nweeks/week01-health-data-ethics/index.qmd / Overview: “Knowledge Translation (KT)” and “ethical landscape of modern health data”.\nweeks/week01-health-data-ethics/index.qmd / The Open Data Landscape: “Explore 2-3 portals”.\nweeks/week01-health-data-ethics/index.qmd / The Data Intake Card: fields for dataset_name, portal_url, licence_terms, and stewardship_notes.\nweeks/week01-health-data-ethics/activity-data-intake-card.qmd / Student Template: copyable YAML-style template for the activity.\nreferences/data-sources/nhis.qmd / Data Source: NHIS; references/data-sources/nhanes.qmd / Data Source: NHANES; plus other data-source reference pages.\n\nWhat’s missing:\n\nThe activity page still has TODO Before Release.\nA short rubric for provenance/licensing/stewardship is requested but not present.\n\nRecommended next additions:\n\nAdd a student-facing rubric to activity-data-intake-card.qmd.\nAdd one filled example Data Intake Card.\nLink the Week 1 page directly to relevant reference data-source pages.\n\n\n\n\n41.2.3 Week 2\n\nTopic name (exact from syllabus): Modern Workflows\nStatus: Complete\nEvidence:\n\nweeks/week02-modern-workflows/index.qmd / Getting Started: GitHub Account and Classroom: account and repository setup steps.\nweeks/week02-modern-workflows/index.qmd / Launching Your Codespace: “Create Codespace”.\nweeks/week02-modern-workflows/index.qmd / Concepts: IDE, Notebook, Script: compares IDE, script, notebook.\nweeks/week02-modern-workflows/index.qmd / Concepts: Literate Programming: “Quarto documents mix Markdown text with code chunks.”\nweeks/week02-modern-workflows/index.qmd / Tutorial: Stage, Commit, and Sync: staged commit workflow.\nweeks/week02-modern-workflows/index.qmd / Assignment 1: Your First Quarto Report: concrete student task.\n\nWhat’s missing:\n\nSyllabus says “Fork course template repo”; current content says GitHub Classroom/repository.\nIndividual assignment folder is a stub even though the week page has a full assignment section.\n\nRecommended next additions:\n\nDecide whether the official workflow is fork-based or GitHub Classroom, then align Week 2 and syllabus language.\nMove or mirror the Week 2 assignment instructions into assignments/assignment01-workflows/README.md.\n\n\n\n\n41.2.4 Week 3\n\nTopic name (exact from syllabus): R with AI\nStatus: Needs Improvement\nEvidence:\n\nweeks/week03-r-with-ai/index.qmd / Core Constructs: variables, functions, and pipes.\nweeks/week03-r-with-ai/index.qmd / Data Import and First Contact: read_csv(\"data/patients.csv\").\nweeks/week03-r-with-ai/index.qmd / Data Transformation: The Five dplyr Verbs: filter, select, mutate, summarise, group_by.\nweeks/week03-r-with-ai/index.qmd / Writing a Simple Function: reusable summary function.\nweeks/week03-r-with-ai/index.qmd / Debugging: Reading the Red Text: “Fix It” loop.\nweeks/week03-r-with-ai/index.qmd / Assignment: The \"Mad Libs\" Report: step-by-step workflow and deliverable.\nassignments/assignment02-r-with-ai/README.md: “R basics, tidyverse transformations, custom functions, AI debugging, and renv awareness.”\n\nWhat’s missing:\n\nrenv is promised in the syllabus as “intro to renv for dependency management” and “initialize renv”, but no worked renv::init() / restore activity was found.\nAssignment 2 README is still a TODO stub.\n\nRecommended next additions:\n\nAdd a short renv tutorial/checkpoint to Week 3.\nAdd renv.lock expectations and a recovery note.\nExpand assignments/assignment02-r-with-ai/README.md from the template.\n\n\n\n\n41.2.5 Week 4\n\nTopic name (exact from syllabus): Git & Collaboration\nStatus: Complete\nEvidence:\n\nweeks/week04-git-collaboration/index.qmd / Save Game of Reproducible Science: Git as provenance.\nweeks/week04-git-collaboration/index.qmd / Repo Hygiene: .gitignore and relative paths.\nweeks/week04-git-collaboration/index.qmd / Branching: Safe Experimentation: branch creation/merge tutorial.\nweeks/week04-git-collaboration/index.qmd / Pull Requests: The Peer Review Gateway: PR concept and tutorial.\nweeks/week04-git-collaboration/index.qmd / Setting Up Your Group Repository: term project group repository steps.\nweeks/week04-git-collaboration/index.qmd / Practice Exercise: The Full Workflow Drill: concrete exercise.\n\nWhat’s missing:\n\nM0 brief exists but is a TODO stub.\nAssignment 3 README exists but is a TODO stub.\n\nRecommended next additions:\n\nExpand milestones/m0-group-formation/README.md with submission evidence.\nExpand assignments/assignment03-git/README.md with branch/PR screenshots or required proof.\n\n\n\n\n41.2.6 Week 5\n\nTopic name (exact from syllabus): Polyglot Awareness & R Deepening\nStatus: Needs Improvement\nEvidence:\n\nweeks/week05-polyglot-r-deepening/index.qmd / Python vs R--When and Why?: “R remains your primary analysis language.”\nweeks/week05-polyglot-r-deepening/index.qmd / Loading and Viewing Data: pd.read_csv(\"data/patients.csv\").\nweeks/week05-polyglot-r-deepening/index.qmd / Translation Traps: zero-index, indentation, assignment/equality.\nweeks/week05-polyglot-r-deepening/index.qmd / The AI Workflow: One Step, One Cell: parity audit rules.\nweeks/week05-polyglot-r-deepening/python13-translation-exercise.qmd / The Bilingual Translation Exercise: practice exercise.\nassignments/assignment04-polyglot/README.md: “reading Python/pandas, translating a small R task, and verifying parity.”\n\nWhat’s missing:\n\nWeek 5 has strong Python coverage but weak explicit R-deepening exercises.\nAssignment 4 README is a TODO stub.\nDependency documentation is covered for Python requirements.txt, but the syllabus framing of R deepening is not clearly tied to a student output.\n\nRecommended next additions:\n\nAdd one Week 5 exercise that repeats a task in R and Python and compares outputs.\nAdd a specific R dplyr/function refinement task.\nExpand Assignment 4 into a concrete submission brief.\n\n\n\n\n41.2.7 Week 6\n\nTopic name (exact from syllabus): Data Visualization\nStatus: Needs Improvement\nEvidence:\n\nweeks/week06-visualization/index.qmd / Overview: “publication-quality visualizations” and “ggplot2 or plotly”.\nweeks/week06-visualization/index.qmd / Content TODO: “Add a worked ggplot2 example”; “Add one intentionally misleading AI-generated chart”.\nweeks/week06-visualization/activity-ai-visual-audit.qmd / Goal: evaluate “correctness, clarity, bias, aggregation choices, and misleading design.”\nassignments/assignment05-visualization/README.md: “original plot, revised plot, and audit note.”\n\nWhat’s missing:\n\nWorked ggplot2 example.\nPlotly or interactive extension.\nFlawed AI chart plus corrected version.\nConcrete starter data and prompt.\n\nRecommended next additions:\n\nAdd a runnable ggplot2 tutorial using shared data.\nAdd one intentionally flawed chart and student audit questions.\nAdd a small plotly extension as optional enrichment.\n\n\n\n\n41.2.8 Week 7\n\nTopic name (exact from syllabus): EDA, Table 1 & AI Auditing\nStatus: Needs Improvement\nEvidence:\n\nweeks/week07-eda-ai-audit/index.qmd / Overview: EDA and “standard Table 1”.\nweeks/week07-eda-ai-audit/index.qmd / Content TODO: “Build a worked EDA”; “Add Table 1 expectations”; “Add a planted-error AI audit exercise.”\nweeks/week07-eda-ai-audit/activity-table1-audit.qmd / Goal: “create a descriptive summary and audit AI-generated code”.\nassignments/assignment06-eda-ai-audit/README.md: “EDA, Table 1 or equivalent descriptive summary, planted-error audit, and provenance notes.”\n\nWhat’s missing:\n\nWorked EDA with data path.\nTable 1 variables and example output.\nPlanted-error code/summary/visualization.\nInstructor key outside student page.\n\nRecommended next additions:\n\nBuild around examples/data/ or a week-local starter dataset.\nAdd a runnable Table 1 example.\nAdd AI audit prompts and expected fixes.\n\n\n\n\n41.2.9 Week 8\n\nTopic name (exact from syllabus): Dashboard Prototypes for KT\nStatus: Needs Improvement\nEvidence:\n\nweeks/week08-dashboard-kt/index.qmd / Overview: Shiny apps, dashboards, and KT.\nweeks/week08-dashboard-kt/index.qmd / Content TODO: “Decide the required core pathway”; “Add a minimal dashboard starter”.\nweeks/week08-dashboard-kt/starter-dashboard.qmd / Required Elements: audience-specific question, control, visualization, interpretation, limitation.\nassignments/assignment07-dashboard/README.md: “minimal dashboard-style KT product from EDA outputs.”\n\nWhat’s missing:\n\nActual dashboard code.\nRequired pathway decision: Quarto dashboard, Shiny, or static HTML/JS.\nCodespaces testing instructions.\nPrivacy-safe publishing guidance.\n\nRecommended next additions:\n\nAdd a minimal Quarto dashboard starter that renders.\nAdd a fallback static version.\nState which pathway is required and which are optional.\n\n\n\n\n41.2.10 Week 9\n\nTopic name (exact from syllabus): Communication of Scientific Findings\nStatus: Needs Improvement\nEvidence:\n\nweeks/week09-science-communication/index.qmd / Overview: “Audience-Specific KT”, plain language, slide decks, peer review.\nweeks/week09-science-communication/index.qmd / Content TODO: “Add a revealjs starter deck”; “Add a plain-language summary exercise.”\nweeks/week09-science-communication/revealjs-peer-feedback.qmd / Peer Feedback Prompts: main message, evidence, overclaiming, reproducibility/audience fit.\nassignments/assignment08-communication/README.md: “revealjs slides, plain-language summary, citations, and peer feedback.”\n\nWhat’s missing:\n\nMinimal format: revealjs example.\nThree-slide starter structure.\nPlain-language summary exercise.\nCitation and accessibility expectations.\n\nRecommended next additions:\n\nAdd a renderable revealjs starter.\nAdd a before/after plain-language translation activity.\nConvert peer prompts into a reusable feedback form.\n\n\n\n\n41.2.11 Week 10\n\nTopic name (exact from syllabus): Writing & Publishing Reports\nStatus: Needs Improvement\nEvidence:\n\nweeks/week10-reporting-publishing/index.qmd / Overview: dynamic report and publishing workflows.\nweeks/week10-reporting-publishing/index.qmd / Content TODO: report skeleton, citation examples, GitHub Pages setup, grounding audit.\nweeks/week10-reporting-publishing/report-template.qmd / Suggested Sections: question, data, methods, results, limitations, plain-language summary, AI-use note.\nassignments/assignment09-reporting/README.md: “Quarto report, citations, GitHub Pages or private equivalent, and grounding audit.”\n\nWhat’s missing:\n\nCopyable report starter with real YAML.\nBibliography setup and citation example.\nGitHub Pages setup or private submission alternative.\nInteractive element example.\n\nRecommended next additions:\n\nAdd a minimal report template that renders with references.bib.\nAdd a GitHub Pages checklist with screenshots or text-only steps.\nAdd citation grounding audit prompts.\n\n\n\n\n41.2.12 Week 11\n\nTopic name (exact from syllabus): Portfolio Surgery & Optional Advanced Deployment\nStatus: Needs Improvement\nEvidence:\n\nweeks/week11-portfolio-surgery/index.qmd / Overview: dependency management, auditability, and peer review.\nweeks/week11-portfolio-surgery/index.qmd / Content TODO: fresh Codespace test, broken-project exercise, Assignment 10, Milestone 4, final checklist.\nweeks/week11-portfolio-surgery/reproducibility-test.qmd / Failure Log Template: checks for repository, packages, report, dashboard, README.\nassignments/assignment10-portfolio-surgery/README.md: “fresh Codespace test, dependency/path repair, README clarity”.\nmilestones/m4-peer-review/README.md: peer review covering clarity, reproducibility, auditability, KT value.\n\nWhat’s missing:\n\nStep-by-step fresh Codespace protocol.\nBroken-project debugging exercise.\nFinal portfolio readiness checklist.\nOptional Python-flavoured pathway from syllabus is not clearly present here.\n\nRecommended next additions:\n\nExpand reproducibility-test.qmd into a runbook.\nAdd a sample failure log with fixes.\nAdd a final portfolio checklist linked from Week 11 and final portfolio README.\n\n\n\n\n41.2.13 Week 12\n\nTopic name (exact from syllabus): Term Project Presentations, Part 1\nStatus: Needs Improvement\nEvidence:\n\nweeks/week12-presentations/index.qmd / Overview: first presentation block and peer review.\nweeks/week12-presentations/index.qmd / Content TODO: timing rules, slide submission, peer feedback form, rubric.\nmilestones/m5-presentation/README.md: “presentation slides, live Q&A, and peer review feedback.”\n\nWhat’s missing:\n\nPresentation timing rules.\nSlide submission instructions.\nPeer feedback form.\nPresentation rubric.\n\nRecommended next additions:\n\nAdd a M5 rubric and link it from Week 12.\nAdd a slide checklist and submission timing.\nAdd a simple peer feedback form.\n\n\n\n\n41.2.14 Week 13\n\nTopic name (exact from syllabus): Term Project Presentations, Part 2\nStatus: Needs Improvement\nEvidence:\n\nweeks/week13-presentations/index.qmd / Overview: completes M5 and feedback before final portfolio.\nweeks/week13-presentations/index.qmd / Content TODO: group schedule, final reminders, closing reflection prompt.\nmilestones/m5-presentation/README.md: “slides render before class and claims are grounded”.\n\nWhat’s missing:\n\nGroup schedule or placeholder.\nFinal portfolio reminders.\nClosing reflection prompt.\n\nRecommended next additions:\n\nAdd a repeatable Part 2 logistics block.\nLink to final portfolio checklist.\nAdd a reflection prompt on reproducibility and KT.\n\n\n\n\n41.2.15 Final\n\nTopic name (exact from syllabus): Final Portfolio\nStatus: Needs Review\nEvidence:\n\nsyllabus/syllabus-inventory-completion-matrix.md / Extracted Schedule: “Final portfolio due Dec 11, Fri 4 PM.”\nmilestones/final-portfolio/README.md: “complete repository, reproducible report, dashboard-style KT product, presentation materials, and AI-use audit note.”\nmilestones/final-portfolio/README.md: TODO: Build from milestones/milestone-template.qmd.\nmilestones/index.qmd / milestone table: “Complete reproducible portfolio.”\n\nWhat’s missing:\n\nDetailed final portfolio checklist.\nSubmission instructions.\nExplicit mapping to reproducibility contract.\nPublic/private portfolio guidance from syllabus.\n\nRecommended next additions:\n\nConvert the syllabus reproducibility contract into a final checklist.\nExpand milestones/final-portfolio/README.md.\nAdd a source page to _quarto.yml or link from Week 13.",
     "crumbs": [
       "Assistant Playbook",
-      "<span class='chapter-number'>39</span>  <span class='chapter-title'>Syllabus-to-Content Coverage Audit</span>"
+      "<span class='chapter-number'>41</span>  <span class='chapter-title'>Syllabus-to-Content Coverage Audit</span>"
     ]
   },
   {
     "objectID": "syllabus/topic-coverage-audit.html#deliverables-alignment",
     "href": "syllabus/topic-coverage-audit.html#deliverables-alignment",
-    "title": "39  Syllabus-to-Content Coverage Audit",
-    "section": "39.3 3) Deliverables Alignment",
-    "text": "39.3 3) Deliverables Alignment\n\n39.3.1 Weekly Assignments A1-A10\n\n\n\n\n\n\n\n\n\n\nDeliverable\nSyllabus expectation\nExisting repo page(s)\nAlignment\nMismatch / risk\n\n\n\n\nA1\nAssignment 1 due Week 2; fork/template, Codespace, Quarto, commit/sync\nassignments/index.qmd; assignments/assignment01-workflows/README.md; weeks/week02-modern-workflows/index.qmd / Assignment 1\nNeeds Improvement\nWeek page has useful task detail, but assignment README is a TODO stub. Syllabus says fork; Week 2 content says GitHub Classroom.\n\n\nA2\nR basics, tidyverse, functions, debugging, renv, Quarto documentation\nassignments/assignment02-r-with-ai/README.md; weeks/week03-r-with-ai/index.qmd\nNeeds Improvement\nWeek 3 content is strong, but assignment README is a TODO stub and renv lacks a worked activity.\n\n\nA3\nGit collaboration and repo hygiene\nassignments/assignment03-git/README.md; weeks/week04-git-collaboration/index.qmd\nNeeds Improvement\nWeek content is strong, but assignment README is a TODO stub.\n\n\nA4\nPolyglot awareness and R deepening\nassignments/assignment04-polyglot/README.md; weeks/week05-polyglot-r-deepening/index.qmd\nNeeds Improvement\nPython coverage is strong; assignment README is a TODO stub; R deepening is not explicit enough.\n\n\nA5\nVisualization and AI visual audit\nassignments/assignment05-visualization/README.md; weeks/week06-visualization/index.qmd; weeks/week06-visualization/activity-ai-visual-audit.qmd\nNeeds Improvement\nAssignment README and week pages identify outputs, but runnable examples and starter assets are TODO.\n\n\nA6\nEDA, Table 1, planted-error audit\nassignments/assignment06-eda-ai-audit/README.md; weeks/week07-eda-ai-audit/index.qmd; weeks/week07-eda-ai-audit/activity-table1-audit.qmd\nNeeds Improvement\nDeliverable is named, but worked EDA, Table 1 variables, and planted-error materials are TODO.\n\n\nA7\nDashboard-style KT prototype\nassignments/assignment07-dashboard/README.md; weeks/week08-dashboard-kt/index.qmd; weeks/week08-dashboard-kt/starter-dashboard.qmd\nNeeds Improvement\nRequired pathway and starter code are TODO.\n\n\nA8\nScientific communication and peer feedback\nassignments/assignment08-communication/README.md; weeks/week09-science-communication/index.qmd; weeks/week09-science-communication/revealjs-peer-feedback.qmd\nNeeds Improvement\nPeer prompts exist; revealjs starter, plain-language exercise, and assignment brief are TODO.\n\n\nA9\nReporting, citations, publishing\nassignments/assignment09-reporting/README.md; weeks/week10-reporting-publishing/index.qmd; weeks/week10-reporting-publishing/report-template.qmd\nNeeds Improvement\nReport sections exist; citations, GitHub Pages/private alternative, and assignment brief are TODO.\n\n\nA10\nPortfolio surgery and reproducibility test\nassignments/assignment10-portfolio-surgery/README.md; weeks/week11-portfolio-surgery/index.qmd; weeks/week11-portfolio-surgery/reproducibility-test.qmd\nNeeds Improvement\nFailure log exists; step-by-step protocol and assignment brief are TODO.\n\n\n\n\n\n39.3.2 Milestones M0-M5 and Final Portfolio\n\n\n\n\n\n\n\n\n\n\nDeliverable\nSyllabus expectation\nExisting repo page(s)\nAlignment\nMismatch / risk\n\n\n\n\nM0\nGroup formation; one member forks template and adds teammates\nmilestones/m0-group-formation/README.md; weeks/week04-git-collaboration/index.qmd / Setting Up Your Group Repository\nNeeds Improvement\nWeek 4 has group setup steps; milestone README is a TODO stub and not in _quarto.yml.\n\n\nM1\nProposal: research question, dataset, feasibility, provenance/stewardship\nmilestones/m1-proposal/README.md; weeks/week05-polyglot-r-deepening/python11-project-milestone.qmd\nNeeds Improvement\nM1 README is a TODO stub. Week 5 has a checklist, but syllabus places M1 due Week 6.\n\n\nM2\nPreliminary analysis: cleaning, EDA, Table 1, runnable repo\nmilestones/m2-preliminary-analysis/README.md; weeks/week07-eda-ai-audit/index.qmd\nNeeds Improvement\nMilestone README and Week 7 are TODO-heavy; no worked EDA/Table 1 example.\n\n\nM3\nProject update: draft dashboard-style KT product + report draft\nmilestones/m3-project-update/README.md; weeks/week10-reporting-publishing/index.qmd; weeks/week08-dashboard-kt/index.qmd\nNeeds Improvement\nM3 README is a TODO stub; Week 8/10 content is still scaffolded.\n\n\nM4\nPeer review with reproducibility and auditability checks\nmilestones/m4-peer-review/README.md; weeks/week11-portfolio-surgery/index.qmd\nNeeds Improvement\nM4 README is a TODO stub; Week 11 asks to add peer review instructions.\n\n\nM5\nPresentations, live Q&A, peer review\nmilestones/m5-presentation/README.md; weeks/week12-presentations/index.qmd; weeks/week13-presentations/index.qmd\nNeeds Improvement\nPresentation milestone exists but is a TODO stub; rubric and timing rules are missing.\n\n\nFinal Portfolio\nComplete report, dashboard-style KT product, auditable repo\nmilestones/final-portfolio/README.md; milestones/index.qmd\nNeeds Review\nFinal portfolio README is a TODO stub and not referenced in _quarto.yml.",
+    "title": "41  Syllabus-to-Content Coverage Audit",
+    "section": "41.3 3) Deliverables Alignment",
+    "text": "41.3 3) Deliverables Alignment\n\n41.3.1 Weekly Assignments A1-A10\n\n\n\n\n\n\n\n\n\n\nDeliverable\nSyllabus expectation\nExisting repo page(s)\nAlignment\nMismatch / risk\n\n\n\n\nA1\nAssignment 1 due Week 2; fork/template, Codespace, Quarto, commit/sync\nassignments/index.qmd; assignments/assignment01-workflows/README.md; weeks/week02-modern-workflows/index.qmd / Assignment 1\nNeeds Improvement\nWeek page has useful task detail, but assignment README is a TODO stub. Syllabus says fork; Week 2 content says GitHub Classroom.\n\n\nA2\nR basics, tidyverse, functions, debugging, renv, Quarto documentation\nassignments/assignment02-r-with-ai/README.md; weeks/week03-r-with-ai/index.qmd\nNeeds Improvement\nWeek 3 content is strong, but assignment README is a TODO stub and renv lacks a worked activity.\n\n\nA3\nGit collaboration and repo hygiene\nassignments/assignment03-git/README.md; weeks/week04-git-collaboration/index.qmd\nNeeds Improvement\nWeek content is strong, but assignment README is a TODO stub.\n\n\nA4\nPolyglot awareness and R deepening\nassignments/assignment04-polyglot/README.md; weeks/week05-polyglot-r-deepening/index.qmd\nNeeds Improvement\nPython coverage is strong; assignment README is a TODO stub; R deepening is not explicit enough.\n\n\nA5\nVisualization and AI visual audit\nassignments/assignment05-visualization/README.md; weeks/week06-visualization/index.qmd; weeks/week06-visualization/activity-ai-visual-audit.qmd\nNeeds Improvement\nAssignment README and week pages identify outputs, but runnable examples and starter assets are TODO.\n\n\nA6\nEDA, Table 1, planted-error audit\nassignments/assignment06-eda-ai-audit/README.md; weeks/week07-eda-ai-audit/index.qmd; weeks/week07-eda-ai-audit/activity-table1-audit.qmd\nNeeds Improvement\nDeliverable is named, but worked EDA, Table 1 variables, and planted-error materials are TODO.\n\n\nA7\nDashboard-style KT prototype\nassignments/assignment07-dashboard/README.md; weeks/week08-dashboard-kt/index.qmd; weeks/week08-dashboard-kt/starter-dashboard.qmd\nNeeds Improvement\nRequired pathway and starter code are TODO.\n\n\nA8\nScientific communication and peer feedback\nassignments/assignment08-communication/README.md; weeks/week09-science-communication/index.qmd; weeks/week09-science-communication/revealjs-peer-feedback.qmd\nNeeds Improvement\nPeer prompts exist; revealjs starter, plain-language exercise, and assignment brief are TODO.\n\n\nA9\nReporting, citations, publishing\nassignments/assignment09-reporting/README.md; weeks/week10-reporting-publishing/index.qmd; weeks/week10-reporting-publishing/report-template.qmd\nNeeds Improvement\nReport sections exist; citations, GitHub Pages/private alternative, and assignment brief are TODO.\n\n\nA10\nPortfolio surgery and reproducibility test\nassignments/assignment10-portfolio-surgery/README.md; weeks/week11-portfolio-surgery/index.qmd; weeks/week11-portfolio-surgery/reproducibility-test.qmd\nNeeds Improvement\nFailure log exists; step-by-step protocol and assignment brief are TODO.\n\n\n\n\n\n41.3.2 Milestones M0-M5 and Final Portfolio\n\n\n\n\n\n\n\n\n\n\nDeliverable\nSyllabus expectation\nExisting repo page(s)\nAlignment\nMismatch / risk\n\n\n\n\nM0\nGroup formation; one member forks template and adds teammates\nmilestones/m0-group-formation/README.md; weeks/week04-git-collaboration/index.qmd / Setting Up Your Group Repository\nNeeds Improvement\nWeek 4 has group setup steps; milestone README is a TODO stub and not in _quarto.yml.\n\n\nM1\nProposal: research question, dataset, feasibility, provenance/stewardship\nmilestones/m1-proposal/README.md; weeks/week05-polyglot-r-deepening/python11-project-milestone.qmd\nNeeds Improvement\nM1 README is a TODO stub. Week 5 has a checklist, but syllabus places M1 due Week 6.\n\n\nM2\nPreliminary analysis: cleaning, EDA, Table 1, runnable repo\nmilestones/m2-preliminary-analysis/README.md; weeks/week07-eda-ai-audit/index.qmd\nNeeds Improvement\nMilestone README and Week 7 are TODO-heavy; no worked EDA/Table 1 example.\n\n\nM3\nProject update: draft dashboard-style KT product + report draft\nmilestones/m3-project-update/README.md; weeks/week10-reporting-publishing/index.qmd; weeks/week08-dashboard-kt/index.qmd\nNeeds Improvement\nM3 README is a TODO stub; Week 8/10 content is still scaffolded.\n\n\nM4\nPeer review with reproducibility and auditability checks\nmilestones/m4-peer-review/README.md; weeks/week11-portfolio-surgery/index.qmd\nNeeds Improvement\nM4 README is a TODO stub; Week 11 asks to add peer review instructions.\n\n\nM5\nPresentations, live Q&A, peer review\nmilestones/m5-presentation/README.md; weeks/week12-presentations/index.qmd; weeks/week13-presentations/index.qmd\nNeeds Improvement\nPresentation milestone exists but is a TODO stub; rubric and timing rules are missing.\n\n\nFinal Portfolio\nComplete report, dashboard-style KT product, auditable repo\nmilestones/final-portfolio/README.md; milestones/index.qmd\nNeeds Review\nFinal portfolio README is a TODO stub and not referenced in _quarto.yml.",
     "crumbs": [
       "Assistant Playbook",
-      "<span class='chapter-number'>39</span>  <span class='chapter-title'>Syllabus-to-Content Coverage Audit</span>"
+      "<span class='chapter-number'>41</span>  <span class='chapter-title'>Syllabus-to-Content Coverage Audit</span>"
     ]
   },
   {
     "objectID": "syllabus/topic-coverage-audit.html#consistency-checks",
     "href": "syllabus/topic-coverage-audit.html#consistency-checks",
-    "title": "39  Syllabus-to-Content Coverage Audit",
-    "section": "39.4 4) Consistency Checks",
-    "text": "39.4 4) Consistency Checks\n\n39.4.1 Topics Present in Repo but Not Explicitly in Syllabus\n\nreferences/data-sources/*: detailed standalone data-source tutorials for NHIS, NHANES, BRFSS, CCS, CADS, CTNS, CSADS, PHAC Infobase, CCDSS, GHO, Open Portal, and BC Data Catalogue. These support Week 1 but are more extensive than the syllabus schedule.\nassistant-playbook/*: present in _quarto.yml but outside the requested scan inputs and not part of the syllabus topic schedule.\nsyllabus/syllabus-inventory-completion-matrix.md: included in _quarto.yml as Course Planning; useful internally, but not a student topic from the syllabus schedule.\nSeveral Week 2-5 tutorial fragments are more granular than the syllabus topic names, especially workflows01-* through workflows11-*, r01-* through r10-*, git01-* through git10-*, and python01-* through python14-*.\n\n\n\n39.4.2 Syllabus Topics in TOC but Missing or Weak Content Pages\n\nWeek 6 through Week 13 all have TOC pages, but each primary week page still contains TODO Before Release and Content TODO.\nAssignment and milestone index/template pages are in the TOC, but individual A1-A10 and M0-M5 README briefs are not.\nsyllabus/SPPH-381H-Course-Outline-v4.qmd is a source-of-truth file but is not referenced in _quarto.yml; only syllabus/syllabus-inventory-completion-matrix.md is in the book.\nFinal Portfolio appears in milestones/index.qmd and milestones/final-portfolio/README.md, but there is no dedicated TOC entry for the final portfolio brief.\n\n\n\n39.4.3 Orphan Pages Not Referenced in _quarto.yml\n\nassignments/assignment01-workflows/README.md\nassignments/assignment02-r-with-ai/README.md\nassignments/assignment03-git/README.md\nassignments/assignment04-polyglot/README.md\nassignments/assignment05-visualization/README.md\nassignments/assignment06-eda-ai-audit/README.md\nassignments/assignment07-dashboard/README.md\nassignments/assignment08-communication/README.md\nassignments/assignment09-reporting/README.md\nassignments/assignment10-portfolio-surgery/README.md\nmilestones/final-portfolio/README.md\nmilestones/m0-group-formation/README.md\nmilestones/m1-proposal/README.md\nmilestones/m2-preliminary-analysis/README.md\nmilestones/m3-project-update/README.md\nmilestones/m4-peer-review/README.md\nmilestones/m5-presentation/README.md\nsyllabus/SPPH-381H-Course-Outline-v4.qmd",
+    "title": "41  Syllabus-to-Content Coverage Audit",
+    "section": "41.4 4) Consistency Checks",
+    "text": "41.4 4) Consistency Checks\n\n41.4.1 Topics Present in Repo but Not Explicitly in Syllabus\n\nreferences/data-sources/*: detailed standalone data-source tutorials for NHIS, NHANES, BRFSS, CCS, CADS, CTNS, CSADS, PHAC Infobase, CCDSS, GHO, Open Portal, and BC Data Catalogue. These support Week 1 but are more extensive than the syllabus schedule.\nassistant-playbook/*: present in _quarto.yml but outside the requested scan inputs and not part of the syllabus topic schedule.\nsyllabus/syllabus-inventory-completion-matrix.md: included in _quarto.yml as Course Planning; useful internally, but not a student topic from the syllabus schedule.\nSeveral Week 2-5 tutorial fragments are more granular than the syllabus topic names, especially workflows01-* through workflows11-*, r01-* through r10-*, git01-* through git10-*, and python01-* through python14-*.\n\n\n\n41.4.2 Syllabus Topics in TOC but Missing or Weak Content Pages\n\nWeek 6 through Week 13 all have TOC pages, but each primary week page still contains TODO Before Release and Content TODO.\nAssignment and milestone index/template pages are in the TOC, but individual A1-A10 and M0-M5 README briefs are not.\nsyllabus/SPPH-381H-Course-Outline-v4.qmd is a source-of-truth file but is not referenced in _quarto.yml; only syllabus/syllabus-inventory-completion-matrix.md is in the book.\nFinal Portfolio appears in milestones/index.qmd and milestones/final-portfolio/README.md, but there is no dedicated TOC entry for the final portfolio brief.\n\n\n\n41.4.3 Orphan Pages Not Referenced in _quarto.yml\n\nassignments/assignment01-workflows/README.md\nassignments/assignment02-r-with-ai/README.md\nassignments/assignment03-git/README.md\nassignments/assignment04-polyglot/README.md\nassignments/assignment05-visualization/README.md\nassignments/assignment06-eda-ai-audit/README.md\nassignments/assignment07-dashboard/README.md\nassignments/assignment08-communication/README.md\nassignments/assignment09-reporting/README.md\nassignments/assignment10-portfolio-surgery/README.md\nmilestones/final-portfolio/README.md\nmilestones/m0-group-formation/README.md\nmilestones/m1-proposal/README.md\nmilestones/m2-preliminary-analysis/README.md\nmilestones/m3-project-update/README.md\nmilestones/m4-peer-review/README.md\nmilestones/m5-presentation/README.md\nsyllabus/SPPH-381H-Course-Outline-v4.qmd",
     "crumbs": [
       "Assistant Playbook",
-      "<span class='chapter-number'>39</span>  <span class='chapter-title'>Syllabus-to-Content Coverage Audit</span>"
+      "<span class='chapter-number'>41</span>  <span class='chapter-title'>Syllabus-to-Content Coverage Audit</span>"
     ]
   },
   {
     "objectID": "syllabus/topic-coverage-audit.html#appendix-a-files-scanned",
     "href": "syllabus/topic-coverage-audit.html#appendix-a-files-scanned",
-    "title": "39  Syllabus-to-Content Coverage Audit",
-    "section": "39.5 Appendix A: Files Scanned",
-    "text": "39.5 Appendix A: Files Scanned\n\n_quarto.yml\nsyllabus/SPPH-381H-Course-Outline-v4.qmd\nsyllabus/syllabus-inventory-completion-matrix.md\nweeks/week00-onboarding/index.qmd\nweeks/week01-health-data-ethics/index.qmd\nweeks/week01-health-data-ethics/activity-data-intake-card.qmd\nweeks/week02-modern-workflows/index.qmd\nweeks/week02-modern-workflows/workflows01-cloud-drive.qmd\nweeks/week02-modern-workflows/workflows02-repository-tour.qmd\nweeks/week02-modern-workflows/workflows03-open-codespace.qmd\nweeks/week02-modern-workflows/workflows04-reopen-codespace.qmd\nweeks/week02-modern-workflows/workflows05-vscode-orientation.qmd\nweeks/week02-modern-workflows/workflows06-files-folders.qmd\nweeks/week02-modern-workflows/workflows07-render-quarto.qmd\nweeks/week02-modern-workflows/workflows08-commit-work.qmd\nweeks/week02-modern-workflows/workflows09-troubleshooting.qmd\nweeks/week02-modern-workflows/workflows10-stop-codespace.qmd\nweeks/week02-modern-workflows/workflows11-checklist.qmd\nweeks/week03-r-with-ai/index.qmd\nweeks/week03-r-with-ai/r01-setup.qmd\nweeks/week03-r-with-ai/r02-packages.qmd\nweeks/week03-r-with-ai/r03-basics.qmd\nweeks/week03-r-with-ai/r04-control-flow.qmd\nweeks/week03-r-with-ai/r05-data-import.qmd\nweeks/week03-r-with-ai/r06-debugging.qmd\nweeks/week03-r-with-ai/r07-ai-audit-checklist.qmd\nweeks/week03-r-with-ai/r08-comments.qmd\nweeks/week03-r-with-ai/r09-assignment-mad-libs.qmd\nweeks/week03-r-with-ai/r10-final-checklist.qmd\nweeks/week04-git-collaboration/index.qmd\nweeks/week04-git-collaboration/git01-concepts.qmd\nweeks/week04-git-collaboration/git02-tutorial.qmd\nweeks/week04-git-collaboration/git03-repo-hygiene.qmd\nweeks/week04-git-collaboration/git04-branching.qmd\nweeks/week04-git-collaboration/git05-pull-requests.qmd\nweeks/week04-git-collaboration/git06-ai-auditing.qmd\nweeks/week04-git-collaboration/git07-group-repository.qmd\nweeks/week04-git-collaboration/git08-knowledge-check.qmd\nweeks/week04-git-collaboration/git09-practice-exercise.qmd\nweeks/week04-git-collaboration/git10-quick-reference.qmd\nweeks/week05-polyglot-r-deepening/index.qmd\nweeks/week05-polyglot-r-deepening/python01-when-and-why.qmd\nweeks/week05-polyglot-r-deepening/python02-environment.qmd\nweeks/week05-polyglot-r-deepening/python03-packages-reproducibility.qmd\nweeks/week05-polyglot-r-deepening/python04-translation-traps.qmd\nweeks/week05-polyglot-r-deepening/python05-load-inspect-data.qmd\nweeks/week05-polyglot-r-deepening/python06-tracebacks.qmd\nweeks/week05-polyglot-r-deepening/python07-one-step-one-cell.qmd\nweeks/week05-polyglot-r-deepening/python08-mixing-r-python.qmd\nweeks/week05-polyglot-r-deepening/python09-reusable-scripts.qmd\nweeks/week05-polyglot-r-deepening/python10-git-progress.qmd\nweeks/week05-polyglot-r-deepening/python11-project-milestone.qmd\nweeks/week05-polyglot-r-deepening/python12-knowledge-check.qmd\nweeks/week05-polyglot-r-deepening/python13-translation-exercise.qmd\nweeks/week05-polyglot-r-deepening/python14-cheat-sheet.qmd\nweeks/week06-visualization/index.qmd\nweeks/week06-visualization/activity-ai-visual-audit.qmd\nweeks/week07-eda-ai-audit/index.qmd\nweeks/week07-eda-ai-audit/activity-table1-audit.qmd\nweeks/week08-dashboard-kt/index.qmd\nweeks/week08-dashboard-kt/starter-dashboard.qmd\nweeks/week09-science-communication/index.qmd\nweeks/week09-science-communication/revealjs-peer-feedback.qmd\nweeks/week10-reporting-publishing/index.qmd\nweeks/week10-reporting-publishing/report-template.qmd\nweeks/week11-portfolio-surgery/index.qmd\nweeks/week11-portfolio-surgery/reproducibility-test.qmd\nweeks/week12-presentations/index.qmd\nweeks/week13-presentations/index.qmd\nreferences/data-sources/nhis.qmd\nreferences/data-sources/nhanes.qmd\nreferences/data-sources/brfss.qmd\nreferences/data-sources/ccs.qmd\nreferences/data-sources/cads.qmd\nreferences/data-sources/ctns.qmd\nreferences/data-sources/csads.qmd\nreferences/data-sources/phac-infobase.qmd\nreferences/data-sources/ccdss.qmd\nreferences/data-sources/gho.qmd\nreferences/data-sources/open-portal.qmd\nreferences/data-sources/bc-data-catalogue.qmd\nassignments/index.qmd\nassignments/assignment-template.qmd\nassignments/assignment01-workflows/README.md\nassignments/assignment02-r-with-ai/README.md\nassignments/assignment03-git/README.md\nassignments/assignment04-polyglot/README.md\nassignments/assignment05-visualization/README.md\nassignments/assignment06-eda-ai-audit/README.md\nassignments/assignment07-dashboard/README.md\nassignments/assignment08-communication/README.md\nassignments/assignment09-reporting/README.md\nassignments/assignment10-portfolio-surgery/README.md\nmilestones/index.qmd\nmilestones/milestone-template.qmd\nmilestones/m0-group-formation/README.md\nmilestones/m1-proposal/README.md\nmilestones/m2-preliminary-analysis/README.md\nmilestones/m3-project-update/README.md\nmilestones/m4-peer-review/README.md\nmilestones/m5-presentation/README.md\nmilestones/final-portfolio/README.md",
+    "title": "41  Syllabus-to-Content Coverage Audit",
+    "section": "41.5 Appendix A: Files Scanned",
+    "text": "41.5 Appendix A: Files Scanned\n\n_quarto.yml\nsyllabus/SPPH-381H-Course-Outline-v4.qmd\nsyllabus/syllabus-inventory-completion-matrix.md\nweeks/week00-onboarding/index.qmd\nweeks/week01-health-data-ethics/index.qmd\nweeks/week01-health-data-ethics/activity-data-intake-card.qmd\nweeks/week02-modern-workflows/index.qmd\nweeks/week02-modern-workflows/workflows01-cloud-drive.qmd\nweeks/week02-modern-workflows/workflows02-repository-tour.qmd\nweeks/week02-modern-workflows/workflows03-open-codespace.qmd\nweeks/week02-modern-workflows/workflows04-reopen-codespace.qmd\nweeks/week02-modern-workflows/workflows05-vscode-orientation.qmd\nweeks/week02-modern-workflows/workflows06-files-folders.qmd\nweeks/week02-modern-workflows/workflows07-render-quarto.qmd\nweeks/week02-modern-workflows/workflows08-commit-work.qmd\nweeks/week02-modern-workflows/workflows09-troubleshooting.qmd\nweeks/week02-modern-workflows/workflows10-stop-codespace.qmd\nweeks/week02-modern-workflows/workflows11-checklist.qmd\nweeks/week03-r-with-ai/index.qmd\nweeks/week03-r-with-ai/r01-setup.qmd\nweeks/week03-r-with-ai/r02-packages.qmd\nweeks/week03-r-with-ai/r03-basics.qmd\nweeks/week03-r-with-ai/r04-control-flow.qmd\nweeks/week03-r-with-ai/r05-data-import.qmd\nweeks/week03-r-with-ai/r06-debugging.qmd\nweeks/week03-r-with-ai/r07-ai-audit-checklist.qmd\nweeks/week03-r-with-ai/r08-comments.qmd\nweeks/week03-r-with-ai/r09-assignment-mad-libs.qmd\nweeks/week03-r-with-ai/r10-final-checklist.qmd\nweeks/week04-git-collaboration/index.qmd\nweeks/week04-git-collaboration/git01-concepts.qmd\nweeks/week04-git-collaboration/git02-tutorial.qmd\nweeks/week04-git-collaboration/git03-repo-hygiene.qmd\nweeks/week04-git-collaboration/git04-branching.qmd\nweeks/week04-git-collaboration/git05-pull-requests.qmd\nweeks/week04-git-collaboration/git06-ai-auditing.qmd\nweeks/week04-git-collaboration/git07-group-repository.qmd\nweeks/week04-git-collaboration/git08-knowledge-check.qmd\nweeks/week04-git-collaboration/git09-practice-exercise.qmd\nweeks/week04-git-collaboration/git10-quick-reference.qmd\nweeks/week05-polyglot-r-deepening/index.qmd\nweeks/week05-polyglot-r-deepening/python01-when-and-why.qmd\nweeks/week05-polyglot-r-deepening/python02-environment.qmd\nweeks/week05-polyglot-r-deepening/python03-packages-reproducibility.qmd\nweeks/week05-polyglot-r-deepening/python04-translation-traps.qmd\nweeks/week05-polyglot-r-deepening/python05-load-inspect-data.qmd\nweeks/week05-polyglot-r-deepening/python06-tracebacks.qmd\nweeks/week05-polyglot-r-deepening/python07-one-step-one-cell.qmd\nweeks/week05-polyglot-r-deepening/python08-mixing-r-python.qmd\nweeks/week05-polyglot-r-deepening/python09-reusable-scripts.qmd\nweeks/week05-polyglot-r-deepening/python10-git-progress.qmd\nweeks/week05-polyglot-r-deepening/python11-project-milestone.qmd\nweeks/week05-polyglot-r-deepening/python12-knowledge-check.qmd\nweeks/week05-polyglot-r-deepening/python13-translation-exercise.qmd\nweeks/week05-polyglot-r-deepening/python14-cheat-sheet.qmd\nweeks/week06-visualization/index.qmd\nweeks/week06-visualization/activity-ai-visual-audit.qmd\nweeks/week07-eda-ai-audit/index.qmd\nweeks/week07-eda-ai-audit/activity-table1-audit.qmd\nweeks/week08-dashboard-kt/index.qmd\nweeks/week08-dashboard-kt/starter-dashboard.qmd\nweeks/week09-science-communication/index.qmd\nweeks/week09-science-communication/revealjs-peer-feedback.qmd\nweeks/week10-reporting-publishing/index.qmd\nweeks/week10-reporting-publishing/report-template.qmd\nweeks/week11-portfolio-surgery/index.qmd\nweeks/week11-portfolio-surgery/reproducibility-test.qmd\nweeks/week12-presentations/index.qmd\nweeks/week13-presentations/index.qmd\nreferences/data-sources/nhis.qmd\nreferences/data-sources/nhanes.qmd\nreferences/data-sources/brfss.qmd\nreferences/data-sources/ccs.qmd\nreferences/data-sources/cads.qmd\nreferences/data-sources/ctns.qmd\nreferences/data-sources/csads.qmd\nreferences/data-sources/phac-infobase.qmd\nreferences/data-sources/ccdss.qmd\nreferences/data-sources/gho.qmd\nreferences/data-sources/open-portal.qmd\nreferences/data-sources/bc-data-catalogue.qmd\nassignments/index.qmd\nassignments/assignment-template.qmd\nassignments/assignment01-workflows/README.md\nassignments/assignment02-r-with-ai/README.md\nassignments/assignment03-git/README.md\nassignments/assignment04-polyglot/README.md\nassignments/assignment05-visualization/README.md\nassignments/assignment06-eda-ai-audit/README.md\nassignments/assignment07-dashboard/README.md\nassignments/assignment08-communication/README.md\nassignments/assignment09-reporting/README.md\nassignments/assignment10-portfolio-surgery/README.md\nmilestones/index.qmd\nmilestones/milestone-template.qmd\nmilestones/m0-group-formation/README.md\nmilestones/m1-proposal/README.md\nmilestones/m2-preliminary-analysis/README.md\nmilestones/m3-project-update/README.md\nmilestones/m4-peer-review/README.md\nmilestones/m5-presentation/README.md\nmilestones/final-portfolio/README.md",
     "crumbs": [
       "Assistant Playbook",
-      "<span class='chapter-number'>39</span>  <span class='chapter-title'>Syllabus-to-Content Coverage Audit</span>"
+      "<span class='chapter-number'>41</span>  <span class='chapter-title'>Syllabus-to-Content Coverage Audit</span>"
     ]
   },
   {
     "objectID": "syllabus/topic-coverage-audit.html#appendix-b-keyword-patterns-used",
     "href": "syllabus/topic-coverage-audit.html#appendix-b-keyword-patterns-used",
-    "title": "39  Syllabus-to-Content Coverage Audit",
-    "section": "39.6 Appendix B: Keyword Patterns Used",
-    "text": "39.6 Appendix B: Keyword Patterns Used\n\nWeek/module labels: Week 0, Week 1, Week 2, Week 3, Week 4, Week 5, Week 6, Week 7, Week 8, Week 9, Week 10, Week 11, Week 12, Week 13, Final Portfolio\nWorkflow terms: Codespaces, VS Code, Quarto, render, commit, sync, fork, GitHub Classroom, stage, stop Codespace\nR terms: R, tidyverse, dplyr, read_csv, filter, select, mutate, summarise, group_by, function, debugging, renv\nPython terms: Python, pandas, pd.read_csv, Jupyter, requirements.txt, reticulate, translation, parity\nEthics/data terms: health data, open data, portal, metadata, provenance, stewardship, privacy, security, OCAP, CARE, AI hallucination, bias\nVisualization terms: ggplot2, plotly, visual audit, misleading, clarity, aggregation, caption, bias\nEDA terms: EDA, Exploratory Data Analysis, Table 1, descriptive summary, cleaning, planted-error, audit\nDashboard terms: dashboard, KT, Knowledge Translation, Shiny, Shinylive, static HTML, GitHub Pages, filter, interactive\nCommunication/reporting terms: plain language, revealjs, slides, peer feedback, citations, references, BibTeX, Zotero, report, publishing, grounding audit\nPortfolio terms: fresh Codespace, reproducibility, README, dependency, path, peer review, presentation, AI-use note",
+    "title": "41  Syllabus-to-Content Coverage Audit",
+    "section": "41.6 Appendix B: Keyword Patterns Used",
+    "text": "41.6 Appendix B: Keyword Patterns Used\n\nWeek/module labels: Week 0, Week 1, Week 2, Week 3, Week 4, Week 5, Week 6, Week 7, Week 8, Week 9, Week 10, Week 11, Week 12, Week 13, Final Portfolio\nWorkflow terms: Codespaces, VS Code, Quarto, render, commit, sync, fork, GitHub Classroom, stage, stop Codespace\nR terms: R, tidyverse, dplyr, read_csv, filter, select, mutate, summarise, group_by, function, debugging, renv\nPython terms: Python, pandas, pd.read_csv, Jupyter, requirements.txt, reticulate, translation, parity\nEthics/data terms: health data, open data, portal, metadata, provenance, stewardship, privacy, security, OCAP, CARE, AI hallucination, bias\nVisualization terms: ggplot2, plotly, visual audit, misleading, clarity, aggregation, caption, bias\nEDA terms: EDA, Exploratory Data Analysis, Table 1, descriptive summary, cleaning, planted-error, audit\nDashboard terms: dashboard, KT, Knowledge Translation, Shiny, Shinylive, static HTML, GitHub Pages, filter, interactive\nCommunication/reporting terms: plain language, revealjs, slides, peer feedback, citations, references, BibTeX, Zotero, report, publishing, grounding audit\nPortfolio terms: fresh Codespace, reproducibility, README, dependency, path, peer review, presentation, AI-use note",
     "crumbs": [
       "Assistant Playbook",
-      "<span class='chapter-number'>39</span>  <span class='chapter-title'>Syllabus-to-Content Coverage Audit</span>"
+      "<span class='chapter-number'>41</span>  <span class='chapter-title'>Syllabus-to-Content Coverage Audit</span>"
     ]
   }
 ]

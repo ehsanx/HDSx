@@ -2,29 +2,36 @@
 
 ## R `library()` vs. Python `import`
 
-In Python, we "import" packages and often give them nicknames (aliases).
+Both languages require you to load packages before using them.
 
-| R                  | Python Equivalent       | Purpose        |
-|:-------------------|:------------------------|:---------------|
-| `library(dplyr)`   | `import pandas as pd`   | Data wrangling |
-| `library(ggplot2)` | `import seaborn as sns` | Visualization  |
+| R | Python | Purpose |
+|---|---|---|
+| `library(readr)` | `import pandas as pd` | read CSV files |
+| `library(dplyr)` | `import pandas as pd` | filter, group, and summarise data |
+| `library(ggplot2)` | `import seaborn as sns` | create plots |
+| `library(reticulate)` | not applicable | call Python from R |
 
-## Managing `requirements.txt`
+## Why `requirements.txt` Matters
 
-Your project must be reproducible. If you use a package, you must record it in a file called `requirements.txt`.
+Python projects record package dependencies in `requirements.txt`. This is the Python-side equivalent of saying, "Here is what another person must install before my code will run."
 
-1.  Create a file named `requirements.txt` in your root folder.
+For this week, a minimal file is enough:
 
-    ![](../../assets/images/python3/p1.png)
+```text
+pandas
+```
 
-2.  Add:
+If you also create a plot in Python, add:
 
-    `pandas==2.2.0`
+```text
+seaborn
+matplotlib
+```
 
-    `seaborn==0.13.2`
+## Course Rule
 
-    ![](../../assets/images/python3/p2.png)
+If you install or rely on a Python package for submitted work, record it in `requirements.txt`. Do not leave package installation as an undocumented memory from your current Codespace.
 
-    Certain versions of these packages behave differently. By explicitly setting your versions, you can make sure you code will have reproducible results regardless of who is running it.
+## R Connection
 
-3.  **The Rule:** Never just `pip install` (method on installing packages, which you wouldn't have to deal with in this class but perhaps the future) in the terminal and forget it; always update this file to document your steps.
+R reproducibility is handled through project documentation and, later in the course, `renv`. Week 5 is a bridge: you should be able to explain where dependencies are recorded in both languages.

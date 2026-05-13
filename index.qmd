@@ -30,51 +30,58 @@ library(knitr)
 library(kableExtra)
 
 topics <- c(
-  "Health Data & Ethics", 
-  "Modern Research Workflows", 
-  "R with AI", 
-  "Git & Collaboration", 
-  "Python with AI", 
-  "Visual Storytelling", 
-  "Exploring Data", 
-  "Interactive Dashboards", 
-  "Dynamic Presentations", 
-  "Reproducible Reporting", 
-  "Advanced Topics"
+  "Week 0: Onboarding",
+  "Week 1: Health Data, KT & Ethics",
+  "Week 2: Modern Research Workflows",
+  "Week 3: R with AI",
+  "Week 4: Git & Collaboration",
+  "Week 5: Polyglot Awareness & R Deepening",
+  "Week 6: Data Visualization",
+  "Week 7: EDA, Table 1 & AI Auditing",
+  "Week 8: Dashboard Prototypes for KT",
+  "Week 9: Communication of Scientific Findings",
+  "Week 10: Writing & Publishing Reports",
+  "Week 11: Portfolio Surgery",
+  "Weeks 12-13: Project Presentations"
+)
+
+links <- c(
+  "weeks/week00-onboarding/index.html",
+  "weeks/week01-health-data-ethics/index.html",
+  "weeks/week02-modern-workflows/index.html",
+  "weeks/week03-r-with-ai/index.html",
+  "weeks/week04-git-collaboration/index.html",
+  "weeks/week05-polyglot-r-deepening/index.html",
+  "weeks/week06-visualization/index.html",
+  "weeks/week07-eda-ai-audit/index.html",
+  "weeks/week08-dashboard-kt/index.html",
+  "weeks/week09-science-communication/index.html",
+  "weeks/week10-reporting-publishing/index.html",
+  "weeks/week11-portfolio-surgery/index.html",
+  "weeks/week12-presentations/index.html"
 )
 
 descriptions <- c(
-  "Navigating open data (NHANES, WHO) and Data Sovereignty/Ethics.", 
-  "Setting up modern research tools: IDEs, Quarto, and cloud notebooks.", 
-  "Mastering R fundamentals with an AI Co-Pilot for debugging and coding.", 
-  "Managing version control and team workflows using Git and GitHub.", 
-  "Setting up Python environments and translating analysis between R and Python.", 
-  "Communicating complex health data using visual storytelling principles.", 
-  "Exploratory Data Analysis (EDA) to clean messy data and find patterns.", 
-  "Building interactive web tools for knowledge translation (Shiny/Dash).", 
-  "Creating auto-updating slide decks and summaries for diverse audiences.", 
-  "Automated manuscript generation and citation management with Quarto.", 
-  "Cloud computing and other advanced topics."
+  "Account setup, orientation, and pre-course survey.",
+  "Open data, NHANES, knowledge translation, ethics, privacy, and data stewardship.",
+  "Codespaces, VS Code, Quarto, project structure, rendering, commits, and syncing.",
+  "R fundamentals, tidyverse wrangling, functions, debugging with AI, and reproducible notes.",
+  "Git provenance, branches, pull requests, peer review, repo hygiene, and group setup.",
+  "Python/pandas awareness, R-to-Python translation, AI parity checks, and R mastery practice.",
+  "Clear health data graphics, ggplot2 workflows, visual audits, and misleading plot repair.",
+  "EDA, missingness, Table 1 summaries, planted-error audits, and descriptive interpretation.",
+  "Dashboard-style knowledge translation products and the first required Shiny app run.",
+  "Plain-language communication, revealjs slides, citations, and peer feedback.",
+  "Dynamic Quarto reports, figures, tables, citations, limitations, and publishing workflow.",
+  "Fresh-environment reproducibility testing, dependency repair, portfolio polish, and static dashboard extension.",
+  "Final project presentations, live Q&A, and peer review."
 )
 
-# Create DataFrame
-df <- data.frame(`Module` = 1:length(topics), `Topics` = topics, `Descriptions` = descriptions)
+linked_topics <- paste0("<a href='", links, "'>", topics, "</a>")
+df <- data.frame(`Module` = seq_along(topics), `Topics` = linked_topics, `Descriptions` = descriptions)
 
 # Generate table
 table_content <- kable(df, "html", align = c("c", "l", "l"), escape = FALSE)
-
-# Add Hyperlinks (Update these filenames as you create the .qmd files)
-table_content <- gsub("Health Data & Ethics", "<a href='data.html'>Health Data & Ethics</a>", table_content)
-table_content <- gsub("Modern Research Workflows", "<a href='workflows.html'>Modern Workflows</a>", table_content)
-table_content <- gsub("R with AI", "<a href='r.html'>R with AI</a>", table_content)
-table_content <- gsub("Git & Collaboration", "<a href='git.html'>Git & Collaboration</a>", table_content)
-table_content <- gsub("Python with AI", "<a href='python.html'>Python with AI</a>", table_content)
-table_content <- gsub("Visual Storytelling", "<a href='viz.html'>Visual Storytelling</a>", table_content)
-table_content <- gsub("Exploring Data", "<a href='eda.html'>Exploring Data</a>", table_content)
-table_content <- gsub("Interactive Dashboards", "<a href='dashboards.html'>Interactive Dashboards</a>", table_content)
-table_content <- gsub("Dynamic Presentations", "<a href='comms.html'>Dynamic Presentations</a>", table_content)
-table_content <- gsub("Reproducible Reporting", "<a href='reports.html'>Reproducible Reporting</a>", table_content)
-table_content <- gsub("Advanced Topics", "<a href='advanced.html'>Advanced Topics</a>", table_content)
 
 # Style Table
 table_content %>%
@@ -113,7 +120,7 @@ knitr::include_graphics("images/by.png")
 # 1. Define variables cleanly
 author <- "Karim, M. E."
 title <- "Health Data Science: AI and Knowledge Translation"
-plain_url <- "[https://ehsanx.github.io/Health-AI-KT/](https://ehsanx.github.io/Health-AI-KT/)"
+plain_url <- "https://ehsanx.github.io/Health-AI-KT/"
 access_date <- format(Sys.Date(), "%B %d, %Y")
 publication_year <- format(Sys.Date(), "%Y")
 

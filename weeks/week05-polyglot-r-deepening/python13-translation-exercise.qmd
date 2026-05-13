@@ -1,11 +1,36 @@
 # Tutorial 13: The Bilingual Translation Exercise
 
-## Cleaning Your Notebooks
+## Purpose
 
-**Task:** Create a Python version of your Week 3 R analysis.
+This exercise turns the week into a concrete artifact: one small R analysis, one Python translation, and one audit note showing that the outputs agree.
 
-1\. Create `translation.ipynb`.
+## Required Task
 
-2\. Use an LLM to translate your R steps to Python **one cell at a time**.
+Translate the Week 5 R-deepening summary into Python/pandas:
 
-3.  After each cell, verify output using the **Data Viewer**. 4. Extract one function into `helpers.py`. 5. Clear outputs and commit to Git.
+1. Start from the R pipeline in [R Deepening and Parity Check](r-deepening-parity.qmd).
+2. Create `translation.ipynb`.
+3. Load the NHANES CSV from `../../examples/nhanes-equity/data/nhanes_equity_v6.csv`.
+4. Recreate the BMI-by-income-and-gender summary in Python.
+5. Compare the Python output to the R output using row counts, grouping labels, and rounded summary values.
+6. Extract one Python helper into `helpers.py` and call it from the notebook.
+7. Add a Markdown cell explaining what AI helped with and how you verified the result.
+8. Clear notebook outputs before committing.
+
+## Parity Table Template
+
+| Check | R result | Python result | Match? | Notes |
+|---|---:|---:|:---:|---|
+| Raw row count |  |  |  |  |
+| Filtered row count |  |  |  |  |
+| Number of grouped rows |  |  |  |  |
+| Mean BMI values after rounding |  |  |  |  |
+| Group labels |  |  |  |  |
+
+## AI Prompt
+
+> I have a working R `dplyr` summary. Translate it to Python/pandas one step at a time. After each step, tell me exactly what output to compare with R. Do not add new variables, filters, plots, or interpretation.
+
+## Definition of Done
+
+Your exercise is complete when a reader can open the notebook, rerun the cells in order, and see why the R and Python outputs do or do not match.

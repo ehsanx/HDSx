@@ -1,25 +1,51 @@
 # Tutorial 2: Setting Up Your Python Environment
 
-## Creating Your First Notebook
+## Create A Notebook
 
-Follow these steps to set up your environment in your GitHub Codespace:
+In your GitHub Codespace:
 
-1.  **New File:** In the VS Code Explorer, click the **New File** icon and name it `translation.ipynb`.
+1. Open the Week 5 folder.
+2. Create a new file named `translation.ipynb`.
+3. Select the recommended Python kernel when VS Code asks.
+4. Run this first cell:
 
-    ![](../../assets/images/python2/p1.png)
+```python
+print("Hello from Python. My Week 5 notebook is running.")
+```
 
-    ![](../../assets/images/python2/p2.png)
+## Use The Variables Pane
 
-2.  **Select Kernel:** Look at the notebook toolbar in the top right. Click **Select Kernel** and choose the recommended **Python 3.x** environment.
+The Variables pane helps you audit Python objects the way the Environment pane helps you audit R objects.
 
-    ![](../../assets/images/python2/p3.png)
+Run this cell:
 
-3.  **Run Code:** Build `print("Hello from Python! My workspace is ready.")` Press **Shift + Enter** to run it.
+```python
+age = 25
+course = "HDSx"
+```
 
-    ![](../../assets/images/python2/p4.png)
+Then open the notebook Variables pane and check that both variables appear.
 
-## The Variables Pane
+## Load A Tiny DataFrame
 
-Unlike RStudio, which shows variables by default, you must toggle the view in VS Code. 1. Click the **Variables** button in the notebook toolbar. 2. Run a cell that creates a variable (e.g., `age = 25`). 3. Observe `age` appearing in the pane at the bottom.
+```python
+import pandas as pd
 
-![](../../assets/images/python2/p5.png)
+demo = pd.DataFrame({
+    "group": ["A", "A", "B"],
+    "value": [10, 15, 20]
+})
+
+demo
+```
+
+Double-click `demo` in the Variables pane to open the Data Viewer. This is where you will inspect row counts, column names, and translated outputs later in the week.
+
+## Common Fixes
+
+| Problem | First thing to try |
+|---|---|
+| No kernel appears | Wait for the Codespace to finish starting, then reload the window |
+| Variables pane is missing | Check that the Jupyter extension is enabled |
+| Notebook cell will not run | Select a Python kernel from the notebook toolbar |
+| Package import fails | Check whether the package belongs in `requirements.txt` |

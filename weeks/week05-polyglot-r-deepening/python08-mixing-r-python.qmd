@@ -1,31 +1,56 @@
-# Tutorial 8: Mixing R and Python"
+# Tutorial 8: Mixing R and Python
 
-## Why Interoperability?
+## Why Interoperability Matters
 
-The R package `reticulate` lets you call Python from an R session. This is perfect when you need a Python-only package but want to keep your analysis in R.
+Sometimes a project has one useful Python tool, but the rest of the analysis is already in R. The `reticulate` package lets R call Python code and bring Python objects back into the R session. In this course, `reticulate` is awareness-level: you should know what it does and when it might be useful, but you are not expected to build a full mixed-language pipeline.
 
-First define the package as seen below
+## Minimal Demo
 
-![](../../assets/images/python8/p1.png)
+Run this in an R console or an R Quarto document if `reticulate` is available in your Codespace.
 
-Then build python code as shown
+```r
+library(reticulate)
 
-![](../../assets/images/python8/p2.png)
+py_run_string("
+import pandas as pd
+numbers = pd.DataFrame({'group': ['A', 'A', 'B'], 'value': [10, 15, 20]})
+summary = numbers.groupby('group', as_index=False)['value'].mean()
+")
 
-Then you are able to use the results of that python code in R! Super cool!
-
-![](../../assets/images/python8/p3.png)
-
-### Demo (Run in R)
-
-```{r}
-#library(reticulate) # Run Python code inside R
-#py_run_string("import pandas as pd; df = pd.read_csv('data/patients.csv')")
+py$summary
 ```
 
-Access that Python object as an R object
+## Health Data Example
 
-```{r}
-#py_df <- py$df
-#head(py_df)
+The same idea works with the NHANES case-study CSV:
+
+```r
+library(reticulate)
+
+py_run_string("
+import pandas as pd
+nhanes = pd.read_csv('../../examples/nhanes-equity/data/nhanes_equity_v6.csv')
+bmi_rows = nhanes[['BMI', 'IncomeGroup']].dropna()
+")
+
+bmi_rows <- py$bmi_rows
+head(bmi_rows)
 ```
+
+## When To Use It
+
+Use `reticulate` when:
+
+- a small Python library solves a specific problem better than the R ecosystem;
+- the rest of your report, tables, or dashboard are already in R;
+- you can document the Python dependency clearly.
+
+Avoid it when:
+
+- a clean R solution already exists;
+- mixing languages makes the project harder to reproduce;
+- the Python step cannot run in a fresh Codespace.
+
+## Check Your Understanding
+
+In one sentence, explain what object moves from Python back into R in the NHANES example above.

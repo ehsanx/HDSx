@@ -1,27 +1,43 @@
-# Tutorial 7: The 'One Step, One Cell' AI Workflow
+# Tutorial 7: The One Step, One Cell AI Workflow
 
-## Rule 1: One Step, One Cell
+## Why This Rule Exists
 
-Don't ask the AI for a giant analysis script at once. Ask for **one atomic step** (load, then filter, then summarize). Run and verify each cell before moving on.
+Large AI-generated code blocks are hard to audit. A single hidden mistake in loading, filtering, grouping, or missingness handling can cascade into a polished but incorrect result.
 
-First ask AI to load
+Use one cell per analytic step:
 
-![](../../assets/images/python7/p1.png)
+1. load data;
+2. inspect rows and columns;
+3. filter missing values;
+4. group and summarise;
+5. compare with the R result.
 
-Then ask it to filter by some value
+## Good AI Prompt
 
-![](../../assets/images/python7/p2.png)
+> Translate only the data-loading step from R to Python/pandas. Tell me what output I should inspect before moving to the next step.
 
-Then ask it to summarize
+## Risky AI Prompt
 
-![](../../assets/images/python7/p3.png)
+> Translate my full analysis, make the plots, and write the interpretation.
 
-## Rule 2: Parity Audit
+The risky prompt gives up too much control. It may change the analytic question without telling you.
 
-Observe some of the differences between R and python below when it comes to data wrangling.
+## Parity Audit Checks
 
-| Check         | R                 | Python                 |
-|:--------------|:------------------|:-----------------------|
-| Row count     | `nrow(df)`        | `len(df)`              |
-| Column names  | `names(df)`       | `df.columns.tolist()`  |
-| Summary stats | `summary(df$col)` | `df['col'].describe()` |
+| Check | R | Python |
+|---|---|---|
+| Row count | `nrow(df)` | `len(df)` or `df.shape[0]` |
+| Column names | `names(df)` | `df.columns.tolist()` |
+| Unique levels | `unique(df$IncomeGroup)` | `df["IncomeGroup"].unique()` |
+| Missing values | `sum(is.na(df$BMI))` | `df["BMI"].isna().sum()` |
+| Summary table rows | `nrow(summary_df)` | `len(summary_df)` |
+
+## Notebook Habit
+
+After each Python cell, add a short Markdown note:
+
+```text
+Audit check: this cell matches the R output because ...
+```
+
+If you cannot fill in that sentence, do not move to the next cell yet.

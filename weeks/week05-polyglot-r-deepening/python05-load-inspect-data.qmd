@@ -1,18 +1,42 @@
 # Tutorial 5: Loading and Inspecting Health Data
 
-## Loading Data with Pandas
+## Load The NHANES Snapshot
 
-In your notebook, use the following code to load your health data:
+In `translation.ipynb`, load the same CSV used in the R example:
 
-```{python}
+```python
 import pandas as pd
-data = pd.read_csv("data/patients.csv")
+
+nhanes = pd.read_csv("../../examples/nhanes-equity/data/nhanes_equity_v6.csv")
 ```
 
-The code below allows you to view the dataset
+## Inspect Before Summarising
 
-```{python}
-data.head()
+```python
+nhanes.head()
 ```
 
-![](../../assets/images/python5/p1.png)
+```python
+nhanes.shape
+```
+
+```python
+nhanes.columns.tolist()
+```
+
+```python
+nhanes[["BMI", "IncomeGroup", "Gender"]].isna().sum()
+```
+
+## Compare To R
+
+| Question | R | Python |
+|---|---|---|
+| How many rows? | `nrow(nhanes)` | `len(nhanes)` |
+| How many columns? | `ncol(nhanes)` | `nhanes.shape[1]` |
+| What are the column names? | `names(nhanes)` | `nhanes.columns.tolist()` |
+| How many missing BMI values? | `sum(is.na(nhanes$BMI))` | `nhanes["BMI"].isna().sum()` |
+
+## Student Check
+
+Before asking AI for any transformation, write down the raw row count, column count, and missingness count for `BMI`.

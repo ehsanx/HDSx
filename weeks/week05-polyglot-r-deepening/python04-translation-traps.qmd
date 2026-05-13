@@ -1,28 +1,70 @@
 # Tutorial 4: Common Translation Traps
 
-## Trap 1: The Zero-Index
+AI translation is useful, but it often hides small language differences. These are the traps to check first.
 
-R starts counting at **1**. Python starts counting at **0**.
+## Trap 1: Indexing
 
-**R:** `data[1]` is the first item. Note data\[0\] will return nothing
+R starts counting at 1. Python starts counting at 0.
 
-![](../../assets/images/python4/p2.png)
+```r
+values <- c(10, 20, 30)
+values[1]
+```
 
-**Python:** `data[0]` is the first item.
+```python
+values = [10, 20, 30]
+values[0]
+```
 
-![](../../images/paste-1.png)
+Python slices are end-exclusive:
 
-**Slicing:** `df.iloc[0:5]` returns rows 0, 1, 2, 3, and 4 (5 rows total).
+```python
+values[0:2]
+```
+
+This returns the first two values, not the first three.
 
 ## Trap 2: Indentation
 
-Python uses **indentation** (spaces) instead of curly braces `{}` to group code. Misaligned spaces will cause an `IndentationError`.
+R uses braces to mark code blocks. Python uses indentation.
 
-![](../../assets/images/python4/p3.png)
+```r
+if (age >= 20) {
+  "adult"
+} else {
+  "not in adult cohort"
+}
+```
 
-![](../../assets/images/python4/p4.png)
+```python
+if age >= 20:
+    "adult"
+else:
+    "not in adult cohort"
+```
 
-## Trap 3: Assignment
+If Python indentation is inconsistent, the code may fail or run with a different meaning.
 
--   **R:** Uses `<-` (or `=`).
--   **Python:** Uses `=` exclusively for assignment.
+## Trap 3: Assignment vs. Comparison
+
+| Meaning | R | Python |
+|---|---|---|
+| assign a value | `x <- 10` | `x = 10` |
+| compare values | `x == 10` | `x == 10` |
+| missing/null check | `is.na(x)` | `pd.isna(x)` or `x is None` |
+
+## Trap 4: Missing Values
+
+R and Python both have missing values, but they are handled by different functions. Always check missingness before comparing summaries.
+
+```r
+sum(is.na(nhanes$BMI))
+```
+
+```python
+nhanes["BMI"].isna().sum()
+```
+
+## Audit Habit
+
+When a translated result differs, check indexing, indentation, assignment/comparison, missingness handling, and grouping variables before assuming one language is "wrong."

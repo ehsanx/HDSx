@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>27&nbsp; Tutorial 5: Loading and Inspecting Health Data – Health Data Science: AI and Knowledge Translation</title>
+<title>28&nbsp; Tutorial 5: Loading and Inspecting Health Data – Health Data Science: AI and Knowledge Translation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -58,7 +58,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -104,18 +104,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
 
 
-
-<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
-
-
-
-<meta name="twitter:title" content="27&nbsp; Tutorial 5: Loading and Inspecting Health Data – Health Data Science: AI and Knowledge Translation">
+<meta name="twitter:title" content="28&nbsp; Tutorial 5: Loading and Inspecting Health Data – Health Data Science: AI and Knowledge Translation">
 <meta name="twitter:description" content="">
-<meta name="twitter:image" content="../../assets/images/python5/p1.png">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -127,7 +120,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week05-polyglot-r-deepening/index.html">Week 5: Polyglot Awareness &amp; R Deepening</a></li><li class="breadcrumb-item"><a href="../../weeks/week05-polyglot-r-deepening/python05-load-inspect-data.html"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Tutorial 5: Loading and Inspecting Health Data</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week05-polyglot-r-deepening/index.html">Week 5: Polyglot Awareness &amp; R Deepening</a></li><li class="breadcrumb-item"><a href="../../weeks/week05-polyglot-r-deepening/python05-load-inspect-data.html"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Tutorial 5: Loading and Inspecting Health Data</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -473,91 +466,97 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Python with AI</span></a>
+ <span class="menu-text">Polyglot Awareness &amp; R Deepening</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week05-polyglot-r-deepening/r-deepening-parity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">R Deepening and Parity Check</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python01-when-and-why.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Tutorial 1: Python vs.&nbsp;R - When and Why?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Tutorial 1: Python vs.&nbsp;R - When and Why?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python02-environment.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Tutorial 2: Setting Up Your Python Environment</span></span></a>
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Tutorial 2: Setting Up Your Python Environment</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python03-packages-reproducibility.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Tutorial 3: Packages and Reproducibility</span></span></a>
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Tutorial 3: Packages and Reproducibility</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python04-translation-traps.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Tutorial 4: Common Translation Traps</span></span></a>
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Tutorial 4: Common Translation Traps</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python05-load-inspect-data.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Tutorial 5: Loading and Inspecting Health Data</span></span></a>
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Tutorial 5: Loading and Inspecting Health Data</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python06-tracebacks.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Reading Tracebacks</span></span></a>
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Tutorial 6: Reading Python Tracebacks</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python07-one-step-one-cell.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Tutorial 7: The ‘One Step, One Cell’ AI Workflow</span></span></a>
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Tutorial 7: The One Step, One Cell AI Workflow</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python08-mixing-r-python.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Tutorial 8: Mixing R and Python”</span></span></a>
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Tutorial 8: Mixing R and Python</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python09-reusable-scripts.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Tutorial 9: Creating Reusable Python Scripts</span></span></a>
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Tutorial 9: Creating Reusable Python Scripts</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python10-git-progress.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Tutorial 10: Tracking Your Progress with Git</span></span></a>
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Tutorial 10: Tracking Your Progress With Git</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python11-project-milestone.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Tutorial 11: Term Project Milestone 1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Tutorial 11: Project Proposal Readiness Check</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python12-knowledge-check.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Tutorial 12: Python Knowledge Check</span></span></a>
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Tutorial 12: Knowledge Check</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python13-translation-exercise.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Tutorial 13: The Bilingual Translation Exercise</span></span></a>
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Tutorial 13: The Bilingual Translation Exercise</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python14-cheat-sheet.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Tutorial 14: R to Python Cheat Sheet</span></span></a>
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Tutorial 14: R To Python Cheat Sheet</span></span></a>
   </div>
 </li>
       </ul>
@@ -758,14 +757,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../assignments/assignment04-polyglot/README.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Assignment 4: Polyglot Awareness &amp; R Deepening</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../assignments/assignment05-visualization/README.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Assignment 5: Visualization Audit and Revision</span></span></a>
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Assignment 5: Visualization Audit and Revision</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../assignments/assignment06-eda-ai-audit/README.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Assignment 6: EDA, Table 1, and AI Audit</span></span></a>
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Assignment 6: EDA, Table 1, and AI Audit</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -895,7 +900,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../syllabus/topic-coverage-audit.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Syllabus-to-Content Coverage Audit</span></span></a>
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Syllabus-to-Content Coverage Audit</span></span></a>
   </div>
 </li>
       </ul>
@@ -910,16 +915,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#loading-data-with-pandas" id="toc-loading-data-with-pandas" class="nav-link active" data-scroll-target="#loading-data-with-pandas"><span class="header-section-number">27.1</span> Loading Data with Pandas</a></li>
+  <li><a href="#load-the-nhanes-snapshot" id="toc-load-the-nhanes-snapshot" class="nav-link active" data-scroll-target="#load-the-nhanes-snapshot"><span class="header-section-number">28.1</span> Load The NHANES Snapshot</a></li>
+  <li><a href="#inspect-before-summarising" id="toc-inspect-before-summarising" class="nav-link" data-scroll-target="#inspect-before-summarising"><span class="header-section-number">28.2</span> Inspect Before Summarising</a></li>
+  <li><a href="#compare-to-r" id="toc-compare-to-r" class="nav-link" data-scroll-target="#compare-to-r"><span class="header-section-number">28.3</span> Compare To R</a></li>
+  <li><a href="#student-check" id="toc-student-check" class="nav-link" data-scroll-target="#student-check"><span class="header-section-number">28.4</span> Student Check</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ehsanx/Health-AI-KT/edit/main/weeks/week05-polyglot-r-deepening/python05-load-inspect-data.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ehsanx/Health-AI-KT/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week05-polyglot-r-deepening/index.html">Week 5: Polyglot Awareness &amp; R Deepening</a></li><li class="breadcrumb-item"><a href="../../weeks/week05-polyglot-r-deepening/python05-load-inspect-data.html"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Tutorial 5: Loading and Inspecting Health Data</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week05-polyglot-r-deepening/index.html">Week 5: Polyglot Awareness &amp; R Deepening</a></li><li class="breadcrumb-item"><a href="../../weeks/week05-polyglot-r-deepening/python05-load-inspect-data.html"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Tutorial 5: Loading and Inspecting Health Data</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Tutorial 5: Loading and Inspecting Health Data</span></h1>
+<h1 class="title"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Tutorial 5: Loading and Inspecting Health Data</span></h1>
 </div>
 
 
@@ -936,176 +944,62 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="loading-data-with-pandas" class="level2" data-number="27.1">
-<h2 data-number="27.1" class="anchored" data-anchor-id="loading-data-with-pandas"><span class="header-section-number">27.1</span> Loading Data with Pandas</h2>
-<p>In your notebook, use the following code to load your health data:</p>
-<div id="f65e2175" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb1-2"><a href="#cb1-2"></a>data <span class="op">=</span> pd.read_csv(<span class="st">"data/patients.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>The code below allows you to view the dataset</p>
-<div id="2d051a67" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a>data.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="2">
-<div>
-
-
-<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<section id="load-the-nhanes-snapshot" class="level2" data-number="28.1">
+<h2 data-number="28.1" class="anchored" data-anchor-id="load-the-nhanes-snapshot"><span class="header-section-number">28.1</span> Load The NHANES Snapshot</h2>
+<p>In <code>translation.ipynb</code>, load the same CSV used in the R example:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a>nhanes <span class="op">=</span> pd.read_csv(<span class="st">"../../examples/nhanes-equity/data/nhanes_equity_v6.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="inspect-before-summarising" class="level2" data-number="28.2">
+<h2 data-number="28.2" class="anchored" data-anchor-id="inspect-before-summarising"><span class="header-section-number">28.2</span> Inspect Before Summarising</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a>nhanes.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>nhanes.shape</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a>nhanes.columns.tolist()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a>nhanes[[<span class="st">"BMI"</span>, <span class="st">"IncomeGroup"</span>, <span class="st">"Gender"</span>]].isna().<span class="bu">sum</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="compare-to-r" class="level2" data-number="28.3">
+<h2 data-number="28.3" class="anchored" data-anchor-id="compare-to-r"><span class="header-section-number">28.3</span> Compare To R</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
 <thead>
 <tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">day</th>
-<th data-quarto-table-cell-role="th">date</th>
-<th data-quarto-table-cell-role="th">state.in_hospital.in</th>
-<th data-quarto-table-cell-role="th">state.in_hospital.out</th>
-<th data-quarto-table-cell-role="th">state.in_hospital.todate</th>
-<th data-quarto-table-cell-role="th">state.in_hospital</th>
-<th data-quarto-table-cell-role="th">state.in_hospital.covid</th>
-<th data-quarto-table-cell-role="th">state.redzone</th>
-<th data-quarto-table-cell-role="th">state.reg</th>
-<th data-quarto-table-cell-role="th">state.reg.covid</th>
-<th data-quarto-table-cell-role="th">...</th>
-<th data-quarto-table-cell-role="th">state.pbor.care.todate</th>
-<th data-quarto-table-cell-role="th">state.pbor.care</th>
-<th data-quarto-table-cell-role="th">state.pbor.deceased.care</th>
-<th data-quarto-table-cell-role="th">state.pbor.deceased.care.todate</th>
-<th data-quarto-table-cell-role="th">state.pbid.care.in</th>
-<th data-quarto-table-cell-role="th">state.pbid.care.out</th>
-<th data-quarto-table-cell-role="th">state.pbid.care.todate</th>
-<th data-quarto-table-cell-role="th">state.pbid.care</th>
-<th data-quarto-table-cell-role="th">state.pbid.deceased.care</th>
-<th data-quarto-table-cell-role="th">state.pbid.deceased.care.todate</th>
+<th>Question</th>
+<th>R</th>
+<th>Python</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
-<td>1</td>
-<td>2020-03-04</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>...</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
+<td>How many rows?</td>
+<td><code>nrow(nhanes)</code></td>
+<td><code>len(nhanes)</code></td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
-<td>2</td>
-<td>2020-03-05</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>...</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
+<td>How many columns?</td>
+<td><code>ncol(nhanes)</code></td>
+<td><code>nhanes.shape[1]</code></td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>3</td>
-<td>2020-03-06</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>...</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
+<td>What are the column names?</td>
+<td><code>names(nhanes)</code></td>
+<td><code>nhanes.columns.tolist()</code></td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
-<td>4</td>
-<td>2020-03-07</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>...</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">4</td>
-<td>5</td>
-<td>2020-03-08</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>...</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
+<td>How many missing BMI values?</td>
+<td><code>sum(is.na(nhanes$BMI))</code></td>
+<td><code>nhanes["BMI"].isna().sum()</code></td>
 </tr>
 </tbody>
 </table>
-
-<p>5 rows × 443 columns</p>
-</div>
-</div>
-</div>
-<p><img src="../../assets/images/python5/p1.png" class="img-fluid"></p>
+</section>
+<section id="student-check" class="level2" data-number="28.4">
+<h2 data-number="28.4" class="anchored" data-anchor-id="student-check"><span class="header-section-number">28.4</span> Student Check</h2>
+<p>Before asking AI for any transformation, write down the raw row count, column count, and missingness count for <code>BMI</code>.</p>
 
 
 </section>
@@ -1564,12 +1458,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../../weeks/week05-polyglot-r-deepening/python04-translation-traps.html" class="pagination-link" aria-label="Tutorial 4: Common Translation Traps">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Tutorial 4: Common Translation Traps</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Tutorial 4: Common Translation Traps</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../weeks/week05-polyglot-r-deepening/python06-tracebacks.html" class="pagination-link" aria-label="Reading Tracebacks">
-        <span class="nav-page-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Reading Tracebacks</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../weeks/week05-polyglot-r-deepening/python06-tracebacks.html" class="pagination-link" aria-label="Tutorial 6: Reading Python Tracebacks">
+        <span class="nav-page-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Tutorial 6: Reading Python Tracebacks</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

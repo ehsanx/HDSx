@@ -1,25 +1,29 @@
-# Reading Tracebacks
+# Tutorial 6: Reading Python Tracebacks
 
-## How to Read Errors
+## The Bottom Line Is Usually At The Bottom
 
-Python errors (Tracebacks) display a stack of calls.
+Python errors often print several lines called a traceback. Read from the bottom upward:
 
-### Common Example:
+```text
+FileNotFoundError: [Errno 2] No such file or directory: 'Data/patients.csv'
+```
 
-`FileNotFoundError: [Errno 2] No such file or directory: 'Data/patients.csv'`
+This tells you the immediate problem: Python cannot find the file at the path you gave it.
 
-![](../../assets/images/python6/p1.png)
+## Common Week 5 Errors
 
-The first part of the message tells you what the error is, in this case the file was not found
+| Error | Likely cause | First fix |
+|---|---|---|
+| `FileNotFoundError` | path is wrong, file is in another folder, or capitalization differs | check the relative path from the notebook location |
+| `ModuleNotFoundError` | package is missing | add the package to `requirements.txt` and install it in the Codespace |
+| `KeyError` | column name is misspelled or not present | run `nhanes.columns.tolist()` |
+| `IndentationError` | Python block spacing is inconsistent | re-indent the block with four spaces |
+| `NameError` | object has not been created in the current kernel | rerun earlier cells in order |
 
-`FileNotFoundError`
+## AI Debugging Prompt
 
-The second part of the error tells you what is missing
+> Read this Python traceback from the bottom up. Identify the error type, the exact object or path causing the issue, and the smallest code change that would fix it. Do not rewrite the full analysis.
 
-`No such file or directory: 'Data/patients.csv'`
+## Student Check
 
-At the top of the trace, it tells you exactly where in your code the error was found.
-
-![](../../assets/images/python6/p2.png)
-
-The file wasn't found. Because file paths are case-sensitive, `Data/` is different from `data/`.
+When you fix an error, add one sentence to your notebook explaining what failed and how you knew the fix worked.

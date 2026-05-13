@@ -1,10 +1,22 @@
-# Tutorial 14: R to Python Cheat Sheet
+# Tutorial 14: R To Python Cheat Sheet
 
-| Task         | R                         | Python                             |
-|:-----------------------|:-----------------------|:-----------------------|
-| Load Library | `library(dplyr)`          | `import pandas as pd`              |
-| Load CSV     | `read.csv("data/f.csv")`  | `pd.read_csv("data/f.csv")`        |
-| Row Count    | `nrow(df)`                | `len(df)`                          |
-| Filter       | `filter(df, age > 65)`    | `df[df['age'] > 65]`               |
-| New Column   | `mutate(df, bmi = w/h^2)` | `df['bmi'] = df['w'] / df['h']**2` |
-| Summary      | `summary(df$col)`         | `df['col'].describe()`             |
+Use this as a translation aid, not as a substitute for checking outputs.
+
+| Task | R | Python |
+|---|---|---|
+| Load package | `library(dplyr)` | `import pandas as pd` |
+| Read CSV | `read_csv("file.csv")` | `pd.read_csv("file.csv")` |
+| First rows | `head(df)` | `df.head()` |
+| Row count | `nrow(df)` | `len(df)` or `df.shape[0]` |
+| Column names | `names(df)` | `df.columns.tolist()` |
+| Select columns | `select(df, BMI, Gender)` | `df[["BMI", "Gender"]]` |
+| Filter rows | `filter(df, Age >= 20)` | `df[df["Age"] >= 20]` |
+| Missing values | `sum(is.na(df$BMI))` | `df["BMI"].isna().sum()` |
+| Group summary | `group_by(...) |> summarise(...)` | `.groupby(...).agg(...)` |
+| New column | `mutate(df, whtr = Waist / Height)` | `df["whtr"] = df["Waist"] / df["Height"]` |
+| Sort rows | `arrange(df, IncomeGroup)` | `df.sort_values("IncomeGroup")` |
+| Unique values | `unique(df$Gender)` | `df["Gender"].unique()` |
+
+## Translation Rule
+
+The translation is not finished when the code runs. It is finished when the R and Python outputs have been compared and the comparison is documented.

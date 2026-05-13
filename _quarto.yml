@@ -79,6 +79,7 @@ book:
     - part: "Week 5: Polyglot Awareness & R Deepening"
       chapters:
         - weeks/week05-polyglot-r-deepening/index.qmd
+        - weeks/week05-polyglot-r-deepening/r-deepening-parity.qmd
         - weeks/week05-polyglot-r-deepening/python01-when-and-why.qmd
         - weeks/week05-polyglot-r-deepening/python02-environment.qmd
         - weeks/week05-polyglot-r-deepening/python03-packages-reproducibility.qmd
@@ -127,6 +128,7 @@ book:
       chapters:
         - assignments/index.qmd
         - assignments/assignment-template.qmd
+        - assignments/assignment04-polyglot/README.md
         - assignments/assignment05-visualization/README.md
         - assignments/assignment06-eda-ai-audit/README.md
         - milestones/index.qmd

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>29&nbsp; Tutorial 7: The ‘One Step, One Cell’ AI Workflow – Health Data Science: AI and Knowledge Translation</title>
+<title>30&nbsp; Tutorial 7: The One Step, One Cell AI Workflow – Health Data Science: AI and Knowledge Translation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -71,10 +106,9 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta name="twitter:title" content="29&nbsp; Tutorial 7: The ‘One Step, One Cell’ AI Workflow – Health Data Science: AI and Knowledge Translation">
+<meta name="twitter:title" content="30&nbsp; Tutorial 7: The One Step, One Cell AI Workflow – Health Data Science: AI and Knowledge Translation">
 <meta name="twitter:description" content="">
-<meta name="twitter:image" content="../../assets/images/python7/p1.png">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -86,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week05-polyglot-r-deepening/index.html">Week 5: Polyglot Awareness &amp; R Deepening</a></li><li class="breadcrumb-item"><a href="../../weeks/week05-polyglot-r-deepening/python07-one-step-one-cell.html"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Tutorial 7: The ‘One Step, One Cell’ AI Workflow</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week05-polyglot-r-deepening/index.html">Week 5: Polyglot Awareness &amp; R Deepening</a></li><li class="breadcrumb-item"><a href="../../weeks/week05-polyglot-r-deepening/python07-one-step-one-cell.html"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Tutorial 7: The One Step, One Cell AI Workflow</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -432,91 +466,97 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Python with AI</span></a>
+ <span class="menu-text">Polyglot Awareness &amp; R Deepening</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week05-polyglot-r-deepening/r-deepening-parity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">R Deepening and Parity Check</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python01-when-and-why.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Tutorial 1: Python vs.&nbsp;R - When and Why?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Tutorial 1: Python vs.&nbsp;R - When and Why?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python02-environment.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Tutorial 2: Setting Up Your Python Environment</span></span></a>
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Tutorial 2: Setting Up Your Python Environment</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python03-packages-reproducibility.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Tutorial 3: Packages and Reproducibility</span></span></a>
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Tutorial 3: Packages and Reproducibility</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python04-translation-traps.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Tutorial 4: Common Translation Traps</span></span></a>
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Tutorial 4: Common Translation Traps</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python05-load-inspect-data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Tutorial 5: Loading and Inspecting Health Data</span></span></a>
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Tutorial 5: Loading and Inspecting Health Data</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python06-tracebacks.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Reading Tracebacks</span></span></a>
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Tutorial 6: Reading Python Tracebacks</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python07-one-step-one-cell.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Tutorial 7: The ‘One Step, One Cell’ AI Workflow</span></span></a>
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Tutorial 7: The One Step, One Cell AI Workflow</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python08-mixing-r-python.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Tutorial 8: Mixing R and Python”</span></span></a>
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Tutorial 8: Mixing R and Python</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python09-reusable-scripts.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Tutorial 9: Creating Reusable Python Scripts</span></span></a>
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Tutorial 9: Creating Reusable Python Scripts</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python10-git-progress.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Tutorial 10: Tracking Your Progress with Git</span></span></a>
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Tutorial 10: Tracking Your Progress With Git</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python11-project-milestone.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Tutorial 11: Term Project Milestone 1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Tutorial 11: Project Proposal Readiness Check</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python12-knowledge-check.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Tutorial 12: Python Knowledge Check</span></span></a>
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Tutorial 12: Knowledge Check</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python13-translation-exercise.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Tutorial 13: The Bilingual Translation Exercise</span></span></a>
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Tutorial 13: The Bilingual Translation Exercise</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python14-cheat-sheet.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Tutorial 14: R to Python Cheat Sheet</span></span></a>
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Tutorial 14: R To Python Cheat Sheet</span></span></a>
   </div>
 </li>
       </ul>
@@ -717,14 +757,20 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../assignments/assignment04-polyglot/README.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Assignment 4: Polyglot Awareness &amp; R Deepening</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../assignments/assignment05-visualization/README.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Assignment 5: Visualization Audit and Revision</span></span></a>
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Assignment 5: Visualization Audit and Revision</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../assignments/assignment06-eda-ai-audit/README.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Assignment 6: EDA, Table 1, and AI Audit</span></span></a>
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Assignment 6: EDA, Table 1, and AI Audit</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -854,7 +900,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../syllabus/topic-coverage-audit.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Syllabus-to-Content Coverage Audit</span></span></a>
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Syllabus-to-Content Coverage Audit</span></span></a>
   </div>
 </li>
       </ul>
@@ -869,17 +915,20 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#rule-1-one-step-one-cell" id="toc-rule-1-one-step-one-cell" class="nav-link active" data-scroll-target="#rule-1-one-step-one-cell"><span class="header-section-number">29.1</span> Rule 1: One Step, One Cell</a></li>
-  <li><a href="#rule-2-parity-audit" id="toc-rule-2-parity-audit" class="nav-link" data-scroll-target="#rule-2-parity-audit"><span class="header-section-number">29.2</span> Rule 2: Parity Audit</a></li>
+  <li><a href="#why-this-rule-exists" id="toc-why-this-rule-exists" class="nav-link active" data-scroll-target="#why-this-rule-exists"><span class="header-section-number">30.1</span> Why This Rule Exists</a></li>
+  <li><a href="#good-ai-prompt" id="toc-good-ai-prompt" class="nav-link" data-scroll-target="#good-ai-prompt"><span class="header-section-number">30.2</span> Good AI Prompt</a></li>
+  <li><a href="#risky-ai-prompt" id="toc-risky-ai-prompt" class="nav-link" data-scroll-target="#risky-ai-prompt"><span class="header-section-number">30.3</span> Risky AI Prompt</a></li>
+  <li><a href="#parity-audit-checks" id="toc-parity-audit-checks" class="nav-link" data-scroll-target="#parity-audit-checks"><span class="header-section-number">30.4</span> Parity Audit Checks</a></li>
+  <li><a href="#notebook-habit" id="toc-notebook-habit" class="nav-link" data-scroll-target="#notebook-habit"><span class="header-section-number">30.5</span> Notebook Habit</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ehsanx/Health-AI-KT/edit/main/weeks/week05-polyglot-r-deepening/python07-one-step-one-cell.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ehsanx/Health-AI-KT/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week05-polyglot-r-deepening/index.html">Week 5: Polyglot Awareness &amp; R Deepening</a></li><li class="breadcrumb-item"><a href="../../weeks/week05-polyglot-r-deepening/python07-one-step-one-cell.html"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Tutorial 7: The ‘One Step, One Cell’ AI Workflow</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week05-polyglot-r-deepening/index.html">Week 5: Polyglot Awareness &amp; R Deepening</a></li><li class="breadcrumb-item"><a href="../../weeks/week05-polyglot-r-deepening/python07-one-step-one-cell.html"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Tutorial 7: The One Step, One Cell AI Workflow</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Tutorial 7: The ‘One Step, One Cell’ AI Workflow</span></h1>
+<h1 class="title"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Tutorial 7: The One Step, One Cell AI Workflow</span></h1>
 </div>
 
 
@@ -896,45 +945,80 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="rule-1-one-step-one-cell" class="level2" data-number="29.1">
-<h2 data-number="29.1" class="anchored" data-anchor-id="rule-1-one-step-one-cell"><span class="header-section-number">29.1</span> Rule 1: One Step, One Cell</h2>
-<p>Don’t ask the AI for a giant analysis script at once. Ask for <strong>one atomic step</strong> (load, then filter, then summarize). Run and verify each cell before moving on.</p>
-<p>First ask AI to load</p>
-<p><img src="../../assets/images/python7/p1.png" class="img-fluid"></p>
-<p>Then ask it to filter by some value</p>
-<p><img src="../../assets/images/python7/p2.png" class="img-fluid"></p>
-<p>Then ask it to summarize</p>
-<p><img src="../../assets/images/python7/p3.png" class="img-fluid"></p>
+<section id="why-this-rule-exists" class="level2" data-number="30.1">
+<h2 data-number="30.1" class="anchored" data-anchor-id="why-this-rule-exists"><span class="header-section-number">30.1</span> Why This Rule Exists</h2>
+<p>Large AI-generated code blocks are hard to audit. A single hidden mistake in loading, filtering, grouping, or missingness handling can cascade into a polished but incorrect result.</p>
+<p>Use one cell per analytic step:</p>
+<ol type="1">
+<li>load data;</li>
+<li>inspect rows and columns;</li>
+<li>filter missing values;</li>
+<li>group and summarise;</li>
+<li>compare with the R result.</li>
+</ol>
 </section>
-<section id="rule-2-parity-audit" class="level2" data-number="29.2">
-<h2 data-number="29.2" class="anchored" data-anchor-id="rule-2-parity-audit"><span class="header-section-number">29.2</span> Rule 2: Parity Audit</h2>
-<p>Observe some of the differences between R and python below when it comes to data wrangling.</p>
+<section id="good-ai-prompt" class="level2" data-number="30.2">
+<h2 data-number="30.2" class="anchored" data-anchor-id="good-ai-prompt"><span class="header-section-number">30.2</span> Good AI Prompt</h2>
+<blockquote class="blockquote">
+<p>Translate only the data-loading step from R to Python/pandas. Tell me what output I should inspect before moving to the next step.</p>
+</blockquote>
+</section>
+<section id="risky-ai-prompt" class="level2" data-number="30.3">
+<h2 data-number="30.3" class="anchored" data-anchor-id="risky-ai-prompt"><span class="header-section-number">30.3</span> Risky AI Prompt</h2>
+<blockquote class="blockquote">
+<p>Translate my full analysis, make the plots, and write the interpretation.</p>
+</blockquote>
+<p>The risky prompt gives up too much control. It may change the analytic question without telling you.</p>
+</section>
+<section id="parity-audit-checks" class="level2" data-number="30.4">
+<h2 data-number="30.4" class="anchored" data-anchor-id="parity-audit-checks"><span class="header-section-number">30.4</span> Parity Audit Checks</h2>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Check</th>
-<th style="text-align: left;">R</th>
-<th style="text-align: left;">Python</th>
+<th>Check</th>
+<th>R</th>
+<th>Python</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Row count</td>
-<td style="text-align: left;"><code>nrow(df)</code></td>
-<td style="text-align: left;"><code>len(df)</code></td>
+<td>Row count</td>
+<td><code>nrow(df)</code></td>
+<td><code>len(df)</code> or <code>df.shape[0]</code></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Column names</td>
-<td style="text-align: left;"><code>names(df)</code></td>
-<td style="text-align: left;"><code>df.columns.tolist()</code></td>
+<td>Column names</td>
+<td><code>names(df)</code></td>
+<td><code>df.columns.tolist()</code></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Summary stats</td>
-<td style="text-align: left;"><code>summary(df$col)</code></td>
-<td style="text-align: left;"><code>df['col'].describe()</code></td>
+<td>Unique levels</td>
+<td><code>unique(df$IncomeGroup)</code></td>
+<td><code>df["IncomeGroup"].unique()</code></td>
+</tr>
+<tr class="even">
+<td>Missing values</td>
+<td><code>sum(is.na(df$BMI))</code></td>
+<td><code>df["BMI"].isna().sum()</code></td>
+</tr>
+<tr class="odd">
+<td>Summary table rows</td>
+<td><code>nrow(summary_df)</code></td>
+<td><code>len(summary_df)</code></td>
 </tr>
 </tbody>
 </table>
+</section>
+<section id="notebook-habit" class="level2" data-number="30.5">
+<h2 data-number="30.5" class="anchored" data-anchor-id="notebook-habit"><span class="header-section-number">30.5</span> Notebook Habit</h2>
+<p>After each Python cell, add a short Markdown note:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a href="#cb1-1"></a>Audit check: this cell matches the R output because ...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>If you cannot fill in that sentence, do not move to the next cell yet.</p>
 
 
 </section>
@@ -1392,13 +1476,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../weeks/week05-polyglot-r-deepening/python06-tracebacks.html" class="pagination-link" aria-label="Reading Tracebacks">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Reading Tracebacks</span></span>
+      <a href="../../weeks/week05-polyglot-r-deepening/python06-tracebacks.html" class="pagination-link" aria-label="Tutorial 6: Reading Python Tracebacks">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Tutorial 6: Reading Python Tracebacks</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../weeks/week05-polyglot-r-deepening/python08-mixing-r-python.html" class="pagination-link" aria-label="Tutorial 8: Mixing R and Python&quot;">
-        <span class="nav-page-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Tutorial 8: Mixing R and Python”</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../weeks/week05-polyglot-r-deepening/python08-mixing-r-python.html" class="pagination-link" aria-label="Tutorial 8: Mixing R and Python">
+        <span class="nav-page-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Tutorial 8: Mixing R and Python</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

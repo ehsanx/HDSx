@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>32&nbsp; Tutorial 10: Tracking Your Progress with Git – Health Data Science: AI and Knowledge Translation</title>
+<title>33&nbsp; Tutorial 10: Tracking Your Progress With Git – Health Data Science: AI and Knowledge Translation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -71,10 +106,9 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta name="twitter:title" content="32&nbsp; Tutorial 10: Tracking Your Progress with Git – Health Data Science: AI and Knowledge Translation">
+<meta name="twitter:title" content="33&nbsp; Tutorial 10: Tracking Your Progress With Git – Health Data Science: AI and Knowledge Translation">
 <meta name="twitter:description" content="">
-<meta name="twitter:image" content="../../assets/images/python10/p1.png">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -86,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week05-polyglot-r-deepening/index.html">Week 5: Polyglot Awareness &amp; R Deepening</a></li><li class="breadcrumb-item"><a href="../../weeks/week05-polyglot-r-deepening/python10-git-progress.html"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Tutorial 10: Tracking Your Progress with Git</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week05-polyglot-r-deepening/index.html">Week 5: Polyglot Awareness &amp; R Deepening</a></li><li class="breadcrumb-item"><a href="../../weeks/week05-polyglot-r-deepening/python10-git-progress.html"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Tutorial 10: Tracking Your Progress With Git</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -432,91 +466,97 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Python with AI</span></a>
+ <span class="menu-text">Polyglot Awareness &amp; R Deepening</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week05-polyglot-r-deepening/r-deepening-parity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">R Deepening and Parity Check</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python01-when-and-why.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Tutorial 1: Python vs.&nbsp;R - When and Why?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Tutorial 1: Python vs.&nbsp;R - When and Why?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python02-environment.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Tutorial 2: Setting Up Your Python Environment</span></span></a>
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Tutorial 2: Setting Up Your Python Environment</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python03-packages-reproducibility.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Tutorial 3: Packages and Reproducibility</span></span></a>
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Tutorial 3: Packages and Reproducibility</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python04-translation-traps.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Tutorial 4: Common Translation Traps</span></span></a>
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Tutorial 4: Common Translation Traps</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python05-load-inspect-data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Tutorial 5: Loading and Inspecting Health Data</span></span></a>
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Tutorial 5: Loading and Inspecting Health Data</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python06-tracebacks.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Reading Tracebacks</span></span></a>
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Tutorial 6: Reading Python Tracebacks</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python07-one-step-one-cell.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Tutorial 7: The ‘One Step, One Cell’ AI Workflow</span></span></a>
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Tutorial 7: The One Step, One Cell AI Workflow</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python08-mixing-r-python.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Tutorial 8: Mixing R and Python”</span></span></a>
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Tutorial 8: Mixing R and Python</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python09-reusable-scripts.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Tutorial 9: Creating Reusable Python Scripts</span></span></a>
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Tutorial 9: Creating Reusable Python Scripts</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python10-git-progress.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Tutorial 10: Tracking Your Progress with Git</span></span></a>
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Tutorial 10: Tracking Your Progress With Git</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python11-project-milestone.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Tutorial 11: Term Project Milestone 1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Tutorial 11: Project Proposal Readiness Check</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python12-knowledge-check.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Tutorial 12: Python Knowledge Check</span></span></a>
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Tutorial 12: Knowledge Check</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python13-translation-exercise.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Tutorial 13: The Bilingual Translation Exercise</span></span></a>
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Tutorial 13: The Bilingual Translation Exercise</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/python14-cheat-sheet.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Tutorial 14: R to Python Cheat Sheet</span></span></a>
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Tutorial 14: R To Python Cheat Sheet</span></span></a>
   </div>
 </li>
       </ul>
@@ -717,14 +757,20 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../assignments/assignment04-polyglot/README.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Assignment 4: Polyglot Awareness &amp; R Deepening</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../assignments/assignment05-visualization/README.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Assignment 5: Visualization Audit and Revision</span></span></a>
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Assignment 5: Visualization Audit and Revision</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../assignments/assignment06-eda-ai-audit/README.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Assignment 6: EDA, Table 1, and AI Audit</span></span></a>
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Assignment 6: EDA, Table 1, and AI Audit</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -854,7 +900,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../syllabus/topic-coverage-audit.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Syllabus-to-Content Coverage Audit</span></span></a>
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Syllabus-to-Content Coverage Audit</span></span></a>
   </div>
 </li>
       </ul>
@@ -869,16 +915,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#cleaning-your-notebooks" id="toc-cleaning-your-notebooks" class="nav-link active" data-scroll-target="#cleaning-your-notebooks"><span class="header-section-number">32.1</span> Cleaning Your Notebooks</a></li>
+  <li><a href="#commit-the-audit-trail" id="toc-commit-the-audit-trail" class="nav-link active" data-scroll-target="#commit-the-audit-trail"><span class="header-section-number">33.1</span> Commit The Audit Trail</a></li>
+  <li><a href="#notebook-output-hygiene" id="toc-notebook-output-hygiene" class="nav-link" data-scroll-target="#notebook-output-hygiene"><span class="header-section-number">33.2</span> Notebook Output Hygiene</a></li>
+  <li><a href="#example-commit-messages" id="toc-example-commit-messages" class="nav-link" data-scroll-target="#example-commit-messages"><span class="header-section-number">33.3</span> Example Commit Messages</a></li>
+  <li><a href="#student-check" id="toc-student-check" class="nav-link" data-scroll-target="#student-check"><span class="header-section-number">33.4</span> Student Check</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ehsanx/Health-AI-KT/edit/main/weeks/week05-polyglot-r-deepening/python10-git-progress.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ehsanx/Health-AI-KT/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week05-polyglot-r-deepening/index.html">Week 5: Polyglot Awareness &amp; R Deepening</a></li><li class="breadcrumb-item"><a href="../../weeks/week05-polyglot-r-deepening/python10-git-progress.html"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Tutorial 10: Tracking Your Progress with Git</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week05-polyglot-r-deepening/index.html">Week 5: Polyglot Awareness &amp; R Deepening</a></li><li class="breadcrumb-item"><a href="../../weeks/week05-polyglot-r-deepening/python10-git-progress.html"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Tutorial 10: Tracking Your Progress With Git</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Tutorial 10: Tracking Your Progress with Git</span></h1>
+<h1 class="title"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Tutorial 10: Tracking Your Progress With Git</span></h1>
 </div>
 
 
@@ -895,11 +944,38 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="cleaning-your-notebooks" class="level2" data-number="32.1">
-<h2 data-number="32.1" class="anchored" data-anchor-id="cleaning-your-notebooks"><span class="header-section-number">32.1</span> Cleaning Your Notebooks</h2>
-<p>Jupyter notebooks (<code>.ipynb</code>) store images and tables inside the file, making Git history messy.</p>
-<p><strong>Before you commit:</strong> 1. Open the <strong>Command Palette</strong> (Ctrl+Shift+P). 2. Search for <code>Notebook: Clear All Outputs</code>. 3. Stage and commit your changes with a professional message.</p>
-<p><img src="../../assets/images/python10/p1.png" class="img-fluid"></p>
+<section id="commit-the-audit-trail" class="level2" data-number="33.1">
+<h2 data-number="33.1" class="anchored" data-anchor-id="commit-the-audit-trail"><span class="header-section-number">33.1</span> Commit The Audit Trail</h2>
+<p>Week 4 introduced Git as analysis provenance. Week 5 uses that skill to make translation auditable.</p>
+<p>Commit after meaningful checkpoints:</p>
+<ol type="1">
+<li>R pipeline works.</li>
+<li>R function reproduces the pipeline.</li>
+<li>Python notebook loads the same data.</li>
+<li>Python summary matches the R summary.</li>
+<li>Final parity note is complete.</li>
+</ol>
+</section>
+<section id="notebook-output-hygiene" class="level2" data-number="33.2">
+<h2 data-number="33.2" class="anchored" data-anchor-id="notebook-output-hygiene"><span class="header-section-number">33.2</span> Notebook Output Hygiene</h2>
+<p>Jupyter notebooks can store rendered tables and images inside the <code>.ipynb</code> file. That makes Git diffs noisy.</p>
+<p>Before committing:</p>
+<ol type="1">
+<li>Open the Command Palette with <code>Ctrl+Shift+P</code>.</li>
+<li>Run <code>Notebook: Clear All Outputs</code>.</li>
+<li>Save the notebook.</li>
+<li>Stage <code>translation.ipynb</code>, <code>helpers.py</code>, and your Quarto note together.</li>
+</ol>
+</section>
+<section id="example-commit-messages" class="level2" data-number="33.3">
+<h2 data-number="33.3" class="anchored" data-anchor-id="example-commit-messages"><span class="header-section-number">33.3</span> Example Commit Messages</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a href="#cb1-1"></a>Add R BMI summary for Week 5 parity check</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a href="#cb2-1"></a>Translate BMI summary to pandas and verify row counts</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb3-1"><a href="#cb3-1"></a>Complete Assignment 4 parity audit note</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="student-check" class="level2" data-number="33.4">
+<h2 data-number="33.4" class="anchored" data-anchor-id="student-check"><span class="header-section-number">33.4</span> Student Check</h2>
+<p>Your Git history should show the work developing in steps, not one unexplained final upload.</p>
 
 
 </section>
@@ -1358,12 +1434,12 @@ ul.task-list li input[type="checkbox"] {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../../weeks/week05-polyglot-r-deepening/python09-reusable-scripts.html" class="pagination-link" aria-label="Tutorial 9: Creating Reusable Python Scripts">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Tutorial 9: Creating Reusable Python Scripts</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Tutorial 9: Creating Reusable Python Scripts</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../weeks/week05-polyglot-r-deepening/python11-project-milestone.html" class="pagination-link" aria-label="Tutorial 11: Term Project Milestone 1">
-        <span class="nav-page-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Tutorial 11: Term Project Milestone 1</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../weeks/week05-polyglot-r-deepening/python11-project-milestone.html" class="pagination-link" aria-label="Tutorial 11: Project Proposal Readiness Check">
+        <span class="nav-page-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Tutorial 11: Project Proposal Readiness Check</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

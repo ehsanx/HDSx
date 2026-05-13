@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3&nbsp; Tour of the Repository – Health Data Science: AI and Knowledge Translation</title>
+<title>23&nbsp; R Deepening and Parity Check – Health Data Science: AI and Knowledge Translation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,8 +65,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../weeks/week02-modern-workflows/workflows03-open-codespace.html" rel="next">
-<link href="../../weeks/week02-modern-workflows/workflows01-cloud-drive.html" rel="prev">
+<link href="../../weeks/week05-polyglot-r-deepening/python01-when-and-why.html" rel="next">
+<link href="../../weeks/week05-polyglot-r-deepening/index.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -71,10 +106,9 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta name="twitter:title" content="3&nbsp; Tour of the Repository – Health Data Science: AI and Knowledge Translation">
+<meta name="twitter:title" content="23&nbsp; R Deepening and Parity Check – Health Data Science: AI and Knowledge Translation">
 <meta name="twitter:description" content="">
-<meta name="twitter:image" content="../../assets/images/workflow2/github.png">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -86,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week02-modern-workflows/index.html">Week 2: Modern Workflows</a></li><li class="breadcrumb-item"><a href="../../weeks/week02-modern-workflows/workflows02-repository-tour.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Tour of the Repository</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week05-polyglot-r-deepening/index.html">Week 5: Polyglot Awareness &amp; R Deepening</a></li><li class="breadcrumb-item"><a href="../../weeks/week05-polyglot-r-deepening/r-deepening-parity.html"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">R Deepening and Parity Check</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -206,7 +240,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../weeks/week02-modern-workflows/workflows02-repository-tour.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../weeks/week02-modern-workflows/workflows02-repository-tour.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Tour of the Repository</span></span></a>
   </div>
 </li>
@@ -437,7 +471,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../weeks/week05-polyglot-r-deepening/r-deepening-parity.html" class="sidebar-item-text sidebar-link">
+  <a href="../../weeks/week05-polyglot-r-deepening/r-deepening-parity.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">R Deepening and Parity Check</span></span></a>
   </div>
 </li>
@@ -881,17 +915,23 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#step-by-step" id="toc-step-by-step" class="nav-link active" data-scroll-target="#step-by-step"><span class="header-section-number">3.1</span> Step-by-step</a></li>
-  <li><a href="#task" id="toc-task" class="nav-link" data-scroll-target="#task"><span class="header-section-number">3.2</span> Task</a></li>
+  <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link active" data-scroll-target="#learning-goals"><span class="header-section-number">23.1</span> Learning Goals</a></li>
+  <li><a href="#dataset" id="toc-dataset" class="nav-link" data-scroll-target="#dataset"><span class="header-section-number">23.2</span> Dataset</a></li>
+  <li><a href="#part-a-r-pipeline" id="toc-part-a-r-pipeline" class="nav-link" data-scroll-target="#part-a-r-pipeline"><span class="header-section-number">23.3</span> Part A: R Pipeline</a></li>
+  <li><a href="#part-b-r-function" id="toc-part-b-r-function" class="nav-link" data-scroll-target="#part-b-r-function"><span class="header-section-number">23.4</span> Part B: R Function</a></li>
+  <li><a href="#part-c-python-translation" id="toc-part-c-python-translation" class="nav-link" data-scroll-target="#part-c-python-translation"><span class="header-section-number">23.5</span> Part C: Python Translation</a></li>
+  <li><a href="#part-d-parity-audit" id="toc-part-d-parity-audit" class="nav-link" data-scroll-target="#part-d-parity-audit"><span class="header-section-number">23.6</span> Part D: Parity Audit</a></li>
+  <li><a href="#ai-audit-prompt" id="toc-ai-audit-prompt" class="nav-link" data-scroll-target="#ai-audit-prompt"><span class="header-section-number">23.7</span> AI Audit Prompt</a></li>
+  <li><a href="#student-output" id="toc-student-output" class="nav-link" data-scroll-target="#student-output"><span class="header-section-number">23.8</span> Student Output</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ehsanx/Health-AI-KT/edit/main/weeks/week02-modern-workflows/workflows02-repository-tour.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ehsanx/Health-AI-KT/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ehsanx/Health-AI-KT/edit/main/weeks/week05-polyglot-r-deepening/r-deepening-parity.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ehsanx/Health-AI-KT/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week02-modern-workflows/index.html">Week 2: Modern Workflows</a></li><li class="breadcrumb-item"><a href="../../weeks/week02-modern-workflows/workflows02-repository-tour.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Tour of the Repository</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week05-polyglot-r-deepening/index.html">Week 5: Polyglot Awareness &amp; R Deepening</a></li><li class="breadcrumb-item"><a href="../../weeks/week05-polyglot-r-deepening/r-deepening-parity.html"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">R Deepening and Parity Check</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Tour of the Repository</span></h1>
+<h1 class="title"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">R Deepening and Parity Check</span></h1>
 </div>
 
 
@@ -908,40 +948,159 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="step-by-step" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="step-by-step"><span class="header-section-number">3.1</span> Step-by-step</h2>
-<ol type="1">
-<li><p>Open your course repository on GitHub<br>
-</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../assets/images/workflow2/github.png" class="img-fluid figure-img"></p>
-<figcaption>Main github page</figcaption>
-</figure>
-</div></li>
-<li><p>Click the <strong>Code</strong> tab<br>
-<img src="../../assets/images/workflow2/code.png" class="img-fluid" alt="Code tab"></p>
+<p>Week 5 is polyglot-aware, not Python-first. Your strongest analysis path remains R and the tidyverse. Python enters as a comparison language: it helps you read code from other sources, ask better AI translation questions, and verify that a translated result still means the same thing.</p>
+<section id="learning-goals" class="level2" data-number="23.1">
+<h2 data-number="23.1" class="anchored" data-anchor-id="learning-goals"><span class="header-section-number">23.1</span> Learning Goals</h2>
+<p>By the end of this activity, you should be able to:</p>
 <ul>
-<li><strong>Why?</strong> GitHub has many tabs (Issues, Actions, Settings). The <strong>Code</strong> tab is your “Reset” button. If you ever get lost in a menu, click this to go back to your files.</li>
-</ul></li>
-<li><p>Look at the file list<br>
-<img src="../../assets/images/workflow2/files.png" class="img-fluid" alt="File list"></p>
-<ul>
-<li>This shows the <strong>current state</strong> of the project in the Vault.</li>
-<li><strong>Crucial:</strong> If a file is listed here, it is safe. If it is <em>not</em> here, it only exists on your temporary “Desk” (Codespace) and is at risk of being lost.</li>
-</ul></li>
-<li><p>Scroll to read the README</p>
-<ul>
-<li>The <code>README.md</code> file is displayed automatically at the bottom. Think of it as the “Cover Sheet” or “Instruction Manual” for your project.</li>
-</ul></li>
-</ol>
+<li>write a clear R <code>dplyr</code> pipeline for a descriptive health-data summary;</li>
+<li>refactor a repeated summary into a small R function;</li>
+<li>translate the same task to Python/pandas one step at a time;</li>
+<li>compare outputs across languages using row counts, grouping levels, and summary values;</li>
+<li>document any mismatch before deciding which code to change.</li>
+</ul>
 </section>
-<section id="task" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="task"><span class="header-section-number">3.2</span> Task</h2>
-<p>Find this file:</p>
-<pre><code>practice_report.qmd</code></pre>
-<p><strong>Verification:</strong> If you can see <code>practice_report.qmd</code> in this list, it means the file is safely stored in the cloud (The Vault).</p>
-<p>If you can see it, it is safely stored in the cloud.</p>
+<section id="dataset" class="level2" data-number="23.2">
+<h2 data-number="23.2" class="anchored" data-anchor-id="dataset"><span class="header-section-number">23.2</span> Dataset</h2>
+<p>Use the NHANES case-study snapshot:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a href="#cb1-1"></a>examples/nhanes-equity/data/nhanes_equity_v6.csv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>If you are working from this Week 5 folder, the relative path is:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a href="#cb2-1"></a>../../examples/nhanes-equity/data/nhanes_equity_v6.csv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="part-a-r-pipeline" class="level2" data-number="23.3">
+<h2 data-number="23.3" class="anchored" data-anchor-id="part-a-r-pipeline"><span class="header-section-number">23.3</span> Part A: R Pipeline</h2>
+<p>Start with R. The goal is a descriptive, unweighted summary of BMI by income group and gender.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb3-3"><a href="#cb3-3"></a></span>
+<span id="cb3-4"><a href="#cb3-4"></a>nhanes <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"../../examples/nhanes-equity/data/nhanes_equity_v6.csv"</span>)</span>
+<span id="cb3-5"><a href="#cb3-5"></a></span>
+<span id="cb3-6"><a href="#cb3-6"></a>r_summary <span class="ot">&lt;-</span> nhanes <span class="sc">|&gt;</span></span>
+<span id="cb3-7"><a href="#cb3-7"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(BMI), <span class="sc">!</span><span class="fu">is.na</span>(IncomeGroup), <span class="sc">!</span><span class="fu">is.na</span>(Gender)) <span class="sc">|&gt;</span></span>
+<span id="cb3-8"><a href="#cb3-8"></a>  <span class="fu">group_by</span>(IncomeGroup, Gender) <span class="sc">|&gt;</span></span>
+<span id="cb3-9"><a href="#cb3-9"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb3-10"><a href="#cb3-10"></a>    <span class="at">n =</span> <span class="fu">n</span>(),</span>
+<span id="cb3-11"><a href="#cb3-11"></a>    <span class="at">mean_bmi =</span> <span class="fu">round</span>(<span class="fu">mean</span>(BMI), <span class="dv">2</span>),</span>
+<span id="cb3-12"><a href="#cb3-12"></a>    <span class="at">sd_bmi =</span> <span class="fu">round</span>(<span class="fu">sd</span>(BMI), <span class="dv">2</span>),</span>
+<span id="cb3-13"><a href="#cb3-13"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb3-14"><a href="#cb3-14"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb3-15"><a href="#cb3-15"></a>  <span class="fu">arrange</span>(IncomeGroup, Gender)</span>
+<span id="cb3-16"><a href="#cb3-16"></a></span>
+<span id="cb3-17"><a href="#cb3-17"></a>r_summary</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="part-b-r-function" class="level2" data-number="23.4">
+<h2 data-number="23.4" class="anchored" data-anchor-id="part-b-r-function"><span class="header-section-number">23.4</span> Part B: R Function</h2>
+<p>Refactor the summary so the value and grouping variables are easy to change later.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>summarise_mean_sd <span class="ot">&lt;-</span> <span class="cf">function</span>(data, value, group1, group2) {</span>
+<span id="cb4-2"><a href="#cb4-2"></a>  data <span class="sc">|&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a>    <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>({{ value }}), <span class="sc">!</span><span class="fu">is.na</span>({{ group1 }}), <span class="sc">!</span><span class="fu">is.na</span>({{ group2 }})) <span class="sc">|&gt;</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a>    <span class="fu">group_by</span>({{ group1 }}, {{ group2 }}) <span class="sc">|&gt;</span></span>
+<span id="cb4-5"><a href="#cb4-5"></a>    <span class="fu">summarise</span>(</span>
+<span id="cb4-6"><a href="#cb4-6"></a>      <span class="at">n =</span> <span class="fu">n</span>(),</span>
+<span id="cb4-7"><a href="#cb4-7"></a>      <span class="at">mean_value =</span> <span class="fu">round</span>(<span class="fu">mean</span>({{ value }}), <span class="dv">2</span>),</span>
+<span id="cb4-8"><a href="#cb4-8"></a>      <span class="at">sd_value =</span> <span class="fu">round</span>(<span class="fu">sd</span>({{ value }}), <span class="dv">2</span>),</span>
+<span id="cb4-9"><a href="#cb4-9"></a>      <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb4-10"><a href="#cb4-10"></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb4-11"><a href="#cb4-11"></a>    <span class="fu">arrange</span>({{ group1 }}, {{ group2 }})</span>
+<span id="cb4-12"><a href="#cb4-12"></a>}</span>
+<span id="cb4-13"><a href="#cb4-13"></a></span>
+<span id="cb4-14"><a href="#cb4-14"></a>r_function_summary <span class="ot">&lt;-</span> <span class="fu">summarise_mean_sd</span>(nhanes, BMI, IncomeGroup, Gender)</span>
+<span id="cb4-15"><a href="#cb4-15"></a>r_function_summary</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Before moving to Python, check that the function output has the same number of rows and the same grouping labels as the original pipeline.</p>
+</section>
+<section id="part-c-python-translation" class="level2" data-number="23.5">
+<h2 data-number="23.5" class="anchored" data-anchor-id="part-c-python-translation"><span class="header-section-number">23.5</span> Part C: Python Translation</h2>
+<p>Translate one step at a time. Do not ask AI for a full script until you have verified each cell.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb5-2"><a href="#cb5-2"></a></span>
+<span id="cb5-3"><a href="#cb5-3"></a>nhanes <span class="op">=</span> pd.read_csv(<span class="st">"../../examples/nhanes-equity/data/nhanes_equity_v6.csv"</span>)</span>
+<span id="cb5-4"><a href="#cb5-4"></a></span>
+<span id="cb5-5"><a href="#cb5-5"></a>py_summary <span class="op">=</span> (</span>
+<span id="cb5-6"><a href="#cb5-6"></a>    nhanes</span>
+<span id="cb5-7"><a href="#cb5-7"></a>    .dropna(subset<span class="op">=</span>[<span class="st">"BMI"</span>, <span class="st">"IncomeGroup"</span>, <span class="st">"Gender"</span>])</span>
+<span id="cb5-8"><a href="#cb5-8"></a>    .groupby([<span class="st">"IncomeGroup"</span>, <span class="st">"Gender"</span>], as_index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb5-9"><a href="#cb5-9"></a>    .agg(</span>
+<span id="cb5-10"><a href="#cb5-10"></a>        n<span class="op">=</span>(<span class="st">"BMI"</span>, <span class="st">"size"</span>),</span>
+<span id="cb5-11"><a href="#cb5-11"></a>        mean_bmi<span class="op">=</span>(<span class="st">"BMI"</span>, <span class="st">"mean"</span>),</span>
+<span id="cb5-12"><a href="#cb5-12"></a>        sd_bmi<span class="op">=</span>(<span class="st">"BMI"</span>, <span class="st">"std"</span>)</span>
+<span id="cb5-13"><a href="#cb5-13"></a>    )</span>
+<span id="cb5-14"><a href="#cb5-14"></a>    .sort_values([<span class="st">"IncomeGroup"</span>, <span class="st">"Gender"</span>])</span>
+<span id="cb5-15"><a href="#cb5-15"></a>)</span>
+<span id="cb5-16"><a href="#cb5-16"></a></span>
+<span id="cb5-17"><a href="#cb5-17"></a>py_summary[<span class="st">"mean_bmi"</span>] <span class="op">=</span> py_summary[<span class="st">"mean_bmi"</span>].<span class="bu">round</span>(<span class="dv">2</span>)</span>
+<span id="cb5-18"><a href="#cb5-18"></a>py_summary[<span class="st">"sd_bmi"</span>] <span class="op">=</span> py_summary[<span class="st">"sd_bmi"</span>].<span class="bu">round</span>(<span class="dv">2</span>)</span>
+<span id="cb5-19"><a href="#cb5-19"></a></span>
+<span id="cb5-20"><a href="#cb5-20"></a>py_summary</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="part-d-parity-audit" class="level2" data-number="23.6">
+<h2 data-number="23.6" class="anchored" data-anchor-id="part-d-parity-audit"><span class="header-section-number">23.6</span> Part D: Parity Audit</h2>
+<p>Record the following checks in a short Quarto note:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Check</th>
+<th>R command</th>
+<th>Python command</th>
+<th>What to record</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Raw row count</td>
+<td><code>nrow(nhanes)</code></td>
+<td><code>len(nhanes)</code></td>
+<td>Same number of rows</td>
+</tr>
+<tr class="even">
+<td>Column names</td>
+<td><code>names(nhanes)</code></td>
+<td><code>nhanes.columns.tolist()</code></td>
+<td>Same expected variables</td>
+</tr>
+<tr class="odd">
+<td>Analysis rows after missingness filter</td>
+<td><code>nrow(filter(nhanes, !is.na(BMI), !is.na(IncomeGroup), !is.na(Gender)))</code></td>
+<td><code>len(nhanes.dropna(subset=["BMI", "IncomeGroup", "Gender"]))</code></td>
+<td>Same filtered row count</td>
+</tr>
+<tr class="even">
+<td>Group count</td>
+<td><code>nrow(r_summary)</code></td>
+<td><code>len(py_summary)</code></td>
+<td>Same number of grouped rows</td>
+</tr>
+<tr class="odd">
+<td>Summary values</td>
+<td>inspect <code>mean_bmi</code> and <code>sd_bmi</code></td>
+<td>inspect <code>mean_bmi</code> and <code>sd_bmi</code></td>
+<td>Values match after rounding</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="ai-audit-prompt" class="level2" data-number="23.7">
+<h2 data-number="23.7" class="anchored" data-anchor-id="ai-audit-prompt"><span class="header-section-number">23.7</span> AI Audit Prompt</h2>
+<p>Use this prompt only after you have a working R result:</p>
+<blockquote class="blockquote">
+<p>Translate this R <code>dplyr</code> pipeline into Python/pandas one step at a time. For each step, explain the equivalent Python operation, the output I should inspect, and the parity check I should run against my R result. Do not combine steps or add new analysis choices.</p>
+</blockquote>
+</section>
+<section id="student-output" class="level2" data-number="23.8">
+<h2 data-number="23.8" class="anchored" data-anchor-id="student-output"><span class="header-section-number">23.8</span> Student Output</h2>
+<p>Submit a short note with:</p>
+<ul>
+<li>the R pipeline;</li>
+<li>the R function;</li>
+<li>the Python translation;</li>
+<li>a parity table showing the checks above;</li>
+<li>two sentences explaining any mismatch or confirming that the outputs agree.</li>
+</ul>
 
 
 </section>
@@ -1399,13 +1558,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../weeks/week02-modern-workflows/workflows01-cloud-drive.html" class="pagination-link" aria-label="The Analogy: Public Computer vs Cloud Drive">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Analogy: Public Computer vs Cloud Drive</span></span>
+      <a href="../../weeks/week05-polyglot-r-deepening/index.html" class="pagination-link" aria-label="Polyglot Awareness &amp; R Deepening">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Polyglot Awareness &amp; R Deepening</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../weeks/week02-modern-workflows/workflows03-open-codespace.html" class="pagination-link" aria-label="Opening Your First Codespace">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Opening Your First Codespace</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../weeks/week05-polyglot-r-deepening/python01-when-and-why.html" class="pagination-link" aria-label="Tutorial 1: Python vs. R - When and Why?">
+        <span class="nav-page-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Tutorial 1: Python vs.&nbsp;R - When and Why?</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1414,4 +1573,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ehsanx/Health-AI-KT/edit/main/weeks/week02-modern-workflows/workflows02-repository-tour.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ehsanx/Health-AI-KT/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ehsanx/Health-AI-KT/edit/main/weeks/week05-polyglot-r-deepening/r-deepening-parity.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ehsanx/Health-AI-KT/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
