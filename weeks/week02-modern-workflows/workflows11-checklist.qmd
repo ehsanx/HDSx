@@ -1,6 +1,7 @@
 # Final Checklist
 
 -   [ ] I understand repository vs Codespace\
+-   [ ] I created or located my forked course repository\
 -   [ ] I rendered a `.qmd` file\
 -   [ ] I committed changes\
 -   [ ] I know how to rebuild container\

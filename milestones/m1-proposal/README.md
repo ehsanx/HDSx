@@ -2,60 +2,88 @@
 
 ## Purpose
 
-M1 turns a project idea into a feasible health-data question. The proposal should show that the dataset can be accessed ethically, loaded reproducibly, and used for a Knowledge Translation product that fits the course timeline.
+M1 turns a broad project idea into a scoped, feasible, and ethically grounded analytic plan. The proposal should make the audience, data source, question, reproducibility plan, and first visualization direction clear enough for feedback.
 
-## Inputs
+## Due Timing
 
-- Syllabus project description: `syllabus/SPPH-381H-Course-Outline-v4.qmd`
-- Week 1 Data Intake Card: `weeks/week01-health-data-ethics/activity-data-intake-card.qmd`
-- Week 6 visualization standard: `weeks/week06-visualization/worked-example-ggplot.qmd`
-- Assignment 5 reflection: `assignments/assignment05-visualization/submission/`
+Submit by the Week 6 deadline posted in Canvas. This milestone prepares the group for Week 7 preliminary analysis and Week 8 dashboard prototyping.
 
-## Step-by-Step Tasks
+## Required Deliverables
 
-1. State one research or KT question in plain language.
-2. Name the intended audience and one decision or conversation the product should support.
-3. Identify the dataset, publisher, access URL, file format, and date accessed.
-4. Summarize provenance, license or terms of use, privacy/security considerations, and stewardship considerations.
-5. Explain why the dataset is feasible for the term project: accessible, documented, small enough to work with, and suited to descriptive analysis.
-6. Sketch one likely output, such as a figure, table, dashboard panel, or briefing slide.
-7. Name one limitation or risk that could narrow the project scope.
-
-## What To Submit
-
-Place all submission files in:
+Create or update:
 
 ```text
 milestones/m1-proposal/submission/
 ```
 
-Submit these files:
+Include these files:
 
-- `proposal.qmd`: rerunnable Quarto proposal with question, audience, dataset, feasibility, and scope.
-- `proposal.html`: rendered proposal.
-- `data-intake-card.md`: completed intake card for the project dataset.
-- `feasibility-check.md`: short note naming how the data will be loaded and what may block analysis.
-- `ai-use-note.md`: required if AI helped draft, revise, or search; otherwise include a one-sentence note saying AI was not used.
+- `proposal.md`
+- `data-intake-card.md`
+- `initial-visual-plan.md`
+- `reproducibility-plan.md`
+- `ai-use-note.md`
 
-## Submission Route
+## What To Submit
 
-Submit a Canvas assignment entry that contains a link to the repository folder `milestones/m1-proposal/submission/`.
+Submit your GitHub repository link on Canvas after committing and syncing the files above. In the Canvas comment box, include the latest commit hash and the folder path for the milestone.
+
+## Proposal Guidance
+
+`proposal.md` should include:
+
+- project title
+- group members
+- audience and KT purpose
+- one primary question
+- one secondary question
+- expected data source
+- planned analytic output
+- known limitations
+
+`data-intake-card.md` should summarize:
+
+- data source and steward
+- access method
+- file format
+- unit of analysis
+- key variables
+- privacy and stewardship considerations
+- Indigenous Data Sovereignty or CARE/OCAP awareness when relevant
+
+`initial-visual-plan.md` should include:
+
+- one planned figure
+- what the figure should help the audience decide or understand
+- one risk of misinterpretation
+
+`reproducibility-plan.md` should include:
+
+- expected repository folders
+- data access plan
+- package/dependency notes
+- how another student could rerun the work
+
+## Reproducibility Expectations
+
+Use relative paths. Do not commit restricted, private, or identifiable data. If public data are too large for GitHub, commit a small sample or documented access script and explain how the full file is obtained.
+
+## AI-Use Expectations
+
+AI may help brainstorm wording, search terms, or code structure. Students must verify data-source claims, privacy considerations, citations, and feasibility. Include an `ai-use-note.md` describing what AI helped with and what was checked manually.
 
 ## Grading Checklist
 
-Complete:
+This milestone is marked complete when:
 
-- Question and audience are specific enough to guide a small KT product.
-- Dataset provenance, access, format, and terms are documented.
-- Privacy, security, and stewardship considerations are named.
-- Feasibility check explains how the data can be loaded and analyzed during the course.
-- Scope includes one likely output and one limitation.
-- Files use relative paths and render from the repository.
+- the question is specific and feasible
+- the audience and KT purpose are named
+- data provenance and access are documented
+- privacy, stewardship, and equity risks are acknowledged
+- at least one visualization direction is described
+- reproducibility plan is concrete
+- AI use is disclosed and audited
 
-Needs work:
+## Definition Of Done
 
-- Question is too broad for the course timeline.
-- Dataset source, access terms, or citation are missing.
-- Privacy or stewardship issues are ignored.
-- Feasibility depends on unavailable data or unclear permissions.
-- Proposal does not render or uses machine-specific paths.
+M1 is done when another group can read the proposal and understand what you will analyze, why it matters, what data you will use, and how the work will be rerun.

@@ -1,19 +1,42 @@
-# Project Milestones {.unnumbered}
+---
+title: "Milestones"
+---
 
-The term project is built through staged milestones so students practice reproducibility, feedback, and knowledge translation before the final submission.
+# Milestones
 
-| Milestone | Due | Deliverable |
-|---|---|---|
-| M0 | Week 4 Monday | Group formation and repository setup |
-| M1 | Week 6 Monday | Proposal, dataset selection, provenance/stewardship statement |
-| M2 | Week 7 Monday | Preliminary analysis, Table 1 or descriptive summary, runnable repository |
-| M3 | Week 10 Monday | Draft report and dashboard-style KT product for review |
-| M4 | Week 11 Monday | Peer review with reproducibility and auditability checks |
-| M5 | Weeks 12-13 | In-class presentation |
-| Final Portfolio | Dec 11 Friday | Complete reproducible portfolio |
+Milestones move the term project from team setup to final portfolio. They are short checkpoints, not separate side projects. Each one should make the next stage easier to complete and easier for another person to review.
 
-## TODO
+## Submission Contract
 
-::: {.callout-warning}
-Create detailed milestone briefs in each `milestones/` subfolder from `milestones/milestone-template.qmd`.
-:::
+For every milestone:
+
+- commit and sync the required files before submitting
+- submit the GitHub repository link on Canvas
+- include the latest commit hash in the Canvas comment box
+- use relative paths
+- document any package or data access requirements
+- disclose and audit AI use
+
+## Milestone Map
+
+| Milestone | Timing | Focus | Link |
+|---|---|---|---|
+| M0 | Week 4 | Group formation and repository access | [M0: Group Formation](m0-group-formation/README.md) |
+| M1 | Week 6 | Project proposal and data intake | [M1: Project Proposal](m1-proposal/README.md) |
+| M2 | Week 7 | Preliminary analysis and Table 1-style summary | [M2: Preliminary Analysis](m2-preliminary-analysis/README.md) |
+| M3 | Week 10 | Draft report and dashboard-style update | [M3: Project Update](m3-project-update/README.md) |
+| M4 | Week 11 | Peer review and reproducibility feedback | [M4: Peer Review](m4-peer-review/README.md) |
+| M5 | Weeks 12-13 | Final presentation | [M5: Final Presentation](m5-presentation/README.md) |
+| Final Portfolio | Final deadline | Complete project record | [Final Portfolio](final-portfolio/README.md) |
+
+## Reproducibility Expectations
+
+Milestone work should be reviewable in GitHub Codespaces or a documented local setup. Keep data access clear, use relative paths, and avoid manual edits to generated outputs unless the edit is explicitly documented.
+
+## AI-Use Expectations
+
+AI tools may help with drafting, code review, debugging, and clarity checks. Students remain responsible for correctness. Each milestone includes an AI-use note so reviewers can see what was AI-assisted and what was verified by the team.
+
+## Definition Of Done
+
+A milestone is ready when the required files are present, the repository is synced, the Canvas submission points to the correct commit, and another student could understand what changed without private explanation.

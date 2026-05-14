@@ -18,8 +18,18 @@ Week 9 turned one result into a short slide story. This week expands the same ev
 - Include a data source paragraph, one figure or table, and a limitations note.
 - Add a source note for CDC NHANES and the `nhanesA` retrieval pathway.
 - Verify that the report uses relative paths and documents whether results came from the cached data.
+- Use [Report Template](report-template.qmd) as the working model.
+- Connect the draft to [M3: Project Update](../../milestones/m3-project-update/README.md).
 
 Student output: a rendered Quarto report with one figure, one table, citations, limitations, and an AI-use note. Assignment link: [Assignment 9](../../assignments/assignment09-reporting/README.md).
+
+## Publishing Check
+
+For public GitHub Pages output, confirm that the report does not expose restricted data, private URLs, tokens, or sensitive examples. For private preview, submit the repository link on Canvas and grant course staff access.
+
+## Grounding Audit
+
+Before submission, choose three claims in the report and trace each one to a table, figure, code chunk, or citation. Revise any claim that cannot be grounded.
 
 ## Definition of Done
 

@@ -1,6 +1,6 @@
 # Opening Your First Codespace
 
-This process is like walking into the library and turning on a computer. You are creating a fresh, temporary environment in the cloud.
+This process is like walking into the library and turning on a computer. Start from your forked repository, then create a fresh, temporary environment in the cloud.
 
 ## Steps
 

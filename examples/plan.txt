@@ -71,16 +71,16 @@ Week 11 stress-tests reproducibility. Students should launch the app from a fres
 - Student changes should stay small unless the instructor explicitly assigns a dashboard feature.
 - Relative paths are part of the lesson; discourage absolute machine-specific paths.
 
-## TODO Decisions
+## Resolved Operating Decisions
 
-- TODO: Decide whether the legacy files in `examples/data/` should stay for backward compatibility or be retired after all references are updated.
-- TODO: Decide whether `examples/bmi39.R` remains as a historical source file or becomes a short redirect note to `examples/nhanes-equity/app/app.R`.
-- TODO: Decide whether CDC-rebuilt data should be committed each term or treated as generated output.
-- TODO: Decide whether Week 5's R/Python parity check is optional practice or part of an assignment.
-- TODO: Decide whether Week 8 includes only local app use or also demonstrates deployment.
-- TODO: Decide whether the Week 6 flawed plot is distributed as code, image, or both.
-- TODO: Decide whether the Week 7 planted-error starter is distributed from the instructor folder or copied into student assignment repos.
-- TODO: Choose any additional required Table 1 variables for Week 7 beyond N, BMI mean (SD), and age mean (SD).
+- Keep legacy files in `examples/data/` for backward compatibility until a separate cleanup pass verifies that no older pages or external handouts point there.
+- Treat `examples/bmi39.R` as the historical source file and `examples/nhanes-equity/app/app.R` as the maintained app entry point.
+- Treat CDC-rebuilt data as a reproducibility pathway; the cached classroom CSV/RDS remain the default committed teaching files.
+- Week 5's R/Python parity check is part of the assignment pathway through Assignment 4.
+- Week 8 uses local app running as the required pathway; deployment remains a demonstration or extension.
+- Week 6 distributes flawed and corrected plot code through the instructor folder and asks students to submit their audit and correction.
+- Week 7 distributes the planted-error starter as an instructor-controlled exercise source with the answer key kept separate.
+- Week 7 requires N, BMI mean (SD), and age mean (SD) as the core Table 1 variables; extra variables are extensions.
 
 ## Definition of Done for This Case Study
 

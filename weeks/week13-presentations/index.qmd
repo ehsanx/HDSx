@@ -2,20 +2,55 @@
 
 ## Overview
 
-This session completes Milestone 5 presentations and gives students a final opportunity to collect feedback before the Final Portfolio deadline.
+Week 13 completes [M5: Final Presentation](../../milestones/m5-presentation/README.md) and turns presentation feedback into final portfolio revision. The last step is not more drafting; it is making the project clear, reproducible, and ready for assessment.
 
-## TODO Before Release
+## Timing Rules
 
-::: {.callout-warning}
-## Content TODO
+Each presentation uses this timing:
 
-- Confirm which groups present in Part 2.
-- Add final reminders for the Dec 11 portfolio submission.
-- Add a closing reflection prompt on reproducibility and knowledge translation.
-:::
+- 7 minutes for the presentation
+- 3 minutes for questions
+- 1 minute for transition
 
-## Definition of Done
+Presentation order is posted in Canvas. Groups presenting in Part 2 should submit slides before class using the same M5 submission folder as Week 12.
 
-- Remaining presentations are complete.
-- Peer feedback has been returned to presenters.
-- Students know exactly what must change before final portfolio submission.
+## Slide Submission
+
+Commit and sync:
+
+```text
+milestones/m5-presentation/submission/slides.qmd
+milestones/m5-presentation/submission/slides.html
+```
+
+If you render to PDF instead of HTML, submit `slides.pdf`. Submit the GitHub repository link on Canvas with the latest commit hash and the slide path.
+
+## Closing Reflection
+
+After presenting or reviewing, write a short note for your group:
+
+- What claim felt strongest?
+- What limitation needs to be clearer in the final portfolio?
+- What reproducibility issue still needs one final check?
+- What audience-facing improvement would make the KT product easier to use?
+
+Use the note to guide final revisions.
+
+## Final Portfolio Reminder
+
+The final portfolio package is described in [Final Portfolio](../../milestones/final-portfolio/README.md). Before submission, complete the [Final Portfolio Checklist](../../milestones/final-portfolio/final-portfolio-checklist.md) and confirm the repository sharing choice using [Repository Sharing Guidance](../../milestones/final-portfolio/repository-sharing-guidance.md).
+
+## Final Revision Priorities
+
+Focus the remaining time on:
+
+- rendering the final report
+- checking dashboard or KT product access
+- fixing broken paths
+- clarifying data provenance and limitations
+- completing the AI-use note
+- submitting the repository link and commit hash on Canvas
+
+## Definition Of Done
+
+Week 13 is done when all presentations are complete, peer feedback has been returned, and each group has a clear final portfolio checklist for the last submission.

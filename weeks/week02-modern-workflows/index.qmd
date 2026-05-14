@@ -7,7 +7,7 @@
 **Learning Objectives:**
 
 - Understand the "public computer vs cloud drive" analogy for cloud computing.
-- Create a GitHub account, join the course GitHub Classroom, and accept the starter assignment.
+- Create a GitHub account, fork the course template repository, and work from your personal fork.
 - Launch a Codespace and identify the three key areas of the VS Code interface.
 - Distinguish between an IDE, a notebook, and a script, and explain why this course uses Quarto notebooks.
 - Explain the concept of literate programming and why it matters for reproducible health research.
@@ -66,7 +66,7 @@ This cycle --- launch, work, commit, stop --- is the rhythm of every week in thi
 
 ---
 
-## `workflows2.qmd` Getting Started: GitHub Account and Classroom
+## `workflows2.qmd` Getting Started: GitHub Account and Fork
 
 ### Step 1: Create a GitHub Account
 
@@ -80,20 +80,22 @@ If you do not already have one:
 **Portfolio thinking:** Your GitHub profile will become part of your professional presence. Pick a username you would be comfortable putting on a CV (e.g., `jchen-epi` rather than `xXcoolcoder99Xx`).
 :::
 
-### Step 2: Join the Course GitHub Classroom
+### Step 2: Fork the Course Template
 
-1. Open the **GitHub Classroom** invitation link posted on Canvas.
-2. Accept the invitation. This connects your GitHub account to the course roster.
-3. Accept the **starter assignment**. GitHub Classroom will automatically create a personal repository for you, pre-loaded with the files you need for this week.
+1. Open the course template repository linked from Canvas.
+2. Click **Fork** in the upper-right corner of the GitHub page.
+3. Create the fork under your own GitHub account.
+4. Keep the default repository name unless Canvas gives a specific naming rule.
+5. After the fork is created, make sure the page URL includes your GitHub username.
 
 ### Step 3: Verify Your Repository
 
-Navigate to the repository that was just created. You should see:
+Navigate to your forked repository. You should see:
 
 - A file list including `practice_report.qmd`, `README.md`, and a `data/` folder.
 - A formatted README below the file list explaining the project.
 
-If you see these, you are ready to launch your Codespace.
+If you see these in your fork, you are ready to launch your Codespace.
 
 ---
 
@@ -363,7 +365,7 @@ Edit and render the starter `practice_report.qmd`, demonstrating that you can na
 
 ### Step-by-Step Workflow
 
-1. **Launch** your Codespace from the GitHub Classroom repository.
+1. **Launch** your Codespace from your forked repository.
 2. **Edit the YAML:** Change `author:` to your name.
 3. **Add a Markdown section:** Below the existing content, add a new heading (`## My Notes`) and write 2--3 sentences about what you learned this week. Use at least one Markdown feature (bold, italics, or a bullet list).
 4. **Edit a code chunk:** Modify an existing code chunk or add a new one. For example:
@@ -381,7 +383,7 @@ Edit and render the starter `practice_report.qmd`, demonstrating that you can na
    - Click **✔ Commit**, then **Sync Changes**.
 7. **Stop** your Codespace.
 8. **Verify** on github.com that your commit appears in the repository.
-9. **Submit** the repository link on Canvas.
+9. **Submit** your forked repository link on Canvas.
 
 ---
 

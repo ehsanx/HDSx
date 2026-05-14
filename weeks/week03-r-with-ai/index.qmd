@@ -8,6 +8,7 @@
 
 - Understand that R is a calculator that needs specific, case-sensitive instructions.
 - Load packages with `library()` and explain why this is needed each session.
+- Run a minimal `renv` checkpoint so package changes are visible.
 - Use core constructs: variables (assignment), functions (with arguments), and the pipe (`%>%` / `|>`).
 - Perform basic data transformations using `dplyr` verbs: `filter()`, `select()`, `mutate()`, `summarise()`, `group_by()`.
 - Inspect a dataset on first contact: structure, dimensions, missingness.
@@ -48,8 +49,25 @@ library(tidyverse)
 ```
 
 ::: {.callout-note}
-If you see an error like `there is no package called 'tidyverse'`, the package is not installed in your Codespace. Ask your TA --- this should be pre-configured.
+If you see an error like `there is no package called 'tidyverse'`, the package is not installed in your Codespace. Use the Canvas support channel or office hours and include the full error message.
 :::
+
+### Minimal renv Checkpoint
+
+`renv` helps record which R packages a project uses. You do not need to master `renv` this week, but you should recognize the three checkpoint commands that support reproducibility.
+
+```{r, eval=FALSE}
+# Check whether the project environment has changed.
+renv::status()
+
+# Record package changes when you intentionally add or update packages.
+renv::snapshot()
+
+# Restore the recorded package environment in a fresh setup.
+renv::restore()
+```
+
+For Assignment 2, run `renv::status()` and write a short dependency note. Only run `renv::snapshot()` if you intentionally added a package.
 
 ---
 

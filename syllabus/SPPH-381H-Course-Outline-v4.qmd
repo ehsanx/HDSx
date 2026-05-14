@@ -1,6 +1,6 @@
----
-title: "SPPH 381H: Health Data Science — AI and Knowledge Translation"
-subtitle: "Course Outline — Sept–Dec 2026"
+﻿---
+title: "SPPH 381H: Health Data Science - AI and Knowledge Translation"
+subtitle: "Course Outline - Sept-Dec 2026"
 author: "School of Population and Public Health, University of British Columbia"
 date: "Version: `r Sys.Date()`"
 classoption: oneside
@@ -44,7 +44,7 @@ header-includes:
   - \pagestyle{fancy}
   - \fancyhf{}
   - \lhead{SPPH 381H}
-  - \rhead{Health Data Science — AI and Knowledge Translation}
+  - \rhead{Health Data Science - AI and Knowledge Translation}
   - \cfoot{\thepage}
 ---
 
@@ -57,7 +57,7 @@ options(knitr.table.format = "latex")
 
 ## Acknowledgement
 
-UBC's Point Grey Campus is located on the traditional, ancestral, and unceded territory of the xwməθkʷəy̓əm (Musqueam) people. The land it is situated on has always been a place of learning for the Musqueam people, who for millennia have passed on their culture, history, and traditions from one generation to the next on this site.
+UBC's Point Grey Campus is located on the traditional, ancestral, and unceded territory of the xʷməθkʷəy̓əm (Musqueam) people. The land it is situated on has always been a place of learning for the Musqueam people, who for millennia have passed on their culture, history, and traditions from one generation to the next on this site.
 
 ## Course Information
 
@@ -68,8 +68,8 @@ info <- data.frame(
     "Health Data Science: AI and Knowledge Translation",
     "3",
     "Integrated Seminar & Hands-on Activities (1 session/week, 3 hours)",
-    "Thu 11:00 AM – 2:00 PM (Sept–Dec 2026)",
-    "TBD (In-person)"
+    "Thu 11:00 AM - 2:00 PM (Sept-Dec 2026)",
+    "Room posted in Canvas (in-person)"
   )
 )
 
@@ -118,13 +118,13 @@ Students will create a small dashboard-style knowledge translation product as pa
 
 ### Computing Environment: Fork-Based Workflow
 
-All supported coding takes place in **GitHub Codespaces** — a cloud computer accessible from any modern web browser. No local installation is required. Students **fork** a course template repository into their own GitHub account, then launch Codespaces from their fork. 
+All supported coding takes place in **GitHub Codespaces** - a cloud computer accessible from any modern web browser. No local installation is required. Students **fork** a course template repository into their own GitHub account, then launch Codespaces from their fork. 
 
 Tools required for graded work will be selected and tested for use in Codespaces. Optional demonstrations may show additional deployment pathways, but students will not be penalized if an advanced demo technology is unsuitable for their device or project.
 
 ## Contacts
 
-```{r contacts}
+```{r contacts, echo=FALSE}
 contacts <- data.frame(
   Field = c("Role:", "Name:", "Email:", "Office:", "Hours:"),
   Detail = c(
@@ -167,9 +167,9 @@ This course integrates theoretical foundations with the practical realities of m
 ### Course Pillars
 
 1.  **The Full Data Lifecycle:** From ethical data access and cleaning to secure cloud computing and final publication.
-2.  **Reproducible Science:** Git-based workflows, environment management (`renv`), and literate programming in Quarto — ensuring analyses are transparent, shareable, and robust.
+2.  **Reproducible Science:** Git-based workflows, environment management (`renv`), and literate programming in Quarto - ensuring analyses are transparent, shareable, and robust.
 3.  **AI-Augmented Workflows:** Ethically leveraging LLMs as coding co-pilots to debug, refactor, and translate code, while auditing AI-generated outputs for coding errors, hallucinated claims, security risks, health bias, and reproducibility failures.
-4.  **Knowledge Translation (KT):** The "last mile" of data science — transforming results into dashboard-style products, visual stories, plain-language summaries, and policy-ready reports. Shiny and static web approaches are introduced as optional or advanced pathways rather than assumed for every project.
+4.  **Knowledge Translation (KT):** The "last mile" of data science - transforming results into dashboard-style products, visual stories, plain-language summaries, and policy-ready reports. Shiny and static web approaches are introduced as optional or advanced pathways rather than assumed for every project.
 5.  **Real-World Health Data:** Hands-on activities using messy, real-world datasets (e.g., NHANES, Canadian PUMFs) rather than toy examples.
 
 ### Session Structure (3-Hour Block)
@@ -199,7 +199,7 @@ A short Canvas module to complete before the term begins:
 3.  Watch a **5-minute orientation video** (posted on Canvas) introducing the course workflow.
 4.  Complete the **pre-course survey** (anonymous; helps the teaching team calibrate to the cohort's baseline experience).
 
-*This takes approximately 15–20 minutes and ensures Week 1 can focus entirely on health data concepts rather than account setup.*
+*This takes approximately 15-20 minutes and ensures Week 1 can focus entirely on health data concepts rather than account setup.*
 
 ## Schedule of Topics
 
@@ -220,24 +220,24 @@ schedule <- data.frame(
     "11 (Nov 19)",
     "12 (Nov 26)",
     "13 (Dec 3)",
-    "—"
+    "-"
   ),
   Seminar = c(
-    "—",
-    "Health Data, KT & Ethics: research lifecycle overview; KT 'last mile'; privacy/security; Indigenous Data Sovereignty (OCAP®, CARE); AI hallucinations & bias (AI fluency ≠ correctness).",
+    "-",
+    "Health Data, KT & Ethics: research lifecycle overview; KT 'last mile'; privacy/security; Indigenous Data Sovereignty (OCAP, CARE); AI hallucinations & bias (AI fluency does not equal correctness).",
     "Modern Workflows: IDE vs notebook vs script; literate programming; reproducible project structure; Codespaces as the shared lab bench; Quarto basics.",
-    "R with AI (Code runs ≠ code is correct): data import/export; core constructs (objects, functions, control flow); the tidyverse pipeline; debugging with LLMs; writing custom functions; intro to renv for dependency management.",
+    "R with AI (Code runs does not equal code is correct): data import/export; core constructs (objects, functions, control flow); the tidyverse pipeline; debugging with LLMs; writing custom functions; intro to renv for dependency management.",
     "Git & Collaboration: commits as analysis provenance; branching/merging; Pull Requests & peer review mindset; repo hygiene (.gitignore, relative paths).",
     "Polyglot Awareness & R Deepening: R as the core course language; when Python is useful; reading short Python/pandas examples; translation traps; AI-assisted parity checks; R mastery exercises on dplyr and functions.",
     "Data Visualization: visual reasoning in AI-assisted workflows; steering AI-generated plots (ggplot2, plotly); evaluating clarity, bias, aggregation, and misrepresentation.",
     "EDA, Table 1 & AI Auditing: descriptive analysis workflow; what summary statistics claim; auditing AI-generated summaries/plots for planted coding, statistical, and stewardship errors; revisiting data provenance and Indigenous Data Sovereignty.",
     "Dashboard Prototypes for KT: Quarto dashboard-style products and Shiny concepts; building a minimal dashboard from EDA outputs; deployment options introduced as demonstrations only (e.g., Shinylive/GitHub Pages).",
     "Communication of Scientific Findings: audience-specific KT; plain language summaries; Quarto revealjs slides; citations & references; peer review practices.",
-    "Writing & Publishing Reports: scientific formatting in Quarto; dynamic reporting; embedding interactive elements; enabling GitHub Pages; publishing your portfolio; citation/grounding audit. Note: UBC Mid-Term Break is Nov 9–11; class meets as usual on Thu Nov 12.",
+    "Writing & Publishing Reports: scientific formatting in Quarto; dynamic reporting; embedding interactive elements; enabling GitHub Pages; publishing your portfolio; citation/grounding audit. Note: UBC Mid-Term Break is Nov 9-11; class meets as usual on Thu Nov 12.",
     "Portfolio Surgery & Optional Advanced Deployment: reproducibility stress-test in a fresh Codespace; fix broken paths, missing dependencies, unclear READMEs; optional demo of AI-generated static HTML/JS dashboards and optional Python-flavoured project pathway.",
     "Term Project Presentations (Part 1): live Q&A and peer review.",
     "Term Project Presentations (Part 2): live Q&A and peer review.",
-    "—"
+    "-"
   ),
   Activities = c(
     "Create GitHub account; watch orientation video; pre-course survey.",
@@ -254,7 +254,7 @@ schedule <- data.frame(
     "Swap repositories with a partner for reproducibility stress-test; run in a fresh Codespace; fix failures; optional advanced demo comparing Shiny, Quarto dashboard, and static HTML approaches.",
     "Milestone 5 presentations; live Q&A; peer review feedback.",
     "Milestone 5 presentations; live Q&A; peer review feedback.",
-    "—"
+    "-"
   ),
   Deadlines = c(
     "Complete before first class",
@@ -321,14 +321,14 @@ By the end of this course, students will be able to:
 
 ## Learning Activities
 
-### Weekly Assignments (Weeks 2–11)
+### Weekly Assignments (Weeks 2-11)
 
 Each week, students complete short applied assignments that reinforce the tools and concepts from class. These assignments are scaffolded and practice-oriented, but they also provide an important measure of steady engagement and skill development. Unless otherwise noted, assignments are due the Monday after class at 4 PM, giving students time to revisit the activity, troubleshoot technical issues, and use office hours or discussion boards.
 
 **Grading policy:**
 
--   **Assignments 1–3 (Weeks 2–4) are required but worth 0% numerically.** These foundational assignments (Codespace/Quarto, R basics, Git) are graded on a Complete/Incomplete basis. Each must be completed to pass the course. Incomplete submissions may be resubmitted once within one week. A student who completes A1–A3 and otherwise earns at least 50% on the graded components will pass.
--   **Assignments 4–10 (Weeks 5–11): Best 5 of 7 count.** Only your best 5 scores count toward your final grade. This provides flexibility for difficult weeks while ensuring consistent engagement after the foundation is established. Assignment 6 includes a dedicated AI-audit task involving planted errors in AI-generated code, summaries, and/or visualizations.
+-   **Assignments 1-3 (Weeks 2-4) are required but worth 0% numerically.** These foundational assignments (Codespace/Quarto, R basics, Git) are graded on a Complete/Incomplete basis. Each must be completed to pass the course. Incomplete submissions may be resubmitted once within one week. A student who completes A1-A3 and otherwise earns at least 50% on the graded components will pass.
+-   **Assignments 4-10 (Weeks 5-11): Best 5 of 7 count.** Only your best 5 scores count toward your final grade. This provides flexibility for difficult weeks while ensuring consistent engagement after the foundation is established. Assignment 6 includes a dedicated AI-audit task involving planted errors in AI-generated code, summaries, and/or visualizations.
 
 \begin{tcolorbox}[colback=brandlight!5!white, colframe=brandblue, title=\textbf{Reproducibility requirement}, arc=2mm]
 All assignments must render/run in a GitHub Codespace without manual intervention. Assignments that violate this rule will be returned for a "Reproducibility Fix" and may incur a grade deduction.
@@ -340,17 +340,17 @@ A capstone project synthesized across the full term, broken into milestones:
 
 | Milestone | Due | Description |
 |-------------------------|-----------------|------------------------------|
-| **M0: Group Formation** | Week 4 (Mon) | Form project group of 3–4 students; one member forks template and adds teammates as collaborators |
+| **M0: Group Formation** | Week 4 (Mon) | Form project group of 3-4 students; one member forks template and adds teammates as collaborators |
 | **M1: Proposal** | Week 6 (Mon) | Research question, dataset selection, feasibility check, and one-paragraph data provenance/stewardship statement |
 | **M2: Preliminary Analysis** | Week 7 (Mon) | Initial data cleaning, exploratory visualizations, Table 1 or equivalent descriptive summary, runnable repository |
 | **M3: Project Update** | Week 10 (Mon Nov 16) | Draft dashboard-style KT product + report draft submitted for peer review; polish is expected later in the Final Portfolio |
 | **M4: Peer Review** | Week 11 (Mon Nov 23) | Constructive, specific, actionable feedback on a peer's M3, including reproducibility and auditability checks |
-| **M5: Presentation** | Weeks 12–13 | In-class scientific seminar; knowledge translation focus |
+| **M5: Presentation** | Weeks 12-13 | In-class scientific seminar; knowledge translation focus |
 | **Final Portfolio** | Dec 11 (Fri) | Complete report, required dashboard-style KT product, and fully auditable code repository |
 
 
 \begin{tcolorbox}[colback=brandlight!5!white, colframe=brandblue, title=\textbf{Analytic Scope of the Term Project}, arc=2mm]
-The project is graded on the data lifecycle, reproducibility, visualization clarity, AI auditability, and knowledge translation — not on the sophistication of statistical inference. Descriptive summaries, well-chosen visualizations, clear documentation of data decisions, and clearly stated limitations are expected. Formal hypothesis tests, regression models, predictive models, or causal claims are out of scope unless agreed with the instructor in the proposal.
+The project is graded on the data lifecycle, reproducibility, visualization clarity, AI auditability, and knowledge translation - not on the sophistication of statistical inference. Descriptive summaries, well-chosen visualizations, clear documentation of data decisions, and clearly stated limitations are expected. Formal hypothesis tests, regression models, predictive models, or causal claims are out of scope unless agreed with the instructor in the proposal.
 
 The required knowledge translation product is a small dashboard-style product suitable for the chosen audience. This may be implemented through Quarto dashboard-style reporting, R-generated interactive elements, or another instructor-approved pathway that runs reliably in GitHub Codespaces. Advanced deployment options such as Shiny hosting, Shinylive, or AI-generated HTML/JavaScript may be demonstrated, but are not required for every student.
 \end{tcolorbox}
@@ -378,8 +378,8 @@ A significant portion of the final grade depends on reproducibility. The followi
 ```{r assessments, echo=FALSE}
 assess <- data.frame(
   Component = c(
-    "Foundational Assignments (Weeks 2–4)",
-    "Weekly Assignments (Best 5 of 7, Weeks 5–11)",
+    "Foundational Assignments (Weeks 2-4)",
+    "Weekly Assignments (Best 5 of 7, Weeks 5-11)",
     "Milestone 1: Project Proposal",
     "Milestone 2: Preliminary Analysis",
     "Milestone 3: Project Update",
@@ -406,7 +406,7 @@ assess <- data.frame(
     "Cleaning, EDA, descriptive summary, runnable repo",
     "Draft dashboard-style KT product + report draft for peer review",
     "Specific, actionable feedback on a peer's work; includes reproducibility check",
-    "In-class scientific seminar (Weeks 12–13)",
+    "In-class scientific seminar (Weeks 12-13)",
     "Report, required dashboard-style KT product, auditable repository; graded against Reproducibility Contract",
     ""
   )
@@ -436,8 +436,8 @@ kable(assess,
 
 ### Late Submissions
 
--   **Foundational Assignments (1–3):** May be resubmitted once within one week of the original deadline.
--   **Weekly Assignments (4–10):** Due Mondays at 4 PM unless otherwise noted. Late submissions are not accepted. Missed assignments count as one of your dropped grades (Best 5 of 7 policy).
+-   **Foundational Assignments (1-3):** May be resubmitted once within one week of the original deadline.
+-   **Weekly Assignments (4-10):** Due Mondays at 4 PM unless otherwise noted. Late submissions are not accepted. Missed assignments count as one of your dropped grades (Best 5 of 7 policy).
 -   **Final Portfolio:** Late submissions penalized 10% per day. Submissions more than 5 days late not accepted without prior arrangement.
 -   **Academic Concession:** Requests handled in accordance with UBC Policy V-135. Contact the instructor as soon as the need arises.
 
@@ -468,7 +468,7 @@ GitHub Codespaces usage is measured in **core-hours**, not clock hours. At the t
 
 This is sufficient for the course if managed well:
 
--   **Always stop your Codespace** when you finish working ([github.com/codespaces](https://github.com/codespaces) → three dots → Stop). Leaving a tab open wastes credits.
+-   **Always stop your Codespace** when you finish working ([github.com/codespaces](https://github.com/codespaces) -> three dots -> Stop). Leaving a tab open wastes credits.
 -   **Reopen existing Codespaces** rather than creating new ones each session.
 -   **Use the default course machine type** unless instructed otherwise; larger machines consume core-hours faster.
 -   **If you run out of hours**, contact the teaching team for guidance before adding billing information. Plan your work accordingly.
@@ -476,7 +476,7 @@ This is sufficient for the course if managed well:
 
 ## Open Science & Portfolio Policy
 
-A key goal of this course is to ensure you leave with more than just a grade. By the end of the term, you will have a public-facing **Data Science Portfolio** hosted on GitHub Pages featuring real-world health data analysis — a tangible asset for your CV or LinkedIn.
+A key goal of this course is to ensure you leave with more than just a grade. By the end of the term, you will have a public-facing **Data Science Portfolio** hosted on GitHub Pages featuring real-world health data analysis - a tangible asset for your CV or LinkedIn.
 
 -   **Default:** We encourage all students to publish final projects as public repositories.
 -   **Your privacy:** You may submit as a private repository (shared only with the teaching team) without any penalty. Communicate with the instructor by Week 4 if you opt for this.
@@ -511,3 +511,5 @@ This course uses Canvas, which captures data about student activity. The instruc
 All materials of this course (handouts, slides, assessments, readings, etc.) are the intellectual property of the Course Instructor or licensed for use in this course by the copyright owner. Redistribution without permission constitutes a breach of copyright and may lead to academic discipline.
 
 Recording of class sessions by students is not permitted. Selected recordings by the instructor/TAs will be released on Canvas for viewing outside class. Contact the instructor immediately with any objections.
+
+

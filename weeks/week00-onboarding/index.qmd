@@ -2,29 +2,74 @@
 
 ## Purpose
 
-Students complete the basic account and orientation work before the first class so Week 1 can focus on health data, ethics, and course expectations.
+Week 0 gets the account setup and orientation work out of the way before the first class. You do not need to install local software for this course. The default workflow uses a personal fork of the course template repository, GitHub Codespaces, Quarto, and Canvas.
 
-## Required Student Tasks
+## Required Tasks
 
-- Create a GitHub account using a professional username.
-- Watch the course workflow orientation video posted on Canvas.
-- Complete the pre-course survey.
-- Confirm access to Canvas and the course GitHub entry point.
+Complete these steps before Week 1:
 
-## TODO Before Release
+1. Log in to Canvas and open the Week 0 module.
+2. Watch the orientation video posted in Canvas.
+3. Complete the pre-course survey posted in Canvas.
+4. Create or confirm access to a GitHub account.
+5. Submit the Week 0 Canvas onboarding check with your GitHub username.
 
-::: {.callout-warning}
-## Content TODO
+## GitHub Account
 
-- Add the final Canvas orientation video link.
-- Add the pre-course survey link or instructions.
-- Add a screenshot walkthrough for creating a GitHub account with a professional username.
-- Add a brief troubleshooting note for students who already have a GitHub account.
-:::
+Use a professional GitHub username that you are comfortable sharing in a course setting. If you already have a GitHub account, you may use it. You do not need to create a second account unless your current username or profile is not appropriate for coursework.
 
-## Definition of Done
+Before submitting the onboarding check:
 
-- The page gives students one clear path to complete onboarding without installing local software.
-- All external links have been checked in a fresh browser session.
-- The GitHub username guidance is privacy-aware and professional.
-- The page states what students should bring to Week 1.
+- confirm you can log in to GitHub
+- turn on two-factor authentication if GitHub prompts you
+- make sure you know which email address is attached to the account
+- record your GitHub username exactly as it appears in the profile URL
+
+## Existing-Account Help
+
+If you already have a GitHub account but cannot access it:
+
+- try GitHub account recovery before creating a new account
+- use the email address most likely attached to the account
+- check whether your browser is logged into a different personal account
+- ask for help through the Canvas course support channel if you are blocked
+
+If you create a new account, use that account consistently for course repositories.
+
+## Course Repository Entry Point
+
+The current course workflow uses a fork-based setup:
+
+1. Open the course template repository linked from Canvas.
+2. Click **Fork**.
+3. Create a personal fork under the GitHub account you submitted in the onboarding check.
+4. Launch Codespaces from your fork.
+5. Commit and sync changes to your fork.
+6. Submit your fork repository link on Canvas.
+
+If a future offering uses an instructor-managed repository system, Canvas will say so explicitly. For this course book, the fork-based workflow is the default student route.
+
+## Support Path
+
+Use the Canvas course support channel for setup problems. Include:
+
+- your GitHub username
+- the step where you got stuck
+- the exact error message or screenshot
+- whether you are using GitHub, Codespaces, or Canvas
+
+Do not post passwords, tokens, or private account recovery details.
+
+## What To Bring To Week 1
+
+Bring:
+
+- a working Canvas login
+- a working GitHub login
+- your GitHub username
+- a laptop or access plan for in-class work
+- one question about health data, public data, AI, or reproducibility
+
+## Definition Of Done
+
+Week 0 is done when you have watched the Canvas orientation video, completed the Canvas pre-course survey, submitted the onboarding check, and can log in to GitHub with the account you will use for course work.

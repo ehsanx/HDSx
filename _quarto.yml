@@ -143,8 +143,13 @@ book:
         - assignments/assignment10-portfolio-surgery/README.md
         - milestones/index.qmd
         - milestones/milestone-template.qmd
+        - milestones/m0-group-formation/README.md
         - milestones/m1-proposal/README.md
         - milestones/m2-preliminary-analysis/README.md
+        - milestones/m3-project-update/README.md
+        - milestones/m4-peer-review/README.md
+        - milestones/m5-presentation/README.md
+        - milestones/final-portfolio/README.md
     - part: "Reference: Data Sources"
       chapters:
         - references/data-sources/nhis.qmd

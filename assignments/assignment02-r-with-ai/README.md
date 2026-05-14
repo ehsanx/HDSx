@@ -43,7 +43,7 @@ AI may help draft code, explain an error, or suggest a function structure. You m
 - The data path must be relative.
 - Output files must be created by code, not manually edited.
 - New packages must be named in the Quarto file and in `dependency-note.md`.
-- `renv` awareness is introductory here: note whether you used the existing course environment or added packages.
+- `renv` awareness is introductory here: run `renv::status()` and note whether you used the existing course environment or added packages. Use `renv::snapshot()` only if you intentionally added a package.
 
 ## What To Submit
 

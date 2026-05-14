@@ -2,21 +2,69 @@
 
 ## Overview
 
-This session is the first presentation block for Milestone 5. Students present their portfolio work with an emphasis on scientific clarity, knowledge translation, reproducibility, and auditability.
+Week 12 is the first final presentation block for [M5: Final Presentation](../../milestones/m5-presentation/README.md). Presentations should emphasize scientific clarity, knowledge translation, reproducibility, and auditability.
 
-## TODO Before Release
+## Timing Rules
 
-::: {.callout-warning}
-## Content TODO
+Each presentation uses this timing:
 
-- Add final presentation timing rules.
-- Add slide submission instructions.
-- Add the peer feedback form or link.
-- Add the presentation rubric from `milestones/m5-presentation/`.
-:::
+- 7 minutes for the presentation
+- 3 minutes for questions
+- 1 minute for transition
 
-## Definition of Done
+Presentation order is posted in Canvas. Groups presenting in Part 1 should arrive with rendered slides and the project repository link ready to share.
 
-- Slides render before class.
-- The project repository link is available to reviewers.
-- The presenter can explain the dataset, workflow, major findings, limitations, and AI-use audit trail.
+## Slide Submission
+
+Before class, commit and sync:
+
+```text
+milestones/m5-presentation/submission/slides.qmd
+milestones/m5-presentation/submission/slides.html
+```
+
+If you render to PDF instead of HTML, submit `slides.pdf`. Submit the GitHub repository link on Canvas with the latest commit hash and the slide path.
+
+## Presentation Rubric
+
+Use this rubric while preparing and while giving peer feedback:
+
+- audience and KT purpose are clear
+- question is focused
+- data source and limitations are transparent
+- main visual is readable and evidence-based
+- interpretation is accurate and avoids unsupported causal language
+- privacy and stewardship risks are acknowledged
+- timing fits the presentation window
+- questions are answered with evidence and humility
+
+## Peer Feedback Form
+
+Complete one feedback note for each presentation you review.
+
+| Prompt | Feedback |
+|---|---|
+| Main message in one sentence |  |
+| Strongest evidence shown |  |
+| One interpretation or limitation to clarify |  |
+| One reproducibility or source question |  |
+| One audience-facing improvement |  |
+
+## Slide Checklist
+
+Before presenting, check that:
+
+- slides render on the presenting machine
+- fonts and figures are readable from a distance
+- every chart has a title, units, and limitation cue
+- source and data notes are visible
+- the final slide gives the audience a clear takeaway
+- backup notes include data source, cohort, and AI-use details
+
+## Portfolio Reminder
+
+After presenting, use peer questions to revise the final report, dashboard-style KT product, and [Final Portfolio Checklist](../../milestones/final-portfolio/final-portfolio-checklist.md).
+
+## Definition Of Done
+
+Week 12 is done when Part 1 presentations are complete, peer feedback has been recorded, and presenting groups know which revisions to prioritize before the final portfolio.

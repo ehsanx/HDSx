@@ -1,8 +1,0 @@
-
-@book{healthaikt,
-  author = {{Karim, M. E.}},
-  title = {{Health Data Science: AI and Knowledge Translation}},
-  year = {2026},
-  url = {https://ehsanx.github.io/Health-AI-KT/},
-  note = {Accessed on: May 13, 2026}
-}

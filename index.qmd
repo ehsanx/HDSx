@@ -120,7 +120,7 @@ knitr::include_graphics("images/by.png")
 # 1. Define variables cleanly
 author <- "Karim, M. E."
 title <- "Health Data Science: AI and Knowledge Translation"
-plain_url <- "https://ehsanx.github.io/Health-AI-KT/"
+plain_url <- "https://ehsanx.github.io/HDSx/"
 access_date <- format(Sys.Date(), "%B %d, %Y")
 publication_year <- format(Sys.Date(), "%Y")
 

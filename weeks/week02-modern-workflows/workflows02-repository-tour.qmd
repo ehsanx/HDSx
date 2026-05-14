@@ -2,7 +2,7 @@
 
 ## Step-by-step
 
-1.  Open your course repository on GitHub\
+1.  Open your forked course repository on GitHub\
 
     ![Main github page](../../assets/images/workflow2/github.png)
 
@@ -14,7 +14,7 @@
 3.  Look at the file list\
     ![File list](../../assets/images/workflow2/files.png)
 
-    -   This shows the **current state** of the project in the Vault.
+    -   This shows the **current state** of the project in your fork.
     -   **Crucial:** If a file is listed here, it is safe. If it is *not* here, it only exists on your temporary "Desk" (Codespace) and is at risk of being lost.
 
 4.  Scroll to read the README
@@ -31,4 +31,4 @@ practice_report.qmd
 
 **Verification:** If you can see `practice_report.qmd` in this list, it means the file is safely stored in the cloud (The Vault).
 
-If you can see it, it is safely stored in the cloud.
+If you can see it in your fork, it is safely stored in the cloud.
