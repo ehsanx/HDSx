@@ -1,56 +1,88 @@
-# Assignment 4: Polyglot Awareness & R Deepening
+# Assignment 4: Polyglot Parity
 
 ## Purpose
 
-This assignment asks you to strengthen an R analysis first, then translate a small piece of it to Python/pandas and verify that both languages give the same descriptive answer. The goal is not to become a Python expert. The goal is to become a careful bilingual reader who can audit AI-assisted translation.
+This assignment strengthens R first, then translates a small descriptive task to Python/pandas and checks whether both languages produce the same answer. The goal is careful bilingual reading, not Python mastery.
+
+## Learning Objectives
+
+- Build a trusted R `dplyr` summary before translating it.
+- Refactor repeated R logic into a small function.
+- Translate a simple summary to Python/pandas with AI support if useful.
+- Run parity checks for row counts, group labels, and rounded statistics.
+- Keep notebook outputs and dependency notes clean for review.
 
 ## Inputs
 
-Use the canonical NHANES case-study CSV:
+- Week 5 page: `weeks/week05-polyglot-r-deepening/index.qmd`
+- R deepening page: `weeks/week05-polyglot-r-deepening/r-deepening-parity.qmd`
+- Dataset: `examples/nhanes-equity/data/nhanes_equity_v6.csv`
+- Parity template: `assignments/assignment04-polyglot/parity-table-template.csv`
+- Submission folder: `assignments/assignment04-polyglot/submission/`
 
-```text
-examples/nhanes-equity/data/nhanes_equity_v6.csv
-```
+## Tasks
 
-If your notebook lives in `weeks/week05-polyglot-r-deepening/`, use:
+1. Create or use the folder `assignments/assignment04-polyglot/submission/`.
+2. Create `polyglot-parity.qmd`.
+3. In R, load the NHANES CSV with a relative path.
+4. Produce a descriptive BMI summary by `IncomeGroup` and `Gender`.
+5. Refactor the R summary into one small reusable function.
+6. Create `translation.ipynb` and translate the same summary to Python/pandas.
+7. Create `helpers.py` with at least one reusable Python helper called from the notebook.
+8. Complete a parity table comparing row counts, filtered row counts, grouping labels, and rounded summary values.
+9. Write a dependency note naming Python packages used. Include `requirements.txt` only if you add packages beyond the course defaults.
+10. Clear bulky notebook outputs before committing.
+11. Render the Quarto file to HTML.
+12. Commit and sync the assignment folder.
 
-```text
-../../examples/nhanes-equity/data/nhanes_equity_v6.csv
-```
+## AI-Use Expectations
 
-## Step-By-Step Tasks
+AI may help translate R to Python, explain tracebacks, or suggest helper functions. You must verify that the translated code answers the same question, uses the same filters, handles missingness the same way, and returns matching grouped results after rounding. Include `ai-use-note.md`.
 
-1. Create `assignments/assignment04-polyglot/submission/`.
-2. In that folder, create `polyglot-parity.qmd`.
-3. In R, load the NHANES CSV and produce a descriptive summary of BMI by `IncomeGroup` and `Gender`.
-4. Refactor the R summary into one small function.
-5. Create `translation.ipynb` and translate the same summary to Python/pandas.
-6. Create `helpers.py` with at least one reusable Python helper and call it from the notebook.
-7. Fill in a parity table comparing row counts, filtered row counts, grouping labels, and rounded summary values.
-8. Add a short AI-use note describing what the tool helped with and how you verified the output.
-9. Clear notebook outputs before committing.
-10. Commit and sync your work.
+## Reproducibility Requirements
+
+- R and Python files must run in GitHub Codespaces.
+- Paths must be relative to the repository.
+- The notebook must not contain large stale outputs.
+- Dependencies must be documented in `dependency-note.md`.
+- Differences between R and Python results must be explained before changing code.
 
 ## What To Submit
 
-Submit the following files in `assignments/assignment04-polyglot/submission/`:
+Place all submission files in:
 
-- `polyglot-parity.qmd`: your R analysis, R function, parity table, and AI-use note.
-- `translation.ipynb`: your Python translation notebook.
-- `helpers.py`: your reusable Python helper script.
+```text
+assignments/assignment04-polyglot/submission/
+```
 
-Submission route: submit your repository link on Canvas after committing and syncing the files above.
+Submit these files:
+
+- `polyglot-parity.qmd`: R analysis, R function, parity discussion, and rendered-output instructions.
+- `polyglot-parity.html`: rendered Quarto output.
+- `translation.ipynb`: Python/pandas translation notebook.
+- `helpers.py`: reusable Python helper script called from the notebook.
+- `parity-table.csv`: completed parity table.
+- `dependency-note.md`: Python/R dependency note, plus `requirements.txt` if extra Python packages were added.
+- `ai-use-note.md`: what AI helped translate or debug and how you verified the result.
+
+## Submission Route
+
+Submit your GitHub repository link on Canvas after committing and syncing the required files.
 
 ## Grading Checklist
 
-| Criterion | Complete | Needs work |
-|---|:---:|:---:|
-| R pipeline loads the canonical NHANES CSV with a relative path |  |  |
-| R function correctly reproduces the summary task |  |  |
-| Python notebook translates the same analysis without changing the analytic question |  |  |
-| Parity table compares row counts, groups, and rounded summary values |  |  |
-| Differences are explained before any code is changed |  |  |
-| `helpers.py` contains a reusable function that is called from the notebook |  |  |
-| AI-use note identifies what was generated, changed, and verified |  |  |
-| Notebook outputs are cleared before commit |  |  |
-| Files are committed and synced in the required submission folder |  |  |
+Canvas applies a 7-point rubric. This assignment is part of the best-5-of-7 set for Assignments 4-10:
+
+| Criterion | Points |
+|---|---:|
+| R summary is correct, clear, and uses a relative data path | 1 |
+| R function reproduces the summary logic | 1 |
+| Python translation matches the same analytic question | 1 |
+| Parity table checks row counts, groups, and rounded values | 1.5 |
+| Dependency and notebook hygiene are documented | 1 |
+| AI-use note explains generation, changes, and verification | 1 |
+| Files render/run from the submission folder and are synced | 0.5 |
+
+## Definition of Done
+
+You are done when the R summary, Python translation, and parity table agree or any differences are clearly explained, and the required files are committed in the Assignment 4 submission folder.

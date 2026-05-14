@@ -131,10 +131,16 @@ book:
       chapters:
         - assignments/index.qmd
         - assignments/assignment-template.qmd
+        - assignments/assignment01-workflows/README.md
+        - assignments/assignment02-r-with-ai/README.md
+        - assignments/assignment03-git/README.md
         - assignments/assignment04-polyglot/README.md
         - assignments/assignment05-visualization/README.md
         - assignments/assignment06-eda-ai-audit/README.md
         - assignments/assignment07-dashboard/README.md
+        - assignments/assignment08-communication/README.md
+        - assignments/assignment09-reporting/README.md
+        - assignments/assignment10-portfolio-surgery/README.md
         - milestones/index.qmd
         - milestones/milestone-template.qmd
         - milestones/m1-proposal/README.md

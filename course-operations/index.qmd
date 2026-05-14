@@ -49,6 +49,8 @@ This chapter is the single maintainer-facing home for course planning, assistant
 - The work can be completed in GitHub Codespaces.
 - Packages, data, and outputs are documented.
 - The grading checklist matches the syllabus assessment logic.
+- A1-A3 use Complete/Incomplete language; A4-A10 use the best-5-of-7 scored assignment structure.
+- Every assignment brief states the Canvas repository-link submission route and AI-use expectation.
 
 ### Milestone
 

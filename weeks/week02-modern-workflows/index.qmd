@@ -31,7 +31,7 @@ Week 1 focused on whether a dataset is trustworthy enough to use. This week focu
 - Check that the weekly page includes the shared snippet rather than duplicating instructions.
 - Render the book from the repository root and check that this page updates in the rendered output.
 
-Student output: a rendered Quarto page and one commit showing a small, reproducible edit. Assignment link: `../../assignments/assignment01-workflows/README.md`.
+Student output: a rendered Quarto page and one commit showing a small, reproducible edit. Assignment link: [Assignment 1](../../assignments/assignment01-workflows/README.md).
 
 ---
 

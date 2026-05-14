@@ -19,7 +19,7 @@ Week 8 made the dashboard audience-facing. This week turns one dashboard plot or
 - Add a source note for CDC NHANES and state whether you used the cached data or rebuilt it.
 - Ask a peer whether the claim is understandable without seeing the code.
 
-Student output: a 3-5 slide outline plus peer feedback notes. Assignment link: `../../assignments/assignment08-communication/README.md`.
+Student output: a 3-5 slide outline plus peer feedback notes. Assignment link: [Assignment 8](../../assignments/assignment08-communication/README.md).
 
 ## Definition of Done
 

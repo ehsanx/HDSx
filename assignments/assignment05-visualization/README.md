@@ -1,8 +1,16 @@
-# Assignment 5: Visualization Audit and Revision
+# Assignment 5: Visualization Audit
 
 ## Purpose
 
-Create a clear, honest health-data visualization from the NHANES Health Equity classroom dataset. You will audit a flawed or AI-assisted plot, revise it, and explain why the revision is more accurate and useful for a non-technical audience.
+This assignment turns a descriptive summary into an honest visual explanation. You will create a `ggplot2` visualization, audit a flawed plot, revise your own design, and write a caption that states the statistic, data source, exclusions, and limitations.
+
+## Learning Objectives
+
+- Create a clear `ggplot2` visualization from the NHANES classroom dataset.
+- Identify misleading scale, title, grouping, missingness, and caption choices.
+- Revise a plot so the visual design matches the evidence.
+- Explain the descriptive and unweighted limits of the figure.
+- Connect visualization readiness to the M1 project proposal.
 
 ## Inputs
 
@@ -10,18 +18,32 @@ Create a clear, honest health-data visualization from the NHANES Health Equity c
 - Worked example: `weeks/week06-visualization/worked-example-ggplot.qmd`
 - Activity prompt: `weeks/week06-visualization/activity-ai-visual-audit.qmd`
 - Flawed plot starter: `weeks/week06-visualization/instructor/flawed-plot-code.R`
-- Milestone connection: `milestones/m1-proposal/README.md`
+- Visual audit template: `assignments/assignment05-visualization/visual-audit-note-template.md`
+- M1 connection: `milestones/m1-proposal/README.md`
 
-## Step-by-Step Tasks
+## Tasks
 
-1. Review the Week 6 worked example.
-2. Choose one comparison from the NHANES Health Equity CSV snapshot.
-3. Draft an initial plot using R and `ggplot2`.
-4. Audit the plot for scale choices, labels, missing context, and overclaiming.
-5. Revise the plot so it supports descriptive interpretation.
-6. Write a caption and short audit note.
-7. Connect the same transparency standard to M1 by naming the dataset, audience, and limitation behind your project idea.
-8. If AI helped you write or revise code, document what it did and how you checked it.
+1. Create or use the folder `assignments/assignment05-visualization/submission/`.
+2. Review the Week 6 worked example.
+3. Choose one descriptive comparison from the NHANES CSV snapshot.
+4. Draft an initial plot using R and `ggplot2`.
+5. Audit the flawed plot starter and your own draft for scale choices, labels, missing context, aggregation, and overclaiming.
+6. Revise your plot so it supports a descriptive interpretation.
+7. Export the corrected plot as `corrected-plot.png`.
+8. Write a caption that includes data source, statistic, exclusions, and limitation.
+9. Add an optional `plotly` preview only if it helps you inspect the figure; the required submission is still the static plot.
+10. Write a short M1 link note naming how the visualization standard affects your project dataset, audience, or feasibility.
+
+## AI-Use Expectations
+
+AI may help draft `ggplot2` code, suggest labels, or identify possible visual problems. You must verify the code against real column names, check that the scale does not exaggerate the result, and remove causal or population-level claims that the plot cannot support. Include `ai-use-note.md`.
+
+## Reproducibility Requirements
+
+- The Quarto file must render in GitHub Codespaces.
+- The dataset path must be relative.
+- The plot image must be exported by code or a documented render step.
+- Captions must state that the analysis is descriptive and unweighted when using the classroom NHANES snapshot.
 
 ## What To Submit
 
@@ -33,35 +55,32 @@ assignments/assignment05-visualization/submission/
 
 Submit these files:
 
-- `visualization.qmd`: rerunnable Quarto file that loads the CSV with a relative path and creates the final plot.
-- `visualization.html`: rendered output.
+- `visualization-audit.qmd`: rerunnable Quarto file that loads the CSV, creates the final plot, and explains the revision.
+- `visualization-audit.html`: rendered output.
 - `corrected-plot.png`: exported final plot.
-- `audit-note.md`: at least three issues you checked or corrected.
-- `caption.md`: final figure caption with data source, statistic, exclusions, and limitation.
-- `ai-use-note.md`: required if AI was used; otherwise include a one-sentence note saying AI was not used.
-- `m1-link-note.md`: two or three sentences connecting the visualization choices to the dataset, audience, or feasibility issue in your M1 proposal.
+- `visual-audit-note.md`: at least three issues checked or corrected.
+- `caption.md`: final figure caption.
+- `m1-link-note.md`: two or three sentences connecting the visualization standard to M1.
+- `ai-use-note.md`: what AI helped with and how you checked it, or a sentence saying AI was not used.
 
 ## Submission Route
 
-Submit a Canvas assignment entry that contains a link to the repository folder `assignments/assignment05-visualization/submission/`.
+Submit your GitHub repository link on Canvas after committing and syncing the required files.
 
 ## Grading Checklist
 
-Complete:
+Canvas applies a 7-point rubric. This assignment is part of the best-5-of-7 set for Assignments 4-10:
 
-- Uses `examples/nhanes-equity/data/nhanes_equity_v6.csv` with a relative path.
-- Plot is rerunnable from the submitted Quarto file.
-- Title, axes, legend, and caption match the statistic shown.
-- Audit note identifies at least three meaningful issues.
-- Caption states that the result is descriptive and non-causal.
-- AI-use note is present and specific.
-- M1 link note identifies a project dataset or audience implication.
+| Criterion | Points |
+|---|---:|
+| Plot is generated by rerunnable `ggplot2` code with relative paths | 1.5 |
+| Visual audit identifies at least three meaningful issues | 1 |
+| Corrected plot improves scale, labeling, grouping, or caption clarity | 1.5 |
+| Caption states statistic, source, exclusions, and limitations | 1 |
+| Interpretation stays descriptive and non-causal | 0.75 |
+| AI-use note and M1 link note are specific | 0.75 |
+| Required files are committed and synced | 0.5 |
 
-Needs work:
+## Definition of Done
 
-- Uses an absolute or machine-specific path.
-- Plot title or caption overclaims causality or population inference.
-- Missing caption, audit note, or AI-use note.
-- Code does not run from the repository.
-- Revised plot is not materially different from the draft version.
-- M1 link note is missing or disconnected from the visualization.
+You are done when a peer can render `visualization-audit.qmd`, see the corrected plot, understand the main comparison from the caption, and identify how you checked the plot for misleading design.

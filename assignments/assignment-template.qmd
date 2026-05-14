@@ -1,34 +1,55 @@
 # Assignment Template {.unnumbered}
 
-Use this template for all weekly applied assignments.
+Use this structure for weekly applied assignments. Keep the student-facing brief short enough to act on, but specific enough that a beginner can submit the right files without private instructions.
 
-## Student-Facing Brief
+## Title
 
-- **Purpose:**
-- **Inputs:**
-- **Expected output:**
-- **Submission location:**
-- **Due date:**
+Use:
 
-## Required Files
+```text
+# Assignment X: Short Descriptive Title
+```
 
-- `README.md`
-- One rendered Quarto output or dashboard preview.
-- Source `.qmd`, `.R`, `.py`, or supporting files needed to rerun the work.
-- Data files, or clear instructions for obtaining them, when redistribution is not allowed.
+## Purpose
 
-## Reproducibility Contract
+Explain why the assignment matters, how it connects to the week, and how it prepares students for the next week or a project milestone.
 
-- The work runs in a fresh GitHub Codespace.
-- Paths are relative to the project root.
-- Required packages are declared.
-- Outputs can be regenerated without manual editing.
-- AI-generated code or text is audited and documented.
+## Learning Objectives
+
+Use 3-5 concise bullets.
+
+## Inputs
+
+List week pages, data files, starter files, examples, templates, or milestone pages. Use relative paths only.
+
+## Tasks
+
+Provide a numbered workflow a beginner can follow.
+
+## AI-Use Expectations
+
+State what AI may help with and what students must verify. Require an AI-use or audit note when code, interpretation, debugging, writing, or translation used AI support.
+
+## Reproducibility Requirements
+
+State that the work must run or render in GitHub Codespaces, use relative paths, and declare dependencies when new packages are added.
+
+## What To Submit
+
+Give exact filenames and the exact folder:
+
+```text
+assignments/assignmentXX-short-name/submission/
+```
+
+## Submission Route
+
+Students submit their GitHub repository link on Canvas after committing and syncing the required files.
 
 ## Grading Checklist
 
-- Clear question or task.
-- Correct and reproducible code.
-- Evidence of verification.
-- Clear writing and captions.
-- Honest limitations and AI-use note.
+For Assignments 1-3, use Complete/Incomplete. For Assignments 4-10, use a practical 7-point checklist or a Complete/Needs Work checklist with the scored Canvas rubric.
+
+## Definition of Done
+
+End with a short checklist students can use before submitting.

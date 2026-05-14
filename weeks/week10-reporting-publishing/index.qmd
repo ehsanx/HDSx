@@ -19,7 +19,7 @@ Week 9 turned one result into a short slide story. This week expands the same ev
 - Add a source note for CDC NHANES and the `nhanesA` retrieval pathway.
 - Verify that the report uses relative paths and documents whether results came from the cached data.
 
-Student output: a rendered Quarto report with one figure, one table, citations, limitations, and an AI-use note. Assignment link: `../../assignments/assignment09-reporting/README.md`.
+Student output: a rendered Quarto report with one figure, one table, citations, limitations, and an AI-use note. Assignment link: [Assignment 9](../../assignments/assignment09-reporting/README.md).
 
 ## Definition of Done
 

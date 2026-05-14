@@ -20,7 +20,7 @@ Week 10 produced a report with code-generated outputs and citations. This week t
 - Optionally draft a static dashboard extension using a CSV snapshot and no Shiny server.
 - Log any dependency, path, or README issues as reproducibility risks.
 
-Student output: a reproducibility test log, repaired README or path issues, and a final risk list. Assignment link: `../../assignments/assignment10-portfolio-surgery/README.md`.
+Student output: a reproducibility test log, repaired README or path issues, and a final risk list. Assignment link: [Assignment 10](../../assignments/assignment10-portfolio-surgery/README.md).
 
 ## Static Dashboard Demo
 

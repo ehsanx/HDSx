@@ -30,7 +30,7 @@ Week 3 focused on writing and auditing small R summaries. This week treats each 
 - Open a pull request and use the diff to verify the change is limited.
 - In the pull request description, state how you verified the change is documentation-only.
 
-Student output: a documentation-only pull request with a short audit note. Assignment link: `../../assignments/assignment03-git/README.md`.
+Student output: a documentation-only pull request with a short audit note. Assignment link: [Assignment 3](../../assignments/assignment03-git/README.md).
 
 ------------------------------------------------------------------------
 

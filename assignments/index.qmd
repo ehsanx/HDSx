@@ -1,28 +1,38 @@
 # Assignments {.unnumbered}
 
-Weekly assignments are scaffolded practice. Assignments 1-3 are foundational gates; Assignments 4-10 support the project portfolio and use the best-5-of-7 grading policy described in the syllabus.
+Weekly assignments are scaffolded practice. Assignments 1-3 are foundational gates graded Complete/Incomplete. Assignments 4-10 support the term portfolio and use the best-5-of-7 grading policy described in the syllabus.
 
 ## Assignment Map
 
-| Assignment | Week | Focus | Template folder |
-|---|---:|---|---|
-| Assignment 1 | 2 | Codespaces, Quarto, commit/sync | `assignments/assignment01-workflows/` |
-| Assignment 2 | 3 | R with AI, tidyverse, functions, `renv` | `assignments/assignment02-r-with-ai/` |
-| Assignment 3 | 4 | Git collaboration and repo hygiene | `assignments/assignment03-git/` |
-| Assignment 4 | 5 | Polyglot awareness and R deepening | `assignments/assignment04-polyglot/` |
-| Assignment 5 | 6 | Visualization and AI visual audit | `assignments/assignment05-visualization/` |
-| Assignment 6 | 7 | EDA, Table 1, planted-error audit | `assignments/assignment06-eda-ai-audit/` |
-| Assignment 7 | 8 | Dashboard-style KT prototype | `assignments/assignment07-dashboard/` |
-| Assignment 8 | 9 | Scientific communication and peer feedback | `assignments/assignment08-communication/` |
-| Assignment 9 | 10 | Reporting, citations, publishing | `assignments/assignment09-reporting/` |
-| Assignment 10 | 11 | Portfolio surgery and reproducibility test | `assignments/assignment10-portfolio-surgery/` |
+| Assignment | Week | Focus | Grading mode | Brief |
+|---|---:|---|---|---|
+| Assignment 1 | 2 | Modern workflows: Codespaces, Quarto, commit/sync | Complete/Incomplete | [A1 brief](assignment01-workflows/README.md) |
+| Assignment 2 | 3 | R with AI: import, inspect, transform, audit | Complete/Incomplete | [A2 brief](assignment02-r-with-ai/README.md) |
+| Assignment 3 | 4 | Git collaboration: branches, pull requests, repo hygiene | Complete/Incomplete | [A3 brief](assignment03-git/README.md) |
+| Assignment 4 | 5 | Polyglot awareness and R deepening | Best 5 of 7 | [A4 brief](assignment04-polyglot/README.md) |
+| Assignment 5 | 6 | Visualization and AI visual audit | Best 5 of 7 | [A5 brief](assignment05-visualization/README.md) |
+| Assignment 6 | 7 | EDA, Table 1, planted-error audit | Best 5 of 7 | [A6 brief](assignment06-eda-ai-audit/README.md) |
+| Assignment 7 | 8 | Dashboard-style KT prototype | Best 5 of 7 | [A7 brief](assignment07-dashboard/README.md) |
+| Assignment 8 | 9 | Scientific communication and peer feedback | Best 5 of 7 | [A8 brief](assignment08-communication/README.md) |
+| Assignment 9 | 10 | Reproducible report, citations, publishing check | Best 5 of 7 | [A9 brief](assignment09-reporting/README.md) |
+| Assignment 10 | 11 | Portfolio surgery and reproducibility test | Best 5 of 7 | [A10 brief](assignment10-portfolio-surgery/README.md) |
 
-## Current Briefs
+## Grading Logic
 
-Assignments 5, 6, and 7 have complete student-facing briefs because they anchor the NHANES exemplar sequence:
+Assignments 1-3 must be completed to pass the course. They are not numerically weighted, but they establish the workflow students need for every later assignment.
 
-- [Assignment 5](assignment05-visualization/README.md): visualization audit and revision.
-- [Assignment 6](assignment06-eda-ai-audit/README.md): EDA, Table 1, and planted-error audit.
-- [Assignment 7](assignment07-dashboard/README.md): dashboard-style KT prototype.
+Assignments 4-10 are scored on Canvas. Only the best 5 of these 7 scores count toward the final grade, so students have flexibility while still practicing consistently after the foundation weeks.
 
-Earlier and later assignment folders remain mapped here so students can see the full course arc.
+## Common Reproducibility Contract
+
+Every assignment must:
+
+- run or render in GitHub Codespaces;
+- use relative paths rather than machine-specific paths;
+- keep source files and rendered outputs in the requested submission folder;
+- commit and sync the final work before submitting the repository link on Canvas;
+- document packages or dependencies when adding anything beyond the course defaults.
+
+## Common AI-Use Expectation
+
+AI may help students brainstorm, debug, translate, refactor, or improve wording. Students remain responsible for checking every code path, column name, statistic, citation, and interpretation. When AI is used, the submission must include an AI-use note explaining what the tool helped with, what changed, and how the result was verified.
