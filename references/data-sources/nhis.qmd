@@ -1,4 +1,4 @@
-## Data Source: NHIS {.unnumbered}
+## NHIS {.unnumbered}
 
 The National Health Interview Survey (NHIS) is a cross-sectional household interview survey conducted by the US Centers for Disease Control (CDC). The survey collects information on the health status, health care access, and health behaviors of the US population.
 

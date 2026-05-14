@@ -1,4 +1,4 @@
-## Data Source: PHAC Health Infobase {.unnumbered}
+## PHAC Health Infobase {.unnumbered}
 
 The Health Infobase is a comprehensive digital platform maintained by the Public Health Agency of Canada (PHAC). The Infobase provides access to a wide range of health-related data tools, infographics, charts and blogs. There are 182 data sources available on the Infobase. The Health Infobase serves as a central hub for national surveillance data, interactive data tools, and public health reports. The platform is frequently updated with the latest surveillance data.
 

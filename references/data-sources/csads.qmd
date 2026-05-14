@@ -1,4 +1,4 @@
-## Data Source: CSADS {.unnumbered}
+## CSADS {.unnumbered}
 
 The Canadian Student Alcohol and Drugs Survey (CSADS) is a national survey that collects data on the alcohol and drug use patterns of Canadian students in grades 7 to 12. The survey is conducted every two years and provides valuable insights into the prevalence and trends of substance use among Canadian youth.
 

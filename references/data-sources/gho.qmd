@@ -1,4 +1,4 @@
-## Data Source: GHO {.unnumbered}
+## GHO {.unnumbered}
 
 The Global Health Observatory (GHO) is the World Health Organization's (WHO) main health statistics repository. The GHO provides data on a wide range of health topics, such as mortality, morbidity, risk factors, health systems, and health equity. The GHO collects data from member states, international organizations, and other sources to provide a comprehensive picture of global health. The GHO is a valuable resource for researchers, policymakers, and public health professionals who are interested in understanding global health trends and disparities. The GHO provides various ways to interact with its data, including interactive maps and downloadable CSV files.
 
@@ -133,4 +133,3 @@ knitr::include_graphics("../../assets/images/data10/gho19.png")
 ```{r gho20, echo=FALSE, cache=TRUE, out.width = '100%', fig.align='center'}
 knitr::include_graphics("../../assets/images/data10/gho20.png")
 ```
-

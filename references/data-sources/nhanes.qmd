@@ -1,4 +1,4 @@
-## Data Source: NHANES {.unnumbered}
+## NHANES {.unnumbered}
 
 The National Health and Nutrition Examination Survey (NHANES) is a cross-sectional survey conducted by the US Centers for Disease Control (CDC). The survey collects information on the health and nutritional status of the US population. The survey includes interviews, physical examinations, and laboratory tests.
 

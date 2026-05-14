@@ -1,4 +1,4 @@
-## Data Source: CTNS {.unnumbered}
+## CTNS {.unnumbered}
 
 The Canadian Tobacco and Nicotine Survey (CTNS) is a cross-sectional survey that collects information on tobacco and nicotine use among Canadians aged 15 years and older. The survey is conducted by Statistics Canada on behalf of Health Canada and provides valuable insights into the prevalence of cigarette smoking, vaping, cannabis, and alcohol use. 
 

@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -69,11 +104,16 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<link href="../../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+
+<script src="../../site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+
 
 
 <meta name="twitter:title" content="Starter Dashboard – Health Data Science: AI and Knowledge Translation">
 <meta name="twitter:description" content="">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="starter-dashboard_files/figure-html/dashboard-plot-1.png">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -102,7 +142,7 @@ ul.task-list li input[type="checkbox"] {
     <div class="sidebar-title mb-0 py-0">
       <a href="../../">Health Data Science: AI and Knowledge Translation</a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/ehsanx/Health-AI-KT" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/ehsanx/HDSx" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
     <a href="../../Health-Data-Science--AI-and-Knowledge-Translation.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
@@ -701,17 +741,52 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../assignments/assignment04-polyglot/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 4: Polyglot Awareness &amp; R Deepening</span></a>
+  <a href="../../assignments/assignment01-workflows/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 1: Modern Workflows</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../assignments/assignment05-visualization/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 5: Visualization Audit and Revision</span></a>
+  <a href="../../assignments/assignment02-r-with-ai/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 2: R With AI</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../assignments/assignment06-eda-ai-audit/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 6: EDA, Table 1, and AI Audit</span></a>
+  <a href="../../assignments/assignment03-git/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 3: Git Collaboration</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../assignments/assignment04-polyglot/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 4: Polyglot Parity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../assignments/assignment05-visualization/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 5: Visualization Audit</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../assignments/assignment06-eda-ai-audit/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 6: EDA and AI Audit</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../assignments/assignment07-dashboard/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 7: Dashboard KT Prototype</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../assignments/assignment08-communication/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 8: Scientific Communication</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../assignments/assignment09-reporting/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 9: Reproducible Report</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../assignments/assignment10-portfolio-surgery/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 10: Portfolio Surgery</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -724,6 +799,16 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="../../milestones/milestone-template.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Milestone Template</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/m1-proposal/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">M1: Project Proposal</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/m2-preliminary-analysis/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">M2: Preliminary Analysis</span></a>
   </div>
 </li>
       </ul>
@@ -740,73 +825,73 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../references/data-sources/nhis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Source: NHIS</span></a>
+ <span class="menu-text">NHIS</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../references/data-sources/nhanes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Source: NHANES</span></a>
+ <span class="menu-text">NHANES</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../references/data-sources/brfss.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Source: BRFSS</span></a>
+ <span class="menu-text">BRFSS</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../references/data-sources/ccs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Source: CCS</span></a>
+ <span class="menu-text">CCS</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../references/data-sources/cads.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Source: CADS</span></a>
+ <span class="menu-text">CADS</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../references/data-sources/ctns.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Source: CTNS</span></a>
+ <span class="menu-text">CTNS</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../references/data-sources/csads.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Source: CSADS</span></a>
+ <span class="menu-text">CSADS</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../references/data-sources/phac-infobase.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Source: PHAC Health Infobase</span></a>
+ <span class="menu-text">PHAC Health Infobase</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../references/data-sources/ccdss.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Source: CCDSS</span></a>
+ <span class="menu-text">CCDSS</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../references/data-sources/gho.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Source: GHO</span></a>
+ <span class="menu-text">GHO</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../references/data-sources/open-portal.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Source: Open Portal</span></a>
+ <span class="menu-text">Open Portal</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../references/data-sources/bc-data-catalogue.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Source: BC Data Catalogue</span></a>
+ <span class="menu-text">BC Data Catalogue</span></a>
   </div>
 </li>
       </ul>
@@ -822,12 +907,17 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#goal" id="toc-goal" class="nav-link active" data-scroll-target="#goal">Goal</a></li>
-  <li><a href="#required-elements" id="toc-required-elements" class="nav-link" data-scroll-target="#required-elements">Required Elements</a></li>
-  <li><a href="#minimal-review-workflow" id="toc-minimal-review-workflow" class="nav-link" data-scroll-target="#minimal-review-workflow">Minimal Review Workflow</a></li>
-  <li><a href="#student-output" id="toc-student-output" class="nav-link" data-scroll-target="#student-output">Student Output</a></li>
-  <li><a href="#privacy-safe-publishing-check" id="toc-privacy-safe-publishing-check" class="nav-link" data-scroll-target="#privacy-safe-publishing-check">Privacy-Safe Publishing Check</a></li>
+  <li><a href="#audience-question" id="toc-audience-question" class="nav-link" data-scroll-target="#audience-question">Audience Question</a></li>
+  <li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup">Setup</a></li>
+  <li><a href="#control" id="toc-control" class="nav-link" data-scroll-target="#control">Control</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#visualization" id="toc-visualization" class="nav-link" data-scroll-target="#visualization">Visualization</a></li>
+  <li><a href="#interpretation" id="toc-interpretation" class="nav-link" data-scroll-target="#interpretation">Interpretation</a></li>
+  <li><a href="#limitation" id="toc-limitation" class="nav-link" data-scroll-target="#limitation">Limitation</a></li>
+  <li><a href="#testing" id="toc-testing" class="nav-link" data-scroll-target="#testing">Testing</a></li>
+  <li><a href="#privacy-safe-publishing" id="toc-privacy-safe-publishing" class="nav-link" data-scroll-target="#privacy-safe-publishing">Privacy-Safe Publishing</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ehsanx/Health-AI-KT/edit/main/weeks/week08-dashboard-kt/starter-dashboard.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ehsanx/Health-AI-KT/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ehsanx/HDSx/edit/main/weeks/week08-dashboard-kt/starter-dashboard.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ehsanx/HDSx/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -853,47 +943,190 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="goal" class="level2">
 <h2 class="anchored" data-anchor-id="goal">Goal</h2>
-<p>Students adapt a minimal dashboard-style knowledge translation product by changing text and interpretation before changing analytic logic.</p>
+<p>This starter shows how to turn the Week 7 descriptive summary into a dashboard-style KT product before building a full app. It uses one editable control value, one visualization, one table, one interpretation, and one caution.</p>
+<p>The complete Shiny exemplar remains the main Week 8 app. This page is a lightweight planning and testing aid.</p>
 </section>
-<section id="required-elements" class="level2">
-<h2 class="anchored" data-anchor-id="required-elements">Required Elements</h2>
-<ul>
-<li>One audience-specific question.</li>
-<li>One interactive or dashboard-style control.</li>
-<li>One visualization.</li>
-<li>One plain-language interpretation.</li>
-<li>One limitation or caution.</li>
-</ul>
+<section id="audience-question" class="level2">
+<h2 class="anchored" data-anchor-id="audience-question">Audience Question</h2>
+<p>Audience: a public-health analyst preparing a short briefing on descriptive BMI patterns in the classroom NHANES equity dataset.</p>
+<p>Question: among adults age 20-80, how does mean BMI vary across NHANES cycles for one selected income group?</p>
 </section>
-<section id="minimal-review-workflow" class="level2">
-<h2 class="anchored" data-anchor-id="minimal-review-workflow">Minimal Review Workflow</h2>
+<section id="setup" class="level2">
+<h2 class="anchored" data-anchor-id="setup">Setup</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="fu">library</span>(knitr)</span>
+<span id="cb1-5"><a href="#cb1-5"></a></span>
+<span id="cb1-6"><a href="#cb1-6"></a>candidate_paths <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb1-7"><a href="#cb1-7"></a>  <span class="st">"examples/nhanes-equity/data/nhanes_equity_v6.csv"</span>,</span>
+<span id="cb1-8"><a href="#cb1-8"></a>  <span class="st">"../../examples/nhanes-equity/data/nhanes_equity_v6.csv"</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a>)</span>
+<span id="cb1-10"><a href="#cb1-10"></a></span>
+<span id="cb1-11"><a href="#cb1-11"></a>data_path <span class="ot">&lt;-</span> candidate_paths[<span class="fu">file.exists</span>(candidate_paths)][<span class="dv">1</span>]</span>
+<span id="cb1-12"><a href="#cb1-12"></a><span class="cf">if</span> (<span class="fu">is.na</span>(data_path)) {</span>
+<span id="cb1-13"><a href="#cb1-13"></a>  <span class="fu">stop</span>(<span class="st">"Could not find examples/nhanes-equity/data/nhanes_equity_v6.csv"</span>)</span>
+<span id="cb1-14"><a href="#cb1-14"></a>}</span>
+<span id="cb1-15"><a href="#cb1-15"></a></span>
+<span id="cb1-16"><a href="#cb1-16"></a>nhanes <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(data_path, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="control" class="level2">
+<h2 class="anchored" data-anchor-id="control">Control</h2>
+<p>In a Shiny app, this would become a dropdown. In this static starter, change the value of <code>selected_income</code> and render again.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>available_income_groups <span class="ot">&lt;-</span> <span class="fu">sort</span>(<span class="fu">unique</span>(<span class="fu">na.omit</span>(nhanes<span class="sc">$</span>IncomeGroup)))</span>
+<span id="cb2-2"><a href="#cb2-2"></a>selected_income <span class="ot">&lt;-</span> <span class="st">"Low Income (&lt;1.3)"</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a></span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="cf">if</span> (<span class="sc">!</span>selected_income <span class="sc">%in%</span> available_income_groups) {</span>
+<span id="cb2-5"><a href="#cb2-5"></a>  selected_income <span class="ot">&lt;-</span> available_income_groups[<span class="dv">1</span>]</span>
+<span id="cb2-6"><a href="#cb2-6"></a>}</span>
+<span id="cb2-7"><a href="#cb2-7"></a></span>
+<span id="cb2-8"><a href="#cb2-8"></a>selected_income</span>
+<span id="cb2-9"><a href="#cb2-9"></a><span class="co">#&gt; [1] "Low Income (&lt;1.3)"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>dashboard_summary <span class="ot">&lt;-</span> nhanes <span class="sc">|&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a>  <span class="fu">filter</span>(</span>
+<span id="cb3-3"><a href="#cb3-3"></a>    Age <span class="sc">&gt;=</span> <span class="dv">20</span>,</span>
+<span id="cb3-4"><a href="#cb3-4"></a>    Age <span class="sc">&lt;=</span> <span class="dv">80</span>,</span>
+<span id="cb3-5"><a href="#cb3-5"></a>    IncomeGroup <span class="sc">==</span> selected_income,</span>
+<span id="cb3-6"><a href="#cb3-6"></a>    <span class="sc">!</span><span class="fu">is.na</span>(BMI),</span>
+<span id="cb3-7"><a href="#cb3-7"></a>    <span class="sc">!</span><span class="fu">is.na</span>(Cycle)</span>
+<span id="cb3-8"><a href="#cb3-8"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb3-9"><a href="#cb3-9"></a>  <span class="fu">group_by</span>(Cycle) <span class="sc">|&gt;</span></span>
+<span id="cb3-10"><a href="#cb3-10"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb3-11"><a href="#cb3-11"></a>    <span class="at">n =</span> <span class="fu">n</span>(),</span>
+<span id="cb3-12"><a href="#cb3-12"></a>    <span class="at">mean_bmi =</span> <span class="fu">round</span>(<span class="fu">mean</span>(BMI), <span class="dv">1</span>),</span>
+<span id="cb3-13"><a href="#cb3-13"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb3-14"><a href="#cb3-14"></a>  )</span>
+<span id="cb3-15"><a href="#cb3-15"></a></span>
+<span id="cb3-16"><a href="#cb3-16"></a><span class="fu">kable</span>(dashboard_summary)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Cycle</th>
+<th style="text-align: right;">n</th>
+<th style="text-align: right;">mean_bmi</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">1999-2000</td>
+<td style="text-align: right;">1091</td>
+<td style="text-align: right;">28.8</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2001-2002</td>
+<td style="text-align: right;">1089</td>
+<td style="text-align: right;">28.7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2003-2004</td>
+<td style="text-align: right;">1183</td>
+<td style="text-align: right;">28.6</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2005-2006</td>
+<td style="text-align: right;">1091</td>
+<td style="text-align: right;">29.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2007-2008</td>
+<td style="text-align: right;">1552</td>
+<td style="text-align: right;">29.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2009-2010</td>
+<td style="text-align: right;">1817</td>
+<td style="text-align: right;">29.5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2011-2012</td>
+<td style="text-align: right;">1724</td>
+<td style="text-align: right;">29.4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2013-2014</td>
+<td style="text-align: right;">1762</td>
+<td style="text-align: right;">29.5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2015-2016</td>
+<td style="text-align: right;">1568</td>
+<td style="text-align: right;">30.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2017-2018</td>
+<td style="text-align: right;">1275</td>
+<td style="text-align: right;">30.1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2021-2023</td>
+<td style="text-align: right;">1141</td>
+<td style="text-align: right;">30.4</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="visualization" class="level2">
+<h2 class="anchored" data-anchor-id="visualization">Visualization</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="fu">ggplot</span>(dashboard_summary, <span class="fu">aes</span>(<span class="at">x =</span> Cycle, <span class="at">y =</span> mean_bmi, <span class="at">group =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a>  <span class="fu">geom_line</span>(<span class="at">linewidth =</span> <span class="fl">0.8</span>, <span class="at">color =</span> <span class="st">"#2f6f73"</span>) <span class="sc">+</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="fl">2.4</span>, <span class="at">color =</span> <span class="st">"#2f6f73"</span>) <span class="sc">+</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a>  <span class="fu">labs</span>(</span>
+<span id="cb4-5"><a href="#cb4-5"></a>    <span class="at">title =</span> <span class="fu">paste</span>(<span class="st">"Mean BMI for"</span>, selected_income),</span>
+<span id="cb4-6"><a href="#cb4-6"></a>    <span class="at">subtitle =</span> <span class="st">"Adults age 20-80 in the prepared NHANES Health Equity classroom dataset"</span>,</span>
+<span id="cb4-7"><a href="#cb4-7"></a>    <span class="at">x =</span> <span class="st">"NHANES cycle"</span>,</span>
+<span id="cb4-8"><a href="#cb4-8"></a>    <span class="at">y =</span> <span class="st">"Mean BMI"</span>,</span>
+<span id="cb4-9"><a href="#cb4-9"></a>    <span class="at">caption =</span> <span class="st">"Descriptive, unweighted classroom summary. Missing BMI, income group, cycle, and out-of-cohort ages are excluded."</span></span>
+<span id="cb4-10"><a href="#cb4-10"></a>  ) <span class="sc">+</span></span>
+<span id="cb4-11"><a href="#cb4-11"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">12</span>) <span class="sc">+</span></span>
+<span id="cb4-12"><a href="#cb4-12"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="starter-dashboard_files/figure-html/dashboard-plot-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="interpretation" class="level2">
+<h2 class="anchored" data-anchor-id="interpretation">Interpretation</h2>
+<p>For the selected income group, the table and figure describe the mean BMI pattern across available NHANES cycles in the prepared classroom dataset. The dashboard should help the audience ask better questions about pattern, timing, and context rather than treat the line as a causal explanation.</p>
+</section>
+<section id="limitation" class="level2">
+<h2 class="anchored" data-anchor-id="limitation">Limitation</h2>
+<p>This starter is unweighted and descriptive. It does not account for NHANES survey design, does not estimate national prevalence, and should not be used to make causal claims about income and BMI.</p>
+</section>
+<section id="testing" class="level2">
+<h2 class="anchored" data-anchor-id="testing">Testing</h2>
+<p>Before submitting a dashboard-style product:</p>
 <ol type="1">
-<li>Run the NHANES dashboard from the repository root.</li>
-<li>Choose a stakeholder audience, such as a public-health analyst, student team, or community-facing briefing group.</li>
-<li>Identify one label, caption, help text, or interpretation note that could be clearer for that audience.</li>
-<li>Make a documentation-only or UI-text-only change.</li>
-<li>Rerun the dashboard and verify the cached dataset loads.</li>
-<li>Record the change, audience, and limitation in a short note.</li>
+<li>Render this page from the repository root.</li>
+<li>Change <code>selected_income</code> to another value from <code>available_income_groups</code>.</li>
+<li>Render again and check that the table, title, and plot all update.</li>
+<li>Verify that the caption still names the dataset, exclusions, and limitation.</li>
+<li>Record any warning or error in your testing log.</li>
 </ol>
 </section>
-<section id="student-output" class="level2">
-<h2 class="anchored" data-anchor-id="student-output">Student Output</h2>
-<p>Submit a short dashboard adaptation note containing:</p>
+<section id="privacy-safe-publishing" class="level2">
+<h2 class="anchored" data-anchor-id="privacy-safe-publishing">Privacy-Safe Publishing</h2>
 <ul>
-<li>Audience sentence.</li>
-<li>Before/after text change.</li>
-<li>One screenshot or description of the affected dashboard area.</li>
-<li>Limitation statement.</li>
-<li>Reproducibility note describing how the app was run locally.</li>
-</ul>
-</section>
-<section id="privacy-safe-publishing-check" class="level2">
-<h2 class="anchored" data-anchor-id="privacy-safe-publishing-check">Privacy-Safe Publishing Check</h2>
-<ul>
-<li>Do not publish row-level data.</li>
-<li>Avoid small-cell claims.</li>
-<li>State that dashboard outputs are descriptive.</li>
-<li>Keep the cached classroom data separate from raw NHANES retrieval work.</li>
+<li>Use aggregate summaries, not row-level records.</li>
+<li>Avoid small-cell interpretations when <code>n</code> is low.</li>
+<li>State that outputs are descriptive and unweighted.</li>
+<li>Keep cached classroom data separate from any raw NHANES retrieval workflow.</li>
+<li>Do not upload row-level data to external AI tools.</li>
 </ul>
 
 
@@ -1367,4 +1600,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ehsanx/Health-AI-KT/edit/main/weeks/week08-dashboard-kt/starter-dashboard.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ehsanx/Health-AI-KT/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ehsanx/HDSx/edit/main/weeks/week08-dashboard-kt/starter-dashboard.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ehsanx/HDSx/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

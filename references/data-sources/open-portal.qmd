@@ -1,4 +1,4 @@
-## Data Source: Open Portal {.unnumbered}
+## Open Portal {.unnumbered}
 
 Open Government Portal Canada is a platform that provides access to searching for a wide range of public data. Users can explore and download data in different formats under the [Open Government Licence - Canada](https://open.canada.ca/en/open-government-licence-canada). 
 

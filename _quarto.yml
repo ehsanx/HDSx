@@ -21,7 +21,7 @@ book:
     background: light
   date: today
   downloads: [pdf]
-  repo-url: https://github.com/ehsanx/Health-AI-KT
+  repo-url: https://github.com/ehsanx/HDSx
   repo-actions: [edit, issue]
 
   chapters:

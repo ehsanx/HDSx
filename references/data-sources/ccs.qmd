@@ -1,4 +1,4 @@
-## Data Source: CCS {.unnumbered}
+## CCS {.unnumbered}
 
 The Canadian Cannabis Survey (CCS) is an annual survey conducted by Health Canada to gather information on cannabis use among people aged 16 years and older living in all Canadian provinces and territories. The survey collects data on various aspects of cannabis consumption, including their knowledge, attitudes and behaviours towards cannabis use. 
 

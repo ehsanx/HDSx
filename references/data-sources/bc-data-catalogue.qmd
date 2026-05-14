@@ -1,4 +1,4 @@
-## Data Source: BC Data Catalogue {.unnumbered}
+## BC Data Catalogue {.unnumbered}
 
 The British Columbia Data Catalogue is a central hub provided by the Government of British Columbia (BC). Its primary purpose is to provide public access to thousands of datasets managed by the provincial government and its partners. Essentially, it is a digital library designed to make government information transparent and usable for citizens, researchers, and developers.
 

@@ -1,4 +1,4 @@
-## Data Source: BRFSS {.unnumbered}
+## BRFSS {.unnumbered}
 
 The Behavioral Risk Factor Surveillance System (BRFSS) is a cross-sectional survey conducted by the US Centers for Disease Control (CDC). The survey collects information on health-related risk behaviors, chronic health conditions, and use of preventive services among US adults. BRFSS completes more than 400,000 adult interviews each year, making it the largest continuously conducted health survey system in the world.
 
