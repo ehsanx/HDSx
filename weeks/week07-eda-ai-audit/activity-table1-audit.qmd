@@ -8,14 +8,15 @@ Students create a descriptive summary and audit AI-generated code or interpretat
 
 - Student worked example: `weeks/week07-eda-ai-audit/worked-example-table1.qmd`
 - Dataset: `examples/nhanes-equity/data/nhanes_equity_v6.csv`
-- Planted-error starter: distributed by the instructor or TA during the activity
+- Planted-error starter: `weeks/week07-eda-ai-audit/instructor/planted-error-starter.qmd`
+- Instructor key: `weeks/week07-eda-ai-audit/instructor/planted-error-key.md`
 
 ## Activity Steps
 
 1. Review the worked example and identify the cohort definition, missingness check, and Table 1 labels.
-2. Open the planted-error starter provided by the instructor.
+2. Open the planted-error starter and inspect both code and prose.
 3. Run or read the starter code and annotate at least five issues.
-4. Categorize each issue as **correctness**, **reproducibility**, or **interpretation**.
+4. Categorize each issue as **correctness**, **reproducibility**, **interpretation**, or **stewardship**.
 5. Produce a corrected EDA note and Table 1.
 
 ## Required Outputs
@@ -24,12 +25,13 @@ Students create a descriptive summary and audit AI-generated code or interpretat
 - `eda-note.html`: rendered output from the Quarto note.
 - `table1.csv`: exported Table 1 or equivalent descriptive summary.
 - `audit-note.md`: at least five detected issues with category, why it matters, and corrected approach.
+- `provenance-stewardship-note.md`: a short note naming the data source, classroom-use context, and one privacy or stewardship caution.
 - `ai-use-note.md`: if you used AI, explain what it helped with and how you verified the result.
 
 ## Minimum Table 1 Requirements
 
-- Cohort: age 20-80, unless your instructor approves a different cohort.
-- Stratifier: `IncomeGroup`, unless your instructor assigns a different grouping variable.
+- Cohort: age 20-80.
+- Stratifier: `IncomeGroup`.
 - Variables: N, BMI mean (SD), and age mean (SD).
 - Methods note: state that the table is descriptive, unweighted, and non-causal.
 

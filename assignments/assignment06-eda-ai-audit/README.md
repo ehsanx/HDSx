@@ -10,6 +10,7 @@ Produce a transparent descriptive EDA note and Table 1-style summary from the NH
 - Worked example: `weeks/week07-eda-ai-audit/worked-example-table1.qmd`
 - Activity prompt: `weeks/week07-eda-ai-audit/activity-table1-audit.qmd`
 - Planted-error starter: `weeks/week07-eda-ai-audit/instructor/planted-error-starter.qmd`
+- Milestone connection: `milestones/m2-preliminary-analysis/README.md`
 
 ## Step-by-Step Tasks
 
@@ -20,7 +21,8 @@ Produce a transparent descriptive EDA note and Table 1-style summary from the NH
 5. Include N, BMI mean (SD), and age mean (SD).
 6. Write a short methods note stating that the analysis is descriptive, unweighted, and non-causal.
 7. Audit the planted-error starter and list at least five issues.
-8. Categorize each issue as correctness, reproducibility, or interpretation.
+8. Categorize each issue as correctness, reproducibility, interpretation, or stewardship.
+9. Revise the provenance/stewardship statement so it names the data source, classroom-use context, and one privacy or stewardship caution.
 
 ## What To Submit
 
@@ -36,6 +38,7 @@ Submit these files:
 - `eda-note.html`: rendered output.
 - `table1.csv`: exported Table 1 or equivalent descriptive summary.
 - `audit-note.md`: at least five planted issues with category, why it matters, and corrected approach.
+- `provenance-stewardship-note.md`: short revised note suitable for reuse in M2.
 - `ai-use-note.md`: required if AI was used; otherwise include a one-sentence note saying AI was not used.
 
 ## Submission Route
@@ -51,7 +54,8 @@ Complete:
 - Missingness is checked and reported.
 - Table 1 includes N, BMI mean (SD), and age mean (SD) by group.
 - Methods note avoids causal or population-level overclaims.
-- Audit note identifies at least five issues across correctness, reproducibility, and interpretation.
+- Audit note identifies at least five issues across correctness, reproducibility, interpretation, and stewardship.
+- Provenance/stewardship note is accurate and reusable for M2.
 - AI-use note is present and specific.
 
 Needs work:
@@ -62,3 +66,4 @@ Needs work:
 - Statistics are mislabeled or missing variability measures.
 - Interpretation overclaims causality.
 - Code does not render from the repository.
+- Provenance/stewardship statement is vague or missing.

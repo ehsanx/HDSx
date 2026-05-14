@@ -17,8 +17,12 @@ Weekly assignments are scaffolded practice. Assignments 1-3 are foundational gat
 | Assignment 9 | 10 | Reporting, citations, publishing | `assignments/assignment09-reporting/` |
 | Assignment 10 | 11 | Portfolio surgery and reproducibility test | `assignments/assignment10-portfolio-surgery/` |
 
-## TODO
+## Current Briefs
 
-::: {.callout-warning}
-Create a student-facing `README.md` in each assignment folder from `assignments/assignment-template.qmd`.
-:::
+Assignments 5, 6, and 7 have complete student-facing briefs because they anchor the NHANES exemplar sequence:
+
+- [Assignment 5](assignment05-visualization/README.md): visualization audit and revision.
+- [Assignment 6](assignment06-eda-ai-audit/README.md): EDA, Table 1, and planted-error audit.
+- [Assignment 7](assignment07-dashboard/README.md): dashboard-style KT prototype.
+
+Earlier and later assignment folders remain mapped here so students can see the full course arc.

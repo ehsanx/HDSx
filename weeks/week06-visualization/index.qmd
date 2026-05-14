@@ -2,27 +2,53 @@
 
 ## Overview
 
-This chapter challenges students to move beyond default charts and create publication-quality visualizations. You will use AI tools to generate initial code for complex plots in ggplot2 or plotly, and then apply human judgment to refine them for clarity, accuracy, and aesthetics. The lesson emphasizes detecting misleading AI-generated visuals and "steering" the code to tell a truthful and compelling data story.
+This week turns a descriptive summary into a visual claim. Students use `ggplot2` as the core tool, with `plotly` as an optional extension, and practice steering AI-generated code toward clear, honest health-data communication.
+
+The emphasis is not decoration. A useful plot makes the statistic, grouping, exclusions, and limitation visible enough that a reader can understand what the figure does and does not support.
+
+## Objectives
+
+By the end of the week, students can:
+
+- build a rerunnable `ggplot2` visualization from the NHANES Health Equity CSV snapshot;
+- identify visual choices that can exaggerate, hide, or mislabel a descriptive result;
+- revise title, scale, color, grouping, and caption choices to reduce misinterpretation;
+- document whether a plot is weighted or unweighted, descriptive or causal, and complete-case or missingness-aware;
+- use AI assistance as a draft partner while checking the code and claims themselves.
 
 ## Connection
 
-Week 5 checked that summaries agree across languages. This week turns a descriptive summary into a visual claim and asks whether the design helps or misleads the audience. Next week you will document the same dataset with EDA and a Table 1.
+Week 5 checked whether simple summaries agree across R and Python. Week 6 asks whether a visual summary is faithful to the evidence. Week 7 then documents the cohort, missingness, and Table 1 behind those same descriptive claims.
 
 ## Case Study Data Analysis
 
 {{< include ../../examples/nhanes-equity/snippets/case-study-data-analysis.qmd >}}
 
-## In-Class Activity
+## Core Path
 
-- Work through the [ggplot worked example](worked-example-ggplot.qmd) using the CSV snapshot.
-- Audit the flawed plot provided in the visual-audit activity and identify at least three issues.
-- Revise the plot so the title, scale, grouping, and caption support descriptive interpretation.
-- Explain what changed and why, including any AI assistance you used.
+The required path is a static `ggplot2` figure embedded in Quarto. Students may optionally convert their final plot to a `plotly` object for local exploration, but the submitted artifact is the static figure, caption, and audit note.
 
-Student output: a corrected plot, caption, audit note, and AI-use note. Assignment link: `../../assignments/assignment05-visualization/README.md`.
+## Class Plan
+
+1. Read the worked example and name the statistic, grouping variable, exclusions, and limitation.
+2. Inspect the flawed plot code in `weeks/week06-visualization/instructor/flawed-plot-code.R`.
+3. Identify at least three ways the plot could mislead a reader.
+4. Revise the plot so the scale, geometry, title, labels, and caption match the evidence.
+5. Pair-review the corrected caption and check that it does not imply causality or population inference.
+
+## Student Output
+
+By the end of class, each student has a corrected plot, a caption, a short audit note, and an AI-use note if AI helped draft code or wording.
+
+Assignment link: [Assignment 5](../../assignments/assignment05-visualization/README.md). Milestone link: [M1 Project Proposal](../../milestones/m1-proposal/README.md).
 
 ## Definition of Done
 
-- Students can generate, critique, revise, and caption at least one health data visualization.
-- The activity includes a concrete visual audit checklist.
-- All example plots render in a fresh Codespace.
+- The worked example renders from source using a relative path.
+- The revised figure has clear labels, an honest scale, and a limitation-aware caption.
+- The audit note identifies at least three issues across correctness, design, interpretation, or reproducibility.
+- The M1 proposal uses the same standard of transparency for dataset choice, feasibility, and stewardship.
+
+## What Students Leave With
+
+Students leave with one polished descriptive visualization and a reusable checklist for auditing AI-assisted plots before they appear in a report, dashboard, or slide.

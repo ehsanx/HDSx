@@ -54,7 +54,7 @@ bmi_by_income_cycle
 
 ```{r}
 #| label: plot-bmi-by-income-cycle
-ggplot(
+bmi_plot <- ggplot(
   bmi_by_income_cycle,
   aes(x = Cycle, y = mean_bmi, color = IncomeGroup, group = IncomeGroup)
 ) +
@@ -73,6 +73,18 @@ ggplot(
     axis.text.x = element_text(angle = 45, hjust = 1),
     legend.position = "bottom"
   )
+
+bmi_plot
+```
+
+## Optional Plotly Check
+
+The core assignment uses the static `ggplot2` figure above. If `plotly` is installed, you can preview the same plot interactively while checking labels and tooltips. This extension is optional because static Quarto output is the supported submission path.
+
+```{r}
+#| label: optional-plotly-preview
+#| eval: false
+# plotly::ggplotly(bmi_plot)
 ```
 
 ## Caption Template

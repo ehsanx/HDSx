@@ -84,6 +84,14 @@ kable(table1)
 
 > We used the prepared NHANES Health Equity classroom CSV snapshot. The analysis cohort included records with age 20-80. We summarized BMI and age by income group using unweighted descriptive statistics. Missing values were checked before summarizing. These summaries describe the prepared class dataset and should not be interpreted as causal effects or population estimates.
 
+## Stewardship Note Template
+
+> The dataset is a prepared classroom snapshot derived from public-use NHANES files. It should be used for descriptive learning activities, not for individual-level inference or small-cell claims. Reports should cite the source, describe exclusions, and avoid uploading row-level records to external AI tools.
+
+## Survey Design Note
+
+NHANES has a complex survey design. This classroom Table 1 is intentionally unweighted so that the workflow is easy to audit. A population-representative NHANES analysis would require the appropriate weights, strata, and primary sampling units.
+
 ## Reproducibility Notes
 
 - The data path is relative to the repository.

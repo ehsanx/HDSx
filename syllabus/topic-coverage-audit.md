@@ -4,29 +4,29 @@ Source of truth: `syllabus/SPPH-381H-Course-Outline-v4.qmd` and `syllabus/syllab
 
 Scope scanned: `_quarto.yml`, `weeks/**.qmd`, `references/**.qmd`, `assignments/**`, and `milestones/**`.
 
-Decision rule: **Complete** requires both narrative coverage and a runnable example, activity, exercise, or concrete student output. **Needs Improvement** means content exists but is incomplete, scaffold-only, TODO-heavy, or missing the exercise/example needed by the syllabus. **Needs Review** means evidence is weak, ambiguous, or outside the primary week/module.
+Decision rule: **Complete** requires both narrative coverage and a runnable example, activity, exercise, or concrete student output. **Needs Improvement** means content exists but is incomplete, scaffold-only, draft-heavy, or missing the exercise/example needed by the syllabus. **Needs Review** means evidence is weak, ambiguous, or outside the primary week/module.
 
 ## 1) Executive Summary
 
 ### Status Counts
 
-- **Complete:** 3 topics
-- **Needs Improvement:** 11 topics
+- **Complete:** 7 topics
+- **Needs Improvement:** 7 topics
 - **Not Covered:** 0 topics
 - **Needs Review:** 1 topic
 
 ### Top 10 Highest-Priority Gaps
 
-1. **Weeks 6-11 are scaffold-heavy.** Each has an overview, but most pages still contain `TODO Before Release` / `Content TODO` blocks rather than worked examples.
-2. **Assignment briefs A1-A10 are stubs.** Every assignment README says `TODO: Build from assignments/assignment-template.qmd`.
-3. **Milestone briefs M0-M5 and Final Portfolio are stubs and not in the Quarto TOC.** The milestone index is in the book, but the individual README briefs are orphaned.
+1. **Weeks 9-13 need the next polishing pass.** Weeks 1 and 6-8 now have complete NHANES-aligned teaching packs; the later communication, reporting, portfolio, and presentation weeks remain the largest remaining curriculum-development area.
+2. **Assignment briefs A1-A4 and A8-A10 need the same level of specificity as A5-A7.** A5-A7 now define purpose, inputs, steps, submission files, route, and checklist.
+3. **Milestone briefs M0, M3-M5, and Final Portfolio need fuller student-facing instructions.** M1 and M2 are now surfaced and complete.
 4. **`renv` is promised in Week 3 but not taught with an activity.** Evidence is limited to assignment focus text and syllabus wording.
 5. **Week 2 workflow mismatch: syllabus says fork a template, current content emphasizes GitHub Classroom.**
-6. **Week 5 R deepening is weak.** Python/pandas coverage is substantial, but the syllabus promise of R mastery exercises on `dplyr` and functions is not clearly implemented in Week 5.
-7. **Visualization lacks runnable ggplot2/plotly examples.** Week 6 explicitly says to add worked examples and flawed/corrected AI plots.
-8. **Dashboard pathway is undecided.** Week 8 says to decide between Quarto dashboard, Shiny, or static HTML/JS.
-9. **Reporting/publishing lacks concrete citation and GitHub Pages workflow.** Week 10 lists these as TODOs.
-10. **Presentation weeks lack rubric/timing/submission details.** Weeks 12-13 contain overviews but still call for presentation timing rules, peer feedback forms, and rubric links.
+6. **Week 5 R deepening needs a second review.** Python/pandas coverage is substantial, but the syllabus promise of R mastery exercises on `dplyr` and functions should be checked against the newest Week 5 draft.
+7. **Week 9 communication needs a complete slide/peer-review workflow.** Peer prompts exist, but the revealjs and plain-language practice should match the detail now present in Weeks 6-8.
+8. **Week 10 reporting/publishing needs ongoing citation and GitHub Pages review.** A report template exists, but publishing guidance should be tested end to end.
+9. **Week 11 portfolio surgery needs routine fresh-environment testing.** The reproducibility protocol and static dashboard demo should be rerun before release.
+10. **Presentation weeks lack full rubric/timing/submission details.** Weeks 12-13 contain overviews but still need final presentation logistics and rubric links.
 
 ## 2) Coverage Matrix
 
@@ -37,13 +37,13 @@ Decision rule: **Complete** requires both narrative coverage and a runnable exam
 - **Evidence:**
   - `syllabus/syllabus-inventory-completion-matrix.md` / `Extracted Schedule`: "GitHub account, orientation video, pre-course survey."
   - `weeks/week00-onboarding/index.qmd` / `Required Student Tasks`: "Create a GitHub account"; "Watch the orientation video"; "Complete the pre-course survey".
-  - `weeks/week00-onboarding/index.qmd` / `Content TODO`: "Add the actual Canvas orientation video link or placeholder."
+  - `weeks/week00-onboarding/index.qmd` / `Release Prep`: actual Canvas orientation video link or release link still needs to be added.
 - **What's missing:**
-  - Actual orientation video link or durable placeholder.
+  - Actual orientation video link or durable release link.
   - Pre-course survey link or instructions.
   - Clear confirmation/submission route.
 - **Recommended next additions:**
-  - Add a Canvas-link placeholder with release instructions.
+  - Add a Canvas release link with instructions.
   - Add a short completion checklist students can self-verify.
   - Add expected support/contact path for account setup failures.
 
@@ -52,18 +52,18 @@ Decision rule: **Complete** requires both narrative coverage and a runnable exam
 - **Topic name (exact from syllabus):** Health Data, KT & Ethics
 - **Status:** Complete
 - **Evidence:**
-  - `weeks/week01-health-data-ethics/index.qmd` / `Overview`: "Knowledge Translation (KT)" and "ethical landscape of modern health data".
-  - `weeks/week01-health-data-ethics/index.qmd` / `The Open Data Landscape`: "Explore 2-3 portals".
-  - `weeks/week01-health-data-ethics/index.qmd` / `The Data Intake Card`: fields for `dataset_name`, `portal_url`, `licence_terms`, and `stewardship_notes`.
-  - `weeks/week01-health-data-ethics/activity-data-intake-card.qmd` / `Student Template`: copyable YAML-style template for the activity.
+  - `weeks/week01-health-data-ethics/index.qmd` / `Objectives`: open portals, provenance, privacy/security, responsible AI, Indigenous Data Sovereignty, file formats, metadata, and KT framing.
+  - `weeks/week01-health-data-ethics/index.qmd` / `In-Class Activity`: students choose an approved portal, complete a Data Intake Card, and write a KT framing sentence.
+  - `weeks/week01-health-data-ethics/index.qmd` / `What Students Leave With`: "a completed Data Intake Card".
+  - `weeks/week01-health-data-ethics/activity-data-intake-card.qmd` / `Student Template`: copyable template with provenance, metadata, privacy/security, stewardship, Indigenous data relevance, KT framing, citation, and AI-use fields.
+  - `weeks/week01-health-data-ethics/activity-data-intake-card.qmd` / `Completed NHANES Example`: complete classroom example.
+  - `weeks/week01-health-data-ethics/activity-data-intake-card.qmd` / `Scoring Guide`: complete/needs-work criteria.
   - `references/data-sources/nhis.qmd` / `Data Source: NHIS`; `references/data-sources/nhanes.qmd` / `Data Source: NHANES`; plus other data-source reference pages.
 - **What's missing:**
-  - The activity page still has `TODO Before Release`.
-  - A short rubric for provenance/licensing/stewardship is requested but not present.
+  - Nothing essential for the Week 1 syllabus topic.
 - **Recommended next additions:**
-  - Add a student-facing rubric to `activity-data-intake-card.qmd`.
-  - Add one filled example Data Intake Card.
-  - Link the Week 1 page directly to relevant reference data-source pages.
+  - Keep approved portal links current before each offering.
+  - Update the NHANES example if the cached classroom dataset changes.
 
 ### Week 2
 
@@ -97,7 +97,7 @@ Decision rule: **Complete** requires both narrative coverage and a runnable exam
   - `assignments/assignment02-r-with-ai/README.md`: "R basics, tidyverse transformations, custom functions, AI debugging, and `renv` awareness."
 - **What's missing:**
   - `renv` is promised in the syllabus as "intro to renv for dependency management" and "initialize renv", but no worked `renv::init()` / restore activity was found.
-  - Assignment 2 README is still a TODO stub.
+  - Assignment 2 README is still a stub.
 - **Recommended next additions:**
   - Add a short `renv` tutorial/checkpoint to Week 3.
   - Add `renv.lock` expectations and a recovery note.
@@ -115,8 +115,8 @@ Decision rule: **Complete** requires both narrative coverage and a runnable exam
   - `weeks/week04-git-collaboration/index.qmd` / `Setting Up Your Group Repository`: term project group repository steps.
   - `weeks/week04-git-collaboration/index.qmd` / `Practice Exercise: The Full Workflow Drill`: concrete exercise.
 - **What's missing:**
-  - M0 brief exists but is a TODO stub.
-  - Assignment 3 README exists but is a TODO stub.
+  - M0 brief exists but is a stub.
+  - Assignment 3 README exists but is a stub.
 - **Recommended next additions:**
   - Expand `milestones/m0-group-formation/README.md` with submission evidence.
   - Expand `assignments/assignment03-git/README.md` with branch/PR screenshots or required proof.
@@ -134,7 +134,7 @@ Decision rule: **Complete** requires both narrative coverage and a runnable exam
   - `assignments/assignment04-polyglot/README.md`: "reading Python/pandas, translating a small R task, and verifying parity."
 - **What's missing:**
   - Week 5 has strong Python coverage but weak explicit R-deepening exercises.
-  - Assignment 4 README is a TODO stub.
+  - Assignment 4 README is a stub.
   - Dependency documentation is covered for Python `requirements.txt`, but the syllabus framing of R deepening is not clearly tied to a student output.
 - **Recommended next additions:**
   - Add one Week 5 exercise that repeats a task in R and Python and compares outputs.
@@ -144,59 +144,56 @@ Decision rule: **Complete** requires both narrative coverage and a runnable exam
 ### Week 6
 
 - **Topic name (exact from syllabus):** Data Visualization
-- **Status:** Needs Improvement
+- **Status:** Complete
 - **Evidence:**
-  - `weeks/week06-visualization/index.qmd` / `Overview`: "publication-quality visualizations" and "ggplot2 or plotly".
-  - `weeks/week06-visualization/index.qmd` / `Content TODO`: "Add a worked ggplot2 example"; "Add one intentionally misleading AI-generated chart".
-  - `weeks/week06-visualization/activity-ai-visual-audit.qmd` / `Goal`: evaluate "correctness, clarity, bias, aggregation choices, and misleading design."
-  - `assignments/assignment05-visualization/README.md`: "original plot, revised plot, and audit note."
+  - `weeks/week06-visualization/index.qmd` / `Objectives`: build a rerunnable `ggplot2` visualization, identify misleading visual choices, revise labels/scale/color/grouping/caption, and audit AI-assisted code.
+  - `weeks/week06-visualization/worked-example-ggplot.qmd` / `Plot`: runnable mean BMI by income group across NHANES cycle.
+  - `weeks/week06-visualization/worked-example-ggplot.qmd` / `Optional Plotly Check`: optional `plotly::ggplotly()` extension.
+  - `weeks/week06-visualization/activity-ai-visual-audit.qmd` / `Audit Categories`: correctness, design, interpretation, bias and aggregation, reproducibility.
+  - `weeks/week06-visualization/instructor/flawed-plot-code.R`: flawed plot with misleading design choices.
+  - `weeks/week06-visualization/instructor/answer-key-visual-audit.md`: planted issues and acceptable corrections.
+  - `assignments/assignment05-visualization/README.md` / `What To Submit`: `visualization.qmd`, rendered output, corrected plot, audit note, caption, AI-use note, and M1 link note.
 - **What's missing:**
-  - Worked ggplot2 example.
-  - Plotly or interactive extension.
-  - Flawed AI chart plus corrected version.
-  - Concrete starter data and prompt.
+  - Nothing essential for the Week 6 syllabus topic.
 - **Recommended next additions:**
-  - Add a runnable ggplot2 tutorial using shared data.
-  - Add one intentionally flawed chart and student audit questions.
-  - Add a small plotly extension as optional enrichment.
+  - Re-render the worked example before release after any data refresh.
+  - Keep the optional plotly extension clearly secondary to the static ggplot submission.
 
 ### Week 7
 
 - **Topic name (exact from syllabus):** EDA, Table 1 & AI Auditing
-- **Status:** Needs Improvement
+- **Status:** Complete
 - **Evidence:**
-  - `weeks/week07-eda-ai-audit/index.qmd` / `Overview`: EDA and "standard Table 1".
-  - `weeks/week07-eda-ai-audit/index.qmd` / `Content TODO`: "Build a worked EDA"; "Add Table 1 expectations"; "Add a planted-error AI audit exercise."
-  - `weeks/week07-eda-ai-audit/activity-table1-audit.qmd` / `Goal`: "create a descriptive summary and audit AI-generated code".
-  - `assignments/assignment06-eda-ai-audit/README.md`: "EDA, Table 1 or equivalent descriptive summary, planted-error audit, and provenance notes."
+  - `weeks/week07-eda-ai-audit/index.qmd` / `Objectives`: cohort definition, missingness, Table 1, descriptive limits, and audit categories.
+  - `weeks/week07-eda-ai-audit/worked-example-table1.qmd` / `Define the Analysis Cohort`: age 20-80 cohort decision.
+  - `weeks/week07-eda-ai-audit/worked-example-table1.qmd` / `Missingness Check`: key-variable missingness table.
+  - `weeks/week07-eda-ai-audit/worked-example-table1.qmd` / `Table 1-Style Summary`: N, BMI mean (SD), and age mean (SD) by `IncomeGroup`.
+  - `weeks/week07-eda-ai-audit/instructor/planted-error-starter.qmd`: starter with wrong cohort, hidden missingness, statistic label mismatch, missing SD, causal overclaim, and weak stewardship.
+  - `weeks/week07-eda-ai-audit/instructor/planted-error-key.md`: corrected approach for each planted issue.
+  - `assignments/assignment06-eda-ai-audit/README.md` / `What To Submit`: EDA note, rendered output, Table 1 CSV, audit note, stewardship note, and AI-use note.
 - **What's missing:**
-  - Worked EDA with data path.
-  - Table 1 variables and example output.
-  - Planted-error code/summary/visualization.
-  - Instructor key outside student page.
+  - Nothing essential for the Week 7 syllabus topic.
 - **Recommended next additions:**
-  - Build around `examples/data/` or a week-local starter dataset.
-  - Add a runnable Table 1 example.
-  - Add AI audit prompts and expected fixes.
+  - Recheck all summary labels after any dataset refresh.
+  - Keep the survey-design caution visible so students do not treat the unweighted example as a population estimate.
 
 ### Week 8
 
 - **Topic name (exact from syllabus):** Dashboard Prototypes for KT
-- **Status:** Needs Improvement
+- **Status:** Complete
 - **Evidence:**
-  - `weeks/week08-dashboard-kt/index.qmd` / `Overview`: Shiny apps, dashboards, and KT.
-  - `weeks/week08-dashboard-kt/index.qmd` / `Content TODO`: "Decide the required core pathway"; "Add a minimal dashboard starter".
-  - `weeks/week08-dashboard-kt/starter-dashboard.qmd` / `Required Elements`: audience-specific question, control, visualization, interpretation, limitation.
-  - `assignments/assignment07-dashboard/README.md`: "minimal dashboard-style KT product from EDA outputs."
+  - `weeks/week08-dashboard-kt/index.qmd` / `Overview`: first app-forward week and Codespaces-friendly local Shiny exemplar.
+  - `weeks/week08-dashboard-kt/index.qmd` / `Pathway Choice`: core local Shiny pathway and optional static dashboard demonstration.
+  - `examples/nhanes-equity/snippets/case-study-dashboard.qmd`: `shiny::runApp("examples/nhanes-equity/app")` instruction.
+  - `weeks/week08-dashboard-kt/starter-dashboard.qmd` / `Control`: static dashboard-style control value.
+  - `weeks/week08-dashboard-kt/starter-dashboard.qmd` / `Visualization`: runnable plot from the NHANES CSV snapshot.
+  - `weeks/week08-dashboard-kt/starter-dashboard.qmd` / `Privacy-Safe Publishing`: aggregate-only, small-cell, descriptive, and AI-upload cautions.
+  - `assignments/assignment07-dashboard/README.md` / `What To Submit`: dashboard adaptation note, before/after text, testing log, limitation note, privacy check, preview, and AI-use note.
 - **What's missing:**
-  - Actual dashboard code.
-  - Required pathway decision: Quarto dashboard, Shiny, or static HTML/JS.
-  - Codespaces testing instructions.
-  - Privacy-safe publishing guidance.
+  - Nothing essential for the Week 8 syllabus topic.
 - **Recommended next additions:**
-  - Add a minimal Quarto dashboard starter that renders.
-  - Add a fallback static version.
-  - State which pathway is required and which are optional.
+  - Test the local Shiny run path in Codespaces before release.
+  - Keep deployment framed as a demonstration unless the assignment changes.
 
 ### Week 9
 
@@ -204,7 +201,7 @@ Decision rule: **Complete** requires both narrative coverage and a runnable exam
 - **Status:** Needs Improvement
 - **Evidence:**
   - `weeks/week09-science-communication/index.qmd` / `Overview`: "Audience-Specific KT", plain language, slide decks, peer review.
-  - `weeks/week09-science-communication/index.qmd` / `Content TODO`: "Add a revealjs starter deck"; "Add a plain-language summary exercise."
+  - `weeks/week09-science-communication/index.qmd` / `Release Prep`: revealjs starter deck and plain-language summary exercise still need expansion.
   - `weeks/week09-science-communication/revealjs-peer-feedback.qmd` / `Peer Feedback Prompts`: main message, evidence, overclaiming, reproducibility/audience fit.
   - `assignments/assignment08-communication/README.md`: "revealjs slides, plain-language summary, citations, and peer feedback."
 - **What's missing:**
@@ -223,7 +220,7 @@ Decision rule: **Complete** requires both narrative coverage and a runnable exam
 - **Status:** Needs Improvement
 - **Evidence:**
   - `weeks/week10-reporting-publishing/index.qmd` / `Overview`: dynamic report and publishing workflows.
-  - `weeks/week10-reporting-publishing/index.qmd` / `Content TODO`: report skeleton, citation examples, GitHub Pages setup, grounding audit.
+  - `weeks/week10-reporting-publishing/index.qmd` / `Release Prep`: report skeleton, citation examples, GitHub Pages setup, grounding audit.
   - `weeks/week10-reporting-publishing/report-template.qmd` / `Suggested Sections`: question, data, methods, results, limitations, plain-language summary, AI-use note.
   - `assignments/assignment09-reporting/README.md`: "Quarto report, citations, GitHub Pages or private equivalent, and grounding audit."
 - **What's missing:**
@@ -242,7 +239,7 @@ Decision rule: **Complete** requires both narrative coverage and a runnable exam
 - **Status:** Needs Improvement
 - **Evidence:**
   - `weeks/week11-portfolio-surgery/index.qmd` / `Overview`: dependency management, auditability, and peer review.
-  - `weeks/week11-portfolio-surgery/index.qmd` / `Content TODO`: fresh Codespace test, broken-project exercise, Assignment 10, Milestone 4, final checklist.
+  - `weeks/week11-portfolio-surgery/index.qmd` / `Release Prep`: fresh Codespace test, broken-project exercise, Assignment 10, Milestone 4, final checklist.
   - `weeks/week11-portfolio-surgery/reproducibility-test.qmd` / `Failure Log Template`: checks for repository, packages, report, dashboard, README.
   - `assignments/assignment10-portfolio-surgery/README.md`: "fresh Codespace test, dependency/path repair, README clarity".
   - `milestones/m4-peer-review/README.md`: peer review covering clarity, reproducibility, auditability, KT value.
@@ -262,7 +259,7 @@ Decision rule: **Complete** requires both narrative coverage and a runnable exam
 - **Status:** Needs Improvement
 - **Evidence:**
   - `weeks/week12-presentations/index.qmd` / `Overview`: first presentation block and peer review.
-  - `weeks/week12-presentations/index.qmd` / `Content TODO`: timing rules, slide submission, peer feedback form, rubric.
+  - `weeks/week12-presentations/index.qmd` / `Release Prep`: timing rules, slide submission, peer feedback form, rubric.
   - `milestones/m5-presentation/README.md`: "presentation slides, live Q&A, and peer review feedback."
 - **What's missing:**
   - Presentation timing rules.
@@ -280,10 +277,10 @@ Decision rule: **Complete** requires both narrative coverage and a runnable exam
 - **Status:** Needs Improvement
 - **Evidence:**
   - `weeks/week13-presentations/index.qmd` / `Overview`: completes M5 and feedback before final portfolio.
-  - `weeks/week13-presentations/index.qmd` / `Content TODO`: group schedule, final reminders, closing reflection prompt.
+  - `weeks/week13-presentations/index.qmd` / `Release Prep`: group schedule, final reminders, closing reflection prompt.
   - `milestones/m5-presentation/README.md`: "slides render before class and claims are grounded".
 - **What's missing:**
-  - Group schedule or placeholder.
+  - Group schedule or release-ready timing note.
   - Final portfolio reminders.
   - Closing reflection prompt.
 - **Recommended next additions:**
@@ -298,7 +295,7 @@ Decision rule: **Complete** requires both narrative coverage and a runnable exam
 - **Evidence:**
   - `syllabus/syllabus-inventory-completion-matrix.md` / `Extracted Schedule`: "Final portfolio due Dec 11, Fri 4 PM."
   - `milestones/final-portfolio/README.md`: "complete repository, reproducible report, dashboard-style KT product, presentation materials, and AI-use audit note."
-  - `milestones/final-portfolio/README.md`: `TODO: Build from milestones/milestone-template.qmd`.
+  - `milestones/final-portfolio/README.md`: still uses the milestone template stub.
   - `milestones/index.qmd` / milestone table: "Complete reproducible portfolio."
 - **What's missing:**
   - Detailed final portfolio checklist.
@@ -316,28 +313,28 @@ Decision rule: **Complete** requires both narrative coverage and a runnable exam
 
 | Deliverable | Syllabus expectation | Existing repo page(s) | Alignment | Mismatch / risk |
 |---|---|---|---|---|
-| A1 | Assignment 1 due Week 2; fork/template, Codespace, Quarto, commit/sync | `assignments/index.qmd`; `assignments/assignment01-workflows/README.md`; `weeks/week02-modern-workflows/index.qmd` / `Assignment 1` | Needs Improvement | Week page has useful task detail, but assignment README is a TODO stub. Syllabus says fork; Week 2 content says GitHub Classroom. |
-| A2 | R basics, tidyverse, functions, debugging, `renv`, Quarto documentation | `assignments/assignment02-r-with-ai/README.md`; `weeks/week03-r-with-ai/index.qmd` | Needs Improvement | Week 3 content is strong, but assignment README is a TODO stub and `renv` lacks a worked activity. |
-| A3 | Git collaboration and repo hygiene | `assignments/assignment03-git/README.md`; `weeks/week04-git-collaboration/index.qmd` | Needs Improvement | Week content is strong, but assignment README is a TODO stub. |
-| A4 | Polyglot awareness and R deepening | `assignments/assignment04-polyglot/README.md`; `weeks/week05-polyglot-r-deepening/index.qmd` | Needs Improvement | Python coverage is strong; assignment README is a TODO stub; R deepening is not explicit enough. |
-| A5 | Visualization and AI visual audit | `assignments/assignment05-visualization/README.md`; `weeks/week06-visualization/index.qmd`; `weeks/week06-visualization/activity-ai-visual-audit.qmd` | Needs Improvement | Assignment README and week pages identify outputs, but runnable examples and starter assets are TODO. |
-| A6 | EDA, Table 1, planted-error audit | `assignments/assignment06-eda-ai-audit/README.md`; `weeks/week07-eda-ai-audit/index.qmd`; `weeks/week07-eda-ai-audit/activity-table1-audit.qmd` | Needs Improvement | Deliverable is named, but worked EDA, Table 1 variables, and planted-error materials are TODO. |
-| A7 | Dashboard-style KT prototype | `assignments/assignment07-dashboard/README.md`; `weeks/week08-dashboard-kt/index.qmd`; `weeks/week08-dashboard-kt/starter-dashboard.qmd` | Needs Improvement | Required pathway and starter code are TODO. |
-| A8 | Scientific communication and peer feedback | `assignments/assignment08-communication/README.md`; `weeks/week09-science-communication/index.qmd`; `weeks/week09-science-communication/revealjs-peer-feedback.qmd` | Needs Improvement | Peer prompts exist; revealjs starter, plain-language exercise, and assignment brief are TODO. |
-| A9 | Reporting, citations, publishing | `assignments/assignment09-reporting/README.md`; `weeks/week10-reporting-publishing/index.qmd`; `weeks/week10-reporting-publishing/report-template.qmd` | Needs Improvement | Report sections exist; citations, GitHub Pages/private alternative, and assignment brief are TODO. |
-| A10 | Portfolio surgery and reproducibility test | `assignments/assignment10-portfolio-surgery/README.md`; `weeks/week11-portfolio-surgery/index.qmd`; `weeks/week11-portfolio-surgery/reproducibility-test.qmd` | Needs Improvement | Failure log exists; step-by-step protocol and assignment brief are TODO. |
+| A1 | Assignment 1 due Week 2; fork/template, Codespace, Quarto, commit/sync | `assignments/index.qmd`; `assignments/assignment01-workflows/README.md`; `weeks/week02-modern-workflows/index.qmd` / `Assignment 1` | Needs Improvement | Week page has useful task detail, but assignment README is still a stub. Syllabus says fork; Week 2 content says GitHub Classroom. |
+| A2 | R basics, tidyverse, functions, debugging, `renv`, Quarto documentation | `assignments/assignment02-r-with-ai/README.md`; `weeks/week03-r-with-ai/index.qmd` | Needs Improvement | Week 3 content is strong, but assignment README is still a stub and `renv` lacks a worked activity. |
+| A3 | Git collaboration and repo hygiene | `assignments/assignment03-git/README.md`; `weeks/week04-git-collaboration/index.qmd` | Needs Improvement | Week content is strong, but assignment README is still a stub. |
+| A4 | Polyglot awareness and R deepening | `assignments/assignment04-polyglot/README.md`; `weeks/week05-polyglot-r-deepening/index.qmd` | Needs Improvement | Python coverage is strong; assignment README is still a stub; R deepening is not explicit enough. |
+| A5 | Visualization and AI visual audit | `assignments/assignment05-visualization/README.md`; `weeks/week06-visualization/index.qmd`; `weeks/week06-visualization/worked-example-ggplot.qmd`; `weeks/week06-visualization/activity-ai-visual-audit.qmd`; `weeks/week06-visualization/instructor/flawed-plot-code.R`; `weeks/week06-visualization/instructor/answer-key-visual-audit.md` | Complete | Brief, worked example, flawed/corrected plot materials, and submission checklist are now aligned. |
+| A6 | EDA, Table 1, planted-error audit | `assignments/assignment06-eda-ai-audit/README.md`; `weeks/week07-eda-ai-audit/index.qmd`; `weeks/week07-eda-ai-audit/worked-example-table1.qmd`; `weeks/week07-eda-ai-audit/activity-table1-audit.qmd`; `weeks/week07-eda-ai-audit/instructor/planted-error-starter.qmd`; `weeks/week07-eda-ai-audit/instructor/planted-error-key.md` | Complete | Brief, worked EDA/Table 1 example, planted-error starter, stewardship revision, and key are now aligned. |
+| A7 | Dashboard-style KT prototype | `assignments/assignment07-dashboard/README.md`; `weeks/week08-dashboard-kt/index.qmd`; `weeks/week08-dashboard-kt/starter-dashboard.qmd`; `examples/nhanes-equity/app/app.R` | Complete | Required core path is local Shiny exemplar plus small audience-facing KT adaptation; static dashboard is an optional demonstration. |
+| A8 | Scientific communication and peer feedback | `assignments/assignment08-communication/README.md`; `weeks/week09-science-communication/index.qmd`; `weeks/week09-science-communication/revealjs-peer-feedback.qmd` | Needs Improvement | Peer prompts exist; revealjs starter, plain-language exercise, and assignment brief still need expansion. |
+| A9 | Reporting, citations, publishing | `assignments/assignment09-reporting/README.md`; `weeks/week10-reporting-publishing/index.qmd`; `weeks/week10-reporting-publishing/report-template.qmd` | Needs Improvement | Report sections exist; citations, GitHub Pages/private alternative, and assignment brief still need expansion. |
+| A10 | Portfolio surgery and reproducibility test | `assignments/assignment10-portfolio-surgery/README.md`; `weeks/week11-portfolio-surgery/index.qmd`; `weeks/week11-portfolio-surgery/reproducibility-test.qmd` | Needs Improvement | Failure log exists; step-by-step protocol and assignment brief still need expansion. |
 
 ### Milestones M0-M5 and Final Portfolio
 
 | Deliverable | Syllabus expectation | Existing repo page(s) | Alignment | Mismatch / risk |
 |---|---|---|---|---|
-| M0 | Group formation; one member forks template and adds teammates | `milestones/m0-group-formation/README.md`; `weeks/week04-git-collaboration/index.qmd` / `Setting Up Your Group Repository` | Needs Improvement | Week 4 has group setup steps; milestone README is a TODO stub and not in `_quarto.yml`. |
-| M1 | Proposal: research question, dataset, feasibility, provenance/stewardship | `milestones/m1-proposal/README.md`; `weeks/week05-polyglot-r-deepening/python11-project-milestone.qmd` | Needs Improvement | M1 README is a TODO stub. Week 5 has a checklist, but syllabus places M1 due Week 6. |
-| M2 | Preliminary analysis: cleaning, EDA, Table 1, runnable repo | `milestones/m2-preliminary-analysis/README.md`; `weeks/week07-eda-ai-audit/index.qmd` | Needs Improvement | Milestone README and Week 7 are TODO-heavy; no worked EDA/Table 1 example. |
-| M3 | Project update: draft dashboard-style KT product + report draft | `milestones/m3-project-update/README.md`; `weeks/week10-reporting-publishing/index.qmd`; `weeks/week08-dashboard-kt/index.qmd` | Needs Improvement | M3 README is a TODO stub; Week 8/10 content is still scaffolded. |
-| M4 | Peer review with reproducibility and auditability checks | `milestones/m4-peer-review/README.md`; `weeks/week11-portfolio-surgery/index.qmd` | Needs Improvement | M4 README is a TODO stub; Week 11 asks to add peer review instructions. |
-| M5 | Presentations, live Q&A, peer review | `milestones/m5-presentation/README.md`; `weeks/week12-presentations/index.qmd`; `weeks/week13-presentations/index.qmd` | Needs Improvement | Presentation milestone exists but is a TODO stub; rubric and timing rules are missing. |
-| Final Portfolio | Complete report, dashboard-style KT product, auditable repo | `milestones/final-portfolio/README.md`; `milestones/index.qmd` | Needs Review | Final portfolio README is a TODO stub and not referenced in `_quarto.yml`. |
+| M0 | Group formation; one member forks template and adds teammates | `milestones/m0-group-formation/README.md`; `weeks/week04-git-collaboration/index.qmd` / `Setting Up Your Group Repository` | Needs Improvement | Week 4 has group setup steps; milestone README is still a stub and not in `_quarto.yml`. |
+| M1 | Proposal: research question, dataset, feasibility, provenance/stewardship | `milestones/m1-proposal/README.md`; `weeks/week06-visualization/index.qmd`; `assignments/assignment05-visualization/README.md` | Complete | M1 brief now specifies purpose, inputs, exact files, Canvas route, feasibility, provenance, stewardship, and Week 6 linkage. |
+| M2 | Preliminary analysis: cleaning, EDA, Table 1, runnable repo | `milestones/m2-preliminary-analysis/README.md`; `weeks/week07-eda-ai-audit/index.qmd`; `weeks/week07-eda-ai-audit/worked-example-table1.qmd` | Complete | M2 brief now specifies cohort, missingness, table, figure, methods, stewardship update, and exact submission files. |
+| M3 | Project update: draft dashboard-style KT product + report draft | `milestones/m3-project-update/README.md`; `weeks/week10-reporting-publishing/index.qmd`; `weeks/week08-dashboard-kt/index.qmd` | Needs Improvement | M3 README is still a stub; Week 10 content needs the next reporting/publishing pass. |
+| M4 | Peer review with reproducibility and auditability checks | `milestones/m4-peer-review/README.md`; `weeks/week11-portfolio-surgery/index.qmd` | Needs Improvement | M4 README is still a stub; Week 11 asks to add peer review instructions. |
+| M5 | Presentations, live Q&A, peer review | `milestones/m5-presentation/README.md`; `weeks/week12-presentations/index.qmd`; `weeks/week13-presentations/index.qmd` | Needs Improvement | Presentation milestone exists but is still a stub; rubric and timing rules are missing. |
+| Final Portfolio | Complete report, dashboard-style KT product, auditable repo | `milestones/final-portfolio/README.md`; `milestones/index.qmd` | Needs Review | Final portfolio README is still a stub and not referenced in `_quarto.yml`. |
 
 ## 4) Consistency Checks
 
@@ -350,7 +347,7 @@ Decision rule: **Complete** requires both narrative coverage and a runnable exam
 
 ### Syllabus Topics in TOC but Missing or Weak Content Pages
 
-- Week 6 through Week 13 all have TOC pages, but each primary week page still contains `TODO Before Release` and `Content TODO`.
+- Weeks 1 and 6-8 now have complete TOC pages and NHANES-aligned student outputs; Weeks 9-13 remain the main area for continued polishing.
 - Assignment and milestone index/template pages are in the TOC, but individual A1-A10 and M0-M5 README briefs are not.
 - `syllabus/SPPH-381H-Course-Outline-v4.qmd` is a source-of-truth file but is not referenced in `_quarto.yml`; only `syllabus/syllabus-inventory-completion-matrix.md` is in the book.
 - Final Portfolio appears in `milestones/index.qmd` and `milestones/final-portfolio/README.md`, but there is no dedicated TOC entry for the final portfolio brief.

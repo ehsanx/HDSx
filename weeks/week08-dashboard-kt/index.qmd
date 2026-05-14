@@ -2,27 +2,57 @@
 
 ## Overview
 
-Static PDF reports often sit unread, so this chapter introduces dynamic Knowledge Translation through Shiny apps and dashboards. Students will take their prior EDA results and transform them into interactive web tools that allow users to filter and explore the data themselves. You will learn the best practices of user interface design for health data and deploy your first live dashboard to the web via GitHub Pages or Shinylive.
+This is the first app-forward week. Students move from audited EDA outputs to a small dashboard-style Knowledge Translation product that helps a defined audience explore one descriptive question.
+
+The required pathway is beginner-friendly and reliable in Codespaces: run the complete NHANES Shiny exemplar locally, inspect how it turns a dataset into audience-facing controls and text, then make one small audience-facing adaptation. Static Quarto dashboard and deployment options are demonstrations, not required live publishing work.
+
+## Objectives
+
+By the end of the week, students can:
+
+- explain the difference between a static report, a Quarto dashboard-style product, and a Shiny app;
+- run the NHANES dashboard exemplar locally from the repository root;
+- identify one audience-specific question that a dashboard can answer without overclaiming;
+- make a small UI-text or documentation improvement that clarifies interpretation;
+- test a dashboard locally and record what was checked;
+- apply privacy-safe publishing guidance before sharing any health-data product.
 
 ## Connection
 
-Week 7 established an auditable descriptive foundation. This week is the first app-forward week: students run the NHANES dashboard, identify an audience, and improve one audience-facing element. Next week turns one dashboard finding into a short scientific communication product.
+Week 7 established an auditable descriptive foundation. Week 8 asks how a non-technical audience will encounter that evidence in a dashboard. Week 9 turns one dashboard finding into a concise scientific communication product.
 
 ## Dashboard Case Study: NHANES Equity
 
 {{< include ../../examples/nhanes-equity/snippets/case-study-dashboard.qmd >}}
 
-## In-Class Activity
+## Pathway Choice
 
-- Run the app and describe the intended audience in one sentence.
-- Make one audience-facing improvement to a label, help text, or interpretation note.
-- Verify the app still loads the cached RDS after your change.
-- Write one limitation statement that belongs inside or beside the dashboard.
+Core pathway: run and critique the local Shiny exemplar, then submit a dashboard adaptation note. This keeps the week focused on KT design, testing, and interpretation.
 
-Student output: a local app run note, one audience-facing text improvement, and a limitation statement. Assignment link: `../../assignments/assignment07-dashboard/README.md`.
+Optional pathway: explore the [starter dashboard](starter-dashboard.qmd) as a static Quarto-style mockup or use it as a planning sketch before changing app text.
+
+## Class Plan
+
+1. Run the NHANES dashboard from the repository root.
+2. Choose a stakeholder audience and write one question that audience could answer from the dashboard.
+3. Inspect one control, title, caption, help text, or interpretation note.
+4. Improve that audience-facing text without changing analytic logic.
+5. Rerun the app and record the local test result.
+6. Draft one privacy-safe publishing check and one limitation statement.
+
+## Student Output
+
+By the end of class, each student has a local app run note, an audience sentence, a before/after text change, a testing log, and a limitation statement.
+
+Assignment link: [Assignment 7](../../assignments/assignment07-dashboard/README.md).
 
 ## Definition of Done
 
-- Students can produce a small dashboard-style KT artifact from prior EDA outputs.
-- The dashboard runs or renders in the supported workflow.
-- The page distinguishes required core work from optional deployment extensions.
+- The app runs locally from the cached NHANES data.
+- The audience-facing change improves clarity without changing the analysis.
+- The testing log records how the dashboard was checked in Codespaces or the local R session.
+- The privacy-safe publishing note avoids row-level data sharing, small-cell claims, and causal overreach.
+
+## What Students Leave With
+
+Students leave with a tested dashboard adaptation note and a decision rule for their term project: use the simplest product that serves the audience, whether that is a report, slide, static dashboard, or Shiny app.

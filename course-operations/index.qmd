@@ -1,6 +1,6 @@
 # Course Operations {.unnumbered}
 
-This chapter is the single maintainer-facing home for course planning, assistant guidance, and release-readiness checks. Use it before editing the book, preparing a week for release, or asking an RA/TA to review course materials.
+This chapter is the single maintainer-facing home for course planning, assistant guidance, and release-readiness checks. Use it before editing the book, preparing a week for release, or asking an instructional reviewer to review course materials.
 
 ## Operating Principles
 
@@ -55,7 +55,7 @@ This chapter is the single maintainer-facing home for course planning, assistant
 - The milestone states the exact artifact students submit.
 - The milestone maps to the final portfolio.
 - The rubric includes reproducibility, auditability, data stewardship, and KT value.
-- Peer or TA review instructions are actionable.
+- Peer review and instructional review instructions are actionable.
 
 ### Reproducibility
 
@@ -91,12 +91,19 @@ The NHANES Health Equity Dashboard case study is the course spine. Students revi
 
 The cached data live in `examples/nhanes-equity/data/` so the app, script, README, and weekly snippets all use one consistent location.
 
+### Editor Decisions
+
+- The NHANES sequence is data-first through Week 7 and app-forward starting in Week 8.
+- Week 8's required pathway is local and Codespaces-friendly: run the Shiny exemplar, make one audience-facing text or documentation improvement, and record a test result.
+- Static dashboard and deployment paths are optional demonstrations unless a later assignment explicitly asks for them.
+- Weeks 6-8 now have complete exemplar packs; instructional reviewers use the provided keys and briefs for facilitation rather than drafting new NHANES materials.
+
 ### Teaching Progression
 
 - Weeks 1-2: provenance, ethics, folder structure, relative paths, and rendering; no app run instructions.
 - Weeks 3-5: data loading, missingness checks, AI audit comments, documentation-only Git changes, and R/Python parity checks using the CSV snapshot.
 - Weeks 6-7: visualization critique, flawed-plot audit, EDA, Table 1, and planted-error audit.
-- Week 8: first week where running the Shiny app is central.
+- Week 8: first app-forward week, with the Shiny dashboard exemplar used for a small KT adaptation.
 - Weeks 9-10: slides, reports, source notes, limitations, and audience-specific communication.
 - Week 11: fresh-session reproducibility testing and optional rebuild from CDC if internet access is available.
 
@@ -110,6 +117,7 @@ The cached data live in `examples/nhanes-equity/data/` so the app, script, READM
 - Week 8 is the first week where app running is central.
 - Student changes should stay small unless the instructor explicitly assigns a dashboard feature.
 - Relative paths are part of the lesson; discourage absolute machine-specific paths.
+- Weeks 6-8 should be treated as complete NHANES exemplars; updates should maintain the existing worked examples, activities, answer keys, and assignment briefs.
 
 ### Case Study Done
 

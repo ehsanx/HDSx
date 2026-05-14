@@ -134,8 +134,11 @@ book:
         - assignments/assignment04-polyglot/README.md
         - assignments/assignment05-visualization/README.md
         - assignments/assignment06-eda-ai-audit/README.md
+        - assignments/assignment07-dashboard/README.md
         - milestones/index.qmd
         - milestones/milestone-template.qmd
+        - milestones/m1-proposal/README.md
+        - milestones/m2-preliminary-analysis/README.md
     - part: "Reference: Data Sources"
       chapters:
         - references/data-sources/nhis.qmd

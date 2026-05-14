@@ -2,19 +2,22 @@
 
 ## Goal
 
-Students practice evaluating whether a health dataset is usable, ethical, documented, and appropriate for reproducible analysis.
+Evaluate whether a health dataset is usable, ethical, documented, and appropriate for reproducible analysis. This activity is about judgment and documentation. No coding is required.
 
-## Approved Starter Portals
+## Approved Portals
 
-Choose **one** dataset or indicator page from one of the portals below.
+Choose one dataset or indicator page from one of these portals:
 
-1. **Survey-style microdata:** NHANES or NHIS from CDC/NCHS.
-2. **Aggregated indicators:** WHO Global Health Observatory.
-3. **Canadian open data:** BC Data Catalogue or the Open Government Portal.
+- CDC/NCHS public-use survey data, such as NHANES or NHIS;
+- WHO Global Health Observatory;
+- BC Data Catalogue;
+- Government of Canada Open Government Portal.
 
-The NHANES Health Equity data spine can be used as the shared practice example when students need a common dataset.
+The NHANES Health Equity data spine may be used as the shared classroom example.
 
 ## Student Template
+
+Copy this template into your notes.
 
 ```yaml
 dataset_name: ""
@@ -24,17 +27,25 @@ date_accessed: "YYYY-MM-DD"
 license_terms: ""
 geography: ""
 time_coverage: ""
-data_level: ""   # microdata / aggregated / unknown
+data_level: ""   # microdata / aggregated indicator / unknown
+file_format: ""  # CSV / RDS / XLSX / JSON / other
+metadata_or_codebook: ""
 variables_of_interest:
   - name: ""
     definition: ""
+    unit: ""
+    caveat: ""
 known_limitations:
   - ""
+privacy_security_notes: ""
 stewardship_notes: ""
+indigenous_data_relevance: "no / yes / unknown"
+kt_framing_sentence: ""
+how_to_cite: ""
 ai_use_note: ""
 ```
 
-## Completed Example: NHANES
+## Completed Example
 
 ```yaml
 dataset_name: "NHANES Health Equity classroom dataset"
@@ -45,40 +56,62 @@ license_terms: "Public-use NHANES files; cite CDC/NCHS documentation"
 geography: "United States"
 time_coverage: "Multiple NHANES cycles represented in the prepared class file"
 data_level: "Microdata-derived classroom dataset"
+file_format: "CSV and RDS cached in examples/nhanes-equity/data/"
+metadata_or_codebook: "CDC/NCHS NHANES documentation and case-study README"
 variables_of_interest:
   - name: "BMI"
     definition: "Body mass index from NHANES body measures data"
+    unit: "kg/m^2"
+    caveat: "Use descriptively unless survey design and weights are handled correctly"
 known_limitations:
-  - "Prepared class dataset is descriptive and should not be treated as a causal analysis"
+  - "Prepared class dataset is for classroom analysis and should not be treated as a causal analysis"
   - "Population inference requires attention to NHANES survey design and weights"
-stewardship_notes: "Use public-use data responsibly, avoid small-cell disclosure, and state limitations plainly."
-ai_use_note: "AI may help draft plain-language summaries, but source documentation must be checked directly."
+privacy_security_notes: "Use public-use data responsibly, avoid small-cell claims, and do not upload row-level data to AI tools"
+stewardship_notes: "State limitations plainly and avoid stigmatizing group comparisons"
+indigenous_data_relevance: "unknown in the prepared class example; check source documentation for any project dataset"
+kt_framing_sentence: "This dataset can help students practice describing health equity patterns while learning to state limits clearly"
+how_to_cite: "Cite CDC/NCHS NHANES documentation and the course case-study README"
+ai_use_note: "AI may help draft plain-language wording, but source documentation must be checked directly"
 ```
 
 ## Completion Checklist
 
-To be marked **Complete**, your card must include:
+To be marked complete, your card must include:
 
-- [ ] A stable link or access date.
-- [ ] Publisher or organization.
-- [ ] License or terms of use.
-- [ ] Data level: microdata, aggregated indicator, or unknown with explanation.
-- [ ] At least one variable definition grounded in documentation.
-- [ ] One limitation or stewardship risk.
-- [ ] AI-use note explaining what was drafted and how it was checked.
-
-## Submission
-
-Submit your completed card in Canvas under the Week 1 module. Starting in Week 2, keep a copy in your course repository as `data-intake-card.md`.
+- stable source link or access date;
+- publisher or steward;
+- license or terms of use;
+- geography and time coverage;
+- data level and file format;
+- documentation or codebook location;
+- at least one documented variable definition;
+- one limitation or stewardship risk;
+- one privacy or security note;
+- Indigenous Data Sovereignty relevance marked as no, yes, or unknown;
+- KT framing sentence;
+- AI-use note.
 
 ## Scoring Guide
 
-- **Complete:** Stable source, publisher, terms, data level, documented variable definition, limitation/stewardship note, and AI-use note are present.
-- **Needs work:** Source documentation is missing, license/terms are unclear, variable definitions are guessed, or limitations are absent.
+| Rating | Evidence |
+|---|---|
+| Complete | Source, publisher, terms, metadata, variable definition, limitation, stewardship note, KT framing, and AI-use note are present and grounded in documentation. |
+| Needs work | Source documentation is missing, license terms are unclear, variable definitions are guessed, risks are absent, or AI-written text is not checked against official documentation. |
+
+## Submission
+
+Submit the completed card in Canvas under the Week 1 module. Starting in Week 2, keep a copy in your course repository as:
+
+```text
+data-intake-card.md
+```
 
 ## Reproducibility Check
 
-- The dataset link is stable or includes an access date.
-- The publisher and license are named.
-- Variable definitions come from source documentation, not AI guesses.
-- The AI-use note states how the student checked AI-assisted text.
+Before submitting, check:
+
+- the link opens or the access date is recorded;
+- the publisher and license are named;
+- variable definitions come from documentation, not guesses;
+- file format and data level are named;
+- the AI-use note says what AI helped with and how the text was checked.
