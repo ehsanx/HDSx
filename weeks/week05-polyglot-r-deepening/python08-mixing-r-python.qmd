@@ -1,4 +1,4 @@
-# Tutorial 8: Mixing R and Python
+# Mixing R and Python
 
 ## Why Interoperability Matters
 

@@ -344,8 +344,8 @@ Decision rule: **Complete** requires both narrative coverage and a runnable exam
 ### Topics Present in Repo but Not Explicitly in Syllabus
 
 - `references/data-sources/*`: detailed standalone data-source tutorials for NHIS, NHANES, BRFSS, CCS, CADS, CTNS, CSADS, PHAC Infobase, CCDSS, GHO, Open Portal, and BC Data Catalogue. These support Week 1 but are more extensive than the syllabus schedule.
-- `assistant-playbook/*`: present in `_quarto.yml` but outside the requested scan inputs and not part of the syllabus topic schedule.
-- `syllabus/syllabus-inventory-completion-matrix.md`: included in `_quarto.yml` as Course Planning; useful internally, but not a student topic from the syllabus schedule.
+- `course-operations/index.qmd`: present in `_quarto.yml` as maintainer-facing course operations guidance; useful internally, but not a student topic from the syllabus schedule.
+- `syllabus/syllabus-inventory-completion-matrix.md`: included in `_quarto.yml` under Course Operations; useful internally, but not a student topic from the syllabus schedule.
 - Several Week 2-5 tutorial fragments are more granular than the syllabus topic names, especially `workflows01-*` through `workflows11-*`, `r01-*` through `r10-*`, `git01-*` through `git10-*`, and `python01-*` through `python14-*`.
 
 ### Syllabus Topics in TOC but Missing or Weak Content Pages

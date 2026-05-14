@@ -26,9 +26,12 @@ book:
 
   chapters:
     - index.qmd
-    - part: "Course Planning"
+    - part: "Course Operations"
       chapters:
+        - course-operations/index.qmd
+        - syllabus/index.qmd
         - syllabus/syllabus-inventory-completion-matrix.md
+        - syllabus/topic-coverage-audit.md
     - part: "Week 0: Asynchronous Onboarding"
       chapters:
         - weeks/week00-onboarding/index.qmd
@@ -147,18 +150,14 @@ book:
         - references/data-sources/gho.qmd
         - references/data-sources/open-portal.qmd
         - references/data-sources/bc-data-catalogue.qmd
-    - part: "Assistant Playbook"
-      chapters:
-        - assistant-playbook/index.qmd
-        - assistant-playbook/definition-of-done.qmd
-        - assistant-playbook/nhanes-equity-case-study.qmd
-        - syllabus/topic-coverage-audit.md
 
 bibliography: references.bib
 
 format:
   html:
     toc: true
+    number-sections: false
+    number-depth: 0
     theme: cosmo
     df-print: paged
     code-fold: false
@@ -174,9 +173,17 @@ format:
   pdf:
     toc: true
     toc-depth: 2
+    number-sections: false
+    number-depth: 0
     toc-title: "Table of contents"
     code-line-numbers: true
     pdf-engine: xelatex
+    header-includes:
+      - \usepackage[table]{xcolor}
+      - \usepackage{tcolorbox}
+      - \tcbuselibrary{skins,breakable}
+      - \definecolor{brandblue}{HTML}{002145}
+      - \definecolor{brandlight}{HTML}{0055B7}
     colorlinks: true
     keep-tex: true
     papersize: letter

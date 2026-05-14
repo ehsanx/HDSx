@@ -1,4 +1,4 @@
-# Tutorial 4: Common Translation Traps
+# Translation Traps
 
 AI translation is useful, but it often hides small language differences. These are the traps to check first.
 

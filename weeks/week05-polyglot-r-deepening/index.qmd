@@ -102,24 +102,24 @@ Work in pairs. One partner reads the R output; the other reads the Python output
 
 Student output: a parity-check note with the R pipeline, R function, Python translation, parity table, and a short AI-use note.
 
-## Tutorial Map
+## Page Map
 
 Use the child pages in this order:
 
-1. [Python vs. R - When and Why?](python01-when-and-why.qmd)
-2. [Setting Up Your Python Environment](python02-environment.qmd)
+1. [Python vs. R](python01-when-and-why.qmd)
+2. [Python Environment](python02-environment.qmd)
 3. [Packages and Reproducibility](python03-packages-reproducibility.qmd)
-4. [Common Translation Traps](python04-translation-traps.qmd)
-5. [Loading and Inspecting Health Data](python05-load-inspect-data.qmd)
-6. [Reading Python Tracebacks](python06-tracebacks.qmd)
-7. [The One Step, One Cell AI Workflow](python07-one-step-one-cell.qmd)
+4. [Translation Traps](python04-translation-traps.qmd)
+5. [Load and Inspect Data](python05-load-inspect-data.qmd)
+6. [Python Tracebacks](python06-tracebacks.qmd)
+7. [One Step, One Cell](python07-one-step-one-cell.qmd)
 8. [Mixing R and Python](python08-mixing-r-python.qmd)
-9. [Creating Reusable Python Scripts](python09-reusable-scripts.qmd)
-10. [Tracking Your Progress With Git](python10-git-progress.qmd)
-11. [Project Proposal Readiness Check](python11-project-milestone.qmd)
+9. [Reusable Python Scripts](python09-reusable-scripts.qmd)
+10. [Git Progress](python10-git-progress.qmd)
+11. [Proposal Readiness](python11-project-milestone.qmd)
 12. [Knowledge Check](python12-knowledge-check.qmd)
-13. [The Bilingual Translation Exercise](python13-translation-exercise.qmd)
-14. [R To Python Cheat Sheet](python14-cheat-sheet.qmd)
+13. [Bilingual Translation](python13-translation-exercise.qmd)
+14. [R To Python Cheatsheet](python14-cheat-sheet.qmd)
 
 For the explicit R mastery exercise, use [R Deepening and Parity Check](r-deepening-parity.qmd).
 

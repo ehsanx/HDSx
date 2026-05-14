@@ -1,4 +1,4 @@
-# Tutorial 7: The One Step, One Cell AI Workflow
+# One Step, One Cell
 
 ## Why This Rule Exists
 

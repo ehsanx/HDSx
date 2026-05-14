@@ -1,4 +1,4 @@
-# Tutorial 14: R To Python Cheat Sheet
+# R To Python Cheatsheet
 
 Use this as a translation aid, not as a substitute for checking outputs.
 

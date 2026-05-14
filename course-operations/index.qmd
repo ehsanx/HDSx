@@ -1,0 +1,121 @@
+# Course Operations {.unnumbered}
+
+This chapter is the single maintainer-facing home for course planning, assistant guidance, and release-readiness checks. Use it before editing the book, preparing a week for release, or asking an RA/TA to review course materials.
+
+## Operating Principles
+
+- Treat the syllabus as the source of truth for weeks, deliverables, and deadlines.
+- Keep student-facing content beginner-accessible and cloud-first.
+- Prefer reproducible Quarto, R, Python, and GitHub Codespaces workflows over local-machine assumptions.
+- Keep generated output separate from source content.
+- Add content where the normalized structure says it belongs: weeks, assignments, milestones, references, examples, or assets.
+
+## Editing Rules
+
+- Update `_quarto.yml` whenever a page should appear in the book.
+- Keep paths relative and test them after moving files.
+- Use `assets/` for shared images and data that support teaching pages.
+- Use `examples/` for runnable code and sample datasets.
+- Do not bury assignment requirements only inside the syllabus; add a student-facing assignment or milestone brief.
+
+## Reproducibility Expectations
+
+- Every activity should state expected inputs, outputs, and submission location.
+- Every code activity should run in a fresh GitHub Codespace.
+- Every dataset activity should record source, license, access date, and limitations.
+- Every AI-assisted activity should include an audit note: what AI helped with, what changed, and how the result was verified.
+
+## Review Cadence
+
+- Before term: verify links, screenshots, Codespace setup, dependencies, and all assignment briefs.
+- Weekly: update troubleshooting notes based on student issues.
+- Before each milestone: test the milestone instructions from a fresh repository.
+- After term: archive changes, refresh screenshots, and update the completion matrix.
+
+## Done Checklists
+
+### Course Page
+
+- The page appears in `_quarto.yml` if it is student-facing.
+- The title matches the week or reference purpose.
+- Learning goals, activity steps, and expected outputs are clear.
+- Links and image paths render from the Quarto project root.
+- Open work is clearly scoped and assigned.
+
+### Assignment
+
+- The assignment has a student-facing brief.
+- Required files and submission location are explicit.
+- The work can be completed in GitHub Codespaces.
+- Packages, data, and outputs are documented.
+- The grading checklist matches the syllabus assessment logic.
+
+### Milestone
+
+- The milestone states the exact artifact students submit.
+- The milestone maps to the final portfolio.
+- The rubric includes reproducibility, auditability, data stewardship, and KT value.
+- Peer or TA review instructions are actionable.
+
+### Reproducibility
+
+- A fresh Codespace can render or run the project.
+- Paths are relative.
+- Dependencies are declared with `renv`, `requirements.txt`, or a clearly documented equivalent.
+- No required data exists only on one person's local computer.
+- Randomness uses a seed when results depend on it.
+- The README explains how to reproduce the output.
+
+### AI Audit
+
+- The AI-use note says what tool was used and for what task.
+- Generated code was checked against real column names and expected outputs.
+- Generated summaries are grounded in actual results.
+- Security, privacy, and bias risks are considered.
+- The final text does not cite sources invented by AI.
+
+## NHANES Case Study
+
+The NHANES Health Equity Dashboard case study is the course spine. Students revisit the same app, data, and workflow from different angles as their skills mature. It should not become a second term project.
+
+### Implemented Structure
+
+- `examples/nhanes-equity/app/app.R`
+- `examples/nhanes-equity/data/nhanes_equity_v6.rds`
+- `examples/nhanes-equity/data/nhanes_equity_v6.csv`
+- `examples/nhanes-equity/scripts/build_nhanes_equity.R`
+- `examples/nhanes-equity/snippets/case-study-data-only.qmd`
+- `examples/nhanes-equity/snippets/case-study-data-analysis.qmd`
+- `examples/nhanes-equity/snippets/case-study-dashboard.qmd`
+- `examples/nhanes-equity/README.md`
+
+The cached data live in `examples/nhanes-equity/data/` so the app, script, README, and weekly snippets all use one consistent location.
+
+### Teaching Progression
+
+- Weeks 1-2: provenance, ethics, folder structure, relative paths, and rendering; no app run instructions.
+- Weeks 3-5: data loading, missingness checks, AI audit comments, documentation-only Git changes, and R/Python parity checks using the CSV snapshot.
+- Weeks 6-7: visualization critique, flawed-plot audit, EDA, Table 1, and planted-error audit.
+- Week 8: first week where running the Shiny app is central.
+- Weeks 9-10: slides, reports, source notes, limitations, and audience-specific communication.
+- Week 11: fresh-session reproducibility testing and optional rebuild from CDC if internet access is available.
+
+### RA Watchpoints
+
+- Students may confuse the cached case-study dataset with raw NHANES microdata.
+- The app's Download CSV button exports the currently summarized table output, not raw NHANES microdata.
+- The CDC rebuild path requires internet access and the `nhanesA` package.
+- Week pages should include the shared snippet rather than duplicating instructions.
+- Weeks 1-2 should not instruct students to run the app.
+- Week 8 is the first week where app running is central.
+- Student changes should stay small unless the instructor explicitly assigns a dashboard feature.
+- Relative paths are part of the lesson; discourage absolute machine-specific paths.
+
+### Case Study Done
+
+- The book renders from the repo root.
+- Weeks 1-11 each include a short case-study touchpoint.
+- The case-study folder contains runnable app code, cached data, rebuild script, shared snippet, and README.
+- Weeks 6-7 include worked examples, student-facing activities, and instructor-only keys.
+- Students can complete the default classroom path without internet.
+- CDC rebuilds are documented as optional, network-dependent reproducibility work.

@@ -1,4 +1,4 @@
-# Concepts {.unnumbered}
+# Git Basics {.unnumbered}
 
 -   **The Audit Trail:** Git records *who* changed *what*.
 

@@ -1,4 +1,4 @@
-# Tutorial 5: Loading and Inspecting Health Data
+# Load and Inspect Data
 
 ## Load The NHANES Snapshot
 

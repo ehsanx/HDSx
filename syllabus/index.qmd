@@ -1,0 +1,12 @@
+---
+title: "Syllabus"
+---
+
+```{r syllabus-setup, include=FALSE}
+library(knitr)
+library(kableExtra)
+library(magrittr)
+options(knitr.table.format = "latex")
+```
+
+{{< include syllabus-body.qmd >}}
