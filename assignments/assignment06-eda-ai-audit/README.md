@@ -15,8 +15,9 @@ This assignment builds a transparent preliminary analysis. You will define a coh
 ## Inputs
 
 - Dataset: `examples/nhanes-equity/data/nhanes_equity_v6.csv`
-- Worked example: `weeks/week07-eda-ai-audit/worked-example-table1.qmd`
-- Activity prompt: `weeks/week07-eda-ai-audit/activity-table1-audit.qmd`
+- Worked example: `weeks/week07-eda-ai-audit/eda03-worked-example.qmd`
+- Studio activity: `weeks/week07-eda-ai-audit/eda06-studio-planted-errors.qmd`
+- Walkthrough and reference: `weeks/week07-eda-ai-audit/eda07-assignment-a6-and-reference.qmd`
 - Planted-error starter: `weeks/week07-eda-ai-audit/instructor/planted-error-starter.qmd`
 - Audit template: `assignments/assignment06-eda-ai-audit/audit-note-template.md`
 - M2 connection: `milestones/m2-preliminary-analysis/README.md`

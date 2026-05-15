@@ -1,0 +1,69 @@
+# How a Plot Can Mislead {.unnumbered}
+
+## Where this fits
+
+You have a clean, captioned worked example ([viz03](viz03-worked-example.qmd)). This page is the audit lens: six common ways a figure that *looks fine* can quietly mislead a reader. Each one shows up in real research, and each one is something an AI co-pilot will produce if you do not push back.
+
+## Six failure modes
+
+For each failure mode, you will see the problem in one sentence and the fix in one sentence. Studio time in [viz06](viz06-studio-visual-audit.qmd) revisits these on a deliberately flawed plot.
+
+### 1. Truncated y-axis exaggeration
+
+A small difference in means looks huge when the y-axis starts at 27 instead of 0.
+
+- **Symptom:** `coord_cartesian(ylim = c(27.5, 31.5))` on a BMI mean plot, no narrative explanation.
+- **Fix:** Start the axis at 0, or at a value justified in the caption. Use `expand_limits(y = 0)` when in doubt.
+
+### 2. Causal title on a descriptive plot
+
+A title that says "X causes Y" is a causal claim. Descriptive summaries cannot support it.
+
+- **Symptom:** "Income level causes BMI to rise across NHANES cycles."
+- **Fix:** "Mean BMI by income group across NHANES cycles in the prepared classroom dataset."
+
+### 3. Smoothing across categorical time
+
+`geom_smooth(method = "lm")` draws a line that *implies* a continuous linear trend. NHANES cycles are categorical labels, not a continuous axis.
+
+- **Symptom:** A linear regression line layered across cycle bins.
+- **Fix:** Use `geom_line()` plus `geom_point()` to connect descriptive cycle summaries, with no regression overlay.
+
+### 4. Weighted-vs-unweighted ambiguity
+
+If the subtitle says "weighted" but the code does not use a survey weight variable, the reader has been misled.
+
+- **Symptom:** Subtitle: "Weighted BMI trend." Code: `mean(BMI, na.rm = TRUE)` with no weight.
+- **Fix:** State plainly that the summary is unweighted, or compute a weighted estimate using the documented weight variable.
+
+### 5. Silent missingness
+
+Rows with missing BMI or income disappear without a caption.
+
+- **Symptom:** `filter(!is.na(BMI), !is.na(IncomeGroup))` deep inside a pipe with no note in the caption.
+- **Fix:** Disclose missing-value exclusions in the caption. Better: report missingness counts before the figure (you will do this on [eda03](../week07-eda-ai-audit/eda03-worked-example.qmd) next week).
+
+### 6. Hidden small-cell counts
+
+A group with `n = 7` plots the same way as a group with `n = 700`, but the reader cannot tell them apart.
+
+- **Symptom:** A small income group plotted as a line with no indication of sparse cells.
+- **Fix:** Filter out groups below a minimum count, *or* label them visibly with `n` annotations, *or* report the counts beside the figure.
+
+## Why six and not sixty
+
+You will see other failure modes in the wild — duplicated colors, default rainbow palettes, dual axes, missing legends. The six above account for most of the issues you will catch when auditing an AI-drafted plot for descriptive health data work in this course. Master these first.
+
+## A quick audit habit
+
+When you finish a plot, ask three questions out loud:
+
+1. Could a reader make a causal claim from this title or caption?
+2. Could a small difference look bigger than it is because of the axis?
+3. Is missingness, exclusion, or small-cell count visible to the reader?
+
+If any answer is "yes" or "I don't know," revise the figure or the caption before moving on.
+
+## Where this goes next
+
+[viz05](viz05-ai-prompts-and-audit.qmd) shows how to write AI prompts that produce plots you can defend, and how to audit what the AI gives you.

@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.7.31">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-
-<title>Visual Storytelling – Health Data Science: AI and Knowledge Translation</title>
+<title>Week 6: Data Visualization – Health Data Science: AI and Knowledge Translation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -57,7 +54,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 </style>
 
-
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
@@ -65,7 +61,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../weeks/week06-visualization/worked-example-ggplot.html" rel="next">
+<link href="../../weeks/week06-visualization/viz01-overview-and-goals.html" rel="next">
 <link href="../../weeks/week05-polyglot-r-deepening/python14-cheat-sheet.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -76,8 +72,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-bf1bf44ef5cf85b0f516843a8f7e68d4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
+<link href="../../site_libs/bootstrap/bootstrap-bf1bf44ef5cf85b0f516843a8f7e68d4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
@@ -103,41 +98,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script>
-<link href="../../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
-
+}</script><link href="../../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
 <script src="../../site_libs/pagedtable-1.1/js/pagedtable.js"></script>
-
-
-
-<meta name="twitter:title" content="Visual Storytelling – Health Data Science: AI and Knowledge Translation">
+<meta name="twitter:title" content="Week 6: Data Visualization – Health Data Science: AI and Knowledge Translation">
 <meta name="twitter:description" content="">
 <meta name="twitter:card" content="summary">
 </head>
-
 <body class="nav-sidebar docked quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week06-visualization/index.html">Week 6: Data Visualization</a></li><li class="breadcrumb-item"><a href="../../weeks/week06-visualization/index.html">Visual Storytelling</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week06-visualization/index.html">Week 6: Data Visualization</a></li><li class="breadcrumb-item"><a href="../../weeks/week06-visualization/index.html">Week 6: Data Visualization</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
-  </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="../../">Health Data Science: AI and Knowledge Translation</a> 
         <div class="sidebar-tools-main tools-wide">
@@ -158,7 +141,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">The Project</span></a>
@@ -172,8 +155,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../course-operations/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Course Operations</span></a>
@@ -195,7 +178,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
@@ -204,15 +187,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week00-onboarding/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 0: Asynchronous Onboarding</span></a>
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
@@ -221,8 +204,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week01-health-data-ethics/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Health Data &amp; Ethics</span></a>
@@ -235,7 +218,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
@@ -244,8 +227,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week02-modern-workflows/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Modern Workflows</span></a>
@@ -307,7 +290,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
@@ -316,8 +299,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week03-r-with-ai/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 3: R with AI</span></a>
@@ -374,7 +357,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
@@ -383,8 +366,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week04-git-collaboration/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Git &amp; Collaboration</span></a>
@@ -451,7 +434,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
@@ -460,8 +443,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Polyglot Awareness &amp; R Deepening</span></a>
@@ -543,7 +526,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
@@ -552,27 +535,57 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week06-visualization/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Visual Storytelling</span></a>
+ <span class="menu-text">Week 6: Data Visualization</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../weeks/week06-visualization/worked-example-ggplot.html" class="sidebar-item-text sidebar-link">
+  <a href="../../weeks/week06-visualization/viz01-overview-and-goals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Why Visualize, and What For</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week06-visualization/viz02-grammar-and-first-plot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Grammar of a ggplot, and Your First Plot</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week06-visualization/viz03-worked-example.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Worked Example: Descriptive BMI Visualization</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../weeks/week06-visualization/activity-ai-visual-audit.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Activity: AI Visual Audit</span></a>
+  <a href="../../weeks/week06-visualization/viz04-misleading-design.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How a Plot Can Mislead</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week06-visualization/viz05-ai-prompts-and-audit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AI Prompts You Can Defend</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week06-visualization/viz06-studio-visual-audit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">In-Class Studio: AI Visual Audit</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week06-visualization/viz07-assignment-a5-and-reference.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Assignment 5 Walkthrough and Reference</span></a>
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
@@ -581,27 +594,57 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week07-eda-ai-audit/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Exploring Data</span></a>
+ <span class="menu-text">Week 7: EDA, Table 1 &amp; AI Auditing</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../weeks/week07-eda-ai-audit/worked-example-table1.html" class="sidebar-item-text sidebar-link">
+  <a href="../../weeks/week07-eda-ai-audit/eda01-overview-and-goals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EDA as Evidence Stewardship</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week07-eda-ai-audit/eda02-cohort-and-missingness.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cohort and Missingness</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week07-eda-ai-audit/eda03-worked-example.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Worked Example: EDA and Table 1</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../weeks/week07-eda-ai-audit/activity-table1-audit.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Activity: Table 1 and AI Audit</span></a>
+  <a href="../../weeks/week07-eda-ai-audit/eda04-descriptive-statistics-claims.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">What Each Statistic Claims (and Does Not)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week07-eda-ai-audit/eda05-ai-audit-categories.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Four Audit Categories for AI-Drafted EDA</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week07-eda-ai-audit/eda06-studio-planted-errors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">In-Class Studio: Planted-Error Audit</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week07-eda-ai-audit/eda07-assignment-a6-and-reference.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Assignment 6 Walkthrough and Reference</span></a>
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
@@ -610,21 +653,57 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week08-dashboard-kt/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Interactive Dashboards</span></a>
+ <span class="menu-text">Week 8: Dashboard Prototypes for KT</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../weeks/week08-dashboard-kt/starter-dashboard.html" class="sidebar-item-text sidebar-link">
+  <a href="../../weeks/week08-dashboard-kt/dash01-overview-and-pathways.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">What a Dashboard Is, and Three Pathways</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week08-dashboard-kt/dash02-from-eda-to-prototype.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">From One Finding to a Prototype: The 1-1-1-1-1 Rule</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week08-dashboard-kt/dash03-starter-dashboard.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Starter Dashboard</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week08-dashboard-kt/dash04-audience-and-ui-text.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Audience-Facing Text: What You Can and Cannot Change for A7</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week08-dashboard-kt/dash05-testing-privacy-and-shiny-demo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Testing, Privacy-Safe Publishing, and the Shiny Demo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week08-dashboard-kt/dash06-studio-dashboard-adaptation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">In-Class Studio: Dashboard Adaptation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week08-dashboard-kt/dash07-assignment-a7-and-reference.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Assignment 7 Walkthrough and Reference</span></a>
+  </div>
+</li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true">
@@ -633,8 +712,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week09-science-communication/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Dynamic Presentations</span></a>
@@ -647,7 +726,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="true">
@@ -656,8 +735,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week10-reporting-publishing/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Reproducible Reporting</span></a>
@@ -670,7 +749,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="true">
@@ -679,8 +758,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week11-portfolio-surgery/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Advanced Topics</span></a>
@@ -693,7 +772,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="true">
@@ -702,8 +781,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week12-presentations/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 12: Term Project Presentations, Part 1</span></a>
@@ -716,7 +795,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="true">
@@ -725,8 +804,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../assignments/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Assignments</span></a>
@@ -835,7 +914,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="true">
@@ -844,8 +923,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../references/data-sources/nhis.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">NHIS</span></a>
@@ -918,35 +997,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
     </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+</div>
+</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+<li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives">Objectives</a></li>
   <li><a href="#connection" id="toc-connection" class="nav-link" data-scroll-target="#connection">Connection</a></li>
   <li><a href="#case-study-data-analysis" id="toc-case-study-data-analysis" class="nav-link" data-scroll-target="#case-study-data-analysis">Case Study Data Analysis</a></li>
-  <li><a href="#core-path" id="toc-core-path" class="nav-link" data-scroll-target="#core-path">Core Path</a></li>
-  <li><a href="#class-plan" id="toc-class-plan" class="nav-link" data-scroll-target="#class-plan">Class Plan</a></li>
-  <li><a href="#student-output" id="toc-student-output" class="nav-link" data-scroll-target="#student-output">Student Output</a></li>
-  <li><a href="#definition-of-done" id="toc-definition-of-done" class="nav-link" data-scroll-target="#definition-of-done">Definition of Done</a></li>
-  <li><a href="#what-students-leave-with" id="toc-what-students-leave-with" class="nav-link" data-scroll-target="#what-students-leave-with">What Students Leave With</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ehsanx/HDSx/edit/main/weeks/week06-visualization/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ehsanx/HDSx/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+  <li><a href="#reading-order" id="toc-reading-order" class="nav-link" data-scroll-target="#reading-order">Reading order</a></li>
+  <li><a href="#class-plan" id="toc-class-plan" class="nav-link" data-scroll-target="#class-plan">Class plan</a></li>
+  <li><a href="#student-output" id="toc-student-output" class="nav-link" data-scroll-target="#student-output">Student output</a></li>
+  <li><a href="#links" id="toc-links" class="nav-link" data-scroll-target="#links">Links</a></li>
+  <li><a href="#definition-of-done" id="toc-definition-of-done" class="nav-link" data-scroll-target="#definition-of-done">Definition of done</a></li>
+  <li><a href="#what-students-leave-with" id="toc-what-students-leave-with" class="nav-link" data-scroll-target="#what-students-leave-with">What students leave with</a></li>
+  </ul><div class="toc-actions"><ul><li><a href="https://github.com/ehsanx/HDSx/edit/main/weeks/week06-visualization/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ehsanx/HDSx/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week06-visualization/index.html">Week 6: Data Visualization</a></li><li class="breadcrumb-item"><a href="../../weeks/week06-visualization/index.html">Visual Storytelling</a></li></ol></nav>
-<div class="quarto-title">
-<h1 class="title">Visual Storytelling</h1>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week06-visualization/index.html">Week 6: Data Visualization</a></li><li class="breadcrumb-item"><a href="../../weeks/week06-visualization/index.html">Week 6: Data Visualization</a></li></ol></nav><div class="quarto-title">
+<h1 class="title">Week 6: Data Visualization</h1>
 </div>
 
 
@@ -960,36 +1034,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   
 
 
-</header>
-
-
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>This week turns a descriptive summary into a visual claim. Students use <code>ggplot2</code> as the core tool, with <code>plotly</code> as an optional extension, and practice steering AI-generated code toward clear, honest health-data communication.</p>
+</header><section id="overview" class="level2"><h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>This week turns a descriptive summary into a visual claim. You will use <code>ggplot2</code> as the core tool, learn how to spot the most common ways a plot misleads a reader, practice prompting an AI co-pilot for plot code you can defend, and finish with a polished figure for Assignment 5.</p>
 <p>The emphasis is not decoration. A useful plot makes the statistic, grouping, exclusions, and limitation visible enough that a reader can understand what the figure does and does not support.</p>
-</section>
-<section id="objectives" class="level2">
-<h2 class="anchored" data-anchor-id="objectives">Objectives</h2>
-<p>By the end of the week, students can:</p>
+</section><section id="objectives" class="level2"><h2 class="anchored" data-anchor-id="objectives">Objectives</h2>
+<p>By the end of the week you can:</p>
 <ul>
 <li>build a rerunnable <code>ggplot2</code> visualization from the NHANES Health Equity CSV snapshot;</li>
 <li>identify visual choices that can exaggerate, hide, or mislabel a descriptive result;</li>
 <li>revise title, scale, color, grouping, and caption choices to reduce misinterpretation;</li>
 <li>document whether a plot is weighted or unweighted, descriptive or causal, and complete-case or missingness-aware;</li>
-<li>use AI assistance as a draft partner while checking the code and claims themselves.</li>
-</ul>
-</section>
-<section id="connection" class="level2">
-<h2 class="anchored" data-anchor-id="connection">Connection</h2>
+<li>use AI assistance as a draft partner while checking the code and claims yourself.</li>
+</ul></section><section id="connection" class="level2"><h2 class="anchored" data-anchor-id="connection">Connection</h2>
 <p>Week 5 checked whether simple summaries agree across R and Python. Week 6 asks whether a visual summary is faithful to the evidence. Week 7 then documents the cohort, missingness, and Table 1 behind those same descriptive claims.</p>
-</section>
-<section id="case-study-data-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="case-study-data-analysis">Case Study Data Analysis</h2>
+</section><section id="case-study-data-analysis" class="level2"><h2 class="anchored" data-anchor-id="case-study-data-analysis">Case Study Data Analysis</h2>
 <p>The <strong>NHANES Health Equity data spine</strong> now supports code-reading, EDA, visualization, and reproducibility checks. Use the cached CSV/RDS for routine class work; a CDC retrieval script exists for advanced users.</p>
 <ul>
-<li>Cached RDS: <code>examples/nhanes-equity/data/nhanes_equity_v6.rds</code></li>
-<li>CSV snapshot: <code>examples/nhanes-equity/data/nhanes_equity_v6.csv</code></li>
-<li>Case-study README: <code>examples/nhanes-equity/README.md</code></li>
+<li>Cached RDS: <code>examples/nhanes-equity/data/nhanes_equity_v6.rds</code>
+</li>
+<li>CSV snapshot: <code>examples/nhanes-equity/data/nhanes_equity_v6.csv</code>
+</li>
+<li>Case-study README: <code>examples/nhanes-equity/README.md</code>
+</li>
 </ul>
 <p>The default classroom path is to use the cached data so the analysis work is reproducible without internet access.</p>
 <div class="cell">
@@ -1038,44 +1104,46 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-</section>
-<section id="core-path" class="level2">
-<h2 class="anchored" data-anchor-id="core-path">Core Path</h2>
-<p>The required path is a static <code>ggplot2</code> figure embedded in Quarto. Students may optionally convert their final plot to a <code>plotly</code> object for local exploration, but the submitted artifact is the static figure, caption, and audit note.</p>
-</section>
-<section id="class-plan" class="level2">
-<h2 class="anchored" data-anchor-id="class-plan">Class Plan</h2>
+</section><section id="reading-order" class="level2"><h2 class="anchored" data-anchor-id="reading-order">Reading order</h2>
+<p>Work through the pages in order. Each page is short and self-contained.</p>
 <ol type="1">
-<li>Read the worked example and name the statistic, grouping variable, exclusions, and limitation.</li>
-<li>Inspect the flawed plot code in <code>weeks/week06-visualization/instructor/flawed-plot-code.R</code>.</li>
+<li><a href="../../weeks/week06-visualization/viz01-overview-and-goals.html">viz01 — Why Visualize, and What For</a></li>
+<li><a href="../../weeks/week06-visualization/viz02-grammar-and-first-plot.html">viz02 — Grammar of a ggplot, and Your First Plot</a></li>
+<li><a href="../../weeks/week06-visualization/viz03-worked-example.html">viz03 — Worked Example: Descriptive BMI Visualization</a></li>
+<li><a href="../../weeks/week06-visualization/viz04-misleading-design.html">viz04 — How a Plot Can Mislead</a></li>
+<li><a href="../../weeks/week06-visualization/viz05-ai-prompts-and-audit.html">viz05 — AI Prompts You Can Defend</a></li>
+<li><a href="../../weeks/week06-visualization/viz06-studio-visual-audit.html">viz06 — In-Class Studio: AI Visual Audit</a></li>
+<li><a href="../../weeks/week06-visualization/viz07-assignment-a5-and-reference.html">viz07 — Assignment 5 Walkthrough and Reference</a></li>
+</ol></section><section id="class-plan" class="level2"><h2 class="anchored" data-anchor-id="class-plan">Class plan</h2>
+<ol type="1">
+<li>Read the worked example (<a href="../../weeks/week06-visualization/viz03-worked-example.html">viz03</a>) and name the statistic, grouping variable, exclusions, and limitation.</li>
+<li>Inspect the flawed plot code referenced in the <a href="../../weeks/week06-visualization/viz06-studio-visual-audit.html">studio</a>.</li>
 <li>Identify at least three ways the plot could mislead a reader.</li>
 <li>Revise the plot so the scale, geometry, title, labels, and caption match the evidence.</li>
 <li>Pair-review the corrected caption and check that it does not imply causality or population inference.</li>
-</ol>
-</section>
-<section id="student-output" class="level2">
-<h2 class="anchored" data-anchor-id="student-output">Student Output</h2>
-<p>By the end of class, each student has a corrected plot, a caption, a short audit note, and an AI-use note if AI helped draft code or wording.</p>
-<p>Assignment link: <a href="../../assignments/assignment05-visualization/README.html">Assignment 5</a>. Milestone link: <a href="../../milestones/m1-proposal/README.html">M1 Project Proposal</a>.</p>
-</section>
-<section id="definition-of-done" class="level2">
-<h2 class="anchored" data-anchor-id="definition-of-done">Definition of Done</h2>
+</ol></section><section id="student-output" class="level2"><h2 class="anchored" data-anchor-id="student-output">Student output</h2>
+<p>By the end of class each student has a corrected plot, a caption, a short audit note, and an AI-use note if AI helped draft code or wording.</p>
+</section><section id="links" class="level2"><h2 class="anchored" data-anchor-id="links">Links</h2>
+<ul>
+<li>Assignment: <a href="../../assignments/assignment05-visualization/README.html">Assignment 5 — Visualization Audit</a>
+</li>
+<li>Milestone: <a href="../../milestones/m1-proposal/README.html">M1 — Project Proposal</a> (<code>initial-visual-plan.md</code> is the connection point)</li>
+</ul></section><section id="definition-of-done" class="level2"><h2 class="anchored" data-anchor-id="definition-of-done">Definition of done</h2>
 <ul>
 <li>The worked example renders from source using a relative path.</li>
 <li>The revised figure has clear labels, an honest scale, and a limitation-aware caption.</li>
 <li>The audit note identifies at least three issues across correctness, design, interpretation, or reproducibility.</li>
 <li>The M1 proposal uses the same standard of transparency for dataset choice, feasibility, and stewardship.</li>
-</ul>
-</section>
-<section id="what-students-leave-with" class="level2">
-<h2 class="anchored" data-anchor-id="what-students-leave-with">What Students Leave With</h2>
-<p>Students leave with one polished descriptive visualization and a reusable checklist for auditing AI-assisted plots before they appear in a report, dashboard, or slide.</p>
+</ul></section><section id="what-students-leave-with" class="level2"><h2 class="anchored" data-anchor-id="what-students-leave-with">What students leave with</h2>
+<p>One polished descriptive visualization and a reusable checklist for auditing AI-assisted plots before they appear in a report, dashboard, or slide.</p>
+<!--
+Instructor maintenance notes (not rendered to students):
+This week's instructor folder contains keys that must NOT ship in the public student template at term start.
+See weeks/week06-visualization/instructor/MAINTENANCE.md for the release-time checklist.
+-->
 
 
-</section>
-
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
@@ -1524,21 +1592,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       }
     }
   });
-  </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
+  </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
       <a href="../../weeks/week05-polyglot-r-deepening/python14-cheat-sheet.html" class="pagination-link" aria-label="R To Python Cheatsheet">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">R To Python Cheatsheet</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../weeks/week06-visualization/worked-example-ggplot.html" class="pagination-link" aria-label="Worked Example: Descriptive BMI Visualization">
-        <span class="nav-page-text">Worked Example: Descriptive BMI Visualization</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../weeks/week06-visualization/viz01-overview-and-goals.html" class="pagination-link" aria-label="Why Visualize, and What For">
+        <span class="nav-page-text">Why Visualize, and What For</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
-
 
 
 

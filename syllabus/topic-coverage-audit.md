@@ -72,7 +72,7 @@ Last updated after milestone/presentation/final-portfolio completion pass: 2026-
 
 - **Topic name:** Data Visualization
 - **Status:** Complete
-- **Evidence:** `weeks/week06-visualization/worked-example-ggplot.qmd`: runnable ggplot example; `activity-ai-visual-audit.qmd`: audit deliverables; `instructor/answer-key-visual-audit.md`: planted issues and corrections; A5 brief.
+- **Evidence:** `weeks/week06-visualization/viz01-overview-and-goals.qmd` through `viz07-assignment-a5-and-reference.qmd`: incremental seven-page sequence covering visual reasoning, grammar of a ggplot, end-to-end worked example, misleading-design failure modes, AI prompt patterns, studio audit activity, and A5 walkthrough plus quick reference. `instructor/answer-key-visual-audit.md` and `instructor/corrected-plot-code.R` remain unlinked from student-facing pages; see `instructor/MAINTENANCE.md`.
 - **What is missing:** No content drafting gap.
 - **Recommended next additions:** Re-render the worked example if the NHANES CSV changes.
 
@@ -80,7 +80,7 @@ Last updated after milestone/presentation/final-portfolio completion pass: 2026-
 
 - **Topic name:** EDA, Table 1 & AI Auditing
 - **Status:** Complete
-- **Evidence:** `weeks/week07-eda-ai-audit/worked-example-table1.qmd`: cohort definition, missingness, Table 1-style summary; `instructor/planted-error-key.md`: planted error corrections; A6 brief.
+- **Evidence:** `weeks/week07-eda-ai-audit/eda01-overview-and-goals.qmd` through `eda07-assignment-a6-and-reference.qmd`: incremental seven-page sequence covering evidence stewardship framing, cohort and missingness, end-to-end worked example, descriptive-statistic claims, four AI-audit categories, planted-error studio activity, and A6 walkthrough plus quick reference. `instructor/planted-error-key.md` remains unlinked from student-facing pages; see `instructor/MAINTENANCE.md`.
 - **What is missing:** No content drafting gap.
 - **Recommended next additions:** Keep the unweighted/descriptive limitation visible.
 
@@ -88,9 +88,9 @@ Last updated after milestone/presentation/final-portfolio completion pass: 2026-
 
 - **Topic name:** Dashboard Prototypes for KT
 - **Status:** Complete
-- **Evidence:** `weeks/week08-dashboard-kt/index.qmd`: first app-forward week; `starter-dashboard.qmd`: audience question, control, visualization, interpretation, caution; A7 brief.
+- **Evidence:** `weeks/week08-dashboard-kt/dash01-overview-and-pathways.qmd` through `dash07-assignment-a7-and-reference.qmd`: incremental seven-page sequence covering pathway choice (Quarto core, Shiny demo, static HTML/JS demo), the 1-1-1-1-1 prototype rule, the Quarto starter dashboard (required core artifact), allowed-vs-not-allowed adaptation changes, testing/privacy/Shiny demo, in-class studio, and A7 walkthrough plus reference. Shiny exemplar treated as demonstration only.
 - **What is missing:** No content drafting gap.
-- **Recommended next additions:** Test the Shiny exemplar in Codespaces before Week 8.
+- **Recommended next additions:** Test the Quarto starter dashboard render flow in Codespaces before Week 8; demo (do not require) the Shiny exemplar in the seminar segment.
 
 ### Week 9
 

@@ -1,20 +1,20 @@
-# Visual Storytelling {.unnumbered}
+# Week 6: Data Visualization {.unnumbered}
 
 ## Overview
 
-This week turns a descriptive summary into a visual claim. Students use `ggplot2` as the core tool, with `plotly` as an optional extension, and practice steering AI-generated code toward clear, honest health-data communication.
+This week turns a descriptive summary into a visual claim. You will use `ggplot2` as the core tool, learn how to spot the most common ways a plot misleads a reader, practice prompting an AI co-pilot for plot code you can defend, and finish with a polished figure for Assignment 5.
 
 The emphasis is not decoration. A useful plot makes the statistic, grouping, exclusions, and limitation visible enough that a reader can understand what the figure does and does not support.
 
 ## Objectives
 
-By the end of the week, students can:
+By the end of the week you can:
 
 - build a rerunnable `ggplot2` visualization from the NHANES Health Equity CSV snapshot;
 - identify visual choices that can exaggerate, hide, or mislabel a descriptive result;
 - revise title, scale, color, grouping, and caption choices to reduce misinterpretation;
 - document whether a plot is weighted or unweighted, descriptive or causal, and complete-case or missingness-aware;
-- use AI assistance as a draft partner while checking the code and claims themselves.
+- use AI assistance as a draft partner while checking the code and claims yourself.
 
 ## Connection
 
@@ -24,31 +24,48 @@ Week 5 checked whether simple summaries agree across R and Python. Week 6 asks w
 
 {{< include ../../examples/nhanes-equity/snippets/case-study-data-analysis.qmd >}}
 
-## Core Path
+## Reading order
 
-The required path is a static `ggplot2` figure embedded in Quarto. Students may optionally convert their final plot to a `plotly` object for local exploration, but the submitted artifact is the static figure, caption, and audit note.
+Work through the pages in order. Each page is short and self-contained.
 
-## Class Plan
+1. [viz01 — Why Visualize, and What For](viz01-overview-and-goals.qmd)
+2. [viz02 — Grammar of a ggplot, and Your First Plot](viz02-grammar-and-first-plot.qmd)
+3. [viz03 — Worked Example: Descriptive BMI Visualization](viz03-worked-example.qmd)
+4. [viz04 — How a Plot Can Mislead](viz04-misleading-design.qmd)
+5. [viz05 — AI Prompts You Can Defend](viz05-ai-prompts-and-audit.qmd)
+6. [viz06 — In-Class Studio: AI Visual Audit](viz06-studio-visual-audit.qmd)
+7. [viz07 — Assignment 5 Walkthrough and Reference](viz07-assignment-a5-and-reference.qmd)
 
-1. Read the worked example and name the statistic, grouping variable, exclusions, and limitation.
-2. Inspect the flawed plot code in `weeks/week06-visualization/instructor/flawed-plot-code.R`.
+## Class plan
+
+1. Read the worked example ([viz03](viz03-worked-example.qmd)) and name the statistic, grouping variable, exclusions, and limitation.
+2. Inspect the flawed plot code referenced in the [studio](viz06-studio-visual-audit.qmd).
 3. Identify at least three ways the plot could mislead a reader.
 4. Revise the plot so the scale, geometry, title, labels, and caption match the evidence.
 5. Pair-review the corrected caption and check that it does not imply causality or population inference.
 
-## Student Output
+## Student output
 
-By the end of class, each student has a corrected plot, a caption, a short audit note, and an AI-use note if AI helped draft code or wording.
+By the end of class each student has a corrected plot, a caption, a short audit note, and an AI-use note if AI helped draft code or wording.
 
-Assignment link: [Assignment 5](../../assignments/assignment05-visualization/README.md). Milestone link: [M1 Project Proposal](../../milestones/m1-proposal/README.md).
+## Links
 
-## Definition of Done
+- Assignment: [Assignment 5 — Visualization Audit](../../assignments/assignment05-visualization/README.md)
+- Milestone: [M1 — Project Proposal](../../milestones/m1-proposal/README.md) (`initial-visual-plan.md` is the connection point)
+
+## Definition of done
 
 - The worked example renders from source using a relative path.
 - The revised figure has clear labels, an honest scale, and a limitation-aware caption.
 - The audit note identifies at least three issues across correctness, design, interpretation, or reproducibility.
 - The M1 proposal uses the same standard of transparency for dataset choice, feasibility, and stewardship.
 
-## What Students Leave With
+## What students leave with
 
-Students leave with one polished descriptive visualization and a reusable checklist for auditing AI-assisted plots before they appear in a report, dashboard, or slide.
+One polished descriptive visualization and a reusable checklist for auditing AI-assisted plots before they appear in a report, dashboard, or slide.
+
+<!--
+Instructor maintenance notes (not rendered to students):
+This week's instructor folder contains keys that must NOT ship in the public student template at term start.
+See weeks/week06-visualization/instructor/MAINTENANCE.md for the release-time checklist.
+-->

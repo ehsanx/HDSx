@@ -375,6 +375,7 @@ The dataset contains `nrow(my_data)` observations across
 `ncol(my_data)` variables. Notably, BMI is missing for
 approximately 12% of records, which we handle with `na.rm = TRUE`
 in downstream summaries.
+````
 
 This interleaving of code and prose is **literate programming** --- the methodology that underpins reproducible research in this course. Practice it now; you will need it for your term project report (Week 10) and final portfolio.
 

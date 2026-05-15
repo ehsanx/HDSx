@@ -14,9 +14,10 @@ This assignment introduces dashboard-style Knowledge Translation. You will run o
 
 ## Inputs
 
-- Week 8 page: `weeks/week08-dashboard-kt/index.qmd`
-- Shiny exemplar: `examples/nhanes-equity/app/app.R`
-- Starter dashboard: `weeks/week08-dashboard-kt/starter-dashboard.qmd`
+- Week 8 index: `weeks/week08-dashboard-kt/index.qmd`
+- Required core artifact (the file you adapt): `weeks/week08-dashboard-kt/dash03-starter-dashboard.qmd`
+- Walkthrough and reference: `weeks/week08-dashboard-kt/dash07-assignment-a7-and-reference.qmd`
+- Shiny exemplar (instructor demonstration only; not an A7 submission pathway): `examples/nhanes-equity/app/app.R`
 - Cached data: `examples/nhanes-equity/data/nhanes_equity_v6.rds`
 - CSV snapshot: `examples/nhanes-equity/data/nhanes_equity_v6.csv`
 - Adaptation template: `assignments/assignment07-dashboard/dashboard-adaptation-template.md`
@@ -24,13 +25,13 @@ This assignment introduces dashboard-style Knowledge Translation. You will run o
 ## Tasks
 
 1. Create or use the folder `assignments/assignment07-dashboard/submission/`.
-2. From the repository root, run the NHANES Shiny exemplar locally or render the starter dashboard.
+2. From the repository root, render the Quarto starter dashboard (`weeks/week08-dashboard-kt/dash03-starter-dashboard.qmd`). The Shiny exemplar is a demonstration and is not an approved A7 submission pathway without prior instructor approval.
 3. Choose one audience, such as a public-health analyst, student project team, or briefing group.
 4. Write one audience-specific dashboard question.
 5. Identify one control, filter, or dashboard-style interaction and the visualization it affects.
 6. Identify one label, caption, help text, interpretation note, or README sentence that could be clearer for that audience.
 7. Make one documentation-only or UI-text-only improvement. Do not change analytic logic for this assignment.
-8. Rerun the dashboard or render the starter dashboard and record the test result.
+8. Re-render the starter dashboard with a different control value and record the test result.
 9. Write one limitation statement that belongs in or beside the dashboard.
 10. Complete the privacy-safe publishing check before sharing screenshots or rendered outputs.
 

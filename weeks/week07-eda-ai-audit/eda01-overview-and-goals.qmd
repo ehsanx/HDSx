@@ -1,0 +1,48 @@
+# EDA as Evidence Stewardship {.unnumbered}
+
+## Goal
+
+Last week you turned a descriptive summary into a clear figure. This week you build the evidence trail behind that summary. The phrase "exploratory data analysis" often sounds casual — *"just look at the data"*. In a health-data project it is not casual at all: every exclusion, every statistic, and every interpretation should be visible enough that another person can rerun your work and challenge it.
+
+Think of EDA as the **paperwork** that defends a finding. If the paperwork is missing, the finding cannot survive an audit.
+
+## The four artifacts this week produces
+
+Every page this week supports one of these four:
+
+1. A **cohort definition** that names exactly who is in the analysis sample.
+2. A **missingness table** that says how much of each key variable is missing.
+3. A **Table 1** that summarizes the cohort with N, mean (SD), and equivalents.
+4. A **methods note** that states what the table can and cannot claim.
+
+If any one of the four is absent, the work is not ready for Milestone 2 or Assignment 6.
+
+## Why this matters for AI work
+
+When you ask an AI co-pilot for "a Table 1," the model will produce one. It will not check whether the cohort makes sense, whether missingness was reported first, or whether the labels match the statistics. Those are your responsibilities. The four-artifact workflow is what makes that responsibility manageable: each artifact is a small piece you can audit on its own.
+
+The four audit categories you will use this week — **correctness, reproducibility, interpretation, stewardship** — are introduced on [eda05](eda05-ai-audit-categories.qmd) and practiced in the [studio](eda06-studio-planted-errors.qmd).
+
+## What "descriptive, unweighted, non-causal" means
+
+You will see this phrase repeatedly. Each word matters:
+
+- **Descriptive:** the table reports what is in the data, not what the population looks like.
+- **Unweighted:** we are not using NHANES survey weights, so the numbers describe the prepared classroom dataset, not US adults.
+- **Non-causal:** the table cannot tell you that one variable *causes* another. Descriptive comparison is not causal inference.
+
+Saying this in your methods note is how you defend the table from being misread.
+
+## Where AI fits
+
+Same rule as Week 3 and Week 6: every AI-drafted chunk in your `.qmd` gets a two-line `# AI prompt: ... # Verified: ...` comment. The verification step on Table 1 work specifically checks: cohort filter, missingness handling, label/statistic match, and interpretation.
+
+## What you produce this week
+
+- A rerunnable `eda-note.qmd` with cohort definition, missingness table, and Table 1 (the Assignment 6 deliverable, also the M2 preliminary analysis).
+- A short audit note identifying at least five issues in a planted-error starter.
+- A revised provenance/stewardship statement suitable for reuse in M2.
+
+## Where this goes next
+
+[eda02](eda02-cohort-and-missingness.qmd) walks through cohort definition and missingness reporting — the first two of the four artifacts.

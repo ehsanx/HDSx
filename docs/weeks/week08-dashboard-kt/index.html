@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Interactive Dashboards – Health Data Science: AI and Knowledge Translation</title>
+<title>Week 8: Dashboard Prototypes for KT – Health Data Science: AI and Knowledge Translation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,8 +65,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../weeks/week08-dashboard-kt/starter-dashboard.html" rel="next">
-<link href="../../weeks/week07-eda-ai-audit/activity-table1-audit.html" rel="prev">
+<link href="../../weeks/week08-dashboard-kt/dash01-overview-and-pathways.html" rel="next">
+<link href="../../weeks/week07-eda-ai-audit/eda07-assignment-a6-and-reference.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -106,7 +106,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<meta name="twitter:title" content="Interactive Dashboards – Health Data Science: AI and Knowledge Translation">
+<meta name="twitter:title" content="Week 8: Dashboard Prototypes for KT – Health Data Science: AI and Knowledge Translation">
 <meta name="twitter:description" content="">
 <meta name="twitter:card" content="summary">
 </head>
@@ -120,7 +120,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week08-dashboard-kt/index.html">Week 8: Dashboard Prototypes for KT</a></li><li class="breadcrumb-item"><a href="../../weeks/week08-dashboard-kt/index.html">Interactive Dashboards</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week08-dashboard-kt/index.html">Week 8: Dashboard Prototypes for KT</a></li><li class="breadcrumb-item"><a href="../../weeks/week08-dashboard-kt/index.html">Week 8: Dashboard Prototypes for KT</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -552,19 +552,49 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week06-visualization/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Visual Storytelling</span></a>
+ <span class="menu-text">Week 6: Data Visualization</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../weeks/week06-visualization/worked-example-ggplot.html" class="sidebar-item-text sidebar-link">
+  <a href="../../weeks/week06-visualization/viz01-overview-and-goals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Why Visualize, and What For</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week06-visualization/viz02-grammar-and-first-plot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Grammar of a ggplot, and Your First Plot</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week06-visualization/viz03-worked-example.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Worked Example: Descriptive BMI Visualization</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../weeks/week06-visualization/activity-ai-visual-audit.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Activity: AI Visual Audit</span></a>
+  <a href="../../weeks/week06-visualization/viz04-misleading-design.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How a Plot Can Mislead</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week06-visualization/viz05-ai-prompts-and-audit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AI Prompts You Can Defend</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week06-visualization/viz06-studio-visual-audit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">In-Class Studio: AI Visual Audit</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week06-visualization/viz07-assignment-a5-and-reference.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Assignment 5 Walkthrough and Reference</span></a>
   </div>
 </li>
       </ul>
@@ -581,19 +611,49 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week07-eda-ai-audit/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Exploring Data</span></a>
+ <span class="menu-text">Week 7: EDA, Table 1 &amp; AI Auditing</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../weeks/week07-eda-ai-audit/worked-example-table1.html" class="sidebar-item-text sidebar-link">
+  <a href="../../weeks/week07-eda-ai-audit/eda01-overview-and-goals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EDA as Evidence Stewardship</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week07-eda-ai-audit/eda02-cohort-and-missingness.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cohort and Missingness</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week07-eda-ai-audit/eda03-worked-example.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Worked Example: EDA and Table 1</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../weeks/week07-eda-ai-audit/activity-table1-audit.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Activity: Table 1 and AI Audit</span></a>
+  <a href="../../weeks/week07-eda-ai-audit/eda04-descriptive-statistics-claims.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">What Each Statistic Claims (and Does Not)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week07-eda-ai-audit/eda05-ai-audit-categories.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Four Audit Categories for AI-Drafted EDA</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week07-eda-ai-audit/eda06-studio-planted-errors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">In-Class Studio: Planted-Error Audit</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week07-eda-ai-audit/eda07-assignment-a6-and-reference.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Assignment 6 Walkthrough and Reference</span></a>
   </div>
 </li>
       </ul>
@@ -610,13 +670,49 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week08-dashboard-kt/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Interactive Dashboards</span></a>
+ <span class="menu-text">Week 8: Dashboard Prototypes for KT</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../weeks/week08-dashboard-kt/starter-dashboard.html" class="sidebar-item-text sidebar-link">
+  <a href="../../weeks/week08-dashboard-kt/dash01-overview-and-pathways.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">What a Dashboard Is, and Three Pathways</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week08-dashboard-kt/dash02-from-eda-to-prototype.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">From One Finding to a Prototype: The 1-1-1-1-1 Rule</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week08-dashboard-kt/dash03-starter-dashboard.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Starter Dashboard</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week08-dashboard-kt/dash04-audience-and-ui-text.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Audience-Facing Text: What You Can and Cannot Change for A7</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week08-dashboard-kt/dash05-testing-privacy-and-shiny-demo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Testing, Privacy-Safe Publishing, and the Shiny Demo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week08-dashboard-kt/dash06-studio-dashboard-adaptation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">In-Class Studio: Dashboard Adaptation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week08-dashboard-kt/dash07-assignment-a7-and-reference.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Assignment 7 Walkthrough and Reference</span></a>
   </div>
 </li>
       </ul>
@@ -929,20 +1025,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives">Objectives</a></li>
   <li><a href="#connection" id="toc-connection" class="nav-link" data-scroll-target="#connection">Connection</a></li>
   <li><a href="#dashboard-case-study-nhanes-equity" id="toc-dashboard-case-study-nhanes-equity" class="nav-link" data-scroll-target="#dashboard-case-study-nhanes-equity">Dashboard Case Study: NHANES Equity</a></li>
-  <li><a href="#pathway-choice" id="toc-pathway-choice" class="nav-link" data-scroll-target="#pathway-choice">Pathway Choice</a></li>
-  <li><a href="#class-plan" id="toc-class-plan" class="nav-link" data-scroll-target="#class-plan">Class Plan</a></li>
-  <li><a href="#student-output" id="toc-student-output" class="nav-link" data-scroll-target="#student-output">Student Output</a></li>
-  <li><a href="#definition-of-done" id="toc-definition-of-done" class="nav-link" data-scroll-target="#definition-of-done">Definition of Done</a></li>
-  <li><a href="#what-students-leave-with" id="toc-what-students-leave-with" class="nav-link" data-scroll-target="#what-students-leave-with">What Students Leave With</a></li>
+  <li><a href="#reading-order" id="toc-reading-order" class="nav-link" data-scroll-target="#reading-order">Reading order</a></li>
+  <li><a href="#class-plan" id="toc-class-plan" class="nav-link" data-scroll-target="#class-plan">Class plan</a></li>
+  <li><a href="#student-output" id="toc-student-output" class="nav-link" data-scroll-target="#student-output">Student output</a></li>
+  <li><a href="#links" id="toc-links" class="nav-link" data-scroll-target="#links">Links</a></li>
+  <li><a href="#definition-of-done" id="toc-definition-of-done" class="nav-link" data-scroll-target="#definition-of-done">Definition of done</a></li>
+  <li><a href="#what-students-leave-with" id="toc-what-students-leave-with" class="nav-link" data-scroll-target="#what-students-leave-with">What students leave with</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ehsanx/HDSx/edit/main/weeks/week08-dashboard-kt/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ehsanx/HDSx/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week08-dashboard-kt/index.html">Week 8: Dashboard Prototypes for KT</a></li><li class="breadcrumb-item"><a href="../../weeks/week08-dashboard-kt/index.html">Interactive Dashboards</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week08-dashboard-kt/index.html">Week 8: Dashboard Prototypes for KT</a></li><li class="breadcrumb-item"><a href="../../weeks/week08-dashboard-kt/index.html">Week 8: Dashboard Prototypes for KT</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Interactive Dashboards</h1>
+<h1 class="title">Week 8: Dashboard Prototypes for KT</h1>
 </div>
 
 
@@ -961,17 +1058,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>This is the first app-forward week. Students move from audited EDA outputs to a small dashboard-style Knowledge Translation product that helps a defined audience explore one descriptive question.</p>
-<p>The required pathway is beginner-friendly and reliable in Codespaces: run the complete NHANES Shiny exemplar locally, inspect how it turns a dataset into audience-facing controls and text, then make one small audience-facing adaptation. Static Quarto dashboard and deployment options are demonstrations, not required live publishing work.</p>
+<p>This is the first app-forward week. You will move from audited EDA outputs (Week 7) to a small dashboard-style Knowledge Translation product that helps a defined audience explore one descriptive question.</p>
+<p>The <strong>required core</strong> pathway is the <a href="../../weeks/week08-dashboard-kt/dash03-starter-dashboard.html">Quarto starter dashboard</a>: it renders reliably in every Codespace, makes the analysis visible, and is the file you will adapt for Assignment 7. The Shiny exemplar discussed on <a href="../../weeks/week08-dashboard-kt/dash05-testing-privacy-and-shiny-demo.html">dash05</a> is a <strong>demonstration only</strong> — your instructor will run it in class; you are not required to install Shiny, run the app, or produce A7 deliverables from it.</p>
 </section>
 <section id="objectives" class="level2">
 <h2 class="anchored" data-anchor-id="objectives">Objectives</h2>
-<p>By the end of the week, students can:</p>
+<p>By the end of the week you can:</p>
 <ul>
 <li>explain the difference between a static report, a Quarto dashboard-style product, and a Shiny app;</li>
-<li>run the NHANES dashboard exemplar locally from the repository root;</li>
-<li>identify one audience-specific question that a dashboard can answer without overclaiming;</li>
-<li>make a small UI-text or documentation improvement that clarifies interpretation;</li>
+<li>render the Quarto starter dashboard locally and adapt one audience-facing element;</li>
+<li>apply the 1-1-1-1-1 rule to translate one Week 7 finding into a dashboard prototype;</li>
+<li>distinguish text/UI changes (allowed for A7) from analytic changes (not allowed for A7);</li>
 <li>test a dashboard locally and record what was checked;</li>
 <li>apply privacy-safe publishing guidance before sharing any health-data product.</li>
 </ul>
@@ -997,39 +1094,57 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Week 11 static dashboard demo: <code>weeks/week11-portfolio-surgery/static-dashboard-ojs.qmd</code></li>
 </ul>
 </section>
-<section id="pathway-choice" class="level2">
-<h2 class="anchored" data-anchor-id="pathway-choice">Pathway Choice</h2>
-<p>Core pathway: run and critique the local Shiny exemplar, then submit a dashboard adaptation note. This keeps the week focused on KT design, testing, and interpretation.</p>
-<p>Optional pathway: explore the <a href="../../weeks/week08-dashboard-kt/starter-dashboard.html">starter dashboard</a> as a static Quarto-style mockup or use it as a planning sketch before changing app text.</p>
+<section id="reading-order" class="level2">
+<h2 class="anchored" data-anchor-id="reading-order">Reading order</h2>
+<ol type="1">
+<li><a href="../../weeks/week08-dashboard-kt/dash01-overview-and-pathways.html">dash01 — What a Dashboard Is, and Three Pathways</a></li>
+<li><a href="../../weeks/week08-dashboard-kt/dash02-from-eda-to-prototype.html">dash02 — From One Finding to a Prototype: The 1-1-1-1-1 Rule</a></li>
+<li><a href="../../weeks/week08-dashboard-kt/dash03-starter-dashboard.html">dash03 — Starter Dashboard (required core artifact)</a></li>
+<li><a href="../../weeks/week08-dashboard-kt/dash04-audience-and-ui-text.html">dash04 — Audience-Facing Text: What You Can and Cannot Change for A7</a></li>
+<li><a href="../../weeks/week08-dashboard-kt/dash05-testing-privacy-and-shiny-demo.html">dash05 — Testing, Privacy-Safe Publishing, and the Shiny Demo</a></li>
+<li><a href="../../weeks/week08-dashboard-kt/dash06-studio-dashboard-adaptation.html">dash06 — In-Class Studio: Dashboard Adaptation</a></li>
+<li><a href="../../weeks/week08-dashboard-kt/dash07-assignment-a7-and-reference.html">dash07 — Assignment 7 Walkthrough and Reference</a></li>
+</ol>
 </section>
 <section id="class-plan" class="level2">
-<h2 class="anchored" data-anchor-id="class-plan">Class Plan</h2>
+<h2 class="anchored" data-anchor-id="class-plan">Class plan</h2>
 <ol type="1">
-<li>Run the NHANES dashboard from the repository root.</li>
+<li>Render the <a href="../../weeks/week08-dashboard-kt/dash03-starter-dashboard.html">Quarto starter dashboard</a> from the repository root.</li>
 <li>Choose a stakeholder audience and write one question that audience could answer from the dashboard.</li>
-<li>Inspect one control, title, caption, help text, or interpretation note.</li>
+<li>Identify one control, title, caption, help text, or interpretation note to revise.</li>
 <li>Improve that audience-facing text without changing analytic logic.</li>
-<li>Rerun the app and record the local test result.</li>
-<li>Draft one privacy-safe publishing check and one limitation statement.</li>
+<li>Re-render the dashboard with a different <code>selected_income</code> value and record the test result.</li>
+<li>Watch the optional Shiny exemplar demonstration (<a href="../../weeks/week08-dashboard-kt/dash05-testing-privacy-and-shiny-demo.html">dash05</a>) — for awareness only, not for A7.</li>
 </ol>
 </section>
 <section id="student-output" class="level2">
-<h2 class="anchored" data-anchor-id="student-output">Student Output</h2>
-<p>By the end of class, each student has a local app run note, an audience sentence, a before/after text change, a testing log, and a limitation statement.</p>
-<p>Assignment link: <a href="../../assignments/assignment07-dashboard/README.html">Assignment 7</a>.</p>
+<h2 class="anchored" data-anchor-id="student-output">Student output</h2>
+<p>By the end of class each student has a local render note, an audience sentence, a before/after text change, a testing log entry, and a limitation statement — the studio drafts of every Assignment 7 file.</p>
+</section>
+<section id="links" class="level2">
+<h2 class="anchored" data-anchor-id="links">Links</h2>
+<ul>
+<li>Assignment: <a href="../../assignments/assignment07-dashboard/README.html">Assignment 7 — Dashboard KT Prototype</a></li>
+</ul>
 </section>
 <section id="definition-of-done" class="level2">
-<h2 class="anchored" data-anchor-id="definition-of-done">Definition of Done</h2>
+<h2 class="anchored" data-anchor-id="definition-of-done">Definition of done</h2>
 <ul>
-<li>The app runs locally from the cached NHANES data.</li>
+<li>The Quarto starter dashboard renders locally from the cached NHANES data.</li>
 <li>The audience-facing change improves clarity without changing the analysis.</li>
-<li>The testing log records how the dashboard was checked in Codespaces or the local R session.</li>
+<li>The testing log records how the dashboard was checked in Codespaces.</li>
 <li>The privacy-safe publishing note avoids row-level data sharing, small-cell claims, and causal overreach.</li>
+<li>No A7 submission uses the Shiny app as its primary deliverable.</li>
 </ul>
 </section>
 <section id="what-students-leave-with" class="level2">
-<h2 class="anchored" data-anchor-id="what-students-leave-with">What Students Leave With</h2>
-<p>Students leave with a tested dashboard adaptation note and a decision rule for their term project: use the simplest product that serves the audience, whether that is a report, slide, static dashboard, or Shiny app.</p>
+<h2 class="anchored" data-anchor-id="what-students-leave-with">What students leave with</h2>
+<p>A tested dashboard adaptation note and a decision rule for the term project: use the simplest pathway that serves the audience, with the Quarto pathway as the supported default and any other pathway requiring instructor approval.</p>
+<!--
+Instructor maintenance notes (not rendered to students):
+This week has no instructor key files to gate. The pattern is preserved across Weeks 6-8 for consistency.
+If instructor-only example dashboards or speaker notes are added later, follow the release-time checklist used by Weeks 6 and 7 (see weeks/week06-visualization/instructor/MAINTENANCE.md).
+-->
 
 
 </section>
@@ -1487,13 +1602,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../weeks/week07-eda-ai-audit/activity-table1-audit.html" class="pagination-link" aria-label="Activity: Table 1 and AI Audit">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Activity: Table 1 and AI Audit</span>
+      <a href="../../weeks/week07-eda-ai-audit/eda07-assignment-a6-and-reference.html" class="pagination-link" aria-label="Assignment 6 Walkthrough and Reference">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Assignment 6 Walkthrough and Reference</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../weeks/week08-dashboard-kt/starter-dashboard.html" class="pagination-link" aria-label="Starter Dashboard">
-        <span class="nav-page-text">Starter Dashboard</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../weeks/week08-dashboard-kt/dash01-overview-and-pathways.html" class="pagination-link" aria-label="What a Dashboard Is, and Three Pathways">
+        <span class="nav-page-text">What a Dashboard Is, and Three Pathways</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

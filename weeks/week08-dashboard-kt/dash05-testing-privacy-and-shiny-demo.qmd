@@ -1,0 +1,77 @@
+# Testing, Privacy-Safe Publishing, and the Shiny Demo {.unnumbered}
+
+## Where this fits
+
+You have the starter dashboard ([dash03](dash03-starter-dashboard.qmd)) and you know what kind of changes are allowed ([dash04](dash04-audience-and-ui-text.qmd)). This page covers three things you do *before* you submit:
+
+1. Test the starter dashboard in your Codespace.
+2. Apply the privacy-safe publishing checklist.
+3. Watch (but do not run) the optional Shiny exemplar your instructor will demo in class.
+
+## Part 1 — Testing the starter dashboard
+
+The A7 deliverable list asks for a `testing-log.md`. Use the routine below for the entry.
+
+### A six-step test routine
+
+1. **Render from the repository root.** Open `dash03-starter-dashboard.qmd` in your Codespace and click Render. Confirm there are no errors.
+2. **Change the control.** Edit `selected_income` to a different value from `available_income_groups`. Save the file.
+3. **Render again.** Confirm the title, table, and plot all updated.
+4. **Verify the caption.** The caption should still name the dataset, exclusions, and limitation.
+5. **Open the HTML preview.** Use the Codespaces preview pane and confirm the rendered page looks correct in the browser, not just in the editor.
+6. **Record the test.** In `testing-log.md`, note the date, the command or render path used, the values you tried, and the result.
+
+::: {.callout-note title="Tester note"}
+Capture: a screenshot of the Codespaces Quarto preview showing the rendered starter dashboard for *two* different `selected_income` values, side by side or in sequence. This is the most common visual confirmation that the control "works."
+:::
+
+### Common failure modes and quick fixes
+
+| Failure | What you see | Quick fix |
+|---|---|---|
+| Wrong working directory | "Could not find examples/nhanes-equity/data/nhanes_equity_v6.csv" | Open the Quarto file via the Explorer and confirm Codespaces is rooted at the repo root |
+| Missing package | "there is no package called 'ggplot2'" | Run `library(ggplot2)` once; if it still fails, raise with your TA — do not install at random |
+| Stale `_freeze` cache | Output reflects the old control value | Delete the relevant `_freeze/` subfolder and re-render; or change the chunk slightly |
+| Preview pane blank | Render succeeds but preview is empty | Click the preview pane refresh icon, or open the HTML file from `docs/` (if configured) |
+
+::: {.callout-note title="Tester note"}
+Capture: one screenshot of each failure state above, with the error visible. New students stall on these and screenshots in the Survival Guide help unblock faster.
+:::
+
+## Part 2 — Privacy-safe publishing
+
+Five rules apply every time you share a dashboard rendering, a screenshot, or a Quarto preview.
+
+1. **No row-level data.** Your figures and tables show aggregate summaries. Never paste a row-level NHANES record into a screenshot, a chat with an external AI, or a public README.
+2. **No small-cell interpretations.** If a group has very few records, do not interpret the cell. Combine, mark, or exclude the group (see [eda04](../week07-eda-ai-audit/eda04-descriptive-statistics-claims.qmd)).
+3. **State descriptive limits.** Every interpretation should say the artifact is descriptive and unweighted. No causal language. No "national prevalence" language.
+4. **Keep cached data separate from raw retrieval.** The course uses a cached CSV intentionally. If you write code that retrieves raw NHANES from the CDC, document that as separate work — do not put a live API call in your dashboard.
+5. **Do not upload row-level data to external AI tools.** Aggregate first. The AI conversation can see counts and means; it should not see individual records.
+
+### What to write in `privacy-check.md`
+
+A6 and A7 both expect a short privacy check. For A7, write three sentences:
+
+- One naming the data source and the classroom-use boundary (reuse from [eda05](../week07-eda-ai-audit/eda05-ai-audit-categories.qmd)).
+- One confirming the dashboard renders aggregate summaries only.
+- One confirming you did not share row-level records with any external AI tool.
+
+## Part 3 — The Shiny exemplar (demonstration only)
+
+Your instructor will demo a Shiny app version of the NHANES dashboard in class. **You are not required to run this app, install Shiny, or produce anything from it.** Your A7 deliverable is built from the Quarto starter dashboard, not from this app.
+
+What the demo will show you:
+
+- How a Shiny app turns the same kind of analysis into a live, server-backed dashboard with reactive controls.
+- The trade-offs: more interactivity, but it requires a server (or a Codespaces port forward), more packages, and more failure modes.
+- Where the app code lives (`examples/nhanes-equity/app/app.R`) if you want to read it.
+
+If, after watching the demo, you decide you want to use Shiny for your term-project final dashboard, that pathway is **not approved by default**. Talk with your instructor before committing. The Quarto pathway is the supported default for every student.
+
+::: {.callout-warning}
+Do **not** put `shiny::runApp(...)` in your A7 submission as your "dashboard." A7 expects an adaptation of the Quarto starter. The Shiny app is shown to you; it is not what you build on.
+:::
+
+## Where this goes next
+
+[dash06](dash06-studio-dashboard-adaptation.qmd) is the in-class studio where you produce draft versions of every A7 deliverable from the Quarto starter.

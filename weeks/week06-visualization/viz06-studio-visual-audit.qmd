@@ -1,0 +1,70 @@
+# In-Class Studio: AI Visual Audit {.unnumbered}
+
+## Where this fits
+
+You have the worked example ([viz03](viz03-worked-example.qmd)), the audit categories ([viz04](viz04-misleading-design.qmd)), and the AI-prompt pattern ([viz05](viz05-ai-prompts-and-audit.qmd)). This page is the in-class studio where you put all three to work: read a deliberately flawed plot, identify at least three problems, revise the plot, and write a short audit note. The same workflow is what Assignment 5 expects, so think of this as the dress rehearsal.
+
+## Before you start
+
+Take 2 minutes to check that your Codespace is ready:
+
+1. `library(readr); library(dplyr); library(ggplot2)` runs without error.
+2. The cached data file resolves from the repository root: `examples/nhanes-equity/data/nhanes_equity_v6.csv`.
+3. Your `viz03-worked-example.qmd` renders cleanly.
+
+If any of those three fail, raise it with your debugging partner before moving on.
+
+## Goal
+
+Evaluate one AI-generated visualization for correctness, clarity, bias, aggregation choices, and misleading design. Then revise it so the visual matches the evidence.
+
+## Inputs
+
+- Worked example to compare against: `weeks/week06-visualization/viz03-worked-example.qmd`
+- Dataset: `examples/nhanes-equity/data/nhanes_equity_v6.csv`
+- Flawed plot code (the artifact you will audit): `weeks/week06-visualization/instructor/flawed-plot-code.R`
+
+::: {.callout-note title="Tester note"}
+Capture: a screenshot of the rendered flawed plot in the Codespaces Quarto preview, with the misleading title clearly visible. This will be referenced by other students during the studio.
+:::
+
+## Activity Steps
+
+1. Review the worked example and note how it labels the data source, statistic, and limitation.
+2. Open `instructor/flawed-plot-code.R` and read the comments and output labels before you run it.
+3. Run the script and inspect the rendered figure.
+4. List at least three issues that could mislead a reader. Tag each one with one of the audit categories below.
+5. Revise the plot so the title, scale, grouping, and caption match the evidence. Keep the cohort restriction explicit.
+6. Write a short note explaining what you changed and why.
+
+## Audit Categories
+
+- **Correctness:** Does the plot show what the title and labels claim?
+- **Design:** Do scale, color, ordering, and geometry support fair comparison?
+- **Interpretation:** Does the caption avoid causal or population-level claims that the plot cannot support?
+- **Bias and aggregation:** Could grouping, missingness, or small counts hide important variation?
+- **Reproducibility:** Can another person rerun the code from the repository root using relative paths?
+
+## Required Outputs (studio draft)
+
+These are the draft files you produce in class. The Assignment 5 deliverable list ([viz07](viz07-assignment-a5-and-reference.qmd)) is the same set, polished.
+
+- `visual-audit-note.md` — at least three issues with category, why it matters, and the corrected approach.
+- `corrected-plot.qmd` — a rerunnable Quarto file that creates the corrected plot.
+- `corrected-plot.png` — the exported corrected plot.
+- `caption.md` — a caption that states the statistic, data source, exclusions, and limitations.
+- `ai-use-note.md` — if you used AI, explain what it helped with and how you checked the result.
+
+## Completion Check
+
+You are done with the studio when a peer can rerun your corrected plot, identify the main comparison without reading your code, and see at least one explicit limitation in the caption.
+
+## Where this goes next
+
+Polish the studio drafts into the Assignment 5 submission. [viz07](viz07-assignment-a5-and-reference.qmd) walks through the seven A5 files one by one and connects the work to the M1 visual plan due the same week.
+
+<!--
+Instructor-only note (not rendered to students):
+This page intentionally does NOT link to instructor/corrected-plot-code.R or instructor/answer-key-visual-audit.md.
+See weeks/week06-visualization/instructor/MAINTENANCE.md for release-time key-handling steps.
+-->

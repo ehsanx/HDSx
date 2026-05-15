@@ -1,14 +1,14 @@
-# Exploring Data {.unnumbered}
+# Week 7: EDA, Table 1 & AI Auditing {.unnumbered}
 
 ## Overview
 
-This week builds the audit trail behind a descriptive analysis. Students define an analysis cohort, check missingness, create a Table 1-style summary, and audit planted errors that mimic common AI-assisted mistakes.
+This week builds the audit trail behind a descriptive analysis. You will define an analysis cohort, check missingness, create a Table 1-style summary, and audit a planted-error starter that mimics common AI-assisted mistakes.
 
-EDA is treated as evidence stewardship: every exclusion, statistic, and interpretation should be visible enough for another person to rerun and challenge.
+EDA is treated as **evidence stewardship**: every exclusion, statistic, and interpretation should be visible enough for another person to rerun and challenge.
 
 ## Objectives
 
-By the end of the week, students can:
+By the end of the week you can:
 
 - define and document an analysis cohort before summarizing;
 - report missingness for key variables rather than dropping rows silently;
@@ -24,22 +24,35 @@ Week 6 focused on whether visual design makes a descriptive claim honest and cle
 
 {{< include ../../examples/nhanes-equity/snippets/case-study-data-analysis.qmd >}}
 
-## Class Plan
+## Reading order
 
-1. Work through the [Table 1 worked example](worked-example-table1.qmd) using the CSV snapshot.
+1. [eda01 — EDA as Evidence Stewardship](eda01-overview-and-goals.qmd)
+2. [eda02 — Cohort and Missingness](eda02-cohort-and-missingness.qmd)
+3. [eda03 — Worked Example: EDA and Table 1](eda03-worked-example.qmd)
+4. [eda04 — What Each Statistic Claims](eda04-descriptive-statistics-claims.qmd)
+5. [eda05 — Four Audit Categories for AI-Drafted EDA](eda05-ai-audit-categories.qmd)
+6. [eda06 — In-Class Studio: Planted-Error Audit](eda06-studio-planted-errors.qmd)
+7. [eda07 — Assignment 6 Walkthrough and Reference](eda07-assignment-a6-and-reference.qmd)
+
+## Class plan
+
+1. Work through the [worked example](eda03-worked-example.qmd) using the CSV snapshot.
 2. Name the cohort definition before inspecting any group summaries.
 3. Build a missingness table for the variables used in the summary.
 4. Produce a Table 1-style summary with N, BMI mean (SD), and age mean (SD).
-5. Audit `weeks/week07-eda-ai-audit/instructor/planted-error-starter.qmd` and categorize at least five issues.
+5. Audit the planted-error starter in the [studio](eda06-studio-planted-errors.qmd) and categorize at least five issues.
 6. Revise the methods note so provenance, missingness, and non-causal framing are explicit.
 
-## Student Output
+## Student output
 
-By the end of class, each student has a rerunnable EDA note, a Table 1-style summary, a planted-error audit, a provenance/stewardship note, and an AI-use note if AI helped draft code or prose.
+By the end of class each student has a rerunnable EDA note, a Table 1-style summary, a planted-error audit, a provenance/stewardship note, and an AI-use note if AI helped draft code or prose.
 
-Assignment link: [Assignment 6](../../assignments/assignment06-eda-ai-audit/README.md). Milestone link: [M2 Preliminary Analysis](../../milestones/m2-preliminary-analysis/README.md).
+## Links
 
-## Definition of Done
+- Assignment: [Assignment 6 — EDA and AI Audit](../../assignments/assignment06-eda-ai-audit/README.md)
+- Milestone: [M2 — Preliminary Analysis](../../milestones/m2-preliminary-analysis/README.md)
+
+## Definition of done
 
 - Cohort restrictions are stated before results are interpreted.
 - Missingness is checked and reported before complete-case summaries are used.
@@ -47,6 +60,12 @@ Assignment link: [Assignment 6](../../assignments/assignment06-eda-ai-audit/READ
 - The audit identifies at least five planted issues across correctness, reproducibility, interpretation, and stewardship.
 - M2 preliminary analysis renders from source and explains what the descriptive results do not prove.
 
-## What Students Leave With
+## What students leave with
 
-Students leave with a reproducible EDA note and a habit of treating AI-generated summaries as drafts that must be checked against the data, code, and stewardship context.
+A reproducible EDA note and a habit of treating AI-generated summaries as drafts that must be checked against the data, code, and stewardship context.
+
+<!--
+Instructor maintenance notes (not rendered to students):
+This week's instructor folder contains keys that must NOT ship in the public student template at term start.
+See weeks/week07-eda-ai-audit/instructor/MAINTENANCE.md for the release-time checklist.
+-->

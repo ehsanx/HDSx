@@ -1,0 +1,45 @@
+# Why Visualize, and What For {.unnumbered}
+
+## Goal
+
+Before you write any `ggplot()` code, get clear on what a plot is *for* in a health-data project. A figure is a **claim about evidence** — a reader looks at it, decides what it says, and walks away with a belief. Your job for the next two weeks is to make sure that belief matches what the data can actually support.
+
+## The four-step pipeline you will follow
+
+This week's pages all support the same short pipeline. Every visualization you make for the course should run through it:
+
+1. **Load and inspect** the data so you know what is actually there.
+2. **Plot** a clear descriptive summary — one figure, one comparison.
+3. **Audit** the figure against the data and the question.
+4. **Caption** the figure so a reader can interpret it without reading your code.
+
+If any step is skipped, the figure is fragile. If all four are present, the figure can survive an AI review, a peer review, or a project grader.
+
+## What a "good" descriptive plot does
+
+A descriptive plot in this course does three things:
+
+- It names the **statistic** (a count, mean, proportion, median).
+- It names the **comparison** (across what groups, time, or condition).
+- It names the **limitation** (what the figure does *not* support — e.g., not a causal claim, not a national estimate).
+
+A "bad" plot quietly drops one of these and lets the reader fill in the gap. Your audit habit is what catches that.
+
+## Where AI fits
+
+You will use an AI co-pilot to draft `ggplot2` code. You will not let it choose your scale, your title, or your caption without review. The Week 3 rule still holds: every AI-drafted chunk gets a `# AI prompt: ... # Verified: ...` comment line, and you check the column names, the missingness handling, and the claim the figure makes.
+
+## What you produce this week
+
+Two artifacts:
+
+- One revised, captioned `ggplot2` figure based on the NHANES Health Equity CSV (the Assignment 5 deliverable).
+- A short M1 visual plan paragraph naming the figure direction for your term project (one part of the Milestone 1 proposal due the same week).
+
+::: {.callout-tip}
+The plot you make for A5 does not need to be the same as the figure you sketch for M1. A5 is practice on a known dataset; M1 is your team's plan for your own project. The audit standard is the same in both places.
+:::
+
+## Where this goes next
+
+[viz02](viz02-grammar-and-first-plot.qmd) teaches the grammar of a ggplot from scratch, with one minimal guided figure on the NHANES CSV.
