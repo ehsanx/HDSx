@@ -2,7 +2,7 @@
 
 ## Purpose
 
-M0 makes sure every project team has a working collaboration setup before analytic work begins. By the end of this milestone, each group should know who is on the team, where the shared repository lives, how communication will happen, and how the team will handle reproducibility and AI use.
+Project groups are 3–4 students. M0 makes sure every project team has a working collaboration setup before analytic work begins. By the end of this milestone, each group should know who is on the team, where the shared repository lives, how communication will happen, and how the team will handle reproducibility and AI use.
 
 ## Due Timing
 

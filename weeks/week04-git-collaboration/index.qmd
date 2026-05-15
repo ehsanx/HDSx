@@ -205,7 +205,7 @@ This week you form your term project groups (**Milestone 0**). Use this session 
 5.  Each member makes a small "hello" commit (e.g., add your name to the `README.md`) and pushes it to verify access.
 
 ::: callout-note
-**Milestone 0 due Friday:** Record your group formation on Canvas and ensure everyone can commit to the shared repository.
+**Milestone 0 due Monday (Week 4 deadline posted in Canvas):** Record your group formation on Canvas and ensure everyone can commit to the shared repository.
 :::
 
 ------------------------------------------------------------------------

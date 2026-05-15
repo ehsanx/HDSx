@@ -10,15 +10,15 @@ Here, we offer:
 
 -   **"Zero to AI Co-Pilot" Training**: Learn to use Large Language Models (LLMs) to generate, debug, and translate code while critically auditing them for bias and hallucinations.
 -   **Real-World Data**: Guides on navigating "messy" open data sources such as NHANES and WHO, rather than sanitized "toy" datasets.
--   **Knowledge Translation**: Step-by-step walkthroughs on building interactive dashboards (Shiny/Dash) and dynamic reports to communicate findings to policymakers.
+-   **Knowledge Translation**: Step-by-step walkthroughs on building a Quarto dashboard-style KT product and dynamic reports; Shiny is shown as an optional demonstration.
 
 ## What We Aim to Achieve {.unnumbered}
 
 We are on a mission to:
 
--   **Democratize Compute Access**: Eliminate hardware barriers by using cloud-native environments (Google Colab, Kaggle) that run on any device.
--   **Bridge the "Polyglot" Gap**: Provide "Rosetta Stone" tutorials where concepts are implemented in both R and Python, allowing learners to be fluent in both.
--   **Teach "AI-Resilience"**: Shift the focus from manual syntax generation to **rigorous code auditing**, security validation, and reproducibility.
+-   **Democratize Compute Access**: Eliminate hardware barriers by using GitHub Codespaces — a cloud-native environment that runs on any modern web browser, with no local installation required.
+-   **Polyglot Awareness**: R is the required core. Week 5 reads short Python/pandas examples and runs AI-assisted translation parity checks; Python is awareness, not a parallel curriculum.
+-   **Teach AI Audit Habits**: Shift the focus from accepting AI-generated code to **rigorous code review**, security validation, and reproducibility.
 -   **Enable Professional Portfolios**: Help students transform static analyses into public-facing data science portfolios.
 
 ## Dive into Our Modules {.unnumbered}
@@ -70,7 +70,7 @@ descriptions <- c(
   "Python/pandas awareness, R-to-Python translation, AI parity checks, and R mastery practice.",
   "Clear health data graphics, ggplot2 workflows, visual audits, and misleading plot repair.",
   "EDA, missingness, Table 1 summaries, planted-error audits, and descriptive interpretation.",
-  "Dashboard-style knowledge translation products and the first required Shiny app run.",
+  "Dashboard-style knowledge translation products from one audited descriptive finding; Quarto starter is the required core, Shiny is shown only as an instructor demonstration.",
   "Plain-language communication, revealjs slides, citations, and peer feedback.",
   "Dynamic Quarto reports, figures, tables, citations, limitations, and publishing workflow.",
   "Fresh-environment reproducibility testing, dependency repair, portfolio polish, and static dashboard extension.",
@@ -94,7 +94,7 @@ The tutorials are designed with a consistent structure to provide a cohesive lea
 
 1.  **Overview**: A concise summary of learning objectives and topics.
 2.  **Concepts**: Core theoretical materials (slides, video lessons).
-3.  **Polyglot Tutorials**: In-depth walkthroughs with tabbed code blocks allowing you to toggle between **R** and **Python** solutions.
+3.  **R Tutorials**: In-depth R walkthroughs with AI-assisted code drafting and auditing. Week 5 adds short Python/pandas examples for polyglot awareness only.
 4.  **AI Auditing**: Specific sections dedicated to verifying and "stress-testing" AI-generated code for the chapter's topic.
 5.  **Knowledge Check**: Ungraded self-assessments to reinforce key concepts.
 6.  **Practice Exercises**: Hands-on tasks using real-world health data to build your portfolio.

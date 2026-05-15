@@ -1,8 +1,6 @@
 project:
   type: book
   output-dir: docs
-  resources:
-    - weeks/week11-portfolio-surgery/static-dashboard-ojs.qmd
 execute:
   freeze: auto
 book:
@@ -30,8 +28,6 @@ book:
       chapters:
         - course-operations/index.qmd
         - syllabus/index.qmd
-        - syllabus/syllabus-inventory-completion-matrix.md
-        - syllabus/topic-coverage-audit.md
     - part: "Week 0: Asynchronous Onboarding"
       chapters:
         - weeks/week00-onboarding/index.qmd

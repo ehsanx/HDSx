@@ -326,8 +326,8 @@ Here, we offer:
   datasets.
 \item
   \textbf{Knowledge Translation}: Step-by-step walkthroughs on building
-  interactive dashboards (Shiny/Dash) and dynamic reports to communicate
-  findings to policymakers.
+  a Quarto dashboard-style KT product and dynamic reports; Shiny is
+  shown as an optional demonstration.
 \end{itemize}
 
 \section*{What We Aim to Achieve}\label{what-we-aim-to-achieve}
@@ -341,16 +341,16 @@ We are on a mission to:
 \tightlist
 \item
   \textbf{Democratize Compute Access}: Eliminate hardware barriers by
-  using cloud-native environments (Google Colab, Kaggle) that run on any
-  device.
+  using GitHub Codespaces --- a cloud-native environment that runs on
+  any modern web browser, with no local installation required.
 \item
-  \textbf{Bridge the ``Polyglot'' Gap}: Provide ``Rosetta Stone''
-  tutorials where concepts are implemented in both R and Python,
-  allowing learners to be fluent in both.
+  \textbf{Polyglot Awareness}: R is the required core. Week 5 reads
+  short Python/pandas examples and runs AI-assisted translation parity
+  checks; Python is awareness, not a parallel curriculum.
 \item
-  \textbf{Teach ``AI-Resilience''}: Shift the focus from manual syntax
-  generation to \textbf{rigorous code auditing}, security validation,
-  and reproducibility.
+  \textbf{Teach AI Audit Habits}: Shift the focus from accepting
+  AI-generated code to \textbf{rigorous code review}, security
+  validation, and reproducibility.
 \item
   \textbf{Enable Professional Portfolios}: Help students transform
   static analyses into public-facing data science portfolios.
@@ -364,7 +364,7 @@ We are on a mission to:
 Embark on a journey through our structured modules, designed to take you
 from data literacy to advanced AI workflows.
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, opacitybacktitle=0.6, breakable, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, left=2mm, opacityback=0, leftrule=.75mm, rightrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, titlerule=0mm, colframe=quarto-callout-note-color-frame, arc=.35mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, toprule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, colback=white, colframe=quarto-callout-note-color-frame, coltitle=black, leftrule=.75mm, colbacktitle=quarto-callout-note-color!10!white, bottomtitle=1mm, bottomrule=.15mm, opacityback=0, toptitle=1mm, left=2mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, toprule=.15mm, breakable]
 
 The tutorials are designed with a consistent structure to provide a
 cohesive learning experience. Here is what you can expect in each
@@ -379,9 +379,9 @@ chapter:
 \item
   \textbf{Concepts}: Core theoretical materials (slides, video lessons).
 \item
-  \textbf{Polyglot Tutorials}: In-depth walkthroughs with tabbed code
-  blocks allowing you to toggle between \textbf{R} and \textbf{Python}
-  solutions.
+  \textbf{R Tutorials}: In-depth R walkthroughs with AI-assisted code
+  drafting and auditing. Week 5 adds short Python/pandas examples for
+  polyglot awareness only.
 \item
   \textbf{AI Auditing}: Specific sections dedicated to verifying and
   ``stress-testing'' AI-generated code for the chapter's topic.
@@ -1464,807 +1464,6 @@ Recording of class sessions by students is not permitted. Selected
 recordings by the instructor/TAs will be released on Canvas for viewing
 outside class. Contact the instructor immediately with any objections.
 
-\chapter{Syllabus Inventory Completion
-Matrix}\label{syllabus-inventory-completion-matrix}
-
-Last updated after milestone/presentation/final-portfolio completion
-pass: 2026-05-14.
-
-\section{Summary}\label{summary}
-
-\begin{itemize}
-\tightlist
-\item
-  Week/module pages ready: 15 of 15 tracked entries (Week 0, Weeks 1-13,
-  Final Portfolio).
-\item
-  Weekly assignments ready: A1-A10.
-\item
-  Project milestones ready: M0-M5 plus Final Portfolio.
-\item
-  Navigation state: student-facing assignments, milestones, and final
-  portfolio brief are surfaced in \texttt{\_quarto.yml}; instructor-only
-  keys remain hidden.
-\item
-  Workflow decision: fork-based repository setup is the official student
-  workflow. GitHub Classroom is not the default route for this book.
-\end{itemize}
-
-\section{Remaining Human-Only Release
-Items}\label{remaining-human-only-release-items}
-
-These items require live course infrastructure rather than more
-drafting:
-
-\begin{itemize}
-\tightlist
-\item
-  Canvas orientation video link.
-\item
-  Canvas pre-course survey link.
-\item
-  Canvas course template repository link.
-\item
-  Final presentation order, room, and live schedule.
-\end{itemize}
-
-\section{Week And Module Matrix}\label{week-and-module-matrix}
-
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}@{}}
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Entry
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Topic
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Primary source
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Status
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Evidence and notes
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-Week 0 & Asynchronous onboarding &
-\texttt{weeks/week00-onboarding/index.qmd} & Ready & Includes
-Canvas-posted orientation video/survey instructions, GitHub account
-guidance, fork workflow, support path, and Week 1 preparation. \\
-Week 1 & Health Data, KT \& Ethics &
-\texttt{weeks/week01-health-data-ethics/index.qmd};
-\texttt{activity-data-intake-card.qmd} & Ready & Data Intake Card and
-NHANES data spine frame provenance, ethics, stewardship, privacy, and
-KT. \\
-Week 2 & Modern Workflows &
-\texttt{weeks/week02-modern-workflows/index.qmd}; workflow subpages;
-\texttt{assignments/assignment01-workflows/README.md} & Ready & Student
-path is template repo, Fork, Codespaces from fork, commit/sync, submit
-fork link on Canvas. \\
-Week 3 & R with AI & \texttt{weeks/week03-r-with-ai/index.qmd};
-\texttt{assignments/assignment02-r-with-ai/README.md} & Ready & Adds
-minimal \texttt{renv::status()}, \texttt{renv::snapshot()}, and
-\texttt{renv::restore()} awareness aligned with the dependency note. \\
-Week 4 & Git \& Collaboration &
-\texttt{weeks/week04-git-collaboration/index.qmd};
-\texttt{assignments/assignment03-git/README.md};
-\texttt{milestones/m0-group-formation/README.md} & Ready & Group repo
-setup now uses a forked group template and collaborator access; M0 is
-fully specified. \\
-Week 5 & Polyglot Awareness \& R Deepening &
-\texttt{weeks/week05-polyglot-r-deepening/index.qmd};
-\texttt{assignments/assignment04-polyglot/README.md} & Ready & R-first
-parity workflow, Python awareness, dependency notes, and AI audit
-expectations are present. \\
-Week 6 & Data Visualization &
-\texttt{weeks/week06-visualization/index.qmd};
-\texttt{viz01}-\texttt{viz07} incremental pages; A5; M1 visual plan &
-Ready & Seven-page sequence (overview, grammar+first plot, worked
-example, misleading-design audit, AI prompts, studio, A5
-walkthrough+reference). Instructor key files unlinked from
-student-facing pages; see \texttt{instructor/MAINTENANCE.md}. \\
-Week 7 & EDA, Table 1 \& AI Auditing &
-\texttt{weeks/week07-eda-ai-audit/index.qmd};
-\texttt{eda01}-\texttt{eda07} incremental pages; A6; M2 & Ready &
-Seven-page sequence (overview, cohort+missingness, worked example,
-descriptive-statistic claims, four audit categories, planted-error
-studio, A6 walkthrough+reference). Planted-error key unlinked from
-student-facing pages; see \texttt{instructor/MAINTENANCE.md}. \\
-Week 8 & Dashboard Prototypes for KT &
-\texttt{weeks/week08-dashboard-kt/index.qmd};
-\texttt{dash01}-\texttt{dash07} incremental pages; A7 & Ready &
-Seven-page sequence with the Quarto starter dashboard as the required
-core artifact (\texttt{dash03}); Shiny exemplar covered as demonstration
-only (\texttt{dash05}); 1-1-1-1-1 prototype rule, allowed-vs-not-allowed
-adaptation guidance, testing/privacy routines, and A7 walkthrough are
-present. \\
-Week 9 & Communication of Scientific Findings &
-\texttt{weeks/week09-science-communication/index.qmd};
-\texttt{revealjs-peer-feedback.qmd}; \texttt{starter-slides.qmd}; A8 &
-Ready & Renderable revealjs starter, three-slide structure,
-plain-language activity, peer feedback form, and accessibility/citation
-checklist are present. \\
-Week 10 & Writing \& Publishing Reports &
-\texttt{weeks/week10-reporting-publishing/index.qmd};
-\texttt{report-template.qmd}; A9; M3 & Ready & Report template has YAML,
-citation workflow, generated figure/table, publishing/private preview
-checklist, and grounding audit. \\
-Week 11 & Portfolio Surgery &
-\texttt{weeks/week11-portfolio-surgery/index.qmd};
-\texttt{reproducibility-test.qmd}; A10; M4; Final Portfolio & Ready &
-Step-by-step runbook, sample failure log, final portfolio checklist
-link, and optional Python pathway note are present. \\
-Week 12 & Presentations Part 1 &
-\texttt{weeks/week12-presentations/index.qmd}; M5 & Ready & Timing
-rules, slide submission, rubric, peer feedback form, slide checklist,
-and portfolio reminder are present. \\
-Week 13 & Presentations Part 2 &
-\texttt{weeks/week13-presentations/index.qmd}; M5; Final Portfolio &
-Ready & Presentation logistics, closing reflection, final portfolio
-reminders, and final revision priorities are present. \\
-Final & Final Portfolio & \texttt{milestones/final-portfolio/README.md};
-\texttt{final-portfolio-checklist.md};
-\texttt{repository-sharing-guidance.md} & Ready & Portfolio checklist,
-public/private repository guidance, deliverables, Canvas route, AI-use
-expectations, and rubric are present. \\
-\end{longtable}
-
-\section{Assignment Matrix}\label{assignment-matrix}
-
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1875}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2500}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1875}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1875}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1875}}@{}}
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Assignment
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-Week
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Source
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Status
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Notes
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-A1 & 2 & \texttt{assignments/assignment01-workflows/README.md} & Ready &
-Fork-based workflow, render, commit/sync, and fork link submission. \\
-A2 & 3 & \texttt{assignments/assignment02-r-with-ai/README.md} & Ready &
-R import/inspection, dplyr, function, AI audit, dependency note, and
-\texttt{renv::status()} awareness. \\
-A3 & 4 & \texttt{assignments/assignment03-git/README.md} & Ready & Git,
-branches, pull request evidence, documentation edit, and M0
-readiness. \\
-A4 & 5 & \texttt{assignments/assignment04-polyglot/README.md} & Ready &
-R/Python parity, helper files, dependency note, and AI-use note. \\
-A5 & 6 & \texttt{assignments/assignment05-visualization/README.md} &
-Ready & Flawed plot audit, corrected plot, caption, and M1 link. \\
-A6 & 7 & \texttt{assignments/assignment06-eda-ai-audit/README.md} &
-Ready & Table 1, planted-error audit, stewardship note, and M2 link. \\
-A7 & 8 & \texttt{assignments/assignment07-dashboard/README.md} & Ready &
-Dashboard-style KT product, testing, audience note, limitation, and
-privacy check. \\
-A8 & 9 & \texttt{assignments/assignment08-communication/README.md} &
-Ready & Slide deck/outline, plain-language summary, peer feedback,
-source note, and AI-use note. \\
-A9 & 10 & \texttt{assignments/assignment09-reporting/README.md} & Ready
-& Quarto report, citation workflow, publishing checklist, grounding
-audit, and M3 link. \\
-A10 & 11 & \texttt{assignments/assignment10-portfolio-surgery/README.md}
-& Ready & Fresh environment test, failure log, peer review, README
-repair, and final risk list. \\
-\end{longtable}
-
-\section{Milestone Matrix}\label{milestone-matrix}
-
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}@{}}
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Milestone
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Source
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Status
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Notes
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-M0 & \texttt{milestones/m0-group-formation/README.md} & Ready & Group
-formation, shared fork, access evidence, communication plan, Codespace
-check, and AI-use note. \\
-M1 & \texttt{milestones/m1-proposal/README.md} & Ready & Proposal, Data
-Intake Card, initial visual plan, reproducibility plan, and AI-use
-note. \\
-M2 & \texttt{milestones/m2-preliminary-analysis/README.md} & Ready &
-Preliminary analysis, rendered output, Table 1, missingness, methods
-note, and AI audit. \\
-M3 & \texttt{milestones/m3-project-update/README.md} & Ready & Report
-draft, dashboard preview, reproducibility note, feedback request, and
-AI-use note. \\
-M4 & \texttt{milestones/m4-peer-review/README.md} & Ready & Peer review,
-reproducibility check, auditability check, KT feedback, and reviewer
-reflection. \\
-M5 & \texttt{milestones/m5-presentation/README.md} & Ready & Slides,
-timing, rubric, source/limitations note, feedback record, and AI-use
-note. \\
-Final Portfolio & \texttt{milestones/final-portfolio/README.md} & Ready
-& Final report, dashboard-style KT product, checklist, repository
-access, sharing guidance, and AI-use audit. \\
-\end{longtable}
-
-\section{Navigation Notes}\label{navigation-notes}
-
-\begin{itemize}
-\tightlist
-\item
-  \texttt{\_quarto.yml} lists \texttt{assignments/index.qmd} and A1-A10
-  README pages directly.
-\item
-  \texttt{\_quarto.yml} lists \texttt{milestones/index.qmd}, M0-M5, and
-  Final Portfolio.
-\item
-  Instructor-only answer keys under week \texttt{instructor/} folders
-  are intentionally not listed.
-\item
-  Starter templates may be linked from assignment/week pages without
-  being separate navigation chapters.
-\end{itemize}
-
-\chapter{Syllabus-To-Content Coverage
-Audit}\label{syllabus-to-content-coverage-audit}
-
-Last updated after milestone/presentation/final-portfolio completion
-pass: 2026-05-14.
-
-\section{Executive Summary}\label{executive-summary}
-
-\begin{itemize}
-\tightlist
-\item
-  Complete topic groups: 15 of 15 tracked entries.
-\item
-  Weekly assignment briefs complete: A1-A10.
-\item
-  Project milestones complete: M0-M5 plus Final Portfolio.
-\item
-  Student-facing navigation: assignments, milestones, and final
-  portfolio are surfaced.
-\item
-  Remaining human-only release items: Canvas orientation video link,
-  Canvas pre-course survey link, Canvas course template repository link,
-  and final presentation order/room.
-\end{itemize}
-
-\subsection{Highest-Priority Release
-Checks}\label{highest-priority-release-checks}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Post the orientation video in Canvas and link it from the Week 0
-  Canvas module.
-\item
-  Post the pre-course survey in Canvas and verify access from a student
-  account.
-\item
-  Post the course template repository link in Canvas for the fork
-  workflow.
-\item
-  Post final presentation order, room, and live schedule in Canvas.
-\item
-  Re-render the full book after any live Canvas wording changes.
-\end{enumerate}
-
-\section{Coverage Matrix}\label{coverage-matrix}
-
-\subsection{Week 0}\label{week-0}
-
-\begin{itemize}
-\tightlist
-\item
-  \textbf{Topic name:} Asynchronous Onboarding
-\item
-  \textbf{Status:} Complete
-\item
-  \textbf{Evidence:} \texttt{weeks/week00-onboarding/index.qmd} /
-  \texttt{Required\ Tasks}: ``Watch the orientation video posted in
-  Canvas''; \texttt{Course\ Repository\ Entry\ Point}: ``Open the course
-  template repository linked from Canvas''; \texttt{Support\ Path}:
-  Canvas support channel with error details.
-\item
-  \textbf{What is missing:} Live Canvas URLs are external to the
-  repository.
-\item
-  \textbf{Recommended next additions:} Add the actual Canvas video,
-  survey, and template-repository links inside Canvas.
-\end{itemize}
-
-\subsection{Week 1}\label{week-1}
-
-\begin{itemize}
-\tightlist
-\item
-  \textbf{Topic name:} Health Data, KT \& Ethics
-\item
-  \textbf{Status:} Complete
-\item
-  \textbf{Evidence:} \texttt{weeks/week01-health-data-ethics/index.qmd}
-  / \texttt{Learning\ Objectives};
-  \texttt{weeks/week01-health-data-ethics/activity-data-intake-card.qmd}
-  / Data Intake Card activity and NHANES example.
-\item
-  \textbf{What is missing:} No content drafting gap.
-\item
-  \textbf{Recommended next additions:} Refresh portal links before term.
-\end{itemize}
-
-\subsection{Week 2}\label{week-2}
-
-\begin{itemize}
-\tightlist
-\item
-  \textbf{Topic name:} Modern Workflows
-\item
-  \textbf{Status:} Complete
-\item
-  \textbf{Evidence:} \texttt{weeks/week02-modern-workflows/index.qmd} /
-  \texttt{Getting\ Started:\ GitHub\ Account\ and\ Fork}: ``Click
-  Fork''; \texttt{Assignment\ 1} brief: ``Submit your forked GitHub
-  repository link on Canvas.''
-\item
-  \textbf{What is missing:} No content drafting gap.
-\item
-  \textbf{Recommended next additions:} Keep screenshots aligned with
-  GitHub's current interface.
-\end{itemize}
-
-\subsection{Week 3}\label{week-3}
-
-\begin{itemize}
-\tightlist
-\item
-  \textbf{Topic name:} R with AI
-\item
-  \textbf{Status:} Complete
-\item
-  \textbf{Evidence:} \texttt{weeks/week03-r-with-ai/index.qmd} /
-  \texttt{Minimal\ renv\ Checkpoint}: \texttt{renv::status()},
-  \texttt{renv::snapshot()}, \texttt{renv::restore()};
-  \texttt{assignments/assignment02-r-with-ai/README.md} /
-  \texttt{Reproducibility\ Requirements}.
-\item
-  \textbf{What is missing:} No content drafting gap.
-\item
-  \textbf{Recommended next additions:} Recheck package environment
-  before release.
-\end{itemize}
-
-\subsection{Week 4}\label{week-4}
-
-\begin{itemize}
-\tightlist
-\item
-  \textbf{Topic name:} Git \& Collaboration
-\item
-  \textbf{Status:} Complete
-\item
-  \textbf{Evidence:} \texttt{weeks/week04-git-collaboration/index.qmd} /
-  \texttt{Setting\ Up\ Your\ Group\ Repository}: group fork and
-  collaborator workflow;
-  \texttt{milestones/m0-group-formation/README.md}: access evidence and
-  communication plan.
-\item
-  \textbf{What is missing:} No content drafting gap.
-\item
-  \textbf{Recommended next additions:} Verify group template repository
-  permissions before M0 opens.
-\end{itemize}
-
-\subsection{Week 5}\label{week-5}
-
-\begin{itemize}
-\tightlist
-\item
-  \textbf{Topic name:} Polyglot Awareness \& R Deepening
-\item
-  \textbf{Status:} Complete
-\item
-  \textbf{Evidence:}
-  \texttt{weeks/week05-polyglot-r-deepening/index.qmd} / R-first parity
-  workflow; \texttt{assignments/assignment04-polyglot/README.md} /
-  parity table, notebook hygiene, dependency note, and AI-use note.
-\item
-  \textbf{What is missing:} No content drafting gap.
-\item
-  \textbf{Recommended next additions:} Test Python examples in
-  Codespaces before release.
-\end{itemize}
-
-\subsection{Week 6}\label{week-6}
-
-\begin{itemize}
-\tightlist
-\item
-  \textbf{Topic name:} Data Visualization
-\item
-  \textbf{Status:} Complete
-\item
-  \textbf{Evidence:}
-  \texttt{weeks/week06-visualization/viz01-overview-and-goals.qmd}
-  through \texttt{viz07-assignment-a5-and-reference.qmd}: incremental
-  seven-page sequence covering visual reasoning, grammar of a ggplot,
-  end-to-end worked example, misleading-design failure modes, AI prompt
-  patterns, studio audit activity, and A5 walkthrough plus quick
-  reference. \texttt{instructor/answer-key-visual-audit.md} and
-  \texttt{instructor/corrected-plot-code.R} remain unlinked from
-  student-facing pages; see \texttt{instructor/MAINTENANCE.md}.
-\item
-  \textbf{What is missing:} No content drafting gap.
-\item
-  \textbf{Recommended next additions:} Re-render the worked example if
-  the NHANES CSV changes.
-\end{itemize}
-
-\subsection{Week 7}\label{week-7}
-
-\begin{itemize}
-\tightlist
-\item
-  \textbf{Topic name:} EDA, Table 1 \& AI Auditing
-\item
-  \textbf{Status:} Complete
-\item
-  \textbf{Evidence:}
-  \texttt{weeks/week07-eda-ai-audit/eda01-overview-and-goals.qmd}
-  through \texttt{eda07-assignment-a6-and-reference.qmd}: incremental
-  seven-page sequence covering evidence stewardship framing, cohort and
-  missingness, end-to-end worked example, descriptive-statistic claims,
-  four AI-audit categories, planted-error studio activity, and A6
-  walkthrough plus quick reference.
-  \texttt{instructor/planted-error-key.md} remains unlinked from
-  student-facing pages; see \texttt{instructor/MAINTENANCE.md}.
-\item
-  \textbf{What is missing:} No content drafting gap.
-\item
-  \textbf{Recommended next additions:} Keep the unweighted/descriptive
-  limitation visible.
-\end{itemize}
-
-\subsection{Week 8}\label{week-8}
-
-\begin{itemize}
-\tightlist
-\item
-  \textbf{Topic name:} Dashboard Prototypes for KT
-\item
-  \textbf{Status:} Complete
-\item
-  \textbf{Evidence:}
-  \texttt{weeks/week08-dashboard-kt/dash01-overview-and-pathways.qmd}
-  through \texttt{dash07-assignment-a7-and-reference.qmd}: incremental
-  seven-page sequence covering pathway choice (Quarto core, Shiny demo,
-  static HTML/JS demo), the 1-1-1-1-1 prototype rule, the Quarto starter
-  dashboard (required core artifact), allowed-vs-not-allowed adaptation
-  changes, testing/privacy/Shiny demo, in-class studio, and A7
-  walkthrough plus reference. Shiny exemplar treated as demonstration
-  only.
-\item
-  \textbf{What is missing:} No content drafting gap.
-\item
-  \textbf{Recommended next additions:} Test the Quarto starter dashboard
-  render flow in Codespaces before Week 8; demo (do not require) the
-  Shiny exemplar in the seminar segment.
-\end{itemize}
-
-\subsection{Week 9}\label{week-9}
-
-\begin{itemize}
-\tightlist
-\item
-  \textbf{Topic name:} Communication of Scientific Findings
-\item
-  \textbf{Status:} Complete
-\item
-  \textbf{Evidence:}
-  \texttt{weeks/week09-science-communication/index.qmd} /
-  \texttt{Plain-Language\ Translation}; \texttt{starter-slides.qmd}:
-  revealjs YAML and three-slide KT story;
-  \texttt{revealjs-peer-feedback.qmd}: peer feedback and accessibility
-  checklist; A8 brief.
-\item
-  \textbf{What is missing:} No content drafting gap.
-\item
-  \textbf{Recommended next additions:} Verify slide rendering after any
-  revealjs theme changes.
-\end{itemize}
-
-\subsection{Week 10}\label{week-10}
-
-\begin{itemize}
-\tightlist
-\item
-  \textbf{Topic name:} Writing \& Publishing Reports
-\item
-  \textbf{Status:} Complete
-\item
-  \textbf{Evidence:}
-  \texttt{weeks/week10-reporting-publishing/report-template.qmd}: YAML,
-  citation to \texttt{@cdc-nhanes}, one table, one figure, limitations,
-  publishing checklist, grounding audit; A9 brief; M3 brief.
-\item
-  \textbf{What is missing:} No content drafting gap.
-\item
-  \textbf{Recommended next additions:} Recheck \texttt{references.bib}
-  if source citations change.
-\end{itemize}
-
-\subsection{Week 11}\label{week-11}
-
-\begin{itemize}
-\tightlist
-\item
-  \textbf{Topic name:} Portfolio Surgery \& Optional Advanced Deployment
-\item
-  \textbf{Status:} Complete
-\item
-  \textbf{Evidence:}
-  \texttt{weeks/week11-portfolio-surgery/reproducibility-test.qmd}:
-  step-by-step runbook, sample failure log, blank failure log, optional
-  Python pathway, final portfolio checklist link; A10 and M4 briefs.
-\item
-  \textbf{What is missing:} No content drafting gap.
-\item
-  \textbf{Recommended next additions:} Run one fresh Codespace smoke
-  test before portfolio week.
-\end{itemize}
-
-\subsection{Week 12}\label{week-12}
-
-\begin{itemize}
-\tightlist
-\item
-  \textbf{Topic name:} Term Project Presentations, Part 1
-\item
-  \textbf{Status:} Complete
-\item
-  \textbf{Evidence:} \texttt{weeks/week12-presentations/index.qmd}:
-  timing rules, slide submission paths, rubric, peer feedback form,
-  slide checklist, portfolio reminder; M5 brief.
-\item
-  \textbf{What is missing:} Live presentation order and room are
-  external to the repository.
-\item
-  \textbf{Recommended next additions:} Post live presentation order in
-  Canvas.
-\end{itemize}
-
-\subsection{Week 13}\label{week-13}
-
-\begin{itemize}
-\tightlist
-\item
-  \textbf{Topic name:} Term Project Presentations, Part 2
-\item
-  \textbf{Status:} Complete
-\item
-  \textbf{Evidence:} \texttt{weeks/week13-presentations/index.qmd}:
-  timing rules, slide submission, closing reflection, final portfolio
-  reminder, revision priorities; M5 and Final Portfolio links.
-\item
-  \textbf{What is missing:} Live presentation order and room are
-  external to the repository.
-\item
-  \textbf{Recommended next additions:} Post live presentation order in
-  Canvas.
-\end{itemize}
-
-\subsection{Final Portfolio}\label{final-portfolio}
-
-\begin{itemize}
-\tightlist
-\item
-  \textbf{Topic name:} Final Portfolio
-\item
-  \textbf{Status:} Complete
-\item
-  \textbf{Evidence:} \texttt{milestones/final-portfolio/README.md}:
-  required artifacts, Canvas route, public/private repository guidance,
-  reproducibility checklist, AI-use expectations, grading checklist;
-  \texttt{final-portfolio-checklist.md};
-  \texttt{repository-sharing-guidance.md}.
-\item
-  \textbf{What is missing:} Live Canvas submission link is external to
-  the repository.
-\item
-  \textbf{Recommended next additions:} Verify course staff access for
-  private repositories before grading.
-\end{itemize}
-
-\section{Deliverables Alignment}\label{deliverables-alignment}
-
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Deliverable
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Status
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Evidence
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-A1 & Complete & \texttt{assignments/assignment01-workflows/README.md}
-uses fork repository workflow and Canvas fork-link submission. \\
-A2 & Complete & \texttt{assignments/assignment02-r-with-ai/README.md}
-includes R workflow, AI audit, dependency note, and
-\texttt{renv::status()} awareness. \\
-A3 & Complete & \texttt{assignments/assignment03-git/README.md} covers
-commits, diffs, branches, pull request evidence, and M0 readiness. \\
-A4 & Complete & \texttt{assignments/assignment04-polyglot/README.md}
-covers R/Python parity and dependency hygiene. \\
-A5 & Complete &
-\texttt{assignments/assignment05-visualization/README.md} covers ggplot,
-flawed plot audit, caption, and AI-use note. \\
-A6 & Complete & \texttt{assignments/assignment06-eda-ai-audit/README.md}
-covers EDA, Table 1, planted-error audit, and stewardship note. \\
-A7 & Complete & \texttt{assignments/assignment07-dashboard/README.md}
-covers dashboard-style KT product and testing. \\
-A8 & Complete &
-\texttt{assignments/assignment08-communication/README.md} covers slide
-deck/outline, plain-language summary, peer feedback, and source note. \\
-A9 & Complete & \texttt{assignments/assignment09-reporting/README.md}
-covers Quarto report, citations, publishing/private preview, and
-grounding audit. \\
-A10 & Complete &
-\texttt{assignments/assignment10-portfolio-surgery/README.md} covers
-fresh environment testing, failure log, peer review, and final risk
-list. \\
-M0 & Complete & \texttt{milestones/m0-group-formation/README.md}
-includes group formation, access, communication plan, Codespace check,
-and AI-use note. \\
-M1 & Complete & \texttt{milestones/m1-proposal/README.md} includes
-proposal, Data Intake Card, visual plan, reproducibility plan, and
-AI-use note. \\
-M2 & Complete & \texttt{milestones/m2-preliminary-analysis/README.md}
-includes preliminary analysis, rendered output, Table 1, missingness,
-methods, and audit note. \\
-M3 & Complete & \texttt{milestones/m3-project-update/README.md} includes
-report draft, dashboard preview, feedback request, reproducibility note,
-and AI-use note. \\
-M4 & Complete & \texttt{milestones/m4-peer-review/README.md} includes
-peer review, reproducibility check, auditability check, KT feedback, and
-reflection. \\
-M5 & Complete & \texttt{milestones/m5-presentation/README.md} includes
-slides, timing, rubric, source/limitations note, feedback, and AI-use
-note. \\
-Final Portfolio & Complete &
-\texttt{milestones/final-portfolio/README.md},
-\texttt{final-portfolio-checklist.md}, and
-\texttt{repository-sharing-guidance.md}. \\
-\end{longtable}
-
-\section{Consistency Checks}\label{consistency-checks}
-
-\begin{itemize}
-\tightlist
-\item
-  Fork workflow mismatch is resolved: Week 0, Week 2, A1,
-  syllabus-facing text, and Course Operations all use fork-first
-  language.
-\item
-  Student-facing assignments A1-A10 are listed in \texttt{\_quarto.yml}.
-\item
-  Student-facing milestones M0-M5 and Final Portfolio are listed in
-  \texttt{\_quarto.yml}.
-\item
-  Instructor-only files in Week 6 and Week 7 remain outside
-  \texttt{\_quarto.yml}.
-\item
-  Starter files are linked from week or assignment pages rather than
-  promoted as main chapters unless they are core student-facing pages.
-\end{itemize}
-
-\section{Appendix A: Files Scanned}\label{appendix-a-files-scanned}
-
-\begin{itemize}
-\tightlist
-\item
-  \texttt{syllabus/SPPH-381H-Course-Outline-v4.qmd}
-\item
-  \texttt{syllabus/syllabus-inventory-completion-matrix.md}
-\item
-  \texttt{weeks/week00-onboarding/index.qmd}
-\item
-  \texttt{weeks/week01-health-data-ethics/**}
-\item
-  \texttt{weeks/week02-modern-workflows/**}
-\item
-  \texttt{weeks/week03-r-with-ai/**}
-\item
-  \texttt{weeks/week04-git-collaboration/**}
-\item
-  \texttt{weeks/week05-polyglot-r-deepening/**}
-\item
-  \texttt{weeks/week06-visualization/**}
-\item
-  \texttt{weeks/week07-eda-ai-audit/**}
-\item
-  \texttt{weeks/week08-dashboard-kt/**}
-\item
-  \texttt{weeks/week09-science-communication/**}
-\item
-  \texttt{weeks/week10-reporting-publishing/**}
-\item
-  \texttt{weeks/week11-portfolio-surgery/**}
-\item
-  \texttt{weeks/week12-presentations/index.qmd}
-\item
-  \texttt{weeks/week13-presentations/index.qmd}
-\item
-  \texttt{assignments/assignment01-workflows/README.md} through
-  \texttt{assignments/assignment10-portfolio-surgery/README.md}
-\item
-  \texttt{milestones/**}
-\item
-  \texttt{\_quarto.yml}
-\item
-  \texttt{course-operations/index.qmd}
-\end{itemize}
-
-\section{Appendix B: Keyword Patterns
-Used}\label{appendix-b-keyword-patterns-used}
-
-\begin{itemize}
-\tightlist
-\item
-  Workflow: \texttt{fork}, \texttt{Codespaces}, \texttt{Quarto},
-  \texttt{render}, \texttt{commit}, \texttt{sync},
-  \texttt{relative\ paths}
-\item
-  R and reproducibility: \texttt{R}, \texttt{dplyr}, \texttt{read\_csv},
-  \texttt{renv}, \texttt{status}, \texttt{snapshot}, \texttt{restore}
-\item
-  Ethics and data: \texttt{provenance}, \texttt{stewardship},
-  \texttt{privacy}, \texttt{security}, \texttt{OCAP}, \texttt{CARE},
-  \texttt{responsible\ AI}
-\item
-  Visualization and EDA: \texttt{ggplot2}, \texttt{plotly},
-  \texttt{visual\ audit}, \texttt{misleading}, \texttt{Table\ 1},
-  \texttt{missingness}, \texttt{planted-error}
-\item
-  KT products: \texttt{dashboard}, \texttt{Shiny},
-  \texttt{plain\ language}, \texttt{revealjs}, \texttt{report},
-  \texttt{citations}, \texttt{grounding\ audit}
-\item
-  Portfolio: \texttt{fresh\ Codespace}, \texttt{failure\ log},
-  \texttt{peer\ review}, \texttt{presentation},
-  \texttt{final\ portfolio}, \texttt{AI-use\ note}
-\end{itemize}
-
 \part{Week 0: Asynchronous Onboarding}
 
 \chapter*{Week 0: Asynchronous
@@ -3318,7 +2517,7 @@ If you do not already have one:
   portfolio later in the course.
 \end{enumerate}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, opacitybacktitle=0.6, breakable, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, left=2mm, opacityback=0, leftrule=.75mm, rightrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, titlerule=0mm, colframe=quarto-callout-tip-color-frame, arc=.35mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, toprule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, colback=white, colframe=quarto-callout-tip-color-frame, coltitle=black, leftrule=.75mm, colbacktitle=quarto-callout-tip-color!10!white, bottomtitle=1mm, bottomrule=.15mm, opacityback=0, toptitle=1mm, left=2mm, titlerule=0mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, toprule=.15mm, breakable]
 
 \textbf{Portfolio thinking:} Your GitHub profile will become part of
 your professional presence. Pick a username you would be comfortable
@@ -3389,7 +2588,7 @@ Codespace}
 The first launch takes 2--3 minutes while the environment builds.
 Subsequent launches are faster.
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, opacitybacktitle=0.6, breakable, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, left=2mm, opacityback=0, leftrule=.75mm, rightrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, titlerule=0mm, colframe=quarto-callout-note-color-frame, arc=.35mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, toprule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, colback=white, colframe=quarto-callout-note-color-frame, coltitle=black, leftrule=.75mm, colbacktitle=quarto-callout-note-color!10!white, bottomtitle=1mm, bottomrule=.15mm, opacityback=0, toptitle=1mm, left=2mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, toprule=.15mm, breakable]
 
 \textbf{Reopening an existing Codespace:} After you stop or close your
 Codespace, do \textbf{not} create a new one each time. Go to
@@ -3436,7 +2635,7 @@ The \textbf{engine room} where R and Python actually run. You will not
 type commands here often --- most of your work happens in the Editor ---
 but this is where output and error messages appear.
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, opacitybacktitle=0.6, breakable, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, left=2mm, opacityback=0, leftrule=.75mm, rightrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, titlerule=0mm, colframe=quarto-callout-tip-color-frame, arc=.35mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, toprule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, colback=white, colframe=quarto-callout-tip-color-frame, coltitle=black, leftrule=.75mm, colbacktitle=quarto-callout-tip-color!10!white, bottomtitle=1mm, bottomrule=.15mm, opacityback=0, toptitle=1mm, left=2mm, titlerule=0mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, toprule=.15mm, breakable]
 
 \textbf{Lost a panel?} Use the top menu: \textbf{View → Explorer} or
 \textbf{View → Terminal} to bring them back. You can also press
@@ -3667,7 +2866,7 @@ Click the \textbf{Render} button (blue arrow icon at the top of the
 editor). A preview window appears showing your formatted report with
 code output embedded.
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, opacitybacktitle=0.6, breakable, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, left=2mm, opacityback=0, leftrule=.75mm, rightrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, titlerule=0mm, colframe=quarto-callout-tip-color-frame, arc=.35mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, toprule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, colback=white, colframe=quarto-callout-tip-color-frame, coltitle=black, leftrule=.75mm, colbacktitle=quarto-callout-tip-color!10!white, bottomtitle=1mm, bottomrule=.15mm, opacityback=0, toptitle=1mm, left=2mm, titlerule=0mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, toprule=.15mm, breakable]
 
 \textbf{What just happened:} Quarto ran every code chunk, captured the
 results, combined them with your Markdown text, and produced an HTML
@@ -3705,7 +2904,7 @@ Hover over a changed file name. Click the \textbf{+} icon that appears.
 This \textbf{stages} the file --- it tells Git ``I want to include this
 change in my next snapshot.''
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, opacitybacktitle=0.6, breakable, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, left=2mm, opacityback=0, leftrule=.75mm, rightrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, titlerule=0mm, colframe=quarto-callout-note-color-frame, arc=.35mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, toprule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, colback=white, colframe=quarto-callout-note-color-frame, coltitle=black, leftrule=.75mm, colbacktitle=quarto-callout-note-color!10!white, bottomtitle=1mm, bottomrule=.15mm, opacityback=0, toptitle=1mm, left=2mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, toprule=.15mm, breakable]
 
 \textbf{Staging vs committing:} Staging selects \emph{which} changes to
 include. Committing takes the snapshot. Think of staging as putting
@@ -3744,7 +2943,7 @@ Drive.
 \href{https://github.com}{github.com} and check that your changes
 appear. You should see your commit message next to the updated file.
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, opacitybacktitle=0.6, breakable, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, left=2mm, opacityback=0, leftrule=.75mm, rightrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-warning-color!10!white, titlerule=0mm, colframe=quarto-callout-warning-color-frame, arc=.35mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, toprule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, colback=white, colframe=quarto-callout-warning-color-frame, coltitle=black, leftrule=.75mm, colbacktitle=quarto-callout-warning-color!10!white, bottomtitle=1mm, bottomrule=.15mm, opacityback=0, toptitle=1mm, left=2mm, titlerule=0mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, toprule=.15mm, breakable]
 
 \textbf{If you skip the Sync step}, your commit exists only on the
 Codespace. If the Codespace is deleted, the commit goes with it. Always
@@ -3789,7 +2988,7 @@ Tab?}
 The Codespace runs for another 30 minutes before it times out
 automatically. That is 30 minutes of wasted credits every time.
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, opacitybacktitle=0.6, breakable, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, left=2mm, opacityback=0, leftrule=.75mm, rightrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-warning-color!10!white, titlerule=0mm, colframe=quarto-callout-warning-color-frame, arc=.35mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, toprule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, colback=white, colframe=quarto-callout-warning-color-frame, coltitle=black, leftrule=.75mm, colbacktitle=quarto-callout-warning-color!10!white, bottomtitle=1mm, bottomrule=.15mm, opacityback=0, toptitle=1mm, left=2mm, titlerule=0mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, toprule=.15mm, breakable]
 
 \textbf{Policy:} It is your responsibility to manage your compute hours.
 If you run out before the month resets, you will need to wait or pay out
@@ -3848,7 +3047,7 @@ If nothing else works:
 This shuts down and rebuilds the entire environment from scratch. It
 solves nearly all technical glitches but takes a few minutes.
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, opacitybacktitle=0.6, breakable, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, left=2mm, opacityback=0, leftrule=.75mm, rightrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-warning-color!10!white, titlerule=0mm, colframe=quarto-callout-warning-color-frame, arc=.35mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, toprule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, colback=white, colframe=quarto-callout-warning-color-frame, coltitle=black, leftrule=.75mm, colbacktitle=quarto-callout-warning-color!10!white, bottomtitle=1mm, bottomrule=.15mm, opacityback=0, toptitle=1mm, left=2mm, titlerule=0mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, toprule=.15mm, breakable]
 
 \textbf{Before rebuilding:} Make sure you have committed and synced your
 work. Uncommitted changes may survive a rebuild, but there is no
@@ -5118,7 +4317,7 @@ Toolbox}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, opacitybacktitle=0.6, breakable, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, left=2mm, opacityback=0, leftrule=.75mm, rightrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, titlerule=0mm, colframe=quarto-callout-note-color-frame, arc=.35mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, toprule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, colback=white, colframe=quarto-callout-note-color-frame, coltitle=black, leftrule=.75mm, colbacktitle=quarto-callout-note-color!10!white, bottomtitle=1mm, bottomrule=.15mm, opacityback=0, toptitle=1mm, left=2mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, toprule=.15mm, breakable]
 
 If you see an error like
 \texttt{there\ is\ no\ package\ called\ \textquotesingle{}tidyverse\textquotesingle{}},
@@ -5176,7 +4375,7 @@ R has no memory unless you store results in a named box using
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, opacitybacktitle=0.6, breakable, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, left=2mm, opacityback=0, leftrule=.75mm, rightrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-warning-color!10!white, titlerule=0mm, colframe=quarto-callout-warning-color-frame, arc=.35mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, toprule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, colback=white, colframe=quarto-callout-warning-color-frame, coltitle=black, leftrule=.75mm, colbacktitle=quarto-callout-warning-color!10!white, bottomtitle=1mm, bottomrule=.15mm, opacityback=0, toptitle=1mm, left=2mm, titlerule=0mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, toprule=.15mm, breakable]
 
 \textbf{Case sensitivity:} \texttt{Age}, \texttt{age}, and \texttt{AGE}
 are three different boxes. This is one of the most common bugs in
@@ -5225,7 +4424,7 @@ The pipe passes the result of one step into the next. Think of it as
 Read this as: \emph{``Take the data, and then keep only patients over
 65, and then calculate the average BMI.''}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, opacitybacktitle=0.6, breakable, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, left=2mm, opacityback=0, leftrule=.75mm, rightrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, titlerule=0mm, colframe=quarto-callout-tip-color-frame, arc=.35mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, toprule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, colback=white, colframe=quarto-callout-tip-color-frame, coltitle=black, leftrule=.75mm, colbacktitle=quarto-callout-tip-color!10!white, bottomtitle=1mm, bottomrule=.15mm, opacityback=0, toptitle=1mm, left=2mm, titlerule=0mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, toprule=.15mm, breakable]
 
 You will see two pipe symbols in the wild: \texttt{\%\textgreater{}\%}
 (from the \texttt{magrittr} / \texttt{tidyverse} packages) and
@@ -5294,7 +4493,7 @@ Open the \textbf{Environment} pane (top-right in RStudio or via the R
 extension) to see your variables and click a data frame to view it in a
 grid.
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, opacitybacktitle=0.6, breakable, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, left=2mm, opacityback=0, leftrule=.75mm, rightrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-warning-color!10!white, titlerule=0mm, colframe=quarto-callout-warning-color-frame, arc=.35mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, toprule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, colback=white, colframe=quarto-callout-warning-color-frame, coltitle=black, leftrule=.75mm, colbacktitle=quarto-callout-warning-color!10!white, bottomtitle=1mm, bottomrule=.15mm, opacityback=0, toptitle=1mm, left=2mm, titlerule=0mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, toprule=.15mm, breakable]
 
 \textbf{Health data reality:} Real datasets like NHANES have substantial
 missingness. Knowing \emph{where} and \emph{how much} is missing is not
@@ -5395,7 +4594,7 @@ Using \texttt{dplyr}, filter my dataset to patients over 65, group by
 sex, and calculate the mean BMI for each group. Handle missing values.
 \end{quote}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, opacitybacktitle=0.6, breakable, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, left=2mm, opacityback=0, leftrule=.75mm, rightrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, titlerule=0mm, colframe=quarto-callout-tip-color-frame, arc=.35mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, toprule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, colback=white, colframe=quarto-callout-tip-color-frame, coltitle=black, leftrule=.75mm, colbacktitle=quarto-callout-tip-color!10!white, bottomtitle=1mm, bottomrule=.15mm, opacityback=0, toptitle=1mm, left=2mm, titlerule=0mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, toprule=.15mm, breakable]
 
 \textbf{Audit the AI output:} After running the AI-generated code, check
 that (a) the column names match your actual data, (b)
@@ -5453,7 +4652,7 @@ research question, or did the AI pick an arbitrary number?
 Could this be replaced with a simpler vectorized operation (e.g.,
 \texttt{summarise(across(...))})?
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, opacitybacktitle=0.6, breakable, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, left=2mm, opacityback=0, leftrule=.75mm, rightrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, titlerule=0mm, colframe=quarto-callout-note-color-frame, arc=.35mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, toprule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, colback=white, colframe=quarto-callout-note-color-frame, coltitle=black, leftrule=.75mm, colbacktitle=quarto-callout-note-color!10!white, bottomtitle=1mm, bottomrule=.15mm, opacityback=0, toptitle=1mm, left=2mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, toprule=.15mm, breakable]
 
 In R, loops are rarely the best tool. If AI gives you a loop, ask:
 \emph{``Can this be done without a loop using dplyr or purrr?''} The
@@ -5580,7 +4779,7 @@ on a text/factor column \\
 \texttt{unexpected\ symbol} & Missing comma, parenthesis, or pipe \\
 \end{longtable}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, opacitybacktitle=0.6, breakable, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, left=2mm, opacityback=0, leftrule=.75mm, rightrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-warning-color!10!white, titlerule=0mm, colframe=quarto-callout-warning-color-frame, arc=.35mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, toprule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, colback=white, colframe=quarto-callout-warning-color-frame, coltitle=black, leftrule=.75mm, colbacktitle=quarto-callout-warning-color!10!white, bottomtitle=1mm, bottomrule=.15mm, opacityback=0, toptitle=1mm, left=2mm, titlerule=0mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, toprule=.15mm, breakable]
 
 \textbf{AI debugging guardrail:} When AI suggests a fix, re-read the
 corrected code before running it. Does the fix address the \emph{actual}
@@ -5654,7 +4853,7 @@ up where you left off.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, opacitybacktitle=0.6, breakable, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, left=2mm, opacityback=0, leftrule=.75mm, rightrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, titlerule=0mm, colframe=quarto-callout-tip-color-frame, arc=.35mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, toprule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, colback=white, colframe=quarto-callout-tip-color-frame, coltitle=black, leftrule=.75mm, colbacktitle=quarto-callout-tip-color!10!white, bottomtitle=1mm, bottomrule=.15mm, opacityback=0, toptitle=1mm, left=2mm, titlerule=0mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, toprule=.15mm, breakable]
 
 \textbf{Reproducibility habit:} Your Quarto document should contain
 \emph{every step} from raw data to clean export. Anyone (including your
@@ -6564,7 +5763,7 @@ Hover over the file name in the Source Control panel and click
 \textbf{Discard Changes} (the curved arrow) to restore the file to the
 \textbf{last committed} version.
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, opacitybacktitle=0.6, breakable, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, left=2mm, opacityback=0, leftrule=.75mm, rightrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, titlerule=0mm, colframe=quarto-callout-tip-color-frame, arc=.35mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, toprule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, colback=white, colframe=quarto-callout-tip-color-frame, coltitle=black, leftrule=.75mm, colbacktitle=quarto-callout-tip-color!10!white, bottomtitle=1mm, bottomrule=.15mm, opacityback=0, toptitle=1mm, left=2mm, titlerule=0mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, toprule=.15mm, breakable]
 
 \textbf{Key takeaway:} Saving writes to disk. Committing writes to
 \emph{history}. Only committed work can be recovered by Git.
@@ -6634,7 +5833,7 @@ Always use \textbf{relative paths} in your code (e.g.,
 \texttt{read.csv("/home/user/Documents/nhanes.csv")}). This ensures your
 analysis runs on \emph{any} machine---including your grader's Codespace.
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, opacitybacktitle=0.6, breakable, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, left=2mm, opacityback=0, leftrule=.75mm, rightrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-warning-color!10!white, titlerule=0mm, colframe=quarto-callout-warning-color-frame, arc=.35mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, toprule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, colback=white, colframe=quarto-callout-warning-color-frame, coltitle=black, leftrule=.75mm, colbacktitle=quarto-callout-warning-color!10!white, bottomtitle=1mm, bottomrule=.15mm, opacityback=0, toptitle=1mm, left=2mm, titlerule=0mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, toprule=.15mm, breakable]
 
 \textbf{Reproducibility rule:} Your term project must run from start to
 finish in a \emph{fresh} Codespace. Absolute paths guarantee failure.
@@ -6746,7 +5945,7 @@ PR}\label{tutorial-open-your-first-pr}
   request} and complete the merge.
 \end{enumerate}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, opacitybacktitle=0.6, breakable, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, left=2mm, opacityback=0, leftrule=.75mm, rightrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, titlerule=0mm, colframe=quarto-callout-tip-color-frame, arc=.35mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, toprule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, colback=white, colframe=quarto-callout-tip-color-frame, coltitle=black, leftrule=.75mm, colbacktitle=quarto-callout-tip-color!10!white, bottomtitle=1mm, bottomrule=.15mm, opacityback=0, toptitle=1mm, left=2mm, titlerule=0mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, toprule=.15mm, breakable]
 
 \textbf{Collaboration norm:} In your term project, agree with your group
 that changes go through PRs rather than directly to \texttt{main}. This
@@ -6813,7 +6012,7 @@ What does it mean in simple terms, and which \textbf{buttons in the VS
 Code UI} should I click to fix it?''
 \end{quote}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, opacitybacktitle=0.6, breakable, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, left=2mm, opacityback=0, leftrule=.75mm, rightrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-warning-color!10!white, titlerule=0mm, colframe=quarto-callout-warning-color-frame, arc=.35mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, toprule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, colback=white, colframe=quarto-callout-warning-color-frame, coltitle=black, leftrule=.75mm, colbacktitle=quarto-callout-warning-color!10!white, bottomtitle=1mm, bottomrule=.15mm, opacityback=0, toptitle=1mm, left=2mm, titlerule=0mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, toprule=.15mm, breakable]
 
 \textbf{Strict Guardrail:} Never run random terminal commands suggested
 by an AI (especially \texttt{-\/-force} or \texttt{reset\ -\/-hard}).
@@ -6868,10 +6067,11 @@ this session to establish your collaboration workflow.
   \texttt{README.md}) and pushes it to verify access.
 \end{enumerate}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, opacitybacktitle=0.6, breakable, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, left=2mm, opacityback=0, leftrule=.75mm, rightrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, titlerule=0mm, colframe=quarto-callout-note-color-frame, arc=.35mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, toprule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, colback=white, colframe=quarto-callout-note-color-frame, coltitle=black, leftrule=.75mm, colbacktitle=quarto-callout-note-color!10!white, bottomtitle=1mm, bottomrule=.15mm, opacityback=0, toptitle=1mm, left=2mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, toprule=.15mm, breakable]
 
-\textbf{Milestone 0 due Friday:} Record your group formation on Canvas
-and ensure everyone can commit to the shared repository.
+\textbf{Milestone 0 due Monday (Week 4 deadline posted in Canvas):}
+Record your group formation on Canvas and ensure everyone can commit to
+the shared repository.
 
 \end{tcolorbox}
 
@@ -9208,7 +8408,7 @@ Two artifacts:
   term project (one part of the Milestone 1 proposal due the same week).
 \end{itemize}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, opacitybacktitle=0.6, breakable, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, left=2mm, opacityback=0, leftrule=.75mm, rightrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, titlerule=0mm, colframe=quarto-callout-tip-color-frame, arc=.35mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, toprule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, colback=white, colframe=quarto-callout-tip-color-frame, coltitle=black, leftrule=.75mm, colbacktitle=quarto-callout-tip-color!10!white, bottomtitle=1mm, bottomrule=.15mm, opacityback=0, toptitle=1mm, left=2mm, titlerule=0mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, toprule=.15mm, breakable]
 
 The plot you make for A5 does not need to be the same as the figure you
 sketch for M1. A5 is practice on a known dataset; M1 is your team's plan
@@ -9296,7 +8496,7 @@ Run:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, opacitybacktitle=0.6, breakable, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, left=2mm, opacityback=0, leftrule=.75mm, rightrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-warning-color!10!white, titlerule=0mm, colframe=quarto-callout-warning-color-frame, arc=.35mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, toprule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, colback=white, colframe=quarto-callout-warning-color-frame, coltitle=black, leftrule=.75mm, colbacktitle=quarto-callout-warning-color!10!white, bottomtitle=1mm, bottomrule=.15mm, opacityback=0, toptitle=1mm, left=2mm, titlerule=0mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, toprule=.15mm, breakable]
 
 \texttt{library(ggplot2)} is required every session. If you see ``could
 not find function \texttt{ggplot}'', run the \texttt{library()} line
@@ -9331,7 +8531,7 @@ deliverable. The candidate-path pattern below works whether your
 carefully. Misspelling a column name (e.g., \texttt{bmi} when the data
 has \texttt{BMI}) is the \#1 source of broken ggplots in this course.
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, opacitybacktitle=0.6, breakable, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, left=2mm, opacityback=0, leftrule=.75mm, rightrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, titlerule=0mm, colframe=quarto-callout-note-color-frame, arc=.35mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Tester note}, toprule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, colback=white, colframe=quarto-callout-note-color-frame, coltitle=black, leftrule=.75mm, colbacktitle=quarto-callout-note-color!10!white, bottomtitle=1mm, bottomrule=.15mm, opacityback=0, toptitle=1mm, left=2mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Tester note}, toprule=.15mm, breakable]
 
 Capture: a screenshot of the Codespaces Quarto preview after
 \texttt{glimpse(nhanes)} runs, showing the column names. New students
@@ -9382,7 +8582,7 @@ Map the five parts onto this code so the grammar feels concrete:
   \textbf{Labels and theme:} \texttt{labs(...)\ +\ theme\_minimal()}
 \end{itemize}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, opacitybacktitle=0.6, breakable, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, left=2mm, opacityback=0, leftrule=.75mm, rightrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, titlerule=0mm, colframe=quarto-callout-note-color-frame, arc=.35mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Tester note}, toprule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, colback=white, colframe=quarto-callout-note-color-frame, coltitle=black, leftrule=.75mm, colbacktitle=quarto-callout-note-color!10!white, bottomtitle=1mm, bottomrule=.15mm, opacityback=0, toptitle=1mm, left=2mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Tester note}, toprule=.15mm, breakable]
 
 Capture: a screenshot of the rendered scatter plot. Confirm the axis
 labels read ``Age (years)'' and ``Weight (kg)'' so students can compare
@@ -10024,7 +9224,7 @@ matches the evidence.
   \texttt{weeks/week06-visualization/instructor/flawed-plot-code.R}
 \end{itemize}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, opacitybacktitle=0.6, breakable, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, left=2mm, opacityback=0, leftrule=.75mm, rightrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, titlerule=0mm, colframe=quarto-callout-note-color-frame, arc=.35mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Tester note}, toprule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, colback=white, colframe=quarto-callout-note-color-frame, coltitle=black, leftrule=.75mm, colbacktitle=quarto-callout-note-color!10!white, bottomtitle=1mm, bottomrule=.15mm, opacityback=0, toptitle=1mm, left=2mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Tester note}, toprule=.15mm, breakable]
 
 Capture: a screenshot of the rendered flawed plot in the Codespaces
 Quarto preview, with the misleading title clearly visible. This will be
@@ -10871,7 +10071,7 @@ The \texttt{cohort\_counts} table is your \textbf{flow diagram in text
 form}. It shows N before and after each restriction. If a peer asks
 ``how many people are in your analysis?'', this table is the answer.
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, opacitybacktitle=0.6, breakable, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, left=2mm, opacityback=0, leftrule=.75mm, rightrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, titlerule=0mm, colframe=quarto-callout-note-color-frame, arc=.35mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Tester note}, toprule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, colback=white, colframe=quarto-callout-note-color-frame, coltitle=black, leftrule=.75mm, colbacktitle=quarto-callout-note-color!10!white, bottomtitle=1mm, bottomrule=.15mm, opacityback=0, toptitle=1mm, left=2mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Tester note}, toprule=.15mm, breakable]
 
 Capture: a screenshot of the rendered \texttt{cohort\_counts} table in
 the Quarto preview. Beginners often skip this step; seeing it labeled
@@ -10932,7 +10132,7 @@ accept code like this:
   missing: 2 (0.1\%)'' is still informative.
 \end{enumerate}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, opacitybacktitle=0.6, breakable, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, left=2mm, opacityback=0, leftrule=.75mm, rightrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, titlerule=0mm, colframe=quarto-callout-note-color-frame, arc=.35mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Tester note}, toprule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, colback=white, colframe=quarto-callout-note-color-frame, coltitle=black, leftrule=.75mm, colbacktitle=quarto-callout-note-color!10!white, bottomtitle=1mm, bottomrule=.15mm, opacityback=0, toptitle=1mm, left=2mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Tester note}, toprule=.15mm, breakable]
 
 Capture: a screenshot of the rendered \texttt{missingness} table for the
 adult cohort. Beginners need to see what ``percent missing per
@@ -11306,7 +10506,7 @@ tail; the median is not.
 If you are unsure, plot a histogram. If you see a long tail on one side,
 prefer median (IQR).
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, opacitybacktitle=0.6, breakable, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, left=2mm, opacityback=0, leftrule=.75mm, rightrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, titlerule=0mm, colframe=quarto-callout-tip-color-frame, arc=.35mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, toprule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, colback=white, colframe=quarto-callout-tip-color-frame, coltitle=black, leftrule=.75mm, colbacktitle=quarto-callout-tip-color!10!white, bottomtitle=1mm, bottomrule=.15mm, opacityback=0, toptitle=1mm, left=2mm, titlerule=0mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, toprule=.15mm, breakable]
 
 For this course's NHANES classroom Table 1, BMI and age are commonly
 reported as mean (SD). That is a reasonable convention for adult
@@ -11758,7 +10958,7 @@ produce a corrected EDA note that another student could rerun.
   \texttt{weeks/week07-eda-ai-audit/instructor/planted-error-starter.qmd}
 \end{itemize}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, opacitybacktitle=0.6, breakable, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, left=2mm, opacityback=0, leftrule=.75mm, rightrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, titlerule=0mm, colframe=quarto-callout-note-color-frame, arc=.35mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Tester note}, toprule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, colback=white, colframe=quarto-callout-note-color-frame, coltitle=black, leftrule=.75mm, colbacktitle=quarto-callout-note-color!10!white, bottomtitle=1mm, bottomrule=.15mm, opacityback=0, toptitle=1mm, left=2mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Tester note}, toprule=.15mm, breakable]
 
 Capture: a screenshot of the rendered planted-error starter in the
 Codespaces Quarto preview, with the misleading interpretation paragraph
@@ -12847,7 +12047,7 @@ change the value of \texttt{selected\_income} and render again.
 \end{Highlighting}
 \end{Shaded}
 
-\section*{Summary}\label{summary-1}
+\section*{Summary}\label{summary}
 \addcontentsline{toc}{section}{Summary}
 
 \markright{Summary}
@@ -13242,7 +12442,7 @@ routine below for the entry.
   the command or render path used, the values you tried, and the result.
 \end{enumerate}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, opacitybacktitle=0.6, breakable, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, left=2mm, opacityback=0, leftrule=.75mm, rightrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, titlerule=0mm, colframe=quarto-callout-note-color-frame, arc=.35mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Tester note}, toprule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, colback=white, colframe=quarto-callout-note-color-frame, coltitle=black, leftrule=.75mm, colbacktitle=quarto-callout-note-color!10!white, bottomtitle=1mm, bottomrule=.15mm, opacityback=0, toptitle=1mm, left=2mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Tester note}, toprule=.15mm, breakable]
 
 Capture: a screenshot of the Codespaces Quarto preview showing the
 rendered starter dashboard for \emph{two} different
@@ -13286,7 +12486,7 @@ preview pane refresh icon, or open the HTML file from \texttt{docs/} (if
 configured) \\
 \end{longtable}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, opacitybacktitle=0.6, breakable, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, left=2mm, opacityback=0, leftrule=.75mm, rightrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, titlerule=0mm, colframe=quarto-callout-note-color-frame, arc=.35mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Tester note}, toprule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, colback=white, colframe=quarto-callout-note-color-frame, coltitle=black, leftrule=.75mm, colbacktitle=quarto-callout-note-color!10!white, bottomtitle=1mm, bottomrule=.15mm, opacityback=0, toptitle=1mm, left=2mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Tester note}, toprule=.15mm, breakable]
 
 Capture: one screenshot of each failure state above, with the error
 visible. New students stall on these and screenshots in the Survival
@@ -13381,7 +12581,7 @@ term-project final dashboard, that pathway is \textbf{not approved by
 default}. Talk with your instructor before committing. The Quarto
 pathway is the supported default for every student.
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, opacitybacktitle=0.6, breakable, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, left=2mm, opacityback=0, leftrule=.75mm, rightrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-warning-color!10!white, titlerule=0mm, colframe=quarto-callout-warning-color-frame, arc=.35mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, toprule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, colback=white, colframe=quarto-callout-warning-color-frame, coltitle=black, leftrule=.75mm, colbacktitle=quarto-callout-warning-color!10!white, bottomtitle=1mm, bottomrule=.15mm, opacityback=0, toptitle=1mm, left=2mm, titlerule=0mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, toprule=.15mm, breakable]
 
 Do \textbf{not} put \texttt{shiny::runApp(...)} in your A7 submission as
 your ``dashboard.'' A7 expects an adaptation of the Quarto starter. The
@@ -13548,7 +12748,7 @@ the six-step test routine from
   Record the test in \texttt{testing-log.md}.
 \end{enumerate}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, opacitybacktitle=0.6, breakable, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, left=2mm, opacityback=0, leftrule=.75mm, rightrule=.15mm, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, titlerule=0mm, colframe=quarto-callout-note-color-frame, arc=.35mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Tester note}, toprule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, colback=white, colframe=quarto-callout-note-color-frame, coltitle=black, leftrule=.75mm, colbacktitle=quarto-callout-note-color!10!white, bottomtitle=1mm, bottomrule=.15mm, opacityback=0, toptitle=1mm, left=2mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Tester note}, toprule=.15mm, breakable]
 
 Capture: a screenshot of the rendered ``after'' state showing the
 revised audience-facing element clearly visible. Beginners need to see
@@ -17462,11 +16662,11 @@ Use this template for project milestones M0-M5 and the Final Portfolio.
 
 \section{Purpose}\label{purpose-14}
 
-M0 makes sure every project team has a working collaboration setup
-before analytic work begins. By the end of this milestone, each group
-should know who is on the team, where the shared repository lives, how
-communication will happen, and how the team will handle reproducibility
-and AI use.
+Project groups are 3--4 students. M0 makes sure every project team has a
+working collaboration setup before analytic work begins. By the end of
+this milestone, each group should know who is on the team, where the
+shared repository lives, how communication will happen, and how the team
+will handle reproducibility and AI use.
 
 \section{Due Timing}\label{due-timing}
 
@@ -18313,7 +17513,7 @@ Use this checklist while preparing:
 M5 is done when the slides are committed, rendered, submitted through
 Canvas, and ready to present without relying on local-only files.
 
-\chapter{Final Portfolio}\label{final-portfolio-1}
+\chapter{Final Portfolio}\label{final-portfolio}
 
 \section{Purpose}\label{purpose-20}
 
