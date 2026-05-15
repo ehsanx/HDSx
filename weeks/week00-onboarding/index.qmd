@@ -12,7 +12,8 @@ Complete these steps before Week 1:
 2. Watch the orientation video posted in Canvas.
 3. Complete the pre-course survey posted in Canvas.
 4. Create or confirm access to a GitHub account.
-5. Submit the Week 0 Canvas onboarding check with your GitHub username.
+5. If eligible, apply for GitHub Education / Student Developer Pack, or confirm that you already have access.
+6. Submit the Week 0 Canvas onboarding check with your GitHub username and GitHub Education status.
 
 ## GitHub Account
 
@@ -24,6 +25,53 @@ Before submitting the onboarding check:
 - turn on two-factor authentication if GitHub prompts you
 - make sure you know which email address is attached to the account
 - record your GitHub username exactly as it appears in the profile URL
+- use the same GitHub account and username throughout the course
+
+## GitHub Education Benefits: Apply If Eligible
+
+This course uses GitHub Codespaces every week. Codespaces usage is quota-based, so students are expected to apply for GitHub Education / Student Developer Pack if they are eligible:
+
+<https://education.github.com/pack>
+
+GitHub Education benefits may increase your available developer-tool allowance and provide access to additional student tools. This is helpful because the course uses Codespaces for weekly tutorials, assignments, and project work.
+
+Approval is not required before Week 1. You can begin the course with a regular free GitHub account while your GitHub Education application is pending. Do not delay Week 0 onboarding while waiting for approval.
+
+For the Week 0 Canvas onboarding check, report your GitHub Education status using one of the following options:
+
+- approved
+- applied and pending
+- already had access
+- not eligible / unable to apply
+- unsure and need help
+
+### UBC Students
+
+If you are a UBC student, use your UBC student email address when applying, if available. For example, this may be your `@student.ubc.ca` email address or another UBC-issued student email connected to your student record.
+
+Before applying:
+
+- log in to your GitHub account
+- add your UBC student email to your GitHub account, if available
+- verify the UBC student email address in GitHub
+- have proof of current student status ready in case GitHub asks for verification
+- continue using the same GitHub username for this course
+
+If you already have a GitHub account with a non-UBC email, you usually do not need to create a second account. Instead, add your UBC student email to the existing account and verify it, if GitHub allows. Use one consistent GitHub username for all course work.
+
+### Students Outside UBC
+
+If you are using this open course book outside UBC, follow the same general process with your own institution's student email address and proof of current enrollment. The exact verification process may differ by institution, country, and GitHub's current requirements.
+
+### Codespaces Usage Reminder
+
+Even with GitHub Education benefits, Codespaces usage is not unlimited. To avoid running out of usage during the term:
+
+- stop your Codespace when you finish working
+- reopen an existing Codespace instead of creating a new one each time
+- use the default course machine type unless instructed otherwise
+- monitor your remaining Codespaces usage in your GitHub billing or settings page
+- contact the teaching team before adding personal billing information
 
 ## Existing-Account Help
 
@@ -54,11 +102,12 @@ If a future offering uses an instructor-managed repository system, Canvas will s
 Use the Canvas course support channel for setup problems. Include:
 
 - your GitHub username
+- your GitHub Education status, if relevant
 - the step where you got stuck
 - the exact error message or screenshot
 - whether you are using GitHub, Codespaces, or Canvas
 
-Do not post passwords, tokens, or private account recovery details.
+Do not post passwords, tokens, private account recovery details, or billing information.
 
 ## What To Bring To Week 1
 
@@ -67,9 +116,10 @@ Bring:
 - a working Canvas login
 - a working GitHub login
 - your GitHub username
+- your GitHub Education status, if available
 - a laptop or access plan for in-class work
 - one question about health data, public data, AI, or reproducibility
 
 ## Definition Of Done
 
-Week 0 is done when you have watched the Canvas orientation video, completed the Canvas pre-course survey, submitted the onboarding check, and can log in to GitHub with the account you will use for course work.
+Week 0 is done when you have watched the Canvas orientation video, completed the Canvas pre-course survey, submitted the onboarding check, can log in to GitHub with the account you will use for course work, and have either applied for GitHub Education if eligible or indicated your GitHub Education status in Canvas.
