@@ -1,0 +1,53 @@
+# Optional Pathways {.unnumbered}
+
+## Keep the Core First
+
+Optional pathways are only useful after the core portfolio works:
+
+- report renders;
+- dashboard-style KT product opens or runs;
+- README explains the workflow;
+- data source and limitations are clear;
+- fresh environment test has been attempted.
+
+Do not switch tools in Week 11 unless the change reduces risk or the instructor has approved the pathway.
+
+## Optional Shiny
+
+Shiny can support richer interactivity, but it introduces extra testing and deployment questions. Use it only when the audience need justifies a running app and the group can document how to launch it.
+
+For this course, the NHANES Shiny app is an exemplar and demonstration. It is not the default required pathway for every project.
+
+## Optional Static Dashboard
+
+The file [static-dashboard-ojs.qmd](static-dashboard-ojs.qmd) demonstrates a no-server dashboard that reads the NHANES CSV snapshot in the browser. It is useful as an optional portfolio extension after the required report and KT product are reproducible.
+
+This file remains demo-only in this pass. Do not treat it as an A10 requirement.
+
+## Optional Python
+
+Python may be useful for a small extension if it supports the project and runs in Codespaces. Keep it awareness-level unless the group has a clear reason and a documented environment.
+
+If Python is included, document:
+
+- where the Python code lives;
+- how to run it;
+- which packages are required;
+- what outputs it creates;
+- how it connects to the R/Quarto core.
+
+## Public Deployment
+
+Public deployment is optional and should follow the Week 10 rule: private preview unless public-safe.
+
+Before public sharing, check:
+
+- no restricted data;
+- no credentials;
+- no row-level sensitive examples;
+- aggregate outputs only;
+- README explains data use and limitations.
+
+## Decision Rule
+
+Use the simplest pathway that serves the audience and can be reproduced by course staff. Optional tools are welcome only when they make the project clearer, not when they make the project harder to review.

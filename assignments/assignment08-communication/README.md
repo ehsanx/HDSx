@@ -15,7 +15,7 @@ This assignment turns one result from your analysis or dashboard into a short au
 ## Inputs
 
 - Week 9 page: `weeks/week09-science-communication/index.qmd`
-- Peer feedback page: `weeks/week09-science-communication/revealjs-peer-feedback.qmd`
+- Peer feedback page: `weeks/week09-science-communication/comm04-peer-feedback.qmd`
 - Renderable Week 9 slide starter: `weeks/week09-science-communication/starter-slides.qmd`
 - Slide starter: `assignments/assignment08-communication/slide-outline-template.qmd`
 - Peer feedback template: `assignments/assignment08-communication/peer-feedback-template.md`

@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.7.31">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
 <title>Report Template: NHANES Equity Summary – Health Data Science: AI and Knowledge Translation</title>
 <style>
 code{white-space: pre-wrap;}
@@ -74,6 +77,7 @@ div.csl-indent {
   margin-left: 2em;
 }</style>
 
+
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
@@ -81,8 +85,8 @@ div.csl-indent {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../weeks/week11-portfolio-surgery/index.html" rel="next">
-<link href="../../weeks/week10-reporting-publishing/index.html" rel="prev">
+<link href="../../weeks/week10-reporting-publishing/report03-citations-and-grounding.html" rel="next">
+<link href="../../weeks/week10-reporting-publishing/report02-report-structure.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -92,7 +96,8 @@ div.csl-indent {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-bf1bf44ef5cf85b0f516843a8f7e68d4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+<link href="../../site_libs/bootstrap/bootstrap-bf1bf44ef5cf85b0f516843a8f7e68d4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
@@ -118,17 +123,25 @@ div.csl-indent {
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script><link href="../../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+}</script>
+<link href="../../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+
 <script src="../../site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+
+
+
 <meta name="twitter:title" content="Report Template: NHANES Equity Summary – Health Data Science: AI and Knowledge Translation">
 <meta name="twitter:description" content="">
 <meta name="twitter:image" content="report-template_files/figure-html/unnamed-chunk-4-1.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
+
 <body class="nav-sidebar docked quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
@@ -139,9 +152,13 @@ div.csl-indent {
         <i class="bi bi-search"></i>
       </button>
     </div>
-  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="../../">Health Data Science: AI and Knowledge Translation</a> 
         <div class="sidebar-tools-main tools-wide">
@@ -162,7 +179,7 @@ div.csl-indent {
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-<li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">The Project</span></a>
@@ -176,8 +193,8 @@ div.csl-indent {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../course-operations/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Course Operations</span></a>
@@ -189,7 +206,7 @@ div.csl-indent {
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
@@ -198,15 +215,15 @@ div.csl-indent {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week00-onboarding/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 0: Asynchronous Onboarding</span></a>
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
@@ -215,8 +232,8 @@ div.csl-indent {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week01-health-data-ethics/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Health Data &amp; Ethics</span></a>
@@ -229,7 +246,7 @@ div.csl-indent {
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
@@ -238,8 +255,8 @@ div.csl-indent {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week02-modern-workflows/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Modern Workflows</span></a>
@@ -301,7 +318,7 @@ div.csl-indent {
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
@@ -310,8 +327,8 @@ div.csl-indent {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week03-r-with-ai/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 3: R with AI</span></a>
@@ -368,7 +385,7 @@ div.csl-indent {
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
@@ -377,8 +394,8 @@ div.csl-indent {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week04-git-collaboration/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Git &amp; Collaboration</span></a>
@@ -445,7 +462,7 @@ div.csl-indent {
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
@@ -454,8 +471,8 @@ div.csl-indent {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Polyglot Awareness &amp; R Deepening</span></a>
@@ -537,7 +554,7 @@ div.csl-indent {
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
@@ -546,8 +563,8 @@ div.csl-indent {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week06-visualization/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 6: Data Visualization</span></a>
@@ -596,7 +613,7 @@ div.csl-indent {
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
@@ -605,8 +622,8 @@ div.csl-indent {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week07-eda-ai-audit/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 7: EDA, Table 1 &amp; AI Auditing</span></a>
@@ -655,7 +672,7 @@ div.csl-indent {
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
@@ -664,8 +681,8 @@ div.csl-indent {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week08-dashboard-kt/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 8: Dashboard Prototypes for KT</span></a>
@@ -714,7 +731,7 @@ div.csl-indent {
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true">
@@ -723,21 +740,45 @@ div.csl-indent {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week09-science-communication/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Dynamic Presentations</span></a>
+ <span class="menu-text">Week 9: Communication of Scientific Findings</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../weeks/week09-science-communication/revealjs-peer-feedback.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Revealjs And Peer Feedback</span></a>
+  <a href="../../weeks/week09-science-communication/comm01-overview-and-goals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Why Communication Is KT</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week09-science-communication/comm02-claim-evidence-limitation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Claim, Evidence, Limitation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week09-science-communication/comm03-revealjs-starter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Revealjs Starter</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week09-science-communication/comm04-peer-feedback.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Peer Feedback</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week09-science-communication/comm05-assignment-a8-and-reference.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Assignment 8 Walkthrough</span></a>
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="true">
@@ -746,11 +787,23 @@ div.csl-indent {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week10-reporting-publishing/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Reproducible Reporting</span></a>
+ <span class="menu-text">Week 10: Writing &amp; Publishing Reports</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week10-reporting-publishing/report01-overview-and-goals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Report Goals</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week10-reporting-publishing/report02-report-structure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Report Structure</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -759,8 +812,26 @@ div.csl-indent {
  <span class="menu-text">Report Template: NHANES Equity Summary</span></a>
   </div>
 </li>
-      </ul>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week10-reporting-publishing/report03-citations-and-grounding.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Citations and Grounding</span></a>
+  </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week10-reporting-publishing/report04-private-preview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Private Preview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week10-reporting-publishing/report05-assignment-a9-and-m3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Assignment 9 and M3</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="true">
@@ -769,21 +840,51 @@ div.csl-indent {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week11-portfolio-surgery/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Advanced Topics</span></a>
+ <span class="menu-text">Week 11: Portfolio Surgery</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../weeks/week11-portfolio-surgery/reproducibility-test.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Reproducibility Stress Test</span></a>
+  <a href="../../weeks/week11-portfolio-surgery/port01-overview-and-goals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Surgery Goals</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week11-portfolio-surgery/port02-fresh-codespace-test.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fresh Codespace Test</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week11-portfolio-surgery/port03-readme-repo-hygiene.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">README and Repo Hygiene</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week11-portfolio-surgery/port04-peer-review-m4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Peer Review and M4</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week11-portfolio-surgery/port05-optional-pathways.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Optional Pathways</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week11-portfolio-surgery/port06-assignment-a10-final-portfolio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Assignment 10 and Final Portfolio</span></a>
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="true">
@@ -792,8 +893,8 @@ div.csl-indent {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week12-presentations/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 12: Term Project Presentations, Part 1</span></a>
@@ -806,7 +907,7 @@ div.csl-indent {
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="true">
@@ -815,8 +916,8 @@ div.csl-indent {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../assignments/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Assignments</span></a>
@@ -925,7 +1026,7 @@ div.csl-indent {
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="true">
@@ -934,8 +1035,8 @@ div.csl-indent {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../references/data-sources/nhis.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">NHIS</span></a>
@@ -1008,16 +1109,18 @@ div.csl-indent {
   </div>
 </li>
       </ul>
-</li>
+  </li>
     </ul>
-</div>
-</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table of contents</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-<li><a href="#standalone-yaml" id="toc-standalone-yaml" class="nav-link active" data-scroll-target="#standalone-yaml">Standalone YAML</a></li>
+  <li><a href="#standalone-yaml" id="toc-standalone-yaml" class="nav-link active" data-scroll-target="#standalone-yaml">Standalone YAML</a></li>
   <li><a href="#purpose" id="toc-purpose" class="nav-link" data-scroll-target="#purpose">Purpose</a></li>
   <li><a href="#question" id="toc-question" class="nav-link" data-scroll-target="#question">Question</a></li>
   <li><a href="#data-source" id="toc-data-source" class="nav-link" data-scroll-target="#data-source">Data Source</a></li>
@@ -1028,10 +1131,14 @@ div.csl-indent {
   <li><a href="#ai-use-and-audit-note" id="toc-ai-use-and-audit-note" class="nav-link" data-scroll-target="#ai-use-and-audit-note">AI-Use and Audit Note</a></li>
   <li><a href="#publishing-checklist" id="toc-publishing-checklist" class="nav-link" data-scroll-target="#publishing-checklist">Publishing Checklist</a></li>
   <li><a href="#grounding-audit-prompt" id="toc-grounding-audit-prompt" class="nav-link" data-scroll-target="#grounding-audit-prompt">Grounding Audit Prompt</a></li>
-  </ul><div class="toc-actions"><ul><li><a href="https://github.com/ehsanx/HDSx/edit/main/weeks/week10-reporting-publishing/report-template.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ehsanx/HDSx/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ehsanx/HDSx/edit/main/weeks/week10-reporting-publishing/report-template.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ehsanx/HDSx/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week10-reporting-publishing/index.html">Week 10: Writing &amp; Publishing Reports</a></li><li class="breadcrumb-item"><a href="../../weeks/week10-reporting-publishing/report-template.html">Report Template: NHANES Equity Summary</a></li></ol></nav><div class="quarto-title">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week10-reporting-publishing/index.html">Week 10: Writing &amp; Publishing Reports</a></li><li class="breadcrumb-item"><a href="../../weeks/week10-reporting-publishing/report-template.html">Report Template: NHANES Equity Summary</a></li></ol></nav>
+<div class="quarto-title">
 <h1 class="title">Report Template: NHANES Equity Summary</h1>
 </div>
 
@@ -1046,18 +1153,28 @@ div.csl-indent {
   
 
 
-</header><section id="standalone-yaml" class="level2"><h2 class="anchored" data-anchor-id="standalone-yaml">Standalone YAML</h2>
+</header>
+
+
+<section id="standalone-yaml" class="level2">
+<h2 class="anchored" data-anchor-id="standalone-yaml">Standalone YAML</h2>
 <p>If you copy this template into a project report outside the book, start the file with this YAML header:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1"></a><span class="pp">---</span></span>
 <span id="cb1-2"><a href="#cb1-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"NHANES Equity Summary"</span></span>
 <span id="cb1-3"><a href="#cb1-3"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span>
 <span id="cb1-4"><a href="#cb1-4"></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> ../../references.bib</span></span>
 <span id="cb1-5"><a href="#cb1-5"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section><section id="purpose" class="level2"><h2 class="anchored" data-anchor-id="purpose">Purpose</h2>
+</section>
+<section id="purpose" class="level2">
+<h2 class="anchored" data-anchor-id="purpose">Purpose</h2>
 <p>This runnable template shows how to pair a dashboard with a short reproducible report. The dashboard supports exploration; the report fixes one question, documents the data, and cites the source.</p>
-</section><section id="question" class="level2"><h2 class="anchored" data-anchor-id="question">Question</h2>
+</section>
+<section id="question" class="level2">
+<h2 class="anchored" data-anchor-id="question">Question</h2>
 <p>How does mean BMI vary by income group among adults age 20-80 in the prepared NHANES Health Equity classroom dataset?</p>
-</section><section id="data-source" class="level2"><h2 class="anchored" data-anchor-id="data-source">Data Source</h2>
+</section>
+<section id="data-source" class="level2">
+<h2 class="anchored" data-anchor-id="data-source">Data Source</h2>
 <p>The report uses the cached CSV snapshot at <code>examples/nhanes-equity/data/nhanes_equity_v6.csv</code>. The source data are derived from CDC/NCHS NHANES public-use files <span class="citation" data-cites="cdc-nhanes">(<a href="#ref-cdc-nhanes" role="doc-biblioref">Centers for Disease Control and Prevention, National Center for Health Statistics 2026</a>)</span>.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">library</span>(readr)</span>
@@ -1077,7 +1194,9 @@ div.csl-indent {
 <span id="cb2-15"><a href="#cb2-15"></a></span>
 <span id="cb2-16"><a href="#cb2-16"></a>nhanes <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(data_path, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section><section id="methods" class="level2"><h2 class="anchored" data-anchor-id="methods">Methods</h2>
+</section>
+<section id="methods" class="level2">
+<h2 class="anchored" data-anchor-id="methods">Methods</h2>
 <p>We restricted the classroom dataset to adults age 20-80 and summarized BMI by income group. The summaries are unweighted and descriptive. They should not be interpreted as causal effects or national population estimates.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>analysis_df <span class="ot">&lt;-</span> nhanes <span class="sc">|&gt;</span></span>
@@ -1095,22 +1214,28 @@ div.csl-indent {
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
 <caption>Missingness check for key report variables.</caption>
-<thead><tr class="header">
+<thead>
+<tr class="header">
 <th style="text-align: right;">rows</th>
 <th style="text-align: right;">missing_bmi</th>
 <th style="text-align: right;">missing_income</th>
 <th style="text-align: right;">missing_age</th>
-</tr></thead>
-<tbody><tr class="odd">
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
 <td style="text-align: right;">57137</td>
 <td style="text-align: right;">1009</td>
 <td style="text-align: right;">5395</td>
 <td style="text-align: right;">0</td>
-</tr></tbody>
+</tr>
+</tbody>
 </table>
 </div>
 </div>
-</section><section id="results" class="level2"><h2 class="anchored" data-anchor-id="results">Results</h2>
+</section>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>income_summary <span class="ot">&lt;-</span> analysis_df <span class="sc">|&gt;</span></span>
 <span id="cb4-2"><a href="#cb4-2"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(BMI), <span class="sc">!</span><span class="fu">is.na</span>(IncomeGroup)) <span class="sc">|&gt;</span></span>
@@ -1130,11 +1255,13 @@ div.csl-indent {
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
 <caption>Descriptive BMI summary by income group.</caption>
-<thead><tr class="header">
+<thead>
+<tr class="header">
 <th style="text-align: left;">IncomeGroup</th>
 <th style="text-align: right;">n</th>
 <th style="text-align: left;">BMI, mean (SD)</th>
-</tr></thead>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">High Income (&gt;3.5)</td>
@@ -1178,30 +1305,45 @@ div.csl-indent {
 <span id="cb5-20"><a href="#cb5-20"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">12</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="report-template_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption>Mean BMI by income group among adults age 20-80 in the prepared NHANES Health Equity classroom dataset. Values are unweighted and descriptive.</figcaption></figure>
+<figure class="figure">
+<p><img src="report-template_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption>Mean BMI by income group among adults age 20-80 in the prepared NHANES Health Equity classroom dataset. Values are unweighted and descriptive.</figcaption>
+</figure>
 </div>
 </div>
 </div>
-</section><section id="limitations" class="level2"><h2 class="anchored" data-anchor-id="limitations">Limitations</h2>
+</section>
+<section id="limitations" class="level2">
+<h2 class="anchored" data-anchor-id="limitations">Limitations</h2>
 <ul>
 <li>The table and figure use a prepared classroom dataset rather than raw NHANES files.</li>
 <li>The summaries are unweighted.</li>
 <li>The comparison is descriptive and does not establish causality.</li>
 <li>Missing BMI or income group values are excluded from the grouped summary.</li>
-</ul></section><section id="plain-language-summary" class="level2"><h2 class="anchored" data-anchor-id="plain-language-summary">Plain-Language Summary</h2>
+</ul>
+</section>
+<section id="plain-language-summary" class="level2">
+<h2 class="anchored" data-anchor-id="plain-language-summary">Plain-Language Summary</h2>
 <p>In this classroom dataset, mean BMI differs across income groups. The result is useful for practicing reproducible reporting and dashboard interpretation, but it should be described as a descriptive pattern rather than a causal finding.</p>
-</section><section id="ai-use-and-audit-note" class="level2"><h2 class="anchored" data-anchor-id="ai-use-and-audit-note">AI-Use and Audit Note</h2>
+</section>
+<section id="ai-use-and-audit-note" class="level2">
+<h2 class="anchored" data-anchor-id="ai-use-and-audit-note">AI-Use and Audit Note</h2>
 <p>Document any AI assistance used to draft code, captions, or interpretation. State exactly which output you checked against the code, data dictionary, or rendered report.</p>
-</section><section id="publishing-checklist" class="level2"><h2 class="anchored" data-anchor-id="publishing-checklist">Publishing Checklist</h2>
+</section>
+<section id="publishing-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="publishing-checklist">Publishing Checklist</h2>
 <ul>
 <li>Report renders from source.</li>
 <li>Citations resolve.</li>
 <li>Figures and tables are generated by code.</li>
-<li>Public preview contains no restricted data or private links.</li>
-<li>Private preview access is granted to course staff when needed.</li>
+<li>Private preview is used unless the data, repository, and group privacy checks support public sharing.</li>
+<li>Public preview contains no restricted data, private links, credentials, or sensitive row-level examples.</li>
+<li>Private repository access is granted to course staff when needed.</li>
 <li>Canvas submission includes the repository link, report path, and latest commit hash.</li>
-</ul></section><section id="grounding-audit-prompt" class="level2"><h2 class="anchored" data-anchor-id="grounding-audit-prompt">Grounding Audit Prompt</h2>
+</ul>
+</section>
+<section id="grounding-audit-prompt" class="level2">
+<h2 class="anchored" data-anchor-id="grounding-audit-prompt">Grounding Audit Prompt</h2>
 <p>Select three claims from the report. For each claim, write the supporting evidence source: code chunk, table, figure, or citation. Revise any claim that cannot be traced to evidence in the report.</p>
 
 
@@ -1210,7 +1352,10 @@ div.csl-indent {
 Centers for Disease Control and Prevention, National Center for Health Statistics. 2026. <span>“National Health and Nutrition Examination Survey.”</span> <a href="https://wwwn.cdc.gov/nchs/nhanes/">https://wwwn.cdc.gov/nchs/nhanes/</a>.
 </div>
 </div>
-</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
@@ -1659,18 +1804,21 @@ Centers for Disease Control and Prevention, National Center for Health Statistic
       }
     }
   });
-  </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
-      <a href="../../weeks/week10-reporting-publishing/index.html" class="pagination-link" aria-label="Reproducible Reporting">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Reproducible Reporting</span>
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../weeks/week10-reporting-publishing/report02-report-structure.html" class="pagination-link" aria-label="Report Structure">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Report Structure</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../weeks/week11-portfolio-surgery/index.html" class="pagination-link" aria-label="Advanced Topics">
-        <span class="nav-page-text">Advanced Topics</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../weeks/week10-reporting-publishing/report03-citations-and-grounding.html" class="pagination-link" aria-label="Citations and Grounding">
+        <span class="nav-page-text">Citations and Grounding</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+
 
 
 

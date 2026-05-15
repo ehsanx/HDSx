@@ -1,0 +1,70 @@
+# Report Structure {.unnumbered}
+
+## A Beginner-Friendly Structure
+
+Use this structure for A9 and M3 unless your project clearly needs a small adaptation:
+
+1. Question
+2. Data source
+3. Methods
+4. Results
+5. Limitations
+6. Reproducibility and AI-use note
+
+The structure is simple on purpose. It gives readers enough information to understand, check, and reuse the work.
+
+## Question
+
+A good report question is specific:
+
+> How does mean BMI vary by income group among adults age 20-80 in the prepared NHANES classroom dataset?
+
+Avoid broad questions such as:
+
+> What affects health?
+
+## Data Source
+
+Name:
+
+- the original data source;
+- the version or snapshot used;
+- the access route;
+- restrictions or stewardship cautions.
+
+Use your A6 provenance/stewardship note as the starting point.
+
+## Methods
+
+State choices before showing results:
+
+- cohort or inclusion criteria;
+- variables used;
+- missingness handling;
+- whether the summary is descriptive, unweighted, weighted, predictive, or causal.
+
+For this course, most reports should be descriptive unless the instructor explicitly approved another approach.
+
+## Results
+
+Include at least:
+
+- one code-generated table;
+- one code-generated figure;
+- a short paragraph that states the pattern without overstating it.
+
+Do not paste screenshots when code can generate the output.
+
+## Limitations
+
+Limitations belong in the report, not only in an appendix. Include limitations that affect interpretation, such as unweighted summaries, missing data, prepared classroom data, small cells, or restricted public sharing.
+
+## Reproducibility and AI Use
+
+End with enough information for a reviewer:
+
+- how the report was rendered;
+- where data came from;
+- where package/dependency notes live;
+- what AI helped with;
+- how AI-assisted content was checked.

@@ -15,7 +15,7 @@ This assignment stress-tests your project before the final portfolio. You will r
 ## Inputs
 
 - Week 11 page: `weeks/week11-portfolio-surgery/index.qmd`
-- Reproducibility protocol: `weeks/week11-portfolio-surgery/reproducibility-test.qmd`
+- Reproducibility protocol: `weeks/week11-portfolio-surgery/port02-fresh-codespace-test.qmd`
 - Static dashboard exemplar: `weeks/week11-portfolio-surgery/static-dashboard-ojs.qmd`
 - M4 connection: `milestones/m4-peer-review/README.md`
 - Failure log template: `assignments/assignment10-portfolio-surgery/failure-log-template.md`

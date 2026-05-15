@@ -1,0 +1,65 @@
+# Peer Feedback {.unnumbered}
+
+## Goal
+
+Peer feedback helps you test whether a scientific message is clear, grounded, and honest before it reaches the final presentation or portfolio.
+
+In Week 9, feedback is not about personal preference. It is about whether the audience can see the claim, evidence, limitation, and source.
+
+## Three-Slide Structure
+
+Use this structure for a revealjs deck or slide outline:
+
+1. **Question and audience:** who needs this finding, and why?
+2. **Evidence:** show one plot, table, or dashboard output and state the descriptive pattern.
+3. **Limitation and action:** name what the data can and cannot support, then state the next decision or question.
+
+Use [starter-slides.qmd](starter-slides.qmd) if you want a renderable revealjs scaffold.
+
+## Plain-Language Check
+
+For each slide, ask:
+
+- What is the one sentence the audience should remember?
+- Which word or phrase would confuse someone outside the course?
+- What limitation must remain visible to avoid overclaiming?
+- Does the source note match the evidence shown?
+
+## Peer Feedback Form
+
+Copy this table into your A8 `peer-feedback.md`.
+
+| Prompt | Peer note |
+|---|---|
+| Main message in one sentence |  |
+| Intended audience |  |
+| Evidence shown |  |
+| Limitation or caution shown |  |
+| Source note or citation shown |  |
+| Wording that needs plain-language revision |  |
+| Accessibility issue, if any |  |
+| One concrete improvement before submission |  |
+
+## Citation and Accessibility Checklist
+
+- Data source is named.
+- Figure or table has a clear title.
+- Axes, units, and group labels are readable.
+- Color choices work without relying on color alone.
+- Slide text is brief enough to read during a talk.
+- Limitation is visible.
+- AI-assisted wording has been checked against the evidence.
+
+## Good Feedback Sounds Like
+
+Helpful:
+
+> The main claim is clear, but the limitation is only in speaker notes. Put the unweighted/descriptive caution under the figure.
+
+Less helpful:
+
+> Looks good.
+
+## Student Output
+
+Submit the rendered slide deck or slide outline, completed peer feedback form, plain-language summary, source note, and AI-use note required by [Assignment 8](../../assignments/assignment08-communication/README.md).

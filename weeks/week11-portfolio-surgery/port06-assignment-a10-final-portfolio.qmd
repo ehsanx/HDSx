@@ -1,0 +1,87 @@
+# Assignment 10 and Final Portfolio {.unnumbered}
+
+## Where This Fits
+
+This page connects Week 11 class work to [Assignment 10](../../assignments/assignment10-portfolio-surgery/README.md), [M4](../../milestones/m4-peer-review/README.md), and the [Final Portfolio](../../milestones/final-portfolio/README.md). It does not add new deliverables.
+
+::: {.callout-note title="Tester note"}
+Check that the file names below match the current Assignment 10 and Final Portfolio README files before release.
+:::
+
+## A10 Submission Files
+
+Each file goes in `assignments/assignment10-portfolio-surgery/submission/`.
+
+### `reproducibility-test.md`
+
+Document the fresh-environment test using [port02](port02-fresh-codespace-test.qmd).
+
+- **Verify:** latest commit hash, environment, commands, and result are recorded.
+
+### `failure-log.md`
+
+List failures before repairs. Include warnings, broken paths, missing packages, unclear README steps, citation issues, and stale outputs.
+
+- **Verify:** each failure has evidence and a result after repair or triage.
+
+### `peer-review.md`
+
+Record feedback received or given for M4 readiness. Keep comments specific and actionable.
+
+### `repair-summary.md`
+
+Name the files changed and why. This can be short.
+
+| File changed | Reason | Verification |
+|---|---|---|
+| `README.md` | Added render command | Followed command in fresh Codespace |
+
+### `final-risk-list.md`
+
+Name remaining risks or state that no known risks remain. Honest risk lists are better than hidden problems.
+
+### `ai-use-note.md`
+
+State what AI helped with and how repairs or wording were checked.
+
+## Final Portfolio Bridge
+
+The final portfolio is not a separate new analysis. It gathers the strongest version of:
+
+- final report source and rendered output;
+- dashboard-style KT product or static preview;
+- data provenance and stewardship documentation;
+- reproducibility instructions;
+- presentation slides or presentation summary;
+- final AI-use audit;
+- clear README and repository access route.
+
+Use the [Final Portfolio Checklist](../../milestones/final-portfolio/final-portfolio-checklist.md) before submission.
+
+## Public or Private Repository
+
+Use [Repository Sharing Guidance](../../milestones/final-portfolio/repository-sharing-guidance.md). Private repositories are appropriate when public sharing would create data, privacy, licensing, or stewardship risk.
+
+Public is not better by default. Reviewable, safe, and reproducible is the target.
+
+## Before Submitting A10
+
+Check:
+
+- fresh environment test attempted;
+- failures logged before repair;
+- report and KT product rerun or failure clearly explained;
+- README matches the tested workflow;
+- M4 feedback is recorded;
+- final risk list is honest;
+- required files are committed and synced.
+
+## Before Final Portfolio
+
+After A10, focus on:
+
+- repairing remaining blockers;
+- aligning presentation slides with final report claims;
+- checking repository access;
+- confirming public/private sharing choice;
+- syncing the final commit before Canvas submission.

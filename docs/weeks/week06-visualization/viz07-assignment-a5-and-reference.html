@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.7.31">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
 <title>Assignment 5 Walkthrough and Reference – Health Data Science: AI and Knowledge Translation</title>
 <style>
 code{white-space: pre-wrap;}
@@ -18,6 +21,7 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
+
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
@@ -37,7 +41,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-bf1bf44ef5cf85b0f516843a8f7e68d4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+<link href="../../site_libs/bootstrap/bootstrap-bf1bf44ef5cf85b0f516843a8f7e68d4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
@@ -63,16 +68,24 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script><link href="../../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+}</script>
+<link href="../../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+
 <script src="../../site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+
+
+
 <meta name="twitter:title" content="Assignment 5 Walkthrough and Reference – Health Data Science: AI and Knowledge Translation">
 <meta name="twitter:description" content="">
 <meta name="twitter:card" content="summary">
 </head>
+
 <body class="nav-sidebar docked quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
@@ -83,9 +96,13 @@ ul.task-list li input[type="checkbox"] {
         <i class="bi bi-search"></i>
       </button>
     </div>
-  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="../../">Health Data Science: AI and Knowledge Translation</a> 
         <div class="sidebar-tools-main tools-wide">
@@ -106,7 +123,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-<li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">The Project</span></a>
@@ -120,8 +137,8 @@ ul.task-list li input[type="checkbox"] {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../course-operations/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Course Operations</span></a>
@@ -133,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
@@ -142,15 +159,15 @@ ul.task-list li input[type="checkbox"] {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week00-onboarding/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 0: Asynchronous Onboarding</span></a>
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
@@ -159,8 +176,8 @@ ul.task-list li input[type="checkbox"] {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week01-health-data-ethics/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Health Data &amp; Ethics</span></a>
@@ -173,7 +190,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
@@ -182,8 +199,8 @@ ul.task-list li input[type="checkbox"] {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week02-modern-workflows/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Modern Workflows</span></a>
@@ -245,7 +262,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
@@ -254,8 +271,8 @@ ul.task-list li input[type="checkbox"] {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week03-r-with-ai/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 3: R with AI</span></a>
@@ -312,7 +329,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
@@ -321,8 +338,8 @@ ul.task-list li input[type="checkbox"] {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week04-git-collaboration/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Git &amp; Collaboration</span></a>
@@ -389,7 +406,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
@@ -398,8 +415,8 @@ ul.task-list li input[type="checkbox"] {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Polyglot Awareness &amp; R Deepening</span></a>
@@ -481,7 +498,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
@@ -490,8 +507,8 @@ ul.task-list li input[type="checkbox"] {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week06-visualization/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 6: Data Visualization</span></a>
@@ -540,7 +557,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
@@ -549,8 +566,8 @@ ul.task-list li input[type="checkbox"] {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week07-eda-ai-audit/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 7: EDA, Table 1 &amp; AI Auditing</span></a>
@@ -599,7 +616,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
@@ -608,8 +625,8 @@ ul.task-list li input[type="checkbox"] {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week08-dashboard-kt/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 8: Dashboard Prototypes for KT</span></a>
@@ -658,7 +675,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true">
@@ -667,21 +684,45 @@ ul.task-list li input[type="checkbox"] {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week09-science-communication/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Dynamic Presentations</span></a>
+ <span class="menu-text">Week 9: Communication of Scientific Findings</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../weeks/week09-science-communication/revealjs-peer-feedback.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Revealjs And Peer Feedback</span></a>
+  <a href="../../weeks/week09-science-communication/comm01-overview-and-goals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Why Communication Is KT</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week09-science-communication/comm02-claim-evidence-limitation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Claim, Evidence, Limitation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week09-science-communication/comm03-revealjs-starter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Revealjs Starter</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week09-science-communication/comm04-peer-feedback.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Peer Feedback</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week09-science-communication/comm05-assignment-a8-and-reference.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Assignment 8 Walkthrough</span></a>
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="true">
@@ -690,11 +731,23 @@ ul.task-list li input[type="checkbox"] {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week10-reporting-publishing/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Reproducible Reporting</span></a>
+ <span class="menu-text">Week 10: Writing &amp; Publishing Reports</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week10-reporting-publishing/report01-overview-and-goals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Report Goals</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week10-reporting-publishing/report02-report-structure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Report Structure</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -703,8 +756,26 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Report Template: NHANES Equity Summary</span></a>
   </div>
 </li>
-      </ul>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week10-reporting-publishing/report03-citations-and-grounding.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Citations and Grounding</span></a>
+  </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week10-reporting-publishing/report04-private-preview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Private Preview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week10-reporting-publishing/report05-assignment-a9-and-m3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Assignment 9 and M3</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="true">
@@ -713,21 +784,51 @@ ul.task-list li input[type="checkbox"] {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week11-portfolio-surgery/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Advanced Topics</span></a>
+ <span class="menu-text">Week 11: Portfolio Surgery</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../weeks/week11-portfolio-surgery/reproducibility-test.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Reproducibility Stress Test</span></a>
+  <a href="../../weeks/week11-portfolio-surgery/port01-overview-and-goals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Surgery Goals</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week11-portfolio-surgery/port02-fresh-codespace-test.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fresh Codespace Test</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week11-portfolio-surgery/port03-readme-repo-hygiene.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">README and Repo Hygiene</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week11-portfolio-surgery/port04-peer-review-m4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Peer Review and M4</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week11-portfolio-surgery/port05-optional-pathways.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Optional Pathways</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week11-portfolio-surgery/port06-assignment-a10-final-portfolio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Assignment 10 and Final Portfolio</span></a>
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="true">
@@ -736,8 +837,8 @@ ul.task-list li input[type="checkbox"] {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week12-presentations/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 12: Term Project Presentations, Part 1</span></a>
@@ -750,7 +851,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="true">
@@ -759,8 +860,8 @@ ul.task-list li input[type="checkbox"] {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../assignments/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Assignments</span></a>
@@ -869,7 +970,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="true">
@@ -878,8 +979,8 @@ ul.task-list li input[type="checkbox"] {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../references/data-sources/nhis.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">NHIS</span></a>
@@ -952,39 +1053,43 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
       </ul>
-</li>
+  </li>
     </ul>
-</div>
-</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table of contents</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-<li><a href="#where-this-fits" id="toc-where-this-fits" class="nav-link active" data-scroll-target="#where-this-fits">Where this fits</a></li>
+  <li><a href="#where-this-fits" id="toc-where-this-fits" class="nav-link active" data-scroll-target="#where-this-fits">Where this fits</a></li>
   <li><a href="#deadline-and-link-to-m1" id="toc-deadline-and-link-to-m1" class="nav-link" data-scroll-target="#deadline-and-link-to-m1">Deadline and link to M1</a></li>
-  <li>
-<a href="#the-seven-a5-deliverables-explained" id="toc-the-seven-a5-deliverables-explained" class="nav-link" data-scroll-target="#the-seven-a5-deliverables-explained">The seven A5 deliverables, explained</a>
+  <li><a href="#the-seven-a5-deliverables-explained" id="toc-the-seven-a5-deliverables-explained" class="nav-link" data-scroll-target="#the-seven-a5-deliverables-explained">The seven A5 deliverables, explained</a>
   <ul class="collapse">
-<li><a href="#visualization-audit.qmd" id="toc-visualization-audit.qmd" class="nav-link" data-scroll-target="#visualization-audit.qmd">1. <code>visualization-audit.qmd</code></a></li>
+  <li><a href="#visualization-audit.qmd" id="toc-visualization-audit.qmd" class="nav-link" data-scroll-target="#visualization-audit.qmd">1. <code>visualization-audit.qmd</code></a></li>
   <li><a href="#visualization-audit.html" id="toc-visualization-audit.html" class="nav-link" data-scroll-target="#visualization-audit.html">2. <code>visualization-audit.html</code></a></li>
   <li><a href="#corrected-plot.png" id="toc-corrected-plot.png" class="nav-link" data-scroll-target="#corrected-plot.png">3. <code>corrected-plot.png</code></a></li>
   <li><a href="#visual-audit-note.md" id="toc-visual-audit-note.md" class="nav-link" data-scroll-target="#visual-audit-note.md">4. <code>visual-audit-note.md</code></a></li>
   <li><a href="#caption.md" id="toc-caption.md" class="nav-link" data-scroll-target="#caption.md">5. <code>caption.md</code></a></li>
   <li><a href="#m1-link-note.md" id="toc-m1-link-note.md" class="nav-link" data-scroll-target="#m1-link-note.md">6. <code>m1-link-note.md</code></a></li>
   <li><a href="#ai-use-note.md" id="toc-ai-use-note.md" class="nav-link" data-scroll-target="#ai-use-note.md">7. <code>ai-use-note.md</code></a></li>
-  </ul>
-</li>
+  </ul></li>
   <li><a href="#reproducibility-checklist-for-a5" id="toc-reproducibility-checklist-for-a5" class="nav-link" data-scroll-target="#reproducibility-checklist-for-a5">Reproducibility checklist for A5</a></li>
   <li><a href="#accessibility-good-practice-not-a-graded-deliverable" id="toc-accessibility-good-practice-not-a-graded-deliverable" class="nav-link" data-scroll-target="#accessibility-good-practice-not-a-graded-deliverable">Accessibility (good practice, not a graded deliverable)</a></li>
   <li><a href="#ggplot2-quick-reference" id="toc-ggplot2-quick-reference" class="nav-link" data-scroll-target="#ggplot2-quick-reference">ggplot2 quick reference</a></li>
   <li><a href="#visual-audit-checklist" id="toc-visual-audit-checklist" class="nav-link" data-scroll-target="#visual-audit-checklist">Visual audit checklist</a></li>
   <li><a href="#five-quick-knowledge-checks" id="toc-five-quick-knowledge-checks" class="nav-link" data-scroll-target="#five-quick-knowledge-checks">Five quick knowledge checks</a></li>
   <li><a href="#where-this-goes-next" id="toc-where-this-goes-next" class="nav-link" data-scroll-target="#where-this-goes-next">Where this goes next</a></li>
-  </ul><div class="toc-actions"><ul><li><a href="https://github.com/ehsanx/HDSx/edit/main/weeks/week06-visualization/viz07-assignment-a5-and-reference.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ehsanx/HDSx/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ehsanx/HDSx/edit/main/weeks/week06-visualization/viz07-assignment-a5-and-reference.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ehsanx/HDSx/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week06-visualization/index.html">Week 6: Data Visualization</a></li><li class="breadcrumb-item"><a href="../../weeks/week06-visualization/viz07-assignment-a5-and-reference.html">Assignment 5 Walkthrough and Reference</a></li></ol></nav><div class="quarto-title">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week06-visualization/index.html">Week 6: Data Visualization</a></li><li class="breadcrumb-item"><a href="../../weeks/week06-visualization/viz07-assignment-a5-and-reference.html">Assignment 5 Walkthrough and Reference</a></li></ol></nav>
+<div class="quarto-title">
 <h1 class="title">Assignment 5 Walkthrough and Reference</h1>
 </div>
 
@@ -999,58 +1104,75 @@ ul.task-list li input[type="checkbox"] {
   
 
 
-</header><section id="where-this-fits" class="level2"><h2 class="anchored" data-anchor-id="where-this-fits">Where this fits</h2>
+</header>
+
+
+<section id="where-this-fits" class="level2">
+<h2 class="anchored" data-anchor-id="where-this-fits">Where this fits</h2>
 <p>You have the worked example, the failure modes, the prompt templates, and the studio drafts. This page is the bridge from in-class work to the Assignment 5 submission. The deliverables listed here are the same set in the <a href="../../assignments/assignment05-visualization/README.html">A5 README</a> — this page explains what goes into each one and how to verify it.</p>
-</section><section id="deadline-and-link-to-m1" class="level2"><h2 class="anchored" data-anchor-id="deadline-and-link-to-m1">Deadline and link to M1</h2>
+</section>
+<section id="deadline-and-link-to-m1" class="level2">
+<h2 class="anchored" data-anchor-id="deadline-and-link-to-m1">Deadline and link to M1</h2>
 <p>Assignment 5 is due the Monday after Week 6 class, 4 PM. The Milestone 1 (Project Proposal) <code>initial-visual-plan.md</code> is due the same Monday. The two pieces of work share a standard of transparency, but they are <em>different</em> artifacts: A5 polishes a plot from the NHANES classroom CSV; M1 sketches one planned figure for your team’s project. Do not conflate them.</p>
-</section><section id="the-seven-a5-deliverables-explained" class="level2"><h2 class="anchored" data-anchor-id="the-seven-a5-deliverables-explained">The seven A5 deliverables, explained</h2>
+</section>
+<section id="the-seven-a5-deliverables-explained" class="level2">
+<h2 class="anchored" data-anchor-id="the-seven-a5-deliverables-explained">The seven A5 deliverables, explained</h2>
 <p>Each file goes in <code>assignments/assignment05-visualization/submission/</code>.</p>
-<section id="visualization-audit.qmd" class="level3"><h3 class="anchored" data-anchor-id="visualization-audit.qmd">1. <code>visualization-audit.qmd</code>
-</h3>
+<section id="visualization-audit.qmd" class="level3">
+<h3 class="anchored" data-anchor-id="visualization-audit.qmd">1. <code>visualization-audit.qmd</code></h3>
 <p>A rerunnable Quarto file that loads the cached CSV with a relative path, prepares a descriptive summary, renders the final corrected plot, and includes one or two short paragraphs explaining what you revised and why.</p>
 <ul>
-<li>
-<strong>Verify:</strong> open it in a fresh Codespace, render top to bottom, no errors.</li>
-</ul></section><section id="visualization-audit.html" class="level3"><h3 class="anchored" data-anchor-id="visualization-audit.html">2. <code>visualization-audit.html</code>
-</h3>
+<li><strong>Verify:</strong> open it in a fresh Codespace, render top to bottom, no errors.</li>
+</ul>
+</section>
+<section id="visualization-audit.html" class="level3">
+<h3 class="anchored" data-anchor-id="visualization-audit.html">2. <code>visualization-audit.html</code></h3>
 <p>The rendered output of the <code>.qmd</code> above. Quarto writes this when you click Render.</p>
 <ul>
-<li>
-<strong>Verify:</strong> open the HTML in the Codespaces preview and confirm the figure, caption, and audit paragraph all appear.</li>
-</ul></section><section id="corrected-plot.png" class="level3"><h3 class="anchored" data-anchor-id="corrected-plot.png">3. <code>corrected-plot.png</code>
-</h3>
+<li><strong>Verify:</strong> open the HTML in the Codespaces preview and confirm the figure, caption, and audit paragraph all appear.</li>
+</ul>
+</section>
+<section id="corrected-plot.png" class="level3">
+<h3 class="anchored" data-anchor-id="corrected-plot.png">3. <code>corrected-plot.png</code></h3>
 <p>The exported corrected plot as a static image. Use <code>ggsave("corrected-plot.png", plot, width = 6, height = 4)</code> to write it from code rather than by screenshot.</p>
 <ul>
-<li>
-<strong>Verify:</strong> the PNG exists, opens, and matches what the rendered HTML shows.</li>
-</ul></section><section id="visual-audit-note.md" class="level3"><h3 class="anchored" data-anchor-id="visual-audit-note.md">4. <code>visual-audit-note.md</code>
-</h3>
+<li><strong>Verify:</strong> the PNG exists, opens, and matches what the rendered HTML shows.</li>
+</ul>
+</section>
+<section id="visual-audit-note.md" class="level3">
+<h3 class="anchored" data-anchor-id="visual-audit-note.md">4. <code>visual-audit-note.md</code></h3>
 <p>A short note listing at least three issues you identified in the flawed plot from <a href="../../weeks/week06-visualization/viz06-studio-visual-audit.html">viz06</a>. For each issue, write one sentence on what it was, one sentence on why it matters, and one sentence on how you corrected it.</p>
 <ul>
-<li>
-<strong>Verify:</strong> three issues, each tagged with a category from <a href="../../weeks/week06-visualization/viz04-misleading-design.html">viz04</a> (correctness, design, interpretation, bias/aggregation, or reproducibility).</li>
-</ul></section><section id="caption.md" class="level3"><h3 class="anchored" data-anchor-id="caption.md">5. <code>caption.md</code>
-</h3>
+<li><strong>Verify:</strong> three issues, each tagged with a category from <a href="../../weeks/week06-visualization/viz04-misleading-design.html">viz04</a> (correctness, design, interpretation, bias/aggregation, or reproducibility).</li>
+</ul>
+</section>
+<section id="caption.md" class="level3">
+<h3 class="anchored" data-anchor-id="caption.md">5. <code>caption.md</code></h3>
 <p>The caption for your final figure. Use the template from <a href="../../weeks/week06-visualization/viz03-worked-example.html">viz03</a>:</p>
 <blockquote class="blockquote">
 <p>This figure shows [measure] by [group] across [time/category] using the prepared NHANES Health Equity classroom dataset. The summary is descriptive and unweighted. Records with missing [variables] were excluded. The plot supports comparison of patterns, not causal claims or population-level estimates.</p>
 </blockquote>
 <ul>
-<li>
-<strong>Verify:</strong> the caption names the statistic, the data source, the exclusions, and one limitation.</li>
-</ul></section><section id="m1-link-note.md" class="level3"><h3 class="anchored" data-anchor-id="m1-link-note.md">6. <code>m1-link-note.md</code>
-</h3>
+<li><strong>Verify:</strong> the caption names the statistic, the data source, the exclusions, and one limitation.</li>
+</ul>
+</section>
+<section id="m1-link-note.md" class="level3">
+<h3 class="anchored" data-anchor-id="m1-link-note.md">6. <code>m1-link-note.md</code></h3>
 <p>Two or three sentences connecting the visualization standard from this assignment to your M1 visual plan. What did this assignment change about the figure your team plans to make? Did it change your dataset choice, the exclusions you will document, or the caption your team will write?</p>
 <ul>
-<li>
-<strong>Verify:</strong> the note is specific to <em>your team’s</em> project, not generic advice.</li>
-</ul></section><section id="ai-use-note.md" class="level3"><h3 class="anchored" data-anchor-id="ai-use-note.md">7. <code>ai-use-note.md</code>
-</h3>
+<li><strong>Verify:</strong> the note is specific to <em>your team’s</em> project, not generic advice.</li>
+</ul>
+</section>
+<section id="ai-use-note.md" class="level3">
+<h3 class="anchored" data-anchor-id="ai-use-note.md">7. <code>ai-use-note.md</code></h3>
 <p>If you used AI to draft code or wording, name what it helped with and how you verified the result. If you did not use AI, write one sentence saying so.</p>
 <ul>
-<li>
-<strong>Verify:</strong> specific (which chunk? which prompt template?), not vague (“I used Copilot”).</li>
-</ul></section></section><section id="reproducibility-checklist-for-a5" class="level2"><h2 class="anchored" data-anchor-id="reproducibility-checklist-for-a5">Reproducibility checklist for A5</h2>
+<li><strong>Verify:</strong> specific (which chunk? which prompt template?), not vague (“I used Copilot”).</li>
+</ul>
+</section>
+</section>
+<section id="reproducibility-checklist-for-a5" class="level2">
+<h2 class="anchored" data-anchor-id="reproducibility-checklist-for-a5">Reproducibility checklist for A5</h2>
 <p>Before you click submit:</p>
 <ul>
 <li>The <code>.qmd</code> renders in a fresh Codespace with no manual edits.</li>
@@ -1058,24 +1180,31 @@ ul.task-list li input[type="checkbox"] {
 <li>The PNG is generated by code (or a documented render step), not by screenshot.</li>
 <li>The caption uses the descriptive template and does not imply causality or national prevalence.</li>
 <li>All seven files are committed and pushed to your GitHub repo.</li>
-</ul></section><section id="accessibility-good-practice-not-a-graded-deliverable" class="level2"><h2 class="anchored" data-anchor-id="accessibility-good-practice-not-a-graded-deliverable">Accessibility (good practice, not a graded deliverable)</h2>
+</ul>
+</section>
+<section id="accessibility-good-practice-not-a-graded-deliverable" class="level2">
+<h2 class="anchored" data-anchor-id="accessibility-good-practice-not-a-graded-deliverable">Accessibility (good practice, not a graded deliverable)</h2>
 <p>A plain-language alt text sentence next to your figure helps screen-reader users, colour-blind reviewers, and busy policymakers. The A5 rubric does not score alt text — it is encouraged practice. If you want to try it, add <code>fig-alt:</code> as a chunk option:</p>
-</section><section id="ggplot2-quick-reference" class="level2"><h2 class="anchored" data-anchor-id="ggplot2-quick-reference">ggplot2 quick reference</h2>
+</section>
+<section id="ggplot2-quick-reference" class="level2">
+<h2 class="anchored" data-anchor-id="ggplot2-quick-reference">ggplot2 quick reference</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
 <col style="width: 33%">
 <col style="width: 33%">
 </colgroup>
-<thead><tr class="header">
+<thead>
+<tr class="header">
 <th>Need</th>
 <th>Code</th>
 <th>Note</th>
-</tr></thead>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
 <td>Load packages</td>
-<td><code><a href="https://ggplot2.tidyverse.org">library(ggplot2)</a></code></td>
+<td><code>library(ggplot2)</code></td>
 <td>Every session</td>
 </tr>
 <tr class="even">
@@ -1119,7 +1248,10 @@ ul.task-list li input[type="checkbox"] {
 <td>Code-generated, not screenshot</td>
 </tr>
 </tbody>
-</table></section><section id="visual-audit-checklist" class="level2"><h2 class="anchored" data-anchor-id="visual-audit-checklist">Visual audit checklist</h2>
+</table>
+</section>
+<section id="visual-audit-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="visual-audit-checklist">Visual audit checklist</h2>
 <p>A short version of the five questions from <a href="../../weeks/week06-visualization/viz04-misleading-design.html">viz04</a>:</p>
 <ul>
 <li>Title and caption do not imply causation.</li>
@@ -1128,18 +1260,27 @@ ul.task-list li input[type="checkbox"] {
 <li>Weighted vs unweighted is stated.</li>
 <li>Missingness and exclusions are disclosed.</li>
 <li>Small-cell counts are visible or filtered out.</li>
-</ul></section><section id="five-quick-knowledge-checks" class="level2"><h2 class="anchored" data-anchor-id="five-quick-knowledge-checks">Five quick knowledge checks</h2>
+</ul>
+</section>
+<section id="five-quick-knowledge-checks" class="level2">
+<h2 class="anchored" data-anchor-id="five-quick-knowledge-checks">Five quick knowledge checks</h2>
 <ol type="1">
 <li>What are the five moving parts of a ggplot?</li>
 <li>Name two failure modes from <a href="../../weeks/week06-visualization/viz04-misleading-design.html">viz04</a> and one fix for each.</li>
 <li>Why is <code>geom_smooth(method = "lm")</code> rarely appropriate for NHANES cycle data?</li>
 <li>What two lines of comment should appear above any AI-drafted chunk?</li>
 <li>What is the difference in scope between Assignment 5 and the M1 <code>initial-visual-plan.md</code>?</li>
-</ol></section><section id="where-this-goes-next" class="level2"><h2 class="anchored" data-anchor-id="where-this-goes-next">Where this goes next</h2>
+</ol>
+</section>
+<section id="where-this-goes-next" class="level2">
+<h2 class="anchored" data-anchor-id="where-this-goes-next">Where this goes next</h2>
 <p>Next week (<a href="../../weeks/week07-eda-ai-audit/index.html">Week 7</a>) builds the EDA evidence behind the descriptive claims you have been plotting: cohort definition, missingness reporting, Table 1, and the AI audit categories.</p>
 
 
-</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
@@ -1588,7 +1729,9 @@ ul.task-list li input[type="checkbox"] {
       }
     }
   });
-  </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
       <a href="../../weeks/week06-visualization/viz06-studio-visual-audit.html" class="pagination-link" aria-label="In-Class Studio: AI Visual Audit">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">In-Class Studio: AI Visual Audit</span>
       </a>          
@@ -1600,6 +1743,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </nav>
 </div> <!-- /content -->
+
 
 
 

@@ -1,62 +1,68 @@
-# Dynamic Presentations {.unnumbered}
+# Week 9: Communication of Scientific Findings {.unnumbered}
 
 ## Overview
 
-Data analysis is useful only when the right audience can understand what the evidence does and does not say. This week turns one dashboard finding into a short, plain-language scientific communication product using Quarto slides.
+This week turns one audited result into a short scientific communication product. The goal is not to make a slide deck bigger. The goal is to make one claim easier to understand, easier to verify, and harder to overstate.
+
+You will reuse work you already have: a corrected plot from Assignment 5, a Table 1 or methods note from Assignment 6, and a dashboard adaptation or limitation statement from Assignment 7.
+
+## Objectives
+
+By the end of the week you can:
+
+- identify an audience and decision context for one result;
+- write a claim that includes evidence and a visible limitation;
+- build or outline a short Quarto revealjs slide story;
+- cite the data source for a figure, table, or dashboard screenshot;
+- use peer feedback to improve clarity without inflating the claim.
 
 ## Connection
 
-Week 8 made the dashboard audience-facing. This week turns one dashboard plot or table into a short slide story with a clear takeaway, evidence, and limitation. Next week you will expand that communication into a reproducible report.
+Week 8 built a small dashboard-style KT product. Week 9 turns one dashboard finding, plot, or table into a concise slide story. Week 10 then expands the same evidence into a reproducible Quarto report.
 
 ## Dashboard Case Study: NHANES Equity
 
 {{< include ../../examples/nhanes-equity/snippets/case-study-dashboard.qmd >}}
 
-## Learning Objectives
+## Reading Order
 
-By the end of this week, you should be able to:
+Work through the pages in order. Each page asks you to reuse an artifact rather than start over.
 
-- identify the audience and decision context for a result
-- translate one technical finding into plain language
-- build a short Quarto revealjs slide deck or slide outline
-- cite the data source for a figure or table
-- use peer feedback to reduce overclaiming and improve clarity
+1. [comm01 - Why Communication Is KT](comm01-overview-and-goals.qmd)
+2. [comm02 - Claim, Evidence, Limitation](comm02-claim-evidence-limitation.qmd)
+3. [comm03 - Revealjs Starter](comm03-revealjs-starter.qmd)
+4. [comm04 - Peer Feedback](comm04-peer-feedback.qmd)
+5. [comm05 - Assignment 8 Walkthrough](comm05-assignment-a8-and-reference.qmd)
 
-## In-Class Plan
+The raw starter file is [starter-slides.qmd](starter-slides.qmd). Use it as a renderable template, not as a reading page.
 
-1. Choose one plot or table from prior work.
-2. Draft a three-slide story using [Starter Slides](starter-slides.qmd).
-3. Rewrite one technical sentence in plain language.
-4. Complete peer feedback using [Revealjs and Peer Feedback](revealjs-peer-feedback.qmd).
-5. Revise the takeaway, caption, or limitation before submitting [Assignment 8](../../assignments/assignment08-communication/README.md).
+## Class Plan
 
-## Plain-Language Translation
-
-Start with a technical sentence such as:
-
-> Mean BMI differs by income group in the prepared NHANES classroom dataset.
-
-Translate it for a nontechnical audience:
-
-> In this classroom dataset, average BMI is not the same across income groups, but this comparison is descriptive and does not prove income causes BMI differences.
-
-Your translation should keep the evidence honest. Do not remove the limitation just to make the message sound stronger.
-
-## Citation And Accessibility
-
-Before submission, check that:
-
-- the data source is named on the slide or in speaker notes
-- any figure has a readable title, axis labels, and units
-- colors are not the only way to understand groups
-- text is large enough to read during a live presentation
-- the limitation is visible, not hidden in tiny text
-- AI-assisted wording has been checked against the actual output
+1. Choose one finding from A5, A6, or A7.
+2. Write the audience and decision context in one sentence.
+3. Build a claim-evidence-limitation table for that finding.
+4. Draft a 3-5 slide story using the revealjs starter or a structured slide outline.
+5. Exchange peer feedback focused on clarity, evidence, limitation, and source note.
+6. Revise one slide sentence or limitation statement before submission.
 
 ## Student Output
 
-Submit a 3-5 slide deck or slide outline, a plain-language summary, peer feedback notes, and an AI-use note. Assignment link: [Assignment 8](../../assignments/assignment08-communication/README.md).
+By the end of class each student has a draft slide deck or outline, a plain-language summary sentence, a peer feedback note, a source note, and an AI-use note if AI helped with wording or structure.
 
-## Definition Of Done
+## Links
 
-Week 9 is done when the slide story renders or is ready to render, the main message is understandable without code, and a peer can identify the evidence and limitation.
+- Assignment: [Assignment 8 - Scientific Communication](../../assignments/assignment08-communication/README.md)
+- Milestone bridge: [M5 - Final Presentation](../../milestones/m5-presentation/README.md)
+- Reusable starter: [starter-slides.qmd](starter-slides.qmd)
+
+## Definition of Done
+
+- The slide story has a named audience.
+- The main claim is supported by one visible plot, table, or dashboard output.
+- The limitation appears on the slide or in nearby notes.
+- The source note names the dataset or source.
+- Peer feedback led to at least one concrete revision.
+
+## What Students Leave With
+
+A short, audience-facing communication product that can be reused later in the M5 presentation and final portfolio.

@@ -1,0 +1,59 @@
+# Why Communication Is KT {.unnumbered}
+
+## Where This Fits
+
+You already have descriptive evidence. A plot, a Table 1, and a dashboard prototype can all be technically correct and still fail if the intended audience cannot tell what matters.
+
+Communication is part of knowledge translation. It turns evidence into a form that helps a person make sense of a question, ask a better follow-up, or avoid a bad interpretation.
+
+## The Week 9 Task
+
+This week asks for one small communication product:
+
+- one audience;
+- one question;
+- one figure, table, or dashboard output;
+- one plain-language takeaway;
+- one limitation;
+- one source note.
+
+That is enough. More slides are not automatically better.
+
+## What Counts as Evidence
+
+Use work from earlier weeks:
+
+| Earlier artifact | How it can support Week 9 |
+|---|---|
+| A5 corrected plot | Evidence slide or visual example |
+| A5 caption | Source, statistic, exclusion, and limitation wording |
+| A6 Table 1 | Descriptive context or supporting table |
+| A6 methods note | Data and cohort explanation |
+| A6 provenance note | Source and stewardship note |
+| A7 dashboard adaptation | Audience and KT purpose |
+| A7 limitation/privacy check | Caution slide or speaker note |
+
+## Keep the Claim Small
+
+Good Week 9 claims sound like this:
+
+> In this prepared classroom dataset, mean BMI differs across income groups, but the comparison is descriptive and unweighted.
+
+Weak Week 9 claims sound like this:
+
+> Income causes BMI differences.
+
+The second claim is not supported by the course workflow. The first claim is cautious, understandable, and grounded in the evidence students have actually produced.
+
+## AI Use
+
+AI may help simplify wording, draft speaker notes, or suggest slide order. It must not invent sources, make results stronger than the code supports, or remove limitations to make a message sound cleaner.
+
+## Check Yourself
+
+Before moving on, answer:
+
+- Who is the audience?
+- What decision, conversation, or question does the communication support?
+- Which prior artifact is the evidence?
+- What limitation must remain visible?

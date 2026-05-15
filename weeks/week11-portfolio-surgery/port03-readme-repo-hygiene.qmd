@@ -1,0 +1,73 @@
+# README and Repo Hygiene {.unnumbered}
+
+## Why This Matters
+
+A reviewer should not need private instructions to understand the project. The README and file structure are part of the scientific record.
+
+Good repo hygiene reduces grading friction and makes the final portfolio easier to trust.
+
+## README Minimums
+
+The project README should name:
+
+- project title and audience;
+- project question;
+- data source and access route;
+- folder structure;
+- how to render the report;
+- how to open or run the dashboard-style KT product;
+- package or environment setup;
+- known limitations or risks;
+- public/private sharing status.
+
+## Path Hygiene
+
+Use relative paths. Avoid:
+
+```text
+C:\Users\...
+E:\GitHub\...
+/Users/name/...
+```
+
+Prefer paths that work from the repository root, such as:
+
+```text
+data/clean/analysis.csv
+reports/final-report.qmd
+dashboard/index.qmd
+```
+
+## Dependency Notes
+
+If the project uses R packages beyond the course defaults, document them. If the project uses Python as an optional extension, document how it is launched and which packages are needed.
+
+Keep the dependency note short. The goal is enough information for a reviewer to rerun the work.
+
+## Output Hygiene
+
+Generated outputs should be traceable to source code. For each important output, ask:
+
+- Which source file generates it?
+- Which data file does it use?
+- Can it be regenerated in a fresh Codespace?
+- Is it safe to share publicly?
+
+## Git Hygiene
+
+Before final submission:
+
+- commit repairs with meaningful messages;
+- avoid committing credentials, tokens, or local cache files;
+- keep `.gitignore` aligned with the project;
+- sync the final commit before submitting the repository link.
+
+## Quick Repair Pattern
+
+Use this structure in `repair-summary.md`:
+
+| File changed | Problem fixed | How verified |
+|---|---|---|
+| `README.md` | Missing render command | Followed command in fresh Codespace |
+| `report.qmd` | Absolute data path | Rendered with relative path |
+| `references.bib` | Missing citation | Citation appeared in rendered report |

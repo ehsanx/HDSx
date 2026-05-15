@@ -96,7 +96,7 @@ Last updated after milestone/presentation/final-portfolio completion pass: 2026-
 
 - **Topic name:** Communication of Scientific Findings
 - **Status:** Complete
-- **Evidence:** `weeks/week09-science-communication/index.qmd` / `Plain-Language Translation`; `starter-slides.qmd`: revealjs YAML and three-slide KT story; `revealjs-peer-feedback.qmd`: peer feedback and accessibility checklist; A8 brief.
+- **Evidence:** `weeks/week09-science-communication/index.qmd` and `comm01`-`comm05`: KT framing, claim-evidence-limitation table, revealjs starter workflow, peer feedback, accessibility/source checklist, and A8 walkthrough; `starter-slides.qmd`: revealjs YAML and three-slide KT story; A8 brief.
 - **What is missing:** No content drafting gap.
 - **Recommended next additions:** Verify slide rendering after any revealjs theme changes.
 
@@ -104,7 +104,7 @@ Last updated after milestone/presentation/final-portfolio completion pass: 2026-
 
 - **Topic name:** Writing & Publishing Reports
 - **Status:** Complete
-- **Evidence:** `weeks/week10-reporting-publishing/report-template.qmd`: YAML, citation to `@cdc-nhanes`, one table, one figure, limitations, publishing checklist, grounding audit; A9 brief; M3 brief.
+- **Evidence:** `weeks/week10-reporting-publishing/report01`-`report05`: report purpose, structure, citations/grounding audit, private-preview default, and A9/M3 walkthrough; `report-template.qmd`: YAML, citation to `@cdc-nhanes`, one table, one figure, limitations, publishing checklist, grounding audit; A9 brief; M3 brief.
 - **What is missing:** No content drafting gap.
 - **Recommended next additions:** Recheck `references.bib` if source citations change.
 
@@ -112,7 +112,7 @@ Last updated after milestone/presentation/final-portfolio completion pass: 2026-
 
 - **Topic name:** Portfolio Surgery & Optional Advanced Deployment
 - **Status:** Complete
-- **Evidence:** `weeks/week11-portfolio-surgery/reproducibility-test.qmd`: step-by-step runbook, sample failure log, blank failure log, optional Python pathway, final portfolio checklist link; A10 and M4 briefs.
+- **Evidence:** `weeks/week11-portfolio-surgery/port01`-`port06`: surgery goals, fresh Codespace runbook, sample failure log, README/repo hygiene, M4 peer review, optional pathway guidance, A10/final portfolio walkthrough; A10 and M4 briefs.
 - **What is missing:** No content drafting gap.
 - **Recommended next additions:** Run one fresh Codespace smoke test before portfolio week.
 

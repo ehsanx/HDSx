@@ -1,35 +1,68 @@
-# Advanced Topics {.unnumbered}
+# Week 11: Portfolio Surgery {.unnumbered}
 
 ## Overview
 
-Before the final submission, students must "bulletproof" their work. This chapter focuses on advanced project hygiene, dependency management (ensuring your code runs on someone else's machine), and auditability. You will act as a peer reviewer to identify reproducibility failures in others' code, fixing broken paths and missing seeds, to ensure your final project stands up to scientific scrutiny.
+This week is about making the project survive review. The goal is not to add features. The goal is to find and repair the failures that would stop another person from opening, rendering, understanding, or trusting the final portfolio.
+
+The core pathway is a fresh Codespace reproducibility test, README and path repair, peer review, and final risk list. Advanced deployment pathways stay optional and demo-only.
+
+## Objectives
+
+By the end of the week you can:
+
+- run a project in a fresh Codespace using only documented instructions;
+- log failures before repairing them;
+- improve README, path, dependency, citation, and output hygiene;
+- use M4 peer review to find correctness, reproducibility, auditability, and KT risks;
+- decide whether optional deployment pathways are worth pursuing after the core portfolio works.
 
 ## Connection
 
-Week 10 produced a report with code-generated outputs and citations. This week tests whether the report, dashboard, and instructions survive a fresh environment. The final portfolio should leave a reviewer able to rerun the core work without private setup knowledge.
+Week 10 produced a report and M3 project update. Week 11 tests whether that work can be reviewed in a fresh environment. Weeks 12 and 13 then turn the evidence into final presentations and last portfolio revisions.
 
 ## Dashboard Case Study: NHANES Equity
 
 {{< include ../../examples/nhanes-equity/snippets/case-study-dashboard.qmd >}}
 
-## In-Class Activity
+## Reading Order
 
-- Run a fresh-session test: can the app launch from the repository root?
-- Verify the cached RDS path works before attempting a CDC rebuild.
-- Optionally run the rebuild script only if internet access and time are available.
-- Optionally draft a static dashboard extension using a CSV snapshot and no Shiny server.
-- Log any dependency, path, or README issues as reproducibility risks.
-- Use [Reproducibility Stress Test](reproducibility-test.qmd) as the runbook.
-- Check final submission expectations in [Final Portfolio](../../milestones/final-portfolio/README.md).
+1. [port01 - Surgery Goals](port01-overview-and-goals.qmd)
+2. [port02 - Fresh Codespace Test](port02-fresh-codespace-test.qmd)
+3. [port03 - README and Repo Hygiene](port03-readme-repo-hygiene.qmd)
+4. [port04 - Peer Review and M4](port04-peer-review-m4.qmd)
+5. [port05 - Optional Pathways](port05-optional-pathways.qmd)
+6. [port06 - Assignment 10 and Final Portfolio](port06-assignment-a10-final-portfolio.qmd)
 
-Student output: a reproducibility test log, repaired README or path issues, and a final risk list. Assignment link: [Assignment 10](../../assignments/assignment10-portfolio-surgery/README.md).
+The optional [static dashboard source](static-dashboard-ojs.qmd) remains a demo-only example. It is not a required A10 or final portfolio pathway.
 
-## Static Dashboard Demo
+## Class Plan
 
-The completed [static dashboard source file](static-dashboard-ojs.qmd) demonstrates a no-server alternative that reads the NHANES CSV snapshot in the browser. Use it as an exemplar for optional portfolio extensions after the core Shiny and report workflows are reproducible.
+1. Open the project in a fresh Codespace or clean equivalent environment.
+2. Follow the README exactly.
+3. Render the report and open or run the dashboard-style KT product.
+4. Log failures before fixing them.
+5. Repair README, path, dependency, citation, or stale-output issues.
+6. Exchange M4 peer review focused on reproducibility and audience fit.
+7. Write the final risk list.
+
+## Student Output
+
+By the end of class each group has a fresh-environment test log, a failure log, a repair summary, peer review notes, and a final risk list for A10 and final portfolio planning.
+
+## Links
+
+- Assignment: [Assignment 10 - Portfolio Surgery](../../assignments/assignment10-portfolio-surgery/README.md)
+- Milestone: [M4 - Peer Review](../../milestones/m4-peer-review/README.md)
+- Final package: [Final Portfolio](../../milestones/final-portfolio/README.md)
 
 ## Definition of Done
 
-- A peer can clone or open the repository in a fresh Codespace and reproduce the core outputs.
-- Broken paths, missing dependencies, unclear READMEs, and ungrounded AI claims are fixed.
-- The [Final Portfolio Checklist](../../milestones/final-portfolio/final-portfolio-checklist.md) is complete.
+- A fresh environment test was attempted.
+- Failures were logged before repair.
+- README and path issues were corrected or documented.
+- M4 feedback is specific enough for the receiving group to act on.
+- Remaining risks are named rather than hidden.
+
+## What Students Leave With
+
+A project that is closer to final submission because it has been tested, repaired, reviewed, and triaged.

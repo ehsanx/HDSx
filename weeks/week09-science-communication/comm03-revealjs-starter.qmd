@@ -1,0 +1,71 @@
+# Revealjs Starter {.unnumbered}
+
+## Where This Fits
+
+This page explains how to use the raw starter file, [starter-slides.qmd](starter-slides.qmd). The starter is a small revealjs deck that can render from the command line or the Quarto Render button.
+
+You may also submit a structured slide outline for A8. The revealjs path is recommended if you want practice with Quarto slides before M5.
+
+## Render the Starter
+
+From the repository root, run:
+
+```bash
+quarto render weeks/week09-science-communication/starter-slides.qmd
+```
+
+Or open `starter-slides.qmd` in RStudio or VS Code and click Render.
+
+The rendered file should appear beside the source as `starter-slides.html`.
+
+::: {.callout-note title="Tester note"}
+Before release, render `weeks/week09-science-communication/starter-slides.qmd` in a clean Codespace and confirm that the title slide, source note, and bibliography entry appear.
+:::
+
+## The Three-Slide Story
+
+The starter uses three content slides:
+
+1. **Question and audience:** who needs the result and why.
+2. **Evidence:** one plot, table, or dashboard output.
+3. **Limitation and next step:** what the result does not prove and what the audience should do next.
+
+For A8, 3-5 slides is enough. A short, honest deck is better than a long deck full of weak claims.
+
+## Add Evidence
+
+You can add evidence in three ways:
+
+- insert a figure exported from A5;
+- copy a small table from A6;
+- include a screenshot or preview of the A7 dashboard output if it does not expose row-level data.
+
+Use relative paths for images. For example:
+
+```markdown
+![](../../assignments/assignment05-visualization/submission/corrected-plot.png)
+```
+
+If the path does not work, keep the figure beside your slide deck in the A8 submission folder and use a local relative path such as:
+
+```markdown
+![](corrected-plot.png)
+```
+
+## Add a Source Note
+
+The starter includes a citation to `@cdc-nhanes`. Keep a source note near the evidence slide. If you use your project dataset instead of the NHANES example, replace the source note with the source that matches your project.
+
+## Speaker Notes
+
+Speaker notes are useful, but they are not a place to hide essential limitations. Put the key limitation on the slide or in a visible caption. Use notes for backup details such as cohort definition, package versions, or AI-use checks.
+
+## Before Submitting
+
+Check that:
+
+- the deck or outline renders;
+- the main evidence is visible;
+- the limitation is not hidden;
+- the source note is present;
+- the AI-use note says what AI helped with and what you checked.

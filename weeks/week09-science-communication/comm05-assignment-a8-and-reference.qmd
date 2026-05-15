@@ -1,0 +1,92 @@
+# Assignment 8 Walkthrough {.unnumbered}
+
+## Where This Fits
+
+This page connects the Week 9 studio work to [Assignment 8](../../assignments/assignment08-communication/README.md). It does not add new deliverables. It explains what each required file should contain and how to check it before submitting.
+
+Assignment 8 is due the Monday after Week 9 class, 4 PM. It also gives you reusable material for the M5 presentation.
+
+::: {.callout-note title="Tester note"}
+Check that the file names below match the current Assignment 8 README before release.
+:::
+
+## The Six A8 Files
+
+Each file goes in `assignments/assignment08-communication/submission/`.
+
+### 1. `slides.qmd` or `slide-outline.qmd`
+
+Use one of these options:
+
+- `slides.qmd`: a revealjs deck based on [starter-slides.qmd](starter-slides.qmd);
+- `slide-outline.qmd`: a structured outline if you are not ready to render revealjs.
+
+Include 3-5 slides or sections: context, evidence, takeaway, limitation, and next step.
+
+- **Verify:** the source file renders or is readable as a complete outline.
+
+### 2. `slides.html` or `slide-outline.html`
+
+This is the rendered output. If you use revealjs, the result should open in the browser as slides.
+
+- **Verify:** open the rendered file and check that the evidence and limitation are visible.
+
+### 3. `plain-language-summary.md`
+
+Write 150-250 words for the intended audience. Use plain language, but keep the evidence honest.
+
+Include:
+
+- who the audience is;
+- what the main result says;
+- what the result does not prove;
+- what action, question, or conversation should follow.
+
+### 4. `peer-feedback.md`
+
+Use the feedback table from [comm04](comm04-peer-feedback.qmd). Include the feedback you received and one sentence explaining what you changed.
+
+- **Verify:** at least one revision is tied to a peer comment.
+
+### 5. `source-note.md`
+
+Name the dataset or source behind the evidence. For the NHANES classroom example, the source note can say:
+
+> Source: prepared classroom snapshot derived from CDC/NCHS NHANES public-use data. Results are descriptive and unweighted.
+
+For a term project, replace this with the correct project source.
+
+### 6. `ai-use-note.md`
+
+If AI helped draft, simplify, or reorganize your communication, state:
+
+- what it helped with;
+- what you changed;
+- how you checked the claim against the evidence.
+
+If you did not use AI, write one sentence saying so.
+
+## Reproducibility Check
+
+Before submission:
+
+- the deck or outline source is committed;
+- the rendered HTML is committed;
+- any image paths are relative;
+- the evidence can be traced to A5, A6, A7, or project files;
+- the source note and limitation are visible;
+- the AI-use note is specific.
+
+## Accessibility Check
+
+Slides should be readable in a live presentation. Check:
+
+- titles are short;
+- body text is large enough;
+- figure labels are readable;
+- color is not the only way to distinguish groups;
+- the final slide gives the audience a clear next step.
+
+## Where This Goes Next
+
+Week 10 expands the same communication discipline into a report: the claim becomes a results paragraph, the evidence becomes a code-generated table or figure, and the limitation becomes part of the written interpretation.

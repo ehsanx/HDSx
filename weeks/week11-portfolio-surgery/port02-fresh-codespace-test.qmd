@@ -1,0 +1,98 @@
+# Fresh Codespace Test {.unnumbered}
+
+## Goal
+
+Test whether a project can run in a fresh environment and document every failure before final submission.
+
+This page is the main Week 11 runbook. Use it for Assignment 10, M4 peer review, and final portfolio preparation.
+
+::: {.callout-note title="Tester note"}
+Before release, run this protocol on a clean fork or clean Codespace and check that the steps match the current GitHub Codespaces interface.
+:::
+
+## Roles
+
+For group testing, assign roles:
+
+- **Driver:** runs the project exactly as documented.
+- **Navigator:** reads instructions aloud and watches for ambiguity.
+- **Auditor:** logs paths, dependencies, citations, data provenance, and AI-use issues.
+
+Rotate after the first major failure or after 20 minutes.
+
+## Runbook
+
+Complete these steps in a new Codespace or equivalent clean environment. Work from the repository root unless the project README says otherwise.
+
+1. Open the repository from GitHub.
+2. Record the latest commit hash.
+3. Read the README before running code.
+4. Follow the documented setup steps only.
+5. Restore or install dependencies using documented instructions.
+6. Render the final report or book.
+7. Open or run the dashboard-style KT product.
+8. Check that data paths are relative.
+9. Check that citations resolve.
+10. Check that figures and tables are generated from code.
+11. Check that AI-use notes are present and specific.
+12. Record every failure, warning, unclear instruction, and repair.
+13. Commit repairs with clear messages.
+14. Submit the updated repository link and commit hash on Canvas.
+
+## Failure Log
+
+Use this table for A10 and for peer review.
+
+| Check | Result | Evidence | Fix made | Owner |
+|---|---|---|---|---|
+| Repository opens in fresh environment |  |  |  |  |
+| Packages install or load |  |  |  |  |
+| Report renders |  |  |  |  |
+| Dashboard or KT product opens |  |  |  |  |
+| Data paths are relative |  |  |  |  |
+| Citations resolve |  |  |  |  |
+| README instructions are accurate |  |  |  |  |
+| AI-use note is complete |  |  |  |  |
+
+## Example Failure Log
+
+| Check | Result | Evidence | Fix made | Owner |
+|---|---|---|---|---|
+| Repository opens in fresh environment | Pass | Codespace opened from GitHub | None | Group |
+| Packages install or load | Needs repair | `library(tidyverse)` failed | Added dependency note to README | Analyst |
+| Report renders | Pass | `report.html` created | None | Writer |
+| Dashboard opens | Needs repair | data path failed from repo root | Replaced absolute path with relative path | Developer |
+| Citations resolve | Pass | reference list appears | None | Writer |
+
+## NHANES Exemplar Checks
+
+For the NHANES case study, the checks are:
+
+- load `examples/nhanes-equity/data/nhanes_equity_v6.csv`;
+- render the Week 10 report template;
+- confirm the README explains cached data and optional CDC retrieval;
+- if using the Shiny exemplar as a demo, launch it from the repository root;
+- if using the static dashboard demo, open `weeks/week11-portfolio-surgery/static-dashboard-ojs.qmd`.
+
+The CDC rebuild and static dashboard are optional/demo pathways, not required portfolio work.
+
+## Optional Python Pathway
+
+If the project uses Python, add a short dependency note with:
+
+- how Python is launched;
+- required packages;
+- whether a notebook, script, or Quarto Python chunk is the primary workflow;
+- how outputs are regenerated.
+
+Keep the Python pathway documented, but do not add it unless it supports the core audience-facing product.
+
+## Final Repair Checklist
+
+- [ ] Required outputs render or run from a fresh environment.
+- [ ] README instructions match the tested workflow.
+- [ ] Data paths are relative.
+- [ ] Data access instructions are present.
+- [ ] Citations resolve.
+- [ ] AI-use notes identify what was drafted and how it was checked.
+- [ ] Remaining risks are documented in the failure log.

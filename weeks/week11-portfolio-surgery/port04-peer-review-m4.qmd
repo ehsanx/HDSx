@@ -1,0 +1,66 @@
+# Peer Review and M4 {.unnumbered}
+
+## Where This Fits
+
+M4 is the structured peer review checkpoint. Treat it as a group project artifact unless your course instructions explicitly say otherwise.
+
+The goal is actionable feedback: comments specific enough that the receiving group can improve the final portfolio without guessing.
+
+## What to Review
+
+Use four lenses:
+
+| Lens | Question |
+|---|---|
+| Correctness | Do the claims match the code output and evidence? |
+| Reproducibility | Can the report and KT product run or render? |
+| Auditability | Are data source, AI use, and limitations visible? |
+| KT value | Does the product fit the intended audience? |
+
+## Review Sequence
+
+1. Open the repository.
+2. Read the README first.
+3. Try the documented render or run path.
+4. Inspect the report, dashboard-style product, and data/source notes.
+5. Complete the M4 files listed in [M4: Peer Review](../../milestones/m4-peer-review/README.md).
+6. Name one blocking risk or state why no blocking risk was found.
+
+## Useful Feedback
+
+Helpful:
+
+> The report renders, but the dashboard path in the README points to an old folder. Update the README and rerun the dashboard test before final submission.
+
+Less helpful:
+
+> Good project.
+
+## M4 Files
+
+M4 uses `milestones/m4-peer-review/submission/`.
+
+The required files are:
+
+- `peer-review.md`
+- `reproducibility-check.md`
+- `auditability-check.md`
+- `kt-feedback.md`
+- `reviewer-reflection.md`
+- `ai-use-note.md`
+
+Do not invent extra files unless your group needs them for organization.
+
+## AI Use in Peer Review
+
+AI may help organize feedback or identify unclear prose. It must not invent evidence. Reviewers still need to inspect the repository, rendered output, citations, and limitations themselves.
+
+## Before Sending Feedback
+
+Check that your comments are:
+
+- specific;
+- respectful;
+- tied to evidence;
+- prioritized;
+- useful before final submission.
