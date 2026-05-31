@@ -1,0 +1,68 @@
+{
+  // ---------------------------------------------------------------------------
+  // HDSx course Codespace: R + Quarto + Python, beginner-ready.
+  //
+  // Goal (from the RA's Weeks 0-11 review): a FRESH Codespace must be able to
+  // render .qmd files (R and Python) with NO manual setup. The tested
+  // environment was missing R, pandoc, packages, and the R/Copilot extensions,
+  // which blocked Weeks 3, 6, 7, and 8. This config fixes that.
+  // ---------------------------------------------------------------------------
+  "name": "HDSx (R + Quarto + Python)",
+
+  // The rocker "tidyverse" image already ships R + the whole tidyverse +
+  // rmarkdown/knitr + the system libraries (libcurl, libssl, libxml2,
+  // fontconfig, harfbuzz, freetype, ...) that were missing in the test. This
+  // alone removes most of the Week 3-7 "packages not available" failures.
+  // Pin to a major version so it keeps building; bump when you want a newer R.
+  "image": "ghcr.io/rocker-org/devcontainer/tidyverse:4",
+
+  "features": {
+    // Quarto CLI (bundles its own pandoc, so rendering works out of the box).
+    // installTinyTeX is FALSE on purpose: students render HTML (dashboards,
+    // revealjs slides, reports), and the review flagged PDF/TeX as a failure
+    // surface. Maintainers building the full PDF book should flip this to
+    // "true" (or build the PDF on a separate maintainer machine/CI).
+    "ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {
+      "version": "release",
+      "installTinyTeX": "false"
+    },
+    // Python 3.11 for Week 5 polyglot-awareness and the reticulate demo.
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.11"
+    }
+  },
+
+  "customizations": {
+    "vscode": {
+      // Pre-installing these means students do not have to hunt for the R or
+      // Copilot Chat extensions (a specific review finding). They still sign in
+      // to Copilot themselves with their GitHub Education account.
+      "extensions": [
+        "quarto.quarto",
+        "REditorSupport.r",
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "mechatroner.rainbow-csv"
+      ],
+      "settings": {
+        "r.rterm.linux": "/usr/local/bin/R",
+        "r.bracketedPaste": true,
+        "editor.formatOnSave": false
+      }
+    }
+  },
+
+  // Runs once after the container is built. Installs the few packages not in
+  // the base image, then self-tests the toolchain (see setup.sh). The leading
+  // sed strips any stray carriage returns so the script runs even if the file
+  // was copied to another repo without git's eol=lf normalization.
+  "postCreateCommand": "sed -i 's/\\r$//' .devcontainer/setup.sh && bash .devcontainer/setup.sh",
+
+  // Rendering R + Quarto wants some headroom; 8gb is the common Codespaces tier.
+  "hostRequirements": {
+    "cpus": 2,
+    "memory": "8gb"
+  }
+}
