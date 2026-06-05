@@ -25,11 +25,11 @@ This assignment checks that your fork-based course workflow is working before th
 2. Click **Fork** and create a personal fork under your GitHub account.
 3. Launch Codespaces from your forked repository.
 4. Create the folder `assignments/assignment01-workflows/submission/`.
-5. Create a Quarto file named `workflow-check.qmd` in that folder.
+5. Create a Quarto file named `practice_report.qmd` in that folder.
 6. Add a YAML title, your name, and the date.
 7. Add one short paragraph explaining why relative paths matter in this course.
 8. Add one code chunk that prints the current working directory or lists the files in the submission folder.
-9. Render `workflow-check.qmd` to HTML.
+9. Render `practice_report.qmd` to HTML.
 10. Use the Source Control panel to inspect the diff.
 11. Commit with a clear message such as `Complete Assignment 1 workflow check`.
 12. Sync/push the commit to your fork on GitHub.
@@ -57,8 +57,8 @@ assignments/assignment01-workflows/submission/
 
 Submit these files:
 
-- `workflow-check.qmd`: edited Quarto source.
-- `workflow-check.html`: rendered output.
+- `practice_report.qmd`: edited Quarto source.
+- `practice_report.html`: rendered output.
 - `reflection.md`: 150-250 words on the workflow, including any AI-use sentence if relevant.
 - `commit-evidence.md`: the commit hash or GitHub URL showing the final synced commit.
 
@@ -72,8 +72,8 @@ Complete:
 
 - Personal fork was created or located successfully.
 - Codespace was launched or reopened from the fork.
-- `workflow-check.qmd` exists in the required submission folder.
-- `workflow-check.html` renders from the source file.
+- `practice_report.qmd` exists in the required submission folder.
+- `practice_report.html` renders from the source file.
 - Reflection names one solid step and one step to practice.
 - Commit evidence is included.
 - Work is committed and synced to the fork on GitHub.
@@ -89,4 +89,4 @@ Incomplete:
 
 ## Definition of Done
 
-You are done when the fork repository link on Canvas points to a synced commit containing `workflow-check.qmd`, `workflow-check.html`, `reflection.md`, and `commit-evidence.md` in the Assignment 1 submission folder.
+You are done when the fork repository link on Canvas points to a synced commit containing `practice_report.qmd`, `practice_report.html`, `reflection.md`, and `commit-evidence.md` in the Assignment 1 submission folder.
