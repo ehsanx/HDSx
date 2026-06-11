@@ -19,6 +19,11 @@ Complete these steps before Week 1:
 
 Use a professional GitHub username that you are comfortable sharing in a course setting. If you already have a GitHub account, you may use it. You do not need to create a second account unless your current username or profile is not appropriate for coursework.
 
+<!-- AI-EDIT(2026-06-11): SS-001, TF-006, MIT-006 — figure placeholder, RA to capture -->
+<!-- TODO-SCREENSHOT: uncomment when the asset exists:
+![The GitHub account creation page, where you choose your username and email](../../assets/images/week00/account-creation.png){fig-alt="GitHub sign-up form showing the email, password, and username fields, with a professional username example entered"}
+-->
+
 Before submitting the onboarding check:
 
 - confirm you can log in to GitHub
@@ -26,6 +31,26 @@ Before submitting the onboarding check:
 - make sure you know which email address is attached to the account
 - record your GitHub username exactly as it appears in the profile URL
 - use the same GitHub account and username throughout the course
+
+<!-- AI-EDIT(2026-06-11): TF-005, MIT-005, MIT-163, WI-005 — needs review -->
+### Username, Password, And Repository Privacy
+
+A professional username usually follows a simple pattern, such as first-last or initials. For example, `maria-chen` or `j-smith-health`. Pick something you would be comfortable putting on a resume.
+
+Protect your account:
+
+- use a long, unique passphrase that you do not reuse on other sites
+- consider a password manager so you do not have to memorize it
+- keep two-factor authentication turned on, as described above
+
+When you create or fork course repositories later in the course, keep them private by default. Use a private repository when your work may include restricted, sensitive, or course-only materials. A public repository should only be used when the instructor confirms it is safe. Making your work public is encouraged once the course privacy checklist passes, but it is never required, and there is no penalty for staying private.
+
+<!-- AI-EDIT(2026-06-11): SS-004 — figure placeholder, RA to capture -->
+<!-- TODO-SCREENSHOT: uncomment when the asset exists:
+![The private-versus-public visibility setting when creating a GitHub repository](../../assets/images/week00/private-vs-public.png){fig-alt="GitHub new repository form with the Private visibility option selected and the Public option visible below it"}
+-->
+
+To learn more about GitHub basics or get help, see GitHub's getting-started guide: <https://docs.github.com/en/get-started>
 
 ## GitHub Education Benefits: Apply If Eligible
 
@@ -86,14 +111,27 @@ If you create a new account, use that account consistently for course repositori
 
 ## Course Repository Entry Point
 
+<!-- AI-EDIT(2026-06-11): TF-002, MIT-001, WI-001 — needs review -->
+Create your own copy of the course template repository on GitHub. This copy is called a fork. You will make changes in your own fork so that your work does not affect the original course repository.
+
 The current course workflow uses a fork-based setup:
 
-1. Open the course template repository linked from Canvas.
+1. Open the course template repository using the link provided in Canvas. If you do not have Canvas access, use the direct GitHub repository link: <https://github.com/ehsanx/HDSx-workspace>. <!-- AI-EDIT(2026-06-11): TF-003, MIT-002, WI-002 — needs review -->
 2. Click **Fork**.
 3. Create a personal fork under the GitHub account you submitted in the onboarding check.
 4. Launch Codespaces from your fork.
 5. Commit and sync changes to your fork.
 6. Submit your fork repository link on Canvas.
+
+<!-- AI-EDIT(2026-06-11): SS-002, TF-006, MIT-006 — figure placeholder, RA to capture -->
+<!-- TODO-SCREENSHOT: uncomment when the asset exists:
+![The Fork button on the course template repository, used to create your own copy](../../assets/images/week00/fork-button.png){fig-alt="GitHub repository page with the Fork button highlighted near the top-right corner"}
+-->
+
+<!-- AI-EDIT(2026-06-11): SS-003 — figure placeholder, RA to capture -->
+<!-- TODO-SCREENSHOT: uncomment when the asset exists:
+![Launching a full-screen Codespace from your fork using the Code button](../../assets/images/week00/codespace-launch.png){fig-alt="GitHub Code menu open on a personal fork, showing the Codespaces tab and the Create codespace button"}
+-->
 
 If a future offering uses an instructor-managed repository system, Canvas will say so explicitly. For this course book, the fork-based workflow is the default student route.
 
@@ -122,4 +160,5 @@ Bring:
 
 ## Definition Of Done
 
-Week 0 is done when you have watched the Canvas orientation video, completed the Canvas pre-course survey, submitted the onboarding check, can log in to GitHub with the account you will use for course work, and have either applied for GitHub Education if eligible or indicated your GitHub Education status in Canvas.
+<!-- AI-EDIT(2026-06-11): MIT-004, WI-004 — needs review -->
+Before Week 1, make sure you have created a GitHub account, chosen a professional username, confirmed you can log in, watched the Canvas orientation video, completed the pre-course survey, and submitted the onboarding check. Week 0 is done when all of these are complete and you have either applied for GitHub Education if eligible or indicated your GitHub Education status in Canvas.

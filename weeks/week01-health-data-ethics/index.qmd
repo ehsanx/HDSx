@@ -4,6 +4,9 @@
 
 Week 1 sets the ethical and communication foundation for the whole course. Health data science does not end when code runs or a p-value appears; it ends when evidence is translated responsibly for a real audience. This week introduces open health data, data provenance, stewardship, privacy, responsible AI use, Indigenous Data Sovereignty awareness, and Knowledge Translation (KT) as the "last mile" of analysis.
 
+<!-- AI-EDIT(2026-06-11): TF-007, MIT-007, WI-006 — needs review -->
+Health data means information related to health, health care, populations, conditions, services, or outcomes. In this course, we primarily work with tabular data and focus on where it came from, who it represents, and how it can be communicated responsibly.
+
 This is an awareness-heavy week. There is no coding, no dashboard running, and no app setup. The NHANES case study appears only as a data/provenance artifact so you can practice evaluating a dataset before using it.
 
 ## Learning Objectives
@@ -24,6 +27,9 @@ By the end of this week, you should be able to:
 This first week asks, "Should we use this data, and how should we describe it?" Next week asks, "How do we organize the files so another person can reproduce our work?" Later weeks return to the same NHANES case study through analysis, visualization, EDA, and dashboard design.
 
 ## Case Study Data Spine
+
+<!-- AI-EDIT(2026-06-11): WI-007 — needs review -->
+The file paths and code below are shown only as examples of where the dataset lives in the course repository. In Week 1, you do not need to run this code. Your task is to understand the dataset's source, documentation, and responsible-use considerations.
 
 {{< include ../../examples/nhanes-equity/snippets/case-study-data-only.qmd >}}
 
@@ -47,10 +53,13 @@ Open data can accelerate public health learning when the source, meaning, and li
 
 Recommended starter portals:
 
-- CDC/NCHS public-use survey data, such as NHANES or NHIS;
-- WHO Global Health Observatory for aggregated international indicators;
-- BC Data Catalogue for provincial open data;
-- Government of Canada Open Government Portal for Canadian datasets.
+<!-- AI-EDIT(2026-06-11): TF-008, MIT-164 — portal names linked to course reference pages; note about the Data Sources part added below the list — needs review -->
+- CDC/NCHS public-use survey data, such as [NHANES](../../references/data-sources/nhanes.qmd) or [NHIS](../../references/data-sources/nhis.qmd);
+- [WHO Global Health Observatory](../../references/data-sources/gho.qmd) for aggregated international indicators;
+- [BC Data Catalogue](../../references/data-sources/bc-data-catalogue.qmd) for provincial open data;
+- [Government of Canada Open Government Portal](../../references/data-sources/open-portal.qmd) for Canadian datasets.
+
+Each link above goes to that source's page in the Reference: Data Sources part of this book, which also covers other sources you may use later in the course.
 
 When you land on a dataset page, look for:
 
@@ -96,7 +105,7 @@ In this course, Week 1 uses public, de-identified, or aggregated data only. Stil
 
 Course rules:
 
-- Do not upload row-level health data to AI tools.
+- Do not upload row-level health data to AI tools. Row-level data means individual records, where each row may represent one person, visit, survey response, or observation. Even if names are removed, individual-level records can still create privacy risks. <!-- AI-EDIT(2026-06-11): MIT-012, WI-008 — needs review -->
 - Do not attempt re-identification.
 - Do not publish small-cell claims.
 - Do not copy data into public repositories unless the license and course instructions allow it.
@@ -106,11 +115,17 @@ Course rules:
 
 AI tools may help you draft plain-language summaries or identify questions to ask about documentation. They are not source documentation.
 
+<!-- AI-EDIT(2026-06-11): TF-009 — needs review -->
+AI tools can also hallucinate: they can state plausible-sounding but wrong variable definitions or data facts with full confidence. They can also repeat biases from their training data. That is why Week 1 asks you to verify every definition against the source documentation, not against an AI summary.
+
 Acceptable Week 1 AI use:
 
 - asking for a plain-language explanation of a term from a codebook;
 - drafting a first pass of a dataset description;
 - generating a checklist of questions to verify.
+
+<!-- AI-EDIT(2026-06-11): GAP-MBH-4 — needs review -->
+You can get useful AI help without uploading any data. Share the structure instead: column names, variable types, and a made-up example row. You can also share your code and your error messages. Never paste the real rows. The AI helps with code and wording; you run everything locally against the real data yourself.
 
 Required checks:
 
@@ -126,7 +141,7 @@ Indigenous Data Sovereignty refers to the rights and interests of Indigenous Peo
 - OCAP: ownership, control, access, and possession, specific to First Nations contexts in Canada;
 - CARE: collective benefit, authority to control, responsibility, and ethics.
 
-Week 1 expectation: if a dataset includes Indigenous identifiers, communities, lands, or governance-relevant content, flag that on the Data Intake Card and review the source guidance before using or publishing analysis.
+Week 1 expectation: if a dataset includes Indigenous identifiers, communities, lands, or governance-relevant content, flag that on the Data Intake Card and review the source guidance before using or publishing analysis. For example, a variable indicating First Nations, Métis, or Inuit identity would require extra care and review of source guidance. <!-- AI-EDIT(2026-06-11): WI-009, MIT-009 — needs review -->
 
 ## Formats And Metadata
 

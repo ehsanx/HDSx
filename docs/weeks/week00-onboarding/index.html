@@ -865,12 +865,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../assignments/assignment-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../assignments/assignment01-workflows/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 1: Modern Workflows</span></a>
   </div>
 </li>
@@ -926,12 +920,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../milestones/milestone-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Milestone Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../milestones/m0-group-formation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">M0: Group Formation</span></a>
   </div>
 </li>
@@ -963,6 +951,16 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../milestones/final-portfolio/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/final-portfolio-checklist.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio Checklist</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/repository-sharing-guidance.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Repository Sharing Guidance</span></a>
   </div>
 </li>
       </ul>
@@ -1062,7 +1060,16 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a></li>
   <li><a href="#required-tasks" id="toc-required-tasks" class="nav-link" data-scroll-target="#required-tasks">Required Tasks</a></li>
-  <li><a href="#github-account" id="toc-github-account" class="nav-link" data-scroll-target="#github-account">GitHub Account</a></li>
+  <li><a href="#github-account" id="toc-github-account" class="nav-link" data-scroll-target="#github-account">GitHub Account</a>
+  <ul class="collapse">
+  <li><a href="#username-password-and-repository-privacy" id="toc-username-password-and-repository-privacy" class="nav-link" data-scroll-target="#username-password-and-repository-privacy">Username, Password, And Repository Privacy</a></li>
+  </ul></li>
+  <li><a href="#github-education-benefits-apply-if-eligible" id="toc-github-education-benefits-apply-if-eligible" class="nav-link" data-scroll-target="#github-education-benefits-apply-if-eligible">GitHub Education Benefits: Apply If Eligible</a>
+  <ul class="collapse">
+  <li><a href="#ubc-students" id="toc-ubc-students" class="nav-link" data-scroll-target="#ubc-students">UBC Students</a></li>
+  <li><a href="#students-outside-ubc" id="toc-students-outside-ubc" class="nav-link" data-scroll-target="#students-outside-ubc">Students Outside UBC</a></li>
+  <li><a href="#codespaces-usage-reminder" id="toc-codespaces-usage-reminder" class="nav-link" data-scroll-target="#codespaces-usage-reminder">Codespaces Usage Reminder</a></li>
+  </ul></li>
   <li><a href="#existing-account-help" id="toc-existing-account-help" class="nav-link" data-scroll-target="#existing-account-help">Existing-Account Help</a></li>
   <li><a href="#course-repository-entry-point" id="toc-course-repository-entry-point" class="nav-link" data-scroll-target="#course-repository-entry-point">Course Repository Entry Point</a></li>
   <li><a href="#support-path" id="toc-support-path" class="nav-link" data-scroll-target="#support-path">Support Path</a></li>
@@ -1105,19 +1112,85 @@ ul.task-list li input[type="checkbox"] {
 <li>Watch the orientation video posted in Canvas.</li>
 <li>Complete the pre-course survey posted in Canvas.</li>
 <li>Create or confirm access to a GitHub account.</li>
-<li>Submit the Week 0 Canvas onboarding check with your GitHub username.</li>
+<li>If eligible, apply for GitHub Education / Student Developer Pack, or confirm that you already have access.</li>
+<li>Submit the Week 0 Canvas onboarding check with your GitHub username and GitHub Education status.</li>
 </ol>
 </section>
 <section id="github-account" class="level2">
 <h2 class="anchored" data-anchor-id="github-account">GitHub Account</h2>
 <p>Use a professional GitHub username that you are comfortable sharing in a course setting. If you already have a GitHub account, you may use it. You do not need to create a second account unless your current username or profile is not appropriate for coursework.</p>
+<!-- AI-EDIT(2026-06-11): SS-001, TF-006, MIT-006 — figure placeholder, RA to capture -->
+<!-- TODO-SCREENSHOT: uncomment when the asset exists:
+![The GitHub account creation page, where you choose your username and email](../../assets/images/week00/account-creation.png){fig-alt="GitHub sign-up form showing the email, password, and username fields, with a professional username example entered"}
+-->
 <p>Before submitting the onboarding check:</p>
 <ul>
 <li>confirm you can log in to GitHub</li>
 <li>turn on two-factor authentication if GitHub prompts you</li>
 <li>make sure you know which email address is attached to the account</li>
 <li>record your GitHub username exactly as it appears in the profile URL</li>
+<li>use the same GitHub account and username throughout the course</li>
 </ul>
+<!-- AI-EDIT(2026-06-11): TF-005, MIT-005, MIT-163, WI-005 — needs review -->
+<section id="username-password-and-repository-privacy" class="level3">
+<h3 class="anchored" data-anchor-id="username-password-and-repository-privacy">Username, Password, And Repository Privacy</h3>
+<p>A professional username usually follows a simple pattern, such as first-last or initials. For example, <code>maria-chen</code> or <code>j-smith-health</code>. Pick something you would be comfortable putting on a resume.</p>
+<p>Protect your account:</p>
+<ul>
+<li>use a long, unique passphrase that you do not reuse on other sites</li>
+<li>consider a password manager so you do not have to memorize it</li>
+<li>keep two-factor authentication turned on, as described above</li>
+</ul>
+<p>When you create or fork course repositories later in the course, keep them private by default. Use a private repository when your work may include restricted, sensitive, or course-only materials. A public repository should only be used when the instructor confirms it is safe. Making your work public is encouraged once the course privacy checklist passes, but it is never required, and there is no penalty for staying private.</p>
+<!-- AI-EDIT(2026-06-11): SS-004 — figure placeholder, RA to capture -->
+<!-- TODO-SCREENSHOT: uncomment when the asset exists:
+![The private-versus-public visibility setting when creating a GitHub repository](../../assets/images/week00/private-vs-public.png){fig-alt="GitHub new repository form with the Private visibility option selected and the Public option visible below it"}
+-->
+<p>To learn more about GitHub basics or get help, see GitHub’s getting-started guide: <a href="https://docs.github.com/en/get-started" class="uri">https://docs.github.com/en/get-started</a></p>
+</section>
+</section>
+<section id="github-education-benefits-apply-if-eligible" class="level2">
+<h2 class="anchored" data-anchor-id="github-education-benefits-apply-if-eligible">GitHub Education Benefits: Apply If Eligible</h2>
+<p>This course uses GitHub Codespaces every week. Codespaces usage is quota-based, so students are expected to apply for GitHub Education / Student Developer Pack if they are eligible:</p>
+<p><a href="https://education.github.com/pack" class="uri">https://education.github.com/pack</a></p>
+<p>GitHub Education benefits may increase your available developer-tool allowance and provide access to additional student tools. This is helpful because the course uses Codespaces for weekly tutorials, assignments, and project work.</p>
+<p>Approval is not required before Week 1. You can begin the course with a regular free GitHub account while your GitHub Education application is pending. Do not delay Week 0 onboarding while waiting for approval.</p>
+<p>For the Week 0 Canvas onboarding check, report your GitHub Education status using one of the following options:</p>
+<ul>
+<li>approved</li>
+<li>applied and pending</li>
+<li>already had access</li>
+<li>not eligible / unable to apply</li>
+<li>unsure and need help</li>
+</ul>
+<section id="ubc-students" class="level3">
+<h3 class="anchored" data-anchor-id="ubc-students">UBC Students</h3>
+<p>If you are a UBC student, use your UBC student email address when applying, if available. For example, this may be your <code>@student.ubc.ca</code> email address or another UBC-issued student email connected to your student record.</p>
+<p>Before applying:</p>
+<ul>
+<li>log in to your GitHub account</li>
+<li>add your UBC student email to your GitHub account, if available</li>
+<li>verify the UBC student email address in GitHub</li>
+<li>have proof of current student status ready in case GitHub asks for verification</li>
+<li>continue using the same GitHub username for this course</li>
+</ul>
+<p>If you already have a GitHub account with a non-UBC email, you usually do not need to create a second account. Instead, add your UBC student email to the existing account and verify it, if GitHub allows. Use one consistent GitHub username for all course work.</p>
+</section>
+<section id="students-outside-ubc" class="level3">
+<h3 class="anchored" data-anchor-id="students-outside-ubc">Students Outside UBC</h3>
+<p>If you are using this open course book outside UBC, follow the same general process with your own institution’s student email address and proof of current enrollment. The exact verification process may differ by institution, country, and GitHub’s current requirements.</p>
+</section>
+<section id="codespaces-usage-reminder" class="level3">
+<h3 class="anchored" data-anchor-id="codespaces-usage-reminder">Codespaces Usage Reminder</h3>
+<p>Even with GitHub Education benefits, Codespaces usage is not unlimited. To avoid running out of usage during the term:</p>
+<ul>
+<li>stop your Codespace when you finish working</li>
+<li>reopen an existing Codespace instead of creating a new one each time</li>
+<li>use the default course machine type unless instructed otherwise</li>
+<li>monitor your remaining Codespaces usage in your GitHub billing or settings page</li>
+<li>contact the teaching team before adding personal billing information</li>
+</ul>
+</section>
 </section>
 <section id="existing-account-help" class="level2">
 <h2 class="anchored" data-anchor-id="existing-account-help">Existing-Account Help</h2>
@@ -1132,15 +1205,25 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="course-repository-entry-point" class="level2">
 <h2 class="anchored" data-anchor-id="course-repository-entry-point">Course Repository Entry Point</h2>
+<!-- AI-EDIT(2026-06-11): TF-002, MIT-001, WI-001 — needs review -->
+<p>Create your own copy of the course template repository on GitHub. This copy is called a fork. You will make changes in your own fork so that your work does not affect the original course repository.</p>
 <p>The current course workflow uses a fork-based setup:</p>
 <ol type="1">
-<li>Open the course template repository linked from Canvas.</li>
+<li>Open the course template repository using the link provided in Canvas. If you do not have Canvas access, use the direct GitHub repository link: <a href="https://github.com/ehsanx/HDSx-workspace" class="uri">https://github.com/ehsanx/HDSx-workspace</a>. <!-- AI-EDIT(2026-06-11): TF-003, MIT-002, WI-002 — needs review --></li>
 <li>Click <strong>Fork</strong>.</li>
 <li>Create a personal fork under the GitHub account you submitted in the onboarding check.</li>
 <li>Launch Codespaces from your fork.</li>
 <li>Commit and sync changes to your fork.</li>
 <li>Submit your fork repository link on Canvas.</li>
 </ol>
+<!-- AI-EDIT(2026-06-11): SS-002, TF-006, MIT-006 — figure placeholder, RA to capture -->
+<!-- TODO-SCREENSHOT: uncomment when the asset exists:
+![The Fork button on the course template repository, used to create your own copy](../../assets/images/week00/fork-button.png){fig-alt="GitHub repository page with the Fork button highlighted near the top-right corner"}
+-->
+<!-- AI-EDIT(2026-06-11): SS-003 — figure placeholder, RA to capture -->
+<!-- TODO-SCREENSHOT: uncomment when the asset exists:
+![Launching a full-screen Codespace from your fork using the Code button](../../assets/images/week00/codespace-launch.png){fig-alt="GitHub Code menu open on a personal fork, showing the Codespaces tab and the Create codespace button"}
+-->
 <p>If a future offering uses an instructor-managed repository system, Canvas will say so explicitly. For this course book, the fork-based workflow is the default student route.</p>
 </section>
 <section id="support-path" class="level2">
@@ -1148,11 +1231,12 @@ ul.task-list li input[type="checkbox"] {
 <p>Use the Canvas course support channel for setup problems. Include:</p>
 <ul>
 <li>your GitHub username</li>
+<li>your GitHub Education status, if relevant</li>
 <li>the step where you got stuck</li>
 <li>the exact error message or screenshot</li>
 <li>whether you are using GitHub, Codespaces, or Canvas</li>
 </ul>
-<p>Do not post passwords, tokens, or private account recovery details.</p>
+<p>Do not post passwords, tokens, private account recovery details, or billing information.</p>
 </section>
 <section id="what-to-bring-to-week-1" class="level2">
 <h2 class="anchored" data-anchor-id="what-to-bring-to-week-1">What To Bring To Week 1</h2>
@@ -1161,13 +1245,15 @@ ul.task-list li input[type="checkbox"] {
 <li>a working Canvas login</li>
 <li>a working GitHub login</li>
 <li>your GitHub username</li>
+<li>your GitHub Education status, if available</li>
 <li>a laptop or access plan for in-class work</li>
 <li>one question about health data, public data, AI, or reproducibility</li>
 </ul>
 </section>
 <section id="definition-of-done" class="level2">
 <h2 class="anchored" data-anchor-id="definition-of-done">Definition Of Done</h2>
-<p>Week 0 is done when you have watched the Canvas orientation video, completed the Canvas pre-course survey, submitted the onboarding check, and can log in to GitHub with the account you will use for course work.</p>
+<!-- AI-EDIT(2026-06-11): MIT-004, WI-004 — needs review -->
+<p>Before Week 1, make sure you have created a GitHub account, chosen a professional username, confirmed you can log in, watched the Canvas orientation video, completed the pre-course survey, and submitted the onboarding check. Week 0 is done when all of these are complete and you have either applied for GitHub Education if eligible or indicated your GitHub Education status in Canvas.</p>
 
 
 </section>

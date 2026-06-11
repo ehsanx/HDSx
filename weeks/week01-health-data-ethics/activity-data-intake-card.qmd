@@ -8,10 +8,13 @@ Evaluate whether a health dataset is usable, ethical, documented, and appropriat
 
 Choose one dataset or indicator page from one of these portals:
 
-- CDC/NCHS public-use survey data, such as NHANES or NHIS;
-- WHO Global Health Observatory;
-- BC Data Catalogue;
-- Government of Canada Open Government Portal.
+<!-- AI-EDIT(2026-06-11): TF-008, MIT-164 — portal names linked to course reference pages — needs review -->
+- CDC/NCHS public-use survey data, such as [NHANES](../../references/data-sources/nhanes.qmd) or [NHIS](../../references/data-sources/nhis.qmd);
+- [WHO Global Health Observatory](../../references/data-sources/gho.qmd);
+- [BC Data Catalogue](../../references/data-sources/bc-data-catalogue.qmd);
+- [Government of Canada Open Government Portal](../../references/data-sources/open-portal.qmd).
+
+Each link goes to that source's page in the Reference: Data Sources part of this book.
 
 The NHANES Health Equity data spine may be used as the shared classroom example.
 
@@ -45,6 +48,9 @@ how_to_cite: ""
 ai_use_note: ""
 ```
 
+<!-- AI-EDIT(2026-06-11): WI-010 — needs review -->
+Use `unknown` if you cannot confidently answer a field after checking the source documentation. Do not guess. Briefly state what you checked.
+
 ## Completed Example
 
 ```yaml
@@ -74,6 +80,16 @@ how_to_cite: "Cite CDC/NCHS NHANES documentation and the course case-study READM
 ai_use_note: "AI may help draft plain-language wording, but source documentation must be checked directly"
 ```
 
+<!-- AI-EDIT(2026-06-11): SS-005 — figure placeholder, RA to capture -->
+<!-- TODO-SCREENSHOT: uncomment when the asset exists:
+![A completed Data Intake Card with direct links to the source page, documentation, and citation guidance](../../assets/images/week01/intake-card-filled.png){fig-alt="Filled-in Data Intake Card showing every field completed, with the clickable source and documentation links highlighted"}
+-->
+
+<!-- AI-EDIT(2026-06-11): MIT-011, MIT-165 — needs review -->
+For `how_to_cite`, follow the course citation pattern: source organization, dataset name and cycle, publisher, URL, and access date. For example:
+
+> Centers for Disease Control and Prevention (CDC), National Center for Health Statistics. National Health and Nutrition Examination Survey (NHANES) 2017-2018 Documentation. Hyattsville, MD: U.S. Department of Health and Human Services. https://wwwn.cdc.gov/nchs/nhanes/ (accessed 2026-06-11).
+
 ## Completion Checklist
 
 To be marked complete, your card must include:
@@ -85,11 +101,17 @@ To be marked complete, your card must include:
 - data level and file format;
 - documentation or codebook location;
 - at least one documented variable definition;
+- a 1-2 sentence note on how an AI tool could misrepresent or bias that variable, such as wrong category labels, outdated coding, or overgeneralization; <!-- AI-EDIT(2026-06-11): MIT-010, MIT-165 — needs review -->
 - one limitation or stewardship risk;
 - one privacy or security note;
 - Indigenous Data Sovereignty relevance marked as no, yes, or unknown;
 - KT framing sentence;
 - AI-use note.
+
+<!-- AI-EDIT(2026-06-11): SS-006 — figure placeholder, RA to capture -->
+<!-- TODO-SCREENSHOT: uncomment when the asset exists:
+![Example of a Data Intake Card flagging an Indigenous identifier variable, with the relevance field marked yes and a note to review source guidance](../../assets/images/week01/indigenous-flag-example.png){fig-alt="Data Intake Card excerpt with the indigenous_data_relevance field set to yes and a stewardship note pointing to OCAP and CARE guidance"}
+-->
 
 ## Scoring Guide
 
