@@ -156,7 +156,7 @@ book:
     - part: "Assignments and Milestones"
       chapters:
         - assignments/index.qmd
-        - assignments/assignment-template.qmd
+        # AI-EDIT(2026-06-11): D-005 — assignment-template.qmd removed from student navigation (instructor authoring scaffold; file kept in repo) — needs review
         - assignments/assignment01-workflows/README.md
         - assignments/assignment02-r-with-ai/README.md
         - assignments/assignment03-git/README.md
@@ -168,7 +168,7 @@ book:
         - assignments/assignment09-reporting/README.md
         - assignments/assignment10-portfolio-surgery/README.md
         - milestones/index.qmd
-        - milestones/milestone-template.qmd
+        # AI-EDIT(2026-06-11): D-005 — milestone-template.qmd removed from student navigation (instructor authoring scaffold; file kept in repo) — needs review
         - milestones/m0-group-formation/README.md
         - milestones/m1-proposal/README.md
         - milestones/m2-preliminary-analysis/README.md
@@ -176,6 +176,9 @@ book:
         - milestones/m4-peer-review/README.md
         - milestones/m5-presentation/README.md
         - milestones/final-portfolio/README.md
+        # AI-EDIT(2026-06-11): D-007 — render the two final-portfolio guidance files as book pages (links to them previously served raw .md) — needs review
+        - milestones/final-portfolio/final-portfolio-checklist.md
+        - milestones/final-portfolio/repository-sharing-guidance.md
     - part: "Reference: Data Sources"
       chapters:
         - references/data-sources/nhis.qmd

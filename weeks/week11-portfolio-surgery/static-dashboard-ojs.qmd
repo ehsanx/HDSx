@@ -7,6 +7,9 @@ format:
 
 # Sidebar {.sidebar}
 
+<!-- AI-EDIT(2026-06-11): D-002 — uniform demo-only wording — needs review -->
+**Demo only — not graded; instructor approval required to use this pathway.**
+
 This no-server dashboard reads the cached NHANES Health Equity CSV snapshot in the browser. It is descriptive, unweighted, and intended as a static portfolio extension.
 
 ```{ojs}

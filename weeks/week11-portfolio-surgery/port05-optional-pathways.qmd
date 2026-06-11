@@ -20,7 +20,8 @@ For this course, the NHANES Shiny app is an exemplar and demonstration. It is no
 
 ## Optional Static Dashboard
 
-The file [static-dashboard-ojs.qmd](static-dashboard-ojs.qmd) demonstrates a no-server dashboard that reads the NHANES CSV snapshot in the browser. It is useful as an optional portfolio extension after the required report and KT product are reproducible.
+<!-- AI-EDIT(2026-06-11): D-002/MIT-106 — link previously served raw .qmd from the published book; now labeled as a source file on GitHub — needs review -->
+The source file [static-dashboard-ojs.qmd (view on GitHub)](https://github.com/ehsanx/HDSx/blob/main/weeks/week11-portfolio-surgery/static-dashboard-ojs.qmd) demonstrates a no-server dashboard that reads the NHANES CSV snapshot in the browser. It is a *source file to read or run yourself*, not a page of this book; the instructor demonstrates the rendered version in class. It is useful as an optional portfolio extension after the required report and KT product are reproducible.
 
 This file remains demo-only in this pass. Do not treat it as an A10 requirement.
 

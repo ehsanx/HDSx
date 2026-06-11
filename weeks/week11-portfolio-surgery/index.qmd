@@ -33,7 +33,7 @@ Week 10 produced a report and M3 project update. Week 11 tests whether that work
 5. [port05 - Optional Pathways](port05-optional-pathways.qmd)
 6. [port06 - Assignment 10 and Final Portfolio](port06-assignment-a10-final-portfolio.qmd)
 
-The optional [static dashboard source](static-dashboard-ojs.qmd) remains a demo-only example. It is not a required A10 or final portfolio pathway.
+The optional [static dashboard source file (view on GitHub)](https://github.com/ehsanx/HDSx/blob/main/weeks/week11-portfolio-surgery/static-dashboard-ojs.qmd) remains a demo-only example. It is not a required A10 or final portfolio pathway. <!-- AI-EDIT(2026-06-11): D-002/MIT-106 — needs review -->
 
 ## Class Plan
 
