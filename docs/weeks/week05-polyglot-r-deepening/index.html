@@ -1137,15 +1137,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- AI-EDIT(2026-06-11): MIT-050 — needs review -->
 <p><strong>What to do with this code:</strong> read it. The code block below runs automatically when this page is built — you do not need to run or change it here. You will write your own version in the studio. Direct links to the files it uses: <a href="https://github.com/ehsanx/HDSx/blob/main/examples/nhanes-equity/data/nhanes_equity_v6.csv">nhanes_equity_v6.csv (view on GitHub)</a>, <a href="https://github.com/ehsanx/HDSx/blob/main/examples/nhanes-equity/data/nhanes_equity_v6.rds">nhanes_equity_v6.rds (view on GitHub)</a>, and the <a href="https://github.com/ehsanx/HDSx/blob/main/examples/nhanes-equity/README.md">case-study README (view on GitHub)</a>.</p>
 <p>The <strong>NHANES Health Equity data spine</strong> now supports code-reading, EDA, visualization, and reproducibility checks. Use the cached CSV/RDS for routine class work; a CDC retrieval script exists for advanced users.</p>
+<!-- AI-EDIT(2026-06-11): MIT-036 — direct GitHub links so students can open the files without hunting through folders — needs review -->
 <ul>
-<li>Cached RDS: <code>examples/nhanes-equity/data/nhanes_equity_v6.rds</code>
+<li>Cached RDS: <a href="https://github.com/ehsanx/HDSx/blob/main/examples/nhanes-equity/data/nhanes_equity_v6.rds"><code>examples/nhanes-equity/data/nhanes_equity_v6.rds</code></a>
 </li>
-<li>CSV snapshot: <code>examples/nhanes-equity/data/nhanes_equity_v6.csv</code>
+<li>CSV snapshot: <a href="https://github.com/ehsanx/HDSx/blob/main/examples/nhanes-equity/data/nhanes_equity_v6.csv"><code>examples/nhanes-equity/data/nhanes_equity_v6.csv</code></a>
 </li>
-<li>Case-study README: <code>examples/nhanes-equity/README.md</code>
+<li>Case-study README: <a href="https://github.com/ehsanx/HDSx/blob/main/examples/nhanes-equity/README.md"><code>examples/nhanes-equity/README.md</code></a>
 </li>
 </ul>
 <p>The default classroom path is to use the cached data so the analysis work is reproducible without internet access.</p>
+<p><strong>What to do here:</strong> you may run the code below — it loads the cached CSV and prints two small summaries; reading it carefully is enough unless your week’s page asks for more. <!-- AI-EDIT(2026-06-11): MIT-025, MIT-050, MIT-061 — needs review --></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">library</span>(readr)</span>
 <span id="cb1-2"><a href="#cb1-2"></a><span class="fu">library</span>(dplyr)</span>

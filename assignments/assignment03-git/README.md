@@ -36,6 +36,9 @@ This assignment checks that you can make a small, reviewable change using Git. Y
 
 AI may help summarize a diff or draft a pull request description. You must verify the diff yourself and make sure the pull request does not include unrelated file changes. Include an AI-use sentence in `git-audit-note.md`.
 
+<!-- AI-EDIT(2026-06-11): MIT-049, WI-026 — needs review -->
+Save the evidence as you work: copy the AI prompt or output you used into `git-audit-note.md` (for example: "I used AI to summarize the diff; I re-read the diff myself and confirmed the summary is accurate."), and paste the pull request link plus one explanatory line into `pull-request-evidence.md` (for example: "PR link: ... — a documentation-only edit to one README sentence."). Fuller worked examples of both files are on the Week 4 [AI Auditing page](../../weeks/week04-git-collaboration/git06-ai-auditing.qmd).
+
 ## Reproducibility Requirements
 
 - All changes must be visible in Git history.

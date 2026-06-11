@@ -59,6 +59,8 @@ The final portfolio is not a separate new analysis. It gathers the strongest ver
 - final AI-use audit;
 - clear README and repository access route.
 
+Your dashboard-style KT product may be submitted as a static preview; a live dashboard is not required. <!-- AI-EDIT(2026-06-11): WI-075 (R2-07) — needs review -->
+
 Use the [Final Portfolio Checklist](../../milestones/final-portfolio/final-portfolio-checklist.md) before submission.
 
 <!-- AI-EDIT(2026-06-11): GAP-R911-3 (R2-11), GAP-R911-4 (R2-12) — needs review -->

@@ -34,6 +34,7 @@ This assignment expands a project finding into a short reproducible Quarto repor
 8. Complete a grounding audit: each claim should point to code output, a citation, or a stated limitation.
 9. Complete a publishing check: GitHub Pages preview if available, or a private rendered HTML preview in the repository.
 10. Write an M3 update note explaining what is ready for peer review and what feedback would be useful.
+11. Before committing, search your submission files for absolute or local paths (for example `C:/` or `/Users/`) and replace any you find with relative paths. <!-- AI-EDIT(2026-06-11): MIT-101 — needs review -->
 
 ## AI-Use Expectations
 

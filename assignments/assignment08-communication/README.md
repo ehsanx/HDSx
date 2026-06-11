@@ -28,7 +28,7 @@ This assignment turns one result from your analysis or dashboard into a short au
 2. Choose one figure, table, or dashboard finding from prior work.
 3. Define the audience in one sentence.
 4. Write one plain-language takeaway that a non-technical reader can understand.
-5. Create either `slides.qmd` as a revealjs deck or `slide-outline.qmd` as a structured slide outline.
+5. Create either `slides.qmd` as a revealjs deck or `slide-outline.qmd` as a structured slide outline. If you choose the deck, copy `weeks/week09-science-communication/starter-slides.qmd` into `assignments/assignment08-communication/submission/` and rename it `slides.qmd` before editing — do not edit the starter in the weeks folder. <!-- AI-EDIT(2026-06-11): MIT-093 — needs review -->
 6. Include 3-5 slides or slide sections: context, evidence, takeaway, limitation, and next step.
 7. Add one source note or citation for the dataset.
 8. Exchange peer feedback using the template, through the Canvas Discussion thread and your in-studio partner review. Peer feedback is due at the standard syllabus deadline — the Monday after the Week 9 class, 4:00 PM, the same deadline as this assignment. Feedback you receive can also inform your final-portfolio revision. <!-- AI-EDIT(2026-06-11): MIT-136 (R2-02) — needs review -->

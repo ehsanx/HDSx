@@ -40,6 +40,9 @@ This assignment builds a transparent preliminary analysis. You will define a coh
 
 AI may help draft code, explain an error, or improve the organization of the audit note. You must verify cohort filters, missingness handling, labels, summary statistics, and interpretation against the code and output. Include `ai-use-note.md`.
 
+<!-- AI-EDIT(2026-06-11): MIT-077 (D-004) — needs review -->
+`ai-use-note.md` is the graded AI artifact; the inline `# AI prompt:` / `# Verified:` comments in your code are the required working practice that feeds it — copy your comment pairs into the note. The template and a filled example are on the [assignments index](../index.qmd#the-official-ai-documentation-rule).
+
 ## Reproducibility Requirements
 
 - The EDA note must render in GitHub Codespaces.

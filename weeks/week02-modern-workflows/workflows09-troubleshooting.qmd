@@ -12,6 +12,8 @@ If things break:
 -   **Render fails:** You get weird errors that make no sense.
 -   **Environment issues:** R or Python can't find a package that was there yesterday.
 
+One warning that does **not** need a rebuild: "no TeX installation was found." That one is harmless as long as your HTML file was created — see the TeX Warning rule in [Render with Quarto](workflows07-render-quarto.qmd). <!-- AI-EDIT(2026-06-11): TF-054 — needs review -->
+
 Before you rebuild, commit and sync your saved work first --- see [Commit Your Work](workflows08-commit-work.qmd) for the steps with screenshots. <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review -->
 
 ## Steps

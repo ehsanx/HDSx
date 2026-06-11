@@ -6,6 +6,8 @@ The **NHANES Health Equity data spine** is the recurring dataset thread for this
 
 The cached files are provided so early work can happen without internet access.
 
+**What to do here:** read the code below as an example of documented data provenance — you are not required to run or modify it on this page (each week's page states its own expectations). <!-- AI-EDIT(2026-06-11): GAP-OLDM-1, MIT-037 — needs review -->
+
 ```{r}
 #| message: false
 #| warning: false
