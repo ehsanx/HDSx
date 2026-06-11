@@ -33,6 +33,70 @@ Every assignment must:
 - commit and sync the final work before submitting the repository link on Canvas;
 - document packages or dependencies when adding anything beyond the course defaults.
 
+## How To Read Submission Lists
+
+<!-- AI-EDIT(2026-06-11): D-002/TF-056/WI-076/WI-077/WI-078 — course-wide tag vocabulary — needs review -->
+Assignment and milestone pages use these bracketed tags. Anything without a tag is required.
+
+- **[required]** — must be submitted; graded.
+- **[optional — include only if relevant to your project]** — never required; no penalty for skipping.
+- **[if applicable — required only if your workflow creates this file]** — submit it when your chosen pathway produces it.
+- **[brief — 1-3 focused bullets or sentences are enough]** — short is correct; do not pad.
+- **[demo-only]** — instructor demonstration material; not graded, and using the pathway for graded work needs instructor approval first.
+
 ## Common AI-Use Expectation
 
 AI may help students brainstorm, debug, translate, refactor, or improve wording. Students remain responsible for checking every code path, column name, statistic, citation, and interpretation. When AI is used, the submission must include an AI-use note explaining what the tool helped with, what changed, and how the result was verified.
+
+<!-- AI-EDIT(2026-06-11): D-004/TF-055/WI-041/MIT-077/MIT-168 — official AI documentation rule, template, and filled example — needs review -->
+### The Official AI Documentation Rule
+
+Two pieces work together, and only one is graded:
+
+1. **`ai-use-note.md` is the graded artifact.** Every assignment (A2 onward) and milestone submission includes one — even if you did not use AI (then it is a single sentence saying so).
+2. **Inline `# AI prompt:` / `# Verified:` comments are required practice** in AI-assisted code (taught in Weeks 3, 6, and 7). They are the working audit trail you keep while coding; graders read the note, not every comment — your note summarizes them.
+
+### `ai-use-note.md` Template
+
+Copy this into your submission folder and fill it in:
+
+```markdown
+# AI-Use Note
+
+## Audit trail
+<!-- Copy your "# AI prompt:" / "# Verified:" comment pairs here. -->
+
+## What AI helped with
+<!-- 1-3 sentences: which task, which tool. -->
+
+## What I changed
+<!-- 1-3 sentences: what you edited, fixed, or rejected. -->
+
+## How I verified the result
+<!-- 1-3 sentences: what you checked it against (data, docs, course notes). -->
+```
+
+If you did not use AI, the whole note is: `AI was not used for this submission.`
+
+### Filled Example
+
+```markdown
+# AI-Use Note
+
+## Audit trail
+# AI prompt: ggplot2 bar chart of mean BMI by income group, with labels
+# Verified: column names against names(nhanes); compared means with summary()
+
+## What AI helped with
+Copilot drafted the initial ggplot2 code for the income-group plot and
+suggested axis label wording.
+
+## What I changed
+The draft used a column called "income" that does not exist; I replaced it
+with IncomeGroup. I also removed a misleading y-axis limit it added.
+
+## How I verified the result
+I re-ran the summary statistics without the plot and checked that the bar
+heights match the group means; I confirmed the caption says the result is
+descriptive and unweighted.
+```

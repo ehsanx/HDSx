@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -865,12 +900,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../assignments/assignment-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../assignments/assignment01-workflows/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 1: Modern Workflows</span></a>
   </div>
 </li>
@@ -926,12 +955,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../milestones/milestone-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Milestone Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../milestones/m0-group-formation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">M0: Group Formation</span></a>
   </div>
 </li>
@@ -963,6 +986,16 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../milestones/final-portfolio/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/final-portfolio-checklist.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio Checklist</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/repository-sharing-guidance.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Repository Sharing Guidance</span></a>
   </div>
 </li>
       </ul>
@@ -1114,15 +1147,33 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="step-3-render" class="level2">
 <h2 class="anchored" data-anchor-id="step-3-render">Step 3 — Render</h2>
+<!-- AI-EDIT(2026-06-11): D-003/TF-010/MIT-019/MIT-020/GAP-R678-1 — Command Palette default + terminal fallback + output location; replaces button-only instructions — needs review -->
+<!-- AI-EDIT(2026-06-11): D-003 — course-wide standard render instructions (reusable include) — needs review -->
+<div class="callout callout-style-default callout-tip callout-titled" title="How to render: the course default">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+How to render: the course default
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ol type="1">
-<li>Look for the <strong>Render</strong> button at the top of the Editor pane (it often looks like a Blue Arrow pointing right, or simply says “Render”).</li>
-<li><strong>Click it.</strong></li>
-<li><strong>Observe:</strong>
-<ul>
-<li><strong>The Terminal (Bottom):</strong> You will see text scrolling quickly. This is R/Python executing your code chunks.</li>
-<li><strong>The Preview (Right):</strong> A new window should appear showing a beautiful, formatted report with your name on it.</li>
-</ul></li>
+<li><p>Open the <code>.qmd</code> file you want to render, then go to <strong>View → Command Palette</strong> and run <strong>Quarto: Render Document</strong>. The Quarto extension renders the file and opens a preview pane.</p></li>
+<li><p><strong>Always-works fallback (terminal):</strong> type the render command with the file’s path as shown in the Explorer, for example:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="ex">quarto</span> render practice_report.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Always name the file — a bare <code>quarto render</code> rebuilds the <em>whole</em> project and takes much longer.</p></li>
+<li><p>If you see a <strong>Render</strong> (or <strong>Preview</strong>) button in the editor toolbar, it does the same thing as step 1.</p></li>
 </ol>
+<p><strong>Where did the output go?</strong> Watch the render log for the <code>Output created:</code> line — it names the exact <code>.html</code> file created. By default the file appears next to your <code>.qmd</code>; in projects that set an output directory (like this book’s <code>docs/</code> folder), it appears there instead. If no preview opened automatically, find that <code>.html</code> file in the Explorer, right-click it, and choose <strong>Download</strong> to open it in your browser (or <strong>Open Preview</strong> if available).</p>
+</div>
+</div>
+<p>After you start the render, <strong>observe:</strong></p>
+<ul>
+<li><strong>The Terminal (Bottom):</strong> You will see text scrolling quickly. This is your code chunks executing.</li>
+<li><strong>The Preview (Right):</strong> A new pane should appear showing a beautiful, formatted report with your name on it.</li>
+</ul>
 <p><strong>Congratulations!</strong> You just performed “Knowledge Translation”—turning raw code into a human-readable document.</p>
 </section>
 <section id="if-it-fails-troubleshooting" class="level2">
@@ -1130,7 +1181,8 @@ ul.task-list li input[type="checkbox"] {
 <p>Rendering involves many moving parts, so it sometimes gets stuck.</p>
 <ul>
 <li><strong>The “Wait” Rule:</strong> If nothing happens for 20 seconds, the background process might be initializing. Give it a moment.</li>
-<li><strong>The “Retry” Rule:</strong> Sometimes the connection hiccups. Click <strong>Render</strong> one more time.</li>
+<li><strong>The “Retry” Rule:</strong> Sometimes the connection hiccups. Run <strong>Quarto: Render Document</strong> one more time.</li>
+<li><strong>The “No Button” Rule:</strong> The Render button sometimes does not appear in a fresh or stale Codespace. You do not need it — the Command Palette and terminal methods above always work. <!-- AI-EDIT(2026-06-11): D-003/GAP-R678-1 — missing-button fallback — needs review --></li>
 <li><strong>The “Red Text” Rule:</strong> Look at the <strong>Terminal</strong> tab at the bottom. If you see red text, it is an error message. Read it—it usually tells you exactly what went wrong (e.g., “File not found” or “Syntax error”).</li>
 </ul>
 

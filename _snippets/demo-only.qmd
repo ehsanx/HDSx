@@ -1,0 +1,4 @@
+<!-- AI-EDIT(2026-06-11): D-002 — course-wide standard demo-only banner (reusable include) — needs review -->
+::: {.callout-warning title="Demo only — not graded"}
+This pathway is a **demonstration only**. It is not graded and not required. Using it for graded work requires **instructor approval first**. The supported, graded pathway in this course is the Quarto workflow.
+:::
