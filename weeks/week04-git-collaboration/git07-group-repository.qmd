@@ -1,6 +1,10 @@
 # Setting Up Your Group Repository {.unnumbered}
 
-1.  **Invite:** One member creates the repo; others accept the invite.
-2.  **Clone:** Everyone launches their own Codespace.
-3.  **Norms:** Agree: "No direct pushes to `main`."
-4.  **Test:** Everyone makes a `README.md` update to verify access.
+<!-- AI-EDIT(2026-06-11): TF-016, MIT-047, MIT-167, TF-057 — needs review -->
+This page supports **Milestone 0 (group formation)** --- see the [M0 README](../../milestones/m0-group-formation/README.md) for the full deliverables. Your group does not create a blank repository from scratch: you start from the group project template.
+
+1.  **Fork the template:** One member opens the group project template repository (linked from Canvas) and creates a fork for the group. A fork is the group's own copy of the template. If you cannot access Canvas, ask the teaching team for the template link.
+2.  **Invite:** That member adds the other teammates as collaborators on the group fork; others accept the invite.
+3.  **Clone:** Everyone launches their own Codespace from the group fork.
+4.  **Norms:** Agree: "No direct pushes to `main`" --- all changes go through branches and pull requests.
+5.  **Test:** Everyone makes a small `README.md` update (for example, add your name) to verify access.

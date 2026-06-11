@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -865,12 +900,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../assignments/assignment-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../assignments/assignment01-workflows/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 1: Modern Workflows</span></a>
   </div>
 </li>
@@ -926,12 +955,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../milestones/milestone-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Milestone Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../milestones/m0-group-formation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">M0: Group Formation</span></a>
   </div>
 </li>
@@ -963,6 +986,16 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../milestones/final-portfolio/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/final-portfolio-checklist.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio Checklist</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/repository-sharing-guidance.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Repository Sharing Guidance</span></a>
   </div>
 </li>
       </ul>
@@ -1072,6 +1105,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#m3-update-note.md" id="toc-m3-update-note.md" class="nav-link" data-scroll-target="#m3-update-note.md"><code>m3-update-note.md</code></a></li>
   <li><a href="#ai-use-note.md" id="toc-ai-use-note.md" class="nav-link" data-scroll-target="#ai-use-note.md"><code>ai-use-note.md</code></a></li>
   </ul></li>
+  <li><a href="#edit-these-not-those" id="toc-edit-these-not-those" class="nav-link" data-scroll-target="#edit-these-not-those">Edit These, Not Those</a></li>
   <li><a href="#m3-submission-files" id="toc-m3-submission-files" class="nav-link" data-scroll-target="#m3-submission-files">M3 Submission Files</a></li>
   <li><a href="#feedback-request" id="toc-feedback-request" class="nav-link" data-scroll-target="#feedback-request">Feedback Request</a></li>
   <li><a href="#before-submitting" id="toc-before-submitting" class="nav-link" data-scroll-target="#before-submitting">Before Submitting</a></li>
@@ -1126,10 +1160,36 @@ Tester note
 <ul>
 <li><strong>Verify:</strong> render from the repository root or clearly documented project folder.</li>
 </ul>
+<!-- AI-EDIT(2026-06-11): TF-030, MIT-096 — D-003 exact render command and output location — needs review -->
+<p>To render it, always name the file, for example: <code>quarto render assignments/assignment09-reporting/submission/report.qmd</code>.</p>
+<!-- AI-EDIT(2026-06-11): D-003 — course-wide standard render instructions (reusable include) — needs review -->
+<div class="callout callout-style-default callout-tip callout-titled" title="How to render: the course default">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+How to render: the course default
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>Open the <code>.qmd</code> file you want to render, then go to <strong>View → Command Palette</strong> and run <strong>Quarto: Render Document</strong>. The Quarto extension renders the file and opens a preview pane.</p></li>
+<li><p><strong>Always-works fallback (terminal):</strong> type the render command with the file’s path as shown in the Explorer, for example:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="ex">quarto</span> render practice_report.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Always name the file — a bare <code>quarto render</code> rebuilds the <em>whole</em> project and takes much longer.</p></li>
+<li><p>If you see a <strong>Render</strong> (or <strong>Preview</strong>) button in the editor toolbar, it does the same thing as step 1.</p></li>
+</ol>
+<p><strong>Where did the output go?</strong> Watch the render log for the <code>Output created:</code> line — it names the exact <code>.html</code> file created. By default the file appears next to your <code>.qmd</code>; in projects that set an output directory (like this book’s <code>docs/</code> folder), it appears there instead. If no preview opened automatically, find that <code>.html</code> file in the Explorer, right-click it, and choose <strong>Download</strong> to open it in your browser (or <strong>Open Preview</strong> if available).</p>
+</div>
+</div>
 </section>
 <section id="report.html" class="level3">
 <h3 class="anchored" data-anchor-id="report.html"><code>report.html</code></h3>
 <p>The rendered report.</p>
+<!-- AI-EDIT(2026-06-11): WI-053 — D-003 — needs review -->
+<p>After rendering, open the HTML file in browser preview. Confirm that the title, table, figure, citations, limitations, and references appear correctly before committing your work.</p>
+<p>Yes, commit this HTML file. A9 is one of the named exceptions (A8, A9, M3) to the course rule that rendered outputs stay out of Git — see the <a href="../../weeks/week10-reporting-publishing/report04-private-preview.html">Private Preview page</a>. <!-- AI-EDIT(2026-06-11): MIT-100 — needs review --></p>
 <ul>
 <li><strong>Verify:</strong> table, figure, citations, and limitations appear.</li>
 </ul>
@@ -1163,7 +1223,16 @@ Tester note
 <section id="ai-use-note.md" class="level3">
 <h3 class="anchored" data-anchor-id="ai-use-note.md"><code>ai-use-note.md</code></h3>
 <p>Name what AI helped with and how the group checked the result.</p>
+<!-- AI-EDIT(2026-06-11): WI-054, MIT-097, TF-030 — edit-vs-avoid file list — needs review -->
 </section>
+</section>
+<section id="edit-these-not-those" class="level2">
+<h2 class="anchored" data-anchor-id="edit-these-not-those">Edit These, Not Those</h2>
+<p>Edit the source <code>.qmd</code> and supporting text files. Do not manually edit generated HTML files, cached outputs, raw data, credentials, <code>.RData</code> workspaces, or system/configuration files unless instructed.</p>
+<ul>
+<li><strong>Edit:</strong> <code>report.qmd</code>, <code>references.bib</code>, and the notes (<code>publishing-checklist.md</code>, <code>grounding-audit.md</code>, <code>m3-update-note.md</code>, <code>ai-use-note.md</code>).</li>
+<li><strong>Do not hand-edit:</strong> <code>report.html</code> (re-render instead), files in <code>outputs/</code> (regenerate them from code), raw data files, and configuration files such as <code>_quarto.yml</code>.</li>
+</ul>
 </section>
 <section id="m3-submission-files" class="level2">
 <h2 class="anchored" data-anchor-id="m3-submission-files">M3 Submission Files</h2>
@@ -1200,6 +1269,12 @@ Tester note
 </tbody>
 </table>
 <p>Groups may reuse work, but the files should be placed in the required folders with the required names.</p>
+<!-- AI-EDIT(2026-06-11): WI-058, TF-031, MIT-102 — M3 report and dashboard/KT file locations — needs review -->
+<p>For M3, place the report draft and dashboard-style KT product in the locations listed below so peers can find both during review:</p>
+<ul>
+<li><strong>Report draft:</strong> <code>milestones/m3-project-update/submission/report-draft.qmd</code> and <code>report-draft.html</code>.</li>
+<li><strong>Dashboard/KT product:</strong> the dashboard source stays where A7 created it, in <code>assignments/assignment07-dashboard/submission/</code>. Then <code>milestones/m3-project-update/submission/dashboard-preview.md</code> points reviewers to it with the file path plus a link or screenshot path. A static preview is enough; a live dashboard is not required.</li>
+</ul>
 </section>
 <section id="feedback-request" class="level2">
 <h2 class="anchored" data-anchor-id="feedback-request">Feedback Request</h2>
@@ -1214,6 +1289,10 @@ Tester note
 </section>
 <section id="before-submitting" class="level2">
 <h2 class="anchored" data-anchor-id="before-submitting">Before Submitting</h2>
+<!-- AI-EDIT(2026-06-11): WI-056, MIT-101, TF-030 — relative-path check before render — needs review -->
+<p>Before rendering for submission, search your code for local paths such as <code>/Users/</code>, <code>C:\</code>, <code>Downloads</code>, or <code>Desktop</code>. Replace them with project-relative paths. The Search panel (the magnifying glass icon in the left sidebar) checks every file at once.</p>
+<!-- AI-EDIT(2026-06-11): WI-055, MIT-097, TF-033 — staging hygiene before commit — needs review -->
+<p>Before committing, check the staged files. If you see raw row-level data, credentials, <code>.RData</code>, OS junk, or generated files that are not allowed, unstage them and check <code>.gitignore</code> before syncing. The full <a href="../../weeks/week10-reporting-publishing/report04-private-preview.html">pre-commit privacy checklist</a> is on the Private Preview page.</p>
 <p>Check:</p>
 <ul>
 <li>report renders;</li>

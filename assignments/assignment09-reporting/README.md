@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This assignment expands a project finding into a short reproducible Quarto report. The report should regenerate a table and figure from code, cite the data source, state limitations, and prepare the work for M3 Project Update review.
+This assignment expands a project finding into a short reproducible Quarto report. The report should regenerate a table and figure from code, cite the data source, state limitations, and prepare the work for M3 Project Update review. Write the main report for a non-technical decision-maker audience; technical detail such as code choices and sensitivity notes belongs in a technical appendix. <!-- AI-EDIT(2026-06-11): GAP-R911-2 (R2-10) — needs review -->
 
 ## Learning Objectives
 
@@ -16,6 +16,7 @@ This assignment expands a project finding into a short reproducible Quarto repor
 
 - Week 10 page: `weeks/week10-reporting-publishing/index.qmd`
 - Report template: `weeks/week10-reporting-publishing/report-template.qmd`
+- Citations how-to: [Week 10 citations and grounding page](../../weeks/week10-reporting-publishing/report03-citations-and-grounding.qmd) — start here if you have not used `references.bib` before <!-- AI-EDIT(2026-06-11): MIT-140 — needs review -->
 - Bibliography example: `references.bib`
 - M3 connection: `milestones/m3-project-update/README.md`
 - Publishing checklist template: `assignments/assignment09-reporting/publishing-checklist-template.md`
@@ -58,12 +59,12 @@ assignments/assignment09-reporting/submission/
 Submit these files:
 
 - `report.qmd`: rerunnable Quarto report.
-- `report.html`: rendered report.
+- `report.html`: rendered report. Committing this HTML file is a named exception (A8, A9, and M3 submission folders only) to the course rule that rendered outputs stay out of Git. <!-- AI-EDIT(2026-06-11): MIT-100 (D-006) — needs review -->
 - `references.bib`: bibliography entries used by the report.
 - `outputs/`: generated table or figure files if the report writes external outputs.
 - `publishing-checklist.md`: GitHub Pages or private preview check.
 - `grounding-audit.md`: claim-by-claim check against code output, citation, or limitation.
-- `m3-update-note.md`: what is ready for M3 review and what feedback is requested.
+- `m3-update-note.md`: what is ready for M3 review and what feedback is requested. At minimum, name one part of the report that is ready for review and ask one or two specific feedback questions — for example, "Is the cohort definition clear?" or "Does the limitations section cover the missing-data issue?" The [Week 10 A9/M3 page](../../weeks/week10-reporting-publishing/report05-assignment-a9-and-m3.qmd) lists more example questions. <!-- AI-EDIT(2026-06-11): MIT-141 — needs review -->
 - `ai-use-note.md`: what AI helped with and how you checked it, or a sentence saying AI was not used.
 
 ## Submission Route
@@ -83,6 +84,9 @@ Canvas applies a 7-point rubric. This assignment is part of the best-5-of-7 set 
 | Grounding audit checks key claims against evidence | 1 |
 | Publishing checklist and M3 update note are complete | 1 |
 | AI-use note and required files are committed and synced | 0.75 |
+
+<!-- AI-EDIT(2026-06-11): MIT-138 — needs review -->
+The Task 3 fallback is fully acceptable for grading: a practice report built on the NHANES classroom dataset is marked with this same rubric, as long as the report states that it is a practice report.
 
 ## Definition of Done
 

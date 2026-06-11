@@ -4,6 +4,19 @@
 
 **Summary:** This week you set up the computational environment you will use for the rest of the course. By the end, the technology should fade into the background so you can focus on health data science, not installation errors. We adopt a **"Zero to AI Co-Pilot"** approach: you do not need to install R, Python, or Git on your personal laptop. Everything runs in a cloud-native environment called GitHub Codespaces.
 
+<!-- AI-EDIT(2026-06-11): WI-011/MIT-024/TF-010 — needs review -->
+You can complete the course using VS Code in your web browser through GitHub Codespaces. You do not need to install the desktop version of VS Code unless you choose to.
+
+<!-- AI-EDIT(2026-06-11): MIT-087 — recurring key-terms box; each term is explained in depth in the sections below — needs review -->
+::: {.callout-note title="Key Terms This Week"}
+- **Repository (repo):** your project folder stored on GitHub — the "cloud drive."
+- **Codespace:** a cloud computer that opens in your browser — the "public computer."
+- **IDE:** the editor you work in. Here it is VS Code, running inside the Codespace.
+- **Quarto (`.qmd`):** a document format that mixes text and runnable code; rendering it produces a finished HTML report.
+
+Each term gets a full section further down this page.
+:::
+
 **Learning Objectives:**
 
 - Understand the "public computer vs cloud drive" analogy for cloud computing.
@@ -22,6 +35,9 @@ Week 1 focused on whether a dataset is trustworthy enough to use. This week focu
 
 ## Case Study Data Spine
 
+<!-- AI-EDIT(2026-06-11): GAP-OLDM-1 — expectation label for the case-study code block — needs review -->
+**What to do with this code:** Read only — you do not need to run, modify, or submit it this week. The code block below shows how the case-study data is loaded with a relative path. You will start running code like this yourself in Week 3.
+
 {{< include ../../examples/nhanes-equity/snippets/case-study-data-only.qmd >}}
 
 ## In-Class Activity
@@ -36,6 +52,8 @@ Student output: a rendered Quarto page and one commit showing a small, reproduci
 ---
 
 ## `workflows1.qmd` The Analogy: Public Computer and Cloud Drive
+
+*Full page with screenshots: [The Analogy: Public Computer vs Cloud Drive](workflows01-cloud-drive.qmd).* <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review -->
 
 To understand how we work in this course, forget about "servers" and "clients." Imagine you are working in a university computer lab.
 
@@ -68,13 +86,18 @@ This cycle --- launch, work, commit, stop --- is the rhythm of every week in thi
 
 ## `workflows2.qmd` Getting Started: GitHub Account and Fork
 
-### Step 1: Create a GitHub Account
+*Full page with screenshots: [Tour of the Repository](workflows02-repository-tour.qmd).* <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review -->
 
-If you do not already have one:
+### Step 1: Check Your GitHub Account
 
-1. Go to [github.com](https://github.com) and click **Sign up**.
-2. Use your UBC email address (this helps with student benefits).
-3. Choose a professional username --- this will appear on your public portfolio later in the course.
+<!-- AI-EDIT(2026-06-11): GAP-MBH-1 — full signup steps live in Week 0; this section now points there and focuses on login troubleshooting — needs review -->
+You should already have a GitHub account from [Week 0: Asynchronous Onboarding](../week00-onboarding/index.qmd), which walks through account creation step by step. If you skipped Week 0, go back and complete the account setup there first.
+
+If login goes wrong:
+
+- **Forgot which email you used?** Try your UBC email first --- that is what Week 0 recommended.
+- **Forgot your password?** Use **Forgot password?** on the GitHub sign-in page; the reset email arrives within a few minutes.
+- **Account exists but you cannot access it?** Ask for help in class rather than creating a second account --- two accounts cause confusion later.
 
 ::: {.callout-tip}
 **Portfolio thinking:** Your GitHub profile will become part of your professional presence. Pick a username you would be comfortable putting on a CV (e.g., `jchen-epi` rather than `xXcoolcoder99Xx`).
@@ -82,11 +105,11 @@ If you do not already have one:
 
 ### Step 2: Fork the Course Template
 
-1. Open the course template repository linked from Canvas.
+1. Open the course starter repository: <https://github.com/ehsanx/HDSx-workspace> (also linked from Canvas). <!-- AI-EDIT(2026-06-11): MIT-013 — direct starter-repo link per R2-01 — needs review -->
 2. Click **Fork** in the upper-right corner of the GitHub page.
 3. Create the fork under your own GitHub account.
 4. Keep the default repository name unless Canvas gives a specific naming rule.
-5. After the fork is created, make sure the page URL includes your GitHub username.
+5. After the fork is created, look at the web address at the top of your browser. It should include your GitHub username. This confirms that you are working in your own copy, not the original course repository. <!-- AI-EDIT(2026-06-11): GAP-MBH-6 — needs review -->
 
 ### Step 3: Verify Your Repository
 
@@ -97,9 +120,14 @@ Navigate to your forked repository. You should see:
 
 If you see these in your fork, you are ready to launch your Codespace.
 
+<!-- AI-EDIT(2026-06-11): GAP-MBH-5 — stop-and-check when expected files are missing — needs review -->
+If you do not see these, stop and ask for help before continuing. You may be in the wrong repository, the wrong branch, or the starter files may not have loaded correctly.
+
 ---
 
 ## `workflows3.qmd` Launching Your Codespace
+
+*Full pages with screenshots: [Opening Your First Codespace](workflows03-open-codespace.qmd) and [Reopening a Codespace](workflows04-reopen-codespace.qmd).* <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review -->
 
 1. On your repository page, click the green **<> Code** button.
 2. Select the **Codespaces** tab.
@@ -114,6 +142,8 @@ The first launch takes 2--3 minutes while the environment builds. Subsequent lau
 ---
 
 ## `workflows4.qmd` Tour of VS Code: The "Big Three" Zones
+
+*Full page with screenshots: [VS Code Orientation](workflows05-vscode-orientation.qmd).* <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review -->
 
 The VS Code interface can look intimidating --- it is designed for professional software engineers. You only need to know three areas. Safely ignore 90% of the buttons.
 
@@ -179,6 +209,8 @@ You will use literate programming in every subsequent week of this course: your 
 
 ## `workflows7.qmd` Project Structure: Files and Folders
 
+*Full page with screenshots: [Files vs Folders](workflows06-files-folders.qmd).* <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review -->
+
 A reproducible project needs a consistent folder structure. This course uses the following convention:
 
 ```
@@ -201,6 +233,8 @@ my-project/
 ---
 
 ## `workflows8.qmd` Tutorial: Your First Quarto Document
+
+*Full page with screenshots: [The Magic Moment: Render Quarto](workflows07-render-quarto.qmd).* <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review -->
 
 ### Step 1: Open the Starter File
 
@@ -245,7 +279,20 @@ Find a code chunk in the starter file. Make a small change --- for example, chan
 
 ### Step 6: Render
 
-Click the **Render** button (blue arrow icon at the top of the editor). A preview window appears showing your formatted report with code output embedded.
+<!-- AI-EDIT(2026-06-11): TF-010/WI-014/D-003 — standard render instructions replace button-only step (Command Palette default, named-file command, output location) — needs review -->
+{{< include /_snippets/render-how.qmd >}}
+
+A preview pane appears showing your formatted report with code output embedded.
+
+<!-- AI-EDIT(2026-06-11): WI-012/TF-010 — where the rendered HTML lands and how to open it — needs review -->
+::: {.callout-note title="Where is my HTML file?"}
+After rendering, your HTML file is saved to the `docs/` folder at the project root --- not beside the `.qmd` file. To view it, right-click the file in the Explorer panel and choose the browser/open-preview option shown in the instructions, or start a local server from the terminal and open the URL shown. You cannot open the HTML by typing its name in the terminal.
+:::
+
+<!-- AI-EDIT(2026-06-11): MIT-021 — TinyTeX warning is safe to ignore for HTML output — needs review -->
+::: {.callout-note title="Seeing a TeX warning?"}
+If you see a warning that no TeX installation was found, you can ignore it as long as your HTML file was created successfully. TinyTeX is only needed for PDF output --- do not install anything.
+:::
 
 ::: {.callout-tip}
 **What just happened:** Quarto ran every code chunk, captured the results, combined them with your Markdown text, and produced an HTML document. This is literate programming in action.
@@ -255,7 +302,16 @@ Click the **Render** button (blue arrow icon at the top of the editor). A previe
 
 ## `workflows9.qmd` Tutorial: Stage, Commit, and Sync
 
+*Full page with screenshots: [Commit Your Work](workflows08-commit-work.qmd).* <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review -->
+
 Your work currently exists only on the public computer (Codespace). To save it permanently to your Cloud Drive (GitHub), you need to **commit**.
+
+<!-- AI-EDIT(2026-06-11): GAP-MBH-9 — compact three-step save summary — needs review -->
+Think of this as a three-step save process:
+
+1. **Stage** = choose which changed files to include.
+2. **Commit** = save a snapshot with a message.
+3. **Sync** = upload that snapshot to GitHub so it is safely stored online.
 
 ### Step 1: Open Source Control
 
@@ -295,6 +351,8 @@ Click **Sync Changes** (in the Source Control panel or the status bar at the bot
 
 ## `workflows10.qmd` Stopping Your Codespace (Saving Credits)
 
+*Full page with screenshots: [Stop Your Codespace](workflows10-stop-codespace.qmd).* <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review -->
+
 GitHub Codespaces gives you a monthly allowance of free hours (approximately 60 core-hours). **If you leave the browser tab open, the meter keeps running**, even if you are not actively working.
 
 ### The Right Way to Stop
@@ -314,6 +372,8 @@ The Codespace runs for another 30 minutes before it times out automatically. Tha
 ---
 
 ## `workflows11.qmd` Troubleshooting
+
+*Full page with screenshots: [Troubleshooting: Rebuild Container](workflows09-troubleshooting.qmd).* <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review -->
 
 Sometimes things break. Here is a graduated approach --- try the simplest fix first.
 
@@ -396,9 +456,11 @@ Edit and render the starter `practice_report.qmd`, demonstrating that you can na
 | Stop Codespace | [github.com/codespaces](https://github.com/codespaces) → **...** → **Stop codespace** |
 | Open Explorer | **View → Explorer** or click file icon (left sidebar) |
 | Open Terminal | **View → Terminal** or `` Ctrl+` `` |
-| Render Quarto | Click **Render** button (blue arrow) at top of editor |
+| Render Quarto | Command Palette (`F1`) → `Quarto: Render Document`, or terminal: `quarto render practice_report.qmd` |
 | Stage a file | Source Control → hover file → click **+** |
 | Commit | Type message → click **✔** |
 | Sync to GitHub | Click **Sync Changes** |
 | Reload window | Command Palette (`F1`) → `Reload Window` |
 | Rebuild container | Command Palette (`F1`) → `Codespaces: Rebuild Container` |
+
+<!-- AI-EDIT(2026-06-11): TF-010/D-003 — Render row above updated to Command Palette default + named-file terminal command — needs review -->

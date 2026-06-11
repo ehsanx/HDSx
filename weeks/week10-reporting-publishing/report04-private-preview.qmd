@@ -1,6 +1,25 @@
 # Private Preview {.unnumbered}
 
+<!-- AI-EDIT(2026-06-11): TF-032, MIT-095, SS-047 — D-006 workflow diagram (edit-render-preview-commit-publish) — needs review -->
+## How the Pieces Fit Together
+
+Quarto turns your source file into HTML. GitHub stores both. The private preview route stops there: course staff open the committed HTML or render the report in a fresh Codespace. GitHub Pages is an optional last step that turns the rendered HTML into a public website.
+
+```{mermaid}
+flowchart LR
+  A["Edit report.qmd<br>in your Codespace"] --> B["Render with Quarto<br>(creates report.html)"]
+  B --> C["Preview the HTML<br>in your browser"]
+  C -->|Looks right| D["Commit and sync<br>to GitHub"]
+  C -->|Something is off| A
+  D --> E{"Privacy checks<br>passed?"}
+  E -->|Default route| F["Private preview:<br>staff view the HTML in the repo<br>or a fresh Codespace"]
+  E -->|"Optional, only if safe"| G["GitHub Pages:<br>public website"]
+```
+
 ## Default Path
+
+<!-- AI-EDIT(2026-06-11): WI-052 — D-006 — needs review -->
+For this course, publishing usually means creating a rendered, shareable output for grading or private review. Public publishing is optional and should only happen after privacy and safety checks.
 
 The default publishing route is a private preview unless the project passes privacy and stewardship checks for public sharing.
 
@@ -12,6 +31,23 @@ Private preview means:
 - course staff have access if the repository is private.
 
 This is enough for A9 and M3.
+
+<!-- AI-EDIT(2026-06-11): MIT-100 — rendered-HTML exception ruling — needs review -->
+::: {.callout-note title="Rendered HTML: the one exception"}
+The course `.gitignore` normally keeps rendered outputs out of Git. A8, A9, and M3 are the explicit exceptions: their `submission/` folders do commit the rendered HTML (`slides.html`, `report.html`, `report-draft.html`) so staff can grade it. Everywhere else, leave rendered files untracked.
+:::
+
+<!-- AI-EDIT(2026-06-11): TF-033, MIT-099 — D-006 pre-commit privacy checklist — needs review -->
+## Pre-Commit Privacy Checklist
+
+Run this check every time, before you commit and sync:
+
+1. Open the Source Control panel and read the list of staged files.
+2. Unstage anything that should not go online: raw row-level data files, credentials or tokens, `.RData` workspaces, OS junk such as `.DS_Store`, and rendered files outside the A8/A9/M3 `submission/` folders.
+3. Open `.gitignore` and confirm it covers your data folder and rendered outputs. If an unwanted file keeps reappearing, add it to `.gitignore` instead of unstaging it every time.
+4. Skim the rendered HTML one last time for private URLs, tokens, or row-level records in printed output.
+
+If any item fails, fix it before syncing. It is much easier to keep a file out of Git than to remove it after it has been pushed.
 
 ## When Public Publishing Is Safe
 
@@ -26,7 +62,15 @@ GitHub Pages or another public preview is appropriate only when:
 
 If any item is uncertain, keep the preview private.
 
+<!-- AI-EDIT(2026-06-11): D-006 — Pages-public-even-if-repo-private clarification — needs review -->
+::: {.callout-warning title="GitHub Pages sites are always public"}
+A GitHub Pages site is public on the open internet even when the source repository is private. Turning on Pages publishes the rendered content for anyone to see. If your project must stay private, the "private equivalent" is course staff previewing in a fresh Codespace or reading the committed HTML in your private repository — not a Pages site.
+:::
+
 ## GitHub Pages as an Optional Extension
+
+<!-- AI-EDIT(2026-06-11): D-006/D-002 — demo-only banner for the optional Pages pathway — needs review -->
+{{< include /_snippets/demo-only.qmd >}}
 
 GitHub Pages is useful for public portfolios, but it is not required for every student project. Public publishing should never outrank privacy, data-use rules, or stewardship obligations.
 
@@ -47,6 +91,22 @@ For the default route, record:
 - latest commit hash;
 - who has access;
 - any files intentionally excluded from public sharing.
+
+<!-- AI-EDIT(2026-06-11): MIT-098, TF-030 — D-003 common render/publish errors — needs review -->
+## Common Errors and Fixes
+
+Most rendering and publishing problems this week have boring causes. Check this table before asking for help.
+
+| What you see | Likely cause | Fix |
+|---|---|---|
+| `quarto: command not found` | The terminal opened before Codespace setup finished | Open a new terminal and retry; if it persists, rebuild the Codespace |
+| Render stops with red text naming an R package | The package is not installed in this environment | Read the first error line for the package name, then follow the week's setup steps; do not change the environment beyond that without asking |
+| `cannot open file` or `... does not exist` for a CSV | Absolute path, or wrong working folder | Make the path relative to the project root and re-render (see the path check on the [Assignment 9 and M3 page](report05-assignment-a9-and-m3.qmd)) |
+| Render finishes but no preview opens | The preview pane did not launch | Find the `.html` file named in the `Output created:` line, right-click it in the Explorer, and choose **Download** or **Open Preview** |
+| Citations appear as `[@key]` in the output | Bibliography file not found, or key misspelled | Check the `bibliography:` path in the YAML header and the key spelling in `references.bib` |
+| Pages site shows a 404 or old content | Pages is not enabled, or is still deploying | Wait a few minutes and refresh; check the repository's **Settings → Pages**; remember Pages is optional |
+
+If the fix is not obvious after a careful read of the first error line, copy the exact error message into your help request.
 
 ## Final Portfolio Connection
 

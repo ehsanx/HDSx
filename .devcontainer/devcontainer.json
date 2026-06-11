@@ -22,6 +22,11 @@
     // revealjs slides, reports), and the review flagged PDF/TeX as a failure
     // surface. Maintainers building the full PDF book should flip this to
     // "true" (or build the PDF on a separate maintainer machine/CI).
+    // AI-EDIT(2026-06-11): TF-054 — needs review
+    // Known side effect: with no TeX installed, students may still see a
+    // harmless "no TeX installation was detected" warning while rendering.
+    // That warning is expected and safe to ignore for HTML output; the Week 2
+    // pages (workflows07/workflows09) carry the student-facing explanation.
     "ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {
       "version": "release",
       "installTinyTeX": "false"

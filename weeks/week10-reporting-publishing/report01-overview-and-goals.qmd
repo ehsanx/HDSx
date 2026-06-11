@@ -6,6 +6,11 @@ Slides help an audience understand one message quickly. Dashboards help an audie
 
 Week 10 asks you to make that audit trail visible.
 
+<!-- AI-EDIT(2026-06-11): GAP-R911-2 — R2-10: non-technical decision-maker audience with technical appendix — needs review -->
+## Who Is the Report For?
+
+Write the main report for a non-technical decision-maker: someone who could act on your finding but does not read code. Keep the body in plain language — question, evidence, what it means, what it does not prove. Put technical material such as code detail, package notes, and render instructions in a technical appendix at the end. This is the same audience as your A8 slides, so the two should feel consistent.
+
 ## The Report Is Not Bigger Slides
 
 A report should answer:

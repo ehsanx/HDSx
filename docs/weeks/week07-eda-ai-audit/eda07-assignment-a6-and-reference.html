@@ -865,12 +865,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../assignments/assignment-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../assignments/assignment01-workflows/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 1: Modern Workflows</span></a>
   </div>
 </li>
@@ -926,12 +920,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../milestones/milestone-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Milestone Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../milestones/m0-group-formation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">M0: Group Formation</span></a>
   </div>
 </li>
@@ -963,6 +951,16 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../milestones/final-portfolio/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/final-portfolio-checklist.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio Checklist</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/repository-sharing-guidance.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Repository Sharing Guidance</span></a>
   </div>
 </li>
       </ul>
@@ -1061,7 +1059,10 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#where-this-fits" id="toc-where-this-fits" class="nav-link active" data-scroll-target="#where-this-fits">Where this fits</a></li>
-  <li><a href="#deadline-and-link-to-m2" id="toc-deadline-and-link-to-m2" class="nav-link" data-scroll-target="#deadline-and-link-to-m2">Deadline and link to M2</a></li>
+  <li><a href="#deadline-and-link-to-m2" id="toc-deadline-and-link-to-m2" class="nav-link" data-scroll-target="#deadline-and-link-to-m2">Deadline and link to M2</a>
+  <ul class="collapse">
+  <li><a href="#how-to-move-your-a6-file-into-the-group-repository" id="toc-how-to-move-your-a6-file-into-the-group-repository" class="nav-link" data-scroll-target="#how-to-move-your-a6-file-into-the-group-repository">How to move your A6 file into the group repository</a></li>
+  </ul></li>
   <li><a href="#the-six-a6-deliverables-explained" id="toc-the-six-a6-deliverables-explained" class="nav-link" data-scroll-target="#the-six-a6-deliverables-explained">The six A6 deliverables, explained</a>
   <ul class="collapse">
   <li><a href="#eda-note.qmd" id="toc-eda-note.qmd" class="nav-link" data-scroll-target="#eda-note.qmd">1. <code>eda-note.qmd</code></a></li>
@@ -1109,6 +1110,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="deadline-and-link-to-m2" class="level2">
 <h2 class="anchored" data-anchor-id="deadline-and-link-to-m2">Deadline and link to M2</h2>
 <p>Assignment 6 is due the Monday after Week 7 class, 4 PM. Milestone 2 (Preliminary Analysis) is due the same Monday. The good news: most of the A6 files double as M2 deliverables, so you are doing the work once.</p>
+<!-- AI-EDIT(2026-06-11): TF-021 — M2 deliverable is named ai-use-note.md — needs review -->
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
@@ -1143,11 +1145,26 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="even">
 <td><code>ai-use-note.md</code></td>
-<td>Yes — corresponds to the M2 <code>ai-audit-note.md</code></td>
+<td>Yes — same filename in the M2 <code>submission/</code> folder</td>
 </tr>
 </tbody>
 </table>
-<p>Your team can submit the same <code>.qmd</code> for both, with the appropriate file names in the respective <code>submission/</code> folders.</p>
+<!-- AI-EDIT(2026-06-11): TF-021, TF-059, MIT-076, WI-040 — needs review -->
+<p>A6 is your individual assignment submission. M2 is your group milestone submission. If you reuse a <code>.qmd</code> file, copy it into the correct submission folder/repository and use the required filename for each submission. M2 may build on one member’s A6 — note whose A6 it builds on in the M2 README (one attribution sentence is enough).</p>
+<section id="how-to-move-your-a6-file-into-the-group-repository" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-move-your-a6-file-into-the-group-repository">How to move your A6 file into the group repository</h3>
+<p>A6 lives in your individual repository; M2 lives in your group repository. Reusing a file means copying it between the two. The safe beginner path:</p>
+<ol type="1">
+<li>In your individual repository’s Codespace, open your finished <code>eda-note.qmd</code>. Select all (Ctrl+A / Cmd+A) and copy.</li>
+<li>Open a Codespace on the <strong>group</strong> repository.</li>
+<li>Create the file with the M2 name and location — <code>milestones/m2-preliminary-analysis/submission/preliminary-analysis.qmd</code> — paste the contents, and save.</li>
+<li>Render the file in the group Codespace. If the data path does not resolve, copy the CSV into the group repository with the same relative folder structure, or update the relative path.</li>
+<li>Repeat for the other reused files, using the M2 filenames from the table above.</li>
+<li>Add one attribution sentence to the M2 README, for example: “The preliminary analysis builds on Jordan’s A6 <code>eda-note.qmd</code>.”</li>
+<li>Commit and Sync Changes in the group repository.</li>
+</ol>
+<p>Do not email files to yourself or drag them between browser windows — copying through the editor and committing in the group repository keeps every step visible in the project history.</p>
+</section>
 </section>
 <section id="the-six-a6-deliverables-explained" class="level2">
 <h2 class="anchored" data-anchor-id="the-six-a6-deliverables-explained">The six A6 deliverables, explained</h2>
@@ -1191,6 +1208,8 @@ ul.task-list li input[type="checkbox"] {
 <section id="ai-use-note.md" class="level3">
 <h3 class="anchored" data-anchor-id="ai-use-note.md">6. <code>ai-use-note.md</code></h3>
 <p>If you used AI to draft code or prose, name what it helped with and how you verified the result. If you did not use AI, write one sentence saying so.</p>
+<!-- AI-EDIT(2026-06-11): MIT-077 — needs review -->
+<p>Wondering how this note relates to the inline <code># AI prompt:</code> / <code># Verified:</code> comments from <a href="../../weeks/week07-eda-ai-audit/eda01-overview-and-goals.html">eda01</a>? Both are expected, but only one is graded: <code>ai-use-note.md</code> is the graded artifact, and the inline comments are the required working practice that feeds it — copy your comment pairs into the note’s audit trail. The template and a filled example are on the <a href="../../assignments/index.html#the-official-ai-documentation-rule">assignments index</a>.</p>
 <ul>
 <li><strong>Verify:</strong> specific to chunks or prompts, not generic.</li>
 </ul>
@@ -1205,6 +1224,7 @@ ul.task-list li input[type="checkbox"] {
 <li><code>table1.csv</code> is written by code (<code>write_csv(...)</code>).</li>
 <li>Missingness is reported <em>before</em> the Table 1, not after.</li>
 <li>The methods note avoids causal language and names the data as descriptive and unweighted.</li>
+<li>If you added any package beyond the course environment, run <code>renv::status()</code> and follow the <a href="../../weeks/week03-r-with-ai/index.html#minimal-renv-checkpoint">Week 3 renv checkpoint</a> — most students will not need this. <!-- AI-EDIT(2026-06-11): MIT-168 — needs review --></li>
 <li>All six files are committed and pushed.</li>
 </ul>
 </section>

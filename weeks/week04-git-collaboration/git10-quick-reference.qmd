@@ -1,10 +1,17 @@
 # Quick Reference {.unnumbered}
 
+<!-- AI-EDIT(2026-06-11): GAP-R345-6 — needs review: Discard row changed to right-click; Sync row location added -->
+
 | Action    | How-To                                                      |
 |:----------|:------------------------------------------------------------|
 | Stage     | Source Control (+)                                          |
 | Commit    | Type msg + ✔                                                |
 | View Diff | Click file in Source Control                                |
-| Discard   | Left click file in source control and click discard changes |
+| Discard   | Right-click file in Source Control → **Discard Changes**    |
 | Branch    | Bottom-left status bar                                      |
-| Sync      | Sync Changes button                                         |
+| Sync      | **Sync Changes** button in Source Control (appears after you commit) |
+
+<!-- AI-EDIT(2026-06-11): GAP-R345-6 — needs review -->
+**Where is Sync Changes?** After you commit, the **Sync Changes** button appears in the Source Control panel (it may be blue or green, or say *Publish Branch*). Clicking it uploads your commits to GitHub so they are visible in the online repository.
+
+![](../../assets/images/git5/git5_1.png)

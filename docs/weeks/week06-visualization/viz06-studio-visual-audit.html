@@ -865,12 +865,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../assignments/assignment-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../assignments/assignment01-workflows/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 1: Modern Workflows</span></a>
   </div>
 </li>
@@ -926,12 +920,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../milestones/milestone-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Milestone Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../milestones/m0-group-formation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">M0: Group Formation</span></a>
   </div>
 </li>
@@ -963,6 +951,16 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../milestones/final-portfolio/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/final-portfolio-checklist.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio Checklist</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/repository-sharing-guidance.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Repository Sharing Guidance</span></a>
   </div>
 </li>
       </ul>
@@ -1114,10 +1112,11 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="inputs" class="level2">
 <h2 class="anchored" data-anchor-id="inputs">Inputs</h2>
+<!-- AI-EDIT(2026-06-11): MIT-061 — direct file links added — needs review -->
 <ul>
-<li>Worked example to compare against: <code>weeks/week06-visualization/viz03-worked-example.qmd</code></li>
-<li>Dataset: <code>examples/nhanes-equity/data/nhanes_equity_v6.csv</code></li>
-<li>Flawed plot code (the artifact you will audit): <code>weeks/week06-visualization/instructor/flawed-plot-code.R</code></li>
+<li>Worked example to compare against: <a href="../../weeks/week06-visualization/viz03-worked-example.html"><code>weeks/week06-visualization/viz03-worked-example.qmd</code></a></li>
+<li>Dataset: <a href="https://github.com/ehsanx/HDSx/blob/main/examples/nhanes-equity/data/nhanes_equity_v6.csv"><code>examples/nhanes-equity/data/nhanes_equity_v6.csv</code> (view on GitHub)</a> <!-- AI-EDIT(2026-06-11): D-001/MIT-125 — starter relocated out of instructor/ — needs review --></li>
+<li>Flawed plot code (the artifact you will audit): <a href="https://github.com/ehsanx/HDSx/blob/main/weeks/week06-visualization/studio/flawed-plot-code.R"><code>weeks/week06-visualization/studio/flawed-plot-code.R</code> (view on GitHub)</a></li>
 </ul>
 <div class="callout callout-style-default callout-note callout-titled" title="Tester note">
 <div class="callout-header d-flex align-content-center">
@@ -1137,8 +1136,9 @@ Tester note
 <h2 class="anchored" data-anchor-id="activity-steps">Activity Steps</h2>
 <ol type="1">
 <li>Review the worked example and note how it labels the data source, statistic, and limitation.</li>
-<li>Open <code>instructor/flawed-plot-code.R</code> and read the comments and output labels before you run it.</li>
-<li>Run the script and inspect the rendered figure.</li>
+<li>Open <code>studio/flawed-plot-code.R</code> and read the comments and output labels before you run it. <!-- AI-EDIT(2026-06-11): D-001/MIT-125 — needs review --> <!-- AI-EDIT(2026-06-11): MIT-067 — explicit run/preview steps and output path — needs review --></li>
+<li>Run the script: open an <strong>R terminal</strong> in your Codespace and, from the repository root, run <code>source("weeks/week06-visualization/studio/flawed-plot-code.R")</code>.</li>
+<li>Look at the figure. It may appear in a plot viewer pane. If it does not, no problem: the script also saves <code>flawed-plot.png</code> in your current working folder (run <code>getwd()</code> if you are unsure where that is). Find the PNG in the Explorer, right-click it, and choose <strong>Open Preview</strong>.</li>
 <li>List at least three issues that could mislead a reader. Tag each one with one of the audit categories below.</li>
 <li>Revise the plot so the title, scale, grouping, and caption match the evidence. Keep the cohort restriction explicit.</li>
 <li>Write a short note explaining what you changed and why.</li>
@@ -1164,6 +1164,26 @@ Tester note
 <li><code>caption.md</code> — a caption that states the statistic, data source, exclusions, and limitations.</li>
 <li><code>ai-use-note.md</code> — if you used AI, explain what it helped with and how you checked the result.</li>
 </ul>
+<!-- AI-EDIT(2026-06-11): SS-035 — example issue/fix entry showing the required evidence level — needs review -->
+<div class="callout callout-style-default callout-tip callout-titled" title="What a strong audit-note entry looks like">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+What a strong audit-note entry looks like
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Each entry in <code>visual-audit-note.md</code> should give this level of evidence. This example is generic — it is <strong>not</strong> one of the planted issues in this studio’s plot:</p>
+<ul>
+<li><strong>Issue:</strong> the draft layered <code>geom_smooth(method = "lm")</code> across NHANES cycles.</li>
+<li><strong>Category:</strong> design.</li>
+<li><strong>Why it matters:</strong> cycles are categorical labels, so a regression line implies a continuous trend the data cannot support.</li>
+<li><strong>Correction:</strong> replaced the smoother with <code>geom_line() + geom_point()</code> connecting the cycle summaries.</li>
+</ul>
+</div>
+</div>
 </section>
 <section id="completion-check" class="level2">
 <h2 class="anchored" data-anchor-id="completion-check">Completion Check</h2>
@@ -1173,9 +1193,9 @@ Tester note
 <h2 class="anchored" data-anchor-id="where-this-goes-next">Where this goes next</h2>
 <p>Polish the studio drafts into the Assignment 5 submission. <a href="../../weeks/week06-visualization/viz07-assignment-a5-and-reference.html">viz07</a> walks through the seven A5 files one by one and connects the work to the M1 visual plan due the same week.</p>
 <!--
-Instructor-only note (not rendered to students):
-This page intentionally does NOT link to instructor/corrected-plot-code.R or instructor/answer-key-visual-audit.md.
-See weeks/week06-visualization/instructor/MAINTENANCE.md for release-time key-handling steps.
+AI-EDIT(2026-06-11): D-001 — needs review.
+Maintainer note: this page intentionally does NOT link to any answer key.
+Instructor materials for this studio live in the private HDSx-instructor repository.
 -->
 
 

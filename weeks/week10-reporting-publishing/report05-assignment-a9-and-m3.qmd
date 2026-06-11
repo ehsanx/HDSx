@@ -18,9 +18,19 @@ A rerunnable Quarto report with question, data, methods, results, limitations, c
 
 - **Verify:** render from the repository root or clearly documented project folder.
 
+<!-- AI-EDIT(2026-06-11): TF-030, MIT-096 — D-003 exact render command and output location — needs review -->
+To render it, always name the file, for example: `quarto render assignments/assignment09-reporting/submission/report.qmd`.
+
+{{< include /_snippets/render-how.qmd >}}
+
 ### `report.html`
 
 The rendered report.
+
+<!-- AI-EDIT(2026-06-11): WI-053 — D-003 — needs review -->
+After rendering, open the HTML file in browser preview. Confirm that the title, table, figure, citations, limitations, and references appear correctly before committing your work.
+
+Yes, commit this HTML file. A9 is one of the named exceptions (A8, A9, M3) to the course rule that rendered outputs stay out of Git — see the [Private Preview page](report04-private-preview.qmd). <!-- AI-EDIT(2026-06-11): MIT-100 — needs review -->
 
 - **Verify:** table, figure, citations, and limitations appear.
 
@@ -52,6 +62,14 @@ State what is ready for project update review and what feedback would help most.
 
 Name what AI helped with and how the group checked the result.
 
+<!-- AI-EDIT(2026-06-11): WI-054, MIT-097, TF-030 — edit-vs-avoid file list — needs review -->
+## Edit These, Not Those
+
+Edit the source `.qmd` and supporting text files. Do not manually edit generated HTML files, cached outputs, raw data, credentials, `.RData` workspaces, or system/configuration files unless instructed.
+
+- **Edit:** `report.qmd`, `references.bib`, and the notes (`publishing-checklist.md`, `grounding-audit.md`, `m3-update-note.md`, `ai-use-note.md`).
+- **Do not hand-edit:** `report.html` (re-render instead), files in `outputs/` (regenerate them from code), raw data files, and configuration files such as `_quarto.yml`.
+
 ## M3 Submission Files
 
 M3 uses `milestones/m3-project-update/submission/`.
@@ -68,6 +86,12 @@ The A9 report draft can support M3:
 
 Groups may reuse work, but the files should be placed in the required folders with the required names.
 
+<!-- AI-EDIT(2026-06-11): WI-058, TF-031, MIT-102 — M3 report and dashboard/KT file locations — needs review -->
+For M3, place the report draft and dashboard-style KT product in the locations listed below so peers can find both during review:
+
+- **Report draft:** `milestones/m3-project-update/submission/report-draft.qmd` and `report-draft.html`.
+- **Dashboard/KT product:** the dashboard source stays where A7 created it, in `assignments/assignment07-dashboard/submission/`. Then `milestones/m3-project-update/submission/dashboard-preview.md` points reviewers to it with the file path plus a link or screenshot path. A static preview is enough; a live dashboard is not required.
+
 ## Feedback Request
 
 A useful M3 feedback request is specific:
@@ -79,6 +103,12 @@ A useful M3 feedback request is specific:
 - What reproducibility issue should be fixed before Week 11?
 
 ## Before Submitting
+
+<!-- AI-EDIT(2026-06-11): WI-056, MIT-101, TF-030 — relative-path check before render — needs review -->
+Before rendering for submission, search your code for local paths such as `/Users/`, `C:\`, `Downloads`, or `Desktop`. Replace them with project-relative paths. The Search panel (the magnifying glass icon in the left sidebar) checks every file at once.
+
+<!-- AI-EDIT(2026-06-11): WI-055, MIT-097, TF-033 — staging hygiene before commit — needs review -->
+Before committing, check the staged files. If you see raw row-level data, credentials, `.RData`, OS junk, or generated files that are not allowed, unstage them and check `.gitignore` before syncing. The full [pre-commit privacy checklist](report04-private-preview.qmd) is on the Private Preview page.
 
 Check:
 

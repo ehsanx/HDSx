@@ -17,6 +17,9 @@ Use this as a translation aid, not as a substitute for checking outputs.
 | Sort rows | `arrange(df, IncomeGroup)` | `df.sort_values("IncomeGroup")` |
 | Unique values | `unique(df$Gender)` | `df["Gender"].unique()` |
 
+<!-- AI-EDIT(2026-06-11): MIT-059 — needs review -->
+**Dependency note:** `read_csv()` comes from the `readr` package, not `dplyr`. Load it with `library(readr)`, or use `library(tidyverse)` to get `readr` and `dplyr` together. On the Python side, every command in this table needs `import pandas as pd` first.
+
 ## Translation Rule
 
 The translation is not finished when the code runs. It is finished when the R and Python outputs have been compared and the comparison is documented.

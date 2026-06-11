@@ -21,6 +21,11 @@ Use one of these options:
 - `slides.qmd`: a revealjs deck based on [starter-slides.qmd](starter-slides.qmd);
 - `slide-outline.qmd`: a structured outline if you are not ready to render revealjs.
 
+<!-- AI-EDIT(2026-06-11): TF-028, MIT-093, WI-050, R2-06 — needs review -->
+Both options are graded identically — choose the format that fits where you are.
+
+To create `slides.qmd`, copy `starter-slides.qmd` from the Week 9 folder into `assignments/assignment08-communication/submission/` and rename it before editing. Render from the submission folder so `slides.html` is created in the correct place. Step-by-step copy and rename instructions are in [comm03](comm03-revealjs-starter.qmd).
+
 Include 3-5 slides or sections: context, evidence, takeaway, limitation, and next step.
 
 - **Verify:** the source file renders or is readable as a complete outline.

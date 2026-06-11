@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -865,12 +900,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../assignments/assignment-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../assignments/assignment01-workflows/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 1: Modern Workflows</span></a>
   </div>
 </li>
@@ -926,12 +955,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../milestones/milestone-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Milestone Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../milestones/m0-group-formation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">M0: Group Formation</span></a>
   </div>
 </li>
@@ -963,6 +986,16 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../milestones/final-portfolio/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/final-portfolio-checklist.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio Checklist</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/repository-sharing-guidance.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Repository Sharing Guidance</span></a>
   </div>
 </li>
       </ul>
@@ -1104,8 +1137,30 @@ ul.task-list li input[type="checkbox"] {
 <ol type="1">
 <li><code>library(readr); library(dplyr); library(knitr)</code> runs without error.</li>
 <li>The cached data file resolves: <code>examples/nhanes-equity/data/nhanes_equity_v6.csv</code>.</li>
-<li>Your <code>eda03-worked-example.qmd</code> renders cleanly so you have a clean reference.</li>
+<li>Render <code>eda03-worked-example.qmd</code> so you have a clean reference. The check passes when the HTML file is created and the table/plot are visible without errors. Record any error message in your notes. <!-- AI-EDIT(2026-06-11): GAP-R678-2, MIT-073 — needs review --></li>
 </ol>
+<!-- AI-EDIT(2026-06-11): MIT-073, GAP-R678-2 — needs review -->
+<!-- AI-EDIT(2026-06-11): D-003 — course-wide standard render instructions (reusable include) — needs review -->
+<div class="callout callout-style-default callout-tip callout-titled" title="How to render: the course default">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+How to render: the course default
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>Open the <code>.qmd</code> file you want to render, then go to <strong>View → Command Palette</strong> and run <strong>Quarto: Render Document</strong>. The Quarto extension renders the file and opens a preview pane.</p></li>
+<li><p><strong>Always-works fallback (terminal):</strong> type the render command with the file’s path as shown in the Explorer, for example:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="ex">quarto</span> render practice_report.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Always name the file — a bare <code>quarto render</code> rebuilds the <em>whole</em> project and takes much longer.</p></li>
+<li><p>If you see a <strong>Render</strong> (or <strong>Preview</strong>) button in the editor toolbar, it does the same thing as step 1.</p></li>
+</ol>
+<p><strong>Where did the output go?</strong> Watch the render log for the <code>Output created:</code> line — it names the exact <code>.html</code> file created. By default the file appears next to your <code>.qmd</code>; in projects that set an output directory (like this book’s <code>docs/</code> folder), it appears there instead. If no preview opened automatically, find that <code>.html</code> file in the Explorer, right-click it, and choose <strong>Download</strong> to open it in your browser (or <strong>Open Preview</strong> if available).</p>
+</div>
+</div>
 <p>If any step fails, ask your debugging partner before running the planted-error starter.</p>
 </section>
 <section id="goal" class="level2">
@@ -1116,8 +1171,8 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="inputs">Inputs</h2>
 <ul>
 <li>Worked example to compare against: <code>weeks/week07-eda-ai-audit/eda03-worked-example.qmd</code></li>
-<li>Dataset: <code>examples/nhanes-equity/data/nhanes_equity_v6.csv</code></li>
-<li>Planted-error starter (the artifact you will audit): <code>weeks/week07-eda-ai-audit/instructor/planted-error-starter.qmd</code></li>
+<li>Dataset: <code>examples/nhanes-equity/data/nhanes_equity_v6.csv</code> <!-- AI-EDIT(2026-06-11): D-001/MIT-127 — starter relocated out of instructor/ — needs review --></li>
+<li>Planted-error starter (the artifact you will audit): <code>weeks/week07-eda-ai-audit/studio/planted-error-starter.qmd</code></li>
 </ul>
 <div class="callout callout-style-default callout-note callout-titled" title="Tester note">
 <div class="callout-header d-flex align-content-center">
@@ -1137,7 +1192,7 @@ Tester note
 <h2 class="anchored" data-anchor-id="activity-steps">Activity Steps</h2>
 <ol type="1">
 <li>Review the worked example and identify the cohort definition, missingness check, and Table 1 labels.</li>
-<li>Open <code>instructor/planted-error-starter.qmd</code> and inspect both code and prose before running it.</li>
+<li>Open <code>studio/planted-error-starter.qmd</code> and inspect both code and prose before running it. <!-- AI-EDIT(2026-06-11): D-001/MIT-127 — needs review --></li>
 <li>Run or read the starter and annotate at least five issues.</li>
 <li>Categorize each issue as <strong>correctness</strong>, <strong>reproducibility</strong>, <strong>interpretation</strong>, or <strong>stewardship</strong> (see <a href="../../weeks/week07-eda-ai-audit/eda05-ai-audit-categories.html">eda05</a> if you need a refresher).</li>
 <li>Produce a corrected EDA note and Table 1.</li>
@@ -1172,9 +1227,9 @@ Tester note
 <h2 class="anchored" data-anchor-id="where-this-goes-next">Where this goes next</h2>
 <p>Polish the studio drafts into the Assignment 6 submission and the Milestone 2 deliverables. <a href="../../weeks/week07-eda-ai-audit/eda07-assignment-a6-and-reference.html">eda07</a> walks through the A6 files one by one and shows which files double as M2 evidence.</p>
 <!--
-Instructor-only note (not rendered to students):
-This page intentionally does NOT link to instructor/planted-error-key.md.
-See weeks/week07-eda-ai-audit/instructor/MAINTENANCE.md for release-time key-handling steps.
+AI-EDIT(2026-06-11): D-001 — needs review.
+Maintainer note: this page intentionally does NOT link to any answer key.
+Instructor materials for this studio live in the private HDSx-instructor repository.
 -->
 
 

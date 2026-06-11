@@ -33,7 +33,7 @@ This assignment turns a descriptive summary into an honest visual explanation. Y
 6. Revise your plot so it supports a descriptive interpretation.
 7. Export the corrected plot as `corrected-plot.png`.
 8. Write a caption that includes data source, statistic, exclusions, and limitation.
-9. Add an optional `plotly` preview only if it helps you inspect the figure; the required submission is still the static plot.
+9. Add a `plotly` preview [optional — include only if relevant to your project]: only if it helps you inspect the figure; the required submission is still the static plot. <!-- AI-EDIT(2026-06-11): WI-076 (D-002) — needs review -->
 10. Write a short M1 link note naming how the visualization standard affects your project dataset, audience, or feasibility.
 
 ## AI-Use Expectations
@@ -57,13 +57,14 @@ assignments/assignment05-visualization/submission/
 
 Submit these files:
 
-- `visualization-audit.qmd`: rerunnable Quarto file that loads the CSV, creates the final plot, and explains the revision.
-- `visualization-audit.html`: rendered output.
-- `corrected-plot.png`: exported final plot.
-- `visual-audit-note.md`: at least three issues checked or corrected.
-- `caption.md`: final figure caption.
-- `m1-link-note.md`: two or three sentences connecting the visualization standard to M1.
-- `ai-use-note.md`: what AI helped with and how you checked it, or a sentence saying AI was not used.
+<!-- AI-EDIT(2026-06-11): WI-076/TF-056/WI-078 (D-002) — tag vocabulary: assignments/index.qmd "How To Read Submission Lists" — needs review -->
+- `visualization-audit.qmd` [required]: rerunnable Quarto file that loads the CSV, creates the final plot, and explains the revision.
+- `visualization-audit.html` [required]: rendered output.
+- `corrected-plot.png` [required]: exported final plot.
+- `visual-audit-note.md` [required]: at least three issues checked or corrected.
+- `caption.md` [required] [brief — 1-3 focused bullets or sentences are enough]: final figure caption.
+- `m1-link-note.md` [required] [brief — 1-3 focused bullets or sentences are enough]: two or three sentences connecting the visualization standard to M1.
+- `ai-use-note.md` [required]: what AI helped with and how you checked it, or a sentence saying AI was not used.
 
 ## Submission Route
 

@@ -4,6 +4,15 @@ Your work is currently only on the "Rented Desk" (Codespace). It is a **Draft**.
 
 **The Analogy:** Think of this like shipping a package. You have packed the box (saved the file), but now you need to put a label on it and hand it to the courier.
 
+<!-- AI-EDIT(2026-06-11): GAP-MBH-9 — compact three-step save summary incl. staging — needs review -->
+Think of this as a three-step save process:
+
+1.  **Stage** = choose which changed files to include.
+2.  **Commit** = save a snapshot with a message.
+3.  **Sync** = upload that snapshot to GitHub so it is safely stored online.
+
+The **Commit and Sync** button used below does steps 2 and 3 together; if nothing is staged, VS Code offers to stage all your changed files for you.
+
 ## Steps
 
 1.  Click the **Source Control** icon

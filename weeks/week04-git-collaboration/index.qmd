@@ -23,6 +23,9 @@ Week 3 focused on writing and auditing small R summaries. This week treats each 
 
 {{< include ../../examples/nhanes-equity/snippets/case-study-data-analysis.qmd >}}
 
+<!-- AI-EDIT(2026-06-11): MIT-037 — needs review -->
+**What to do with the code above:** read it --- you do not need to run or modify it this week. This week's focus is tracking *changes* to files like this one, not the analysis itself.
+
 ## In-Class Activity
 
 - Create a branch for a tiny dashboard documentation change.
@@ -35,6 +38,8 @@ Student output: a documentation-only pull request with a short audit note. Assig
 ------------------------------------------------------------------------
 
 ## `git1.qmd` Concepts: The "Save Game" of Reproducible Science
+
+Detail page: [Git Basics](git01-concepts.qmd) <!-- AI-EDIT(2026-06-11): GAP-R345-2 — needs review -->
 
 ### Why Git Matters in Health Research
 
@@ -49,6 +54,8 @@ You already know how to stage, commit, and sync in your Codespace. This week, we
 ------------------------------------------------------------------------
 
 ## `git2.qmd` Tutorial: Time Travel in Codespaces
+
+Detail page: [Time Travel](git02-tutorial.qmd) <!-- AI-EDIT(2026-06-11): GAP-R345-2 — needs review -->
 
 *Scenario:* We will intentionally break last week's R script and use Git to rescue it.
 
@@ -76,6 +83,8 @@ Hover over the file name in the Source Control panel and click **Discard Changes
 
 ## `git3.qmd` Repo Hygiene: `.gitignore` and Relative Paths
 
+Detail page: [Repo Hygiene](git03-repo-hygiene.qmd) <!-- AI-EDIT(2026-06-11): GAP-R345-2 — needs review -->
+
 ### Why This Matters
 
 As your projects grow, you will generate files that should *not* be tracked: rendered HTML, temporary data caches, `.DS_Store`, API keys. Tracking these clutters your history and can leak sensitive information.
@@ -98,7 +107,15 @@ Thumbs.db
 .env
 ```
 
+<!-- AI-EDIT(2026-06-11): MIT-037 — needs review -->
+**What to do with this block:** copy these patterns into your own `.gitignore` file. This is plain text, not R code --- there is nothing to run.
+
 3.  Stage, commit with a message like `"Add .gitignore to exclude rendered files"`.
+
+<!-- AI-EDIT(2026-06-11): MIT-169 (D-006) — needs review -->
+::: {.callout-note title="One named exception to the *.html rule"}
+Later in the course, the Assignment 8, Assignment 9, and Milestone 3 submission folders **do** commit rendered HTML so graders can read the work without rendering it. Those briefs say so explicitly. Everywhere else, keep rendered outputs excluded by `.gitignore`, exactly as taught here.
+:::
 
 ### Relative Paths
 
@@ -111,6 +128,8 @@ Always use **relative paths** in your code (e.g., `read.csv("data/nhanes.csv")`)
 ------------------------------------------------------------------------
 
 ## `git4.qmd` Branching: Safe Experimentation
+
+Detail page: [Branching](git04-branching.qmd) <!-- AI-EDIT(2026-06-11): GAP-R345-2 — needs review -->
 
 ### Concept
 
@@ -139,6 +158,8 @@ Think of it like a lab notebook: `main` is your clean, published record. A branc
 
 ## `git5.qmd` Pull Requests: The Peer Review Gateway
 
+Detail page: [Pull Requests](git05-pull-requests.qmd) <!-- AI-EDIT(2026-06-11): GAP-R345-2 — needs review -->
+
 ### What Is a Pull Request?
 
 A **Pull Request (PR)** is a GitHub feature that says: *"I have changes on a branch. Please review them before they go into `main`."* PRs are how professional teams and researchers collaborate. You will use them for peer review later in this course.
@@ -149,7 +170,7 @@ A **Pull Request (PR)** is a GitHub feature that says: *"I have changes on a bra
 2.  Open your repository on **github.com**. You should see a banner: *"add-age-filter had recent pushes."* Click **Compare & pull request**.
 3.  Write a title and short description explaining what you changed and why.
 4.  Click **Create pull request**.
-5.  For now, review the diff on GitHub, then click **Merge pull request** and complete the merge.
+5.  For now, review the diff on GitHub, then click **Merge pull request** and complete the merge yourself --- practice PRs do not need to wait for review. You will practice reviewing each other's pull requests later, in Milestone 4. <!-- AI-EDIT(2026-06-11): GAP-R345-13 — needs review -->
 
 ::: callout-tip
 **Collaboration norm:** In your term project, agree with your group that changes go through PRs rather than directly to `main`. This creates a built-in review step.
@@ -158,6 +179,8 @@ A **Pull Request (PR)** is a GitHub feature that says: *"I have changes on a bra
 ------------------------------------------------------------------------
 
 ## `git6.qmd` AI Auditing for Version Control
+
+Detail page: [AI Auditing](git06-ai-auditing.qmd) <!-- AI-EDIT(2026-06-11): GAP-R345-2 — needs review -->
 
 Treat the LLM as a **Git Translator** that explains diffs and drafts audit-quality messages.
 
@@ -191,6 +214,8 @@ Check that the message captures the **intent** (e.g., `"Filter patient cohort to
 
 ## `git7.qmd` Setting Up Your Group Repository
 
+Detail page: [Setting Up Your Group Repository](git07-group-repository.qmd) <!-- AI-EDIT(2026-06-11): GAP-R345-2 — needs review -->
+
 This week you form your term project groups (**Milestone 0**). Use this session to establish your collaboration workflow.
 
 ### Steps
@@ -212,6 +237,8 @@ This week you form your term project groups (**Milestone 0**). Use this session 
 
 ## `git8.qmd` Knowledge Check
 
+Detail page: [Knowledge Check](git08-knowledge-check.qmd) <!-- AI-EDIT(2026-06-11): GAP-R345-2 — needs review -->
+
 1.  What is the difference between **saving** a file and **committing** it?
 2.  What does a red line indicate in a diff?
 3.  Which button restores the last **committed** version of a file?
@@ -223,6 +250,8 @@ This week you form your term project groups (**Milestone 0**). Use this session 
 ------------------------------------------------------------------------
 
 ## `git9.qmd` Practice Exercise: The Full Workflow Drill
+
+Detail page: [Practice Exercise: Full Workflow](git09-practice-exercise.qmd) <!-- AI-EDIT(2026-06-11): GAP-R345-2 — needs review -->
 
 1.  Open your Codespace from last week.
 2.  Create a `.gitignore` file with sensible defaults for your project. **Commit.**
@@ -237,6 +266,8 @@ This week you form your term project groups (**Milestone 0**). Use this session 
 ------------------------------------------------------------------------
 
 ## `git10.qmd` Quick Reference: Common Git Actions in VS Code
+
+Detail page: [Quick Reference](git10-quick-reference.qmd) <!-- AI-EDIT(2026-06-11): GAP-R345-2 — needs review -->
 
 | Action | How |
 |------------------------------------|------------------------------------|

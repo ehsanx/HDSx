@@ -69,7 +69,12 @@ The README now names the audience and the boundary.
 
 ## What to record in your A7 `before-after-text.md`
 
-A7 asks you to submit one before-after text change. For that file, paste:
+A7 asks you to submit one before-after text change.
+
+<!-- AI-EDIT(2026-06-11): MIT-084, WI-045 — needs review -->
+Create `before-after-text.md` in the A7 submission folder. In the Explorer panel of your Codespace, expand `assignments/assignment07-dashboard/`, right-click the `submission` folder, choose **New File**, and name it `before-after-text.md`. Plain Markdown is fine — a short heading for each part below is enough.
+
+For that file, paste:
 
 - the **original text** verbatim,
 - the **revised text** verbatim,

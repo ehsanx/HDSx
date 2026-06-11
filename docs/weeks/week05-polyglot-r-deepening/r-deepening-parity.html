@@ -900,12 +900,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../assignments/assignment-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../assignments/assignment01-workflows/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 1: Modern Workflows</span></a>
   </div>
 </li>
@@ -961,12 +955,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../milestones/milestone-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Milestone Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../milestones/m0-group-formation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">M0: Group Formation</span></a>
   </div>
 </li>
@@ -998,6 +986,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../milestones/final-portfolio/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/final-portfolio-checklist.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio Checklist</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/repository-sharing-guidance.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Repository Sharing Guidance</span></a>
   </div>
 </li>
       </ul>
@@ -1099,9 +1097,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#dataset" id="toc-dataset" class="nav-link" data-scroll-target="#dataset">Dataset</a></li>
   <li><a href="#part-a-r-pipeline" id="toc-part-a-r-pipeline" class="nav-link" data-scroll-target="#part-a-r-pipeline">Part A: R Pipeline</a></li>
   <li><a href="#part-b-r-function" id="toc-part-b-r-function" class="nav-link" data-scroll-target="#part-b-r-function">Part B: R Function</a></li>
+  <li><a href="#more-r-mastery-exercises" id="toc-more-r-mastery-exercises" class="nav-link" data-scroll-target="#more-r-mastery-exercises">More R Mastery Exercises</a></li>
+  <li><a href="#ai-audit-prompt" id="toc-ai-audit-prompt" class="nav-link" data-scroll-target="#ai-audit-prompt">AI Audit Prompt</a></li>
   <li><a href="#part-c-python-translation" id="toc-part-c-python-translation" class="nav-link" data-scroll-target="#part-c-python-translation">Part C: Python Translation</a></li>
   <li><a href="#part-d-parity-audit" id="toc-part-d-parity-audit" class="nav-link" data-scroll-target="#part-d-parity-audit">Part D: Parity Audit</a></li>
-  <li><a href="#ai-audit-prompt" id="toc-ai-audit-prompt" class="nav-link" data-scroll-target="#ai-audit-prompt">AI Audit Prompt</a></li>
   <li><a href="#student-output" id="toc-student-output" class="nav-link" data-scroll-target="#student-output">Student Output</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ehsanx/HDSx/edit/main/weeks/week05-polyglot-r-deepening/r-deepening-parity.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ehsanx/HDSx/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -1129,6 +1128,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>Week 5 is polyglot-aware, not Python-first. Your strongest analysis path remains R and the tidyverse. Python enters as a comparison language: it helps you read code from other sources, ask better AI translation questions, and verify that a translated result still means the same thing.</p>
+<!-- AI-EDIT(2026-06-11): WI-028 — needs review -->
+<p>A parity check means confirming that the R result and Python result match on the important parts: row counts, column counts, grouping labels, missing values, and rounded summary values.</p>
 <section id="learning-goals" class="level2">
 <h2 class="anchored" data-anchor-id="learning-goals">Learning Goals</h2>
 <p>By the end of this activity, you should be able to:</p>
@@ -1149,6 +1150,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="part-a-r-pipeline" class="level2">
 <h2 class="anchored" data-anchor-id="part-a-r-pipeline">Part A: R Pipeline</h2>
+<!-- AI-EDIT(2026-06-11): MIT-052 — needs review -->
+<p>Write Parts A and B in one new R script named <code>week5.R</code>, saved in the Week 5 folder (<code>weeks/week05-polyglot-r-deepening/</code>). You are not editing an existing file. For Assignment 4, the same code later moves into <code>polyglot-parity.qmd</code> in <code>assignments/assignment04-polyglot/submission/</code>.</p>
 <p>Start with R. The goal is a descriptive, unweighted summary of BMI by income group and gender.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">library</span>(readr)</span>
 <span id="cb3-2"><a href="#cb3-2"></a><span class="fu">library</span>(dplyr)</span>
@@ -1187,9 +1190,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-14"><a href="#cb4-14"></a>r_function_summary <span class="ot">&lt;-</span> <span class="fu">summarise_mean_sd</span>(nhanes, BMI, IncomeGroup, Gender)</span>
 <span id="cb4-15"><a href="#cb4-15"></a>r_function_summary</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Before moving to Python, check that the function output has the same number of rows and the same grouping labels as the original pipeline.</p>
+<!-- AI-EDIT(2026-06-11): GAP-R345-9 — needs review -->
+</section>
+<section id="more-r-mastery-exercises" class="level2">
+<h2 class="anchored" data-anchor-id="more-r-mastery-exercises">More R Mastery Exercises</h2>
+<p>The pipeline and function above are the worked example. Complete at least two of these short exercises in <code>week5.R</code> before moving to Python:</p>
+<ol type="1">
+<li><strong>Swap the value column.</strong> Run <code>summarise_mean_sd(nhanes, Waist, IncomeGroup, Gender)</code>. Check that the grouping labels match the BMI summary. Did the row count change? Why might it?</li>
+<li><strong>Swap a grouping column.</strong> Run <code>summarise_mean_sd(nhanes, BMI, Race, Gender)</code>. How many grouped rows do you get now, and why?</li>
+<li><strong>Extend the pipeline.</strong> Add <code>mean_age = round(mean(Age), 1)</code> inside <code>summarise()</code> in the Part A pipeline, then rerun it. Confirm the number of rows did not change — adding a summary column should never change the grouping.</li>
+</ol>
+<!-- AI-EDIT(2026-06-11): MIT-055 — needs review: section moved above Part C so students read audit guidance before translating -->
+</section>
+<section id="ai-audit-prompt" class="level2">
+<h2 class="anchored" data-anchor-id="ai-audit-prompt">AI Audit Prompt</h2>
+<p>Use this prompt only after you have a working R result:</p>
+<blockquote class="blockquote">
+<p>Translate this R <code>dplyr</code> pipeline into Python/pandas one step at a time. For each step, explain the equivalent Python operation, the output I should inspect, and the parity check I should run against my R result. Do not combine steps or add new analysis choices.</p>
+</blockquote>
 </section>
 <section id="part-c-python-translation" class="level2">
 <h2 class="anchored" data-anchor-id="part-c-python-translation">Part C: Python Translation</h2>
+<!-- AI-EDIT(2026-06-11): MIT-053 — needs review -->
+<p>Create the Python translation in a notebook named <code>translation.ipynb</code>, saved in the Week 5 folder (<code>weeks/week05-polyglot-r-deepening/</code>) — the same notebook you set up in <a href="../../weeks/week05-polyglot-r-deepening/python02-environment.html">Python Environment</a> and use in <a href="../../weeks/week05-polyglot-r-deepening/python13-translation-exercise.html">Bilingual Translation</a>. Attempt each step yourself first with the <a href="../../weeks/week05-polyglot-r-deepening/python14-cheat-sheet.html">cheat sheet</a>; use AI (the audit prompt above) to check or fix one step at a time, never to generate the full script.</p>
 <p>Translate one step at a time. Do not ask AI for a full script until you have verified each cell.</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb5-2"><a href="#cb5-2"></a></span>
@@ -1263,13 +1286,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 </tbody>
 </table>
-</section>
-<section id="ai-audit-prompt" class="level2">
-<h2 class="anchored" data-anchor-id="ai-audit-prompt">AI Audit Prompt</h2>
-<p>Use this prompt only after you have a working R result:</p>
-<blockquote class="blockquote">
-<p>Translate this R <code>dplyr</code> pipeline into Python/pandas one step at a time. For each step, explain the equivalent Python operation, the output I should inspect, and the parity check I should run against my R result. Do not combine steps or add new analysis choices.</p>
-</blockquote>
+<!-- AI-EDIT(2026-06-11): GAP-R345-14 (R2-09) — needs review -->
+<div class="callout callout-style-default callout-note callout-titled" title="When results do not match: the 15-minute rule">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+When results do not match: the 15-minute rule
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Debug on your own for up to 15 minutes first: recheck the <a href="../../weeks/week05-polyglot-r-deepening/python04-translation-traps.html">translation traps</a>, rerun the checks above, and write down what you tried and your best guess at the cause. After 15 minutes, ask for help — and bring your notes. Documented debugging attempts are part of the expected workflow, not a sign of failure.</p>
+</div>
+</div>
 </section>
 <section id="student-output" class="level2">
 <h2 class="anchored" data-anchor-id="student-output">Student Output</h2>

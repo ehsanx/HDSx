@@ -866,12 +866,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../assignments/assignment-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../assignments/assignment01-workflows/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 1: Modern Workflows</span></a>
   </div>
 </li>
@@ -927,12 +921,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../milestones/milestone-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Milestone Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../milestones/m0-group-formation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">M0: Group Formation</span></a>
   </div>
 </li>
@@ -964,6 +952,16 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../milestones/final-portfolio/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/final-portfolio-checklist.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio Checklist</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/repository-sharing-guidance.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Repository Sharing Guidance</span></a>
   </div>
 </li>
       </ul>
@@ -1062,7 +1060,8 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#verify-your-ai-extensions" id="toc-verify-your-ai-extensions" class="nav-link active" data-scroll-target="#verify-your-ai-extensions">Verify Your AI Extensions</a></li>
-  <li><a href="#set-the-ai-model-to-0x" id="toc-set-the-ai-model-to-0x" class="nav-link" data-scroll-target="#set-the-ai-model-to-0x">Set the AI Model to “0x”</a></li>
+  <li><a href="#pick-a-chat-model" id="toc-pick-a-chat-model" class="nav-link" data-scroll-target="#pick-a-chat-model">Pick a Chat Model</a></li>
+  <li><a href="#check-the-package-environment-renv" id="toc-check-the-package-environment-renv" class="nav-link" data-scroll-target="#check-the-package-environment-renv">Check the Package Environment (renv)</a></li>
   <li><a href="#interface-review-where-does-r-actually-live" id="toc-interface-review-where-does-r-actually-live" class="nav-link" data-scroll-target="#interface-review-where-does-r-actually-live">Interface Review: Where does R actually live?</a></li>
   <li><a href="#interface-review-working-with-.qmd-and-.rmd-files" id="toc-interface-review-working-with-.qmd-and-.rmd-files" class="nav-link" data-scroll-target="#interface-review-working-with-.qmd-and-.rmd-files">Interface Review: Working with .qmd and .Rmd files</a></li>
   </ul>
@@ -1091,6 +1090,10 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>Before we start flying, we need to check our instruments in <strong>VS Code</strong>. If your environment isn’t set up correctly, your code will not run.</p>
+<!-- AI-EDIT(2026-06-11): MIT-030 — needs review -->
+<p>A quick orientation: GitHub and Codespaces are the <em>workspace</em> — they store your files and give you a computer in the browser. R is the <em>tool</em> you will use inside that workspace to clean, summarize, and visualize health data.</p>
+<!-- AI-EDIT(2026-06-11): WI-020 — needs review -->
+<p>The Codespace should open ready to use. If R, Quarto, required packages, or Copilot Chat are missing, stop and follow the troubleshooting step rather than manually changing the environment unless instructed.</p>
 <section id="verify-your-ai-extensions" class="level2">
 <h2 class="anchored" data-anchor-id="verify-your-ai-extensions">Verify Your AI Extensions</h2>
 <ol type="1">
@@ -1098,17 +1101,23 @@ ul.task-list li input[type="checkbox"] {
 <li>In the search bar, ensure both <strong>GitHub Copilot Chat</strong> and <strong>R</strong> are installed and active.</li>
 </ol>
 <p><img src="../../assets/images/week3/r1.png" class="img-fluid"></p>
+<!-- AI-EDIT(2026-06-11): MIT-028, MIT-029 — needs review -->
 </section>
-<section id="set-the-ai-model-to-0x" class="level2">
-<h2 class="anchored" data-anchor-id="set-the-ai-model-to-0x">Set the AI Model to “0x”</h2>
+<section id="pick-a-chat-model" class="level2">
+<h2 class="anchored" data-anchor-id="pick-a-chat-model">Pick a Chat Model</h2>
 <ol type="1">
-<li>Open the Copilot Chat sidebar (Shortcut: <strong>Ctrl+Alt+I</strong> or <strong>Cmd+Option+I</strong> on Mac).</li>
+<li>Open the Copilot Chat sidebar: go to <strong>View → Command Palette</strong> and run <strong>Chat: Open Chat</strong>, or click the chat icon at the top of the VS Code window. <em>Optional tip:</em> a keyboard shortcut (such as <strong>Ctrl+Alt+I</strong> on Windows) may also work, but shortcuts vary and can conflict with your browser, so use the menu path if nothing happens.</li>
 <li>Look for the model selector dropdown at the bottom of the chat window.</li>
-<li><strong>Crucial Check:</strong> Choose a model with a <strong>“0x” multiplier</strong> (like GPT-4o 0x). If you do not do this, you will quickly run out of your free student quota.
+<li><strong>Quota check:</strong> If you see a model marked as <em>included</em> or with a <strong>“0x” multiplier</strong>, pick it — these models do not use up your free student quota. If your picker only shows models marked “1x” or higher, that is okay: pick any available chat model and continue. Exact model names and multipliers change over time, so your list may not match a classmate’s screen.
 <ul>
 <li><em>Troubleshooting:</em> If the Chat asks you to “Sign In” or “Subscribe,” your Student Pack is not active. Use your institutional login at <code>copilot.microsoft.com</code> or authenticate via your university email at <code>https://m365.cloud.microsoft/chat/</code>.</li>
 </ul></li>
 </ol>
+<!-- AI-EDIT(2026-06-11): GAP-R345-10 — needs review -->
+</section>
+<section id="check-the-package-environment-renv" class="level2">
+<h2 class="anchored" data-anchor-id="check-the-package-environment-renv">Check the Package Environment (renv)</h2>
+<p>This project uses <code>renv</code> to record which R package versions the course expects. Use <code>renv::status()</code> to check whether the project environment matches the lockfile. Do not run <code>renv::snapshot()</code> unless the instructor asks, because it changes the recorded package state.</p>
 </section>
 <section id="interface-review-where-does-r-actually-live" class="level2">
 <h2 class="anchored" data-anchor-id="interface-review-where-does-r-actually-live">Interface Review: Where does R actually live?</h2>

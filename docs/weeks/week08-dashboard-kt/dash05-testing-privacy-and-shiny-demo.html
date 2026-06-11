@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -865,12 +900,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../assignments/assignment-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../assignments/assignment01-workflows/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 1: Modern Workflows</span></a>
   </div>
 </li>
@@ -926,12 +955,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../milestones/milestone-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Milestone Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../milestones/m0-group-formation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">M0: Group Formation</span></a>
   </div>
 </li>
@@ -963,6 +986,16 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../milestones/final-portfolio/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/final-portfolio-checklist.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio Checklist</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/repository-sharing-guidance.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Repository Sharing Guidance</span></a>
   </div>
 </li>
       </ul>
@@ -1068,6 +1101,7 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#part-2-privacy-safe-publishing" id="toc-part-2-privacy-safe-publishing" class="nav-link" data-scroll-target="#part-2-privacy-safe-publishing">Part 2 — Privacy-safe publishing</a>
   <ul class="collapse">
+  <li><a href="#three-of-those-terms-with-examples" id="toc-three-of-those-terms-with-examples" class="nav-link" data-scroll-target="#three-of-those-terms-with-examples">Three of those terms, with examples</a></li>
   <li><a href="#what-to-write-in-privacy-check.md" id="toc-what-to-write-in-privacy-check.md" class="nav-link" data-scroll-target="#what-to-write-in-privacy-check.md">What to write in <code>privacy-check.md</code></a></li>
   </ul></li>
   <li><a href="#part-3-the-shiny-exemplar-demonstration-only" id="toc-part-3-the-shiny-exemplar-demonstration-only" class="nav-link" data-scroll-target="#part-3-the-shiny-exemplar-demonstration-only">Part 3 — The Shiny exemplar (demonstration only)</a></li>
@@ -1112,13 +1146,36 @@ ul.task-list li input[type="checkbox"] {
 <section id="a-six-step-test-routine" class="level3">
 <h3 class="anchored" data-anchor-id="a-six-step-test-routine">A six-step test routine</h3>
 <ol type="1">
-<li><strong>Render from the repository root.</strong> Open <code>dash03-starter-dashboard.qmd</code> in your Codespace and click Render. Confirm there are no errors.</li>
+<li><strong>Render from the repository root.</strong> Open <code>dash03-starter-dashboard.qmd</code> in your Codespace and render it from the Command Palette (<strong>Quarto: Render Document</strong>) — the callout below shows every option. Confirm there are no errors. <!-- AI-EDIT(2026-06-11): MIT-078 — needs review --></li>
 <li><strong>Change the control.</strong> Edit <code>selected_income</code> to a different value from <code>available_income_groups</code>. Save the file.</li>
 <li><strong>Render again.</strong> Confirm the title, table, and plot all updated.</li>
 <li><strong>Verify the caption.</strong> The caption should still name the dataset, exclusions, and limitation.</li>
-<li><strong>Open the HTML preview.</strong> Use the Codespaces preview pane and confirm the rendered page looks correct in the browser, not just in the editor.</li>
+<li><strong>Open the HTML preview.</strong> If no preview opened automatically, find the rendered <code>.html</code> file in the Explorer (the render log’s <code>Output created:</code> line names it), right-click it, and choose <strong>Open Preview</strong> — or <strong>Download</strong> to open it in your browser. If <strong>Open With</strong> only offers a text editor showing raw HTML code, the render still worked — use <strong>Open Preview</strong> or <strong>Download</strong> instead. Confirm the rendered page looks correct in the browser, not just in the editor. <!-- AI-EDIT(2026-06-11): MIT-079 — needs review --></li>
 <li><strong>Record the test.</strong> In <code>testing-log.md</code>, note the date, the command or render path used, the values you tried, and the result.</li>
 </ol>
+<!-- AI-EDIT(2026-06-11): MIT-078, MIT-080 — needs review -->
+<!-- AI-EDIT(2026-06-11): D-003 — course-wide standard render instructions (reusable include) — needs review -->
+<div class="callout callout-style-default callout-tip callout-titled" title="How to render: the course default">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+How to render: the course default
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>Open the <code>.qmd</code> file you want to render, then go to <strong>View → Command Palette</strong> and run <strong>Quarto: Render Document</strong>. The Quarto extension renders the file and opens a preview pane.</p></li>
+<li><p><strong>Always-works fallback (terminal):</strong> type the render command with the file’s path as shown in the Explorer, for example:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="ex">quarto</span> render practice_report.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Always name the file — a bare <code>quarto render</code> rebuilds the <em>whole</em> project and takes much longer.</p></li>
+<li><p>If you see a <strong>Render</strong> (or <strong>Preview</strong>) button in the editor toolbar, it does the same thing as step 1.</p></li>
+</ol>
+<p><strong>Where did the output go?</strong> Watch the render log for the <code>Output created:</code> line — it names the exact <code>.html</code> file created. By default the file appears next to your <code>.qmd</code>; in projects that set an output directory (like this book’s <code>docs/</code> folder), it appears there instead. If no preview opened automatically, find that <code>.html</code> file in the Explorer, right-click it, and choose <strong>Download</strong> to open it in your browser (or <strong>Open Preview</strong> if available).</p>
+</div>
+</div>
+<p>HTML is the expected output for the dashboard — a PDF is not needed. Ignore TeX- or PDF-related warnings as long as the <code>.html</code> file was created; do not try to install TeX.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Tester note">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1184,6 +1241,20 @@ Tester note
 <p>Capture: one screenshot of each failure state above, with the error visible. New students stall on these and screenshots in the Survival Guide help unblock faster.</p>
 </div>
 </div>
+<!-- AI-EDIT(2026-06-11): TF-024, MIT-085, WI-046 — needs review -->
+<div class="callout callout-style-default callout-tip callout-titled" title="Package check before you finish">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Package check before you finish
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you add or update packages while building the dashboard, run <code>renv::status()</code> and follow the course instructions for <code>renv::snapshot()</code> so the project works in a fresh Codespace (see the renv checkpoint in <a href="../../weeks/week03-r-with-ai/index.html">Week 3</a>). The starter uses only packages that are already installed, so most students will not need this.</p>
+</div>
+</div>
 </section>
 </section>
 <section id="part-2-privacy-safe-publishing" class="level2">
@@ -1196,6 +1267,15 @@ Tester note
 <li><strong>Keep cached data separate from raw retrieval.</strong> The course uses a cached CSV intentionally. If you write code that retrieves raw NHANES from the CDC, document that as separate work — do not put a live API call in your dashboard.</li>
 <li><strong>Do not upload row-level data to external AI tools.</strong> Aggregate first. The AI conversation can see counts and means; it should not see individual records.</li>
 </ol>
+<!-- AI-EDIT(2026-06-11): MIT-082 — needs review -->
+<section id="three-of-those-terms-with-examples" class="level3">
+<h3 class="anchored" data-anchor-id="three-of-those-terms-with-examples">Three of those terms, with examples</h3>
+<ul>
+<li><strong>Row-level data</strong> is one person’s record. “Participant 93704: age 47, BMI 31.2, Low Income” is row-level. “n = 214, mean BMI 29.1” is an aggregate summary and is safe to show.</li>
+<li><strong>A small cell</strong> is a group with very few people behind it — for example, a table cell where <code>n = 3</code>. With numbers that small, a person could be identifiable and the estimate is unstable, so combine, mark, or exclude the group instead of interpreting it.</li>
+<li><strong>Causal overreach</strong> is wording that claims the data shows cause. “Low income causes higher BMI” is overreach. “Mean BMI was higher in the low-income group in this classroom dataset” stays descriptive and is fine.</li>
+</ul>
+</section>
 <section id="what-to-write-in-privacy-check.md" class="level3">
 <h3 class="anchored" data-anchor-id="what-to-write-in-privacy-check.md">What to write in <code>privacy-check.md</code></h3>
 <p>A6 and A7 both expect a short privacy check. For A7, write three sentences:</p>
@@ -1208,6 +1288,21 @@ Tester note
 </section>
 <section id="part-3-the-shiny-exemplar-demonstration-only" class="level2">
 <h2 class="anchored" data-anchor-id="part-3-the-shiny-exemplar-demonstration-only">Part 3 — The Shiny exemplar (demonstration only)</h2>
+<!-- AI-EDIT(2026-06-11): MIT-083 — needs review -->
+<!-- AI-EDIT(2026-06-11): D-002 — course-wide standard demo-only banner (reusable include) — needs review -->
+<div class="callout callout-style-default callout-warning callout-titled" title="Demo only — not graded">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Demo only — not graded
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This pathway is a <strong>demonstration only</strong>. It is not graded and not required. Using it for graded work requires <strong>instructor approval first</strong>. The supported, graded pathway in this course is the Quarto workflow.</p>
+</div>
+</div>
 <p>Your instructor will demo a Shiny app version of the NHANES dashboard in class. <strong>You are not required to run this app, install Shiny, or produce anything from it.</strong> Your A7 deliverable is built from the Quarto starter dashboard, not from this app.</p>
 <p>What the demo will show you:</p>
 <ul>

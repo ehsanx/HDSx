@@ -41,6 +41,11 @@ After you start the render, **observe:**
 -   **The Terminal (Bottom):** You will see text scrolling quickly. This is your code chunks executing.
 -   **The Preview (Right):** A new pane should appear showing a beautiful, formatted report with your name on it.
 
+<!-- AI-EDIT(2026-06-11): WI-012/TF-010 — where the rendered HTML lands and how to open it — needs review -->
+::: {.callout-note title="Where is my HTML file?"}
+After rendering, your HTML file is saved to the `docs/` folder at the project root --- not beside the `.qmd` file. To view it, right-click the file in the Explorer panel and choose the browser/open-preview option shown in the instructions, or start a local server from the terminal and open the URL shown. You cannot open the HTML by typing its name in the terminal.
+:::
+
 **Congratulations!** You just performed "Knowledge Translation"—turning raw code into a human-readable document.
 
 ## If it fails (Troubleshooting)
@@ -50,4 +55,7 @@ Rendering involves many moving parts, so it sometimes gets stuck.
 -   **The "Wait" Rule:** If nothing happens for 20 seconds, the background process might be initializing. Give it a moment.
 -   **The "Retry" Rule:** Sometimes the connection hiccups. Run **Quarto: Render Document** one more time.
 -   **The "No Button" Rule:** The Render button sometimes does not appear in a fresh or stale Codespace. You do not need it — the Command Palette and terminal methods above always work. <!-- AI-EDIT(2026-06-11): D-003/GAP-R678-1 — missing-button fallback — needs review -->
+-   **The "TeX Warning" Rule:** If you see a warning that no TeX installation was found, you can ignore it as long as your HTML file was created successfully. Only run `quarto install tinytex` if you need to produce PDF output. <!-- AI-EDIT(2026-06-11): WI-013/MIT-021 — needs review -->
 -   **The "Red Text" Rule:** Look at the **Terminal** tab at the bottom. If you see red text, it is an error message. Read it—it usually tells you exactly what went wrong (e.g., "File not found" or "Syntax error").
+
+Still stuck after trying these rules? See [Troubleshooting: Rebuild Container](workflows09-troubleshooting.qmd) for the step-by-step fix with screenshots. <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review -->

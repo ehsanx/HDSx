@@ -1,5 +1,8 @@
 # Load and Inspect Data
 
+<!-- AI-EDIT(2026-06-11): TF-017, GAP-R345-8 — needs review -->
+**What to do on this page:** run the Python code below as written, in `translation.ipynb`, one cell at a time — click the play button beside each cell or press `Shift+Enter`, and the output appears below the cell. You are not asked to translate this Python into R or to modify it. Instead, compare each output with the matching R command in the table at the bottom; you built the R side in [R Deepening and Parity Check](r-deepening-parity.qmd).
+
 ## Load The NHANES Snapshot
 
 In `translation.ipynb`, load the same CSV used in the R example:

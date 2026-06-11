@@ -6,6 +6,18 @@ This week turns a slide-sized finding into a short reproducible report. A report
 
 The default publishing pathway is a private preview unless the data, repository, and group privacy checks show that public sharing is safe.
 
+<!-- AI-EDIT(2026-06-11): TF-032, MIT-095 — pointer to the D-006 workflow diagram — needs review -->
+If you want the big picture first, the [Private Preview page](report04-private-preview.qmd) opens with a workflow diagram showing how editing, rendering, previewing, committing, and publishing fit together.
+
+<!-- AI-EDIT(2026-06-11): MIT-086, TF-001 — needs review -->
+::: {.callout-important title="Required / Draft / Optional This Week"}
+- **Required (graded):** the [Assignment 9](../../assignments/assignment09-reporting/README.md) files and the group [M3 project update](../../milestones/m3-project-update/README.md), explained in [report05](report05-assignment-a9-and-m3.qmd).
+- **Draft (class work that feeds A9/M3, not graded on its own):** the report outline, rendered template, and grounding audit from the class plan below.
+- **Optional (no penalty for skipping):** public publishing — the course default is a private preview ([report04](report04-private-preview.qmd)).
+
+Tags like `[required]` and `[optional]` are defined in [How To Read Submission Lists](../../assignments/index.qmd#how-to-read-submission-lists).
+:::
+
 ## Objectives
 
 By the end of the week you can:
@@ -41,6 +53,11 @@ Week 9 turned one finding into a concise slide story. Week 10 expands the same e
 4. Add or revise one citation/source note.
 5. Complete a grounding audit for three claims.
 6. Decide whether the preview should stay private or can be public-safe.
+
+<!-- AI-EDIT(2026-06-11): TF-030, MIT-096 — D-003 render instructions for step 3 — needs review -->
+For step 3, always name the file you are rendering, for example: `quarto render weeks/week10-reporting-publishing/report-template.qmd`. In your own project, render your `report.qmd` the same way.
+
+{{< include /_snippets/render-how.qmd >}}
 
 ## Student Output
 

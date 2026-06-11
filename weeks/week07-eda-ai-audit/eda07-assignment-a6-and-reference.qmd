@@ -8,6 +8,7 @@ You have produced the four artifacts in class. This page is the bridge from stud
 
 Assignment 6 is due the Monday after Week 7 class, 4 PM. Milestone 2 (Preliminary Analysis) is due the same Monday. The good news: most of the A6 files double as M2 deliverables, so you are doing the work once.
 
+<!-- AI-EDIT(2026-06-11): TF-021 — M2 deliverable is named ai-use-note.md — needs review -->
 | A6 deliverable | Doubles as M2 deliverable? |
 |---|---|
 | `eda-note.qmd` | Yes — corresponds to `preliminary-analysis.qmd` |
@@ -15,9 +16,24 @@ Assignment 6 is due the Monday after Week 7 class, 4 PM. Milestone 2 (Preliminar
 | `table1.csv` | Yes — same file |
 | `audit-note.md` | A6 only |
 | `provenance-stewardship-note.md` | Yes — feeds the M2 `methods-note.md` |
-| `ai-use-note.md` | Yes — corresponds to the M2 `ai-audit-note.md` |
+| `ai-use-note.md` | Yes — same filename in the M2 `submission/` folder |
 
-Your team can submit the same `.qmd` for both, with the appropriate file names in the respective `submission/` folders.
+<!-- AI-EDIT(2026-06-11): TF-021, TF-059, MIT-076, WI-040 — needs review -->
+A6 is your individual assignment submission. M2 is your group milestone submission. If you reuse a `.qmd` file, copy it into the correct submission folder/repository and use the required filename for each submission. M2 may build on one member's A6 — note whose A6 it builds on in the M2 README (one attribution sentence is enough).
+
+### How to move your A6 file into the group repository
+
+A6 lives in your individual repository; M2 lives in your group repository. Reusing a file means copying it between the two. The safe beginner path:
+
+1. In your individual repository's Codespace, open your finished `eda-note.qmd`. Select all (Ctrl+A / Cmd+A) and copy.
+2. Open a Codespace on the **group** repository.
+3. Create the file with the M2 name and location — `milestones/m2-preliminary-analysis/submission/preliminary-analysis.qmd` — paste the contents, and save.
+4. Render the file in the group Codespace. If the data path does not resolve, copy the CSV into the group repository with the same relative folder structure, or update the relative path.
+5. Repeat for the other reused files, using the M2 filenames from the table above.
+6. Add one attribution sentence to the M2 README, for example: "The preliminary analysis builds on Jordan's A6 `eda-note.qmd`."
+7. Commit and Sync Changes in the group repository.
+
+Do not email files to yourself or drag them between browser windows — copying through the editor and committing in the group repository keeps every step visible in the project history.
 
 ## The six A6 deliverables, explained
 
@@ -61,6 +77,9 @@ A short note suitable for reuse in M2. Use the five-sentence template from [eda0
 
 If you used AI to draft code or prose, name what it helped with and how you verified the result. If you did not use AI, write one sentence saying so.
 
+<!-- AI-EDIT(2026-06-11): MIT-077 — needs review -->
+Wondering how this note relates to the inline `# AI prompt:` / `# Verified:` comments from [eda01](eda01-overview-and-goals.qmd)? Both are expected, but only one is graded: `ai-use-note.md` is the graded artifact, and the inline comments are the required working practice that feeds it — copy your comment pairs into the note's audit trail. The template and a filled example are on the [assignments index](../../assignments/index.qmd#the-official-ai-documentation-rule).
+
 - **Verify:** specific to chunks or prompts, not generic.
 
 ## Reproducibility checklist for A6
@@ -72,6 +91,7 @@ Before you click submit:
 - `table1.csv` is written by code (`write_csv(...)`).
 - Missingness is reported *before* the Table 1, not after.
 - The methods note avoids causal language and names the data as descriptive and unweighted.
+- If you added any package beyond the course environment, run `renv::status()` and follow the [Week 3 renv checkpoint](../week03-r-with-ai/index.qmd#minimal-renv-checkpoint) — most students will not need this. <!-- AI-EDIT(2026-06-11): MIT-168 — needs review -->
 - All six files are committed and pushed.
 
 ## A methods-note template you can reuse

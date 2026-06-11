@@ -16,19 +16,23 @@ Create or update:
 milestones/m3-project-update/submission/
 ```
 
-Include these files:
+<!-- AI-EDIT(2026-06-11): TF-043, TF-045 — needs review -->
+Include these files. Seven files looks like a lot, but only `report-draft.qmd` involves substantial work, and it grows out of your M2 analysis; the `.md` files are short notes. Tags follow [How To Read Submission Lists](../../assignments/index.qmd#how-to-read-submission-lists).
 
-- `project-update.md`
-- `report-draft.qmd`
-- `report-draft.html`
-- `dashboard-preview.md`
-- `reproducibility-note.md`
-- `feedback-request.md`
-- `ai-use-note.md`
+- `project-update.md` [required]
+- `report-draft.qmd` [required]
+- `report-draft.html` [required]
+- `dashboard-preview.md` [required] [brief — 1-3 focused bullets or sentences are enough]
+- `reproducibility-note.md` [required]
+- `feedback-request.md` [required]
+- `ai-use-note.md` [required]
+
+<!-- AI-EDIT(2026-06-11): MIT-100 (M3 portion, D-006) — needs review -->
+Committing `report-draft.html` is a deliberate exception to the course rule that rendered outputs stay out of Git: the A8, A9, and M3 submission folders commit rendered HTML so reviewers can read the work without rendering it. Everywhere else, keep rendered outputs excluded by `.gitignore`.
 
 ## What To Submit
 
-Submit your GitHub repository link on Canvas after committing and syncing the files above. In the Canvas comment box, include the latest commit hash, the folder path, and the rendered report link if one is available.
+Submit your GitHub repository link on Canvas after committing and syncing the files above. In the Canvas comment box, include the latest commit hash, the folder path, and a rendered report link [optional — include only if relevant to your project]. A link only exists if you published or shared a rendered preview; the committed `report-draft.html` is enough on its own. <!-- AI-EDIT(2026-06-11): MIT-153 — needs review -->
 
 ## Update Requirements
 
@@ -40,6 +44,9 @@ Submit your GitHub repository link on Canvas after committing and syncing the fi
 - one finding that appears stable
 - one finding or choice that needs review
 - next steps before peer review
+
+<!-- AI-EDIT(2026-06-11): WI-071, MIT-152, TF-045 — needs review -->
+`dashboard-preview.md` is a lightweight preview file. Include a link, screenshot filename, or one short note describing where the current dashboard/KT draft can be found. It is not a full report.
 
 `dashboard-preview.md` should include:
 

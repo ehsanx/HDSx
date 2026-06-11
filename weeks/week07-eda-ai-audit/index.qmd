@@ -4,7 +4,22 @@
 
 This week builds the audit trail behind a descriptive analysis. You will define an analysis cohort, check missingness, create a Table 1-style summary, and audit a planted-error starter that mimics common AI-assisted mistakes.
 
+<!-- AI-EDIT(2026-06-11): WI-037, MIT-070, TF-020 — needs review -->
+A Table 1 is a descriptive summary of the cohort before the main analysis. It usually shows who is included, key variables, missingness, and basic group summaries. It is not a causal result. Worked examples of every piece — cohort definition, exclusions, the missingness table, complete-case analysis, and a sample Table 1 — are in [eda02](eda02-cohort-and-missingness.qmd) and [eda03](eda03-worked-example.qmd).
+
 EDA is treated as **evidence stewardship**: every exclusion, statistic, and interpretation should be visible enough for another person to rerun and challenge.
+
+<!-- AI-EDIT(2026-06-11): TF-020, MIT-075 — needs review -->
+This week also revisits data provenance and Indigenous Data Sovereignty. The stewardship audit category ([eda05](eda05-ai-audit-categories.qmd)) asks the same questions you met with OCAP and CARE in [Week 1](../week01-health-data-ethics/index.qmd#indigenous-data-sovereignty): who has rights over this data, and does our use respect them?
+
+<!-- AI-EDIT(2026-06-11): MIT-086, TF-001 — needs review -->
+::: {.callout-important title="Required / Draft / Optional This Week"}
+- **Required (graded):** the six [Assignment 6](../../assignments/assignment06-eda-ai-audit/README.md) files, explained one by one in [eda07](eda07-assignment-a6-and-reference.qmd), and the group [M2 preliminary analysis](../../milestones/m2-preliminary-analysis/README.md) due the same Monday.
+- **Draft (studio work that feeds A6, not graded on its own):** the EDA note, missingness table, Table 1, and planted-error audit from [eda06](eda06-studio-planted-errors.qmd).
+- **Optional:** nothing extra this week — every listed file is required.
+
+Tags like `[required]` and `[optional]` are defined in [How To Read Submission Lists](../../assignments/index.qmd#how-to-read-submission-lists).
+:::
 
 ## Objectives
 

@@ -900,12 +900,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../assignments/assignment-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../assignments/assignment01-workflows/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 1: Modern Workflows</span></a>
   </div>
 </li>
@@ -961,12 +955,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../milestones/milestone-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Milestone Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../milestones/m0-group-formation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">M0: Group Formation</span></a>
   </div>
 </li>
@@ -998,6 +986,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../milestones/final-portfolio/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/final-portfolio-checklist.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio Checklist</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/repository-sharing-guidance.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Repository Sharing Guidance</span></a>
   </div>
 </li>
       </ul>
@@ -1163,7 +1161,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Inspect the dataset with row count, column names, variable types, and missingness.</li>
 <li>Create one cleaned or analysis-ready table using at least three <code>dplyr</code> verbs.</li>
 <li>Write one custom function, such as a function that returns mean and SD for a numeric variable.</li>
-<li>Save a small output file named <code>output/clean_data.csv</code> or <code>output/summary_table.csv</code>.</li>
+<li>Save a small output file named <code>output/summary_table.csv</code> — this is the required filename, and the starter note already writes it. <!-- AI-EDIT(2026-06-11): MIT-113 (R2-05) — needs review --></li>
 <li>Add AI audit comments near code that was drafted, debugged, or revised with AI assistance.</li>
 <li>Render the Quarto note to HTML.</li>
 <li>Commit and sync the source, rendered output, saved output file, and AI-use note.</li>
@@ -1180,7 +1178,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>The data path must be relative.</li>
 <li>Output files must be created by code, not manually edited.</li>
 <li>New packages must be named in the Quarto file and in <code>dependency-note.md</code>.</li>
-<li><code>renv</code> awareness is introductory here: run <code>renv::status()</code> and note whether you used the existing course environment or added packages. Use <code>renv::snapshot()</code> only if you intentionally added a package.</li>
+<li><code>renv</code> awareness is introductory here: run <code>renv::status()</code> and note whether you used the existing course environment or added packages. Use <code>renv::snapshot()</code> only if you intentionally added a package. In plain terms, <code>renv::status()</code> checks whether your packages match the course record, and <code>renv::snapshot()</code> updates that record. See the <a href="../../weeks/week03-r-with-ai/index.html#minimal-renv-checkpoint">Minimal renv Checkpoint on the Week 3 page</a> for a walkthrough. <!-- AI-EDIT(2026-06-11): MIT-112 — needs review --></li>
 </ul>
 </section>
 <section id="what-to-submit" class="level2">
@@ -1188,12 +1186,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Place all submission files in:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a href="#cb1-1"></a>assignments/assignment02-r-with-ai/submission/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Submit these files:</p>
+<!-- AI-EDIT(2026-06-11): MIT-115/TF-042/MIT-113/WI-064 (R2-05, D-004) — needs review -->
 <ul>
-<li><code>analysis-note.qmd</code>: Quarto source with data import, inspection, cleaning, function, and AI audit comments.</li>
-<li><code>analysis-note.html</code>: rendered output.</li>
-<li><code>output/clean_data.csv</code> or <code>output/summary_table.csv</code>: code-generated output.</li>
-<li><code>ai-use-note.md</code>: what AI helped with and how you checked it, or a sentence saying AI was not used.</li>
-<li><code>dependency-note.md</code>: packages used and whether any were added beyond the course environment.</li>
+<li><code>analysis-note.qmd</code> [required]: Quarto source with data import, inspection, cleaning, function, and AI audit comments.</li>
+<li><code>analysis-note.html</code> [required]: rendered output.</li>
+<li><code>output/summary_table.csv</code> [required]: code-generated output. Use the required filename listed in this submission checklist — do not rename it to <code>clean_data.csv</code>.</li>
+<li><code>ai-use-note.md</code> [required]: what AI helped with and how you checked it, or a sentence saying AI was not used. Template and filled example: <a href="../../assignments/index.html#the-official-ai-documentation-rule">The Official AI Documentation Rule</a>.</li>
+<li><code>dependency-note.md</code> [required]: packages used and whether any were added beyond the course environment.</li>
+<li><code>renv.lock</code> (updated at the repository root, not in the submission folder) [if applicable — required only if your workflow creates this file]: commit the updated lockfile only if you added a package and intentionally ran <code>renv::snapshot()</code>. <!-- AI-EDIT(2026-06-11): WI-077 (D-002) — needs review --></li>
 </ul>
 </section>
 <section id="submission-route" class="level2">
@@ -1206,7 +1206,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>CSV is imported with a relative path.</li>
 <li>Dataset inspection includes size, column names/types, and missingness.</li>
-<li><code>dplyr</code> workflow uses at least three relevant verbs.</li>
+<li><code>dplyr</code> workflow uses at least three verbs, as stated in the task list. <!-- AI-EDIT(2026-06-11): MIT-114 — needs review --></li>
 <li>One custom function is defined and used.</li>
 <li>Output CSV is generated by code.</li>
 <li>AI-use note and dependency note are present.</li>

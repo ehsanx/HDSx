@@ -866,12 +866,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../assignments/assignment-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../assignments/assignment01-workflows/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 1: Modern Workflows</span></a>
   </div>
 </li>
@@ -927,12 +921,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../milestones/milestone-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Milestone Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../milestones/m0-group-formation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">M0: Group Formation</span></a>
   </div>
 </li>
@@ -964,6 +952,16 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../milestones/final-portfolio/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/final-portfolio-checklist.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio Checklist</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/repository-sharing-guidance.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Repository Sharing Guidance</span></a>
   </div>
 </li>
       </ul>
@@ -1084,16 +1082,24 @@ ul.task-list li input[type="checkbox"] {
 <p>A <strong>Pull Request (PR)</strong> is a GitHub feature that says: <em>“I have changes on a branch. Please review them before they go into <code>main</code>.”</em> PRs are how professional teams and researchers collaborate. You will use them for peer review later in this course. This is also the best way to merge your own changes into main, as it forces you to see what has been change and allows one to check what they are submitting to the main branch, the backbone or “trunck” of the tree</p>
 <ol type="1">
 <li><p><strong>Sync:</strong> Click “Sync Changes” to push your branch to GitHub. This can be blue or green or say publish branch or not. Whichever the case, clicking this button will make everything on your computer update to the online github repo.</p>
+<!-- AI-EDIT(2026-06-11): WI-022 — needs review -->
+<p>Commit saves a checkpoint inside your local Codespace. Push or Sync Changes sends that checkpoint back to GitHub so it is visible in the online repository.</p>
 <p><img src="../../assets/images/git5/git5_1.png" class="img-fluid"></p></li>
 <li><p><strong>PR:</strong> Go to your repo on github online and click “Compare &amp; pull request.”</p>
 <p><img src="../../assets/images/git5/git5_3.png" class="img-fluid"></p>
 <p>We are then presented with the screen below. Press the big green button “New Pull Request”</p>
 <p><img src="../../assets/images/git5/git5_2.png" class="img-fluid"></p>
+<!-- AI-EDIT(2026-06-11): GAP-R345-5 — needs review -->
+<p>Note: GitHub does not always show this screen. Sometimes clicking <strong>Compare &amp; pull request</strong> takes you straight to the comparison/create screen. If that happens, nothing is wrong — skip ahead to choosing your branches and creating the pull request.</p>
 <p>Then you are presented this menu. This shows all the different branches that can be merged into main. Select on the one you want to merge into main.</p>
 <p><img src="../../assets/images/git5/git5_4.png" class="img-fluid"></p>
+<!-- AI-EDIT(2026-06-11): WI-023, TF-057 — needs review -->
+<p>Before creating the Pull Request, check the base repository and base branch carefully. Do not open a PR into the original course repository unless the instructor explicitly asks you to. The <strong>base</strong> is where your changes will land (it should be <code>main</code> in <em>your own</em> repository); the <strong>compare</strong> (also called <em>head</em>) is the branch holding your changes.</p>
 <p>Once you select the one, you can make a pull request! Select this.</p>
 <p><img src="../../assets/images/git5/git5_5.png" class="img-fluid"></p></li>
 <li><p><strong>Merge:</strong> Review the diff, then click “Merge pull request.” If there are merge conflicts, ask AI the best way to resolve them.</p>
+<!-- AI-EDIT(2026-06-11): GAP-R345-13 — needs review -->
+<p>For this week’s practice pull requests, merge your own PR right away — you do not need to wait for a teammate or TA to review it. You will practice reviewing each other’s pull requests later, in Milestone 4.</p>
 <p><img src="../../assets/images/git5/git6_6.png" class="img-fluid"></p></li>
 </ol>
 

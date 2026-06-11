@@ -900,12 +900,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../assignments/assignment-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../assignments/assignment01-workflows/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 1: Modern Workflows</span></a>
   </div>
 </li>
@@ -961,12 +955,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../milestones/milestone-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Milestone Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../milestones/m0-group-formation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">M0: Group Formation</span></a>
   </div>
 </li>
@@ -998,6 +986,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../milestones/final-portfolio/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/final-portfolio-checklist.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio Checklist</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/repository-sharing-guidance.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Repository Sharing Guidance</span></a>
   </div>
 </li>
       </ul>
@@ -1141,20 +1139,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="required-deliverables">Required Deliverables</h2>
 <p>Create or update:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a href="#cb1-1"></a>milestones/m3-project-update/submission/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Include these files:</p>
+<!-- AI-EDIT(2026-06-11): TF-043, TF-045 — needs review -->
+<p>Include these files. Seven files looks like a lot, but only <code>report-draft.qmd</code> involves substantial work, and it grows out of your M2 analysis; the <code>.md</code> files are short notes. Tags follow <a href="../../assignments/index.html#how-to-read-submission-lists">How To Read Submission Lists</a>.</p>
 <ul>
-<li><code>project-update.md</code></li>
-<li><code>report-draft.qmd</code></li>
-<li><code>report-draft.html</code></li>
-<li><code>dashboard-preview.md</code></li>
-<li><code>reproducibility-note.md</code></li>
-<li><code>feedback-request.md</code></li>
-<li><code>ai-use-note.md</code></li>
+<li><code>project-update.md</code> [required]</li>
+<li><code>report-draft.qmd</code> [required]</li>
+<li><code>report-draft.html</code> [required]</li>
+<li><code>dashboard-preview.md</code> [required] [brief — 1-3 focused bullets or sentences are enough]</li>
+<li><code>reproducibility-note.md</code> [required]</li>
+<li><code>feedback-request.md</code> [required]</li>
+<li><code>ai-use-note.md</code> [required]</li>
 </ul>
+<!-- AI-EDIT(2026-06-11): MIT-100 (M3 portion, D-006) — needs review -->
+<p>Committing <code>report-draft.html</code> is a deliberate exception to the course rule that rendered outputs stay out of Git: the A8, A9, and M3 submission folders commit rendered HTML so reviewers can read the work without rendering it. Everywhere else, keep rendered outputs excluded by <code>.gitignore</code>.</p>
 </section>
 <section id="what-to-submit" class="level2">
 <h2 class="anchored" data-anchor-id="what-to-submit">What To Submit</h2>
-<p>Submit your GitHub repository link on Canvas after committing and syncing the files above. In the Canvas comment box, include the latest commit hash, the folder path, and the rendered report link if one is available.</p>
+<p>Submit your GitHub repository link on Canvas after committing and syncing the files above. In the Canvas comment box, include the latest commit hash, the folder path, and a rendered report link [optional — include only if relevant to your project]. A link only exists if you published or shared a rendered preview; the committed <code>report-draft.html</code> is enough on its own. <!-- AI-EDIT(2026-06-11): MIT-153 — needs review --></p>
 </section>
 <section id="update-requirements" class="level2">
 <h2 class="anchored" data-anchor-id="update-requirements">Update Requirements</h2>
@@ -1167,6 +1168,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>one finding or choice that needs review</li>
 <li>next steps before peer review</li>
 </ul>
+<!-- AI-EDIT(2026-06-11): WI-071, MIT-152, TF-045 — needs review -->
+<p><code>dashboard-preview.md</code> is a lightweight preview file. Include a link, screenshot filename, or one short note describing where the current dashboard/KT draft can be found. It is not a full report.</p>
 <p><code>dashboard-preview.md</code> should include:</p>
 <ul>
 <li>link or screenshot path for the dashboard-style product</li>

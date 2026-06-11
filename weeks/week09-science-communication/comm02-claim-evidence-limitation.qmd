@@ -53,6 +53,21 @@ Limitation sentence:
 
 > This is a descriptive, unweighted comparison and does not show that income causes BMI differences.
 
+<!-- AI-EDIT(2026-06-11): MIT-092 — needs review -->
+Here is a second example, this time about missing data.
+
+Technical draft:
+
+> Rows with missing BMI values were excluded via `filter(!is.na(BMI))` prior to aggregation.
+
+Plain-language revision:
+
+> Before calculating the group averages, we left out people whose BMI was not recorded.
+
+Limitation sentence:
+
+> The averages describe only people with a recorded BMI, so groups with more missing values are less fully represented.
+
 ## What Not to Do
 
 Avoid these common shortcuts:

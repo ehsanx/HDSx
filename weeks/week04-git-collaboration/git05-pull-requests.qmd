@@ -4,6 +4,9 @@ A **Pull Request (PR)** is a GitHub feature that says: *"I have changes on a bra
 
 1.  **Sync:** Click "Sync Changes" to push your branch to GitHub. This can be blue or green or say publish branch or not. Whichever the case, clicking this button will make everything on your computer update to the online github repo.
 
+    <!-- AI-EDIT(2026-06-11): WI-022 — needs review -->
+    Commit saves a checkpoint inside your local Codespace. Push or Sync Changes sends that checkpoint back to GitHub so it is visible in the online repository.
+
     ![](../../assets/images/git5/git5_1.png)
 
 2.  **PR:** Go to your repo on github online and click "Compare & pull request."
@@ -14,14 +17,23 @@ A **Pull Request (PR)** is a GitHub feature that says: *"I have changes on a bra
 
     ![](../../assets/images/git5/git5_2.png)
 
+    <!-- AI-EDIT(2026-06-11): GAP-R345-5 — needs review -->
+    Note: GitHub does not always show this screen. Sometimes clicking **Compare & pull request** takes you straight to the comparison/create screen. If that happens, nothing is wrong --- skip ahead to choosing your branches and creating the pull request.
+
     Then you are presented this menu. This shows all the different branches that can be merged into main. Select on the one you want to merge into main.
 
     ![](../../assets/images/git5/git5_4.png)
+
+    <!-- AI-EDIT(2026-06-11): WI-023, TF-057 — needs review -->
+    Before creating the Pull Request, check the base repository and base branch carefully. Do not open a PR into the original course repository unless the instructor explicitly asks you to. The **base** is where your changes will land (it should be `main` in *your own* repository); the **compare** (also called *head*) is the branch holding your changes.
 
     Once you select the one, you can make a pull request! Select this.
 
     ![](../../assets/images/git5/git5_5.png)
 
 3.  **Merge:** Review the diff, then click "Merge pull request." If there are merge conflicts, ask AI the best way to resolve them.
+
+    <!-- AI-EDIT(2026-06-11): GAP-R345-13 — needs review -->
+    For this week's practice pull requests, merge your own PR right away --- you do not need to wait for a teammate or TA to review it. You will practice reviewing each other's pull requests later, in Milestone 4.
 
     ![](../../assets/images/git5/git6_6.png)

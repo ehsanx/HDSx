@@ -16,14 +16,15 @@ Create or update:
 milestones/m5-presentation/submission/
 ```
 
-Include these files:
+<!-- AI-EDIT(2026-06-11): TF-043 — needs review -->
+Include these files. All are required; tags follow [How To Read Submission Lists](../../assignments/index.qmd#how-to-read-submission-lists).
 
-- `slides.qmd`
-- `slides.html` or `slides.pdf`
-- `source-and-limitations-note.md`
-- `presentation-checklist.md`
-- `peer-feedback-received.md`
-- `ai-use-note.md`
+- `slides.qmd` [required]
+- `slides.html` or `slides.pdf` [required] — committing this rendered file for grading is a deliberate exception to the usual rule that rendered outputs stay out of Git
+- `source-and-limitations-note.md` [required]
+- `presentation-checklist.md` [required]
+- `peer-feedback-received.md` [required] [brief — 1-3 focused bullets or sentences are enough]
+- `ai-use-note.md` [required]
 
 ## What To Submit
 
@@ -39,7 +40,7 @@ Use 5 to 7 slides:
 4. Main figure or table
 5. Interpretation and limitation
 6. Practical implication or next step
-7. Backup or Q&A slide if useful
+7. Backup or Q&A slide [optional — include only if relevant to your project; a 5- or 6-slide deck with no backup slide loses nothing] <!-- AI-EDIT(2026-06-11): MIT-158 — needs review -->
 
 ## Source And Limitations Note
 
@@ -50,6 +51,11 @@ Use 5 to 7 slides:
 - whether results are descriptive, predictive, or causal
 - one privacy or stewardship caution
 - one limitation that should be stated aloud
+
+## Peer Feedback Received
+
+<!-- AI-EDIT(2026-06-11): WI-073, MIT-157, TF-047 — needs review -->
+`peer-feedback-received.md` should summarize the feedback your group received, identify the source of the feedback, and state what you changed or chose not to change before the final presentation. The main source is the M4 peer review your group received; peer feedback from the Week 9 exchange counts too if you used it. You are summarizing existing feedback, not writing a new response document.
 
 ## Reproducibility Expectations
 

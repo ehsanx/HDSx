@@ -42,7 +42,8 @@ For most students, this is the existing `selected_income` control and the line c
 
 Read your starter file with the eyes of your stated audience. Find one element that could be clearer — a label, a caption, a help text line, a README sentence, or a limitation. Pick the one that would help the audience most.
 
-Write `before-after-text.md`:
+<!-- AI-EDIT(2026-06-11): MIT-084, WI-045 — needs review -->
+Create `before-after-text.md` in the A7 submission folder: in the Explorer panel, expand `assignments/assignment07-dashboard/`, right-click the `submission` folder, and choose **New File**. Include the original wording, your revised wording, and one sentence explaining why the revision is clearer for the audience. In full, the file needs:
 
 - The original text.
 - The revised text.
@@ -73,6 +74,9 @@ In `privacy-check.md`, write the **three sentences** from [dash05](dash05-testin
 - One naming the data source and classroom-use boundary.
 - One confirming aggregate-only outputs.
 - One confirming no row-level data was shared with external AI.
+
+<!-- AI-EDIT(2026-06-11): WI-044 — needs review -->
+`testing-log.md`, `limitation-note.md`, and `privacy-check.md` are brief evidence files. One to three focused sentences or bullets are enough unless the assignment asks for more.
 
 ### Step 6 — Reproducibility and AI use (10 min)
 

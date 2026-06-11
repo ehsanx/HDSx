@@ -12,7 +12,8 @@ Each presentation uses this timing:
 - 3 minutes for questions
 - 1 minute for transition
 
-Presentation order is posted in Canvas. Groups presenting in Part 2 should submit slides before class using the same M5 submission folder as Week 12.
+<!-- AI-EDIT(2026-06-11): MIT-107, WI-063 — needs review -->
+Presentation order will be posted on Canvas here: [insert Canvas link]. Check this page before presentation day and notify the teaching team if your group is missing. Groups presenting in Part 2 should submit slides before class using the same M5 submission folder as Week 12.
 
 ## Slide Submission
 

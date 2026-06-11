@@ -32,6 +32,21 @@ Your project repository should also include:
 - presentation slides or presentation summary
 - clear README for the whole project
 
+<!-- AI-EDIT(2026-06-11): MIT-160, WI-075 — needs review -->
+A live dashboard is not required unless the assignment says so. A static preview, screenshot, or rendered HTML page is acceptable when it clearly shows the KT product and passes the privacy check.
+
+<!-- AI-EDIT(2026-06-11): TF-050 — needs review -->
+The three KT-product options, from heaviest to lightest:
+
+- **Live dashboard** — an interactive page or app a reviewer can open and click (for example, a demo-only Shiny app). Never required.
+- **Static preview** — a rendered, non-interactive HTML page committed to the repository that shows the KT product's current state.
+- **Screenshot** — an image file of the product committed to the repository, with a note saying which file or app it shows.
+
+Any of the three is acceptable for the final portfolio.
+
+<!-- AI-EDIT(2026-06-11): R2-11/R2-12 — needs review -->
+Revising earlier work is allowed and encouraged: the final portfolio is the right place to apply M4 feedback and improve assignments or milestone files you already submitted. Only the files listed above are prescribed. Beyond them, organize the repository however serves your project best, as long as the README explains the structure.
+
 ## What To Submit
 
 Submit your GitHub repository link on Canvas after committing and syncing all final materials. In the Canvas comment box, include:
@@ -57,12 +72,36 @@ Use the [Final Portfolio Checklist](final-portfolio-checklist.md) to confirm:
 - all paths are relative
 - required packages are documented
 - report renders from source
-- dashboard or KT product can be opened or rerun
+- dashboard or KT product can be opened or rerun, or its static preview is committed <!-- AI-EDIT(2026-06-11): MIT-160 — needs review -->
 - generated figures and tables can be traced to code
 - data provenance and access rules are documented
 - privacy and stewardship risks are addressed
 - AI use is disclosed and audited
 - final commit is synced before Canvas submission
+
+## What A Strong Project README Looks Like
+
+<!-- AI-EDIT(2026-06-11): TF-051 (D-007) — needs review -->
+Weak: "Final project for SPPH 381H. See files."
+
+Strong:
+
+```text
+# Income and Blood Pressure in NHANES Adults
+
+Audience: community health planners (non-technical).
+Question: how does average systolic blood pressure differ across income groups?
+
+- report/    — final report source (report.qmd) and rendered report.html
+- dashboard/ — KT product static preview (preview.html) and screenshot
+- data/      — documented access script; no raw restricted data committed
+- milestones/ — milestone submissions, including the final portfolio checklist
+
+To rerun: open the repo in Codespaces, then render report/report.qmd.
+Required packages are listed in reproducibility-note.md.
+```
+
+The strong version answers the four reader questions: what the project is, who it is for, where each artifact lives, and how to rerun it.
 
 ## AI-Use Expectations
 

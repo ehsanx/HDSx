@@ -21,7 +21,12 @@ Rscript -e '
 
 echo "==> Installing Python packages (Week 5 polyglot / reticulate demo)..."
 python3 -m pip install --upgrade pip >/dev/null
-python3 -m pip install pandas jupyter
+# AI-EDIT(2026-06-11): MIT-054 — needs review
+# Packages are declared in .devcontainer/requirements.txt rather than inline,
+# so the Python environment lives in one reviewable file — the same
+# requirements.txt habit students learn in Week 5. $(dirname "$0") keeps the
+# path correct no matter where the script is invoked from.
+python3 -m pip install -r "$(dirname "$0")/requirements.txt"
 
 echo ""
 echo "=================== TOOLCHAIN SELF-TEST ==================="

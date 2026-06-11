@@ -866,12 +866,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../assignments/assignment-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../assignments/assignment01-workflows/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 1: Modern Workflows</span></a>
   </div>
 </li>
@@ -927,12 +921,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../milestones/milestone-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Milestone Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../milestones/m0-group-formation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">M0: Group Formation</span></a>
   </div>
 </li>
@@ -964,6 +952,16 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../milestones/final-portfolio/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/final-portfolio-checklist.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio Checklist</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/repository-sharing-guidance.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Repository Sharing Guidance</span></a>
   </div>
 </li>
       </ul>
@@ -1085,20 +1083,26 @@ ul.task-list li input[type="checkbox"] {
 <h4 class="anchored" data-anchor-id="gitignore">.gitignore</h4>
 <p>Sometimes there are files you do not want to be tracked by github. This could be anything from files specific to your computer to items like patient data which should not be stored on the cloud unless allowed so by policy.</p>
 <ol type="1">
-<li><p>Create a file named <code>.gitignore</code> in your root directory: It has to be this exact spelling for git to recognize it.</p>
+<li><p>Open the <code>.gitignore</code> file in your root directory. If your repository does not already have one, create a file named <code>.gitignore</code>: It has to be this exact spelling for git to recognize it. <!-- AI-EDIT(2026-06-11): MIT-041 — needs review --></p>
 <p><img src="../../assets/images/git3/git3_1.png" class="img-fluid"></p>
 <p>You will know its correct when it has its own icon as seen above</p></li>
 <li><p>Then create a new file, any type will do but for this lesson I will create a text file called dont_want_tracked</p>
-<p><img src="../../assets/images/git3/git3_2.png" class="img-fluid"></p></li>
+<p><img src="../../assets/images/git3/git3_2.png" class="img-fluid"></p>
+<!-- AI-EDIT(2026-06-11): GAP-R345-4 — needs review -->
+<p>Notice that the file is green in the Explorer. Git colors new, untracked files green.</p></li>
 <li><p>Then open the gitignore file and add the name of the file you dont want tracked into it.</p>
 <p><img src="../../assets/images/git3/git3_4.png" class="img-fluid"></p></li>
 <li><p>Now you will see the new file, which was green is now grayed out. This shows that github is no longer tracking it and coloring it green (which it does for new files).</p>
 <p><img src="../../assets/images/git3/git3_5.png" class="img-fluid"></p></li>
 </ol>
 <p>This is simple enough right? Whenever in doubt, ask AI how to stop a file from being tracked by git and it will offer some advice. Now stage and commit this like we have done in the previous tutorial.</p>
+<!-- AI-EDIT(2026-06-11): MIT-042 — needs review -->
 </section>
-<section id="realative-paths" class="level4">
-<h4 class="anchored" data-anchor-id="realative-paths">Realative Paths</h4>
+<section id="relative-paths" class="level4">
+<h4 class="anchored" data-anchor-id="relative-paths">Relative Paths</h4>
+<!-- AI-EDIT(2026-06-11): WI-025, MIT-042, TF-015 — needs review -->
+<p>A relative path starts from the project folder and works in anyone’s Codespace. An absolute path starts from one person’s computer, such as <code>/Users/name/...</code>, and should not be used in submitted work.</p>
+<p>For example, if your repository has a folder called <code>data</code> containing <code>nhanes.csv</code>, the relative path is <code>data/nhanes.csv</code> — and it is exactly the same in your Codespace, your teammate’s Codespace, and your grader’s Codespace.</p>
 <p>Always use relative paths in your code (e.g., read.csv(“data/nhanes.csv”)), never absolute paths (e.g., read.csv(“/home/user/Documents/nhanes.csv”)). This ensures your analysis runs on any machine—including your grader’s Codespace.</p>
 <p>Reproducibility rule: Your term project must run from start to finish in a fresh Codespace. Absolute paths guarantee failure.</p>
 

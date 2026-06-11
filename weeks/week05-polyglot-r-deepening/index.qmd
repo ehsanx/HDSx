@@ -4,6 +4,9 @@
 
 Week 5 is about becoming a careful bilingual reader of data analysis code. R remains the core language for required course work. Python is introduced so you can read short `pandas` examples, translate small tasks with AI assistance, and verify that a translated result still answers the same question.
 
+<!-- AI-EDIT(2026-06-11): WI-027 — needs review -->
+Polyglot awareness means being able to recognize and compare similar data steps in more than one programming language. R remains the required language; Python is used here for comparison and translation practice.
+
 The week has two linked goals:
 
 - deepen R fluency with `dplyr`, functions, and clear summaries;
@@ -29,6 +32,9 @@ Week 4 made small changes reviewable through Git. This week uses that review min
 
 ## Case Study Data Analysis
 
+<!-- AI-EDIT(2026-06-11): MIT-050 — needs review -->
+**What to do with this code:** read it. The code block below runs automatically when this page is built — you do not need to run or change it here. You will write your own version in the studio. Direct links to the files it uses: [nhanes_equity_v6.csv (view on GitHub)](https://github.com/ehsanx/HDSx/blob/main/examples/nhanes-equity/data/nhanes_equity_v6.csv), [nhanes_equity_v6.rds (view on GitHub)](https://github.com/ehsanx/HDSx/blob/main/examples/nhanes-equity/data/nhanes_equity_v6.rds), and the [case-study README (view on GitHub)](https://github.com/ehsanx/HDSx/blob/main/examples/nhanes-equity/README.md).
+
 {{< include ../../examples/nhanes-equity/snippets/case-study-data-analysis.qmd >}}
 
 ## R Deepening Studio
@@ -45,47 +51,14 @@ If you are working from the Week 5 folder, the relative path is:
 ../../examples/nhanes-equity/data/nhanes_equity_v6.csv
 ```
 
-### R Pipeline
+<!-- AI-EDIT(2026-06-11): MIT-052 — needs review -->
+### Where To Write Your R Code
 
-```r
-library(readr)
-library(dplyr)
+You do not edit an existing file for this studio. Create one new R script named `week5.R`, saved inside the Week 5 folder (`weeks/week05-polyglot-r-deepening/`). Check the Explorer panel before saving so the file does not land in the repository root. For Assignment 4, the same code later moves into `polyglot-parity.qmd` inside `assignments/assignment04-polyglot/submission/`.
 
-nhanes <- read_csv("../../examples/nhanes-equity/data/nhanes_equity_v6.csv")
+### R Pipeline and R Function
 
-bmi_by_income <- nhanes |>
-  filter(!is.na(BMI), !is.na(IncomeGroup), !is.na(Gender)) |>
-  group_by(IncomeGroup, Gender) |>
-  summarise(
-    n = n(),
-    mean_bmi = round(mean(BMI), 2),
-    sd_bmi = round(sd(BMI), 2),
-    .groups = "drop"
-  ) |>
-  arrange(IncomeGroup, Gender)
-
-bmi_by_income
-```
-
-### R Function
-
-```r
-summarise_mean_sd <- function(data, value, group1, group2) {
-  data |>
-    filter(!is.na({{ value }}), !is.na({{ group1 }}), !is.na({{ group2 }})) |>
-    group_by({{ group1 }}, {{ group2 }}) |>
-    summarise(
-      n = n(),
-      mean_value = round(mean({{ value }}), 2),
-      sd_value = round(sd({{ value }}), 2),
-      .groups = "drop"
-    ) |>
-    arrange({{ group1 }}, {{ group2 }})
-}
-
-bmi_function_check <- summarise_mean_sd(nhanes, BMI, IncomeGroup, Gender)
-bmi_function_check
-```
+The studio code — a `dplyr` pipeline and a small reusable function — lives in one place so there is a single copy to keep correct: work through Parts A and B of [R Deepening and Parity Check](r-deepening-parity.qmd). Type or paste each block into `week5.R` and run it.
 
 Before translating, compare the pipeline output and the function output. They should have the same grouping labels and the same number of rows.
 
@@ -93,12 +66,21 @@ Before translating, compare the pipeline output and the function output. They sh
 
 Work in pairs. One partner reads the R output; the other reads the Python output.
 
+<!-- AI-EDIT(2026-06-11): WI-028 — needs review -->
+A parity check means confirming that the R result and Python result match on the important parts: row counts, column counts, grouping labels, missing values, and rounded summary values.
+
+<!-- AI-EDIT(2026-06-11): TF-017 — needs review -->
+R steps happen in your `week5.R` script. Python steps happen in your `translation.ipynb` notebook (see [Python Environment](python02-environment.qmd) for how to create it and run cells). `pandas` comes preinstalled in the course Codespace — you do not need to install anything.
+
 1. Load the NHANES CSV in R and Python.
 2. Record raw row count, column count, and missing `BMI` count in both languages.
 3. Produce mean and SD of `BMI` by `IncomeGroup` and `Gender` in R.
 4. Translate the same task to Python/pandas one step at a time.
 5. Fill in a parity table comparing row counts, grouping labels, and rounded summary values.
 6. If something does not match, write the likely reason before changing code.
+
+<!-- AI-EDIT(2026-06-11): GAP-R345-14 (R2-09) — needs review -->
+If the R and Python results do not match, follow the 15-minute rule: spend up to 15 minutes debugging on your own — recheck the [translation traps](python04-translation-traps.qmd) and write down what you tried and your best guess at the cause. After 15 minutes, ask your partner, a TA, or the instructor for help, and show your notes.
 
 Student output: a parity-check note with the R pipeline, R function, Python translation, parity table, and a short AI-use note.
 
@@ -121,7 +103,7 @@ Use the child pages in this order:
 13. [Bilingual Translation](python13-translation-exercise.qmd)
 14. [R To Python Cheatsheet](python14-cheat-sheet.qmd)
 
-For the explicit R mastery exercise, use [R Deepening and Parity Check](r-deepening-parity.qmd).
+For the explicit R mastery exercises — the worked pipeline, the reusable function, and the extra `dplyr` and function practice — use [R Deepening and Parity Check](r-deepening-parity.qmd). <!-- AI-EDIT(2026-06-11): GAP-R345-9 — needs review -->
 
 ## Assignment 4
 

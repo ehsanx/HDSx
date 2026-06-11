@@ -24,6 +24,9 @@ values[0:2]
 
 This returns the first two values, not the first three.
 
+<!-- AI-EDIT(2026-06-11): MIT-057 — needs review -->
+Walk through it position by position. Python labels the items position 0 (`10`), position 1 (`20`), and position 2 (`30`). The slice `values[0:2]` starts at position 0 and stops *just before* position 2 — that is what "end exclusive" means: the end position itself is left out. So you get `10` and `20`, but not `30`. The matching R code is `values[1:2]`, because R starts counting at 1 and includes both ends. This off-by-one difference is one of the most common AI translation bugs, so always count a small example by hand.
+
 ## Trap 2: Indentation
 
 R uses braces to mark code blocks. Python uses indentation.

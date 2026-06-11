@@ -900,12 +900,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../assignments/assignment-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../assignments/assignment01-workflows/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 1: Modern Workflows</span></a>
   </div>
 </li>
@@ -961,12 +955,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../milestones/milestone-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Milestone Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../milestones/m0-group-formation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">M0: Group Formation</span></a>
   </div>
 </li>
@@ -998,6 +986,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../milestones/final-portfolio/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/final-portfolio-checklist.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio Checklist</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/repository-sharing-guidance.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Repository Sharing Guidance</span></a>
   </div>
 </li>
       </ul>
@@ -1161,7 +1159,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Inspect the diff and confirm the change is limited to documentation or text.</li>
 <li>Check <code>.gitignore</code> and add a safe pattern if a generated or temporary file is being tracked.</li>
 <li>Commit with a message that explains the change.</li>
-<li>Push the branch and open a pull request.</li>
+<li>Push the branch and open a pull request. <!-- AI-EDIT(2026-06-11): MIT-116 — needs review --></li>
+<li>If a pull request cannot be opened, do not stop: take a screenshot of your branch and diff, and write a short explanation instead. Both go in <code>pull-request-evidence.md</code>.</li>
 <li>In the pull request description, explain what changed and how you verified the scope.</li>
 <li>Add a short note on whether your group repository is ready for M0: members, access, communication plan, and Codespaces access.</li>
 </ol>
@@ -1184,10 +1183,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Place all submission files in:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a href="#cb1-1"></a>assignments/assignment03-git/submission/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Submit these files:</p>
+<!-- AI-EDIT(2026-06-11): TF-042 — needs review -->
 <ul>
-<li><code>pull-request-evidence.md</code>: pull request URL, branch name, and final commit hash. If a pull request cannot be opened, include screenshot filenames and a written explanation.</li>
-<li><code>documentation-change.md</code>: the before/after text or a link to the changed documentation file.</li>
-<li><code>git-audit-note.md</code>: diff summary, <code>.gitignore</code> check, AI-use sentence, and M0 readiness note.</li>
+<li><code>pull-request-evidence.md</code> [required]: pull request URL, branch name, and final commit hash. If a pull request cannot be opened, include screenshot filenames and a written explanation.</li>
+<li><code>documentation-change.md</code> [required]: the before/after text or a link to the changed documentation file.</li>
+<li><code>git-audit-note.md</code> [required]: diff summary, <code>.gitignore</code> check, AI-use sentence, and M0 readiness note.</li>
 </ul>
 </section>
 <section id="submission-route" class="level2">

@@ -73,15 +73,19 @@ Submit your GitHub repository link on Canvas after committing and syncing the re
 
 Canvas applies a 7-point rubric. This assignment is part of the best-5-of-7 set for Assignments 4-10:
 
+<!-- AI-EDIT(2026-06-11): MIT-128/MIT-129 — rubric restates age filter and the four audit categories — needs review -->
 | Criterion | Points |
 |---|---:|
-| Cohort and exclusions are documented before results | 1 |
+| Cohort uses the required age 20-80 filter and exclusions are documented before results | 1 |
 | Missingness table is complete for key variables | 1 |
 | Table 1 includes N, BMI mean (SD), and age mean (SD) by group | 1.5 |
 | Methods note is descriptive, unweighted, and non-causal | 1 |
-| Audit note identifies at least five planted issues across categories | 1.25 |
+| Audit note identifies at least five planted issues across the four categories: correctness, reproducibility, interpretation, and stewardship | 1.25 |
 | Provenance/stewardship and AI-use notes are specific | 0.75 |
 | Required files render, export, commit, and sync | 0.5 |
+
+<!-- AI-EDIT(2026-06-11): MIT-130 (D-004) — clarifies the two notes are distinct; point split unchanged pending instructor decision — needs review -->
+The provenance/stewardship note and the AI-use note share one rubric row, but they are two separate required files with different jobs: the stewardship note is about the data and its responsible use, while the AI-use note is about how you used and verified AI. Write each one fully — a strong AI-use note does not cover for a missing stewardship note, or the reverse.
 
 ## Definition of Done
 

@@ -20,10 +20,11 @@ Evaluate one AI-generated visualization for correctness, clarity, bias, aggregat
 
 ## Inputs
 
-- Worked example to compare against: `weeks/week06-visualization/viz03-worked-example.qmd`
-- Dataset: `examples/nhanes-equity/data/nhanes_equity_v6.csv`
+<!-- AI-EDIT(2026-06-11): MIT-061 — direct file links added — needs review -->
+- Worked example to compare against: [`weeks/week06-visualization/viz03-worked-example.qmd`](viz03-worked-example.qmd)
+- Dataset: [`examples/nhanes-equity/data/nhanes_equity_v6.csv` (view on GitHub)](https://github.com/ehsanx/HDSx/blob/main/examples/nhanes-equity/data/nhanes_equity_v6.csv)
 <!-- AI-EDIT(2026-06-11): D-001/MIT-125 — starter relocated out of instructor/ — needs review -->
-- Flawed plot code (the artifact you will audit): `weeks/week06-visualization/studio/flawed-plot-code.R`
+- Flawed plot code (the artifact you will audit): [`weeks/week06-visualization/studio/flawed-plot-code.R` (view on GitHub)](https://github.com/ehsanx/HDSx/blob/main/weeks/week06-visualization/studio/flawed-plot-code.R)
 
 ::: {.callout-note title="Tester note"}
 Capture: a screenshot of the rendered flawed plot in the Codespaces Quarto preview, with the misleading title clearly visible. This will be referenced by other students during the studio.
@@ -33,10 +34,12 @@ Capture: a screenshot of the rendered flawed plot in the Codespaces Quarto previ
 
 1. Review the worked example and note how it labels the data source, statistic, and limitation.
 2. Open `studio/flawed-plot-code.R` and read the comments and output labels before you run it. <!-- AI-EDIT(2026-06-11): D-001/MIT-125 — needs review -->
-3. Run the script and inspect the rendered figure.
-4. List at least three issues that could mislead a reader. Tag each one with one of the audit categories below.
-5. Revise the plot so the title, scale, grouping, and caption match the evidence. Keep the cohort restriction explicit.
-6. Write a short note explaining what you changed and why.
+<!-- AI-EDIT(2026-06-11): MIT-067 — explicit run/preview steps and output path — needs review -->
+3. Run the script: open an **R terminal** in your Codespace and, from the repository root, run `source("weeks/week06-visualization/studio/flawed-plot-code.R")`.
+4. Look at the figure. It may appear in a plot viewer pane. If it does not, no problem: the script also saves `flawed-plot.png` in your current working folder (run `getwd()` if you are unsure where that is). Find the PNG in the Explorer, right-click it, and choose **Open Preview**.
+5. List at least three issues that could mislead a reader. Tag each one with one of the audit categories below.
+6. Revise the plot so the title, scale, grouping, and caption match the evidence. Keep the cohort restriction explicit.
+7. Write a short note explaining what you changed and why.
 
 ## Audit Categories
 
@@ -55,6 +58,16 @@ These are the draft files you produce in class. The Assignment 5 deliverable lis
 - `corrected-plot.png` — the exported corrected plot.
 - `caption.md` — a caption that states the statistic, data source, exclusions, and limitations.
 - `ai-use-note.md` — if you used AI, explain what it helped with and how you checked the result.
+
+<!-- AI-EDIT(2026-06-11): SS-035 — example issue/fix entry showing the required evidence level — needs review -->
+::: {.callout-tip title="What a strong audit-note entry looks like"}
+Each entry in `visual-audit-note.md` should give this level of evidence. This example is generic — it is **not** one of the planted issues in this studio's plot:
+
+- **Issue:** the draft layered `geom_smooth(method = "lm")` across NHANES cycles.
+- **Category:** design.
+- **Why it matters:** cycles are categorical labels, so a regression line implies a continuous trend the data cannot support.
+- **Correction:** replaced the smoother with `geom_line() + geom_point()` connecting the cycle summaries.
+:::
 
 ## Completion Check
 

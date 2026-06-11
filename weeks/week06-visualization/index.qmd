@@ -6,6 +6,15 @@ This week turns a descriptive summary into a visual claim. You will use `ggplot2
 
 The emphasis is not decoration. A useful plot makes the statistic, grouping, exclusions, and limitation visible enough that a reader can understand what the figure does and does not support.
 
+<!-- AI-EDIT(2026-06-11): MIT-086, TF-001 — needs review -->
+::: {.callout-important title="Required / Draft / Optional This Week"}
+- **Required (graded):** the seven [Assignment 5](../../assignments/assignment05-visualization/README.md) files, explained one by one in [viz07](viz07-assignment-a5-and-reference.qmd), plus your part of the [M1 proposal](../../milestones/m1-proposal/README.md) `initial-visual-plan.md`.
+- **Draft (studio work that feeds A5, not graded on its own):** the corrected plot, caption, and audit note from [viz06](viz06-studio-visual-audit.qmd).
+- **Optional (no penalty for skipping):** the alt-text practice in [viz07](viz07-assignment-a5-and-reference.qmd).
+
+Tags like `[required]` and `[optional]` are defined in [How To Read Submission Lists](../../assignments/index.qmd#how-to-read-submission-lists).
+:::
+
 ## Objectives
 
 By the end of the week you can:

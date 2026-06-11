@@ -4,6 +4,9 @@
 
 **Summary:** In Week 2 you learned how to use your Codespace, edit a Quarto document, and make your first commit. Now you learn how to speak R---not by memorizing syntax, but by directing an AI co-pilot and *auditing* what it writes. Your job is to be the pilot: you decide what the analysis should do, the AI drafts the code, and you verify every line before it flies.
 
+<!-- AI-EDIT(2026-06-11): TF-013, MIT-030, WI-017 — needs review -->
+**What is R?** R is the main programming language we use in this course for cleaning, summarizing, and visualizing health data. GitHub and Codespaces provide the workspace; R is the tool we use inside that workspace to work with data.
+
 **Learning Objectives:**
 
 - Understand that R is a calculator that needs specific, case-sensitive instructions.
@@ -22,7 +25,16 @@
 
 Week 2 made the project structure reproducible. This week you use that structure to load, inspect, summarize, and audit R code with AI support. Next week you will put those edits under version control.
 
+Before you start, make sure your tools are ready: [The Setup (The Cockpit)](r01-setup.qmd). <!-- AI-EDIT(2026-06-11): GAP-R345-1 — needs review -->
+
+<!-- AI-EDIT(2026-06-11): TF-013, MIT-025, WI-018 — needs review -->
+::: {.callout-note title="How to use the code blocks on this page"}
+For each code block below, follow the label above it: **Read** means inspect only, **Run** means execute it as written, **Modify** means make the requested change, and **Copy** means place it in the assignment file named in the instructions.
+:::
+
 ## Case Study Data Analysis
+
+**What to do with this code (the case-study block below):** Run — it loads the cached NHANES CSV and prints two summaries. You do not need to modify it this week. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review -->
 
 {{< include ../../examples/nhanes-equity/snippets/case-study-data-analysis.qmd >}}
 
@@ -37,12 +49,17 @@ Student output: a short Quarto note with one data inspection, one summary, and o
 
 ---
 
-## `r1.qmd` Packages: Opening the Toolbox
+<!-- AI-EDIT(2026-06-11): MIT-033, GAP-R345-1 — needs review -->
+## Packages: Opening the Toolbox
+
+Deeper dive: [Packages (The Toolbox)](r02-packages.qmd).
 
 ### Install vs Load
 
 - `install.packages("tidyverse")` — **buying** the toolbox. Done once per environment (already done in your course Codespace).
 - `library(tidyverse)` — **opening** the toolbox. Required every time you restart R or reopen your Codespace.
+
+**What to do with this code:** Run — execute it as written every time you reopen your Codespace. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review -->
 
 ```{r, eval=FALSE}
 library(tidyverse)
@@ -56,6 +73,8 @@ If you see an error like `there is no package called 'tidyverse'`, the package i
 
 `renv` helps record which R packages a project uses. You do not need to master `renv` this week, but you should recognize the three checkpoint commands that support reproducibility.
 
+**What to do with this code:** Run `renv::status()` as written; Read the other two commands so you recognize them. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review -->
+
 ```{r, eval=FALSE}
 # Check whether the project environment has changed.
 renv::status()
@@ -67,15 +86,23 @@ renv::snapshot()
 renv::restore()
 ```
 
+<!-- AI-EDIT(2026-06-11): GAP-R345-10 — needs review -->
+Use `renv::status()` to check whether the project environment matches the lockfile. Do not run `renv::snapshot()` unless the instructor asks or you have intentionally added a package, because it changes the recorded package state.
+
 For Assignment 2, run `renv::status()` and write a short dependency note. Only run `renv::snapshot()` if you intentionally added a package.
 
 ---
 
-## `r2.qmd` Core Constructs: Boxes, Toasters, and the Assembly Line
+<!-- AI-EDIT(2026-06-11): MIT-033, GAP-R345-1 — needs review -->
+## Core Constructs: Boxes, Toasters, and the Assembly Line
+
+Deeper dives: [Basics: Boxes & Toasters](r03-basics.qmd); the pipe is also covered in [Control Flow](r04-control-flow.qmd).
 
 ### Variables: The Labeled Box
 
 R has no memory unless you store results in a named box using `<-`.
+
+**What to do with this code:** Run — type it in the Console, then check the Environment pane to see your new "boxes". <!-- AI-EDIT(2026-06-11): MIT-025 — needs review -->
 
 ```{r, eval=FALSE}
 patient_age <- 55
@@ -90,6 +117,8 @@ clinic_name <- "Vancouver General"
 
 A function takes **input** and returns **output**. Arguments (inside the parentheses) control its behaviour.
 
+**What to do with this code:** Run — execute it as written. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review -->
+
 ```{r, eval=FALSE}
 mean(c(72, 85, 90), na.rm = TRUE)
 ```
@@ -100,6 +129,8 @@ mean(c(72, 85, 90), na.rm = TRUE)
 ### The Pipe: The Assembly Line
 
 The pipe passes the result of one step into the next. Think of it as **"and then..."**
+
+**What to do with this code:** Read — `data` here is a placeholder, so this block will not run as-is. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review -->
 
 ```{r, eval=FALSE}
 data %>%
@@ -115,11 +146,16 @@ You will see two pipe symbols in the wild: `%>%` (from the `magrittr` / `tidyver
 
 ---
 
-## `r3.qmd` Data Import and First Contact
+<!-- AI-EDIT(2026-06-11): MIT-033, GAP-R345-1 — needs review -->
+## Data Import and First Contact
+
+Deeper dive: [The Loading Dock (Data Import)](r05-data-import.qmd).
 
 ### Loading Data
 
 Use relative paths so your code runs on any machine (including your grader's Codespace).
+
+**What to do with this code:** Modify — replace the path with the relative path to your own file, then run it. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review -->
 
 ```{r, eval=FALSE}
 my_data <- read_csv("data/patients.csv")
@@ -134,6 +170,8 @@ my_data <- read_csv("data/patients.csv")
 ### First Contact: Inspect Before You Analyze
 
 Never start analysis without looking at your data. Run these four checks:
+
+**What to do with this code:** Run — execute it as written once your data is loaded. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review -->
 
 ```{r, eval=FALSE}
 # How big is it?
@@ -153,13 +191,18 @@ Open the **Environment** pane (top-right in RStudio or via the R extension) to s
 
 ::: {.callout-warning}
 **Health data reality:** Real datasets like NHANES have substantial missingness. Knowing *where* and *how much* is missing is not optional --- it shapes every downstream decision.
+
+<!-- AI-EDIT(2026-06-11): MIT-034 — needs review -->
+A concrete example: in NHANES, income questions are skipped far more often than age questions. If you silently drop rows with missing income, your "average" quietly excludes many of the very people a health-equity analysis is trying to describe. Handling missingness carefully is part of responsible data stewardship, not just a coding chore.
 :::
 
 ---
 
-## `r4.qmd` Data Transformation: The Five `dplyr` Verbs
+## Data Transformation: The Five `dplyr` Verbs <!-- AI-EDIT(2026-06-11): MIT-033 — needs review -->
 
 These five verbs are the core of data wrangling in R. You will use them in nearly every assignment and in your term project.
+
+**What to do with the code in this section:** Modify — swap in your own dataset and column names, then run each block. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review -->
 
 ### `filter()` — Keep rows that match a condition
 
@@ -217,9 +260,14 @@ my_data %>%
 
 ---
 
-## `r5.qmd` Control Flow: Auditing AI Decisions
+<!-- AI-EDIT(2026-06-11): MIT-033, GAP-R345-1 — needs review -->
+## Control Flow: Auditing AI Decisions
+
+Deeper dive: [Control Flow](r04-control-flow.qmd).
 
 You will not write many `if/else` blocks or loops by hand. But AI frequently generates them, so you need to **read** them.
+
+**What to do with the code in this section:** Read — these are patterns to recognize in AI output; you do not need to run them. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review -->
 
 ### If/Else: The Fork in the Road
 
@@ -249,11 +297,13 @@ In R, loops are rarely the best tool. If AI gives you a loop, ask: *"Can this be
 
 ---
 
-## `r6.qmd` Writing a Simple Function
+## Writing a Simple Function <!-- AI-EDIT(2026-06-11): MIT-033 — needs review -->
 
 The syllabus asks you to write at least one custom function. A function packages a repeated task so you don't copy-paste code.
 
 ### Example: A Reusable Summary
+
+**What to do with this code:** Run, then Modify — run it as written on your data, then change one thing as described in "Your Task" below. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review -->
 
 ```{r, eval=FALSE}
 summarise_column <- function(data, column_name) {
@@ -283,7 +333,10 @@ summarise_column(my_data, "age")
 
 ---
 
-## `r7.qmd` Debugging: Reading the Red Text
+<!-- AI-EDIT(2026-06-11): MIT-033, GAP-R345-1 — needs review -->
+## Debugging: Reading the Red Text
+
+Deeper dive: [The Detective (Debugging)](r06-debugging.qmd).
 
 Errors are normal. AI makes mistakes, you make typos, and data surprises you.
 
@@ -306,11 +359,17 @@ Errors are normal. AI makes mistakes, you make typos, and data surprises you.
 
 ::: {.callout-warning}
 **AI debugging guardrail:** When AI suggests a fix, re-read the corrected code before running it. Does the fix address the *actual* error, or did AI rewrite the whole chunk and change your logic?
+
+<!-- AI-EDIT(2026-06-11): WI-019 — needs review -->
+When asking AI for help, explicitly say: *"Do not change the logic or intended result of my code. Explain any suggested change before rewriting it."*
 :::
 
 ---
 
-## `r8.qmd` AI Safety: The Audit Checklist
+<!-- AI-EDIT(2026-06-11): MIT-033, GAP-R345-1 — needs review -->
+## AI Safety: The Audit Checklist
+
+Deeper dive: [AI Safety: The Audit Checklist](r07-ai-audit-checklist.qmd).
 
 Every time you accept AI-generated code, run through this checklist:
 
@@ -322,7 +381,11 @@ Every time you accept AI-generated code, run through this checklist:
 
 ### The Paper Trail Rule
 
+Deeper dive: [The Paper Trail (Comments)](r08-comments.qmd). <!-- AI-EDIT(2026-06-11): GAP-R345-1 — needs review -->
+
 Every time you use AI to write a code chunk, add a `#` comment above it explaining what you asked for and what you verified:
+
+**What to do with this code:** Read — then imitate this comment pattern above your own AI-assisted chunks. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review -->
 
 ```{r, eval=FALSE}
 # AI prompt: "Calculate mean BMI by sex, handling NAs"
@@ -336,9 +399,11 @@ This comment trail is your audit log. It demonstrates accountability (required b
 
 ---
 
-## `r9.qmd` Exporting Clean Data
+## Exporting Clean Data <!-- AI-EDIT(2026-06-11): MIT-033 — needs review -->
 
 After cleaning and transforming, save your work so future weeks can pick up where you left off.
+
+**What to do with this code:** Run — it creates `output/clean_data.csv`; create the `output/` folder first if it does not exist. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review -->
 
 ```{r, eval=FALSE}
 # Save a clean version for Week 4 and beyond
@@ -353,11 +418,13 @@ write_csv(my_data, "output/clean_data.csv")
 
 ---
 
-## `r10.qmd` Literate Analysis in Quarto
+## Literate Analysis in Quarto <!-- AI-EDIT(2026-06-11): MIT-033 — needs review -->
 
 Your `.qmd` file is not just code --- it is a **document**. Weave narrative around your code chunks to explain what you are doing and why.
 
 ### Pattern
+
+**What to do with this code:** Read — a pattern to imitate in your own document, not text to paste as-is. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review -->
 
 ````markdown
 ## Data Inspection
@@ -381,7 +448,7 @@ This interleaving of code and prose is **literate programming** --- the methodol
 
 ---
 
-## `r11.qmd` Knowledge Check
+## Knowledge Check <!-- AI-EDIT(2026-06-11): MIT-033 — needs review -->
 
 1. What is the difference between `install.packages()` and `library()`?
 2. Why is `na.rm = TRUE` important when working with health data?
@@ -394,13 +461,17 @@ This interleaving of code and prose is **literate programming** --- the methodol
 
 ---
 
-## `r12.qmd` Assignment: The "Mad Libs" Report
+<!-- AI-EDIT(2026-06-11): MIT-032, MIT-033, GAP-R345-1 — needs review -->
+## Assignment: The "Mad Libs" Report
+
+Full instructions: [Assignment 2 README](../../assignments/assignment02-r-with-ai/README.md). Short version: [Assignment: The "Mad Libs" Report](r09-assignment-mad-libs.qmd).
 
 **Task:** Build a short Quarto report that loads, inspects, transforms, and summarizes a health dataset --- using your AI co-pilot for code generation and your own judgment for verification.
 
 ### Step-by-Step Workflow
 
-1. Open `week3_assignment.qmd` in your Codespace.
+<!-- AI-EDIT(2026-06-11): MIT-032 — needs review -->
+1. Open the [Assignment 2 README](../../assignments/assignment02-r-with-ai/README.md) and follow its setup steps: copy the starter file (`assignments/assignment02-r-with-ai/starter-analysis.qmd`) into your submission folder as `analysis-note.qmd`. The dataset is `examples/nhanes-equity/data/nhanes_equity_v6.csv` ([view on GitHub](https://github.com/ehsanx/HDSx/blob/main/examples/nhanes-equity/data/nhanes_equity_v6.csv)).
 2. **Load packages and data:** Use AI to write the `library()` and `read_csv()` calls. Verify the data loaded correctly with `dim()` and `glimpse()`.
 3. **Inspect missingness:** Run `colSums(is.na(...))`. Add a Markdown paragraph interpreting what you see.
 4. **Transform:** Use `dplyr` verbs to:
@@ -421,7 +492,10 @@ A rendered `.qmd` that a reader can follow as a narrative: what data you started
 
 ---
 
-## `r13.qmd` Quick Reference
+<!-- AI-EDIT(2026-06-11): MIT-033, GAP-R345-1 — needs review -->
+## Quick Reference
+
+See also: [Final Summary Checklist](r10-final-checklist.qmd).
 
 | Concept | R code | Notes |
 |---|---|---|

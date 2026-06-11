@@ -1,5 +1,13 @@
 # Optional Pathways {.unnumbered}
 
+<!-- AI-EDIT(2026-06-11): WI-061 (D-002) — needs review -->
+{{< include /_snippets/demo-only.qmd >}}
+
+The advanced deployment and Python-flavoured pathways are optional demonstrations. Complete the required portfolio polish first, then explore optional pathways only if you have time and instructor approval.
+
+<!-- AI-EDIT(2026-06-11): WI-076 (D-002) — needs review -->
+Everything on this page is [optional — include only if relevant to your project]. Skipping it carries no penalty (tag vocabulary: [How To Read Submission Lists](../../assignments/index.qmd#how-to-read-submission-lists)).
+
 ## Keep the Core First
 
 Optional pathways are only useful after the core portfolio works:

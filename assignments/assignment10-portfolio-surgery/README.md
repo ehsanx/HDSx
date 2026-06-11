@@ -16,7 +16,7 @@ This assignment stress-tests your project before the final portfolio. You will r
 
 - Week 11 page: `weeks/week11-portfolio-surgery/index.qmd`
 - Reproducibility protocol: `weeks/week11-portfolio-surgery/port02-fresh-codespace-test.qmd`
-- Static dashboard exemplar: `weeks/week11-portfolio-surgery/static-dashboard-ojs.qmd`
+- Static dashboard exemplar [optional — include only if relevant to your project]: `weeks/week11-portfolio-surgery/static-dashboard-ojs.qmd`. No A10 task uses this file — it is a reference only, for groups whose KT product follows the static-dashboard pathway. <!-- AI-EDIT(2026-06-11): MIT-142 (D-002) — needs review -->
 - M4 connection: `milestones/m4-peer-review/README.md`
 - Failure log template: `assignments/assignment10-portfolio-surgery/failure-log-template.md`
 - Peer review template: `assignments/assignment10-portfolio-surgery/peer-review-template.md`
@@ -59,7 +59,7 @@ Submit these files:
 
 - `reproducibility-test.md`: completed fresh-environment test protocol.
 - `failure-log.md`: failures found, evidence, fix attempted, and result.
-- `peer-review.md`: feedback received or given for M4 readiness.
+- `peer-review.md`: feedback received or given for M4 readiness. The `peer-review.md` here is your individual evidence file documenting the review you gave or received. M4 is a separate group-level submission. These are two different documents with different purposes. <!-- AI-EDIT(2026-06-11): MIT-143/WI-067 — needs review -->
 - `repair-summary.md`: files changed and why.
 - `final-risk-list.md`: remaining risks or a statement that no known risks remain.
 - `ai-use-note.md`: what AI helped with and how you checked it, or a sentence saying AI was not used.

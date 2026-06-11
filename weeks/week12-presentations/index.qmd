@@ -12,7 +12,8 @@ Each presentation uses this timing:
 - 3 minutes for questions
 - 1 minute for transition
 
-Presentation order is posted in Canvas. Groups presenting in Part 1 should arrive with rendered slides and the project repository link ready to share.
+<!-- AI-EDIT(2026-06-11): MIT-107, WI-063 — needs review -->
+Presentation order will be posted on Canvas here: [insert Canvas link]. Check this page before presentation day and notify the teaching team if your group is missing. Groups presenting in Part 1 should arrive with rendered slides and the project repository link ready to share.
 
 ## Slide Submission
 
@@ -24,6 +25,11 @@ milestones/m5-presentation/submission/slides.html
 ```
 
 If you render to PDF instead of HTML, submit `slides.pdf`. Submit the GitHub repository link on Canvas with the latest commit hash and the slide path.
+
+<!-- AI-EDIT(2026-06-11): TF-039, MIT-108, WI-062 — needs review -->
+::: {.callout-note title="What is a commit hash?"}
+A commit hash is the unique identifier GitHub assigns every saved version of your work. It looks like `a3f92bc`. To find it, go to your repository on GitHub, click **Commits**, and copy the short code on the right. You can also run `git log --oneline -1` in the terminal.
+:::
 
 ## Presentation Rubric
 

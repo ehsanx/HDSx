@@ -2,18 +2,29 @@
 
 Before we start flying, we need to check our instruments in **VS Code**. If your environment isn't set up correctly, your code will not run.
 
+<!-- AI-EDIT(2026-06-11): MIT-030 — needs review -->
+A quick orientation: GitHub and Codespaces are the *workspace* --- they store your files and give you a computer in the browser. R is the *tool* you will use inside that workspace to clean, summarize, and visualize health data.
+
+<!-- AI-EDIT(2026-06-11): WI-020 — needs review -->
+The Codespace should open ready to use. If R, Quarto, required packages, or Copilot Chat are missing, stop and follow the troubleshooting step rather than manually changing the environment unless instructed.
+
 ## Verify Your AI Extensions
 1. Click the **Extensions** icon on the far-left sidebar (it looks like four squares).
 2. In the search bar, ensure both **GitHub Copilot Chat** and **R** are installed and active. 
 
 ![](../../assets/images/week3/r1.png)
 
-## Set the AI Model to "0x"
-1. Open the Copilot Chat sidebar (Shortcut: **Ctrl+Alt+I** or **Cmd+Option+I** on Mac).
-2. Look for the model selector dropdown at the bottom of the chat window. 
-3. **Crucial Check:** Choose a model with a **"0x" multiplier** (like GPT-4o 0x). If you do not do this, you will quickly run out of your free student quota.
+<!-- AI-EDIT(2026-06-11): MIT-028, MIT-029 — needs review -->
+## Pick a Chat Model
+1. Open the Copilot Chat sidebar: go to **View → Command Palette** and run **Chat: Open Chat**, or click the chat icon at the top of the VS Code window. *Optional tip:* a keyboard shortcut (such as **Ctrl+Alt+I** on Windows) may also work, but shortcuts vary and can conflict with your browser, so use the menu path if nothing happens.
+2. Look for the model selector dropdown at the bottom of the chat window.
+3. **Quota check:** If you see a model marked as *included* or with a **"0x" multiplier**, pick it --- these models do not use up your free student quota. If your picker only shows models marked "1x" or higher, that is okay: pick any available chat model and continue. Exact model names and multipliers change over time, so your list may not match a classmate's screen.
    * *Troubleshooting:* If the Chat asks you to "Sign In" or "Subscribe," your Student Pack is not active. Use your institutional login at `copilot.microsoft.com` or authenticate via your university email at `https://m365.cloud.microsoft/chat/`.
    
+<!-- AI-EDIT(2026-06-11): GAP-R345-10 — needs review -->
+## Check the Package Environment (renv)
+This project uses `renv` to record which R package versions the course expects. Use `renv::status()` to check whether the project environment matches the lockfile. Do not run `renv::snapshot()` unless the instructor asks, because it changes the recorded package state.
+
 ## Interface Review: Where does R actually live?
 To learn R, we are going to start in the "sandbox." Here is how your screen is laid out:
 

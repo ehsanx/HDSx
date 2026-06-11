@@ -36,6 +36,12 @@ Two artifacts:
 - One revised, captioned `ggplot2` figure based on the NHANES Health Equity CSV (the Assignment 5 deliverable).
 - A short M1 visual plan paragraph naming the figure direction for your term project (one part of the Milestone 1 proposal due the same week).
 
+<!-- AI-EDIT(2026-06-11): GAP-R678-4 — needs review -->
+::: {.callout-note title="Two file formats you will keep seeing: CSV and RDS"}
+- **CSV (`.csv`)** is a plain-text table: rows and columns separated by commas. Any tool can open it — R, Python, Excel, even a text editor. The classroom dataset `nhanes_equity_v6.csv` is a CSV.
+- **RDS (`.rds`)** is R's own format for saving one R object exactly as it was. Only R reads it (with `readRDS()`). The same classroom dataset is also cached as `nhanes_equity_v6.rds` for R-only workflows.
+:::
+
 ::: {.callout-tip}
 The plot you make for A5 does not need to be the same as the figure you sketch for M1. A5 is practice on a known dataset; M1 is your team's plan for your own project. The audit standard is the same in both places.
 :::

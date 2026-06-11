@@ -4,9 +4,17 @@
 
 Project groups are 3–4 students. M0 makes sure every project team has a working collaboration setup before analytic work begins. By the end of this milestone, each group should know who is on the team, where the shared repository lives, how communication will happen, and how the team will handle reproducibility and AI use.
 
+<!-- AI-EDIT(2026-06-11): MIT-047 (R2-01, M0 portion) — needs review -->
+Your shared repository starts as a fork of the group project template linked from Canvas — do not build it as a blank repository. The fork steps are walked through on the [Week 4 group repository page](../../weeks/week04-git-collaboration/git07-group-repository.qmd).
+
 ## Due Timing
 
-Submit by the Week 4 deadline posted in Canvas. This milestone is complete/incomplete and is meant to unblock the project work that follows.
+Submit by the Week 4 deadline posted in Canvas.
+
+<!-- AI-EDIT(2026-06-11): GAP-FIN-3 — needs review -->
+::: {.callout-note title="How M0 is graded"}
+M0 is marked **complete/incomplete**. There is no point score; this milestone is meant to unblock the project work that follows.
+:::
 
 ## Required Deliverables
 
@@ -16,19 +24,23 @@ Create a `submission/` folder in this milestone directory:
 milestones/m0-group-formation/submission/
 ```
 
-Add these files:
+<!-- AI-EDIT(2026-06-11): TF-043, MIT-145 — needs review -->
+Add these files. All five are required; tags follow [How To Read Submission Lists](../../assignments/index.qmd#how-to-read-submission-lists).
 
-- `group-formation.md`
-- `repo-access-evidence.md`
-- `communication-plan.md`
-- `codespace-check.md`
-- `ai-use-note.md`
+- `group-formation.md` [required]
+- `repo-access-evidence.md` [required]
+- `communication-plan.md` [required]
+- `codespace-check.md` [required]
+- `ai-use-note.md` [required]
 
 ## What To Submit
 
 Submit your GitHub repository link on Canvas after committing and syncing the files above. In the Canvas comment box, include the latest commit hash for the submission.
 
 ## File Guidance
+
+<!-- AI-EDIT(2026-06-11): MIT-145, TF-043 — needs review -->
+Every bullet below is a required field, not an example. One short line per field is enough.
 
 `group-formation.md` should include:
 

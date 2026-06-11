@@ -195,7 +195,7 @@ To scale support with high enrollment, each student is assigned a **debugging pa
 A short Canvas module to complete before the term begins:
 
 1.  Create a **GitHub account** at [github.com](https://github.com) using your UBC email.
-2.  Choose a **professional username** (this will appear on your public portfolio).
+2.  Choose a **professional username** (it appears on your GitHub profile, and on your portfolio if you later choose to make it public). <!-- AI-EDIT(2026-06-11): GAP-R911-6 (D-006) — public portfolio is optional — needs review -->
 3.  Watch a **5-minute orientation video** (posted on Canvas) introducing the course workflow.
 4.  Complete the **pre-course survey** (anonymous; helps the teaching team calibrate to the cohort's baseline experience).
 
@@ -366,7 +366,7 @@ A significant portion of the final grade depends on reproducibility. The followi
 3.  \textbf{Dependencies declared:} All R packages recorded via \texttt{renv} (introduced in Week 3, reinforced throughout).
 4.  \textbf{No manual steps:} The pipeline from raw data to final output is fully scripted.
 5.  \textbf{README quality:} \texttt{README.md} explains the research question, data provenance, how to reproduce the analysis, and known limitations.
-6.  \textbf{.gitignore configured:} Rendered outputs, OS junk, and sensitive files are excluded from version control.
+6.  \textbf{.gitignore configured:} Rendered outputs, OS junk, and sensitive files are excluded from version control. One named exception: the Assignment 8, Assignment 9, and Milestone 3 submission folders do commit rendered HTML for grading; everywhere else, rendered outputs stay excluded. <!-- AI-EDIT(2026-06-11): MIT-100 (D-006) — rendered-HTML grading exception — needs review -->
 7.  \textbf{Commit history:} Incremental, meaningful commits throughout the term.
 8.  \textbf{Documentation:} Code is commented; Quarto documents interleave code with interpretive narrative.
 9.  \textbf{Dashboard-style KT product works:} The project includes a small dashboard-style knowledge translation product that renders or runs in the supported course workflow. If the portfolio is public, it should be viewable through GitHub Pages or another instructor-approved route; if the project is private, the teaching team must be able to render or preview it in a fresh Codespace.
@@ -476,10 +476,12 @@ This is sufficient for the course if managed well:
 
 ## Open Science & Portfolio Policy
 
-A key goal of this course is to ensure you leave with more than just a grade. By the end of the term, you will have a public-facing **Data Science Portfolio** hosted on GitHub Pages featuring real-world health data analysis - a tangible asset for your CV or LinkedIn.
+<!-- AI-EDIT(2026-06-11): GAP-R911-6 (D-006) — private-by-default publishing stance; Week-4 opt-out clause removed — needs review -->
+A key goal of this course is to ensure you leave with more than just a grade. By the end of the term, you will have a **Data Science Portfolio** featuring real-world health data analysis - a tangible asset for your CV or LinkedIn, whether you keep the repository private or share it publicly.
 
--   **Default:** We encourage all students to publish final projects as public repositories.
--   **Your privacy:** You may submit as a private repository (shared only with the teaching team) without any penalty. Communicate with the instructor by Week 4 if you opt for this.
+-   **Default: private.** Project repositories are private by default and shared only with the teaching team. There is no penalty for keeping your work private, and you do not need to request or justify this.
+-   **Going public (encouraged, never required):** After your project passes the course privacy checklist, we encourage you to make the repository public and, if you wish, publish a portfolio site with GitHub Pages. Be aware that a GitHub Pages site is public even when its source repository is private.
+-   **Private grading route:** If your project stays private, the teaching team grades it by previewing it in a fresh Codespace or by viewing the rendered HTML committed in the private repository.
 
 ## University Policies
 

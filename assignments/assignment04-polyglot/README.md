@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This assignment strengthens R first, then translates a small descriptive task to Python/pandas and checks whether both languages produce the same answer. The goal is careful bilingual reading, not Python mastery.
+This assignment strengthens R first, then translates a small descriptive task to Python/pandas and checks whether both languages produce the same answer. The goal is careful reading of code in both R and Python, not Python mastery. <!-- AI-EDIT(2026-06-11): MIT-123 — needs review -->
 
 ## Learning Objectives
 
@@ -62,7 +62,9 @@ Submit these files:
 - `translation.ipynb`: Python/pandas translation notebook.
 - `helpers.py`: reusable Python helper script called from the notebook.
 - `parity-table.csv`: completed parity table.
-- `dependency-note.md`: Python/R dependency note, plus `requirements.txt` if extra Python packages were added.
+- `dependency-note.md`: Python/R dependency note.
+<!-- AI-EDIT(2026-06-11): WI-065 — needs review -->
+- `requirements.txt` [if applicable — required only if your workflow creates this file]: `requirements.txt` is required only if you added extra Python packages. If you did not add packages, state "No extra Python packages added" in `dependency-note.md` instead of creating an empty file.
 - `ai-use-note.md`: what AI helped translate or debug and how you verified the result.
 
 ## Submission Route

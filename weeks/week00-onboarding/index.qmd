@@ -4,6 +4,16 @@
 
 Week 0 gets the account setup and orientation work out of the way before the first class. You do not need to install local software for this course. The default workflow uses a personal fork of the course template repository, GitHub Codespaces, Quarto, and Canvas.
 
+<!-- AI-EDIT(2026-06-11): GAP-OLDM-2, MIT-087 — needs review -->
+::: {.callout-note title="Four terms you will see all course"}
+- **Repository (repo):** a project folder stored on GitHub. It holds all the files for your coursework — think of it as your cloud drive.
+- **Codespace:** a ready-to-use computer in the cloud that opens in your browser, with R, Python, and Quarto already installed — think of it as a public computer in the library.
+- **IDE (integrated development environment):** the program you write code in. This course uses VS Code, which is what a Codespace opens.
+- **Quarto:** the tool that turns a document mixing text and code (a `.qmd` file) into a polished web page or report.
+
+Week 2 walks through each of these step by step — you do not need to master them now.
+:::
+
 ## Required Tasks
 
 Complete these steps before Week 1:

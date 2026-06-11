@@ -866,12 +866,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../assignments/assignment-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../assignments/assignment01-workflows/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 1: Modern Workflows</span></a>
   </div>
 </li>
@@ -927,12 +921,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../milestones/milestone-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Milestone Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../milestones/m0-group-formation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">M0: Group Formation</span></a>
   </div>
 </li>
@@ -964,6 +952,16 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../milestones/final-portfolio/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/final-portfolio-checklist.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio Checklist</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/repository-sharing-guidance.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Repository Sharing Guidance</span></a>
   </div>
 </li>
       </ul>
@@ -1134,6 +1132,24 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>The Analogy:</strong> Think of this as the “ventilation system” starting up in a lab. It takes a moment to get the environment ready.</li>
 </ul>
 <p><strong>Success:</strong> You should see <strong>VS Code</strong> (a dark-themed code editor) appear in your browser window.</p>
+<!-- AI-EDIT(2026-06-11): MIT-018 — self-test runs automatically; what to expect and the View Creation Log fallback — needs review -->
+<div class="callout callout-style-default callout-note callout-titled" title="The TOOLCHAIN SELF-TEST">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+The TOOLCHAIN SELF-TEST
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The setup runs <strong>automatically</strong> — you do not need to start anything. Near the end of the build, a block titled <strong><code>TOOLCHAIN SELF-TEST</code></strong> prints in the terminal. It lists version numbers for R, Quarto, and Python, then runs <code>quarto check</code>.</p>
+<ul>
+<li><strong>If you do not see it (or scrolled past it):</strong> open the Command Palette (<code>F1</code>) and run <strong>Codespaces: View Creation Log</strong> to see the full build output.</li>
+<li><strong>If the self-test shows errors:</strong> do not try to install software yourself. Rebuild the environment instead — see <a href="../../weeks/week02-modern-workflows/workflows09-troubleshooting.html">Troubleshooting: Rebuild Container</a> — and ask for help if it still fails.</li>
+</ul>
+</div>
+</div>
 
 
 </section>

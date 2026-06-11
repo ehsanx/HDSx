@@ -69,6 +69,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <meta name="twitter:title" content="Private Preview – Health Data Science: AI and Knowledge Translation">
@@ -865,12 +868,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../assignments/assignment-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../assignments/assignment01-workflows/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 1: Modern Workflows</span></a>
   </div>
 </li>
@@ -926,12 +923,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../milestones/milestone-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Milestone Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../milestones/m0-group-formation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">M0: Group Formation</span></a>
   </div>
 </li>
@@ -963,6 +954,16 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../milestones/final-portfolio/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/final-portfolio-checklist.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio Checklist</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/repository-sharing-guidance.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Repository Sharing Guidance</span></a>
   </div>
 </li>
       </ul>
@@ -1060,10 +1061,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#default-path" id="toc-default-path" class="nav-link active" data-scroll-target="#default-path">Default Path</a></li>
+  <li><a href="#how-the-pieces-fit-together" id="toc-how-the-pieces-fit-together" class="nav-link active" data-scroll-target="#how-the-pieces-fit-together">How the Pieces Fit Together</a></li>
+  <li><a href="#default-path" id="toc-default-path" class="nav-link" data-scroll-target="#default-path">Default Path</a></li>
+  <li><a href="#pre-commit-privacy-checklist" id="toc-pre-commit-privacy-checklist" class="nav-link" data-scroll-target="#pre-commit-privacy-checklist">Pre-Commit Privacy Checklist</a></li>
   <li><a href="#when-public-publishing-is-safe" id="toc-when-public-publishing-is-safe" class="nav-link" data-scroll-target="#when-public-publishing-is-safe">When Public Publishing Is Safe</a></li>
   <li><a href="#github-pages-as-an-optional-extension" id="toc-github-pages-as-an-optional-extension" class="nav-link" data-scroll-target="#github-pages-as-an-optional-extension">GitHub Pages as an Optional Extension</a></li>
   <li><a href="#private-preview-checklist" id="toc-private-preview-checklist" class="nav-link" data-scroll-target="#private-preview-checklist">Private Preview Checklist</a></li>
+  <li><a href="#common-errors-and-fixes" id="toc-common-errors-and-fixes" class="nav-link" data-scroll-target="#common-errors-and-fixes">Common Errors and Fixes</a></li>
   <li><a href="#final-portfolio-connection" id="toc-final-portfolio-connection" class="nav-link" data-scroll-target="#final-portfolio-connection">Final Portfolio Connection</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ehsanx/HDSx/edit/main/weeks/week10-reporting-publishing/report04-private-preview.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ehsanx/HDSx/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -1090,8 +1094,34 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<!-- AI-EDIT(2026-06-11): TF-032, MIT-095, SS-047 — D-006 workflow diagram (edit-render-preview-commit-publish) — needs review -->
+<section id="how-the-pieces-fit-together" class="level2">
+<h2 class="anchored" data-anchor-id="how-the-pieces-fit-together">How the Pieces Fit Together</h2>
+<p>Quarto turns your source file into HTML. GitHub stores both. The private preview route stops there: course staff open the committed HTML or render the report in a fresh Codespace. GitHub Pages is an optional last step that turns the rendered HTML into a public website.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+  A["Edit report.qmd&lt;br&gt;in your Codespace"] --&gt; B["Render with Quarto&lt;br&gt;(creates report.html)"]
+  B --&gt; C["Preview the HTML&lt;br&gt;in your browser"]
+  C --&gt;|Looks right| D["Commit and sync&lt;br&gt;to GitHub"]
+  C --&gt;|Something is off| A
+  D --&gt; E{"Privacy checks&lt;br&gt;passed?"}
+  E --&gt;|Default route| F["Private preview:&lt;br&gt;staff view the HTML in the repo&lt;br&gt;or a fresh Codespace"]
+  E --&gt;|"Optional, only if safe"| G["GitHub Pages:&lt;br&gt;public website"]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
 <section id="default-path" class="level2">
 <h2 class="anchored" data-anchor-id="default-path">Default Path</h2>
+<!-- AI-EDIT(2026-06-11): WI-052 — D-006 — needs review -->
+<p>For this course, publishing usually means creating a rendered, shareable output for grading or private review. Public publishing is optional and should only happen after privacy and safety checks.</p>
 <p>The default publishing route is a private preview unless the project passes privacy and stewardship checks for public sharing.</p>
 <p>Private preview means:</p>
 <ul>
@@ -1101,6 +1131,32 @@ ul.task-list li input[type="checkbox"] {
 <li>course staff have access if the repository is private.</li>
 </ul>
 <p>This is enough for A9 and M3.</p>
+<!-- AI-EDIT(2026-06-11): MIT-100 — rendered-HTML exception ruling — needs review -->
+<div class="callout callout-style-default callout-note callout-titled" title="Rendered HTML: the one exception">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Rendered HTML: the one exception
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The course <code>.gitignore</code> normally keeps rendered outputs out of Git. A8, A9, and M3 are the explicit exceptions: their <code>submission/</code> folders do commit the rendered HTML (<code>slides.html</code>, <code>report.html</code>, <code>report-draft.html</code>) so staff can grade it. Everywhere else, leave rendered files untracked.</p>
+</div>
+</div>
+<!-- AI-EDIT(2026-06-11): TF-033, MIT-099 — D-006 pre-commit privacy checklist — needs review -->
+</section>
+<section id="pre-commit-privacy-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="pre-commit-privacy-checklist">Pre-Commit Privacy Checklist</h2>
+<p>Run this check every time, before you commit and sync:</p>
+<ol type="1">
+<li>Open the Source Control panel and read the list of staged files.</li>
+<li>Unstage anything that should not go online: raw row-level data files, credentials or tokens, <code>.RData</code> workspaces, OS junk such as <code>.DS_Store</code>, and rendered files outside the A8/A9/M3 <code>submission/</code> folders.</li>
+<li>Open <code>.gitignore</code> and confirm it covers your data folder and rendered outputs. If an unwanted file keeps reappearing, add it to <code>.gitignore</code> instead of unstaging it every time.</li>
+<li>Skim the rendered HTML one last time for private URLs, tokens, or row-level records in printed output.</li>
+</ol>
+<p>If any item fails, fix it before syncing. It is much easier to keep a file out of Git than to remove it after it has been pushed.</p>
 </section>
 <section id="when-public-publishing-is-safe" class="level2">
 <h2 class="anchored" data-anchor-id="when-public-publishing-is-safe">When Public Publishing Is Safe</h2>
@@ -1114,9 +1170,38 @@ ul.task-list li input[type="checkbox"] {
 <li>the README explains data source and sharing limits.</li>
 </ul>
 <p>If any item is uncertain, keep the preview private.</p>
+<!-- AI-EDIT(2026-06-11): D-006 — Pages-public-even-if-repo-private clarification — needs review -->
+<div class="callout callout-style-default callout-warning callout-titled" title="GitHub Pages sites are always public">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+GitHub Pages sites are always public
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A GitHub Pages site is public on the open internet even when the source repository is private. Turning on Pages publishes the rendered content for anyone to see. If your project must stay private, the “private equivalent” is course staff previewing in a fresh Codespace or reading the committed HTML in your private repository — not a Pages site.</p>
+</div>
+</div>
 </section>
 <section id="github-pages-as-an-optional-extension" class="level2">
 <h2 class="anchored" data-anchor-id="github-pages-as-an-optional-extension">GitHub Pages as an Optional Extension</h2>
+<!-- AI-EDIT(2026-06-11): D-006/D-002 — demo-only banner for the optional Pages pathway — needs review -->
+<!-- AI-EDIT(2026-06-11): D-002 — course-wide standard demo-only banner (reusable include) — needs review -->
+<div class="callout callout-style-default callout-warning callout-titled" title="Demo only — not graded">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Demo only — not graded
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This pathway is a <strong>demonstration only</strong>. It is not graded and not required. Using it for graded work requires <strong>instructor approval first</strong>. The supported, graded pathway in this course is the Quarto workflow.</p>
+</div>
+</div>
 <p>GitHub Pages is useful for public portfolios, but it is not required for every student project. Public publishing should never outrank privacy, data-use rules, or stewardship obligations.</p>
 <p>If your group uses GitHub Pages, record:</p>
 <ul>
@@ -1137,6 +1222,53 @@ ul.task-list li input[type="checkbox"] {
 <li>who has access;</li>
 <li>any files intentionally excluded from public sharing.</li>
 </ul>
+<!-- AI-EDIT(2026-06-11): MIT-098, TF-030 — D-003 common render/publish errors — needs review -->
+</section>
+<section id="common-errors-and-fixes" class="level2">
+<h2 class="anchored" data-anchor-id="common-errors-and-fixes">Common Errors and Fixes</h2>
+<p>Most rendering and publishing problems this week have boring causes. Check this table before asking for help.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>What you see</th>
+<th>Likely cause</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>quarto: command not found</code></td>
+<td>The terminal opened before Codespace setup finished</td>
+<td>Open a new terminal and retry; if it persists, rebuild the Codespace</td>
+</tr>
+<tr class="even">
+<td>Render stops with red text naming an R package</td>
+<td>The package is not installed in this environment</td>
+<td>Read the first error line for the package name, then follow the week’s setup steps; do not change the environment beyond that without asking</td>
+</tr>
+<tr class="odd">
+<td><code>cannot open file</code> or <code>... does not exist</code> for a CSV</td>
+<td>Absolute path, or wrong working folder</td>
+<td>Make the path relative to the project root and re-render (see the path check on the <a href="../../weeks/week10-reporting-publishing/report05-assignment-a9-and-m3.html">Assignment 9 and M3 page</a>)</td>
+</tr>
+<tr class="even">
+<td>Render finishes but no preview opens</td>
+<td>The preview pane did not launch</td>
+<td>Find the <code>.html</code> file named in the <code>Output created:</code> line, right-click it in the Explorer, and choose <strong>Download</strong> or <strong>Open Preview</strong></td>
+</tr>
+<tr class="odd">
+<td>Citations appear as <code>[@key]</code> in the output</td>
+<td>Bibliography file not found, or key misspelled</td>
+<td>Check the <code>bibliography:</code> path in the YAML header and the key spelling in <code>references.bib</code></td>
+</tr>
+<tr class="even">
+<td>Pages site shows a 404 or old content</td>
+<td>Pages is not enabled, or is still deploying</td>
+<td>Wait a few minutes and refresh; check the repository’s <strong>Settings → Pages</strong>; remember Pages is optional</td>
+</tr>
+</tbody>
+</table>
+<p>If the fix is not obvious after a careful read of the first error line, copy the exact error message into your help request.</p>
 </section>
 <section id="final-portfolio-connection" class="level2">
 <h2 class="anchored" data-anchor-id="final-portfolio-connection">Final Portfolio Connection</h2>

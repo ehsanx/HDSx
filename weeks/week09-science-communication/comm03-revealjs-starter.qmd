@@ -4,23 +4,44 @@
 
 This page explains how to use the raw starter file, [starter-slides.qmd](starter-slides.qmd). The starter is a small revealjs deck that can render from the command line or the Quarto Render button.
 
-You may also submit a structured slide outline for A8. The revealjs path is recommended if you want practice with Quarto slides before M5.
+You may also submit a structured slide outline for A8. Both options are graded identically — pick the format that fits where you are. <!-- AI-EDIT(2026-06-11): R2-06 — needs review --> The revealjs path is recommended if you want practice with Quarto slides before M5.
 
 ## Render the Starter
 
-From the repository root, run:
+<!-- AI-EDIT(2026-06-11): TF-028, MIT-093, D-003 — RStudio mention removed; standard render include — needs review -->
+To preview the starter as-is, render it by name. From the repository root, the terminal command is:
 
 ```bash
 quarto render weeks/week09-science-communication/starter-slides.qmd
 ```
 
-Or open `starter-slides.qmd` in RStudio or VS Code and click Render.
+{{< include /_snippets/render-how.qmd >}}
 
 The rendered file should appear beside the source as `starter-slides.html`.
 
 ::: {.callout-note title="Tester note"}
 Before release, render `weeks/week09-science-communication/starter-slides.qmd` in a clean Codespace and confirm that the title slide, source note, and bibliography entry appear.
 :::
+
+<!-- AI-EDIT(2026-06-11): TF-028, MIT-093, WI-050 — needs review -->
+## Copy the Starter into Your A8 Folder
+
+The starter stays in the weeks folder as a template. Your graded files belong in the assignment submission folder.
+
+Before editing, copy `weeks/week09-science-communication/starter-slides.qmd` into `assignments/assignment08-communication/submission/` and rename it `slides.qmd`. Render from the submission folder so the required `slides.qmd` and `slides.html` are created in the correct place.
+
+Step by step in VS Code:
+
+1. In the Explorer, right-click `starter-slides.qmd` and choose **Copy**.
+2. Right-click the `assignments/assignment08-communication/submission/` folder and choose **Paste**.
+3. Right-click the pasted copy, choose **Rename**, and type `slides.qmd`.
+4. Edit `slides.qmd` there, then render it by name:
+
+```bash
+quarto render assignments/assignment08-communication/submission/slides.qmd
+```
+
+If you choose the outline path instead, name your file `slide-outline.qmd` in the same submission folder.
 
 ## The Three-Slide Story
 

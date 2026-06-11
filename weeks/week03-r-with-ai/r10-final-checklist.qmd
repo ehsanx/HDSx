@@ -2,7 +2,7 @@
 
 -   [ ] Extensions are active (Copilot + R).
 
--   [ ] Using **0x model** in Chat.
+-   [ ] Picked a chat model in Copilot Chat (an included **"0x"** model if available; any available model is fine). <!-- AI-EDIT(2026-06-11): MIT-028 — needs review -->
 
 -   [ ] Loaded `library(tidyverse)`.
 

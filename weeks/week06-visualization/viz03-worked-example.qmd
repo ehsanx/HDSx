@@ -8,6 +8,11 @@ You learned the grammar of a ggplot and made one minimal scatter on the [previou
 
 This worked example uses the NHANES Health Equity CSV snapshot to build one descriptive visualization. The plot summarizes mean BMI by income group across NHANES cycle. It is **unweighted** and should be interpreted as a classroom visualization exercise, not a population estimate.
 
+<!-- AI-EDIT(2026-06-11): TF-018, MIT-066, WI-033 — needs review -->
+::: {.callout-note title="Definition: weighted vs unweighted"}
+**Weighted** means the estimate accounts for survey design. **Unweighted** means it only summarizes the observed classroom/cache data. Use unweighted claims only as descriptive classroom practice.
+:::
+
 ```{r}
 #| label: load-nhanes-equity-visualization
 #| message: false
@@ -54,16 +59,23 @@ bmi_by_income_cycle <- nhanes |>
 bmi_by_income_cycle
 ```
 
+<!-- AI-EDIT(2026-06-11): TF-018, MIT-066, WI-034 — needs review -->
+::: {.callout-note title="Definition: hidden small cell count"}
+A hidden small cell count is a group with very few observations that may be hidden inside a chart or summary. Do not make strong claims from these groups. That is why the code above keeps only groups with `n >= 30`.
+:::
+
 ## Plot
 
+<!-- AI-EDIT(2026-06-11): MIT-063 — thicker lines + Dark2 palette so the bottom line reads clearly — needs review -->
 ```{r}
 #| label: plot-bmi-by-income-cycle
 bmi_plot <- ggplot(
   bmi_by_income_cycle,
   aes(x = Cycle, y = mean_bmi, color = IncomeGroup, group = IncomeGroup)
 ) +
-  geom_line(linewidth = 0.8) +
-  geom_point(size = 2) +
+  geom_line(linewidth = 1.2) +
+  geom_point(size = 2.5) +
+  scale_color_brewer(palette = "Dark2") +
   labs(
     title = "Mean BMI by income group across NHANES cycle",
     subtitle = "Adults age 20-80 in the prepared class dataset; unweighted descriptive summary",
@@ -82,6 +94,11 @@ bmi_plot
 ```
 
 ## Optional Plotly Check
+
+<!-- AI-EDIT(2026-06-11): MIT-064 — needs review -->
+{{< include /_snippets/demo-only.qmd >}}
+
+`plotly` is an R package that turns a static ggplot into an interactive web graphic — you can hover over points to see values and zoom into regions. <!-- AI-EDIT(2026-06-11): MIT-064 — needs review -->
 
 The core assignment uses the static `ggplot2` figure above. If `plotly` is installed, you can preview the same plot interactively while checking labels and tooltips. This extension is optional because static Quarto output is the supported submission path.
 

@@ -865,12 +865,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../assignments/assignment-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../assignments/assignment01-workflows/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 1: Modern Workflows</span></a>
   </div>
 </li>
@@ -926,12 +920,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../milestones/milestone-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Milestone Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../milestones/m0-group-formation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">M0: Group Formation</span></a>
   </div>
 </li>
@@ -963,6 +951,16 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../milestones/final-portfolio/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/final-portfolio-checklist.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio Checklist</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/repository-sharing-guidance.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Repository Sharing Guidance</span></a>
   </div>
 </li>
       </ul>
@@ -1096,6 +1094,8 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="strengths-at-a-glance" class="level2">
 <h2 class="anchored" data-anchor-id="strengths-at-a-glance">Strengths At A Glance</h2>
+<!-- AI-EDIT(2026-06-11): GAP-R345-7 — rewritten around beginner goals/examples instead of package lists — needs review -->
+<p>Think in terms of your goal, not package names:</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -1104,39 +1104,40 @@ ul.task-list li input[type="checkbox"] {
 </colgroup>
 <thead>
 <tr class="header">
-<th>Task</th>
-<th>R is often strongest for</th>
-<th>Python is often strongest for</th>
+<th>If your goal is…</th>
+<th>Better default</th>
+<th>Why</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Descriptive epidemiology</td>
-<td><code>tidyverse</code>, survey workflows, reports</td>
-<td>possible with <code>pandas</code>, but often more verbose</td>
+<td>Summarise a health dataset and write it up (like our NHANES work)</td>
+<td>R</td>
+<td>The <code>dplyr</code> steps you already know plus Quarto take you from raw CSV to a finished report in one place</td>
 </tr>
 <tr class="even">
-<td>Visualization</td>
-<td><code>ggplot2</code>, <code>plotly</code>, Quarto integration</td>
-<td><code>seaborn</code>, <code>matplotlib</code>, interactive web libraries</td>
+<td>Make clear charts for a report or slides</td>
+<td>R</td>
+<td><code>ggplot2</code> charts drop straight into your Quarto documents</td>
 </tr>
 <tr class="odd">
-<td>Machine learning</td>
-<td><code>tidymodels</code>, <code>torch</code></td>
-<td><code>scikit-learn</code>, <code>tensorflow</code>, <code>pytorch</code></td>
+<td>Read example code you found online or got from another team</td>
+<td>Either</td>
+<td>A lot of shared data code is written in Python; this week teaches you to read it without abandoning R</td>
 </tr>
 <tr class="even">
-<td>Automation</td>
-<td>project scripts and reports</td>
-<td>general-purpose scripting and APIs</td>
+<td>Write a small reusable helper function</td>
+<td>Either</td>
+<td>Both languages do this well — you practice both in Week 5</td>
 </tr>
 <tr class="odd">
-<td>Communication</td>
-<td>Quarto reports, slides, dashboards</td>
-<td>web apps, APIs, automation, notebooks</td>
+<td>Build machine-learning models or software that runs behind a website</td>
+<td>Python</td>
+<td>Most of that tooling is built Python-first; it is beyond the scope of this course</td>
 </tr>
 </tbody>
 </table>
+<p>When in doubt in this course, use R. Reach for Python only when an instruction, or your project, clearly calls for it.</p>
 </section>
 <section id="notebooks-vs.-scripts" class="level2">
 <h2 class="anchored" data-anchor-id="notebooks-vs.-scripts">Notebooks vs.&nbsp;Scripts</h2>

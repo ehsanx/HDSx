@@ -1174,6 +1174,20 @@ How to render: the course default
 <li><strong>The Terminal (Bottom):</strong> You will see text scrolling quickly. This is your code chunks executing.</li>
 <li><strong>The Preview (Right):</strong> A new pane should appear showing a beautiful, formatted report with your name on it.</li>
 </ul>
+<!-- AI-EDIT(2026-06-11): WI-012/TF-010 — where the rendered HTML lands and how to open it — needs review -->
+<div class="callout callout-style-default callout-note callout-titled" title="Where is my HTML file?">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Where is my HTML file?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>After rendering, your HTML file is saved to the <code>docs/</code> folder at the project root — not beside the <code>.qmd</code> file. To view it, right-click the file in the Explorer panel and choose the browser/open-preview option shown in the instructions, or start a local server from the terminal and open the URL shown. You cannot open the HTML by typing its name in the terminal.</p>
+</div>
+</div>
 <p><strong>Congratulations!</strong> You just performed “Knowledge Translation”—turning raw code into a human-readable document.</p>
 </section>
 <section id="if-it-fails-troubleshooting" class="level2">
@@ -1183,8 +1197,10 @@ How to render: the course default
 <li><strong>The “Wait” Rule:</strong> If nothing happens for 20 seconds, the background process might be initializing. Give it a moment.</li>
 <li><strong>The “Retry” Rule:</strong> Sometimes the connection hiccups. Run <strong>Quarto: Render Document</strong> one more time.</li>
 <li><strong>The “No Button” Rule:</strong> The Render button sometimes does not appear in a fresh or stale Codespace. You do not need it — the Command Palette and terminal methods above always work. <!-- AI-EDIT(2026-06-11): D-003/GAP-R678-1 — missing-button fallback — needs review --></li>
+<li><strong>The “TeX Warning” Rule:</strong> If you see a warning that no TeX installation was found, you can ignore it as long as your HTML file was created successfully. Only run <code>quarto install tinytex</code> if you need to produce PDF output. <!-- AI-EDIT(2026-06-11): WI-013/MIT-021 — needs review --></li>
 <li><strong>The “Red Text” Rule:</strong> Look at the <strong>Terminal</strong> tab at the bottom. If you see red text, it is an error message. Read it—it usually tells you exactly what went wrong (e.g., “File not found” or “Syntax error”).</li>
 </ul>
+<p>Still stuck after trying these rules? See <a href="../../weeks/week02-modern-workflows/workflows09-troubleshooting.html">Troubleshooting: Rebuild Container</a> for the step-by-step fix with screenshots. <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review --></p>
 
 
 </section>

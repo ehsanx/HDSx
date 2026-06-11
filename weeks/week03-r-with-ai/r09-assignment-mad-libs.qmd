@@ -1,8 +1,9 @@
 # Assignment: The “Mad Libs” Report
 
-1.  Open `week3_assignment.qmd`.
+<!-- AI-EDIT(2026-06-11): MIT-032 — needs review -->
+1.  Open the [Assignment 2 README](../../assignments/assignment02-r-with-ai/README.md) for the full instructions, then copy the starter file (`assignments/assignment02-r-with-ai/starter-analysis.qmd`) into your submission folder as `analysis-note.qmd`.
 
-2.  Use Copilot to import the Week 1 dataset.
+2.  Use Copilot to import the NHANES dataset at `examples/nhanes-equity/data/nhanes_equity_v6.csv` ([view on GitHub](https://github.com/ehsanx/HDSx/blob/main/examples/nhanes-equity/data/nhanes_equity_v6.csv)). <!-- AI-EDIT(2026-06-11): MIT-032 — needs review -->
 
 3.  Use the **Pipe** to filter and summarize one variable.
 

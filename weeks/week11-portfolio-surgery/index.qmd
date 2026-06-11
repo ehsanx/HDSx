@@ -4,7 +4,19 @@
 
 This week is about making the project survive review. The goal is not to add features. The goal is to find and repair the failures that would stop another person from opening, rendering, understanding, or trusting the final portfolio.
 
+<!-- AI-EDIT(2026-06-11): TF-034 — needs review -->
+Portfolio surgery means fixing, simplifying, documenting, and polishing the work you already have — not building something new.
+
 The core pathway is a fresh Codespace reproducibility test, README and path repair, peer review, and final risk list. Advanced deployment pathways stay optional and demo-only.
+
+<!-- AI-EDIT(2026-06-11): MIT-086, TF-001 — needs review -->
+::: {.callout-important title="Required / Draft / Optional This Week"}
+- **Required (graded):** the [Assignment 10](../../assignments/assignment10-portfolio-surgery/README.md) files and the [M4 peer review](../../milestones/m4-peer-review/README.md), explained in [port06](port06-assignment-a10-final-portfolio.qmd).
+- **Draft (class work that feeds A10, not graded on its own):** the fresh-test failure log and repair notes from [port02](port02-fresh-codespace-test.qmd).
+- **Optional / demo-only (no penalty for skipping):** the deployment and Python pathways in [port05](port05-optional-pathways.qmd).
+
+Tags like `[required]` and `[demo-only]` are defined in [How To Read Submission Lists](../../assignments/index.qmd#how-to-read-submission-lists).
+:::
 
 ## Objectives
 

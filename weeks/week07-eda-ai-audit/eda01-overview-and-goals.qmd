@@ -17,6 +17,16 @@ Every page this week supports one of these four:
 
 If any one of the four is absent, the work is not ready for Milestone 2 or Assignment 6.
 
+<!-- AI-EDIT(2026-06-11): MIT-087 — needs review -->
+::: {.callout-note title="Key Terms This Week"}
+- **Cohort:** the group of records included in the analysis after stated restrictions — the one-sentence answer to "who is in this analysis?"
+- **Missingness:** how many values are absent for each variable you use. Report it before summarizing, never after.
+- **Complete-case analysis:** keeping only rows with no missing values for the variables used. Acceptable only when the missingness counts are reported first.
+- **Table 1:** the standard descriptive summary table of a cohort — N, mean (SD), and similar statistics by group — produced before any main analysis.
+
+Each term is unpacked on [eda02](eda02-cohort-and-missingness.qmd) and in the [worked example](eda03-worked-example.qmd).
+:::
+
 ## Why this matters for AI work
 
 When you ask an AI co-pilot for "a Table 1," the model will produce one. It will not check whether the cohort makes sense, whether missingness was reported first, or whether the labels match the statistics. Those are your responsibilities. The four-artifact workflow is what makes that responsibility manageable: each artifact is a small piece you can audit on its own.

@@ -900,12 +900,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../assignments/assignment-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../assignments/assignment01-workflows/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 1: Modern Workflows</span></a>
   </div>
 </li>
@@ -961,12 +955,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../milestones/milestone-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Milestone Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../milestones/m0-group-formation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">M0: Group Formation</span></a>
   </div>
 </li>
@@ -998,6 +986,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../milestones/final-portfolio/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/final-portfolio-checklist.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio Checklist</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/repository-sharing-guidance.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Repository Sharing Guidance</span></a>
   </div>
 </li>
       </ul>
@@ -1097,6 +1095,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#why-this-matters" id="toc-why-this-matters" class="nav-link active" data-scroll-target="#why-this-matters">Why This Matters</a></li>
   <li><a href="#readme-minimums" id="toc-readme-minimums" class="nav-link" data-scroll-target="#readme-minimums">README Minimums</a></li>
+  <li><a href="#weak-vs-strong-a-readme-example" id="toc-weak-vs-strong-a-readme-example" class="nav-link" data-scroll-target="#weak-vs-strong-a-readme-example">Weak vs Strong: A README Example</a></li>
   <li><a href="#path-hygiene" id="toc-path-hygiene" class="nav-link" data-scroll-target="#path-hygiene">Path Hygiene</a></li>
   <li><a href="#dependency-notes" id="toc-dependency-notes" class="nav-link" data-scroll-target="#dependency-notes">Dependency Notes</a></li>
   <li><a href="#output-hygiene" id="toc-output-hygiene" class="nav-link" data-scroll-target="#output-hygiene">Output Hygiene</a></li>
@@ -1130,6 +1129,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="why-this-matters" class="level2">
 <h2 class="anchored" data-anchor-id="why-this-matters">Why This Matters</h2>
 <p>A reviewer should not need private instructions to understand the project. The README and file structure are part of the scientific record.</p>
+<!-- AI-EDIT(2026-06-11): WI-060 — needs review -->
+<p>Assume the reader has not taken this course. Your README and portfolio page should explain the project purpose, data source, main result, limitations, and how to reproduce the work.</p>
 <p>Good repo hygiene reduces grading friction and makes the final portfolio easier to trust.</p>
 </section>
 <section id="readme-minimums" class="level2">
@@ -1146,17 +1147,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>known limitations or risks;</li>
 <li>public/private sharing status.</li>
 </ul>
+<!-- AI-EDIT(2026-06-11): TF-037, MIT-105 — needs review -->
+</section>
+<section id="weak-vs-strong-a-readme-example" class="level2">
+<h2 class="anchored" data-anchor-id="weak-vs-strong-a-readme-example">Weak vs Strong: A README Example</h2>
+<p>A weak README tells the reader almost nothing:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a href="#cb1-1"></a># Our Project</span>
+<span id="cb1-2"><a href="#cb1-2"></a>Class project for SPPH 381H. Run the code to see the results.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>A reviewer who opens this repository does not know what the project asks, where the data comes from, or which file to run.</p>
+<p>A strong README answers those questions directly:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a href="#cb2-1"></a># Sleep and Blood Pressure in US Adults (NHANES 2017-2018)</span>
+<span id="cb2-2"><a href="#cb2-2"></a></span>
+<span id="cb2-3"><a href="#cb2-3"></a>Audience: community health staff planning sleep-screening outreach.</span>
+<span id="cb2-4"><a href="#cb2-4"></a>Question: Is short sleep associated with higher blood pressure?</span>
+<span id="cb2-5"><a href="#cb2-5"></a>Data: NHANES 2017-2018 public files; see data/README.md for the access route.</span>
+<span id="cb2-6"><a href="#cb2-6"></a>Main result: adults reporting under 6 hours of sleep had higher average</span>
+<span id="cb2-7"><a href="#cb2-7"></a>  systolic blood pressure; see reports/final-report.html.</span>
+<span id="cb2-8"><a href="#cb2-8"></a>Reproduce: open reports/final-report.qmd and render it</span>
+<span id="cb2-9"><a href="#cb2-9"></a>  (Command Palette &gt; "Quarto: Render Document").</span>
+<span id="cb2-10"><a href="#cb2-10"></a>KT product: open dashboard/index.qmd and render it the same way.</span>
+<span id="cb2-11"><a href="#cb2-11"></a>Limitations: cross-sectional data; no causal claims.</span>
+<span id="cb2-12"><a href="#cb2-12"></a>Sharing: private repository; course staff have access.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The difference is not length. The strong README answers the reviewer’s questions before they are asked: what the project is, who it is for, where the data comes from, what was found, and how to rerun it.</p>
 </section>
 <section id="path-hygiene" class="level2">
 <h2 class="anchored" data-anchor-id="path-hygiene">Path Hygiene</h2>
 <p>Use relative paths. Avoid:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a href="#cb1-1"></a>C:\Users\...</span>
-<span id="cb1-2"><a href="#cb1-2"></a>E:\GitHub\...</span>
-<span id="cb1-3"><a href="#cb1-3"></a>/Users/name/...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb3-1"><a href="#cb3-1"></a>C:\Users\...</span>
+<span id="cb3-2"><a href="#cb3-2"></a>E:\GitHub\...</span>
+<span id="cb3-3"><a href="#cb3-3"></a>/Users/name/...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Prefer paths that work from the repository root, such as:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a href="#cb2-1"></a>data/clean/analysis.csv</span>
-<span id="cb2-2"><a href="#cb2-2"></a>reports/final-report.qmd</span>
-<span id="cb2-3"><a href="#cb2-3"></a>dashboard/index.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb4-1"><a href="#cb4-1"></a>data/clean/analysis.csv</span>
+<span id="cb4-2"><a href="#cb4-2"></a>reports/final-report.qmd</span>
+<span id="cb4-3"><a href="#cb4-3"></a>dashboard/index.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="dependency-notes" class="level2">
 <h2 class="anchored" data-anchor-id="dependency-notes">Dependency Notes</h2>

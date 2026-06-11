@@ -4,10 +4,11 @@
 
 In your GitHub Codespace:
 
-1. Open the Week 5 folder.
-2. Create a new file named `translation.ipynb`.
+<!-- AI-EDIT(2026-06-11): TF-017, MIT-060, WI-029 — needs review -->
+1. In the Explorer panel, click the Week 5 folder (`weeks/week05-polyglot-r-deepening`) so it is highlighted. New files are created inside whichever folder is selected, so check this before creating or saving any file.
+2. Right-click the folder, choose **New File...**, and name the file `translation.ipynb`. Create the Python translation in `weeks/week05-polyglot-r-deepening/translation.ipynb`. Do not save it in the repository root unless the instructions explicitly say so.
 3. Select the recommended Python kernel when VS Code asks.
-4. Run this first cell:
+4. Run this first cell by clicking the play button to the left of the cell (or pressing `Shift+Enter`). The output appears directly below the cell:
 
 ```python
 print("Hello from Python. My Week 5 notebook is running.")
@@ -27,6 +28,9 @@ course = "HDSx"
 Then open the notebook Variables pane and check that both variables appear.
 
 ## Load A Tiny DataFrame
+
+<!-- AI-EDIT(2026-06-11): TF-017 — needs review -->
+`pandas` comes preinstalled in the course Codespace, so the import below just works — you do not need to install anything.
 
 ```python
 import pandas as pd

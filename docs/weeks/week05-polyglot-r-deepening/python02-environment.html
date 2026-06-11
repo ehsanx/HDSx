@@ -900,12 +900,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../assignments/assignment-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../assignments/assignment01-workflows/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 1: Modern Workflows</span></a>
   </div>
 </li>
@@ -961,12 +955,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../milestones/milestone-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Milestone Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../milestones/m0-group-formation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">M0: Group Formation</span></a>
   </div>
 </li>
@@ -998,6 +986,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../milestones/final-portfolio/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/final-portfolio-checklist.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio Checklist</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/repository-sharing-guidance.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Repository Sharing Guidance</span></a>
   </div>
 </li>
       </ul>
@@ -1127,11 +1125,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="create-a-notebook" class="level2">
 <h2 class="anchored" data-anchor-id="create-a-notebook">Create A Notebook</h2>
 <p>In your GitHub Codespace:</p>
+<!-- AI-EDIT(2026-06-11): TF-017, MIT-060, WI-029 — needs review -->
 <ol type="1">
-<li>Open the Week 5 folder.</li>
-<li>Create a new file named <code>translation.ipynb</code>.</li>
+<li>In the Explorer panel, click the Week 5 folder (<code>weeks/week05-polyglot-r-deepening</code>) so it is highlighted. New files are created inside whichever folder is selected, so check this before creating or saving any file.</li>
+<li>Right-click the folder, choose <strong>New File…</strong>, and name the file <code>translation.ipynb</code>. Create the Python translation in <code>weeks/week05-polyglot-r-deepening/translation.ipynb</code>. Do not save it in the repository root unless the instructions explicitly say so.</li>
 <li>Select the recommended Python kernel when VS Code asks.</li>
-<li>Run this first cell:</li>
+<li>Run this first cell by clicking the play button to the left of the cell (or pressing <code>Shift+Enter</code>). The output appears directly below the cell:</li>
 </ol>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="bu">print</span>(<span class="st">"Hello from Python. My Week 5 notebook is running."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
@@ -1145,6 +1144,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="load-a-tiny-dataframe" class="level2">
 <h2 class="anchored" data-anchor-id="load-a-tiny-dataframe">Load A Tiny DataFrame</h2>
+<!-- AI-EDIT(2026-06-11): TF-017 — needs review -->
+<p><code>pandas</code> comes preinstalled in the course Codespace, so the import below just works — you do not need to install anything.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb3-2"><a href="#cb3-2"></a></span>
 <span id="cb3-3"><a href="#cb3-3"></a>demo <span class="op">=</span> pd.DataFrame({</span>

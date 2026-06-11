@@ -49,6 +49,11 @@ Each issue you find during an audit should be tagged with one of these four. A g
 - **Before:** The methods note does not name the data source, the access method, or the classroom-use context.
 - **After:** The methods note says: prepared NHANES Health Equity CSV snapshot, derived from public-use NHANES files, for classroom learning only.
 
+<!-- AI-EDIT(2026-06-11): TF-020, MIT-075 — needs review -->
+::: {.callout-note title="Stewardship includes Indigenous Data Sovereignty"}
+Provenance questions do not stop at "where did the file come from?" If a dataset includes Indigenous identifiers, communities, lands, or governance-relevant content, the stewardship audit must also ask who has rights over that data. Revisit the OCAP and CARE principles from [Week 1](../week01-health-data-ethics/index.qmd#indigenous-data-sovereignty) and flag the relevance in your provenance/stewardship note. The classroom NHANES snapshot does not include Indigenous identifiers, but the audit habit is to check rather than assume.
+:::
+
 ## What goes in an audit note
 
 Each issue you flag should have three things:

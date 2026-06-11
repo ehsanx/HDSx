@@ -2,9 +2,21 @@
 
 ## Overview
 
+<!-- AI-EDIT(2026-06-11): TF-025, WI-047 — needs review -->
+Science communication means explaining scientific evidence clearly and responsibly for a specific audience. In this course, that means turning one audited health data finding into a short, plain-language message that includes evidence, limitations, and appropriate caution.
+
 This week turns one audited result into a short scientific communication product. The goal is not to make a slide deck bigger. The goal is to make one claim easier to understand, easier to verify, and harder to overstate.
 
 You will reuse work you already have: a corrected plot from Assignment 5, a Table 1 or methods note from Assignment 6, and a dashboard adaptation or limitation statement from Assignment 7.
+
+<!-- AI-EDIT(2026-06-11): MIT-086, TF-001 — needs review -->
+::: {.callout-important title="Required / Draft / Optional This Week"}
+- **Required (graded):** the [Assignment 8](../../assignments/assignment08-communication/README.md) files, explained in [comm05](comm05-assignment-a8-and-reference.qmd), plus the peer-feedback exchange in [comm04](comm04-peer-feedback.qmd).
+- **Draft (class work that feeds A8, not graded on its own):** the claim-evidence-limitation table and the 3-5 slide draft from the class plan below.
+- **Optional (no penalty for skipping):** extra slides beyond the 3-5 slide story — the deck and the outline are graded identically, so do not pad.
+
+Tags like `[required]` and `[optional]` are defined in [How To Read Submission Lists](../../assignments/index.qmd#how-to-read-submission-lists).
+:::
 
 ## Objectives
 
@@ -15,6 +27,15 @@ By the end of the week you can:
 - build or outline a short Quarto revealjs slide story;
 - cite the data source for a figure, table, or dashboard screenshot;
 - use peer feedback to improve clarity without inflating the claim.
+
+<!-- AI-EDIT(2026-06-11): MIT-091 — needs review -->
+::: {.callout-note title="Key Terms This Week"}
+- **Knowledge translation (KT):** turning evidence into a form that helps a specific person understand it, question it, or act on it.
+- **Decision context:** the decision, conversation, or question your audience is facing when they see your result.
+- **Audience-facing text:** writing meant for your audience to read directly — not notes for yourself or your team.
+- **Claim-evidence-limitation:** the three-part pattern used for every message in this course: what you say, what supports it, and what it cannot prove.
+- **Plain-language takeaway:** the one sentence a non-expert should remember, written without jargon.
+:::
 
 ## Connection
 

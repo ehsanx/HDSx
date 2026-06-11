@@ -900,12 +900,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../assignments/assignment-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../assignments/assignment01-workflows/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 1: Modern Workflows</span></a>
   </div>
 </li>
@@ -961,12 +955,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../milestones/milestone-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Milestone Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../milestones/m0-group-formation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">M0: Group Formation</span></a>
   </div>
 </li>
@@ -998,6 +986,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../milestones/final-portfolio/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/final-portfolio-checklist.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio Checklist</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/repository-sharing-guidance.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Repository Sharing Guidance</span></a>
   </div>
 </li>
       </ul>
@@ -1133,6 +1131,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="purpose" class="level2">
 <h2 class="anchored" data-anchor-id="purpose">Purpose</h2>
 <p>This assignment introduces dashboard-style Knowledge Translation. You will run or render a small dashboard product, identify the audience and question, document one control or interaction, improve one audience-facing element, test the product, and state a limitation.</p>
+<!-- AI-EDIT(2026-06-11): WI-066/WI-075 (D-002, R2-07) — needs review -->
+<p><strong>What you are not doing in A7:</strong> you are not building a full Shiny app, deploying a live dashboard, changing the dataset, or adding new analysis. You are making a small documentation or audience-facing text improvement to the starter dashboard. A live dashboard is not required unless the assignment says so. A static preview, screenshot, or rendered HTML page is acceptable when it clearly shows the KT product and passes the privacy check.</p>
 </section>
 <section id="learning-objectives" class="level2">
 <h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
@@ -1190,15 +1190,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Place all submission files in:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a href="#cb1-1"></a>assignments/assignment07-dashboard/submission/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Submit these files:</p>
+<!-- AI-EDIT(2026-06-11): TF-023/MIT-132/MIT-134 — brief/evidence labels so the log files are not over-built — needs review -->
 <ul>
-<li><code>dashboard-adaptation-note.md</code>: audience, question, control/interaction, visualization, changed element, and KT rationale.</li>
-<li><code>before-after-text.md</code>: original text and revised text.</li>
-<li><code>testing-log.md</code>: command or render path used, date tested, and result.</li>
-<li><code>limitation-note.md</code>: one limitation or caution suitable for the dashboard.</li>
-<li><code>privacy-check.md</code>: evidence that no row-level data, small-cell overclaim, or causal overclaim is shared.</li>
-<li><code>dashboard-preview.png</code>: screenshot or exported preview of the affected dashboard area.</li>
-<li><code>reproducibility-note.md</code>: how the dashboard was run or rendered in Codespaces.</li>
-<li><code>ai-use-note.md</code>: what AI helped with and how you checked it, or a sentence saying AI was not used.</li>
+<li><code>dashboard-adaptation-note.md</code> [required]: audience, question, control/interaction, visualization, changed element, and KT rationale.</li>
+<li><code>before-after-text.md</code> [required] [brief — 1-3 focused bullets or sentences are enough]: original text and revised text.</li>
+<li><code>testing-log.md</code> [required] [brief — 1-3 focused bullets or sentences are enough]: command or render path used, date tested, and result. A few lines is enough.</li>
+<li><code>limitation-note.md</code> [required] [brief — 1-3 focused bullets or sentences are enough]: one limitation or caution suitable for the dashboard. One clear sentence is enough.</li>
+<li><code>privacy-check.md</code> [required] [brief — 1-3 focused bullets or sentences are enough]: evidence that no row-level data, small-cell overclaim, or causal overclaim is shared. Three short sentences are enough.</li>
+<li><code>dashboard-preview.png</code> [required]: screenshot or exported preview of the affected dashboard area. This is evidence, not a designed product — a plain screenshot is fine.</li>
+<li><code>reproducibility-note.md</code> [required] [brief — 1-3 focused bullets or sentences are enough]: how the dashboard was run or rendered in Codespaces. One short paragraph is enough.</li>
+<li><code>ai-use-note.md</code> [required]: what AI helped with and how you checked it, or a sentence saying AI was not used.</li>
 </ul>
 </section>
 <section id="submission-route" class="level2">
@@ -1208,6 +1209,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="grading-checklist" class="level2">
 <h2 class="anchored" data-anchor-id="grading-checklist">Grading Checklist</h2>
 <p>Canvas applies a 7-point rubric. This assignment is part of the best-5-of-7 set for Assignments 4-10:</p>
+<!-- AI-EDIT(2026-06-11): MIT-133 — rubric restates documentation-only scope — needs review -->
 <table class="caption-top table">
 <colgroup>
 <col style="width: 42%">
@@ -1229,7 +1231,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: right;">1</td>
 </tr>
 <tr class="odd">
-<td>Audience-facing change improves clarity without changing analytic logic</td>
+<td>Documentation-only or UI-text-only change improves clarity without changing analytic logic</td>
 <td style="text-align: right;">1.25</td>
 </tr>
 <tr class="even">

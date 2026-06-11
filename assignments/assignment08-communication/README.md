@@ -31,7 +31,7 @@ This assignment turns one result from your analysis or dashboard into a short au
 5. Create either `slides.qmd` as a revealjs deck or `slide-outline.qmd` as a structured slide outline.
 6. Include 3-5 slides or slide sections: context, evidence, takeaway, limitation, and next step.
 7. Add one source note or citation for the dataset.
-8. Exchange peer feedback using the template.
+8. Exchange peer feedback using the template, through the Canvas Discussion thread and your in-studio partner review. Peer feedback is due at the standard syllabus deadline — the Monday after the Week 9 class, 4:00 PM, the same deadline as this assignment. Feedback you receive can also inform your final-portfolio revision. <!-- AI-EDIT(2026-06-11): MIT-136 (R2-02) — needs review -->
 9. Revise at least one sentence or slide based on feedback.
 10. Document any AI assistance used for simplification, slide wording, or feedback synthesis.
 
@@ -57,12 +57,13 @@ assignments/assignment08-communication/submission/
 
 Submit these files:
 
-- `slides.qmd` or `slide-outline.qmd`: source file for the communication product.
-- `slides.html` or `slide-outline.html`: rendered output.
-- `plain-language-summary.md`: 150-250 word audience-facing summary.
-- `peer-feedback.md`: feedback received and one revision made.
-- `source-note.md`: dataset/source note and citation information.
-- `ai-use-note.md`: what AI helped with and how you checked it, or a sentence saying AI was not used.
+<!-- AI-EDIT(2026-06-11): GAP-FIN-2/MIT-137/MIT-100 (D-006) — needs review -->
+- `slides.qmd` or `slide-outline.qmd` [required]: source file for the communication product — submit one of the two.
+- `slides.html` or `slide-outline.html` [required]: rendered output. Committing this HTML file is a named exception (A8, A9, and M3 submission folders only) to the course rule that rendered outputs stay out of Git.
+- `plain-language-summary.md` [required]: 150-250 word audience-facing summary.
+- `peer-feedback.md` [required]: feedback received and one revision made. Expected length: the completed feedback form plus one or two sentences describing the revision you made — do not write an essay.
+- `source-note.md` [required] [brief — 1-3 focused bullets or sentences are enough]: dataset/source note and citation information. <!-- AI-EDIT(2026-06-11): WI-078 (D-002) — needs review -->
+- `ai-use-note.md` [required]: what AI helped with and how you checked it, or a sentence saying AI was not used.
 
 ## Submission Route
 
@@ -70,7 +71,7 @@ Submit your GitHub repository link on Canvas after committing and syncing the re
 
 ## Grading Checklist
 
-Canvas applies a 7-point rubric. This assignment is part of the best-5-of-7 set for Assignments 4-10:
+Canvas applies a 7-point rubric. This assignment is part of the best-5-of-7 set for Assignments 4-10. The full revealjs deck and the structured slide outline are graded identically — choosing the outline does not lower your possible score. <!-- AI-EDIT(2026-06-11): MIT-135 (R2-06) — needs review -->
 
 | Criterion | Points |
 |---|---:|

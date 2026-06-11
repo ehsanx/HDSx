@@ -4,6 +4,9 @@
 
 A reviewer should not need private instructions to understand the project. The README and file structure are part of the scientific record.
 
+<!-- AI-EDIT(2026-06-11): WI-060 — needs review -->
+Assume the reader has not taken this course. Your README and portfolio page should explain the project purpose, data source, main result, limitations, and how to reproduce the work.
+
 Good repo hygiene reduces grading friction and makes the final portfolio easier to trust.
 
 ## README Minimums
@@ -19,6 +22,37 @@ The project README should name:
 - package or environment setup;
 - known limitations or risks;
 - public/private sharing status.
+
+<!-- AI-EDIT(2026-06-11): TF-037, MIT-105 — needs review -->
+## Weak vs Strong: A README Example
+
+A weak README tells the reader almost nothing:
+
+```text
+# Our Project
+Class project for SPPH 381H. Run the code to see the results.
+```
+
+A reviewer who opens this repository does not know what the project asks, where the data comes from, or which file to run.
+
+A strong README answers those questions directly:
+
+```text
+# Sleep and Blood Pressure in US Adults (NHANES 2017-2018)
+
+Audience: community health staff planning sleep-screening outreach.
+Question: Is short sleep associated with higher blood pressure?
+Data: NHANES 2017-2018 public files; see data/README.md for the access route.
+Main result: adults reporting under 6 hours of sleep had higher average
+  systolic blood pressure; see reports/final-report.html.
+Reproduce: open reports/final-report.qmd and render it
+  (Command Palette > "Quarto: Render Document").
+KT product: open dashboard/index.qmd and render it the same way.
+Limitations: cross-sectional data; no causal claims.
+Sharing: private repository; course staff have access.
+```
+
+The difference is not length. The strong README answers the reviewer's questions before they are asked: what the project is, who it is for, where the data comes from, what was found, and how to rerun it.
 
 ## Path Hygiene
 

@@ -16,19 +16,23 @@ Create or update:
 milestones/m1-proposal/submission/
 ```
 
-Include these files:
+<!-- AI-EDIT(2026-06-11): TF-043 — needs review -->
+Include these files. All five are required; tags follow [How To Read Submission Lists](../../assignments/index.qmd#how-to-read-submission-lists).
 
-- `proposal.md`
-- `data-intake-card.md`
-- `initial-visual-plan.md`
-- `reproducibility-plan.md`
-- `ai-use-note.md`
+- `proposal.md` [required]
+- `data-intake-card.md` [required]
+- `initial-visual-plan.md` [required]
+- `reproducibility-plan.md` [required]
+- `ai-use-note.md` [required]
 
 ## What To Submit
 
 Submit your GitHub repository link on Canvas after committing and syncing the files above. In the Canvas comment box, include the latest commit hash and the folder path for the milestone.
 
 ## Proposal Guidance
+
+<!-- AI-EDIT(2026-06-11): MIT-148, TF-043 — needs review -->
+Every field below is [required] unless it carries its own tag.
 
 `proposal.md` should include:
 
@@ -41,6 +45,12 @@ Submit your GitHub repository link on Canvas after committing and syncing the fi
 - planned analytic output
 - known limitations
 
+<!-- AI-EDIT(2026-06-11): WI-068, MIT-146, TF-044 — needs review -->
+KT purpose means the practical communication goal of your project: who needs to understand the result, what decision or conversation it supports, and what caution they need.
+
+<!-- AI-EDIT(2026-06-11): MIT-147 — needs review -->
+The secondary question is not the primary question in different words. It should narrow or extend the primary one. For example, primary: "How does average systolic blood pressure differ across income groups in NHANES adults?" Secondary: "Does that difference look similar for men and women?"
+
 `data-intake-card.md` should summarize:
 
 - data source and steward
@@ -49,7 +59,10 @@ Submit your GitHub repository link on Canvas after committing and syncing the fi
 - unit of analysis
 - key variables
 - privacy and stewardship considerations
-- Indigenous Data Sovereignty or CARE/OCAP awareness when relevant
+- Indigenous Data Sovereignty or CARE/OCAP awareness [when relevant — required if your data involve Indigenous Peoples, communities, or services] <!-- AI-EDIT(2026-06-11): MIT-148 — needs review -->
+
+<!-- AI-EDIT(2026-06-11): WI-069, MIT-146, TF-044 — needs review -->
+CARE/OCAP are principles and frameworks for responsible governance of Indigenous data. If your dataset includes Indigenous identifiers, communities, territories, or services, link back to the [Week 1 guidance](../../weeks/week01-health-data-ethics/index.qmd) before proceeding.
 
 `initial-visual-plan.md` should include:
 

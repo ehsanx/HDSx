@@ -8,6 +8,9 @@ This mirrors the R pattern from Week 3: once a chunk of code has a clear job, tu
 
 ## Create `helpers.py`
 
+<!-- AI-EDIT(2026-06-11): MIT-060 — needs review -->
+Before creating the file, check the Explorer panel: click the Week 5 folder so it is highlighted. New files land in whichever folder is currently selected — a `helpers.py` saved in the repository root will break the notebook import below and can cause merge conflicts later.
+
 In the Week 5 folder, create a file named `helpers.py` with this function:
 
 ```python

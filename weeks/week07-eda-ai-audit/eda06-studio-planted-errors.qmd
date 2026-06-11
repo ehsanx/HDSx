@@ -10,7 +10,10 @@ Take 2 minutes to check that your Codespace is ready:
 
 1. `library(readr); library(dplyr); library(knitr)` runs without error.
 2. The cached data file resolves: `examples/nhanes-equity/data/nhanes_equity_v6.csv`.
-3. Your `eda03-worked-example.qmd` renders cleanly so you have a clean reference.
+3. Render `eda03-worked-example.qmd` so you have a clean reference. The check passes when the HTML file is created and the table/plot are visible without errors. Record any error message in your notes. <!-- AI-EDIT(2026-06-11): GAP-R678-2, MIT-073 — needs review -->
+
+<!-- AI-EDIT(2026-06-11): MIT-073, GAP-R678-2 — needs review -->
+{{< include /_snippets/render-how.qmd >}}
 
 If any step fails, ask your debugging partner before running the planted-error starter.
 

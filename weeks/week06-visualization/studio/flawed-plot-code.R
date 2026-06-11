@@ -48,3 +48,10 @@ flawed_plot <- ggplot(
   theme_minimal(base_size = 12)
 
 print(flawed_plot)
+
+# AI-EDIT(2026-06-11): MIT-067 — needs review
+# Not a planted flaw: this save step guarantees you can see the figure even if
+# no plot viewer pane opens. The PNG is written to your current working folder
+# (run getwd() to see where). Find flawed-plot.png in the Explorer, right-click
+# it, and choose Open Preview.
+ggsave("flawed-plot.png", flawed_plot, width = 7, height = 5)

@@ -27,8 +27,10 @@ This assignment checks that you can make a small, reviewable change using Git. Y
 5. Check `.gitignore` and add a safe pattern if a generated or temporary file is being tracked.
 6. Commit with a message that explains the change.
 7. Push the branch and open a pull request.
-8. In the pull request description, explain what changed and how you verified the scope.
-9. Add a short note on whether your group repository is ready for M0: members, access, communication plan, and Codespaces access.
+<!-- AI-EDIT(2026-06-11): MIT-116 — needs review -->
+8. If a pull request cannot be opened, do not stop: take a screenshot of your branch and diff, and write a short explanation instead. Both go in `pull-request-evidence.md`.
+9. In the pull request description, explain what changed and how you verified the scope.
+10. Add a short note on whether your group repository is ready for M0: members, access, communication plan, and Codespaces access.
 
 ## AI-Use Expectations
 
@@ -51,9 +53,10 @@ assignments/assignment03-git/submission/
 
 Submit these files:
 
-- `pull-request-evidence.md`: pull request URL, branch name, and final commit hash. If a pull request cannot be opened, include screenshot filenames and a written explanation.
-- `documentation-change.md`: the before/after text or a link to the changed documentation file.
-- `git-audit-note.md`: diff summary, `.gitignore` check, AI-use sentence, and M0 readiness note.
+<!-- AI-EDIT(2026-06-11): TF-042 — needs review -->
+- `pull-request-evidence.md` [required]: pull request URL, branch name, and final commit hash. If a pull request cannot be opened, include screenshot filenames and a written explanation.
+- `documentation-change.md` [required]: the before/after text or a link to the changed documentation file.
+- `git-audit-note.md` [required]: diff summary, `.gitignore` check, AI-use sentence, and M0 readiness note.
 
 ## Submission Route
 

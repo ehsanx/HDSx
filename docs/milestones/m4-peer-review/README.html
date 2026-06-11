@@ -900,12 +900,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../assignments/assignment-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../assignments/assignment01-workflows/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 1: Modern Workflows</span></a>
   </div>
 </li>
@@ -961,12 +955,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../milestones/milestone-template.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Milestone Template</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../milestones/m0-group-formation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">M0: Group Formation</span></a>
   </div>
 </li>
@@ -998,6 +986,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../milestones/final-portfolio/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/final-portfolio-checklist.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Portfolio Checklist</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../milestones/final-portfolio/repository-sharing-guidance.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Repository Sharing Guidance</span></a>
   </div>
 </li>
       </ul>
@@ -1141,19 +1139,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="required-deliverables">Required Deliverables</h2>
 <p>Create or update:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a href="#cb1-1"></a>milestones/m4-peer-review/submission/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Include these files:</p>
+<!-- AI-EDIT(2026-06-11): TF-043 — needs review -->
+<p>Include these files. All six are required; tags follow <a href="../../assignments/index.html#how-to-read-submission-lists">How To Read Submission Lists</a>.</p>
 <ul>
-<li><code>peer-review.md</code></li>
-<li><code>reproducibility-check.md</code></li>
-<li><code>auditability-check.md</code></li>
-<li><code>kt-feedback.md</code></li>
-<li><code>reviewer-reflection.md</code></li>
-<li><code>ai-use-note.md</code></li>
+<li><code>peer-review.md</code> [required]</li>
+<li><code>reproducibility-check.md</code> [required]</li>
+<li><code>auditability-check.md</code> [required]</li>
+<li><code>kt-feedback.md</code> [required]</li>
+<li><code>reviewer-reflection.md</code> [required]</li>
+<li><code>ai-use-note.md</code> [required]</li>
 </ul>
 </section>
 <section id="what-to-submit" class="level2">
 <h2 class="anchored" data-anchor-id="what-to-submit">What To Submit</h2>
 <p>Submit your GitHub repository link on Canvas after committing and syncing the files above. In the Canvas comment box, include the reviewed group name and the latest commit hash for your submission.</p>
+<!-- AI-EDIT(2026-06-11): MIT-156, TF-046 — needs review -->
+<div class="callout callout-style-default callout-important callout-titled" title="Easy to miss: name the group you reviewed">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Easy to miss: name the group you reviewed
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Your Canvas comment must include the reviewed group’s name and your latest commit hash. Without the group name, graders cannot match your review to a project.</p>
+</div>
+</div>
 </section>
 <section id="review-requirements" class="level2">
 <h2 class="anchored" data-anchor-id="review-requirements">Review Requirements</h2>
@@ -1192,10 +1205,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="reproducibility-expectations" class="level2">
 <h2 class="anchored" data-anchor-id="reproducibility-expectations">Reproducibility Expectations</h2>
 <p>Run the reviewed project in GitHub Codespaces when possible. If a full rerun is not possible, document exactly where the process stopped and what evidence you reviewed instead.</p>
+<!-- AI-EDIT(2026-06-11): WI-072, MIT-154, TF-046 — needs review -->
+<p>If you cannot rerun the reviewed project in Codespaces, that is acceptable only if you document what you tried, where it failed, and what information the project owner would need to fix it. A documented failed rerun does not block completing M4 — an undocumented one does.</p>
 </section>
 <section id="ai-use-expectations" class="level2">
 <h2 class="anchored" data-anchor-id="ai-use-expectations">AI-Use Expectations</h2>
-<p>AI may help organize feedback or identify unclear writing. Reviewers must independently inspect the files, outputs, and claims. Do not use AI to invent results or infer evidence that is not in the reviewed repository.</p>
+<p>AI may help organize feedback or identify unclear writing. Reviewers must independently inspect the files, outputs, and claims.</p>
+<!-- AI-EDIT(2026-06-11): MIT-155 — needs review -->
+<div class="callout callout-style-default callout-warning callout-titled" title="Do not let AI invent evidence">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Do not let AI invent evidence
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Do not use AI to invent results or infer evidence that is not in the reviewed repository. Every claim in your review must point to something you actually saw in the files.</p>
+</div>
+</div>
 </section>
 <section id="grading-checklist" class="level2">
 <h2 class="anchored" data-anchor-id="grading-checklist">Grading Checklist</h2>

@@ -6,6 +6,15 @@ This is the first app-forward week. You will move from audited EDA outputs (Week
 
 The **required core** pathway is the [Quarto starter dashboard](dash03-starter-dashboard.qmd): it renders reliably in every Codespace, makes the analysis visible, and is the file you will adapt for Assignment 7. The Shiny exemplar discussed on [dash05](dash05-testing-privacy-and-shiny-demo.qmd) is a **demonstration only** — your instructor will run it in class; you are not required to install Shiny, run the app, or produce A7 deliverables from it.
 
+<!-- AI-EDIT(2026-06-11): MIT-086, TF-001 — needs review -->
+::: {.callout-important title="Required / Draft / Optional This Week"}
+- **Required (graded):** the eight [Assignment 7](../../assignments/assignment07-dashboard/README.md) files, explained one by one in [dash07](dash07-assignment-a7-and-reference.qmd).
+- **Draft (studio work that feeds A7, not graded on its own):** the render note, audience sentence, before/after text, testing log, and limitation statement from [dash06](dash06-studio-dashboard-adaptation.qmd).
+- **Demo-only (not graded, do not build on it):** the Shiny exemplar on [dash05](dash05-testing-privacy-and-shiny-demo.qmd) — watch it; do not submit A7 work from it.
+
+Tags like `[required]` and `[demo-only]` are defined in [How To Read Submission Lists](../../assignments/index.qmd#how-to-read-submission-lists).
+:::
+
 ## Objectives
 
 By the end of the week you can:

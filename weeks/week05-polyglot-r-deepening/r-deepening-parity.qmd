@@ -2,6 +2,9 @@
 
 Week 5 is polyglot-aware, not Python-first. Your strongest analysis path remains R and the tidyverse. Python enters as a comparison language: it helps you read code from other sources, ask better AI translation questions, and verify that a translated result still means the same thing.
 
+<!-- AI-EDIT(2026-06-11): WI-028 — needs review -->
+A parity check means confirming that the R result and Python result match on the important parts: row counts, column counts, grouping labels, missing values, and rounded summary values.
+
 ## Learning Goals
 
 By the end of this activity, you should be able to:
@@ -27,6 +30,9 @@ If you are working from this Week 5 folder, the relative path is:
 ```
 
 ## Part A: R Pipeline
+
+<!-- AI-EDIT(2026-06-11): MIT-052 — needs review -->
+Write Parts A and B in one new R script named `week5.R`, saved in the Week 5 folder (`weeks/week05-polyglot-r-deepening/`). You are not editing an existing file. For Assignment 4, the same code later moves into `polyglot-parity.qmd` in `assignments/assignment04-polyglot/submission/`.
 
 Start with R. The goal is a descriptive, unweighted summary of BMI by income group and gender.
 
@@ -74,7 +80,26 @@ r_function_summary
 
 Before moving to Python, check that the function output has the same number of rows and the same grouping labels as the original pipeline.
 
+<!-- AI-EDIT(2026-06-11): GAP-R345-9 — needs review -->
+## More R Mastery Exercises
+
+The pipeline and function above are the worked example. Complete at least two of these short exercises in `week5.R` before moving to Python:
+
+1. **Swap the value column.** Run `summarise_mean_sd(nhanes, Waist, IncomeGroup, Gender)`. Check that the grouping labels match the BMI summary. Did the row count change? Why might it?
+2. **Swap a grouping column.** Run `summarise_mean_sd(nhanes, BMI, Race, Gender)`. How many grouped rows do you get now, and why?
+3. **Extend the pipeline.** Add `mean_age = round(mean(Age), 1)` inside `summarise()` in the Part A pipeline, then rerun it. Confirm the number of rows did not change — adding a summary column should never change the grouping.
+
+<!-- AI-EDIT(2026-06-11): MIT-055 — needs review: section moved above Part C so students read audit guidance before translating -->
+## AI Audit Prompt
+
+Use this prompt only after you have a working R result:
+
+> Translate this R `dplyr` pipeline into Python/pandas one step at a time. For each step, explain the equivalent Python operation, the output I should inspect, and the parity check I should run against my R result. Do not combine steps or add new analysis choices.
+
 ## Part C: Python Translation
+
+<!-- AI-EDIT(2026-06-11): MIT-053 — needs review -->
+Create the Python translation in a notebook named `translation.ipynb`, saved in the Week 5 folder (`weeks/week05-polyglot-r-deepening/`) — the same notebook you set up in [Python Environment](python02-environment.qmd) and use in [Bilingual Translation](python13-translation-exercise.qmd). Attempt each step yourself first with the [cheat sheet](python14-cheat-sheet.qmd); use AI (the audit prompt above) to check or fix one step at a time, never to generate the full script.
 
 Translate one step at a time. Do not ask AI for a full script until you have verified each cell.
 
@@ -113,11 +138,10 @@ Record the following checks in a short Quarto note:
 | Group count | `nrow(r_summary)` | `len(py_summary)` | Same number of grouped rows |
 | Summary values | inspect `mean_bmi` and `sd_bmi` | inspect `mean_bmi` and `sd_bmi` | Values match after rounding |
 
-## AI Audit Prompt
-
-Use this prompt only after you have a working R result:
-
-> Translate this R `dplyr` pipeline into Python/pandas one step at a time. For each step, explain the equivalent Python operation, the output I should inspect, and the parity check I should run against my R result. Do not combine steps or add new analysis choices.
+<!-- AI-EDIT(2026-06-11): GAP-R345-14 (R2-09) — needs review -->
+::: {.callout-note title="When results do not match: the 15-minute rule"}
+Debug on your own for up to 15 minutes first: recheck the [translation traps](python04-translation-traps.qmd), rerun the checks above, and write down what you tried and your best guess at the cause. After 15 minutes, ask for help — and bring your notes. Documented debugging attempts are part of the expected workflow, not a sign of failure.
+:::
 
 ## Student Output
 

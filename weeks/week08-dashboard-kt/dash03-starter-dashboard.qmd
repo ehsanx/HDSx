@@ -54,6 +54,9 @@ if (!selected_income %in% available_income_groups) {
 selected_income
 ```
 
+<!-- AI-EDIT(2026-06-11): MIT-081 — needs review -->
+For example, change the line to `selected_income <- "Middle Income"` — the other valid value in the classroom dataset is `"High Income (>3.5)"`. Copy the value exactly, including the quotes and any parentheses.
+
 ## Summary
 
 ```{r}
@@ -111,6 +114,11 @@ Before submitting a dashboard-style product:
 3. Render again and check that the table, title, and plot all update.
 4. Verify that the caption still names the dataset, exclusions, and limitation.
 5. Record any warning or error in your testing log.
+
+<!-- AI-EDIT(2026-06-11): MIT-078, MIT-080 — needs review -->
+{{< include /_snippets/render-how.qmd >}}
+
+HTML is the expected output for this dashboard — you do not need a PDF. If the render log warns about a missing TeX installation or a PDF problem, you can ignore it as long as the `.html` file was created.
 
 ## Privacy-Safe Publishing
 
