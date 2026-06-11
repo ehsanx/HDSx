@@ -22,7 +22,8 @@ Evaluate one AI-generated visualization for correctness, clarity, bias, aggregat
 
 - Worked example to compare against: `weeks/week06-visualization/viz03-worked-example.qmd`
 - Dataset: `examples/nhanes-equity/data/nhanes_equity_v6.csv`
-- Flawed plot code (the artifact you will audit): `weeks/week06-visualization/instructor/flawed-plot-code.R`
+<!-- AI-EDIT(2026-06-11): D-001/MIT-125 — starter relocated out of instructor/ — needs review -->
+- Flawed plot code (the artifact you will audit): `weeks/week06-visualization/studio/flawed-plot-code.R`
 
 ::: {.callout-note title="Tester note"}
 Capture: a screenshot of the rendered flawed plot in the Codespaces Quarto preview, with the misleading title clearly visible. This will be referenced by other students during the studio.
@@ -31,7 +32,7 @@ Capture: a screenshot of the rendered flawed plot in the Codespaces Quarto previ
 ## Activity Steps
 
 1. Review the worked example and note how it labels the data source, statistic, and limitation.
-2. Open `instructor/flawed-plot-code.R` and read the comments and output labels before you run it.
+2. Open `studio/flawed-plot-code.R` and read the comments and output labels before you run it. <!-- AI-EDIT(2026-06-11): D-001/MIT-125 — needs review -->
 3. Run the script and inspect the rendered figure.
 4. List at least three issues that could mislead a reader. Tag each one with one of the audit categories below.
 5. Revise the plot so the title, scale, grouping, and caption match the evidence. Keep the cohort restriction explicit.
@@ -64,7 +65,7 @@ You are done with the studio when a peer can rerun your corrected plot, identify
 Polish the studio drafts into the Assignment 5 submission. [viz07](viz07-assignment-a5-and-reference.qmd) walks through the seven A5 files one by one and connects the work to the M1 visual plan due the same week.
 
 <!--
-Instructor-only note (not rendered to students):
-This page intentionally does NOT link to instructor/corrected-plot-code.R or instructor/answer-key-visual-audit.md.
-See weeks/week06-visualization/instructor/MAINTENANCE.md for release-time key-handling steps.
+AI-EDIT(2026-06-11): D-001 — needs review.
+Maintainer note: this page intentionally does NOT link to any answer key.
+Instructor materials for this studio live in the private HDSx-instructor repository.
 -->

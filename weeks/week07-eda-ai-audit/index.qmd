@@ -65,7 +65,8 @@ By the end of class each student has a rerunnable EDA note, a Table 1-style summ
 A reproducible EDA note and a habit of treating AI-generated summaries as drafts that must be checked against the data, code, and stewardship context.
 
 <!--
-Instructor maintenance notes (not rendered to students):
-This week's instructor folder contains keys that must NOT ship in the public student template at term start.
-See weeks/week07-eda-ai-audit/instructor/MAINTENANCE.md for the release-time checklist.
+AI-EDIT(2026-06-11): D-001 — needs review.
+Maintainer note: the answer key for this week lives in the private HDSx-instructor repository
+(decision D-001, 2026-06-11). The student-facing planted-error starter is in studio/. Do not add
+key material or key filenames to this public repo, including in HTML comments.
 -->

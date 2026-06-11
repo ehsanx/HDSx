@@ -18,7 +18,8 @@ This assignment turns a descriptive summary into an honest visual explanation. Y
 - Worked example: `weeks/week06-visualization/viz03-worked-example.qmd`
 - Studio activity: `weeks/week06-visualization/viz06-studio-visual-audit.qmd`
 - Walkthrough and reference: `weeks/week06-visualization/viz07-assignment-a5-and-reference.qmd`
-- Flawed plot starter: `weeks/week06-visualization/instructor/flawed-plot-code.R`
+<!-- AI-EDIT(2026-06-11): D-001/MIT-125 — starter relocated out of instructor/ — needs review -->
+- Flawed plot starter: `weeks/week06-visualization/studio/flawed-plot-code.R`
 - Visual audit template: `assignments/assignment05-visualization/visual-audit-note-template.md`
 - M1 connection: `milestones/m1-proposal/README.md`
 

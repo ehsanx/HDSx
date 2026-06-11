@@ -65,7 +65,8 @@ By the end of class each student has a local render note, an audience sentence, 
 A tested dashboard adaptation note and a decision rule for the term project: use the simplest pathway that serves the audience, with the Quarto pathway as the supported default and any other pathway requiring instructor approval.
 
 <!--
-Instructor maintenance notes (not rendered to students):
-This week has no instructor key files to gate. The pattern is preserved across Weeks 6-8 for consistency.
-If instructor-only example dashboards or speaker notes are added later, follow the release-time checklist used by Weeks 6 and 7 (see weeks/week06-visualization/instructor/MAINTENANCE.md).
+AI-EDIT(2026-06-11): D-001 — needs review.
+Maintainer note: this week has no instructor key files to gate. If instructor-only example
+dashboards or speaker notes are added later, put them in the private HDSx-instructor repository
+(see its MAINTENANCE notes), never in this public repo.
 -->

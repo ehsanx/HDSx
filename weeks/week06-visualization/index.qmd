@@ -65,7 +65,8 @@ By the end of class each student has a corrected plot, a caption, a short audit 
 One polished descriptive visualization and a reusable checklist for auditing AI-assisted plots before they appear in a report, dashboard, or slide.
 
 <!--
-Instructor maintenance notes (not rendered to students):
-This week's instructor folder contains keys that must NOT ship in the public student template at term start.
-See weeks/week06-visualization/instructor/MAINTENANCE.md for the release-time checklist.
+AI-EDIT(2026-06-11): D-001 — needs review.
+Maintainer note: answer keys for this week live in the private HDSx-instructor repository
+(decision D-001, 2026-06-11). The student-facing flawed starter is in studio/. Do not add
+key material or key filenames to this public repo, including in HTML comments.
 -->

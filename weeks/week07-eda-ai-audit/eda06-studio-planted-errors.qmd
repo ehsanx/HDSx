@@ -22,7 +22,8 @@ Audit the planted-error starter, categorize at least five issues, and produce a 
 
 - Worked example to compare against: `weeks/week07-eda-ai-audit/eda03-worked-example.qmd`
 - Dataset: `examples/nhanes-equity/data/nhanes_equity_v6.csv`
-- Planted-error starter (the artifact you will audit): `weeks/week07-eda-ai-audit/instructor/planted-error-starter.qmd`
+<!-- AI-EDIT(2026-06-11): D-001/MIT-127 — starter relocated out of instructor/ — needs review -->
+- Planted-error starter (the artifact you will audit): `weeks/week07-eda-ai-audit/studio/planted-error-starter.qmd`
 
 ::: {.callout-note title="Tester note"}
 Capture: a screenshot of the rendered planted-error starter in the Codespaces Quarto preview, with the misleading interpretation paragraph clearly visible. This is the "before" state students will recognize during the studio.
@@ -31,7 +32,7 @@ Capture: a screenshot of the rendered planted-error starter in the Codespaces Qu
 ## Activity Steps
 
 1. Review the worked example and identify the cohort definition, missingness check, and Table 1 labels.
-2. Open `instructor/planted-error-starter.qmd` and inspect both code and prose before running it.
+2. Open `studio/planted-error-starter.qmd` and inspect both code and prose before running it. <!-- AI-EDIT(2026-06-11): D-001/MIT-127 — needs review -->
 3. Run or read the starter and annotate at least five issues.
 4. Categorize each issue as **correctness**, **reproducibility**, **interpretation**, or **stewardship** (see [eda05](eda05-ai-audit-categories.qmd) if you need a refresher).
 5. Produce a corrected EDA note and Table 1.
@@ -63,7 +64,7 @@ You are done with the studio when another student can rerun your `eda-note.qmd`,
 Polish the studio drafts into the Assignment 6 submission and the Milestone 2 deliverables. [eda07](eda07-assignment-a6-and-reference.qmd) walks through the A6 files one by one and shows which files double as M2 evidence.
 
 <!--
-Instructor-only note (not rendered to students):
-This page intentionally does NOT link to instructor/planted-error-key.md.
-See weeks/week07-eda-ai-audit/instructor/MAINTENANCE.md for release-time key-handling steps.
+AI-EDIT(2026-06-11): D-001 — needs review.
+Maintainer note: this page intentionally does NOT link to any answer key.
+Instructor materials for this studio live in the private HDSx-instructor repository.
 -->

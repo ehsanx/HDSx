@@ -72,7 +72,7 @@ Last updated after milestone/presentation/final-portfolio completion pass: 2026-
 
 - **Topic name:** Data Visualization
 - **Status:** Complete
-- **Evidence:** `weeks/week06-visualization/viz01-overview-and-goals.qmd` through `viz07-assignment-a5-and-reference.qmd`: incremental seven-page sequence covering visual reasoning, grammar of a ggplot, end-to-end worked example, misleading-design failure modes, AI prompt patterns, studio audit activity, and A5 walkthrough plus quick reference. `instructor/answer-key-visual-audit.md` and `instructor/corrected-plot-code.R` remain unlinked from student-facing pages; see `instructor/MAINTENANCE.md`.
+- **Evidence:** `weeks/week06-visualization/viz01-overview-and-goals.qmd` through `viz07-assignment-a5-and-reference.qmd`: incremental seven-page sequence covering visual reasoning, grammar of a ggplot, end-to-end worked example, misleading-design failure modes, AI prompt patterns, studio audit activity, and A5 walkthrough plus quick reference. Answer keys live in the private HDSx-instructor repository (D-001, 2026-06-11); the student-facing flawed starter is at `studio/flawed-plot-code.R`. <!-- AI-EDIT(2026-06-11): D-001 — needs review -->
 - **What is missing:** No content drafting gap.
 - **Recommended next additions:** Re-render the worked example if the NHANES CSV changes.
 
@@ -80,7 +80,7 @@ Last updated after milestone/presentation/final-portfolio completion pass: 2026-
 
 - **Topic name:** EDA, Table 1 & AI Auditing
 - **Status:** Complete
-- **Evidence:** `weeks/week07-eda-ai-audit/eda01-overview-and-goals.qmd` through `eda07-assignment-a6-and-reference.qmd`: incremental seven-page sequence covering evidence stewardship framing, cohort and missingness, end-to-end worked example, descriptive-statistic claims, four AI-audit categories, planted-error studio activity, and A6 walkthrough plus quick reference. `instructor/planted-error-key.md` remains unlinked from student-facing pages; see `instructor/MAINTENANCE.md`.
+- **Evidence:** `weeks/week07-eda-ai-audit/eda01-overview-and-goals.qmd` through `eda07-assignment-a6-and-reference.qmd`: incremental seven-page sequence covering evidence stewardship framing, cohort and missingness, end-to-end worked example, descriptive-statistic claims, four AI-audit categories, planted-error studio activity, and A6 walkthrough plus quick reference. The planted-error answer key lives in the private HDSx-instructor repository (D-001, 2026-06-11); the student-facing starter is at `studio/planted-error-starter.qmd`. <!-- AI-EDIT(2026-06-11): D-001 — needs review -->
 - **What is missing:** No content drafting gap.
 - **Recommended next additions:** Keep the unweighted/descriptive limitation visible.
 
