@@ -67,8 +67,12 @@ A hidden small cell count is a group with very few observations that may be hidd
 ## Plot
 
 <!-- AI-EDIT(2026-06-11): MIT-063 — thicker lines + Dark2 palette so the bottom line reads clearly — needs review -->
+<!-- AI-EDIT(2026-06-22): MIT-063 / REVIEW-row154 — the long in-plot caption did not wrap and got clipped at the bottom; moved the descriptive note to a Quarto fig-cap (which wraps below the figure), shortened the in-plot caption, added fig-height/fig-width and a plot.caption bottom margin so nothing is cut off -->
 ```{r}
 #| label: plot-bmi-by-income-cycle
+#| fig-height: 5.5
+#| fig-width: 7
+#| fig-cap: "Mean BMI is summarized descriptively from the cached class dataset. Values are unweighted, exclude missing BMI/income/cycle values, and should not be interpreted as causal effects or population estimates."
 bmi_plot <- ggplot(
   bmi_by_income_cycle,
   aes(x = Cycle, y = mean_bmi, color = IncomeGroup, group = IncomeGroup)
@@ -82,12 +86,13 @@ bmi_plot <- ggplot(
     x = "NHANES cycle",
     y = "Mean BMI",
     color = "Income group",
-    caption = "Caption template: Mean BMI is summarized descriptively from the cached class dataset. Values are unweighted, exclude missing BMI/income/cycle values, and should not be interpreted as causal effects or population estimates."
+    caption = "Unweighted descriptive summary; not a population estimate."
   ) +
   theme_minimal(base_size = 12) +
   theme(
     axis.text.x = element_text(angle = 45, hjust = 1),
-    legend.position = "bottom"
+    legend.position = "bottom",
+    plot.caption = element_text(margin = margin(t = 8))
   )
 
 bmi_plot

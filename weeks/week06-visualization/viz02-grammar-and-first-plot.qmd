@@ -51,9 +51,9 @@ glimpse(nhanes)
 
 `glimpse()` shows the column names and types. Read them carefully. Misspelling a column name (e.g., `bmi` when the data has `BMI`) is the #1 source of broken ggplots in this course.
 
-::: {.callout-note title="Tester note"}
-Capture: a screenshot of the Codespaces Quarto preview after `glimpse(nhanes)` runs, showing the column names. New students rely on this to spot case-sensitive column names like `BMI` and `IncomeGroup`.
-:::
+<!-- AI-EDIT(2026-06-22): tester-note-conversion — converted leaked "Tester note" callout to hidden HTML comment (tester instruction, not student content)
+Tester note — Capture: a screenshot of the Codespaces Quarto preview after `glimpse(nhanes)` runs, showing the column names. New students rely on this to spot case-sensitive column names like `BMI` and `IncomeGroup`.
+-->
 
 ## Your first plot
 
@@ -80,9 +80,9 @@ Map the five parts onto this code so the grammar feels concrete:
 - **Scale and coordinates:** the default linear axes (you have not changed them)
 - **Labels and theme:** `labs(...) + theme_minimal()`
 
-::: {.callout-note title="Tester note"}
-Capture: a screenshot of the rendered scatter plot. Confirm the axis labels read "Age (years)" and "Weight (kg)" so students can compare against their own first attempt.
-:::
+<!-- AI-EDIT(2026-06-22): tester-note-conversion — converted leaked "Tester note" callout to hidden HTML comment (tester instruction, not student content)
+Tester note — Capture: a screenshot of the rendered scatter plot. Confirm the axis labels read "Age (years)" and "Weight (kg)" so students can compare against their own first attempt.
+-->
 
 ## Three things to check on every plot
 
