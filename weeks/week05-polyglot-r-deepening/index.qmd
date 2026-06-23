@@ -33,7 +33,8 @@ Week 4 made small changes reviewable through Git. This week uses that review min
 ## Case Study Data Analysis
 
 <!-- AI-EDIT(2026-06-11): MIT-050 — needs review -->
-**What to do with this code:** read it. The code block below runs automatically when this page is built — you do not need to run or change it here. You will write your own version in the studio. Direct links to the files it uses: [nhanes_equity_v6.csv (view on GitHub)](https://github.com/ehsanx/HDSx/blob/main/examples/nhanes-equity/data/nhanes_equity_v6.csv), [nhanes_equity_v6.rds (view on GitHub)](https://github.com/ehsanx/HDSx/blob/main/examples/nhanes-equity/data/nhanes_equity_v6.rds), and the [case-study README (view on GitHub)](https://github.com/ehsanx/HDSx/blob/main/examples/nhanes-equity/README.md).
+<!-- AI-EDIT(2026-06-22): REVIEW-row134 (MIT-050) — removed duplicated "Direct links to the files it uses" sentence; the same three GitHub links (csv/rds/README) already appear as a bullet list in the included case-study-data-analysis.qmd snippet rendered just below -->
+**What to do with this code:** read it. The code block below runs automatically when this page is built — you do not need to run or change it here. You will write your own version in the studio.
 
 {{< include ../../examples/nhanes-equity/snippets/case-study-data-analysis.qmd >}}
 

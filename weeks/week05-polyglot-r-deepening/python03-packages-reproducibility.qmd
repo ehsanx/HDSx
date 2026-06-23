@@ -18,7 +18,8 @@ Python projects record package dependencies in `requirements.txt`. This is the P
 <!-- AI-EDIT(2026-06-11): TF-017, WI-031 — needs review -->
 The course Codespace already provides `pandas` and the notebook tools preinstalled, so you should not need to install or record anything for this week's required work. Only edit `requirements.txt` if you add a Python package that is not already provided by the course environment.
 
-The file itself is simple — one package name per line. For example, a project that depends only on `pandas` would contain:
+<!-- AI-EDIT(2026-06-22): REVIEW-row143 (TF-017, WI-031) — tell students where requirements.txt lives in the Codespace -->
+In the course Codespace this file lives at `.devcontainer/requirements.txt` (at the top level of your project). The file itself is simple — one package name per line. For example, a project that depends only on `pandas` would contain:
 
 ```text
 pandas
