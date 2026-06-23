@@ -1,3 +1,11 @@
+---
+format:
+  html:
+    embed-resources: true
+---
+
+<!-- AI-EDIT(2026-06-22): REVIEW-row194 (MIT-078/MIT-080) — per-page embed-resources:true so the standalone downloaded HTML bundles the plot (narrow fix per instructor decision; verify it survives the book render) -->
+
 # Starter Dashboard {.unnumbered}
 
 ## Where this fits
