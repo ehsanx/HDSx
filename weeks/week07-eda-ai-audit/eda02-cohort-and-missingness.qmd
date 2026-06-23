@@ -46,9 +46,10 @@ kable(cohort_counts)
 
 The `cohort_counts` table is your **flow diagram in text form**. It shows N before and after each restriction. If a peer asks "how many people are in your analysis?", this table is the answer.
 
-::: {.callout-note title="Tester note"}
+<!-- AI-EDIT(2026-06-22): tester-note-conversion — converted leaked "Tester note" callout to hidden HTML comment (QA/screenshot instruction, not student-facing content)
+Tester note
 Capture: a screenshot of the rendered `cohort_counts` table in the Quarto preview. Beginners often skip this step; seeing it labeled clearly helps them recognize what they are missing.
-:::
+-->
 
 ## Why missingness comes before the summary
 
@@ -79,9 +80,10 @@ This produces a small table: one row per key variable, with the missing count an
 2. **Use the denominator from the cohort, not the raw dataset.** Missingness as a percent of *your cohort* tells the right story.
 3. **Report it, even if it is small.** A row that says "BMI missing: 2 (0.1%)" is still informative.
 
-::: {.callout-note title="Tester note"}
+<!-- AI-EDIT(2026-06-22): tester-note-conversion — converted leaked "Tester note" callout to hidden HTML comment (QA/screenshot instruction, not student-facing content)
+Tester note
 Capture: a screenshot of the rendered `missingness` table for the adult cohort. Beginners need to see what "percent missing per variable" actually looks like.
-:::
+-->
 
 ## What "complete-case" means and why it can bias the summary
 

@@ -10,7 +10,7 @@ Take 2 minutes to check that your Codespace is ready:
 
 1. `library(readr); library(dplyr); library(knitr)` runs without error.
 2. The cached data file resolves: `examples/nhanes-equity/data/nhanes_equity_v6.csv`.
-3. Render `eda03-worked-example.qmd` so you have a clean reference. The check passes when the HTML file is created and the table/plot are visible without errors. Record any error message in your notes. <!-- AI-EDIT(2026-06-11): GAP-R678-2, MIT-073 — needs review -->
+3. Render `eda03-worked-example.qmd` to **HTML** so you have a clean reference (HTML is this course's default output format). The check passes when the HTML file is created and the table/plot are visible without errors. Record any error message in your notes. <!-- AI-EDIT(2026-06-22): REVIEW-row179 / MIT-073,GAP-R678-2 — specify HTML output format when rendering -->
 
 <!-- AI-EDIT(2026-06-11): MIT-073, GAP-R678-2 — needs review -->
 {{< include /_snippets/render-how.qmd >}}
@@ -28,9 +28,10 @@ Audit the planted-error starter, categorize at least five issues, and produce a 
 <!-- AI-EDIT(2026-06-11): D-001/MIT-127 — starter relocated out of instructor/ — needs review -->
 - Planted-error starter (the artifact you will audit): `weeks/week07-eda-ai-audit/studio/planted-error-starter.qmd`
 
-::: {.callout-note title="Tester note"}
+<!-- AI-EDIT(2026-06-22): REVIEW-tester-note — converted leaked "Tester note" callout to a hidden HTML comment (instructor/tester-only, not student-facing); content preserved
+Tester note (instructor/tester only):
 Capture: a screenshot of the rendered planted-error starter in the Codespaces Quarto preview, with the misleading interpretation paragraph clearly visible. This is the "before" state students will recognize during the studio.
-:::
+-->
 
 ## Activity Steps
 
