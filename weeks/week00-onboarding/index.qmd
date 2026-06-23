@@ -51,9 +51,10 @@ Protect your account:
 
 - use a long, unique passphrase that you do not reuse on other sites
 - consider a password manager so you do not have to memorize it
-- keep two-factor authentication turned on, as described above
+- turn on two-factor authentication (2FA) and keep it on; 2FA adds a second login step (a code from an app or text message) so your account stays protected even if your password is exposed <!-- AI-EDIT(2026-06-22): REVIEW-row4, TF-005, MIT-005 — replaced vague 'as described above' (2FA was only named in one earlier bullet) with a brief student-friendly description of 2FA -->
 
-When you create or fork course repositories later in the course, keep them private by default. Use a private repository when your work may include restricted, sensitive, or course-only materials. A public repository should only be used when the instructor confirms it is safe. Making your work public is encouraged once the course privacy checklist passes, but it is never required, and there is no penalty for staying private.
+<!-- AI-EDIT(2026-06-22): REVIEW-row5, TF-005, MIT-005 — corrected GitHub fork behavior: a fork of a public repo stays public and you cannot change its visibility while it stays a fork; recommend a private copy via Import/template when privacy is needed -->
+Think about repository privacy. A fork of a public repository is itself public, and GitHub does not let you switch a fork to private while it remains connected to its upstream. So if your work may include restricted, sensitive, or course-only materials, do not rely on changing a fork's visibility — instead create a separate private copy (for example with GitHub's **Import repository** option, or by using the template repository's **Use this template** button if the instructor enables it) and choose **Private**. A public repository should only be used when the instructor confirms it is safe. Making your work public is encouraged once the course privacy checklist passes, but it is never required, and there is no penalty for staying private. Follow the workflow Canvas specifies for this offering.
 
 <!-- AI-EDIT(2026-06-11): SS-004 — figure placeholder, RA to capture -->
 <!-- TODO-SCREENSHOT: uncomment when the asset exists:
@@ -128,14 +129,19 @@ The current course workflow uses a fork-based setup:
 
 1. Open the course template repository using the link provided in Canvas. If you do not have Canvas access, use the direct GitHub repository link: <https://github.com/ehsanx/HDSx-workspace>. <!-- AI-EDIT(2026-06-11): TF-003, MIT-002, WI-002 — needs review -->
 2. Click **Fork**.
-3. Create a personal fork under the GitHub account you submitted in the onboarding check.
-4. Launch Codespaces from your fork.
-5. Commit and sync changes to your fork.
-6. Submit your fork repository link on Canvas.
+3. On the "Create a new fork" page, make sure the **Owner** is set to the GitHub account you submitted in the onboarding check (not another personal account or an organization), then create the fork. <!-- AI-EDIT(2026-06-22): REVIEW-row8, SS-002 — added explicit owner-selection guidance during fork creation -->
+4. Verify the fork landed in the correct account: the repository URL should read `https://github.com/<your-username>/HDSx-workspace`, and the page header should show `forked from ehsanx/HDSx-workspace` under your own username. If the owner is wrong, delete the fork and repeat the step. <!-- AI-EDIT(2026-06-22): REVIEW-row8, SS-002 — added how-to-verify-the-fork-was-created-in-the-correct-account check -->
+5. Launch Codespaces from your fork.
+6. Commit and sync changes to your fork.
+7. Submit your fork repository link on Canvas.
 
 <!-- AI-EDIT(2026-06-11): SS-002, TF-006, MIT-006 — figure placeholder, RA to capture -->
 <!-- TODO-SCREENSHOT: uncomment when the asset exists:
 ![The Fork button on the course template repository, used to create your own copy](../../assets/images/week00/fork-button.png){fig-alt="GitHub repository page with the Fork button highlighted near the top-right corner"}
+-->
+<!-- AI-EDIT(2026-06-22): REVIEW-row8, SS-002 — RA referenced SS-002-01 (fork-creation) and SS-002-02 (fork-confirmation), but no matching image files exist under assets/images/week00/ (the directory itself is absent). NEEDS-RA-SCREENSHOT: add the files, then uncomment references like:
+![Choosing the correct Owner on the Create a new fork page](../../assets/images/week00/SS-002-01-fork-creation.png){fig-alt="GitHub Create a new fork page with the Owner dropdown set to the student's own account"}
+![Confirming the fork was created under your own account](../../assets/images/week00/SS-002-02-fork-confirmation.png){fig-alt="GitHub repository page showing forked from ehsanx/HDSx-workspace beneath the student's username"}
 -->
 
 <!-- AI-EDIT(2026-06-11): SS-003 — figure placeholder, RA to capture -->
