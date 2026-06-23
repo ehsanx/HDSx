@@ -4,9 +4,8 @@
 
 This page connects Week 10 class work to [Assignment 9](../../assignments/assignment09-reporting/README.md) and [M3: Project Update](../../milestones/m3-project-update/README.md). It does not add new deliverables. It explains how the same work can support both.
 
-::: {.callout-note title="Tester note"}
-Check that the file names below match the current Assignment 9 and M3 README files before release.
-:::
+<!-- AI-EDIT(2026-06-22): GLOBAL-tester-note-conversion — converted leaked "Tester note" callout to hidden HTML comment (instructor/tester-only; not student-facing) -->
+<!-- Tester note: Check that the file names below match the current Assignment 9 and M3 README files before release. -->
 
 ## A9 Submission Files
 

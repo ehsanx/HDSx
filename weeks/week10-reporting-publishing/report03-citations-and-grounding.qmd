@@ -24,9 +24,10 @@ The NHANES classroom example is derived from CDC/NCHS NHANES public-use data [@c
 
 If your project uses a different source, add the relevant bibliography entry to the report's local `references.bib` or to the project bibliography.
 
-::: {.callout-note title="Tester note"}
+<!-- AI-EDIT(2026-06-22): tester-note-conversion — converted leaked "Tester note" callout to hidden HTML comment (instructor/tester verification step, not student-facing)
+Tester note:
 Render `weeks/week10-reporting-publishing/report-template.qmd` and confirm the `@cdc-nhanes` citation resolves in the reference list.
-:::
+-->
 
 ## Grounding Audit
 
