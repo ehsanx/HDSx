@@ -41,9 +41,9 @@ After you start the render, **observe:**
 -   **The Terminal (Bottom):** You will see text scrolling quickly. This is your code chunks executing.
 -   **The Preview (Right):** A new pane should appear showing a beautiful, formatted report with your name on it.
 
-<!-- AI-EDIT(2026-06-11): WI-012/TF-010 — where the rendered HTML lands and how to open it — needs review -->
+<!-- AI-EDIT(2026-06-22): REVIEW-row47 / WI-012,TF-010 — corrected output location: student starter project has no output-dir, so practice_report.html lands beside the .qmd (NOT docs/). The docs/ folder is book-repo-only. Matches /_snippets/render-how.qmd. -->
 ::: {.callout-note title="Where is my HTML file?"}
-After rendering, your HTML file is saved to the `docs/` folder at the project root --- not beside the `.qmd` file. To view it, right-click the file in the Explorer panel and choose the browser/open-preview option shown in the instructions, or start a local server from the terminal and open the URL shown. You cannot open the HTML by typing its name in the terminal.
+For your `practice_report.qmd`, the rendered file (`practice_report.html`) is saved **right next to the `.qmd` file** in the Explorer panel. Watch the render log for the `Output created:` line --- it names the exact file. To view it, right-click the `.html` file in the Explorer and choose **Download** (or **Open Preview** if available); typing the file name in the terminal will not open it. (In some larger projects an output directory is configured so the file lands there instead, but your practice project does not set one.)
 :::
 
 **Congratulations!** You just performed "Knowledge Translation"—turning raw code into a human-readable document.

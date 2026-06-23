@@ -53,7 +53,7 @@ Student output: a rendered Quarto page and one commit showing a small, reproduci
 
 ## `workflows1.qmd` The Analogy: Public Computer and Cloud Drive
 
-*Full page with screenshots: [The Analogy: Public Computer vs Cloud Drive](workflows01-cloud-drive.qmd).* <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review -->
+*Deeper Dive: [The Analogy: Public Computer vs Cloud Drive](workflows01-cloud-drive.qmd).* <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review --><!-- AI-EDIT(2026-06-22): REVIEW-row26,row27 — link label normalized to "Deeper Dive" (consistency rename) -->
 
 To understand how we work in this course, forget about "servers" and "clients." Imagine you are working in a university computer lab.
 
@@ -86,7 +86,7 @@ This cycle --- launch, work, commit, stop --- is the rhythm of every week in thi
 
 ## `workflows2.qmd` Getting Started: GitHub Account and Fork
 
-*Full page with screenshots: [Tour of the Repository](workflows02-repository-tour.qmd).* <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review -->
+*Deeper Dive: [Tour of the Repository](workflows02-repository-tour.qmd).* <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review --><!-- AI-EDIT(2026-06-22): REVIEW-row26,row27 — link label normalized to "Deeper Dive" (consistency rename) -->
 
 ### Step 1: Check Your GitHub Account
 
@@ -127,7 +127,7 @@ If you do not see these, stop and ask for help before continuing. You may be in 
 
 ## `workflows3.qmd` Launching Your Codespace
 
-*Full pages with screenshots: [Opening Your First Codespace](workflows03-open-codespace.qmd) and [Reopening a Codespace](workflows04-reopen-codespace.qmd).* <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review -->
+*Deeper Dive: [Opening Your First Codespace](workflows03-open-codespace.qmd) and [Reopening a Codespace](workflows04-reopen-codespace.qmd).* <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review --><!-- AI-EDIT(2026-06-22): REVIEW-row26,row27 — link label normalized to "Deeper Dive" (consistency rename) -->
 
 1. On your repository page, click the green **<> Code** button.
 2. Select the **Codespaces** tab.
@@ -143,7 +143,7 @@ The first launch takes 2--3 minutes while the environment builds. Subsequent lau
 
 ## `workflows4.qmd` Tour of VS Code: The "Big Three" Zones
 
-*Full page with screenshots: [VS Code Orientation](workflows05-vscode-orientation.qmd).* <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review -->
+*Deeper Dive: [VS Code Orientation](workflows05-vscode-orientation.qmd).* <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review --><!-- AI-EDIT(2026-06-22): REVIEW-row26,row27 — link label normalized to "Deeper Dive" (consistency rename) -->
 
 The VS Code interface can look intimidating --- it is designed for professional software engineers. You only need to know three areas. Safely ignore 90% of the buttons.
 
@@ -209,7 +209,7 @@ You will use literate programming in every subsequent week of this course: your 
 
 ## `workflows7.qmd` Project Structure: Files and Folders
 
-*Full page with screenshots: [Files vs Folders](workflows06-files-folders.qmd).* <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review -->
+*Deeper Dive: [Files vs Folders](workflows06-files-folders.qmd).* <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review --><!-- AI-EDIT(2026-06-22): REVIEW-row26,row27 — link label normalized to "Deeper Dive" (consistency rename) -->
 
 A reproducible project needs a consistent folder structure. This course uses the following convention:
 
@@ -234,25 +234,29 @@ my-project/
 
 ## `workflows8.qmd` Tutorial: Your First Quarto Document
 
-*Full page with screenshots: [The Magic Moment: Render Quarto](workflows07-render-quarto.qmd).* <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review -->
+*Deeper Dive: [The Magic Moment: Render Quarto](workflows07-render-quarto.qmd).* <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review --><!-- AI-EDIT(2026-06-22): REVIEW-row26,row27 — link label normalized to "Deeper Dive" (consistency rename) -->
 
 ### Step 1: Open the Starter File
 
-In the Explorer, click `practice_report.qmd`. It opens in the Editor.
+<!-- AI-EDIT(2026-06-22): REVIEW-row36 (TF-010,WI-014,D-003) — say where practice_report.qmd lives so students can find it in the Explorer -->
+In the Explorer, click `practice_report.qmd`. It lives in the top level (root) of your forked workspace repository, alongside `README.md` and the `data/` folder. It opens in the Editor.
 
 ### Step 2: Understand the YAML Header
 
 At the very top, between `---` lines, you will see something like:
 
+<!-- AI-EDIT(2026-06-22): REVIEW-row35 (GAP-MBH-3) — add embed-resources: true so the downloaded HTML contains the generated plots/images (RA's 'embedded resources : true' corrected to the proper Quarto key 'embed-resources: true') -->
 ```yaml
 ---
 title: "My First Report"
 author: "Your Name"
-format: html
+format:
+  html:
+    embed-resources: true
 ---
 ```
 
-Change `author:` to your actual name. The YAML header controls metadata and output format.
+Change `author:` to your actual name. The YAML header controls metadata and output format. The `embed-resources: true` line bundles every figure and style into a single self-contained HTML file, so the report still shows your plots when you download it or open it on another computer.
 
 ### Step 3: Read the Markdown
 
@@ -280,6 +284,11 @@ Find a code chunk in the starter file. Make a small change --- for example, chan
 ### Step 6: Render
 
 <!-- AI-EDIT(2026-06-11): TF-010/WI-014/D-003 — standard render instructions replace button-only step (Command Palette default, named-file command, output location) — needs review -->
+<!-- AI-EDIT(2026-06-22): REVIEW-row36 (TF-010,WI-014,D-003) — add run-cells-and-save prerequisite, Command Palette shortcut, and HTML output-format note -->
+**Before you render:** run your code chunks and save the file so the executed output is captured. Use the run button (▶) at the top-left of each code chunk to run it, or run them all from **Run → Run All** / the Command Palette, then save with `Ctrl+S` (`Cmd+S` on macOS). If you render without running and saving, the report may show your code without its results.
+
+To render, open the **Command Palette** --- press `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (macOS), or use **View → Command Palette** --- and run **Quarto: Render Document**. If you are asked which output format to produce, choose **HTML**. The detailed steps and an always-works terminal fallback are below.
+
 {{< include /_snippets/render-how.qmd >}}
 
 A preview pane appears showing your formatted report with code output embedded.
@@ -302,7 +311,7 @@ If you see a warning that no TeX installation was found, you can ignore it as lo
 
 ## `workflows9.qmd` Tutorial: Stage, Commit, and Sync
 
-*Full page with screenshots: [Commit Your Work](workflows08-commit-work.qmd).* <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review -->
+*Deeper Dive: [Commit Your Work](workflows08-commit-work.qmd).* <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review --><!-- AI-EDIT(2026-06-22): REVIEW-row26,row27 — link label normalized to "Deeper Dive" (consistency rename) -->
 
 Your work currently exists only on the public computer (Codespace). To save it permanently to your Cloud Drive (GitHub), you need to **commit**.
 
@@ -351,7 +360,7 @@ Click **Sync Changes** (in the Source Control panel or the status bar at the bot
 
 ## `workflows10.qmd` Stopping Your Codespace (Saving Credits)
 
-*Full page with screenshots: [Stop Your Codespace](workflows10-stop-codespace.qmd).* <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review -->
+*Deeper Dive: [Stop Your Codespace](workflows10-stop-codespace.qmd).* <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review --><!-- AI-EDIT(2026-06-22): REVIEW-row26,row27 — link label normalized to "Deeper Dive" (consistency rename) -->
 
 GitHub Codespaces gives you a monthly allowance of free hours (approximately 60 core-hours). **If you leave the browser tab open, the meter keeps running**, even if you are not actively working.
 
@@ -373,7 +382,7 @@ The Codespace runs for another 30 minutes before it times out automatically. Tha
 
 ## `workflows11.qmd` Troubleshooting
 
-*Full page with screenshots: [Troubleshooting: Rebuild Container](workflows09-troubleshooting.qmd).* <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review -->
+*Deeper Dive: [Troubleshooting: Rebuild Container](workflows09-troubleshooting.qmd).* <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review --><!-- AI-EDIT(2026-06-22): REVIEW-row26,row27 — link label normalized to "Deeper Dive" (consistency rename) -->
 
 Sometimes things break. Here is a graduated approach --- try the simplest fix first.
 
