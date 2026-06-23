@@ -39,7 +39,7 @@ Student output: a documentation-only pull request with a short audit note. Assig
 
 ## `git1.qmd` Concepts: The "Save Game" of Reproducible Science
 
-Detail page: [Git Basics](git01-concepts.qmd) <!-- AI-EDIT(2026-06-11): GAP-R345-2 — needs review -->
+Deeper Dive: [Git Basics](git01-concepts.qmd) <!-- AI-EDIT(2026-06-22): REVIEW-row100 / GAP-R345-2 — renamed link label 'Detail page' -> 'Deeper Dive' for cross-book consistency -->
 
 ### Why Git Matters in Health Research
 
@@ -55,7 +55,7 @@ You already know how to stage, commit, and sync in your Codespace. This week, we
 
 ## `git2.qmd` Tutorial: Time Travel in Codespaces
 
-Detail page: [Time Travel](git02-tutorial.qmd) <!-- AI-EDIT(2026-06-11): GAP-R345-2 — needs review -->
+Deeper Dive: [Time Travel](git02-tutorial.qmd) <!-- AI-EDIT(2026-06-22): REVIEW-row101 / GAP-R345-2 — renamed link label 'Detail page' -> 'Deeper Dive' for cross-book consistency -->
 
 *Scenario:* We will intentionally break last week's R script and use Git to rescue it.
 
@@ -83,7 +83,7 @@ Hover over the file name in the Source Control panel and click **Discard Changes
 
 ## `git3.qmd` Repo Hygiene: `.gitignore` and Relative Paths
 
-Detail page: [Repo Hygiene](git03-repo-hygiene.qmd) <!-- AI-EDIT(2026-06-11): GAP-R345-2 — needs review -->
+Deeper Dive: [Repo Hygiene](git03-repo-hygiene.qmd) <!-- AI-EDIT(2026-06-22): REVIEW-row102 / GAP-R345-3 — renamed link label 'Detail page' -> 'Deeper Dive' for cross-book consistency -->
 
 ### Why This Matters
 
@@ -129,7 +129,7 @@ Always use **relative paths** in your code (e.g., `read.csv("data/nhanes.csv")`)
 
 ## `git4.qmd` Branching: Safe Experimentation
 
-Detail page: [Branching](git04-branching.qmd) <!-- AI-EDIT(2026-06-11): GAP-R345-2 — needs review -->
+Deeper Dive: [Branching](git04-branching.qmd) <!-- AI-EDIT(2026-06-22): REVIEW-row105 / GAP-R345-2 — renamed link label 'Detail page' -> 'Deeper Dive' for cross-book consistency -->
 
 ### Concept
 
@@ -158,7 +158,7 @@ Think of it like a lab notebook: `main` is your clean, published record. A branc
 
 ## `git5.qmd` Pull Requests: The Peer Review Gateway
 
-Detail page: [Pull Requests](git05-pull-requests.qmd) <!-- AI-EDIT(2026-06-11): GAP-R345-2 — needs review -->
+Deeper Dive: [Pull Requests](git05-pull-requests.qmd) <!-- AI-EDIT(2026-06-22): REVIEW-row106 / GAP-R345-2 — renamed link label 'Detail page' -> 'Deeper Dive' for cross-book consistency -->
 
 ### What Is a Pull Request?
 
@@ -180,7 +180,7 @@ A **Pull Request (PR)** is a GitHub feature that says: *"I have changes on a bra
 
 ## `git6.qmd` AI Auditing for Version Control
 
-Detail page: [AI Auditing](git06-ai-auditing.qmd) <!-- AI-EDIT(2026-06-11): GAP-R345-2 — needs review -->
+Deeper Dive: [AI Auditing](git06-ai-auditing.qmd) <!-- AI-EDIT(2026-06-22): REVIEW-row108 / GAP-R345-2 — renamed link label 'Detail page' -> 'Deeper Dive' for cross-book consistency -->
 
 Treat the LLM as a **Git Translator** that explains diffs and drafts audit-quality messages.
 
@@ -214,7 +214,7 @@ Check that the message captures the **intent** (e.g., `"Filter patient cohort to
 
 ## `git7.qmd` Setting Up Your Group Repository
 
-Detail page: [Setting Up Your Group Repository](git07-group-repository.qmd) <!-- AI-EDIT(2026-06-11): GAP-R345-2 — needs review -->
+Deeper Dive: [Setting Up Your Group Repository](git07-group-repository.qmd) <!-- AI-EDIT(2026-06-22): REVIEW-row109 / GAP-R345-2 — renamed link label 'Detail page' -> 'Deeper Dive'; page-removal question flagged separately -->
 
 This week you form your term project groups (**Milestone 0**). Use this session to establish your collaboration workflow.
 
@@ -237,7 +237,7 @@ This week you form your term project groups (**Milestone 0**). Use this session 
 
 ## `git8.qmd` Knowledge Check
 
-Detail page: [Knowledge Check](git08-knowledge-check.qmd) <!-- AI-EDIT(2026-06-11): GAP-R345-2 — needs review -->
+Deeper Dive: [Knowledge Check](git08-knowledge-check.qmd) <!-- AI-EDIT(2026-06-22): REVIEW-row110 / GAP-R345-2 — renamed link label 'Detail page' -> 'Deeper Dive'; page-removal question flagged separately -->
 
 1.  What is the difference between **saving** a file and **committing** it?
 2.  What does a red line indicate in a diff?
@@ -251,7 +251,7 @@ Detail page: [Knowledge Check](git08-knowledge-check.qmd) <!-- AI-EDIT(2026-06-1
 
 ## `git9.qmd` Practice Exercise: The Full Workflow Drill
 
-Detail page: [Practice Exercise: Full Workflow](git09-practice-exercise.qmd) <!-- AI-EDIT(2026-06-11): GAP-R345-2 — needs review -->
+Deeper Dive: [Practice Exercise: Full Workflow](git09-practice-exercise.qmd) <!-- AI-EDIT(2026-06-22): REVIEW-row111 / GAP-R345-2 — renamed link label 'Detail page' -> 'Deeper Dive' for cross-book consistency -->
 
 1.  Open your Codespace from last week.
 2.  Create a `.gitignore` file with sensible defaults for your project. **Commit.**
@@ -267,7 +267,7 @@ Detail page: [Practice Exercise: Full Workflow](git09-practice-exercise.qmd) <!-
 
 ## `git10.qmd` Quick Reference: Common Git Actions in VS Code
 
-Detail page: [Quick Reference](git10-quick-reference.qmd) <!-- AI-EDIT(2026-06-11): GAP-R345-2 — needs review -->
+Deeper Dive: [Quick Reference](git10-quick-reference.qmd) <!-- AI-EDIT(2026-06-22): REVIEW-row112 / GAP-R345-2 — renamed link label 'Detail page' -> 'Deeper Dive' for cross-book consistency -->
 
 | Action | How |
 |------------------------------------|------------------------------------|
