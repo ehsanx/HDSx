@@ -4,9 +4,9 @@
 
 This page connects Week 11 class work to [Assignment 10](../../assignments/assignment10-portfolio-surgery/README.md), [M4](../../milestones/m4-peer-review/README.md), and the [Final Portfolio](../../milestones/final-portfolio/README.md). It does not add new deliverables.
 
-::: {.callout-note title="Tester note"}
-Check that the file names below match the current Assignment 10 and Final Portfolio README files before release.
-:::
+<!-- AI-EDIT(2026-06-22): tester-note-conversion — converted leaked "Tester note" callout to a hidden HTML comment (instructor/tester maintenance task, not student-facing).
+Tester note: Check that the file names below match the current Assignment 10 and Final Portfolio README files before release.
+-->
 
 ## A10 Submission Files
 

@@ -6,9 +6,10 @@ Test whether a project can run in a fresh environment and document every failure
 
 This page is the main Week 11 runbook. Use it for Assignment 10, M4 peer review, and final portfolio preparation.
 
-::: {.callout-note title="Tester note"}
+<!-- AI-EDIT(2026-06-22): tester-note-conversion — converted instructor/tester-only "Tester note" callout to hidden HTML comment (pre-release guidance, not student-facing)
+Tester note:
 Before release, run this protocol on a clean fork or clean Codespace and check that the steps match the current GitHub Codespaces interface.
-:::
+-->
 
 ## Roles
 
