@@ -61,9 +61,11 @@ Edit your local copy of the starter file with the revised text. Then run the six
 5. Open the HTML preview.
 6. Record the test in `testing-log.md`.
 
-::: {.callout-note title="Tester note"}
+<!-- AI-EDIT(2026-06-22): tester-note-conversion — converted leaked "Tester note" callout to hidden HTML comment (preserved for instructors/testers; redundant with the required screenshot output already listed for students). -->
+<!--
+Tester note:
 Capture: a screenshot of the rendered "after" state showing the revised audience-facing element clearly visible. Beginners need to see what a successful adaptation looks like before they attempt their own.
-:::
+-->
 
 ### Step 5 — Write the limitation and privacy check (10 min)
 

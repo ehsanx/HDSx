@@ -26,9 +26,10 @@ The A7 deliverable list asks for a `testing-log.md`. Use the routine below for t
 
 HTML is the expected output for the dashboard — a PDF is not needed. Ignore TeX- or PDF-related warnings as long as the `.html` file was created; do not try to install TeX.
 
-::: {.callout-note title="Tester note"}
+<!-- AI-EDIT(2026-06-22): REVIEW-row194 / MIT-080 — converted leaked "Tester note" callout to a hidden HTML comment (RA/instructor capture instruction, not student content) -->
+<!-- Tester note (instructors/testers only — hidden from rendered book):
 Capture: a screenshot of the Codespaces Quarto preview showing the rendered starter dashboard for *two* different `selected_income` values, side by side or in sequence. This is the most common visual confirmation that the control "works."
-:::
+-->
 
 ### Common failure modes and quick fixes
 
@@ -39,9 +40,10 @@ Capture: a screenshot of the Codespaces Quarto preview showing the rendered star
 | Stale `_freeze` cache | Output reflects the old control value | Delete the relevant `_freeze/` subfolder and re-render; or change the chunk slightly |
 | Preview pane blank | Render succeeds but preview is empty | Click the preview pane refresh icon, or open the HTML file from `docs/` (if configured) |
 
-::: {.callout-note title="Tester note"}
+<!-- AI-EDIT(2026-06-22): REVIEW-row194 / MIT-080 — converted leaked "Tester note" callout to a hidden HTML comment (RA/instructor capture instruction, not student content) -->
+<!-- Tester note (instructors/testers only — hidden from rendered book):
 Capture: one screenshot of each failure state above, with the error visible. New students stall on these and screenshots in the Survival Guide help unblock faster.
-:::
+-->
 
 <!-- AI-EDIT(2026-06-11): TF-024, MIT-085, WI-046 — needs review -->
 ::: {.callout-tip title="Package check before you finish"}

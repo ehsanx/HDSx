@@ -115,10 +115,11 @@ Before submitting a dashboard-style product:
 4. Verify that the caption still names the dataset, exclusions, and limitation.
 5. Record any warning or error in your testing log.
 
-<!-- AI-EDIT(2026-06-11): MIT-078, MIT-080 — needs review -->
+<!-- AI-EDIT(2026-06-22): REVIEW-row190 / MIT-078,MIT-080 — render steps come from the shared course include (D-003); kept here because this is the page holding the required A7 artifact -->
 {{< include /_snippets/render-how.qmd >}}
 
-HTML is the expected output for this dashboard — you do not need a PDF. If the render log warns about a missing TeX installation or a PDF problem, you can ignore it as long as the `.html` file was created.
+HTML is the expected output for this dashboard — you do not need a PDF. If the render log warns about a missing TeX installation or a PDF problem, you can ignore it as long as the `.html` file was created. <!-- AI-EDIT(2026-06-22): REVIEW-row190 / MIT-080 — added cross-ref so the brief HTML/PDF reminder reads as intentional reinforcement of the fuller routine on dash05, not accidental duplication -->
+[dash05](dash05-testing-privacy-and-shiny-demo.qmd) walks through the full six-step test routine for this same page.
 
 ## Privacy-Safe Publishing
 
