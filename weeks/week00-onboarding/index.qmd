@@ -5,7 +5,6 @@
 Week 0 gets the account setup and orientation work out of the way before the first class. You do not need to install local software for this course. The default workflow uses a personal fork of the course template repository, GitHub Codespaces, Quarto, and Canvas.
 
 <!-- AI-EDIT(2026-06-11): GAP-OLDM-2, MIT-087 — needs review -->
-
 ::: {.callout-note title="Four terms you will see all course"}
 - **Repository (repo):** a project folder stored on GitHub. It holds all the files for your coursework — think of it as your cloud drive.
 - **Codespace:** a ready-to-use computer in the cloud that opens in your browser, with R, Python, and Quarto already installed — think of it as a public computer in the library.
@@ -19,18 +18,19 @@ Week 2 walks through each of these step by step — you do not need to master th
 
 Complete these steps before Week 1:
 
-1.  Log in to Canvas and open the Week 0 module.
-2.  Watch the orientation video posted in Canvas.
-3.  Complete the pre-course survey posted in Canvas.
-4.  Create or confirm access to a GitHub account.
-5.  If eligible, apply for GitHub Education / Student Developer Pack, or confirm that you already have access.
-6.  Submit the Week 0 Canvas onboarding check with your GitHub username and GitHub Education status.
+1. Log in to Canvas and open the Week 0 module.
+2. Watch the orientation video posted in Canvas.
+3. Complete the pre-course survey posted in Canvas.
+4. Create or confirm access to a GitHub account.
+5. If eligible, apply for GitHub Education / Student Developer Pack, or confirm that you already have access.
+6. Submit the Week 0 Canvas onboarding check with your GitHub username and GitHub Education status.
 
 ## GitHub Account
 
 Use a professional GitHub username that you are comfortable sharing in a course setting. If you already have a GitHub account, you may use it. You do not need to create a second account unless your current username or profile is not appropriate for coursework.
 
 ![The GitHub account creation page, where you choose your username and email](../../assets/images/week00/account-creation.png){fig-alt="GitHub sign-up form showing the email, password, and username fields, with a professional username example entered"}
+
 
 Before submitting the onboarding check:
 
@@ -41,7 +41,6 @@ Before submitting the onboarding check:
 - use the same GitHub account and username throughout the course
 
 <!-- AI-EDIT(2026-06-11): TF-005, MIT-005, MIT-163, WI-005 — needs review -->
-
 ### Username, Password, And Repository Privacy
 
 A professional username usually follows a simple pattern, such as first-last or initials. For example, `maria-chen` or `j-smith-health`. Pick something you would be comfortable putting on a resume.
@@ -53,7 +52,6 @@ Protect your account:
 - turn on two-factor authentication (2FA) and keep it on; 2FA adds a second login step (a code from an app or text message) so your account stays protected even if your password is exposed <!-- AI-EDIT(2026-06-22): REVIEW-row4, TF-005, MIT-005 — replaced vague 'as described above' (2FA was only named in one earlier bullet) with a brief student-friendly description of 2FA -->
 
 <!-- AI-EDIT(2026-06-22): REVIEW-row5, TF-005, MIT-005 — corrected GitHub fork behavior: a fork of a public repo stays public and you cannot change its visibility while it stays a fork; recommend a private copy via Import/template when privacy is needed -->
-
 Think about repository privacy. A fork of a public repository is itself public, and GitHub does not let you switch a fork to private while it remains connected to its upstream. So if your work may include restricted, sensitive, or course-only materials, do not rely on changing a fork's visibility — instead create a separate private copy (for example with GitHub's **Import repository** option, or by using the template repository's **Use this template** button if the instructor enables it) and choose **Private**. A public repository should only be used when the instructor confirms it is safe. Making your work public is encouraged once the course privacy checklist passes, but it is never required, and there is no penalty for staying private. Follow the workflow Canvas specifies for this offering.
 
 ![The private-versus-public visibility setting when creating a GitHub repository](../../assets/images/week00/private-vs-public.png){fig-alt="GitHub new repository form with the Private visibility option selected and the Public option visible below it"}
@@ -120,34 +118,34 @@ If you create a new account, use that account consistently for course repositori
 ## Course Repository Entry Point
 
 <!-- AI-EDIT(2026-06-11): TF-002, MIT-001, WI-001 — needs review -->
-
 Create your own copy of the course template repository on GitHub. This copy is called a fork. You will make changes in your own fork so that your work does not affect the original course repository.
 
 The current course workflow uses a fork-based setup:
 
-1.  Open the course template repository using the link provided in Canvas. If you do not have Canvas access, use the direct GitHub repository link: <https://github.com/ehsanx/HDSx-workspace>. <!-- AI-EDIT(2026-06-11): TF-003, MIT-002, WI-002 — needs review -->
-2.  Click **Fork**.
-3.  On the "Create a new fork" page, make sure the **Owner** is set to the GitHub account you submitted in the onboarding check (not another personal account or an organization), then create the fork. <!-- AI-EDIT(2026-06-22): REVIEW-row8, SS-002 — added explicit owner-selection guidance during fork creation -->
-4.  Verify the fork landed in the correct account: the repository URL should read `https://github.com/<your-username>/HDSx-workspace`, and the page header should show `forked from ehsanx/HDSx-workspace` under your own username. If the owner is wrong, delete the fork and repeat the step. <!-- AI-EDIT(2026-06-22): REVIEW-row8, SS-002 — added how-to-verify-the-fork-was-created-in-the-correct-account check -->
-5.  Launch Codespaces from your fork.
-6.  Commit and sync changes to your fork.
-7.  Submit your fork repository link on Canvas.
+1. Open the course template repository using the link provided in Canvas. If you do not have Canvas access, use the direct GitHub repository link: <https://github.com/ehsanx/HDSx-workspace>. <!-- AI-EDIT(2026-06-11): TF-003, MIT-002, WI-002 — needs review -->
+2. Click **Fork**.
+3. On the "Create a new fork" page, make sure the **Owner** is set to the GitHub account you submitted in the onboarding check (not another personal account or an organization), then create the fork. <!-- AI-EDIT(2026-06-22): REVIEW-row8, SS-002 — added explicit owner-selection guidance during fork creation -->
+4. Verify the fork landed in the correct account: the repository URL should read `https://github.com/<your-username>/HDSx-workspace`, and the page header should show `forked from ehsanx/HDSx-workspace` under your own username. If the owner is wrong, delete the fork and repeat the step. <!-- AI-EDIT(2026-06-22): REVIEW-row8, SS-002 — added how-to-verify-the-fork-was-created-in-the-correct-account check -->
+5. Launch Codespaces from your fork.
+6. Commit and sync changes to your fork.
+7. Submit your fork repository link on Canvas.
 
 <!-- AI-EDIT(2026-06-11): SS-002, TF-006, MIT-006 — figure placeholder, RA to capture -->
-
 <!-- TODO-SCREENSHOT: uncomment when the asset exists:-->
 
 ![The Fork button on the course template repository, used to create your own copy](../../assets/images/week00/fork-button.png){fig-alt="GitHub repository page with the Fork button highlighted near the top-right corner"}
 
 <!-- AI-EDIT(2026-06-22): REVIEW-row8, SS-002 — RA referenced SS-002-01 (fork-creation) and SS-002-02 (fork-confirmation), but no matching image files exist under assets/images/week00/ (the directory itself is absent). NEEDS-RA-SCREENSHOT: add the files, then uncomment references like:-->
 
-![Choosing the correct Owner on the Create a new fork page](../../assets/images/week00/SS-002-01-fork-creation.png){fig-alt="GitHub Create a new fork page with the Owner dropdown set to the student's own account"} ![Confirming the fork was created under your own account](../../assets/images/week00/SS-002-02-fork-confirmation.png){fig-alt="GitHub repository page showing forked from ehsanx/HDSx-workspace beneath the student's username"}
+![Choosing the correct Owner on the Create a new fork page](../../assets/images/week00/SS-002-01-fork-creation.png){fig-alt="GitHub Create a new fork page with the Owner dropdown set to the student's own account"}
+![Confirming the fork was created under your own account](../../assets/images/week00/SS-002-02-fork-confirmation.png){fig-alt="GitHub repository page showing forked from ehsanx/HDSx-workspace beneath the student's username"}
+
 
 <!-- AI-EDIT(2026-06-11): SS-003 — figure placeholder, RA to capture -->
-
 <!-- TODO-SCREENSHOT: uncomment when the asset exists:-->
 
 ![Launching a full-screen Codespace from your fork using the Code button](../../assets/images/week00/codespace-launch.png){fig-alt="GitHub Code menu open on a personal fork, showing the Codespaces tab and the Create codespace button"}
+
 
 If a future offering uses an instructor-managed repository system, Canvas will say so explicitly. For this course book, the fork-based workflow is the default student route.
 
@@ -177,5 +175,4 @@ Bring:
 ## Definition Of Done
 
 <!-- AI-EDIT(2026-06-11): MIT-004, WI-004 — needs review -->
-
 Before Week 1, make sure you have created a GitHub account, chosen a professional username, confirmed you can log in, watched the Canvas orientation video, completed the pre-course survey, and submitted the onboarding check. Week 0 is done when all of these are complete and you have either applied for GitHub Education if eligible or indicated your GitHub Education status in Canvas.
