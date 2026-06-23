@@ -1137,7 +1137,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ol type="1">
 <li><code>library(readr); library(dplyr); library(knitr)</code> runs without error.</li>
 <li>The cached data file resolves: <code>examples/nhanes-equity/data/nhanes_equity_v6.csv</code>.</li>
-<li>Render <code>eda03-worked-example.qmd</code> so you have a clean reference. The check passes when the HTML file is created and the table/plot are visible without errors. Record any error message in your notes. <!-- AI-EDIT(2026-06-11): GAP-R678-2, MIT-073 — needs review --></li>
+<li>Render <code>eda03-worked-example.qmd</code> to <strong>HTML</strong> so you have a clean reference (HTML is this course’s default output format). The check passes when the HTML file is created and the table/plot are visible without errors. Record any error message in your notes. <!-- AI-EDIT(2026-06-22): REVIEW-row179 / MIT-073,GAP-R678-2 — specify HTML output format when rendering --></li>
 </ol>
 <!-- AI-EDIT(2026-06-11): MIT-073, GAP-R678-2 — needs review -->
 <!-- AI-EDIT(2026-06-11): D-003 — course-wide standard render instructions (reusable include) — needs review -->
@@ -1152,7 +1152,7 @@ How to render: the course default
 </div>
 <div class="callout-body-container callout-body">
 <ol type="1">
-<li><p>Open the <code>.qmd</code> file you want to render, then go to <strong>View → Command Palette</strong> and run <strong>Quarto: Render Document</strong>. The Quarto extension renders the file and opens a preview pane.</p></li>
+<li><p>Open the <code>.qmd</code> file you want to render, then open the <strong>Command Palette</strong> (<strong>View → Command Palette</strong>, or press <strong>Ctrl+Shift+P</strong> on Windows/Linux / <strong>Cmd+Shift+P</strong> on Mac) and run <strong>Quarto: Render Document</strong>. The Quarto extension renders the file and opens a preview pane. <!-- AI-EDIT(2026-06-22): REVIEW-row46 / D-003,GAP-R678-1 — added Command Palette keyboard shortcut (Ctrl+Shift+P / Cmd+Shift+P) so students can find it without hunting the menu --></p></li>
 <li><p><strong>Always-works fallback (terminal):</strong> type the render command with the file’s path as shown in the Explorer, for example:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="ex">quarto</span> render practice_report.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Always name the file — a bare <code>quarto render</code> rebuilds the <em>whole</em> project and takes much longer.</p></li>
@@ -1174,19 +1174,10 @@ How to render: the course default
 <li>Dataset: <code>examples/nhanes-equity/data/nhanes_equity_v6.csv</code> <!-- AI-EDIT(2026-06-11): D-001/MIT-127 — starter relocated out of instructor/ — needs review --></li>
 <li>Planted-error starter (the artifact you will audit): <code>weeks/week07-eda-ai-audit/studio/planted-error-starter.qmd</code></li>
 </ul>
-<div class="callout callout-style-default callout-note callout-titled" title="Tester note">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tester note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Capture: a screenshot of the rendered planted-error starter in the Codespaces Quarto preview, with the misleading interpretation paragraph clearly visible. This is the “before” state students will recognize during the studio.</p>
-</div>
-</div>
+<!-- AI-EDIT(2026-06-22): REVIEW-tester-note — converted leaked "Tester note" callout to a hidden HTML comment (instructor/tester-only, not student-facing); content preserved
+Tester note (instructor/tester only):
+Capture: a screenshot of the rendered planted-error starter in the Codespaces Quarto preview, with the misleading interpretation paragraph clearly visible. This is the "before" state students will recognize during the studio.
+-->
 </section>
 <section id="activity-steps" class="level2">
 <h2 class="anchored" data-anchor-id="activity-steps">Activity Steps</h2>

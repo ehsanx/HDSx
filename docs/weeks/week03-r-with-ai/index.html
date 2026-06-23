@@ -1194,7 +1194,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Commit incrementally as you work (reinforcing Week 2 Git basics).</li>
 </ul></section><section id="connection" class="level2"><h2 class="anchored" data-anchor-id="connection">Connection</h2>
 <p>Week 2 made the project structure reproducible. This week you use that structure to load, inspect, summarize, and audit R code with AI support. Next week you will put those edits under version control.</p>
-<p>Before you start, make sure your tools are ready: <a href="../../weeks/week03-r-with-ai/r01-setup.html">The Setup (The Cockpit)</a>. <!-- AI-EDIT(2026-06-11): GAP-R345-1 — needs review --></p>
+<p>Before you start, make sure your tools are ready: <a href="../../weeks/week03-r-with-ai/r01-setup.html">The Setup (The Cockpit)</a>. <!-- AI-EDIT(2026-06-11): GAP-R345-1 — needs review --> <!-- AI-EDIT(2026-06-22): REVIEW-row55, GAP-R345-1 — RA requests an added screenshot on the linked Setup page (r01-setup.qmd); image not available to insert. NEEDS-RA-SCREENSHOT --> <!-- TODO: RA to provide screenshot for r01-setup.qmd (referenced by REVIEW-row55) --></p>
 <!-- AI-EDIT(2026-06-11): TF-013, MIT-025, WI-018 — needs review -->
 <div class="callout callout-style-default callout-note callout-titled" title="How to use the code blocks on this page">
 <div class="callout-header d-flex align-content-center">
@@ -1288,6 +1288,8 @@ How to use the code blocks on this page
 <code><a href="https://tidyverse.tidyverse.org">library(tidyverse)</a></code> — <strong>opening</strong> the toolbox. Required every time you restart R or reopen your Codespace.</li>
 </ul>
 <p><strong>What to do with this code:</strong> Run — execute it as written every time you reopen your Codespace. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review --></p>
+<!-- AI-EDIT(2026-06-22): REVIEW-row59, MIT-025 — clarify you must be inside an R session (the `>` prompt) before running library() -->
+<p><strong>Where to run this:</strong> First start R so you are <em>inside</em> an R session. Open a terminal in VS Code (<strong>Terminal → New Terminal</strong>), type <code>R</code>, and press Enter. You should now see the R prompt, which looks like <code>&gt;</code>. Then type the line below at that <code>&gt;</code> prompt (you can also run it from the R Console or a code chunk in your <code>.qmd</code>).</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -1307,6 +1309,8 @@ Note
 </section><section id="minimal-renv-checkpoint" class="level3"><h3 class="anchored" data-anchor-id="minimal-renv-checkpoint">Minimal renv Checkpoint</h3>
 <p><code>renv</code> helps record which R packages a project uses. You do not need to master <code>renv</code> this week, but you should recognize the three checkpoint commands that support reproducibility.</p>
 <p><strong>What to do with this code:</strong> Run <code>renv::status()</code> as written; Read the other two commands so you recognize them. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review --></p>
+<!-- AI-EDIT(2026-06-22): REVIEW-row60,row68, MIT-025 — clarify renv commands run inside an R session, not the bash terminal; corrected RA's renv::init() advice (project is pre-initialized, so init is not needed) -->
+<p><strong>Where to run this:</strong> These are R commands, so run them <em>inside</em> an R session (the <code>&gt;</code> prompt), not at the plain terminal. If you are not already in R, open a terminal (<strong>Terminal → New Terminal</strong>), type <code>R</code>, press Enter, then run <code>renv::status()</code>. The course project is already set up for <code>renv</code>, so you do <strong>not</strong> need to run <code>renv::init()</code> yourself.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="co"># Check whether the project environment has changed.</span></span>
 <span id="cb4-2"><a href="#cb4-2"></a>renv<span class="sc">::</span><span class="fu">status</span>()</span>
@@ -1319,6 +1323,10 @@ Note
 </div>
 <!-- AI-EDIT(2026-06-11): GAP-R345-10 — needs review -->
 <p>Use <code>renv::status()</code> to check whether the project environment matches the lockfile. Do not run <code>renv::snapshot()</code> unless the instructor asks or you have intentionally added a package, because it changes the recorded package state.</p>
+<!-- AI-EDIT(2026-06-22): REVIEW-row61, GAP-R345-10 — show expected output and a restart fallback for renv::status() -->
+<p>When everything is consistent, <code>renv::status()</code> prints:</p>
+<pre><code>No issues found -- the project is in a consistent state.</code></pre>
+<p>If instead it reports that packages are out of sync, first try restarting R (type <code><a href="https://rdrr.io/r/base/quit.html">q()</a></code> to quit, choose <strong>n</strong> when asked to save the workspace, then type <code>R</code> again) and rerun <code>renv::status()</code>. If it still reports a mismatch, do <strong>not</strong> run <code>renv::snapshot()</code> to “fix” it — use the Canvas support channel or office hours and include the exact message, since the lockfile is instructor-managed.</p>
 <p>For Assignment 2, run <code>renv::status()</code> and write a short dependency note. Only run <code>renv::snapshot()</code> if you intentionally added a package.</p>
 <hr>
 <!-- AI-EDIT(2026-06-11): MIT-033, GAP-R345-1 — needs review --></section></section><section id="core-constructs-boxes-toasters-and-the-assembly-line" class="level2"><h2 class="anchored" data-anchor-id="core-constructs-boxes-toasters-and-the-assembly-line">Core Constructs: Boxes, Toasters, and the Assembly Line</h2>
@@ -1327,8 +1335,8 @@ Note
 <p>R has no memory unless you store results in a named box using <code>&lt;-</code>.</p>
 <p><strong>What to do with this code:</strong> Run — type it in the Console, then check the Environment pane to see your new “boxes”. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review --></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>patient_age <span class="ot">&lt;-</span> <span class="dv">55</span></span>
-<span id="cb5-2"><a href="#cb5-2"></a>clinic_name <span class="ot">&lt;-</span> <span class="st">"Vancouver General"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>patient_age <span class="ot">&lt;-</span> <span class="dv">55</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a>clinic_name <span class="ot">&lt;-</span> <span class="st">"Vancouver General"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -1347,7 +1355,7 @@ Warning
 <p>A function takes <strong>input</strong> and returns <strong>output</strong>. Arguments (inside the parentheses) control its behaviour.</p>
 <p><strong>What to do with this code:</strong> Run — execute it as written. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review --></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="fu">mean</span>(<span class="fu">c</span>(<span class="dv">72</span>, <span class="dv">85</span>, <span class="dv">90</span>), <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="fu">mean</span>(<span class="fu">c</span>(<span class="dv">72</span>, <span class="dv">85</span>, <span class="dv">90</span>), <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>
@@ -1358,9 +1366,9 @@ Warning
 <p>The pipe passes the result of one step into the next. Think of it as <strong>“and then…”</strong></p>
 <p><strong>What to do with this code:</strong> Read — <code>data</code> here is a placeholder, so this block will not run as-is. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review --></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a>data <span class="sc">%&gt;%</span></span>
-<span id="cb7-2"><a href="#cb7-2"></a>  <span class="fu">filter</span>(age <span class="sc">&gt;</span> <span class="dv">65</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb7-3"><a href="#cb7-3"></a>  <span class="fu">summarise</span>(<span class="at">mean_bmi =</span> <span class="fu">mean</span>(bmi, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a>data <span class="sc">%&gt;%</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a>  <span class="fu">filter</span>(age <span class="sc">&gt;</span> <span class="dv">65</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb8-3"><a href="#cb8-3"></a>  <span class="fu">summarise</span>(<span class="at">mean_bmi =</span> <span class="fu">mean</span>(bmi, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Read this as: <em>“Take the data, and then keep only patients over 65, and then calculate the average BMI.”</em></p>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -1383,7 +1391,7 @@ Tip
 <p>Use relative paths so your code runs on any machine (including your grader’s Codespace).</p>
 <p><strong>What to do with this code:</strong> Modify — replace the path with the relative path to your own file, then run it. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review --></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a>my_data <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/patients.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a>my_data <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/patients.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><strong>How to get the path right:</strong> Right-click the file in the VS Code Explorer → <strong>Copy Relative Path</strong> → paste it into your code.</p>
 <p><strong>AI Prompt:</strong></p>
@@ -1393,18 +1401,20 @@ Tip
 </section><section id="first-contact-inspect-before-you-analyze" class="level3"><h3 class="anchored" data-anchor-id="first-contact-inspect-before-you-analyze">First Contact: Inspect Before You Analyze</h3>
 <p>Never start analysis without looking at your data. Run these four checks:</p>
 <p><strong>What to do with this code:</strong> Run — execute it as written once your data is loaded. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review --></p>
+<!-- AI-EDIT(2026-06-22): REVIEW-row69, MIT-025 — note that glimpse() needs tidyverse loaded and state where to run -->
+<p>Run these in your assignment <code>.qmd</code> (as a code chunk) or at the R <code>&gt;</code> prompt, using the course workspace repo. <code>glimpse()</code> comes from <code>tidyverse</code>, so if you get <code>could not find function "glimpse"</code>, run <code><a href="https://tidyverse.tidyverse.org">library(tidyverse)</a></code> first.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="co"># How big is it?</span></span>
-<span id="cb9-2"><a href="#cb9-2"></a><span class="fu">dim</span>(my_data)          <span class="co"># rows x columns</span></span>
-<span id="cb9-3"><a href="#cb9-3"></a></span>
-<span id="cb9-4"><a href="#cb9-4"></a><span class="co"># What are the column names and types?</span></span>
-<span id="cb9-5"><a href="#cb9-5"></a><span class="fu">glimpse</span>(my_data)</span>
-<span id="cb9-6"><a href="#cb9-6"></a></span>
-<span id="cb9-7"><a href="#cb9-7"></a><span class="co"># Quick summary statistics</span></span>
-<span id="cb9-8"><a href="#cb9-8"></a><span class="fu">summary</span>(my_data)</span>
-<span id="cb9-9"><a href="#cb9-9"></a></span>
-<span id="cb9-10"><a href="#cb9-10"></a><span class="co"># How much is missing?</span></span>
-<span id="cb9-11"><a href="#cb9-11"></a><span class="fu">colSums</span>(<span class="fu">is.na</span>(my_data))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="co"># How big is it?</span></span>
+<span id="cb10-2"><a href="#cb10-2"></a><span class="fu">dim</span>(my_data)          <span class="co"># rows x columns</span></span>
+<span id="cb10-3"><a href="#cb10-3"></a></span>
+<span id="cb10-4"><a href="#cb10-4"></a><span class="co"># What are the column names and types?</span></span>
+<span id="cb10-5"><a href="#cb10-5"></a><span class="fu">glimpse</span>(my_data)</span>
+<span id="cb10-6"><a href="#cb10-6"></a></span>
+<span id="cb10-7"><a href="#cb10-7"></a><span class="co"># Quick summary statistics</span></span>
+<span id="cb10-8"><a href="#cb10-8"></a><span class="fu">summary</span>(my_data)</span>
+<span id="cb10-9"><a href="#cb10-9"></a></span>
+<span id="cb10-10"><a href="#cb10-10"></a><span class="co"># How much is missing?</span></span>
+<span id="cb10-11"><a href="#cb10-11"></a><span class="fu">colSums</span>(<span class="fu">is.na</span>(my_data))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Open the <strong>Environment</strong> pane (top-right in RStudio or via the R extension) to see your variables and click a data frame to view it in a grid.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
@@ -1429,41 +1439,41 @@ Warning
 <section id="filter-keep-rows-that-match-a-condition" class="level3"><h3 class="anchored" data-anchor-id="filter-keep-rows-that-match-a-condition">
 <code>filter()</code> — Keep rows that match a condition</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="co"># Patients aged 65 and older</span></span>
-<span id="cb10-2"><a href="#cb10-2"></a>seniors <span class="ot">&lt;-</span> my_data <span class="sc">%&gt;%</span> <span class="fu">filter</span>(age <span class="sc">&gt;=</span> <span class="dv">65</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a><span class="co"># Patients aged 65 and older</span></span>
+<span id="cb11-2"><a href="#cb11-2"></a>seniors <span class="ot">&lt;-</span> my_data <span class="sc">%&gt;%</span> <span class="fu">filter</span>(age <span class="sc">&gt;=</span> <span class="dv">65</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section><section id="select-keep-or-drop-columns" class="level3"><h3 class="anchored" data-anchor-id="select-keep-or-drop-columns">
 <code>select()</code> — Keep (or drop) columns</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a><span class="co"># Keep only ID, age, and BMI</span></span>
-<span id="cb11-2"><a href="#cb11-2"></a>slim <span class="ot">&lt;-</span> my_data <span class="sc">%&gt;%</span> <span class="fu">select</span>(id, age, bmi)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a><span class="co"># Keep only ID, age, and BMI</span></span>
+<span id="cb12-2"><a href="#cb12-2"></a>slim <span class="ot">&lt;-</span> my_data <span class="sc">%&gt;%</span> <span class="fu">select</span>(id, age, bmi)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section><section id="mutate-create-or-modify-a-column" class="level3"><h3 class="anchored" data-anchor-id="mutate-create-or-modify-a-column">
 <code>mutate()</code> — Create or modify a column</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a><span class="co"># Add a BMI category column</span></span>
-<span id="cb12-2"><a href="#cb12-2"></a>my_data <span class="ot">&lt;-</span> my_data <span class="sc">%&gt;%</span></span>
-<span id="cb12-3"><a href="#cb12-3"></a>  <span class="fu">mutate</span>(<span class="at">bmi_category =</span> <span class="fu">case_when</span>(</span>
-<span id="cb12-4"><a href="#cb12-4"></a>    bmi <span class="sc">&lt;</span> <span class="fl">18.5</span> <span class="sc">~</span> <span class="st">"Underweight"</span>,</span>
-<span id="cb12-5"><a href="#cb12-5"></a>    bmi <span class="sc">&lt;</span> <span class="dv">25</span>   <span class="sc">~</span> <span class="st">"Normal"</span>,</span>
-<span id="cb12-6"><a href="#cb12-6"></a>    bmi <span class="sc">&lt;</span> <span class="dv">30</span>   <span class="sc">~</span> <span class="st">"Overweight"</span>,</span>
-<span id="cb12-7"><a href="#cb12-7"></a>    <span class="cn">TRUE</span>       <span class="sc">~</span> <span class="st">"Obese"</span></span>
-<span id="cb12-8"><a href="#cb12-8"></a>  ))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a><span class="co"># Add a BMI category column</span></span>
+<span id="cb13-2"><a href="#cb13-2"></a>my_data <span class="ot">&lt;-</span> my_data <span class="sc">%&gt;%</span></span>
+<span id="cb13-3"><a href="#cb13-3"></a>  <span class="fu">mutate</span>(<span class="at">bmi_category =</span> <span class="fu">case_when</span>(</span>
+<span id="cb13-4"><a href="#cb13-4"></a>    bmi <span class="sc">&lt;</span> <span class="fl">18.5</span> <span class="sc">~</span> <span class="st">"Underweight"</span>,</span>
+<span id="cb13-5"><a href="#cb13-5"></a>    bmi <span class="sc">&lt;</span> <span class="dv">25</span>   <span class="sc">~</span> <span class="st">"Normal"</span>,</span>
+<span id="cb13-6"><a href="#cb13-6"></a>    bmi <span class="sc">&lt;</span> <span class="dv">30</span>   <span class="sc">~</span> <span class="st">"Overweight"</span>,</span>
+<span id="cb13-7"><a href="#cb13-7"></a>    <span class="cn">TRUE</span>       <span class="sc">~</span> <span class="st">"Obese"</span></span>
+<span id="cb13-8"><a href="#cb13-8"></a>  ))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section><section id="summarise-collapse-rows-into-a-summary" class="level3"><h3 class="anchored" data-anchor-id="summarise-collapse-rows-into-a-summary">
 <code>summarise()</code> — Collapse rows into a summary</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a>my_data <span class="sc">%&gt;%</span> <span class="fu">summarise</span>(<span class="at">mean_age =</span> <span class="fu">mean</span>(age, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a>my_data <span class="sc">%&gt;%</span> <span class="fu">summarise</span>(<span class="at">mean_age =</span> <span class="fu">mean</span>(age, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section><section id="group_by-summarise-summaries-by-group" class="level3"><h3 class="anchored" data-anchor-id="group_by-summarise-summaries-by-group">
 <code>group_by()</code> + <code>summarise()</code> — Summaries by group</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a>my_data <span class="sc">%&gt;%</span></span>
-<span id="cb14-2"><a href="#cb14-2"></a>  <span class="fu">group_by</span>(sex) <span class="sc">%&gt;%</span></span>
-<span id="cb14-3"><a href="#cb14-3"></a>  <span class="fu">summarise</span>(</span>
-<span id="cb14-4"><a href="#cb14-4"></a>    <span class="at">n =</span> <span class="fu">n</span>(),</span>
-<span id="cb14-5"><a href="#cb14-5"></a>    <span class="at">mean_bmi =</span> <span class="fu">mean</span>(bmi, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb14-6"><a href="#cb14-6"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a>my_data <span class="sc">%&gt;%</span></span>
+<span id="cb15-2"><a href="#cb15-2"></a>  <span class="fu">group_by</span>(sex) <span class="sc">%&gt;%</span></span>
+<span id="cb15-3"><a href="#cb15-3"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb15-4"><a href="#cb15-4"></a>    <span class="at">n =</span> <span class="fu">n</span>(),</span>
+<span id="cb15-5"><a href="#cb15-5"></a>    <span class="at">mean_bmi =</span> <span class="fu">mean</span>(bmi, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb15-6"><a href="#cb15-6"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><strong>AI Prompt:</strong></p>
 <blockquote class="blockquote">
@@ -1490,18 +1500,18 @@ Tip
 <p><strong>What to do with the code in this section:</strong> Read — these are patterns to recognize in AI output; you do not need to run them. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review --></p>
 <section id="ifelse-the-fork-in-the-road" class="level3"><h3 class="anchored" data-anchor-id="ifelse-the-fork-in-the-road">If/Else: The Fork in the Road</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a><span class="cf">if</span> (mean_age <span class="sc">&gt;</span> <span class="dv">50</span>) {</span>
-<span id="cb15-2"><a href="#cb15-2"></a>  <span class="fu">print</span>(<span class="st">"Older cohort"</span>)</span>
-<span id="cb15-3"><a href="#cb15-3"></a>} <span class="cf">else</span> {</span>
-<span id="cb15-4"><a href="#cb15-4"></a>  <span class="fu">print</span>(<span class="st">"Younger cohort"</span>)</span>
-<span id="cb15-5"><a href="#cb15-5"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a><span class="cf">if</span> (mean_age <span class="sc">&gt;</span> <span class="dv">50</span>) {</span>
+<span id="cb16-2"><a href="#cb16-2"></a>  <span class="fu">print</span>(<span class="st">"Older cohort"</span>)</span>
+<span id="cb16-3"><a href="#cb16-3"></a>} <span class="cf">else</span> {</span>
+<span id="cb16-4"><a href="#cb16-4"></a>  <span class="fu">print</span>(<span class="st">"Younger cohort"</span>)</span>
+<span id="cb16-5"><a href="#cb16-5"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><strong>Audit question:</strong> Is the threshold (50) appropriate for my research question, or did the AI pick an arbitrary number?</p>
 </section><section id="loops-the-treadmill" class="level3"><h3 class="anchored" data-anchor-id="loops-the-treadmill">Loops: The Treadmill</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a><span class="cf">for</span> (col <span class="cf">in</span> <span class="fu">c</span>(<span class="st">"age"</span>, <span class="st">"bmi"</span>, <span class="st">"sbp"</span>)) {</span>
-<span id="cb16-2"><a href="#cb16-2"></a>  <span class="fu">print</span>(<span class="fu">summary</span>(my_data[[col]]))</span>
-<span id="cb16-3"><a href="#cb16-3"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a><span class="cf">for</span> (col <span class="cf">in</span> <span class="fu">c</span>(<span class="st">"age"</span>, <span class="st">"bmi"</span>, <span class="st">"sbp"</span>)) {</span>
+<span id="cb17-2"><a href="#cb17-2"></a>  <span class="fu">print</span>(<span class="fu">summary</span>(my_data[[col]]))</span>
+<span id="cb17-3"><a href="#cb17-3"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><strong>Audit questions:</strong> Does the loop have a clear end condition? Could this be replaced with a simpler vectorized operation (e.g., <code>summarise(across(...))</code>)?</p>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -1523,19 +1533,19 @@ Note
 <section id="example-a-reusable-summary" class="level3"><h3 class="anchored" data-anchor-id="example-a-reusable-summary">Example: A Reusable Summary</h3>
 <p><strong>What to do with this code:</strong> Run, then Modify — run it as written on your data, then change one thing as described in “Your Task” below. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review --></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a>summarise_column <span class="ot">&lt;-</span> <span class="cf">function</span>(data, column_name) {</span>
-<span id="cb17-2"><a href="#cb17-2"></a>  data <span class="sc">%&gt;%</span></span>
-<span id="cb17-3"><a href="#cb17-3"></a>    <span class="fu">summarise</span>(</span>
-<span id="cb17-4"><a href="#cb17-4"></a>      <span class="at">n_total   =</span> <span class="fu">n</span>(),</span>
-<span id="cb17-5"><a href="#cb17-5"></a>      <span class="at">n_missing =</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(.data[[column_name]])),</span>
-<span id="cb17-6"><a href="#cb17-6"></a>      <span class="at">mean_val  =</span> <span class="fu">mean</span>(.data[[column_name]], <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb17-7"><a href="#cb17-7"></a>      <span class="at">sd_val    =</span> <span class="fu">sd</span>(.data[[column_name]], <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb17-8"><a href="#cb17-8"></a>    )</span>
-<span id="cb17-9"><a href="#cb17-9"></a>}</span>
-<span id="cb17-10"><a href="#cb17-10"></a></span>
-<span id="cb17-11"><a href="#cb17-11"></a><span class="co"># Use it</span></span>
-<span id="cb17-12"><a href="#cb17-12"></a><span class="fu">summarise_column</span>(my_data, <span class="st">"bmi"</span>)</span>
-<span id="cb17-13"><a href="#cb17-13"></a><span class="fu">summarise_column</span>(my_data, <span class="st">"age"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a>summarise_column <span class="ot">&lt;-</span> <span class="cf">function</span>(data, column_name) {</span>
+<span id="cb18-2"><a href="#cb18-2"></a>  data <span class="sc">%&gt;%</span></span>
+<span id="cb18-3"><a href="#cb18-3"></a>    <span class="fu">summarise</span>(</span>
+<span id="cb18-4"><a href="#cb18-4"></a>      <span class="at">n_total   =</span> <span class="fu">n</span>(),</span>
+<span id="cb18-5"><a href="#cb18-5"></a>      <span class="at">n_missing =</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(.data[[column_name]])),</span>
+<span id="cb18-6"><a href="#cb18-6"></a>      <span class="at">mean_val  =</span> <span class="fu">mean</span>(.data[[column_name]], <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb18-7"><a href="#cb18-7"></a>      <span class="at">sd_val    =</span> <span class="fu">sd</span>(.data[[column_name]], <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb18-8"><a href="#cb18-8"></a>    )</span>
+<span id="cb18-9"><a href="#cb18-9"></a>}</span>
+<span id="cb18-10"><a href="#cb18-10"></a></span>
+<span id="cb18-11"><a href="#cb18-11"></a><span class="co"># Use it</span></span>
+<span id="cb18-12"><a href="#cb18-12"></a><span class="fu">summarise_column</span>(my_data, <span class="st">"bmi"</span>)</span>
+<span id="cb18-13"><a href="#cb18-13"></a><span class="fu">summarise_column</span>(my_data, <span class="st">"age"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section><section id="your-task" class="level3"><h3 class="anchored" data-anchor-id="your-task">Your Task</h3>
 <ol type="1">
@@ -1630,11 +1640,11 @@ Warning
 <p>Every time you use AI to write a code chunk, add a <code>#</code> comment above it explaining what you asked for and what you verified:</p>
 <p><strong>What to do with this code:</strong> Read — then imitate this comment pattern above your own AI-assisted chunks. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review --></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a><span class="co"># AI prompt: "Calculate mean BMI by sex, handling NAs"</span></span>
-<span id="cb18-2"><a href="#cb18-2"></a><span class="co"># Verified: column names match, na.rm = TRUE present, output has 2 rows (M/F)</span></span>
-<span id="cb18-3"><a href="#cb18-3"></a>my_data <span class="sc">%&gt;%</span></span>
-<span id="cb18-4"><a href="#cb18-4"></a>  <span class="fu">group_by</span>(sex) <span class="sc">%&gt;%</span></span>
-<span id="cb18-5"><a href="#cb18-5"></a>  <span class="fu">summarise</span>(<span class="at">mean_bmi =</span> <span class="fu">mean</span>(bmi, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1"></a><span class="co"># AI prompt: "Calculate mean BMI by sex, handling NAs"</span></span>
+<span id="cb19-2"><a href="#cb19-2"></a><span class="co"># Verified: column names match, na.rm = TRUE present, output has 2 rows (M/F)</span></span>
+<span id="cb19-3"><a href="#cb19-3"></a>my_data <span class="sc">%&gt;%</span></span>
+<span id="cb19-4"><a href="#cb19-4"></a>  <span class="fu">group_by</span>(sex) <span class="sc">%&gt;%</span></span>
+<span id="cb19-5"><a href="#cb19-5"></a>  <span class="fu">summarise</span>(<span class="at">mean_bmi =</span> <span class="fu">mean</span>(bmi, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>This comment trail is your audit log. It demonstrates accountability (required by the course AI policy) and helps you debug later.</p>
 <hr></section></section><section id="exporting-clean-data" class="level2"><h2 class="anchored" data-anchor-id="exporting-clean-data">Exporting Clean Data <!-- AI-EDIT(2026-06-11): MIT-033 — needs review -->
@@ -1642,8 +1652,8 @@ Warning
 <p>After cleaning and transforming, save your work so future weeks can pick up where you left off.</p>
 <p><strong>What to do with this code:</strong> Run — it creates <code>output/clean_data.csv</code>; create the <code>output/</code> folder first if it does not exist. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review --></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1"></a><span class="co"># Save a clean version for Week 4 and beyond</span></span>
-<span id="cb19-2"><a href="#cb19-2"></a><span class="fu">write_csv</span>(my_data, <span class="st">"output/clean_data.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a><span class="co"># Save a clean version for Week 4 and beyond</span></span>
+<span id="cb20-2"><a href="#cb20-2"></a><span class="fu">write_csv</span>(my_data, <span class="st">"output/clean_data.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -1664,21 +1674,21 @@ Tip
 <p>Your <code>.qmd</code> file is not just code — it is a <strong>document</strong>. Weave narrative around your code chunks to explain what you are doing and why.</p>
 <section id="pattern" class="level3"><h3 class="anchored" data-anchor-id="pattern">Pattern</h3>
 <p><strong>What to do with this code:</strong> Read — a pattern to imitate in your own document, not text to paste as-is. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review --></p>
-<div class="sourceCode" id="cb20"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb20-1"><a href="#cb20-1"></a><span class="fu">## Data Inspection</span></span>
-<span id="cb20-2"><a href="#cb20-2"></a></span>
-<span id="cb20-3"><a href="#cb20-3"></a>We begin by examining the structure of the dataset to understand</span>
-<span id="cb20-4"><a href="#cb20-4"></a>variable types and missingness before any transformations.</span>
-<span id="cb20-5"><a href="#cb20-5"></a></span>
-<span id="cb20-6"><a href="#cb20-6"></a><span class="in">```{r, eval=FALSE}</span></span>
-<span id="cb20-7"><a href="#cb20-7"></a><span class="fu">glimpse</span>(my_data)</span>
-<span id="cb20-8"><a href="#cb20-8"></a><span class="fu">colSums</span>(<span class="fu">is.na</span>(my_data))</span>
-<span id="cb20-9"><a href="#cb20-9"></a><span class="in">```</span></span>
-<span id="cb20-10"><a href="#cb20-10"></a></span>
-<span id="cb20-11"><a href="#cb20-11"></a></span>
-<span id="cb20-12"><a href="#cb20-12"></a>The dataset contains <span class="in">`nrow(my_data)`</span> observations across</span>
-<span id="cb20-13"><a href="#cb20-13"></a><span class="in">`ncol(my_data)`</span> variables. Notably, BMI is missing for</span>
-<span id="cb20-14"><a href="#cb20-14"></a>approximately 12% of records, which we handle with <span class="in">`na.rm = TRUE`</span></span>
-<span id="cb20-15"><a href="#cb20-15"></a>in downstream summaries.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb21-1"><a href="#cb21-1"></a><span class="fu">## Data Inspection</span></span>
+<span id="cb21-2"><a href="#cb21-2"></a></span>
+<span id="cb21-3"><a href="#cb21-3"></a>We begin by examining the structure of the dataset to understand</span>
+<span id="cb21-4"><a href="#cb21-4"></a>variable types and missingness before any transformations.</span>
+<span id="cb21-5"><a href="#cb21-5"></a></span>
+<span id="cb21-6"><a href="#cb21-6"></a><span class="in">```{r, eval=FALSE}</span></span>
+<span id="cb21-7"><a href="#cb21-7"></a><span class="fu">glimpse</span>(my_data)</span>
+<span id="cb21-8"><a href="#cb21-8"></a><span class="fu">colSums</span>(<span class="fu">is.na</span>(my_data))</span>
+<span id="cb21-9"><a href="#cb21-9"></a><span class="in">```</span></span>
+<span id="cb21-10"><a href="#cb21-10"></a></span>
+<span id="cb21-11"><a href="#cb21-11"></a></span>
+<span id="cb21-12"><a href="#cb21-12"></a>The dataset contains <span class="in">`nrow(my_data)`</span> observations across</span>
+<span id="cb21-13"><a href="#cb21-13"></a><span class="in">`ncol(my_data)`</span> variables. Notably, BMI is missing for</span>
+<span id="cb21-14"><a href="#cb21-14"></a>approximately 12% of records, which we handle with <span class="in">`na.rm = TRUE`</span></span>
+<span id="cb21-15"><a href="#cb21-15"></a>in downstream summaries.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>This interleaving of code and prose is <strong>literate programming</strong> — the methodology that underpins reproducible research in this course. Practice it now; you will need it for your term project report (Week 10) and final portfolio.</p>
 <hr></section></section><section id="knowledge-check" class="level2"><h2 class="anchored" data-anchor-id="knowledge-check">Knowledge Check <!-- AI-EDIT(2026-06-11): MIT-033 — needs review -->
 </h2>

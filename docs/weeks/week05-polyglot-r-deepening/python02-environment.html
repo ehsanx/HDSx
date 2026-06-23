@@ -1125,11 +1125,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="create-a-notebook" class="level2">
 <h2 class="anchored" data-anchor-id="create-a-notebook">Create A Notebook</h2>
 <p>In your GitHub Codespace:</p>
-<!-- AI-EDIT(2026-06-11): TF-017, MIT-060, WI-029 — needs review -->
+<!-- AI-EDIT(2026-06-22): REVIEW-row141 (TF-017,MIT-060,WI-029) — named the repo (course HDSx repo) for this part per RA -->
+<p>Do this in your own copy of the course <code>HDSx</code> repository — the same repo Codespace you have been using all week, not a separate or blank repo.</p>
 <ol type="1">
 <li>In the Explorer panel, click the Week 5 folder (<code>weeks/week05-polyglot-r-deepening</code>) so it is highlighted. New files are created inside whichever folder is selected, so check this before creating or saving any file.</li>
 <li>Right-click the folder, choose <strong>New File…</strong>, and name the file <code>translation.ipynb</code>. Create the Python translation in <code>weeks/week05-polyglot-r-deepening/translation.ipynb</code>. Do not save it in the repository root unless the instructions explicitly say so.</li>
-<li>Select the recommended Python kernel when VS Code asks.</li>
+<li>Select the recommended Python kernel when VS Code asks. <!-- AI-EDIT(2026-06-22): REVIEW-row142 (TF-017) — added extension up-to-date check; RA found stale extensions made the notebook slow to run --></li>
+<li>Before running anything, let the Codespace finish setting up. If VS Code shows an “Updating extensions” or “Installing extensions” message in the bottom-right corner, wait for it to finish — running the notebook before the Python and Jupyter extensions are up to date can make the first cell very slow to start. You can confirm in the Extensions panel that the Python and Jupyter extensions are installed and not showing a pending update.</li>
 <li>Run this first cell by clicking the play button to the left of the cell (or pressing <code>Shift+Enter</code>). The output appears directly below the cell:</li>
 </ol>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="bu">print</span>(<span class="st">"Hello from Python. My Week 5 notebook is running."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1183,6 +1185,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>Select a Python kernel from the notebook toolbar</td>
 </tr>
 <tr class="even">
+<td>First cell is very slow to start</td>
+<td>Wait for the Python and Jupyter extensions to finish updating (check the Extensions panel), then try again</td>
+</tr>
+<tr class="odd">
 <td>Package import fails</td>
 <td>Check whether the package belongs in <code>requirements.txt</code></td>
 </tr>

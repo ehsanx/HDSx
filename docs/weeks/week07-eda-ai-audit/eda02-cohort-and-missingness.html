@@ -1140,19 +1140,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-20"><a href="#cb1-20"></a><span class="fu">kable</span>(cohort_counts)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>The <code>cohort_counts</code> table is your <strong>flow diagram in text form</strong>. It shows N before and after each restriction. If a peer asks “how many people are in your analysis?”, this table is the answer.</p>
-<div class="callout callout-style-default callout-note callout-titled" title="Tester note">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
+<!-- AI-EDIT(2026-06-22): tester-note-conversion — converted leaked "Tester note" callout to hidden HTML comment (QA/screenshot instruction, not student-facing content)
 Tester note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Capture: a screenshot of the rendered <code>cohort_counts</code> table in the Quarto preview. Beginners often skip this step; seeing it labeled clearly helps them recognize what they are missing.</p>
-</div>
-</div>
+Capture: a screenshot of the rendered `cohort_counts` table in the Quarto preview. Beginners often skip this step; seeing it labeled clearly helps them recognize what they are missing.
+-->
 </section><section id="why-missingness-comes-before-the-summary" class="level2"><h2 class="anchored" data-anchor-id="why-missingness-comes-before-the-summary">Why missingness comes before the summary</h2>
 <p>A complete-case summary silently drops rows. If you compute <code>mean(BMI, na.rm = TRUE)</code> without first showing how many BMI values were missing, your reader has no idea how representative the mean is.</p>
 <p>The audit habit is: <strong>report missingness first, then summarize, then interpret.</strong> Never the other order.</p>
@@ -1178,20 +1169,10 @@ Tester note
 <li>
 <strong>Report it, even if it is small.</strong> A row that says “BMI missing: 2 (0.1%)” is still informative.</li>
 </ol>
-<div class="callout callout-style-default callout-note callout-titled" title="Tester note">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
+<!-- AI-EDIT(2026-06-22): tester-note-conversion — converted leaked "Tester note" callout to hidden HTML comment (QA/screenshot instruction, not student-facing content)
 Tester note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Capture: a screenshot of the rendered <code>missingness</code> table for the adult cohort. Beginners need to see what “percent missing per variable” actually looks like.</p>
-</div>
-</div>
-</section><section id="what-complete-case-means-and-why-it-can-bias-the-summary" class="level2"><h2 class="anchored" data-anchor-id="what-complete-case-means-and-why-it-can-bias-the-summary">What “complete-case” means and why it can bias the summary</h2>
+Capture: a screenshot of the rendered `missingness` table for the adult cohort. Beginners need to see what "percent missing per variable" actually looks like.
+--></section><section id="what-complete-case-means-and-why-it-can-bias-the-summary" class="level2"><h2 class="anchored" data-anchor-id="what-complete-case-means-and-why-it-can-bias-the-summary">What “complete-case” means and why it can bias the summary</h2>
 <p>After you see the missingness table, you have a choice. The simplest path is <strong>complete-case analysis</strong>: drop rows where any key variable is missing. This is what most beginner tutorials show.</p>
 <p>That choice is reasonable for a classroom Table 1, but it is not automatically unbiased. If the rows you drop are systematically different from the rows you keep (for example, people with missing income may be different from people with reported income), your summary tilts in a direction you cannot see from the table alone.</p>
 <p>The honest move is to:</p>

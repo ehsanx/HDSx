@@ -1160,7 +1160,7 @@ How to render: the course default
 </div>
 <div class="callout-body-container callout-body">
 <ol type="1">
-<li><p>Open the <code>.qmd</code> file you want to render, then go to <strong>View → Command Palette</strong> and run <strong>Quarto: Render Document</strong>. The Quarto extension renders the file and opens a preview pane.</p></li>
+<li><p>Open the <code>.qmd</code> file you want to render, then open the <strong>Command Palette</strong> (<strong>View → Command Palette</strong>, or press <strong>Ctrl+Shift+P</strong> on Windows/Linux / <strong>Cmd+Shift+P</strong> on Mac) and run <strong>Quarto: Render Document</strong>. The Quarto extension renders the file and opens a preview pane. <!-- AI-EDIT(2026-06-22): REVIEW-row46 / D-003,GAP-R678-1 — added Command Palette keyboard shortcut (Ctrl+Shift+P / Cmd+Shift+P) so students can find it without hunting the menu --></p></li>
 <li><p><strong>Always-works fallback (terminal):</strong> type the render command with the file’s path as shown in the Explorer, for example:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="ex">quarto</span> render practice_report.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Always name the file — a bare <code>quarto render</code> rebuilds the <em>whole</em> project and takes much longer.</p></li>
@@ -1174,7 +1174,7 @@ How to render: the course default
 <li><strong>The Terminal (Bottom):</strong> You will see text scrolling quickly. This is your code chunks executing.</li>
 <li><strong>The Preview (Right):</strong> A new pane should appear showing a beautiful, formatted report with your name on it.</li>
 </ul>
-<!-- AI-EDIT(2026-06-11): WI-012/TF-010 — where the rendered HTML lands and how to open it — needs review -->
+<!-- AI-EDIT(2026-06-22): REVIEW-row47 / WI-012,TF-010 — corrected output location: student starter project has no output-dir, so practice_report.html lands beside the .qmd (NOT docs/). The docs/ folder is book-repo-only. Matches /_snippets/render-how.qmd. -->
 <div class="callout callout-style-default callout-note callout-titled" title="Where is my HTML file?">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1185,7 +1185,7 @@ Where is my HTML file?
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>After rendering, your HTML file is saved to the <code>docs/</code> folder at the project root — not beside the <code>.qmd</code> file. To view it, right-click the file in the Explorer panel and choose the browser/open-preview option shown in the instructions, or start a local server from the terminal and open the URL shown. You cannot open the HTML by typing its name in the terminal.</p>
+<p>For your <code>practice_report.qmd</code>, the rendered file (<code>practice_report.html</code>) is saved <strong>right next to the <code>.qmd</code> file</strong> in the Explorer panel. Watch the render log for the <code>Output created:</code> line — it names the exact file. To view it, right-click the <code>.html</code> file in the Explorer and choose <strong>Download</strong> (or <strong>Open Preview</strong> if available); typing the file name in the terminal will not open it. (In some larger projects an output directory is configured so the file lands there instead, but your practice project does not set one.)</p>
 </div>
 </div>
 <p><strong>Congratulations!</strong> You just performed “Knowledge Translation”—turning raw code into a human-readable document.</p>

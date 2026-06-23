@@ -1167,7 +1167,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Python projects record package dependencies in <code>requirements.txt</code>. This is the Python-side equivalent of saying, “Here is what another person must install before my code will run.”</p>
 <!-- AI-EDIT(2026-06-11): TF-017, WI-031 — needs review -->
 <p>The course Codespace already provides <code>pandas</code> and the notebook tools preinstalled, so you should not need to install or record anything for this week’s required work. Only edit <code>requirements.txt</code> if you add a Python package that is not already provided by the course environment.</p>
-<p>The file itself is simple — one package name per line. For example, a project that depends only on <code>pandas</code> would contain:</p>
+<!-- AI-EDIT(2026-06-22): REVIEW-row143 (TF-017, WI-031) — tell students where requirements.txt lives in the Codespace -->
+<p>In the course Codespace this file lives at <code>.devcontainer/requirements.txt</code> (at the top level of your project). The file itself is simple — one package name per line. For example, a project that depends only on <code>pandas</code> would contain:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a href="#cb1-1"></a>pandas</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>If you also create a plot in Python with packages that are not preinstalled, add:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a href="#cb2-1"></a>seaborn</span>
