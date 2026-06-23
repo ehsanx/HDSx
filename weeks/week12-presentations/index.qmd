@@ -13,7 +13,9 @@ Each presentation uses this timing:
 - 1 minute for transition
 
 <!-- AI-EDIT(2026-06-11): MIT-107, WI-063 — needs review -->
-Presentation order will be posted on Canvas here: [insert Canvas link]. Check this page before presentation day and notify the teaching team if your group is missing. Groups presenting in Part 1 should arrive with rendered slides and the project repository link ready to share.
+<!-- AI-EDIT(2026-06-22): MIT-107,WI-063 / REVIEW-row247 — standardized Canvas link placeholder; instructor to provide URL -->
+<!-- TODO: Canvas link (instructor to provide) -->
+Presentation order will be posted on Canvas (link to be provided by the teaching team). Check this page before presentation day and notify the teaching team if your group is missing. Groups presenting in Part 1 should arrive with rendered slides and the project repository link ready to share.
 
 ## Slide Submission
 
