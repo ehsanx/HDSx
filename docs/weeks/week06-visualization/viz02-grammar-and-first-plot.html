@@ -1149,10 +1149,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>If a reader cannot answer “which statistic? across what groups? with what limitation?” from your figure, one of these five parts is doing too little.</p>
 </section><section id="setup" class="level2"><h2 class="anchored" data-anchor-id="setup">Setup</h2>
 <p>Open your Codespace and start a new code chunk in a <code>.qmd</code> file. Run:</p>
+<!-- AI-EDIT(2026-06-23): tidyverse-default — consolidated core library() calls into library(tidyverse) -->
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">library</span>(readr)</span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="fu">library</span>(ggplot2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -1164,7 +1163,7 @@ Warning
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><code><a href="https://ggplot2.tidyverse.org">library(ggplot2)</a></code> is required every session. If you see “could not find function <code>ggplot</code>”, run the <code><a href="https://rdrr.io/r/base/library.html">library()</a></code> line first.</p>
+<p><code><a href="https://tidyverse.tidyverse.org">library(tidyverse)</a></code> is required every session. If you see “could not find function <code>ggplot</code>”, run the <code><a href="https://rdrr.io/r/base/library.html">library()</a></code> line first.</p>
 </div>
 </div>
 </section><section id="load-the-cached-nhanes-csv" class="level2"><h2 class="anchored" data-anchor-id="load-the-cached-nhanes-csv">Load the cached NHANES CSV</h2>

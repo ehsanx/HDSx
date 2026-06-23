@@ -1153,23 +1153,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- AI-EDIT(2026-06-11): MIT-052 — needs review -->
 <p>Write Parts A and B in one new R script named <code>week5.R</code>, saved in the Week 5 folder (<code>weeks/week05-polyglot-r-deepening/</code>). You are not editing an existing file. For Assignment 4, the same code later moves into <code>polyglot-parity.qmd</code> in <code>assignments/assignment04-polyglot/submission/</code>.</p>
 <p>Start with R. The goal is a descriptive, unweighted summary of BMI by income group and gender.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">library</span>(readr)</span>
-<span id="cb3-2"><a href="#cb3-2"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb3-3"><a href="#cb3-3"></a></span>
-<span id="cb3-4"><a href="#cb3-4"></a>nhanes <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"../../examples/nhanes-equity/data/nhanes_equity_v6.csv"</span>)</span>
-<span id="cb3-5"><a href="#cb3-5"></a></span>
-<span id="cb3-6"><a href="#cb3-6"></a>r_summary <span class="ot">&lt;-</span> nhanes <span class="sc">|&gt;</span></span>
-<span id="cb3-7"><a href="#cb3-7"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(BMI), <span class="sc">!</span><span class="fu">is.na</span>(IncomeGroup), <span class="sc">!</span><span class="fu">is.na</span>(Gender)) <span class="sc">|&gt;</span></span>
-<span id="cb3-8"><a href="#cb3-8"></a>  <span class="fu">group_by</span>(IncomeGroup, Gender) <span class="sc">|&gt;</span></span>
-<span id="cb3-9"><a href="#cb3-9"></a>  <span class="fu">summarise</span>(</span>
-<span id="cb3-10"><a href="#cb3-10"></a>    <span class="at">n =</span> <span class="fu">n</span>(),</span>
-<span id="cb3-11"><a href="#cb3-11"></a>    <span class="at">mean_bmi =</span> <span class="fu">round</span>(<span class="fu">mean</span>(BMI), <span class="dv">2</span>),</span>
-<span id="cb3-12"><a href="#cb3-12"></a>    <span class="at">sd_bmi =</span> <span class="fu">round</span>(<span class="fu">sd</span>(BMI), <span class="dv">2</span>),</span>
-<span id="cb3-13"><a href="#cb3-13"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
-<span id="cb3-14"><a href="#cb3-14"></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb3-15"><a href="#cb3-15"></a>  <span class="fu">arrange</span>(IncomeGroup, Gender)</span>
-<span id="cb3-16"><a href="#cb3-16"></a></span>
-<span id="cb3-17"><a href="#cb3-17"></a>r_summary</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<!-- AI-EDIT(2026-06-23): tidyverse-default — consolidated core library() calls into library(tidyverse) -->
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb3-2"><a href="#cb3-2"></a></span>
+<span id="cb3-3"><a href="#cb3-3"></a>nhanes <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"../../examples/nhanes-equity/data/nhanes_equity_v6.csv"</span>)</span>
+<span id="cb3-4"><a href="#cb3-4"></a></span>
+<span id="cb3-5"><a href="#cb3-5"></a>r_summary <span class="ot">&lt;-</span> nhanes <span class="sc">|&gt;</span></span>
+<span id="cb3-6"><a href="#cb3-6"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(BMI), <span class="sc">!</span><span class="fu">is.na</span>(IncomeGroup), <span class="sc">!</span><span class="fu">is.na</span>(Gender)) <span class="sc">|&gt;</span></span>
+<span id="cb3-7"><a href="#cb3-7"></a>  <span class="fu">group_by</span>(IncomeGroup, Gender) <span class="sc">|&gt;</span></span>
+<span id="cb3-8"><a href="#cb3-8"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb3-9"><a href="#cb3-9"></a>    <span class="at">n =</span> <span class="fu">n</span>(),</span>
+<span id="cb3-10"><a href="#cb3-10"></a>    <span class="at">mean_bmi =</span> <span class="fu">round</span>(<span class="fu">mean</span>(BMI), <span class="dv">2</span>),</span>
+<span id="cb3-11"><a href="#cb3-11"></a>    <span class="at">sd_bmi =</span> <span class="fu">round</span>(<span class="fu">sd</span>(BMI), <span class="dv">2</span>),</span>
+<span id="cb3-12"><a href="#cb3-12"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb3-13"><a href="#cb3-13"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb3-14"><a href="#cb3-14"></a>  <span class="fu">arrange</span>(IncomeGroup, Gender)</span>
+<span id="cb3-15"><a href="#cb3-15"></a></span>
+<span id="cb3-16"><a href="#cb3-16"></a>r_summary</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="part-b-r-function" class="level2">
 <h2 class="anchored" data-anchor-id="part-b-r-function">Part B: R Function</h2>
