@@ -15,8 +15,9 @@ Don't type file paths from memory; you will likely make a typo.
 
 **What to do with this code:** Modify --- swap in your own file names, then run it.
 
+<!-- AI-EDIT(2026-06-23): tidyverse-default — consolidated core library() calls into library(tidyverse) -->
 ```{r, eval=FALSE}
-library(readr)
+library(tidyverse)
 
 # Read input: a relative path starts from the project folder,
 # so it works in anyone's Codespace.

@@ -12,8 +12,7 @@ This worked example creates a small Table 1-style descriptive summary from the N
 #| label: load-nhanes-equity-table1
 #| message: false
 #| warning: false
-library(readr)
-library(dplyr)
+library(tidyverse)  # AI-EDIT(2026-06-23): tidyverse-default — consolidated core library() calls into library(tidyverse)
 library(knitr)
 
 candidate_paths <- c(

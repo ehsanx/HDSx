@@ -22,15 +22,14 @@ If a reader cannot answer "which statistic? across what groups? with what limita
 
 Open your Codespace and start a new code chunk in a `.qmd` file. Run:
 
+<!-- AI-EDIT(2026-06-23): tidyverse-default — consolidated core library() calls into library(tidyverse) -->
 ```{r}
 #| eval: false
-library(readr)
-library(dplyr)
-library(ggplot2)
+library(tidyverse)
 ```
 
 ::: {.callout-warning}
-`library(ggplot2)` is required every session. If you see "could not find function `ggplot`", run the `library()` line first.
+`library(tidyverse)` is required every session. If you see "could not find function `ggplot`", run the `library()` line first.
 :::
 
 ## Load the cached NHANES CSV

@@ -22,8 +22,8 @@ This pattern shows up in the [worked example](eda03-worked-example.qmd). You wil
 
 ```{r}
 #| eval: false
-library(readr)
-library(dplyr)
+# AI-EDIT(2026-06-23): tidyverse-default — consolidated core library() calls into library(tidyverse)
+library(tidyverse)
 library(knitr)
 
 candidate_paths <- c(

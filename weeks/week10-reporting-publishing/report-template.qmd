@@ -27,9 +27,7 @@ The report uses the cached CSV snapshot at `examples/nhanes-equity/data/nhanes_e
 ```{r}
 #| message: false
 #| warning: false
-library(readr)
-library(dplyr)
-library(ggplot2)
+library(tidyverse)  # AI-EDIT(2026-06-23): tidyverse-default — consolidated core library() calls into library(tidyverse)
 library(knitr)
 
 candidate_paths <- c(

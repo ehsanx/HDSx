@@ -36,9 +36,9 @@ Write Parts A and B in one new R script named `week5.R`, saved in the Week 5 fol
 
 Start with R. The goal is a descriptive, unweighted summary of BMI by income group and gender.
 
+<!-- AI-EDIT(2026-06-23): tidyverse-default — consolidated core library() calls into library(tidyverse) -->
 ```r
-library(readr)
-library(dplyr)
+library(tidyverse)
 
 nhanes <- read_csv("../../examples/nhanes-equity/data/nhanes_equity_v6.csv")
 

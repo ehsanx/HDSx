@@ -13,13 +13,12 @@ This worked example uses the NHANES Health Equity CSV snapshot to build one desc
 **Weighted** means the estimate accounts for survey design. **Unweighted** means it only summarizes the observed classroom/cache data. Use unweighted claims only as descriptive classroom practice.
 :::
 
+<!-- AI-EDIT(2026-06-23): tidyverse-default — consolidated core library() calls into library(tidyverse) -->
 ```{r}
 #| label: load-nhanes-equity-visualization
 #| message: false
 #| warning: false
-library(readr)
-library(dplyr)
-library(ggplot2)
+library(tidyverse)
 
 candidate_paths <- c(
   "examples/nhanes-equity/data/nhanes_equity_v6.csv",

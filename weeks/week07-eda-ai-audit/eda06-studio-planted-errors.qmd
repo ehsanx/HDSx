@@ -8,7 +8,7 @@ You have produced a clean Table 1 ([eda03](eda03-worked-example.qmd)), thought a
 
 Take 2 minutes to check that your Codespace is ready:
 
-1. `library(readr); library(dplyr); library(knitr)` runs without error.
+1. `library(tidyverse); library(knitr)` runs without error. <!-- AI-EDIT(2026-06-23): tidyverse-default — consolidated core library() calls into library(tidyverse) -->
 2. The cached data file resolves: `examples/nhanes-equity/data/nhanes_equity_v6.csv`.
 3. Render `eda03-worked-example.qmd` to **HTML** so you have a clean reference (HTML is this course's default output format). The check passes when the HTML file is created and the table/plot are visible without errors. Record any error message in your notes. <!-- AI-EDIT(2026-06-22): REVIEW-row179 / MIT-073,GAP-R678-2 — specify HTML output format when rendering -->
 

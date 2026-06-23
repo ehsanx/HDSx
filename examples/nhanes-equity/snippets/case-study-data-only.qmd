@@ -11,8 +11,7 @@ The cached files are provided so early work can happen without internet access.
 ```{r}
 #| message: false
 #| warning: false
-library(readr)
-library(dplyr)
+library(tidyverse)  # AI-EDIT(2026-06-23): tidyverse-default — consolidated core library() calls into library(tidyverse)
 
 candidate_paths <- c(
   "examples/nhanes-equity/data/nhanes_equity_v6.csv",

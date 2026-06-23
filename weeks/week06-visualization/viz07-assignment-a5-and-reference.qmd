@@ -118,7 +118,7 @@ A plain-language alt text sentence next to your figure helps screen-reader users
 
 | Need | Code | Note |
 |---|---|---|
-| Load packages | `library(ggplot2)` | Every session |
+| Load packages | `library(tidyverse)` | Every session | <!-- AI-EDIT(2026-06-23): tidyverse-default — consolidated core library() calls into library(tidyverse) -->
 | Set data + mapping | `ggplot(df, aes(x, y))` | The starting point |
 | Points | `geom_point()` | Use `alpha` for overlap |
 | Lines connecting summaries | `geom_line() + geom_point()` | Better than `geom_smooth()` for descriptive cycle data |

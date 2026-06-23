@@ -8,8 +8,7 @@ format: html
 ```{r}
 #| message: false
 #| warning: false
-library(readr)
-library(dplyr)
+library(tidyverse)  # AI-EDIT(2026-06-23): tidyverse-default — consolidated core library() calls into library(tidyverse)
 ```
 
 ## Load Data

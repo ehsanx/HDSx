@@ -8,7 +8,7 @@ You have the worked example ([viz03](viz03-worked-example.qmd)), the audit categ
 
 Take 2 minutes to check that your Codespace is ready:
 
-1. `library(readr); library(dplyr); library(ggplot2)` runs without error.
+1. `library(tidyverse)` runs without error. <!-- AI-EDIT(2026-06-23): tidyverse-default — consolidated core library() calls into library(tidyverse) -->
 2. The cached data file resolves from the repository root: `examples/nhanes-equity/data/nhanes_equity_v6.csv`.
 3. Your `viz03-worked-example.qmd` renders cleanly.
 
