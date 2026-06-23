@@ -131,18 +131,21 @@ The current course workflow uses a fork-based setup:
 7. Submit your fork repository link on Canvas.
 
 <!-- AI-EDIT(2026-06-11): SS-002, TF-006, MIT-006 — figure placeholder, RA to capture -->
-<!-- TODO-SCREENSHOT: uncomment when the asset exists:
+<!-- TODO-SCREENSHOT: uncomment when the asset exists:-->
+
 ![The Fork button on the course template repository, used to create your own copy](../../assets/images/week00/fork-button.png){fig-alt="GitHub repository page with the Fork button highlighted near the top-right corner"}
--->
-<!-- AI-EDIT(2026-06-22): REVIEW-row8, SS-002 — RA referenced SS-002-01 (fork-creation) and SS-002-02 (fork-confirmation), but no matching image files exist under assets/images/week00/ (the directory itself is absent). NEEDS-RA-SCREENSHOT: add the files, then uncomment references like:
+
+<!-- AI-EDIT(2026-06-22): REVIEW-row8, SS-002 — RA referenced SS-002-01 (fork-creation) and SS-002-02 (fork-confirmation), but no matching image files exist under assets/images/week00/ (the directory itself is absent). NEEDS-RA-SCREENSHOT: add the files, then uncomment references like:-->
+
 ![Choosing the correct Owner on the Create a new fork page](../../assets/images/week00/SS-002-01-fork-creation.png){fig-alt="GitHub Create a new fork page with the Owner dropdown set to the student's own account"}
 ![Confirming the fork was created under your own account](../../assets/images/week00/SS-002-02-fork-confirmation.png){fig-alt="GitHub repository page showing forked from ehsanx/HDSx-workspace beneath the student's username"}
--->
+
 
 <!-- AI-EDIT(2026-06-11): SS-003 — figure placeholder, RA to capture -->
-<!-- TODO-SCREENSHOT: uncomment when the asset exists:
+<!-- TODO-SCREENSHOT: uncomment when the asset exists:-->
+
 ![Launching a full-screen Codespace from your fork using the Code button](../../assets/images/week00/codespace-launch.png){fig-alt="GitHub Code menu open on a personal fork, showing the Codespaces tab and the Create codespace button"}
--->
+
 
 If a future offering uses an instructor-managed repository system, Canvas will say so explicitly. For this course book, the fork-based workflow is the default student route.
 
