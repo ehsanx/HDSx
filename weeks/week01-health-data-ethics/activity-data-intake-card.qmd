@@ -80,10 +80,7 @@ how_to_cite: "Cite CDC/NCHS NHANES documentation and the course case-study READM
 ai_use_note: "AI may help draft plain-language wording, but source documentation must be checked directly"
 ```
 
-<!-- AI-EDIT(2026-06-11): SS-005 — figure placeholder, RA to capture -->
-<!-- TODO-SCREENSHOT: uncomment when the asset exists:
-![A completed Data Intake Card with direct links to the source page, documentation, and citation guidance](../../assets/images/week01/intake-card-filled.png){fig-alt="Filled-in Data Intake Card showing every field completed, with the clickable source and documentation links highlighted"}
--->
+<!-- AI-EDIT(2026-06-22): REVIEW-row19, SS-005 — removed redundant screenshot placeholder; the completed YAML example above already shows a fully filled-in Data Intake Card, so the SS-005 image is not required -->
 
 <!-- AI-EDIT(2026-06-11): MIT-011, MIT-165 — needs review -->
 For `how_to_cite`, follow the course citation pattern: source organization, dataset name and cycle, publisher, URL, and access date. For example:
@@ -108,7 +105,7 @@ To be marked complete, your card must include:
 - KT framing sentence;
 - AI-use note.
 
-<!-- AI-EDIT(2026-06-11): SS-006 — figure placeholder, RA to capture -->
+<!-- AI-EDIT(2026-06-22): REVIEW-row22, SS-006 — placeholder retained; this image illustrates the "yes" Indigenous-relevance case (OCAP/CARE), which the "unknown" completed example does not cover. RA confirmed it still needs to be generated. Asset not yet present in repo. -->
 <!-- TODO-SCREENSHOT: uncomment when the asset exists:
 ![Example of a Data Intake Card flagging an Indigenous identifier variable, with the relevance field marked yes and a note to review source guidance](../../assets/images/week01/indigenous-flag-example.png){fig-alt="Data Intake Card excerpt with the indigenous_data_relevance field set to yes and a stewardship note pointing to OCAP and CARE guidance"}
 -->
