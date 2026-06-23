@@ -5,16 +5,14 @@
 
 Quarto turns your source file into HTML. GitHub stores both. The private preview route stops there: course staff open the committed HTML or render the report in a fresh Codespace. GitHub Pages is an optional last step that turns the rendered HTML into a public website.
 
-```{mermaid}
-flowchart LR
-  A["Edit report.qmd<br>in your Codespace"] --> B["Render with Quarto<br>(creates report.html)"]
-  B --> C["Preview the HTML<br>in your browser"]
-  C -->|Looks right| D["Commit and sync<br>to GitHub"]
-  C -->|Something is off| A
-  D --> E{"Privacy checks<br>passed?"}
-  E -->|Default route| F["Private preview:<br>staff view the HTML in the repo<br>or a fresh Codespace"]
-  E -->|"Optional, only if safe"| G["GitHub Pages:<br>public website"]
-```
+<!-- AI-EDIT(2026-06-23): D-006 — replaced the {mermaid} block with pre-rendered Graphviz images so the book renders to PDF without headless Chrome (Quarto rasterizes mermaid via Chrome even when the block is format-gated). HTML uses the crisp SVG; PDF uses the PNG. Source: assets/images/week10/private-preview-workflow.dot — regenerate with `dot -Tsvg` and `dot -Tpng -Gdpi=150`. -->
+::: {.content-visible when-format="html"}
+![The publishing workflow: edit `report.qmd`, render with Quarto, preview the HTML, then commit and sync. A privacy check routes to a private preview by default, or optionally to a public GitHub Pages site.](../../assets/images/week10/private-preview-workflow.svg)
+:::
+
+::: {.content-visible when-format="pdf"}
+![The publishing workflow: edit `report.qmd`, render with Quarto, preview the HTML, then commit and sync. A privacy check routes to a private preview by default, or optionally to a public GitHub Pages site.](../../assets/images/week10/private-preview-workflow.png)
+:::
 
 ## Default Path
 

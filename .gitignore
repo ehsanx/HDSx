@@ -6,3 +6,6 @@ _site/
 
 /.quarto/
 .claude/
+
+# Root-level site_libs/ is a Quarto render byproduct (the published copy is docs/site_libs/)
+/site_libs/
