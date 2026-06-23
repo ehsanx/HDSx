@@ -26,6 +26,8 @@
 Week 2 made the project structure reproducible. This week you use that structure to load, inspect, summarize, and audit R code with AI support. Next week you will put those edits under version control.
 
 Before you start, make sure your tools are ready: [The Setup (The Cockpit)](r01-setup.qmd). <!-- AI-EDIT(2026-06-11): GAP-R345-1 — needs review -->
+<!-- AI-EDIT(2026-06-22): REVIEW-row55, GAP-R345-1 — RA requests an added screenshot on the linked Setup page (r01-setup.qmd); image not available to insert. NEEDS-RA-SCREENSHOT -->
+<!-- TODO: RA to provide screenshot for r01-setup.qmd (referenced by REVIEW-row55) -->
 
 <!-- AI-EDIT(2026-06-11): TF-013, MIT-025, WI-018 — needs review -->
 ::: {.callout-note title="How to use the code blocks on this page"}
@@ -61,6 +63,9 @@ Deeper dive: [Packages (The Toolbox)](r02-packages.qmd).
 
 **What to do with this code:** Run — execute it as written every time you reopen your Codespace. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review -->
 
+<!-- AI-EDIT(2026-06-22): REVIEW-row59, MIT-025 — clarify you must be inside an R session (the `>` prompt) before running library() -->
+**Where to run this:** First start R so you are *inside* an R session. Open a terminal in VS Code (**Terminal → New Terminal**), type `R`, and press Enter. You should now see the R prompt, which looks like `>`. Then type the line below at that `>` prompt (you can also run it from the R Console or a code chunk in your `.qmd`).
+
 ```{r, eval=FALSE}
 library(tidyverse)
 ```
@@ -75,6 +80,9 @@ If you see an error like `there is no package called 'tidyverse'`, the package i
 
 **What to do with this code:** Run `renv::status()` as written; Read the other two commands so you recognize them. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review -->
 
+<!-- AI-EDIT(2026-06-22): REVIEW-row60,row68, MIT-025 — clarify renv commands run inside an R session, not the bash terminal; corrected RA's renv::init() advice (project is pre-initialized, so init is not needed) -->
+**Where to run this:** These are R commands, so run them *inside* an R session (the `>` prompt), not at the plain terminal. If you are not already in R, open a terminal (**Terminal → New Terminal**), type `R`, press Enter, then run `renv::status()`. The course project is already set up for `renv`, so you do **not** need to run `renv::init()` yourself.
+
 ```{r, eval=FALSE}
 # Check whether the project environment has changed.
 renv::status()
@@ -88,6 +96,15 @@ renv::restore()
 
 <!-- AI-EDIT(2026-06-11): GAP-R345-10 — needs review -->
 Use `renv::status()` to check whether the project environment matches the lockfile. Do not run `renv::snapshot()` unless the instructor asks or you have intentionally added a package, because it changes the recorded package state.
+
+<!-- AI-EDIT(2026-06-22): REVIEW-row61, GAP-R345-10 — show expected output and a restart fallback for renv::status() -->
+When everything is consistent, `renv::status()` prints:
+
+```
+No issues found -- the project is in a consistent state.
+```
+
+If instead it reports that packages are out of sync, first try restarting R (type `q()` to quit, choose **n** when asked to save the workspace, then type `R` again) and rerun `renv::status()`. If it still reports a mismatch, do **not** run `renv::snapshot()` to "fix" it --- use the Canvas support channel or office hours and include the exact message, since the lockfile is instructor-managed.
 
 For Assignment 2, run `renv::status()` and write a short dependency note. Only run `renv::snapshot()` if you intentionally added a package.
 
@@ -172,6 +189,9 @@ my_data <- read_csv("data/patients.csv")
 Never start analysis without looking at your data. Run these four checks:
 
 **What to do with this code:** Run — execute it as written once your data is loaded. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review -->
+
+<!-- AI-EDIT(2026-06-22): REVIEW-row69, MIT-025 — note that glimpse() needs tidyverse loaded and state where to run -->
+Run these in your assignment `.qmd` (as a code chunk) or at the R `>` prompt, using the course workspace repo. `glimpse()` comes from `tidyverse`, so if you get `could not find function "glimpse"`, run `library(tidyverse)` first.
 
 ```{r, eval=FALSE}
 # How big is it?
