@@ -69,14 +69,12 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <meta name="twitter:title" content="Private Preview – Health Data Science: AI and Knowledge Translation">
 <meta name="twitter:description" content="">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="../../assets/images/week10/private-preview-workflow.svg">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -1098,24 +1096,12 @@ ul.task-list li input[type="checkbox"] {
 <section id="how-the-pieces-fit-together" class="level2">
 <h2 class="anchored" data-anchor-id="how-the-pieces-fit-together">How the Pieces Fit Together</h2>
 <p>Quarto turns your source file into HTML. GitHub stores both. The private preview route stops there: course staff open the committed HTML or render the report in a fresh Codespace. GitHub Pages is an optional last step that turns the rendered HTML into a public website.</p>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart LR
-  A["Edit report.qmd&lt;br&gt;in your Codespace"] --&gt; B["Render with Quarto&lt;br&gt;(creates report.html)"]
-  B --&gt; C["Preview the HTML&lt;br&gt;in your browser"]
-  C --&gt;|Looks right| D["Commit and sync&lt;br&gt;to GitHub"]
-  C --&gt;|Something is off| A
-  D --&gt; E{"Privacy checks&lt;br&gt;passed?"}
-  E --&gt;|Default route| F["Private preview:&lt;br&gt;staff view the HTML in the repo&lt;br&gt;or a fresh Codespace"]
-  E --&gt;|"Optional, only if safe"| G["GitHub Pages:&lt;br&gt;public website"]
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
+<!-- AI-EDIT(2026-06-23): D-006 — replaced the {mermaid} block with pre-rendered Graphviz images so the book renders to PDF without headless Chrome (Quarto rasterizes mermaid via Chrome even when the block is format-gated). HTML uses the crisp SVG; PDF uses the PNG. Source: assets/images/week10/private-preview-workflow.dot — regenerate with `dot -Tsvg` and `dot -Tpng -Gdpi=150`. -->
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/images/week10/private-preview-workflow.svg" class="img-fluid figure-img"></p>
+<figcaption>The publishing workflow: edit <code>report.qmd</code>, render with Quarto, preview the HTML, then commit and sync. A privacy check routes to a private preview by default, or optionally to a public GitHub Pages site.</figcaption>
+</figure>
 </div>
 </section>
 <section id="default-path" class="level2">

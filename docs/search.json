@@ -6114,7 +6114,18 @@
     "href": "weeks/week10-reporting-publishing/report04-private-preview.html",
     "title": "Private Preview",
     "section": "",
-    "text": "How the Pieces Fit Together\nQuarto turns your source file into HTML. GitHub stores both. The private preview route stops there: course staff open the committed HTML or render the report in a fresh Codespace. GitHub Pages is an optional last step that turns the rendered HTML into a public website.\nflowchart LR\n  A[\"Edit report.qmd&lt;br&gt;in your Codespace\"] --&gt; B[\"Render with Quarto&lt;br&gt;(creates report.html)\"]\n  B --&gt; C[\"Preview the HTML&lt;br&gt;in your browser\"]\n  C --&gt;|Looks right| D[\"Commit and sync&lt;br&gt;to GitHub\"]\n  C --&gt;|Something is off| A\n  D --&gt; E{\"Privacy checks&lt;br&gt;passed?\"}\n  E --&gt;|Default route| F[\"Private preview:&lt;br&gt;staff view the HTML in the repo&lt;br&gt;or a fresh Codespace\"]\n  E --&gt;|\"Optional, only if safe\"| G[\"GitHub Pages:&lt;br&gt;public website\"]",
+    "text": "How the Pieces Fit Together\nQuarto turns your source file into HTML. GitHub stores both. The private preview route stops there: course staff open the committed HTML or render the report in a fresh Codespace. GitHub Pages is an optional last step that turns the rendered HTML into a public website.",
+    "crumbs": [
+      "Week 10: Writing & Publishing Reports",
+      "Private Preview"
+    ]
+  },
+  {
+    "objectID": "weeks/week10-reporting-publishing/report04-private-preview.html#how-the-pieces-fit-together",
+    "href": "weeks/week10-reporting-publishing/report04-private-preview.html#how-the-pieces-fit-together",
+    "title": "Private Preview",
+    "section": "",
+    "text": "The publishing workflow: edit report.qmd, render with Quarto, preview the HTML, then commit and sync. A privacy check routes to a private preview by default, or optionally to a public GitHub Pages site.",
     "crumbs": [
       "Week 10: Writing & Publishing Reports",
       "Private Preview"
