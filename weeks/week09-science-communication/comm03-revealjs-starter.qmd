@@ -19,9 +19,9 @@ quarto render weeks/week09-science-communication/starter-slides.qmd
 
 The rendered file should appear beside the source as `starter-slides.html`.
 
-::: {.callout-note title="Tester note"}
-Before release, render `weeks/week09-science-communication/starter-slides.qmd` in a clean Codespace and confirm that the title slide, source note, and bibliography entry appear.
-:::
+<!-- AI-EDIT(2026-06-22): tester-note-conversion — converted leaked "Tester note" callout to hidden HTML comment (instructor/tester pre-release task, not student-facing)
+Tester note: Before release, render `weeks/week09-science-communication/starter-slides.qmd` in a clean Codespace and confirm that the title slide, source note, and bibliography entry appear.
+-->
 
 <!-- AI-EDIT(2026-06-11): TF-028, MIT-093, WI-050 — needs review -->
 ## Copy the Starter into Your A8 Folder

@@ -6,9 +6,8 @@ This page connects the Week 9 studio work to [Assignment 8](../../assignments/as
 
 Assignment 8 is due the Monday after Week 9 class, 4 PM. It also gives you reusable material for the M5 presentation.
 
-::: {.callout-note title="Tester note"}
-Check that the file names below match the current Assignment 8 README before release.
-:::
+<!-- AI-EDIT(2026-06-22): Tester-note conversion — converted leaked "Tester note" callout to hidden HTML comment (instructor/tester instruction, not student-facing) -->
+<!-- Tester note: Check that the file names below match the current Assignment 8 README before release. -->
 
 ## The Six A8 Files
 
