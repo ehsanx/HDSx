@@ -29,10 +29,8 @@ Complete these steps before Week 1:
 
 Use a professional GitHub username that you are comfortable sharing in a course setting. If you already have a GitHub account, you may use it. You do not need to create a second account unless your current username or profile is not appropriate for coursework.
 
-<!-- AI-EDIT(2026-06-11): SS-001, TF-006, MIT-006 — figure placeholder, RA to capture -->
-<!-- TODO-SCREENSHOT: uncomment when the asset exists:
 ![The GitHub account creation page, where you choose your username and email](../../assets/images/week00/account-creation.png){fig-alt="GitHub sign-up form showing the email, password, and username fields, with a professional username example entered"}
--->
+
 
 Before submitting the onboarding check:
 
@@ -56,10 +54,7 @@ Protect your account:
 <!-- AI-EDIT(2026-06-22): REVIEW-row5, TF-005, MIT-005 — corrected GitHub fork behavior: a fork of a public repo stays public and you cannot change its visibility while it stays a fork; recommend a private copy via Import/template when privacy is needed -->
 Think about repository privacy. A fork of a public repository is itself public, and GitHub does not let you switch a fork to private while it remains connected to its upstream. So if your work may include restricted, sensitive, or course-only materials, do not rely on changing a fork's visibility — instead create a separate private copy (for example with GitHub's **Import repository** option, or by using the template repository's **Use this template** button if the instructor enables it) and choose **Private**. A public repository should only be used when the instructor confirms it is safe. Making your work public is encouraged once the course privacy checklist passes, but it is never required, and there is no penalty for staying private. Follow the workflow Canvas specifies for this offering.
 
-<!-- AI-EDIT(2026-06-11): SS-004 — figure placeholder, RA to capture -->
-<!-- TODO-SCREENSHOT: uncomment when the asset exists:
 ![The private-versus-public visibility setting when creating a GitHub repository](../../assets/images/week00/private-vs-public.png){fig-alt="GitHub new repository form with the Private visibility option selected and the Public option visible below it"}
--->
 
 To learn more about GitHub basics or get help, see GitHub's getting-started guide: <https://docs.github.com/en/get-started>
 
