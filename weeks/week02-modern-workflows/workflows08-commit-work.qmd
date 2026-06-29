@@ -20,8 +20,6 @@ The **Commit and Sync** button used below does steps 2 and 3 together; if nothin
     -   It looks like a **blue bubble** or a **connect-the-dots graph** on the far left sidebar.
     -   This opens the "Shipping Department." You will see a list of every file you changed.
 
-    ![Source control icon circled in red](../../assets/images/workflow8/button.png)
-
 2.  Type a **Commit Message**
 
     -   **The Label:** You cannot ship a package without a label.
@@ -29,15 +27,13 @@ The **Commit and Sync** button used below does steps 2 and 3 together; if nothin
     -   *Example:* "Updated author name in practice report".
     -   *Bad Example:* "stuff" or "fix".
 
-    ![This is required](../../assets/images/workflow8/message.png)
-
 3.  Click **Commit and Sync** (or Commit and Push)
 
     -   This is the **"Send"** button.
     -   **Action:** It wraps up your changes, stamps them with the time and your message, and teleports them to the Cloud Vault.
     -   *Note:* You might be asked to click "Always" or "Yes" to approve the sync.
 
-    ![This will push your changes to the remote branch](../../assets/images/workflow8/commitpush.png)
+![This will push your changes to the remote branch](../../assets/images/workflow8/commitpush.png)
 
 ## Verify (Trust but Verify)
 
