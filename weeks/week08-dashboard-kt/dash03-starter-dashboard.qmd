@@ -28,7 +28,7 @@ Question: among adults age 20-80, how does mean BMI vary across NHANES cycles fo
 #| label: dashboard-setup
 #| message: false
 #| warning: false
-library(tidyverse) 
+library(tidyverse)  # AI-EDIT(2026-06-23): tidyverse-default — consolidated core library() calls into library(tidyverse)
 library(knitr)
 
 candidate_paths <- c(

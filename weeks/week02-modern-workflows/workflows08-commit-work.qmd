@@ -33,7 +33,7 @@ The **Commit and Sync** button used below does steps 2 and 3 together; if nothin
     -   **Action:** It wraps up your changes, stamps them with the time and your message, and teleports them to the Cloud Vault.
     -   *Note:* You might be asked to click "Always" or "Yes" to approve the sync.
 
-![This will push your changes to the remote branch](../../assets/images/workflow8/commitpush.png)
+    ![This will push your changes to the remote branch](../../assets/images/workflow8/commitpush.png)
 
 ## Verify (Trust but Verify)
 
