@@ -1,4 +1,4 @@
-﻿---
+---
 title: "SPPH 381H: Health Data Science - AI and Knowledge Translation"
 subtitle: "Course Outline - Sept-Dec 2026"
 author: "School of Population and Public Health, University of British Columbia"
@@ -18,6 +18,9 @@ format:
     colorlinks: true
     linkcolor: brandblue
     urlcolor: brandlight
+  docx:
+    toc: false
+    number-sections: false
 execute:
   echo: false
   warning: false
@@ -37,7 +40,6 @@ header-includes:
   - \setstretch{1.12}
   - \definecolor{brandblue}{HTML}{002145}
   - \definecolor{brandlight}{HTML}{0055B7}
-  #- \hypersetup{colorlinks=true, linkcolor=brandblue, urlcolor=brandlight}
   - \titleformat{\section}{\Large\bfseries\color{brandblue}}{}{0pt}{}
   - \titleformat{\subsection}{\large\bfseries\color{brandblue}}{}{0pt}{}
   - \titleformat{\subsubsection}{\normalsize\bfseries\color{brandblue}}{}{0pt}{}
@@ -52,7 +54,10 @@ header-includes:
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(knitr)
 library(kableExtra)
-options(knitr.table.format = "latex")
+# PDF gets styled LaTeX tables; Word (and any non-LaTeX target) gets plain
+# pipe tables that Pandoc converts into native, editable Word tables.
+.is_pdf <- knitr::is_latex_output()
+options(knitr.table.format = if (.is_pdf) "latex" else "pipe")
 ```
 
 ## Acknowledgement
@@ -68,15 +73,19 @@ info <- data.frame(
     "Health Data Science: AI and Knowledge Translation",
     "3",
     "Integrated Seminar & Hands-on Activities (1 session/week, 3 hours)",
-    "Thu 11:00 AM - 2:00 PM (Sept-Dec 2026)",
+    "Tue 11:00 AM - 2:00 PM (Sept-Dec 2026)",
     "Room posted in Canvas (in-person)"
   )
 )
 
-kable(info, format = "latex", booktabs = TRUE, col.names = NULL, align = "rl") %>%
-  kable_styling(position = "left", full_width = FALSE) %>%
-  column_spec(1, bold = TRUE, color = "brandblue", width = "3cm") %>%
-  column_spec(2, width = "12cm")
+if (.is_pdf) {
+  kable(info, format = "latex", booktabs = TRUE, col.names = NULL, align = "rl") %>%
+    kable_styling(position = "left", full_width = FALSE) %>%
+    column_spec(1, bold = TRUE, color = "brandblue", width = "3cm") %>%
+    column_spec(2, width = "12cm")
+} else {
+  kable(info, format = "pipe", col.names = c("", ""), align = "rl")
+}
 ```
 
 ### Course at a Glance
@@ -89,23 +98,35 @@ glance <- data.frame(
     "R, Quarto, and reproducible project workflows",
     "Short Python examples for polyglot awareness; optional extension pathway",
     "Reproducible Quarto report + required dashboard-style KT product + auditable repository",
-    "Foundational gates, best-5 weekly assignments, staged project milestones, presentation, final portfolio"
+    "Foundational gates, best-4 weekly assignments, staged project milestones, presentation, final portfolio"
   )
 )
 
-kable(glance, format = "latex", booktabs = TRUE, col.names = NULL, align = "rl") %>%
-  kable_styling(position = "left", full_width = FALSE) %>%
-  column_spec(1, bold = TRUE, color = "brandblue", width = "4cm") %>%
-  column_spec(2, width = "11cm")
+if (.is_pdf) {
+  kable(glance, format = "latex", booktabs = TRUE, col.names = NULL, align = "rl") %>%
+    kable_styling(position = "left", full_width = FALSE) %>%
+    column_spec(1, bold = TRUE, color = "brandblue", width = "4cm") %>%
+    column_spec(2, width = "11cm")
+} else {
+  kable(glance, format = "pipe", col.names = c("", ""), align = "rl")
+}
 ```
 
 ### Prerequisites
 
 **None required.** This course adopts a "Zero to AI Co-Pilot" pedagogy. We welcome students from all disciplines. You do not need prior experience with R, Python, statistics, or programming. We teach foundational concepts and tools from the ground up.
 
+::: {.content-visible when-format="pdf"}
 \begin{tcolorbox}[colback=brandlight!5!white, colframe=brandblue, title=\textbf{What "no prerequisites" means in practice}, arc=2mm]
 This is a beginner-accessible course, not a no-work course. You will learn a substantial but carefully scaffolded toolkit at a steady pace: R, GitHub Codespaces, Quarto, Git, reproducible workflows, AI-assisted coding, basic Python awareness, and dashboard-style knowledge translation. Because coding is a cumulative skill, the weekly assignments are carefully scaffolded to serve as your core practice. If you are new to programming, completing these assignments is how you will steadily build your foundational skills during the first month. Comfort with web browsers, basic file management, and willingness to troubleshoot are assumed; everything else is taught and supported through templates, in-class studio time, peer debugging, and TA support.
 \end{tcolorbox}
+:::
+
+::: {.content-visible unless-format="pdf"}
+> **What "no prerequisites" means in practice**
+>
+> This is a beginner-accessible course, not a no-work course. You will learn a substantial but carefully scaffolded toolkit at a steady pace: R, GitHub Codespaces, Quarto, Git, reproducible workflows, AI-assisted coding, basic Python awareness, and dashboard-style knowledge translation. Because coding is a cumulative skill, the weekly assignments are carefully scaffolded to serve as your core practice. If you are new to programming, completing these assignments is how you will steadily build your foundational skills during the first month. Comfort with web browsers, basic file management, and willingness to troubleshoot are assumed; everything else is taught and supported through templates, in-class studio time, peer debugging, and TA support.
+:::
 
 
 ### Primary Language: R, with Python Awareness
@@ -136,14 +157,18 @@ contacts <- data.frame(
   )
 )
 
-kable(contacts, 
-      format = "latex", 
-      booktabs = TRUE, 
-      col.names = NULL, 
-      align = "rl") %>%
-  kable_styling(position = "left", full_width = FALSE) %>%
-  column_spec(1, bold = TRUE, color = "brandblue") %>%
-  column_spec(2, width = "10cm")
+if (.is_pdf) {
+  kable(contacts,
+        format = "latex",
+        booktabs = TRUE,
+        col.names = NULL,
+        align = "rl") %>%
+    kable_styling(position = "left", full_width = FALSE) %>%
+    column_spec(1, bold = TRUE, color = "brandblue") %>%
+    column_spec(2, width = "10cm")
+} else {
+  kable(contacts, format = "pipe", col.names = c("", ""), align = "rl")
+}
 ```
 
 *Typical response time: within 48 hours on weekdays.*
@@ -203,23 +228,23 @@ A short Canvas module to complete before the term begins:
 
 ## Schedule of Topics
 
+<!-- AI-EDIT(2026-07-08): course moved Thu -> Tue (SPPH reschedule, R3-01/OPS-002). First class Tue Sep 15 (Sep 8 = Imagine UBC, no undergrad classes); Tue Nov 10 = mid-term break. The 11 teaching Tuesdays (Sep 15 - Dec 1) hold content Weeks 1-11; in-class presentations (old Weeks 12-13) are removed and the presentation (former Milestone 5) is folded into the Final Portfolio as a required narrated slide deck — kept visible as Presentation 10% + Portfolio 35%, one Dec 11 deadline. Deadlines recomputed (M3 draft Mon Nov 23, M4 peer review Mon Nov 30 — a full-week review window; Week 11 / Dec 1 is a deadline-free feedback + portfolio-surgery session; Final Portfolio Dec 11 unchanged). OPEN: SPPH must confirm the 39-contact-hour treatment (11 x 3h = 33h synchronous). Book-wide follow-ups + open items in tue-reschedule-book-todo.md -->
+
 ```{r schedule, echo=FALSE}
 schedule <- data.frame(
   Week = c(
     "0 (Async)",
-    "1 (Sept 10)",
-    "2 (Sept 17)",
-    "3 (Sept 24)",
-    "4 (Oct 1)",
-    "5 (Oct 8)",
-    "6 (Oct 15)",
-    "7 (Oct 22)",
-    "8 (Oct 29)",
-    "9 (Nov 5)",
-    "10 (Nov 12)",
-    "11 (Nov 19)",
-    "12 (Nov 26)",
-    "13 (Dec 3)",
+    "1 (Sept 15)",
+    "2 (Sept 22)",
+    "3 (Sept 29)",
+    "4 (Oct 6)",
+    "5 (Oct 13)",
+    "6 (Oct 20)",
+    "7 (Oct 27)",
+    "8 (Nov 3)",
+    "9 (Nov 17)",
+    "10 (Nov 24)",
+    "11 (Dec 1)",
     "-"
   ),
   Seminar = c(
@@ -231,12 +256,10 @@ schedule <- data.frame(
     "Polyglot Awareness & R Deepening: R as the core course language; when Python is useful; reading short Python/pandas examples; translation traps; AI-assisted parity checks; R mastery exercises on dplyr and functions.",
     "Data Visualization: visual reasoning in AI-assisted workflows; steering AI-generated plots (ggplot2, plotly); evaluating clarity, bias, aggregation, and misrepresentation.",
     "EDA, Table 1 & AI Auditing: descriptive analysis workflow; what summary statistics claim; auditing AI-generated summaries/plots for planted coding, statistical, and stewardship errors; revisiting data provenance and Indigenous Data Sovereignty.",
-    "Dashboard Prototypes for KT: Quarto dashboard-style products and Shiny concepts; building a minimal dashboard from EDA outputs; deployment options introduced as demonstrations only (e.g., Shinylive/GitHub Pages).",
+    "Dashboard Prototypes for KT: Quarto dashboard-style products and Shiny concepts; building a minimal dashboard from EDA outputs; deployment options introduced as demonstrations only (e.g., Shinylive/GitHub Pages). Note: no class Tue Nov 10 (UBC Mid-Term Break, Nov 9-11); next class is Tue Nov 17.",
     "Communication of Scientific Findings: audience-specific KT; plain language summaries; Quarto revealjs slides; citations & references; peer review practices.",
-    "Writing & Publishing Reports: scientific formatting in Quarto; dynamic reporting; embedding interactive elements; enabling GitHub Pages; publishing your portfolio; citation/grounding audit. Note: UBC Mid-Term Break is Nov 9-11; class meets as usual on Thu Nov 12.",
-    "Portfolio Surgery & Optional Advanced Deployment: reproducibility stress-test in a fresh Codespace; fix broken paths, missing dependencies, unclear READMEs; optional demo of AI-generated static HTML/JS dashboards and optional Python-flavoured project pathway.",
-    "Term Project Presentations (Part 1): live Q&A and peer review.",
-    "Term Project Presentations (Part 2): live Q&A and peer review.",
+    "Writing & Publishing Reports: scientific formatting in Quarto; dynamic reporting; embedding interactive elements; enabling GitHub Pages; publishing your portfolio; citation/grounding audit.",
+    "Portfolio Surgery & Optional Advanced Deployment: reproducibility stress-test in a fresh Codespace; fix broken paths, missing dependencies, unclear READMEs; optional demo of AI-generated static HTML/JS dashboards and optional Python-flavoured project pathway. Final class: the term project presentation is a narrated slide deck submitted online with the Final Portfolio (no in-class session).",
     "-"
   ),
   Activities = c(
@@ -251,9 +274,7 @@ schedule <- data.frame(
     "Build a minimal dashboard-style KT product from EDA outputs; test in Codespaces; view optional Shiny/Shinylive deployment demo; identify which dashboard pathway is feasible for the term project.",
     "Create Quarto revealjs slides (guided intro to slide format); integrate figures; structured peer feedback on clarity & KT.",
     "Draft report in Quarto; add citations (Zotero/BibTeX); embed visuals; enable GitHub Pages and publish portfolio site (or private equivalent).",
-    "Swap repositories with a partner for reproducibility stress-test; run in a fresh Codespace; fix failures; optional advanced demo comparing Shiny, Quarto dashboard, and static HTML approaches.",
-    "Milestone 5 presentations; live Q&A; peer review feedback.",
-    "Milestone 5 presentations; live Q&A; peer review feedback.",
+    "Run your own project in a fresh Codespace and repair failures (README, paths, dependencies); act on the peer feedback received (M4); record your narrated presentation slide deck for the final portfolio.",
     "-"
   ),
   Deadlines = c(
@@ -266,43 +287,57 @@ schedule <- data.frame(
     "Assignment 5 (Mon 4 PM); Milestone 1: project proposal",
     "Assignment 6 (Mon 4 PM); Milestone 2: Preliminary Analysis",
     "Assignment 7 (Mon 4 PM)",
-    "Assignment 8 (Mon 4 PM)",
-    "Assignment 9 and Milestone 3: Project Update due Mon Nov 16, 4 PM",
-    "Assignment 10 and Milestone 4: Peer Review due Mon Nov 23, 4 PM",
-    "Presentation slides due before class",
-    "Presentation slides due before class",
-    "Final Portfolio due: Dec 11 (Fri 4 PM)"
+    "Assignment 8 (Mon 4 PM); Milestone 3: Project Update draft due Mon Nov 23",
+    "Assignment 9 (Mon 4 PM); Milestone 4: Peer Review due Mon Nov 30",
+    "(No new submission; portfolio surgery + act on peer feedback in class)",
+    "Final Portfolio (with required narrated presentation slide deck) due Dec 11 (Fri 4 PM)"
   )
 )
 
-kable(schedule,
-      format = "latex",
-      booktabs = TRUE,
-      longtable = TRUE,
-      linesep = "\\addlinespace",
-      col.names = c("Week", "Seminar Topics", "Activities", "Deadlines"),
-      align = "llll") %>%
-  kable_styling(latex_options = c("striped", "repeat_header"), 
-                full_width = FALSE, 
-                font_size = 10,
-                stripe_color = "gray!10") %>%
-  row_spec(0, bold = TRUE, color = "white", background = "brandblue") %>%
-  column_spec(1, width = "2cm", bold = TRUE, color = "brandblue") %>%
-  column_spec(2, width = "5cm") %>%
-  column_spec(3, width = "5cm") %>%
-  column_spec(4, width = "3.5cm") %>%
-  pack_rows("Part 1: Foundations & Workflows", 1, 6, 
-            latex_align = "c", 
-            background = "gray!20", 
-            color = "black") %>%
-  pack_rows("Part 2: Analysis, Visualization & Dashboards", 7, 10, 
-            latex_align = "c", 
-            background = "gray!20", 
-            color = "black") %>%
-  pack_rows("Part 3: Communication, Portfolios & Presentations", 11, 15,
-            latex_align = "c", 
-            background = "gray!20", 
-            color = "black")
+if (.is_pdf) {
+  kable(schedule,
+        format = "latex",
+        booktabs = TRUE,
+        longtable = TRUE,
+        linesep = "\\addlinespace",
+        col.names = c("Week", "Seminar Topics", "Activities", "Deadlines"),
+        align = "llll") %>%
+    kable_styling(latex_options = c("striped", "repeat_header"),
+                  full_width = FALSE,
+                  font_size = 10,
+                  stripe_color = "gray!10") %>%
+    row_spec(0, bold = TRUE, color = "white", background = "brandblue") %>%
+    column_spec(1, width = "2cm", bold = TRUE, color = "brandblue") %>%
+    column_spec(2, width = "5cm") %>%
+    column_spec(3, width = "5cm") %>%
+    column_spec(4, width = "3.5cm") %>%
+    pack_rows("Part 1: Foundations & Workflows", 1, 6,
+              latex_align = "c",
+              background = "gray!20",
+              color = "black") %>%
+    pack_rows("Part 2: Analysis, Visualization & Dashboards", 7, 10,
+              latex_align = "c",
+              background = "gray!20",
+              color = "black") %>%
+    pack_rows("Part 3: Communication, Portfolios & Presentations", 11, 13,
+              latex_align = "c",
+              background = "gray!20",
+              color = "black")
+} else {
+  # pack_rows() is LaTeX-only, so fold the Part headings into the table as
+  # bold full-row labels for Word output.
+  grp <- function(lbl) data.frame(Week = paste0("**", lbl, "**"),
+                                   Seminar = "", Activities = "", Deadlines = "")
+  schedule_doc <- rbind(
+    grp("Part 1: Foundations & Workflows"),      schedule[1:6, ],
+    grp("Part 2: Analysis, Visualization & Dashboards"), schedule[7:10, ],
+    grp("Part 3: Communication, Portfolios & Presentations"), schedule[11:13, ]
+  )
+  rownames(schedule_doc) <- NULL
+  kable(schedule_doc, format = "pipe", row.names = FALSE,
+        col.names = c("Week", "Seminar Topics", "Activities", "Deadlines"),
+        align = "llll")
+}
 ```
 
 ## Learning Outcomes
@@ -321,18 +356,27 @@ By the end of this course, students will be able to:
 
 ## Learning Activities
 
-### Weekly Assignments (Weeks 2-11)
+<!-- AI-EDIT(2026-07-08): dropped Assignment 10 (Portfolio Surgery) as a separate graded item — it duplicated M4 peer review and the Final Portfolio reproducibility grade (incl. its final-risk-list.md) and caused a post-last-class deadline. Weekly graded set is now A4-A9 (Weeks 5-10), Best 4 of 6, still 35% total (each 8.75%). Portfolio Surgery stays as the Week 11 in-class session feeding M4 + the portfolio. -->
+### Weekly Assignments (Weeks 2-10)
 
 Each week, students complete short applied assignments that reinforce the tools and concepts from class. These assignments are scaffolded and practice-oriented, but they also provide an important measure of steady engagement and skill development. Unless otherwise noted, assignments are due the Monday after class at 4 PM, giving students time to revisit the activity, troubleshoot technical issues, and use office hours or discussion boards.
 
 **Grading policy:**
 
 -   **Assignments 1-3 (Weeks 2-4) are required but worth 0% numerically.** These foundational assignments (Codespace/Quarto, R basics, Git) are graded on a Complete/Incomplete basis. Each must be completed to pass the course. Incomplete submissions may be resubmitted once within one week. A student who completes A1-A3 and otherwise earns at least 50% on the graded components will pass.
--   **Assignments 4-10 (Weeks 5-11): Best 5 of 7 count.** Only your best 5 scores count toward your final grade. This provides flexibility for difficult weeks while ensuring consistent engagement after the foundation is established. Assignment 6 includes a dedicated AI-audit task involving planted errors in AI-generated code, summaries, and/or visualizations.
+-   **Assignments 4-9 (Weeks 5-10): Best 4 of 6 count.** Only your best 4 scores count toward your final grade (each worth 8.75%; 35% total). This provides flexibility for difficult weeks - you can drop your two weakest - while ensuring consistent engagement after the foundation is established. Assignment 6 includes a dedicated AI-audit task involving planted errors in AI-generated code, summaries, and/or visualizations.
 
+::: {.content-visible when-format="pdf"}
 \begin{tcolorbox}[colback=brandlight!5!white, colframe=brandblue, title=\textbf{Reproducibility requirement}, arc=2mm]
 All assignments must render/run in a GitHub Codespace without manual intervention. Assignments that violate this rule will be returned for a "Reproducibility Fix" and may incur a grade deduction.
 \end{tcolorbox}
+:::
+
+::: {.content-visible unless-format="pdf"}
+> **Reproducibility requirement**
+>
+> All assignments must render/run in a GitHub Codespace without manual intervention. Assignments that violate this rule will be returned for a "Reproducibility Fix" and may incur a grade deduction.
+:::
 
 ### Term Project / Data Science Portfolio
 
@@ -343,33 +387,51 @@ A capstone project synthesized across the full term, broken into milestones:
 | **M0: Group Formation** | Week 4 (Mon) | Form project group of 3-4 students; one member forks template and adds teammates as collaborators |
 | **M1: Proposal** | Week 6 (Mon) | Research question, dataset selection, feasibility check, and one-paragraph data provenance/stewardship statement |
 | **M2: Preliminary Analysis** | Week 7 (Mon) | Initial data cleaning, exploratory visualizations, Table 1 or equivalent descriptive summary, runnable repository |
-| **M3: Project Update** | Week 10 (Mon Nov 16) | Draft dashboard-style KT product + report draft submitted for peer review; polish is expected later in the Final Portfolio |
-| **M4: Peer Review** | Week 11 (Mon Nov 23) | Constructive, specific, actionable feedback on a peer's M3, including reproducibility and auditability checks |
-| **M5: Presentation** | Weeks 12-13 | In-class scientific seminar; knowledge translation focus |
-| **Final Portfolio** | Dec 11 (Fri) | Complete report, required dashboard-style KT product, and fully auditable code repository |
+| **M3: Project Update** | Mon Nov 23 *(draft)* | Draft dashboard-style KT product + report draft submitted for peer review; polish is expected later in the Final Portfolio |
+| **M4: Peer Review** | Mon Nov 30 | Constructive, specific, actionable feedback on a peer's M3 (reproducibility + auditability checks); feedback is discussed in the Dec 1 class |
+| **Presentation** (10%) | With Final Portfolio (Dec 11) | Narrated 5-7 slide deck submitted online as a required part of the final portfolio (no in-class session); knowledge translation focus |
+| **Final Portfolio** (35%) | Dec 11 (Fri) | Complete report, required dashboard-style KT product, narrated presentation deck, and fully auditable code repository |
 
 
+::: {.content-visible when-format="pdf"}
 \begin{tcolorbox}[colback=brandlight!5!white, colframe=brandblue, title=\textbf{Analytic Scope of the Term Project}, arc=2mm]
 The project is graded on the data lifecycle, reproducibility, visualization clarity, AI auditability, and knowledge translation - not on the sophistication of statistical inference. Descriptive summaries, well-chosen visualizations, clear documentation of data decisions, and clearly stated limitations are expected. Formal hypothesis tests, regression models, predictive models, or causal claims are out of scope unless agreed with the instructor in the proposal.
 
 The required knowledge translation product is a small dashboard-style product suitable for the chosen audience. This may be implemented through Quarto dashboard-style reporting, R-generated interactive elements, or another instructor-approved pathway that runs reliably in GitHub Codespaces. Advanced deployment options such as Shiny hosting, Shinylive, or AI-generated HTML/JavaScript may be demonstrated, but are not required for every student.
 \end{tcolorbox}
+:::
+
+::: {.content-visible unless-format="pdf"}
+> **Analytic Scope of the Term Project**
+>
+> The project is graded on the data lifecycle, reproducibility, visualization clarity, AI auditability, and knowledge translation - not on the sophistication of statistical inference. Descriptive summaries, well-chosen visualizations, clear documentation of data decisions, and clearly stated limitations are expected. Formal hypothesis tests, regression models, predictive models, or causal claims are out of scope unless agreed with the instructor in the proposal.
+>
+> The required knowledge translation product is a small dashboard-style product suitable for the chosen audience. This may be implemented through Quarto dashboard-style reporting, R-generated interactive elements, or another instructor-approved pathway that runs reliably in GitHub Codespaces. Advanced deployment options such as Shiny hosting, Shinylive, or AI-generated HTML/JavaScript may be demonstrated, but are not required for every student.
+:::
 
 ## Reproducibility Contract
 
+::: {.content-visible when-format="pdf"}
 \begin{tcolorbox}[colback=brandlight!5!white, colframe=brandblue, title=\textbf{The Reproducibility Checklist}, arc=2mm]
 A significant portion of the final grade depends on reproducibility. The following checklist serves as both a learning guide and the grading rubric for the Final Portfolio. Refer to it every week:
 \end{tcolorbox}
+:::
 
-1.  \textbf{Fresh Codespace test:} The project launches and runs start-to-finish in a newly created GitHub Codespace without manual intervention.
-2.  \textbf{Relative paths only:} No absolute paths anywhere in the codebase.
-3.  \textbf{Dependencies declared:} All R packages recorded via \texttt{renv} (introduced in Week 3, reinforced throughout).
-4.  \textbf{No manual steps:} The pipeline from raw data to final output is fully scripted.
-5.  \textbf{README quality:} \texttt{README.md} explains the research question, data provenance, how to reproduce the analysis, and known limitations.
-6.  \textbf{.gitignore configured:} Rendered outputs, OS junk, and sensitive files are excluded from version control. One named exception: the Assignment 8, Assignment 9, and Milestone 3 submission folders do commit rendered HTML for grading; everywhere else, rendered outputs stay excluded. <!-- AI-EDIT(2026-06-11): MIT-100 (D-006) — rendered-HTML grading exception — needs review -->
-7.  \textbf{Commit history:} Incremental, meaningful commits throughout the term.
-8.  \textbf{Documentation:} Code is commented; Quarto documents interleave code with interpretive narrative.
-9.  \textbf{Dashboard-style KT product works:} The project includes a small dashboard-style knowledge translation product that renders or runs in the supported course workflow. If the portfolio is public, it should be viewable through GitHub Pages or another instructor-approved route; if the project is private, the teaching team must be able to render or preview it in a fresh Codespace.
+::: {.content-visible unless-format="pdf"}
+> **The Reproducibility Checklist**
+>
+> A significant portion of the final grade depends on reproducibility. The following checklist serves as both a learning guide and the grading rubric for the Final Portfolio. Refer to it every week:
+:::
+
+1.  **Fresh Codespace test:** The project launches and runs start-to-finish in a newly created GitHub Codespace without manual intervention.
+2.  **Relative paths only:** No absolute paths anywhere in the codebase.
+3.  **Dependencies declared:** All R packages recorded via `renv` (introduced in Week 3, reinforced throughout).
+4.  **No manual steps:** The pipeline from raw data to final output is fully scripted.
+5.  **README quality:** `README.md` explains the research question, data provenance, how to reproduce the analysis, and known limitations.
+6.  **.gitignore configured:** Rendered outputs, OS junk, and sensitive files are excluded from version control. One named exception: the Assignment 8, Assignment 9, and Milestone 3 submission folders do commit rendered HTML for grading; everywhere else, rendered outputs stay excluded. <!-- AI-EDIT(2026-06-11): MIT-100 (D-006) — rendered-HTML grading exception — needs review -->
+7.  **Commit history:** Incremental, meaningful commits throughout the term.
+8.  **Documentation:** Code is commented; Quarto documents interleave code with interpretive narrative.
+9.  **Dashboard-style KT product works:** The project includes a small dashboard-style knowledge translation product that renders or runs in the supported course workflow. If the portfolio is public, it should be viewable through GitHub Pages or another instructor-approved route; if the project is private, the teaching team must be able to render or preview it in a fresh Codespace.
 
 *This contract is introduced in Week 1 and reinforced in every subsequent week.*
 
@@ -379,12 +441,12 @@ A significant portion of the final grade depends on reproducibility. The followi
 assess <- data.frame(
   Component = c(
     "Foundational Assignments (Weeks 2-4)",
-    "Weekly Assignments (Best 5 of 7, Weeks 5-11)",
+    "Weekly Assignments (Best 4 of 6, Weeks 5-10)",
     "Milestone 1: Project Proposal",
     "Milestone 2: Preliminary Analysis",
     "Milestone 3: Project Update",
     "Milestone 4: Peer-Review Contribution",
-    "Milestone 5: Presentation",
+    "Presentation (with Final Portfolio)",
     "Final Portfolio",
     "Total"
   ),
@@ -401,29 +463,39 @@ assess <- data.frame(
   ),
   Notes = c(
     "Must complete all 3 to pass; does not contribute to numeric grade",
-    "Best 5 counted; each counted assignment worth 7%",
+    "Best 4 counted; each counted assignment worth 8.75%",
     "Dataset, question, feasibility, provenance/stewardship statement",
     "Cleaning, EDA, descriptive summary, runnable repo",
     "Draft dashboard-style KT product + report draft for peer review",
     "Specific, actionable feedback on a peer's work; includes reproducibility check",
-    "In-class scientific seminar (Weeks 12-13)",
-    "Report, required dashboard-style KT product, auditable repository; graded against Reproducibility Contract",
+    "Narrated 5-7 slide deck submitted online as a required part of the final portfolio (Dec 11)",
+    "Report, required dashboard-style KT product, narrated presentation deck, auditable repository; graded against Reproducibility Contract",
     ""
   )
 )
 
-kable(assess, 
-      format = "latex", 
-      booktabs = TRUE, 
-      linesep = "\\addlinespace",
-      col.names = c("Component", "Weight", "Notes"), 
-      align = "lll") %>%
-  kable_styling(latex_options = c("hold_position"), full_width = FALSE) %>%
-  row_spec(0, bold = TRUE, color = "white", background = "brandblue") %>%
-  column_spec(1, width = "6cm", bold = TRUE) %>%
-  column_spec(2, width = "3cm", color = "brandlight", bold = TRUE) %>%
-  column_spec(3, width = "6cm") %>%
-  row_spec(9, bold = TRUE, background = "gray!20")
+if (.is_pdf) {
+  kable(assess,
+        format = "latex",
+        booktabs = TRUE,
+        linesep = "\\addlinespace",
+        col.names = c("Component", "Weight", "Notes"),
+        align = "lll") %>%
+    kable_styling(latex_options = c("hold_position"), full_width = FALSE) %>%
+    row_spec(0, bold = TRUE, color = "white", background = "brandblue") %>%
+    column_spec(1, width = "6cm", bold = TRUE) %>%
+    column_spec(2, width = "3cm", color = "brandlight", bold = TRUE) %>%
+    column_spec(3, width = "6cm") %>%
+    row_spec(9, bold = TRUE, background = "gray!20")
+} else {
+  # Emphasise the label and weight columns with Markdown so Word keeps them bold.
+  assess_doc <- assess
+  assess_doc$Component <- paste0("**", assess_doc$Component, "**")
+  assess_doc$Weight    <- paste0("**", assess_doc$Weight, "**")
+  kable(assess_doc, format = "pipe",
+        col.names = c("Component", "Weight", "Notes"),
+        align = "lll")
+}
 ```
 
 ### Scope & Expectations
@@ -437,17 +509,27 @@ kable(assess,
 ### Late Submissions
 
 -   **Foundational Assignments (1-3):** May be resubmitted once within one week of the original deadline.
--   **Weekly Assignments (4-10):** Due Mondays at 4 PM unless otherwise noted. Late submissions are not accepted. Missed assignments count as one of your dropped grades (Best 5 of 7 policy).
+-   **Weekly Assignments (4-9):** Due Mondays at 4 PM unless otherwise noted. Late submissions are not accepted. Missed assignments count as one of your dropped grades (Best 4 of 6 policy).
 -   **Final Portfolio:** Late submissions penalized 10% per day. Submissions more than 5 days late not accepted without prior arrangement.
 -   **Academic Concession:** Requests handled in accordance with UBC Policy V-135. Contact the instructor as soon as the need arises.
 
 ## Course Resources
 
+::: {.content-visible when-format="pdf"}
 \begin{tcolorbox}[colback=brandlight!5!white, colframe=brandblue, title=\textbf{Online Textbook (OER)}, arc=2mm]
 The course textbook is a free, open-access **Quarto Book** published on GitHub Pages. Each chapter corresponds to one week of the course. The textbook serves as both pre-reading and reference material. It is version-controlled, searchable, and updated each term.
 
 *Link will be posted on Canvas before the first class.*
 \end{tcolorbox}
+:::
+
+::: {.content-visible unless-format="pdf"}
+> **Online Textbook (OER)**
+>
+> The course textbook is a free, open-access **Quarto Book** published on GitHub Pages. Each chapter corresponds to one week of the course. The textbook serves as both pre-reading and reference material. It is version-controlled, searchable, and updated each term.
+>
+> *Link will be posted on Canvas before the first class.*
+:::
 
 
 ### Survival Guide & FAQ
