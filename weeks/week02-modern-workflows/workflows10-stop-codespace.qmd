@@ -1,6 +1,7 @@
 # Stop Your Codespace
 
-Codespaces is not free forever. You have a monthly allowance (approx. 60 hours/month for free accounts).
+GitHub Free personal accounts currently include 120 core-hours per month. On
+the default 2-core course machine, that is about 60 hours of active runtime.
 
 **The Analogy:** Think of a Codespace like a **Taxi**.
 
@@ -17,12 +18,16 @@ Codespaces is not free forever. You have a monthly allowance (approx. 60 hours/m
 3.  Click `...` (The "Meatball" Menu)
     -   It is located on the far right side of the Codespace box.
 4.  Click **Stop Codespace**
-    -   **Stop:** This "pauses" the computer. It saves your installed packages and RAM state so you can resume quickly next time. **(Recommended)**
+    -   **Stop:** This stops compute usage while keeping saved files and the
+        installed environment available for the next restart. Running programs
+        and in-memory R or Python objects stop. **(Recommended)**
     -   **Delete:** This destroys the computer. You will have to wait 2-3 minutes for the "Boot Up" phase next time you start.
 
 **Critical Warning:** Closing the browser tab is **NOT** enough.
 
--   GitHub keeps the machine running for **30 minutes** after you close the tab (in case your internet flickered).
+-   By default, GitHub keeps the machine running until **30 minutes of
+    inactivity** have passed after you close the tab. Students can change this
+    idle-timeout setting, so stop the Codespace explicitly rather than waiting.
 
 -   **The Cost:** If you just close the tab every day, you will waste \~15 hours of your monthly quota on empty time.
 

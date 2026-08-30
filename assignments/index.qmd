@@ -29,9 +29,14 @@ Every assignment must:
 
 - run or render in GitHub Codespaces;
 - use relative paths rather than machine-specific paths;
-- keep source files and rendered outputs in the requested submission folder;
+- keep source files and every explicitly required rendered output in the
+  requested submission folder and commit both;
 - commit and sync the final work before submitting the repository link on Canvas;
 - document packages or dependencies when adding anything beyond the course defaults.
+
+Do not add global `*.html` or `*.pdf` rules to the course workspace
+`.gitignore`. Use the assessment's submission list as the authority: a listed
+render is committed; an unlisted practice render does not become a deliverable.
 
 ## How To Read Submission Lists
 

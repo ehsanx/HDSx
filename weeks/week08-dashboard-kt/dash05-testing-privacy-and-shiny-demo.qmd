@@ -14,7 +14,10 @@ The A7 deliverable list asks for a `testing-log.md`. Use the routine below for t
 
 ### A six-step test routine
 
-1. **Render from the repository root.** Open `dash03-starter-dashboard.qmd` in your Codespace and render it from the Command Palette (**Quarto: Render Document**) — the callout below shows every option. Confirm there are no errors. <!-- AI-EDIT(2026-06-11): MIT-078 — needs review -->
+1. **Render from the personal-workspace root.** Copy the workspace starter to
+   `assignments/assignment07-dashboard/submission/dashboard.qmd`, open that
+   submitted copy, and render it from the Command Palette (**Quarto: Render
+   Document**). Confirm there are no errors. <!-- AI-EDIT(2026-06-11): MIT-078 — needs review -->
 2. **Change the control.** Edit `selected_income` to a different value from `available_income_groups`. Save the file.
 3. **Render again.** Confirm the title, table, and plot all updated.
 4. **Verify the caption.** The caption should still name the dataset, exclusions, and limitation.
@@ -47,7 +50,9 @@ Capture: one screenshot of each failure state above, with the error visible. New
 
 <!-- AI-EDIT(2026-06-11): TF-024, MIT-085, WI-046 — needs review -->
 ::: {.callout-tip title="Package check before you finish"}
-If you add or update packages while building the dashboard, run `renv::status()` and follow the course instructions for `renv::snapshot()` so the project works in a fresh Codespace (see the renv checkpoint in [Week 3](../week03-r-with-ai/index.qmd)). The starter uses only packages that are already installed, so most students will not need this.
+The starter uses only packages in the course devcontainer. If an additional
+package is approved, record it in the workspace setup and your dependency note,
+then repeat the test in a fresh Codespace.
 :::
 
 ## Part 2 — Privacy-safe publishing

@@ -65,7 +65,8 @@ This chapter is the single maintainer-facing home for course planning, assistant
 
 - A fresh Codespace can render or run the project.
 - Paths are relative.
-- Dependencies are declared with `renv`, `requirements.txt`, or a clearly documented equivalent.
+- Dependencies are declared through the course devcontainer setup/manifests and
+  student dependency notes; the supported pathway does not use `renv`.
 - No required data exists only on one person's local computer.
 - Randomness uses a seed when results depend on it.
 - The README explains how to reproduce the output.
@@ -97,9 +98,12 @@ The cached data live in `examples/nhanes-equity/data/` so the app, script, READM
 
 ### Editor Decisions
 
-- The NHANES sequence is data-first through Week 7 and app-forward starting in Week 8.
+- The NHANES sequence is data-first through Week 7 and Quarto-dashboard-first
+  from Week 8; Shiny remains demonstration-only.
 - The official setup path is fork-first. GitHub Classroom is not the default in this version of the course book; if used in a future offering, it should be labeled as an instructor-managed alternative in Canvas and in any local handout.
-- Week 8's required pathway is local and Codespaces-friendly: run the Shiny exemplar, make one audience-facing text or documentation improvement, and record a test result.
+- Week 8's required pathway is local and Codespaces-friendly: adapt the Quarto
+  dashboard starter with one audience-facing text or documentation improvement
+  and record a test result. The Shiny exemplar is demonstration-only.
 - Static dashboard and deployment paths are optional demonstrations unless a later assignment explicitly asks for them.
 - Weeks 6-8 now have complete exemplar packs; instructional reviewers use the provided keys and briefs for facilitation rather than drafting new NHANES materials.
 
@@ -108,7 +112,8 @@ The cached data live in `examples/nhanes-equity/data/` so the app, script, READM
 - Weeks 1-2: provenance, ethics, folder structure, relative paths, and rendering; no app run instructions.
 - Weeks 3-5: data loading, missingness checks, AI audit comments, documentation-only Git changes, and R/Python parity checks using the CSV snapshot.
 - Weeks 6-7: visualization critique, flawed-plot audit, EDA, Table 1, and planted-error audit.
-- Week 8: first app-forward week, with the Shiny dashboard exemplar used for a small KT adaptation.
+- Week 8: first dashboard-focused week, with the Quarto dashboard starter used
+  for the required small KT adaptation and Shiny shown only as a demonstration.
 - Weeks 9-10: slides, reports, source notes, limitations, and audience-specific communication.
 - Week 11: fresh-session reproducibility testing and optional rebuild from CDC if internet access is available.
 
@@ -119,10 +124,13 @@ The cached data live in `examples/nhanes-equity/data/` so the app, script, READM
 - The CDC rebuild path requires internet access and the `nhanesA` package.
 - Week pages should include the shared snippet rather than duplicating instructions.
 - Weeks 1-2 should not instruct students to run the app.
-- Week 8 is the first week where app running is central.
+- Week 8 is the first dashboard-focused week; students render the Quarto starter
+  and are not required to run an app.
 - Student changes should stay small unless the instructor explicitly assigns a dashboard feature.
 - Relative paths are part of the lesson; discourage absolute machine-specific paths.
-- Weeks 6-8 should be treated as complete NHANES exemplars; updates should maintain the existing worked examples, activities, answer keys, and assignment briefs.
+- Weeks 6-8 should be treated as complete NHANES exemplars; updates should
+  maintain the existing worked examples, activities, private current A5/A6 keys
+  in `HDSx-instructor`, and assignment briefs.
 
 ### Case Study Done
 

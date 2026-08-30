@@ -27,6 +27,11 @@ Sometimes there are files you do not want to be tracked by github. This could be
 
 This is simple enough right? Whenever in doubt, ask AI how to stop a file from being tracked by git and it will offer some advice. Now stage and commit this like we have done in the previous tutorial.
 
+For the course workspace, ignore machine-specific files, secrets, `.quarto/`,
+and temporary `*_files/` support directories. Do not globally ignore `*.html`
+or `*.pdf`: when an assessment explicitly requires a rendered artifact, that
+file must be committed with its source.
+
 <!-- AI-EDIT(2026-06-11): MIT-042 — needs review -->
 #### Relative Paths
 

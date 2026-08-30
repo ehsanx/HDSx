@@ -31,8 +31,11 @@ Private preview means:
 This is enough for A9 and M3.
 
 <!-- AI-EDIT(2026-06-11): MIT-100 — rendered-HTML exception ruling — needs review -->
-::: {.callout-note title="Rendered HTML: the one exception"}
-The course `.gitignore` normally keeps rendered outputs out of Git. A8, A9, and M3 are the explicit exceptions: their `submission/` folders do commit the rendered HTML (`slides.html`, `report.html`, `report-draft.html`) so staff can grade it. Everywhere else, leave rendered files untracked.
+::: {.callout-note title="Commit required rendered artifacts"}
+The submission list is authoritative. If an assignment or milestone explicitly
+requires a rendered HTML or PDF, commit it with the source so staff can inspect
+the work. Do not add global `*.html` or `*.pdf` patterns to the course
+workspace `.gitignore`.
 :::
 
 <!-- AI-EDIT(2026-06-11): TF-033, MIT-099 — D-006 pre-commit privacy checklist — needs review -->
@@ -41,8 +44,14 @@ The course `.gitignore` normally keeps rendered outputs out of Git. A8, A9, and 
 Run this check every time, before you commit and sync:
 
 1. Open the Source Control panel and read the list of staged files.
-2. Unstage anything that should not go online: raw row-level data files, credentials or tokens, `.RData` workspaces, OS junk such as `.DS_Store`, and rendered files outside the A8/A9/M3 `submission/` folders.
-3. Open `.gitignore` and confirm it covers your data folder and rendered outputs. If an unwanted file keeps reappearing, add it to `.gitignore` instead of unstaging it every time.
+2. Unstage anything that should not go online: raw restricted or row-level data,
+   credentials or tokens, `.RData` workspaces, OS junk such as `.DS_Store`, and
+   unrelated generated files. Keep every rendered artifact named in the
+   assessment brief staged.
+3. Open `.gitignore` and confirm it covers secrets, machine-specific files, and
+   temporary support folders without globally excluding required HTML or PDF.
+   If an unwanted file keeps reappearing, add a narrow rule for that file type
+   or path.
 4. Skim the rendered HTML one last time for private URLs, tokens, or row-level records in printed output.
 
 If any item fails, fix it before syncing. It is much easier to keep a file out of Git than to remove it after it has been pushed.

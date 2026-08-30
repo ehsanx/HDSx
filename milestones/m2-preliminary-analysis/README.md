@@ -8,6 +8,27 @@ M2 checks that the project can move from proposal to evidence. The milestone sho
 
 Submit by the Week 7 deadline posted in Canvas. This milestone prepares the group for Week 8 dashboard prototyping and Week 9 communication work.
 
+## Points and Score Ownership
+
+M2 is worth **5 course points** and receives one group score. The checklist
+below guides the direct 0–5 score; no contribution multiplier or performance-band
+conversion is used.
+
+The five points are allocated across these broad criteria:
+
+| Criterion | Points |
+|---|---:|
+| Cohort definition and inclusion/exclusion decisions | 1 |
+| Missingness check and Table 1-style descriptive evidence | 1 |
+| Reproducible source, render, and code-generated outputs | 1 |
+| Methods note, interpretation, and claim boundary | 1 |
+| AI-use audit and complete, synced submission evidence | 1 |
+| **Total** | **5** |
+
+These are broad judgments, not collections of micro-deductions. A clear,
+rerunnable descriptive analysis can earn full credit without advanced methods
+or research-grade polish.
+
 ## Required Deliverables
 
 Create or update:
@@ -26,7 +47,8 @@ Include these files. All six are required — none are optional — but three (`
 - `methods-note.md` [required]
 - `ai-use-note.md` [required]
 
-Committing `preliminary-analysis.html` here is deliberate: submission folders that explicitly list a rendered file commit it for grading. Everywhere else, rendered outputs stay excluded by `.gitignore`.
+Committing `preliminary-analysis.html` here is deliberate: every rendered file
+explicitly required by an assessment is committed with its source.
 
 ## What To Submit
 
@@ -47,7 +69,11 @@ Your preliminary analysis should include:
 "Table 1-style" is health-research shorthand for the first table of a paper: one row per characteristic of your analytic sample (for example age, sex, income group), with counts, percentages, and means or medians. Follow the [Week 7 worked example](../../weeks/week07-eda-ai-audit/eda03-worked-example.qmd) for the expected format.
 
 <!-- AI-EDIT(2026-06-11): R2-04 — needs review -->
-Your group may build on one member's Assignment 6 work. If you do, add one attribution sentence to your M2 README, for example: "The preliminary analysis builds on Jordan's A6 `eda-note.qmd`."
+Your group may build on one member's Assignment 6 work. If you do, add one
+attribution sentence to `methods-note.md`, for example: "The preliminary
+analysis builds on Jordan's A6 `eda-note.qmd`." Export the missingness table by
+code as `missingness-summary.csv`; this is an M2-only export and is not an
+additional A6 submission file.
 
 ## Reproducibility Expectations
 
@@ -60,9 +86,9 @@ AI may help draft code, suggest summaries, or review language.
 <!-- AI-EDIT(2026-06-11): WI-070, MIT-150, D-004 — needs review -->
 In your `ai-use-note.md`, name at least three checks you performed, such as checking row counts, variable definitions, missingness, grouping labels, and whether AI changed the meaning of the result. The [Week 3 AI audit checklist](../../weeks/week03-r-with-ai/r07-ai-audit-checklist.qmd) and the [Week 7 audit categories](../../weeks/week07-eda-ai-audit/eda05-ai-audit-categories.qmd) list more checks to choose from.
 
-## Grading Checklist
+## Full-Credit Preparation Checklist
 
-This milestone is marked complete when:
+A substantively complete submission should show:
 
 - cohort definition is explicit
 - missingness is reported

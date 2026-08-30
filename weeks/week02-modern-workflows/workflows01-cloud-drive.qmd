@@ -30,10 +30,15 @@ Codespaces is like a library computer:
 
 -   **The "Two-Save" Rule (Crucial)** Because this is a temporary computer, there are two steps to saving:
 
-    1.  **Ctrl+S (Save):** This only saves to the temporary machine. If the machine times out (closes), this is lost.
-    2.  **Commit & Push:** This sends your work back to the Repository (Cloud Drive). This is the only way to be safe.
+    1.  **Ctrl+S (Save):** This saves the file inside the current Codespace.
+        The change is still there when that Codespace stops and restarts, but
+        it is not yet in your GitHub repository.
+    2.  **Commit & Sync:** This sends your work back to the Repository (Cloud
+        Drive). It protects the work if the Codespace is later deleted.
 
-**Warning:** If you close the tab without "Committing" (Sending), your work is erased.
+**Warning:** Closing the tab does not erase saved changes, but it also does not
+sync them to GitHub. Reopen the same Codespace to recover unsynced saved work,
+then commit and sync it as soon as possible.
 
 ### Check for understanding
 

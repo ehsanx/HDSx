@@ -2,7 +2,7 @@
 
 ## Goal
 
-Test whether a project can run in a fresh environment and document every failure before final submission.
+Test whether a project can run in a fresh environment and document the results and any failures before final submission.
 
 This page is the main Week 11 runbook. Use it for Assignment 10, M4 peer review, and final portfolio preparation.
 
@@ -36,8 +36,8 @@ Complete these steps in a new Codespace or equivalent clean environment. Work fr
 9. Check that citations resolve.
 10. Check that figures and tables are generated from code.
 11. Check that AI-use notes are present and specific.
-12. Record every failure, warning, unclear instruction, and repair.
-13. Commit repairs with clear messages.
+12. Record the check results and any failure, warning, unclear instruction, or repair.
+13. Commit any repairs with clear messages.
 14. Submit the updated repository link and commit hash on Canvas.
 
 ## Failure Log
@@ -54,6 +54,11 @@ Use this table for A10 and for peer review.
 | Citations resolve |  |  |  |  |
 | README instructions are accurate |  |  |  |  |
 | AI-use note is complete |  |  |  |  |
+
+If every check passes, keep the evidence for each check and state that no
+failures were identified and no repairs were required. You will not lose marks
+for having no failures to repair. Do not create an artificial failure or make
+an unnecessary change.
 
 ## Example Failure Log
 
@@ -88,7 +93,7 @@ If the project uses Python, add a short dependency note with:
 
 Keep the Python pathway documented, but do not add it unless it supports the core audience-facing product.
 
-## Final Repair Checklist
+## Final Evidence and Repair Checklist
 
 - [ ] Required outputs render or run from a fresh environment.
 - [ ] README instructions match the tested workflow.

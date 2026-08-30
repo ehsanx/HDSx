@@ -48,7 +48,7 @@ Last updated after milestone/presentation/final-portfolio completion pass: 2026-
 
 - **Topic name:** R with AI
 - **Status:** Complete
-- **Evidence:** `weeks/week03-r-with-ai/index.qmd` / `Minimal renv Checkpoint`: `renv::status()`, `renv::snapshot()`, `renv::restore()`; `assignments/assignment02-r-with-ai/README.md` / `Reproducibility Requirements`.
+- **Evidence:** `weeks/week03-r-with-ai/index.qmd` / `Course Environment and Dependency Note`; `assignments/assignment02-r-with-ai/README.md` / `Reproducibility Requirements`; workspace devcontainer setup and Python manifest.
 - **What is missing:** No content drafting gap.
 - **Recommended next additions:** Recheck package environment before release.
 
@@ -145,7 +145,7 @@ Last updated after milestone/presentation/final-portfolio completion pass: 2026-
 | Deliverable | Status | Evidence |
 |---|---|---|
 | A1 | Complete | `assignments/assignment01-workflows/README.md` uses fork repository workflow and Canvas fork-link submission. |
-| A2 | Complete | `assignments/assignment02-r-with-ai/README.md` includes R workflow, AI audit, dependency note, and `renv::status()` awareness. |
+| A2 | Complete | `assignments/assignment02-r-with-ai/README.md` includes R workflow, AI audit, and dependency documentation against the shared devcontainer baseline. |
 | A3 | Complete | `assignments/assignment03-git/README.md` covers commits, diffs, branches, pull request evidence, and M0 readiness. |
 | A4 | Complete | `assignments/assignment04-polyglot/README.md` covers R/Python parity and dependency hygiene. |
 | A5 | Complete | `assignments/assignment05-visualization/README.md` covers ggplot, flawed plot audit, caption, and AI-use note. |
@@ -196,7 +196,7 @@ Last updated after milestone/presentation/final-portfolio completion pass: 2026-
 ## Appendix B: Keyword Patterns Used
 
 - Workflow: `fork`, `Codespaces`, `Quarto`, `render`, `commit`, `sync`, `relative paths`
-- R and reproducibility: `R`, `dplyr`, `read_csv`, `renv`, `status`, `snapshot`, `restore`
+- R and reproducibility: `R`, `dplyr`, `read_csv`, devcontainer, dependency note, fresh Codespace
 - Ethics and data: `provenance`, `stewardship`, `privacy`, `security`, `OCAP`, `CARE`, `responsible AI`
 - Visualization and EDA: `ggplot2`, `plotly`, `visual audit`, `misleading`, `Table 1`, `missingness`, `planted-error`
 - KT products: `dashboard`, `Shiny`, `plain language`, `revealjs`, `report`, `citations`, `grounding audit`

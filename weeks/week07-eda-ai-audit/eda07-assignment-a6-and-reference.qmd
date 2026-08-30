@@ -14,12 +14,17 @@ Assignment 6 is due the Monday after Week 7 class, 4 PM. Milestone 2 (Preliminar
 | `eda-note.qmd` | Yes — corresponds to `preliminary-analysis.qmd` |
 | `eda-note.html` | Yes — corresponds to `preliminary-analysis.html` |
 | `table1.csv` | Yes — same file |
+| missingness table in `eda-note.qmd` | Export it as `missingness-summary.csv` for M2; it is not an extra A6 deliverable |
 | `audit-note.md` | A6 only |
 | `provenance-stewardship-note.md` | Yes — feeds the M2 `methods-note.md` |
 | `ai-use-note.md` | Yes — same filename in the M2 `submission/` folder |
 
 <!-- AI-EDIT(2026-06-11): TF-021, TF-059, MIT-076, WI-040 — needs review -->
-A6 is your individual assignment submission. M2 is your group milestone submission. If you reuse a `.qmd` file, copy it into the correct submission folder/repository and use the required filename for each submission. M2 may build on one member's A6 — note whose A6 it builds on in the M2 README (one attribution sentence is enough).
+A6 is your individual assignment submission. M2 is your group milestone
+submission. If you reuse a `.qmd` file, copy it into the correct submission
+folder/repository and use the required filename for each submission. M2 may
+build on one member's A6; put one attribution sentence in the existing M2
+`methods-note.md`.
 
 ### How to move your A6 file into the group repository
 
@@ -29,9 +34,13 @@ A6 lives in your individual repository; M2 lives in your group repository. Reusi
 2. Open a Codespace on the **group** repository.
 3. Create the file with the M2 name and location — `milestones/m2-preliminary-analysis/submission/preliminary-analysis.qmd` — paste the contents, and save.
 4. Render the file in the group Codespace. If the data path does not resolve, copy the CSV into the group repository with the same relative folder structure, or update the relative path.
-5. Repeat for the other reused files, using the M2 filenames from the table above.
-6. Add one attribution sentence to the M2 README, for example: "The preliminary analysis builds on Jordan's A6 `eda-note.qmd`."
-7. Commit and Sync Changes in the group repository.
+5. Export the A6 missingness result by code as
+   `milestones/m2-preliminary-analysis/submission/missingness-summary.csv`.
+   This export is required for M2 only.
+6. Repeat for the other reused files, using the M2 filenames from the table above.
+7. Add one attribution sentence to M2 `methods-note.md`, for example: "The
+   preliminary analysis builds on Jordan's A6 `eda-note.qmd`."
+8. Commit and Sync Changes in the group repository.
 
 Do not email files to yourself or drag them between browser windows — copying through the editor and committing in the group repository keeps every step visible in the project history.
 
@@ -91,7 +100,9 @@ Before you click submit:
 - `table1.csv` is written by code (`write_csv(...)`).
 - Missingness is reported *before* the Table 1, not after.
 - The methods note avoids causal language and names the data as descriptive and unweighted.
-- If you added any package beyond the course environment, run `renv::status()` and follow the [Week 3 renv checkpoint](../week03-r-with-ai/index.qmd#minimal-renv-checkpoint) — most students will not need this. <!-- AI-EDIT(2026-06-11): MIT-168 — needs review -->
+- Use the course devcontainer packages. If an additional package was approved,
+  record it in your dependency note and the workspace setup so a fresh
+  Codespace can install it.
 - All six files are committed and pushed.
 
 ## A methods-note template you can reuse

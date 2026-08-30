@@ -8,6 +8,8 @@ Use this checklist before submitting the final repository link on Canvas.
 - [ ] Private repository access has been granted to course staff when needed.
 - [ ] Latest commit is synced to GitHub.
 - [ ] Canvas submission includes the latest commit hash.
+- [ ] `repository-access-note.md` records visibility, staff-access status, the
+      checked date, latest commit hash, and final artifact paths.
 
 ## Project README
 

@@ -8,7 +8,7 @@ If you copy this template into a project report outside the book, start the file
 ---
 title: "NHANES Equity Summary"
 format: html
-bibliography: ../../references.bib
+bibliography: references.bib
 ---
 ```
 

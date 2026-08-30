@@ -10,7 +10,8 @@ Take 2 minutes to check that your Codespace is ready:
 
 1. `library(tidyverse)` runs without error. <!-- AI-EDIT(2026-06-23): tidyverse-default — consolidated core library() calls into library(tidyverse) -->
 2. The cached data file resolves from the repository root: `examples/nhanes-equity/data/nhanes_equity_v6.csv`.
-3. Your `viz03-worked-example.qmd` renders cleanly.
+3. The rendered [Week 6 worked example](viz03-worked-example.qmd) opens in the
+   course book; you do not need its source file in your personal workspace.
 
 If any of those three fail, raise it with your debugging partner before moving on.
 
@@ -24,7 +25,8 @@ Evaluate one AI-generated visualization for correctness, clarity, bias, aggregat
 - Worked example to compare against: [`weeks/week06-visualization/viz03-worked-example.qmd`](viz03-worked-example.qmd)
 - Dataset: [`examples/nhanes-equity/data/nhanes_equity_v6.csv` (view on GitHub)](https://github.com/ehsanx/HDSx/blob/main/examples/nhanes-equity/data/nhanes_equity_v6.csv)
 <!-- AI-EDIT(2026-06-11): D-001/MIT-125 — starter relocated out of instructor/ — needs review -->
-- Flawed plot code (the artifact you will audit): [`weeks/week06-visualization/studio/flawed-plot-code.R` (view on GitHub)](https://github.com/ehsanx/HDSx/blob/main/weeks/week06-visualization/studio/flawed-plot-code.R)
+- Flawed plot code in your personal workspace (the artifact you will audit):
+  `assignments/assignment05-visualization/flawed-plot-code.R`
 
 <!-- AI-EDIT(2026-06-22): REVIEW-row161 — converted "Tester note" callout to hidden HTML comment so it stays in source for instructors/testers but is hidden from student-facing render -->
 <!--
@@ -35,9 +37,12 @@ Capture: a screenshot of the rendered flawed plot in the Codespaces Quarto previ
 ## Activity Steps
 
 1. Review the worked example and note how it labels the data source, statistic, and limitation.
-2. Open `studio/flawed-plot-code.R` and read the comments and output labels before you run it. <!-- AI-EDIT(2026-06-11): D-001/MIT-125 — needs review -->
+2. In your personal workspace, open
+   `assignments/assignment05-visualization/flawed-plot-code.R` and read the
+   comments and output labels before you run it. <!-- AI-EDIT(2026-06-11): D-001/MIT-125 — needs review -->
 <!-- AI-EDIT(2026-06-11): MIT-067 — explicit run/preview steps and output path — needs review -->
-3. Run the script: open an **R terminal** in your Codespace and, from the repository root, run `source("weeks/week06-visualization/studio/flawed-plot-code.R")`.
+3. Run the script from your personal workspace root with
+   `source("assignments/assignment05-visualization/flawed-plot-code.R")`.
 4. Look at the figure. It may appear in a plot viewer pane. If it does not, no problem: the script also saves `flawed-plot.png` in your current working folder (run `getwd()` if you are unsure where that is). Find the PNG in the Explorer, right-click it, and choose **Open Preview**.
 5. List at least three issues that could mislead a reader. Tag each one with one of the audit categories below.
 6. Revise the plot so the title, scale, grouping, and caption match the evidence. Keep the cohort restriction explicit.
@@ -56,7 +61,7 @@ Capture: a screenshot of the rendered flawed plot in the Codespaces Quarto previ
 These are the draft files you produce in class. The Assignment 5 deliverable list ([viz07](viz07-assignment-a5-and-reference.qmd)) is the same set, polished.
 
 - `visual-audit-note.md` — at least three issues with category, why it matters, and the corrected approach.
-- `corrected-plot.qmd` — a rerunnable Quarto file that creates the corrected plot.
+- `visualization-audit.qmd` — a rerunnable Quarto file that creates the corrected plot and explains the revision.
 - `corrected-plot.png` — the exported corrected plot.
 - `caption.md` — a caption that states the statistic, data source, exclusions, and limitations.
 - `ai-use-note.md` — if you used AI, explain what it helped with and how you checked the result.

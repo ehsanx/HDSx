@@ -46,10 +46,14 @@ The required files are:
 - `reproducibility-check.md`
 - `auditability-check.md`
 - `kt-feedback.md`
-- `reviewer-reflection.md`
 - `ai-use-note.md`
 
 Do not invent extra files unless your group needs them for organization.
+
+At the end of `peer-review.md`, add the three short reflection prompts from the
+M4 brief: what the review changed in your own thinking, one limitation/bias/
+stewardship issue that deserves attention, and one review habit you will apply
+to your own project. No separate reflection file is submitted.
 
 ## AI Use in Peer Review
 

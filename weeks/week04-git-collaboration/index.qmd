@@ -87,7 +87,10 @@ Deeper Dive: [Repo Hygiene](git03-repo-hygiene.qmd) <!-- AI-EDIT(2026-06-22): RE
 
 ### Why This Matters
 
-As your projects grow, you will generate files that should *not* be tracked: rendered HTML, temporary data caches, `.DS_Store`, API keys. Tracking these clutters your history and can leak sensitive information.
+As your projects grow, you will generate files that should *not* be tracked:
+temporary Quarto support folders, local caches, `.DS_Store`, and API keys.
+Rendered files explicitly required by an assessment are different: they are
+part of the evidence and must be committed.
 
 ### `.gitignore` Walkthrough
 
@@ -95,8 +98,9 @@ As your projects grow, you will generate files that should *not* be tracked: ren
 2.  Add common patterns:
 
 ```         
-# Rendered outputs
-*.html
+# Quarto temporary/support files
+/.quarto/
+**/.quarto/
 *_files/
 
 # OS junk
@@ -110,11 +114,14 @@ Thumbs.db
 <!-- AI-EDIT(2026-06-11): MIT-037 — needs review -->
 **What to do with this block:** copy these patterns into your own `.gitignore` file. This is plain text, not R code --- there is nothing to run.
 
-3.  Stage, commit with a message like `"Add .gitignore to exclude rendered files"`.
+3.  Stage and commit with a message such as `"Add project gitignore rules"`.
 
 <!-- AI-EDIT(2026-06-11): MIT-169 (D-006) — needs review -->
-::: {.callout-note title="One named exception to the *.html rule"}
-Later in the course, the Assignment 8, Assignment 9, and Milestone 3 submission folders **do** commit rendered HTML so graders can read the work without rendering it. Those briefs say so explicitly. Everywhere else, keep rendered outputs excluded by `.gitignore`, exactly as taught here.
+::: {.callout-note title="Required renders are committed"}
+Do **not** add global `*.html` or `*.pdf` patterns to the course workspace
+`.gitignore`. If an assignment or milestone explicitly lists a rendered HTML or
+PDF file, commit it with the source. For practice renders that are not requested,
+use Source Control to stage only the files named in the brief.
 :::
 
 ### Relative Paths

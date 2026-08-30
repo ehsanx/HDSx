@@ -119,7 +119,15 @@ To be marked complete, your card must include:
 
 ## Submission
 
-Submit the completed card in Canvas under the Week 1 module. Starting in Week 2, keep a copy in your course repository as:
+Submit the completed card in Canvas under the Week 1 module as a **required,
+unweighted Complete/Needs Work checkpoint**. It carries no percentage weight
+and has no granular rubric. Its purpose is to identify setup, access, or
+workflow trouble early enough for the TA or instructor to help before later
+assignments build on it.
+
+Submit only the completed card; no screenshot, reflection, or additional setup
+evidence is required. Starting in Week 2, keep a copy in your course repository
+as:
 
 ```text
 data-intake-card.md

@@ -30,7 +30,10 @@ This assignment strengthens R first, then translates a small descriptive task to
 6. Create `translation.ipynb` and translate the same summary to Python/pandas.
 7. Create `helpers.py` with at least one reusable Python helper called from the notebook.
 8. Complete a parity table comparing row counts, filtered row counts, grouping labels, and rounded summary values.
-9. Write a dependency note naming Python packages used. Include `requirements.txt` only if you add packages beyond the course defaults.
+9. Write a dependency note naming the R and Python packages used. If an
+   instructor-approved Python package is added, also update the root
+   `.devcontainer/requirements.txt`; do not create a second manifest in the
+   submission folder.
 10. Clear bulky notebook outputs before committing.
 11. Render the Quarto file to HTML.
 12. Commit and sync the assignment folder.
@@ -64,7 +67,6 @@ Submit these files:
 - `parity-table.csv`: completed parity table.
 - `dependency-note.md`: Python/R dependency note.
 <!-- AI-EDIT(2026-06-11): WI-065 — needs review -->
-- `requirements.txt` [if applicable — required only if your workflow creates this file]: `requirements.txt` is required only if you added extra Python packages. If you did not add packages, state "No extra Python packages added" in `dependency-note.md` instead of creating an empty file.
 - `ai-use-note.md`: what AI helped translate or debug and how you verified the result.
 
 ## Submission Route

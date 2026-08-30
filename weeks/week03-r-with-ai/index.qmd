@@ -11,7 +11,7 @@
 
 - Understand that R is a calculator that needs specific, case-sensitive instructions.
 - Load packages with `library()` and explain why this is needed each session.
-- Run a minimal `renv` checkpoint so package changes are visible.
+- Explain how the course devcontainer and dependency notes make package use visible.
 - Use core constructs: variables (assignment), functions (with arguments), and the pipe (`%>%` / `|>`).
 - Perform basic data transformations using `dplyr` verbs: `filter()`, `select()`, `mutate()`, `summarise()`, `group_by()`.
 - Inspect a dataset on first contact: structure, dimensions, missingness.
@@ -74,39 +74,29 @@ library(tidyverse)
 If you see an error like `there is no package called 'tidyverse'`, the package is not installed in your Codespace. Use the Canvas support channel or office hours and include the full error message.
 :::
 
-### Minimal renv Checkpoint
+### Course Environment and Dependency Note
 
-`renv` helps record which R packages a project uses. You do not need to master `renv` this week, but you should recognize the three checkpoint commands that support reproducibility.
+The personal workspace devcontainer is the supported course environment. It
+installs the R and Python packages used by the required pathway, so you do not
+need to initialize `renv`, create a lockfile, or install packages for Assignment
+2.
 
-**What to do with this code:** Run `renv::status()` as written; Read the other two commands so you recognize them. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review -->
+For every submitted analysis:
 
-<!-- AI-EDIT(2026-06-22): REVIEW-row60,row68, MIT-025 — clarify renv commands run inside an R session, not the bash terminal; corrected RA's renv::init() advice (project is pre-initialized, so init is not needed) -->
-**Where to run this:** These are R commands, so run them *inside* an R session (the `>` prompt), not at the plain terminal. If you are not already in R, open a terminal (**Terminal → New Terminal**), type `R`, press Enter, then run `renv::status()`. The course project is already set up for `renv`, so you do **not** need to run `renv::init()` yourself.
+1. Load each R package explicitly with `library(...)` in the Quarto source.
+2. Name the packages you used in `dependency-note.md`.
+3. State whether you used only the course defaults.
+4. If you think you need another package, ask the instructor or TA before adding
+   it. Record an approved addition in the workspace devcontainer setup and in
+   your dependency note so a fresh Codespace can reproduce it.
 
-```{r, eval=FALSE}
-# Check whether the project environment has changed.
-renv::status()
+For Assignment 2, a complete dependency note can be as short as:
 
-# Record package changes when you intentionally add or update packages.
-renv::snapshot()
-
-# Restore the recorded package environment in a fresh setup.
-renv::restore()
+```text
+Packages used: tidyverse. No packages were added beyond the course Codespace baseline.
 ```
 
-<!-- AI-EDIT(2026-06-11): GAP-R345-10 — needs review -->
-Use `renv::status()` to check whether the project environment matches the lockfile. Do not run `renv::snapshot()` unless the instructor asks or you have intentionally added a package, because it changes the recorded package state.
-
-<!-- AI-EDIT(2026-06-22): REVIEW-row61, GAP-R345-10 — show expected output and a restart fallback for renv::status() -->
-When everything is consistent, `renv::status()` prints:
-
-```
-No issues found -- the project is in a consistent state.
-```
-
-If instead it reports that packages are out of sync, first try restarting R (type `q()` to quit, choose **n** when asked to save the workspace, then type `R` again) and rerun `renv::status()`. If it still reports a mismatch, do **not** run `renv::snapshot()` to "fix" it --- use the Canvas support channel or office hours and include the exact message, since the lockfile is instructor-managed.
-
-For Assignment 2, run `renv::status()` and write a short dependency note. Only run `renv::snapshot()` if you intentionally added a package.
+The test is practical: your document must render in a fresh course Codespace.
 
 ---
 
@@ -482,9 +472,9 @@ This interleaving of code and prose is **literate programming** --- the methodol
 ---
 
 <!-- AI-EDIT(2026-06-11): MIT-032, MIT-033, GAP-R345-1 — needs review -->
-## Assignment: The "Mad Libs" Report
+## Assignment 2: R With AI
 
-Full instructions: [Assignment 2 README](../../assignments/assignment02-r-with-ai/README.md). Short version: [Assignment: The "Mad Libs" Report](r09-assignment-mad-libs.qmd).
+Full instructions: [Assignment 2 README](../../assignments/assignment02-r-with-ai/README.md). Short version: [Assignment 2 walkthrough](r09-assignment-mad-libs.qmd).
 
 **Task:** Build a short Quarto report that loads, inspects, transforms, and summarizes a health dataset --- using your AI co-pilot for code generation and your own judgment for verification.
 
@@ -499,7 +489,7 @@ Full instructions: [Assignment 2 README](../../assignments/assignment02-r-with-a
    - Create at least one new column with `mutate()`.
    - Produce a grouped summary with `group_by()` + `summarise()`.
 5. **Write a function:** Create (or adapt from AI) a reusable summary function. Call it on at least two different columns.
-6. **Export:** Save your cleaned data to `output/clean_data.csv`.
+6. **Export:** Save your summary table to `output/summary_table.csv`.
 7. **Document:** Every code chunk should have:
    - A `#` comment stating what you asked the AI and what you verified.
    - A Markdown paragraph below interpreting the result.

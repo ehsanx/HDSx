@@ -9,8 +9,10 @@ This exercise turns the week into a concrete artifact: one small R analysis, one
 Translate the Week 5 R-deepening summary into Python/pandas:
 
 1. Start from the R pipeline in [R Deepening and Parity Check](r-deepening-parity.qmd).
-2. Create the Python translation in `weeks/week05-polyglot-r-deepening/translation.ipynb`. Do not save it in the repository root unless the instructions explicitly say so. <!-- AI-EDIT(2026-06-11): WI-029 — needs review -->
-3. Load the NHANES CSV from `../../examples/nhanes-equity/data/nhanes_equity_v6.csv`.
+2. Create the Python translation in your personal workspace at
+   `assignments/assignment04-polyglot/submission/translation.ipynb`. <!-- AI-EDIT(2026-06-11): WI-029 — needs review -->
+3. From that notebook, load the NHANES CSV from
+   `../../../examples/nhanes-equity/data/nhanes_equity_v6.csv`.
 4. Recreate the BMI-by-income-and-gender summary in Python.
 5. Compare the Python output to the R output using row counts, grouping labels, and rounded summary values.
 6. Extract one Python helper into `helpers.py` and call it from the notebook.

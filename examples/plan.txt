@@ -19,7 +19,9 @@ The app was adapted from `examples/bmi39.R`. The original task brief referred to
 
 The cached data are stored in `examples/nhanes-equity/data/` so the case-study app, script, README, and weekly snippets all use one consistent location. Legacy copies under `examples/data/` were left untouched to avoid breaking older references.
 
-The weekly index pages for Weeks 1-11 now include phased case-study sections. Weeks 1-7 use data-first headings and snippets; Weeks 8-11 use the dashboard-forward snippet once app work becomes central.
+The weekly index pages for Weeks 1-11 now include phased case-study sections.
+Weeks 1-7 use data-first headings and snippets; Weeks 8-11 use the
+dashboard-forward snippet once the Quarto dashboard becomes central.
 
 ## Pedagogical Design
 
@@ -30,7 +32,8 @@ The progression is:
 - Weeks 1-2: provenance, ethics, folder structure, relative paths, and rendering; no app run instructions.
 - Weeks 3-5: data loading, missingness checks, AI audit comments, documentation-only Git changes, and R/Python parity checks using the CSV snapshot.
 - Weeks 6-7: visualization critique, flawed-plot audit, EDA, Table 1, and planted-error audit.
-- Week 8: first week where running the Shiny app is central.
+- Week 8: first dashboard-focused week; students adapt the Quarto starter and
+  observe the Shiny exemplar as a demonstration only.
 - Weeks 9-10: slides, reports, source notes, limitations, and audience-specific communication.
 - Week 11: fresh-session reproducibility testing and optional rebuild from CDC if internet access is available.
 
@@ -52,7 +55,10 @@ Week 6 uses the worked ggplot example, flawed instructor plot, and visual-audit 
 
 Week 7 uses the worked Table 1 example and planted-error starter. Survey weights, strata, and PSU columns can be identified, but design-based standard errors should be instructor/demo material unless already taught.
 
-Week 8 is the first app-forward week. Students should run the app, identify an audience, and improve one audience-facing label, help text, caption, or interpretation note. Deployment should remain optional unless explicitly assigned.
+Week 8 is the first dashboard-focused week. Students should render and adapt the
+Quarto dashboard starter, identify an audience, and improve one audience-facing
+label, help text, caption, or interpretation note. The Shiny app and deployment
+remain demonstrations unless explicitly approved for later project work.
 
 Week 9 uses one dashboard plot or table as the basis for a short slide explanation. Students should include a plain-language takeaway, a limitation, and a source note.
 
@@ -67,7 +73,8 @@ Week 11 stress-tests reproducibility. Students should launch the app from a fres
 - The CDC rebuild path requires internet access and the `nhanesA` package.
 - Week pages should include the shared snippet rather than duplicating instructions.
 - Weeks 1-2 should not instruct students to run the app.
-- Week 8 is the first week where app running is central.
+- Week 8 is the first dashboard-focused week; required work uses Quarto rather
+  than app running.
 - Student changes should stay small unless the instructor explicitly assigns a dashboard feature.
 - Relative paths are part of the lesson; discourage absolute machine-specific paths.
 
@@ -77,9 +84,12 @@ Week 11 stress-tests reproducibility. Students should launch the app from a fres
 - Treat `examples/bmi39.R` as the historical source file and `examples/nhanes-equity/app/app.R` as the maintained app entry point.
 - Treat CDC-rebuilt data as a reproducibility pathway; the cached classroom CSV/RDS remain the default committed teaching files.
 - Week 5's R/Python parity check is part of the assignment pathway through Assignment 4.
-- Week 8 uses local app running as the required pathway; deployment remains a demonstration or extension.
-- Week 6 distributes flawed and corrected plot code through the instructor folder and asks students to submit their audit and correction.
-- Week 7 distributes the planted-error starter as an instructor-controlled exercise source with the answer key kept separate.
+- Week 8 uses local Quarto rendering as the required pathway; Shiny and
+  deployment remain demonstrations or approved extensions.
+- Week 6 distributes the flawed starter publicly; the current corrected plot and
+  audit key remain in `HDSx-instructor`.
+- Week 7 distributes the planted-error starter publicly; the current key remains
+  in `HDSx-instructor`.
 - Week 7 requires N, BMI mean (SD), and age mean (SD) as the core Table 1 variables; extra variables are extensions.
 
 ## Definition of Done for This Case Study

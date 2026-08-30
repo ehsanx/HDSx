@@ -13,7 +13,9 @@ You have a clean Table 1 ([eda03](eda03-worked-example.qmd)) and a clear-eyed vi
 | **Interpretation** | Does the narrative overclaim what the descriptive table can support? |
 | **Stewardship** | Does the work respect data provenance, privacy, and classroom-use boundaries? |
 
-Each issue you find during an audit should be tagged with one of these four. A good A6 audit note hits at least three of them.
+Each issue you find during an audit should be tagged with one of these four. A
+complete A6 audit note covers **all four categories** at least once across its
+five or more issues.
 
 ## Beginner-level examples for each
 

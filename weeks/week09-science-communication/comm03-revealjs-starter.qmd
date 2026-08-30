@@ -2,25 +2,23 @@
 
 ## Where This Fits
 
-This page explains how to use the raw starter file, [starter-slides.qmd](starter-slides.qmd). The starter is a small revealjs deck that can render from the command line or the Quarto Render button.
+This page explains how to use the slide starter shipped in your personal
+workspace at `assignments/assignment08-communication/starter-slides.qmd`. The
+copy in this course book is a reference; do not assume it appears in the same
+Explorer as your personal work.
 
 You may also submit a structured slide outline for A8. Both options are graded identically — pick the format that fits where you are. <!-- AI-EDIT(2026-06-11): R2-06 — needs review --> The revealjs path is recommended if you want practice with Quarto slides before M5.
 
-## Render the Starter
+## Copy, Then Render
 
-<!-- AI-EDIT(2026-06-11): TF-028, MIT-093, D-003 — RStudio mention removed; standard render include — needs review -->
-To preview the starter as-is, render it by name. From the repository root, the terminal command is:
-
-```bash
-quarto render weeks/week09-science-communication/starter-slides.qmd
-```
-
-{{< include /_snippets/render-how.qmd >}}
-
-The rendered file should appear beside the source as `starter-slides.html`.
+The workspace starter is configured for its submitted location. Copy and rename
+it first using the steps below, then render the submitted `slides.qmd`; do not
+render or edit the untouched template in place.
 
 <!-- AI-EDIT(2026-06-22): tester-note-conversion — converted leaked "Tester note" callout to hidden HTML comment (instructor/tester pre-release task, not student-facing)
-Tester note: Before release, render `weeks/week09-science-communication/starter-slides.qmd` in a clean Codespace and confirm that the title slide, source note, and bibliography entry appear.
+Tester note: Before release, copy the workspace starter into the A8 submission
+folder as `slides.qmd`, render that copy in a clean Codespace, and confirm that
+the title slide, source note, and bibliography entry appear.
 -->
 
 <!-- AI-EDIT(2026-06-11): TF-028, MIT-093, WI-050 — needs review -->
@@ -28,11 +26,17 @@ Tester note: Before release, render `weeks/week09-science-communication/starter-
 
 The starter stays in the weeks folder as a template. Your graded files belong in the assignment submission folder.
 
-Before editing, copy `weeks/week09-science-communication/starter-slides.qmd` into `assignments/assignment08-communication/submission/` and rename it `slides.qmd`. Render from the submission folder so the required `slides.qmd` and `slides.html` are created in the correct place.
+Before editing, copy
+`assignments/assignment08-communication/starter-slides.qmd` within your
+personal workspace into `assignments/assignment08-communication/submission/`
+and rename it `slides.qmd`. Render from the repository root so the required
+`slides.qmd` and `slides.html` are created in the correct folder.
 
 Step by step in VS Code:
 
-1. In the Explorer, right-click `starter-slides.qmd` and choose **Copy**.
+1. In your personal workspace Explorer, open
+   `assignments/assignment08-communication/`, right-click
+   `starter-slides.qmd`, and choose **Copy**.
 2. Right-click the `assignments/assignment08-communication/submission/` folder and choose **Paste**.
 3. Right-click the pasted copy, choose **Rename**, and type `slides.qmd`.
 4. Edit `slides.qmd` there, then render it by name:
@@ -64,10 +68,12 @@ You can add evidence in three ways:
 Use relative paths for images. For example:
 
 ```markdown
-![](../../assignments/assignment05-visualization/submission/corrected-plot.png)
+![](../../assignment05-visualization/submission/corrected-plot.png)
 ```
 
-If the path does not work, keep the figure beside your slide deck in the A8 submission folder and use a local relative path such as:
+That example is relative to the A8 `submission/` folder. If the path does not
+work, keep the figure beside your slide deck and use a local relative path such
+as:
 
 ```markdown
 ![](corrected-plot.png)

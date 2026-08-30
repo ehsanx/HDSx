@@ -19,8 +19,10 @@ This assignment builds a transparent preliminary analysis. You will define a coh
 - Studio activity: `weeks/week07-eda-ai-audit/eda06-studio-planted-errors.qmd`
 - Walkthrough and reference: `weeks/week07-eda-ai-audit/eda07-assignment-a6-and-reference.qmd`
 <!-- AI-EDIT(2026-06-11): D-001/MIT-127 — starter relocated out of instructor/ — needs review -->
-- Planted-error starter: `weeks/week07-eda-ai-audit/studio/planted-error-starter.qmd`
-- Audit template: `assignments/assignment06-eda-ai-audit/audit-note-template.md`
+- Planted-error starter in your personal workspace:
+  `assignments/assignment06-eda-ai-audit/planted-error-starter.qmd`
+- Audit template in your personal workspace:
+  `assignments/assignment06-eda-ai-audit/audit-note-template.md`
 - M2 connection: `milestones/m2-preliminary-analysis/README.md`
 
 ## Tasks

@@ -29,7 +29,7 @@ library(reticulate)
 
 py_run_string("
 import pandas as pd
-nhanes = pd.read_csv('../../examples/nhanes-equity/data/nhanes_equity_v6.csv')
+nhanes = pd.read_csv('examples/nhanes-equity/data/nhanes_equity_v6.csv')
 bmi_rows = nhanes[['BMI', 'IncomeGroup']].dropna()
 ")
 

@@ -42,8 +42,11 @@ AI may help draft code, explain an error, or suggest a function structure. You m
 - The analysis must render in GitHub Codespaces.
 - The data path must be relative.
 - Output files must be created by code, not manually edited.
-- New packages must be named in the Quarto file and in `dependency-note.md`.
-- `renv` awareness is introductory here: run `renv::status()` and note whether you used the existing course environment or added packages. Use `renv::snapshot()` only if you intentionally added a package. In plain terms, `renv::status()` checks whether your packages match the course record, and `renv::snapshot()` updates that record. See the [Minimal renv Checkpoint on the Week 3 page](../../weeks/week03-r-with-ai/index.qmd#minimal-renv-checkpoint) for a walkthrough. <!-- AI-EDIT(2026-06-11): MIT-112 — needs review -->
+- Load every package used in the Quarto source and list it in
+  `dependency-note.md`.
+- The course devcontainer is the dependency baseline. Do not initialize `renv`.
+  If you think an additional package is necessary, ask before adding it and
+  document the approved change so the work still runs in a fresh Codespace.
 
 ## What To Submit
 
@@ -61,7 +64,6 @@ Submit these files:
 - `output/summary_table.csv` [required]: code-generated output. Use the required filename listed in this submission checklist — do not rename it to `clean_data.csv`.
 - `ai-use-note.md` [required]: what AI helped with and how you checked it, or a sentence saying AI was not used. Template and filled example: [The Official AI Documentation Rule](../index.qmd#the-official-ai-documentation-rule).
 - `dependency-note.md` [required]: packages used and whether any were added beyond the course environment.
-- `renv.lock` (updated at the repository root, not in the submission folder) [if applicable — required only if your workflow creates this file]: commit the updated lockfile only if you added a package and intentionally ran `renv::snapshot()`. <!-- AI-EDIT(2026-06-11): WI-077 (D-002) — needs review -->
 
 ## Submission Route
 

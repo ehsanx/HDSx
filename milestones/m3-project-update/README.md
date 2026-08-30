@@ -8,6 +8,27 @@ M3 turns the preliminary analysis into a project draft that is ready for feedbac
 
 Submit by the Week 10 deadline posted in Canvas. This milestone supports report drafting, publishing checks, and the Week 11 reproducibility review.
 
+## Points and Score Ownership
+
+M3 is worth **5 course points** and receives one group score. The checklist
+below guides the direct 0–5 score; no contribution multiplier or performance-band
+conversion is used.
+
+The five points are allocated across these broad criteria:
+
+| Criterion | Points |
+|---|---:|
+| Project update framing, current finding, and decision needing review | 1 |
+| Rendered, evidence-based report draft | 1 |
+| Dashboard/KT preview, audience fit, and caution | 1 |
+| Targeted feedback request and reproducibility guidance | 1 |
+| AI-use audit and complete, synced submission evidence | 1 |
+| **Total** | **5** |
+
+These are broad judgments, not collections of micro-deductions. M3 is a draft
+checkpoint: substantively complete work can earn full credit while still
+identifying choices and revisions for later stages.
+
 ## Required Deliverables
 
 Create or update:
@@ -28,7 +49,8 @@ Include these files. Seven files looks like a lot, but only `report-draft.qmd` i
 - `ai-use-note.md` [required]
 
 <!-- AI-EDIT(2026-06-11): MIT-100 (M3 portion, D-006) — needs review -->
-Committing `report-draft.html` is a deliberate exception to the course rule that rendered outputs stay out of Git: the A8, A9, and M3 submission folders commit rendered HTML so reviewers can read the work without rendering it. Everywhere else, keep rendered outputs excluded by `.gitignore`.
+Commit `report-draft.html` with its source. The course-wide rule is that every
+rendered artifact explicitly listed by an assessment is part of the submission.
 
 ## What To Submit
 
@@ -71,9 +93,9 @@ The report draft must render in GitHub Codespaces or a documented local environm
 
 AI may help revise prose, identify unclear sections, or suggest checks. Students must verify citations, numeric results, interpretations, and any code suggested by AI. The `ai-use-note.md` should name the main AI-assisted tasks and the verification steps.
 
-## Grading Checklist
+## Full-Credit Preparation Checklist
 
-This milestone is marked complete when:
+A substantively complete submission should show:
 
 - report draft renders
 - current findings are supported by code-generated evidence

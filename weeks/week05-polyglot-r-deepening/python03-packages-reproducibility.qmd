@@ -16,7 +16,10 @@ Both languages require you to load packages before using them.
 Python projects record package dependencies in `requirements.txt`. This is the Python-side equivalent of saying, "Here is what another person must install before my code will run."
 
 <!-- AI-EDIT(2026-06-11): TF-017, WI-031 — needs review -->
-The course Codespace already provides `pandas` and the notebook tools preinstalled, so you should not need to install or record anything for this week's required work. Only edit `requirements.txt` if you add a Python package that is not already provided by the course environment.
+The course Codespace already provides `pandas` and the notebook tools, so you
+should not need to install anything for this week's required work. Only edit
+`.devcontainer/requirements.txt` if an additional Python package has been
+approved.
 
 <!-- AI-EDIT(2026-06-22): REVIEW-row143 (TF-017, WI-031) — tell students where requirements.txt lives in the Codespace -->
 In the course Codespace this file lives at `.devcontainer/requirements.txt` (at the top level of your project). The file itself is simple — one package name per line. For example, a project that depends only on `pandas` would contain:
@@ -34,8 +37,12 @@ matplotlib
 
 ## Course Rule
 
-If you install or rely on a Python package for submitted work, record it in `requirements.txt`. Do not leave package installation as an undocumented memory from your current Codespace.
+If you rely on an approved additional Python package, record it in the root
+`.devcontainer/requirements.txt` and in your dependency note. Do not create a
+second submission-folder requirements file.
 
 ## R Connection
 
-R reproducibility is handled through project documentation and, later in the course, `renv`. Week 5 is a bridge: you should be able to explain where dependencies are recorded in both languages.
+R reproducibility uses the same devcontainer baseline plus explicit `library()`
+calls and dependency notes. Week 5 is a bridge: you should be able to explain
+where dependencies are recorded in both languages.

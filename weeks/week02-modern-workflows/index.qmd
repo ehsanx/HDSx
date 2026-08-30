@@ -71,7 +71,10 @@ Think of a **Codespace** as a **public computer in the library**.
 
 - It is a temporary machine you borrow to do your work.
 - It comes pre-installed with all the software you need (R, Python, Quarto), so you don't have to install anything on your own laptop.
-- **Crucial difference:** Just like a public library computer, it can be wiped clean. If you close the browser without sending your work back to your Cloud Drive, your changes may be lost.
+- **Crucial difference:** Saved changes remain in that Codespace when it stops,
+  but they are not in your GitHub repository until you commit and sync them. A
+  Codespace can later be deleted, so GitHub—not the Codespace—is the safe home
+  for finished work.
 
 ### The Workflow
 
@@ -225,7 +228,7 @@ my-project/
 ### Rules
 
 - **`data/` is read-only.** Import from it; never save into it.
-- **`output/` is generated.** Your code writes cleaned data and figures here. In Week 3, you will export `output/clean_data.csv`.
+- **`output/` is generated.** Your code writes cleaned data and figures here. In Week 3, you will export `output/summary_table.csv`.
 - **Use relative paths.** Always refer to files relative to the project root (e.g., `"data/patients.csv"`), never absolute paths (e.g., `"/home/user/Documents/patients.csv"`). This ensures your code runs on any machine.
 
 **Activity:** In the Explorer pane, click the **New Folder** icon and create the `output/` folder if it does not already exist.
@@ -284,8 +287,11 @@ Find a code chunk in the starter file. Make a small change --- for example, chan
 ### Step 6: Render
 
 <!-- AI-EDIT(2026-06-11): TF-010/WI-014/D-003 — standard render instructions replace button-only step (Command Palette default, named-file command, output location) — needs review -->
-<!-- AI-EDIT(2026-06-22): REVIEW-row36 (TF-010,WI-014,D-003) — add run-cells-and-save prerequisite, Command Palette shortcut, and HTML output-format note -->
-**Before you render:** run your code chunks and save the file so the executed output is captured. Use the run button (▶) at the top-left of each code chunk to run it, or run them all from **Run → Run All** / the Command Palette, then save with `Ctrl+S` (`Cmd+S` on macOS). If you render without running and saving, the report may show your code without its results.
+<!-- FINAL-CHECK(2026-08-24): corrected render semantics: save first; a full Quarto render executes chunks without a separate Run All prerequisite -->
+**Before you render:** save the file with `Ctrl+S` (`Cmd+S` on macOS). Rendering
+runs the code chunks from the start and captures their results, so you do not
+need to run every chunk first. Running chunks interactively is still useful for
+finding errors before a full render.
 
 To render, open the **Command Palette** --- press `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (macOS), or use **View → Command Palette** --- and run **Quarto: Render Document**. If you are asked which output format to produce, choose **HTML**. The detailed steps and an always-works terminal fallback are below.
 
@@ -295,7 +301,11 @@ A preview pane appears showing your formatted report with code output embedded.
 
 <!-- AI-EDIT(2026-06-11): WI-012/TF-010 — where the rendered HTML lands and how to open it — needs review -->
 ::: {.callout-note title="Where is my HTML file?"}
-After rendering, your HTML file is saved to the `docs/` folder at the project root --- not beside the `.qmd` file. To view it, right-click the file in the Explorer panel and choose the browser/open-preview option shown in the instructions, or start a local server from the terminal and open the URL shown. You cannot open the HTML by typing its name in the terminal.
+In your personal workspace, `practice_report.html` is saved beside
+`practice_report.qmd` at the repository root. Watch the render log for the
+`Output created:` line, then right-click the HTML file and choose **Open
+Preview** or **Download**. The course book uses a separate `docs/` output
+directory; your personal workspace does not.
 :::
 
 <!-- AI-EDIT(2026-06-11): MIT-021 — TinyTeX warning is safe to ignore for HTML output — needs review -->
@@ -362,7 +372,10 @@ Click **Sync Changes** (in the Source Control panel or the status bar at the bot
 
 *Deeper Dive: [Stop Your Codespace](workflows10-stop-codespace.qmd).* <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review --><!-- AI-EDIT(2026-06-22): REVIEW-row26,row27 — link label normalized to "Deeper Dive" (consistency rename) -->
 
-GitHub Codespaces gives you a monthly allowance of free hours (approximately 60 core-hours). **If you leave the browser tab open, the meter keeps running**, even if you are not actively working.
+GitHub Free personal accounts currently include 120 core-hours per month. On
+the course's default 2-core machine, that is about 60 hours of active runtime.
+**If you leave the browser tab open, the meter keeps running** until the
+Codespace reaches its idle timeout, even if you are not actively working.
 
 ### The Right Way to Stop
 
@@ -426,11 +439,15 @@ This shuts down and rebuilds the entire environment from scratch. It solves near
 
 ## `workflows13.qmd` Assignment 1: Your First Quarto Report
 
-**Due Friday 4 pm.** Submit via Canvas.
+**Due Monday after the Week 2 class at 4 PM.** Submit via Canvas.
 
 ### Task
 
-Edit and render the starter `practice_report.qmd`, demonstrating that you can navigate your Codespace, edit Quarto, and commit your work.
+Edit and render the supplied root-level `practice_report.qmd`, demonstrating
+that you can navigate your personal workspace Codespace, edit Quarto, and
+commit your work. This is the same authoritative workflow as the
+[Assignment 1 brief](../../assignments/assignment01-workflows/README.md); there
+is no separate nested A1 submission.
 
 ### Step-by-Step Workflow
 
@@ -452,7 +469,10 @@ Edit and render the starter `practice_report.qmd`, demonstrating that you can na
    - Click **✔ Commit**, then **Sync Changes**.
 7. **Stop** your Codespace.
 8. **Verify** on github.com that your commit appears in the repository.
-9. **Submit** your forked repository link on Canvas.
+9. **Submit** your personal workspace repository link on Canvas. The synced
+   commit must include the root-level `practice_report.qmd` and
+   `practice_report.html`; no extra reflection or commit-evidence file is
+   required.
 
 ---
 

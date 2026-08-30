@@ -23,16 +23,13 @@ Use the NHANES case-study snapshot:
 examples/nhanes-equity/data/nhanes_equity_v6.csv
 ```
 
-If you are working from this Week 5 folder, the relative path is:
-
-```text
-../../examples/nhanes-equity/data/nhanes_equity_v6.csv
-```
-
 ## Part A: R Pipeline
 
 <!-- AI-EDIT(2026-06-11): MIT-052 — needs review -->
-Write Parts A and B in one new R script named `week5.R`, saved in the Week 5 folder (`weeks/week05-polyglot-r-deepening/`). You are not editing an existing file. For Assignment 4, the same code later moves into `polyglot-parity.qmd` in `assignments/assignment04-polyglot/submission/`.
+Write Parts A and B as R chunks in
+`assignments/assignment04-polyglot/submission/polyglot-parity.qmd` in your
+personal workspace. Work in the assessed file from the start rather than
+creating a second script to move later.
 
 Start with R. The goal is a descriptive, unweighted summary of BMI by income group and gender.
 
@@ -40,7 +37,7 @@ Start with R. The goal is a descriptive, unweighted summary of BMI by income gro
 ```r
 library(tidyverse)
 
-nhanes <- read_csv("../../examples/nhanes-equity/data/nhanes_equity_v6.csv")
+nhanes <- read_csv("examples/nhanes-equity/data/nhanes_equity_v6.csv")
 
 r_summary <- nhanes |>
   filter(!is.na(BMI), !is.na(IncomeGroup), !is.na(Gender)) |>
@@ -83,7 +80,10 @@ Before moving to Python, check that the function output has the same number of r
 <!-- AI-EDIT(2026-06-11): GAP-R345-9 — needs review -->
 ## More R Mastery Exercises
 
-The pipeline and function above are the worked example. Complete at least two of these short exercises in `week5.R` before moving to Python:
+The pipeline and function above are the worked example. Complete at least two
+of these short exercises in R chunks in
+`assignments/assignment04-polyglot/submission/polyglot-parity.qmd` before moving
+to Python:
 
 1. **Swap the value column.** Run `summarise_mean_sd(nhanes, Waist, IncomeGroup, Gender)`. Check that the grouping labels match the BMI summary. Did the row count change? Why might it?
 2. **Swap a grouping column.** Run `summarise_mean_sd(nhanes, BMI, Race, Gender)`. How many grouped rows do you get now, and why?
@@ -99,14 +99,20 @@ Use this prompt only after you have a working R result:
 ## Part C: Python Translation
 
 <!-- AI-EDIT(2026-06-11): MIT-053 — needs review -->
-Create the Python translation in a notebook named `translation.ipynb`, saved in the Week 5 folder (`weeks/week05-polyglot-r-deepening/`) — the same notebook you set up in [Python Environment](python02-environment.qmd) and use in [Bilingual Translation](python13-translation-exercise.qmd). Attempt each step yourself first with the [cheat sheet](python14-cheat-sheet.qmd); use AI (the audit prompt above) to check or fix one step at a time, never to generate the full script.
+Create the Python translation at
+`assignments/assignment04-polyglot/submission/translation.ipynb` in your
+personal workspace — the same notebook you set up in [Python
+Environment](python02-environment.qmd) and use in [Bilingual
+Translation](python13-translation-exercise.qmd). Attempt each step yourself
+first with the [cheat sheet](python14-cheat-sheet.qmd); use AI to check or fix
+one step at a time.
 
 Translate one step at a time. Do not ask AI for a full script until you have verified each cell.
 
 ```python
 import pandas as pd
 
-nhanes = pd.read_csv("../../examples/nhanes-equity/data/nhanes_equity_v6.csv")
+nhanes = pd.read_csv("../../../examples/nhanes-equity/data/nhanes_equity_v6.csv")
 
 py_summary = (
     nhanes
@@ -152,3 +158,6 @@ Submit a short note with:
 - the Python translation;
 - a parity table showing the checks above;
 - two sentences explaining any mismatch or confirming that the outputs agree.
+
+These are the Assignment 4 submission files; do not also save copies under a
+`weeks/` folder in your personal workspace.

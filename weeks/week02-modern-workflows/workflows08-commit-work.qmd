@@ -11,8 +11,6 @@ Think of this as a three-step save process:
 2.  **Commit** = save a snapshot with a message.
 3.  **Sync** = upload that snapshot to GitHub so it is safely stored online.
 
-The **Commit and Sync** button used below does steps 2 and 3 together; if nothing is staged, VS Code offers to stage all your changed files for you.
-
 ## Steps
 
 1.  Click the **Source Control** icon
@@ -20,18 +18,29 @@ The **Commit and Sync** button used below does steps 2 and 3 together; if nothin
     -   It looks like a **blue bubble** or a **connect-the-dots graph** on the far left sidebar.
     -   This opens the "Shipping Department." You will see a list of every file you changed.
 
-2.  Type a **Commit Message**
+2.  Stage the two Assignment 1 files
+
+    -   Hover over `practice_report.qmd` and `practice_report.html`, then click
+        the **+** beside each file.
+    -   Check the **Staged Changes** list before continuing. Do not stage
+        unrelated files.
+
+3.  Type a **Commit Message**
 
     -   **The Label:** You cannot ship a package without a label.
     -   **What to write:** Be descriptive but brief. Imagine you are leaving a note for your future self about *what* you did.
     -   *Example:* "Updated author name in practice report".
     -   *Bad Example:* "stuff" or "fix".
 
-3.  Click **Commit and Sync** (or Commit and Push)
+4.  Click **Commit**
 
-    -   This is the **"Send"** button.
-    -   **Action:** It wraps up your changes, stamps them with the time and your message, and teleports them to the Cloud Vault.
-    -   *Note:* You might be asked to click "Always" or "Yes" to approve the sync.
+    -   This records the staged files as one snapshot in the Codespace.
+
+5.  Click **Sync Changes** (or **Push**)
+
+    -   This sends the commit to your GitHub repository.
+    -   *Note:* You might be asked to click "Always" or "Yes" to approve the
+        sync.
 
     ![This will push your changes to the remote branch](../../assets/images/workflow8/commitpush.png)
 

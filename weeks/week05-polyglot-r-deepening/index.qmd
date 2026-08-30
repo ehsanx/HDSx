@@ -23,7 +23,8 @@ By the end of this week, you should be able to:
 - load and inspect a CSV with `pandas`;
 - identify common R-to-Python translation traps;
 - use AI one step at a time while auditing each translated output;
-- document Python dependencies in `requirements.txt`;
+- document approved Python dependencies in the workspace-root
+  `.devcontainer/requirements.txt`;
 - use Git to commit a clean translation workflow.
 
 ## Connection
@@ -46,20 +47,17 @@ Start in R. Use the NHANES case-study CSV:
 examples/nhanes-equity/data/nhanes_equity_v6.csv
 ```
 
-If you are working from the Week 5 folder, the relative path is:
-
-```text
-../../examples/nhanes-equity/data/nhanes_equity_v6.csv
-```
-
 <!-- AI-EDIT(2026-06-11): MIT-052 — needs review -->
 ### Where To Write Your R Code
 
-You do not edit an existing file for this studio. Create one new R script named `week5.R`, saved inside the Week 5 folder (`weeks/week05-polyglot-r-deepening/`). Check the Explorer panel before saving so the file does not land in the repository root. For Assignment 4, the same code later moves into `polyglot-parity.qmd` inside `assignments/assignment04-polyglot/submission/`.
+Work directly in your personal workspace. Create
+`assignments/assignment04-polyglot/submission/polyglot-parity.qmd` and put the R
+studio code in R chunks there. This avoids creating a second `week5.R` file that
+would only need to be copied later.
 
 ### R Pipeline and R Function
 
-The studio code — a `dplyr` pipeline and a small reusable function — lives in one place so there is a single copy to keep correct: work through Parts A and B of [R Deepening and Parity Check](r-deepening-parity.qmd). Type or paste each block into `week5.R` and run it.
+The studio code — a `dplyr` pipeline and a small reusable function — lives in one place so there is a single copy to keep correct: work through Parts A and B of [R Deepening and Parity Check](r-deepening-parity.qmd). Type or paste each block into R chunks in `polyglot-parity.qmd` and run it.
 
 Before translating, compare the pipeline output and the function output. They should have the same grouping labels and the same number of rows.
 
@@ -71,7 +69,10 @@ Work in pairs. One partner reads the R output; the other reads the Python output
 A parity check means confirming that the R result and Python result match on the important parts: row counts, column counts, grouping labels, missing values, and rounded summary values.
 
 <!-- AI-EDIT(2026-06-11): TF-017 — needs review -->
-R steps happen in your `week5.R` script. Python steps happen in your `translation.ipynb` notebook (see [Python Environment](python02-environment.qmd) for how to create it and run cells). `pandas` comes preinstalled in the course Codespace — you do not need to install anything.
+R steps happen in `polyglot-parity.qmd`. Python steps happen in
+`translation.ipynb` in the same A4 submission folder (see [Python
+Environment](python02-environment.qmd)). `pandas` comes preinstalled in the
+course Codespace.
 
 1. Load the NHANES CSV in R and Python.
 2. Record raw row count, column count, and missing `BMI` count in both languages.
@@ -108,7 +109,7 @@ For the explicit R mastery exercises — the worked pipeline, the reusable funct
 
 ## Assignment 4
 
-Complete [Assignment 4: Polyglot Awareness & R Deepening](../../assignments/assignment04-polyglot/README.md).
+Complete [Assignment 4: Polyglot Parity](../../assignments/assignment04-polyglot/README.md).
 
 Submit a repository link on Canvas after committing:
 

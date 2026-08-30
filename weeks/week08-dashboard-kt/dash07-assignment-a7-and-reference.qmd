@@ -10,7 +10,7 @@ Assignment 7 is due the Monday after Week 8 class, 4 PM. The required pathway is
 
 **Decision rule pinned at the top:** adapt the Quarto starter. The Shiny app is a demonstration only and is **not** an approved A7 submission pathway. If you are interested in using Shiny for your final-portfolio dashboard, talk with the instructor — Shiny is not a default-approved pathway and requires instructor approval.
 
-## The eight A7 deliverables, explained
+## The nine A7 deliverables, explained
 
 Each file goes in `assignments/assignment07-dashboard/submission/`.
 
@@ -18,51 +18,58 @@ Each file goes in `assignments/assignment07-dashboard/submission/`.
 `testing-log.md`, `limitation-note.md`, and `privacy-check.md` are brief evidence files. One to three focused sentences or bullets are enough unless the assignment asks for more.
 
 <!-- AI-EDIT(2026-06-11): TF-056 (D-002) — needs review -->
-All eight files are [required]. The [A7 README](../../assignments/assignment07-dashboard/README.md) marks the brief ones with [brief — 1-3 focused bullets or sentences are enough]; the full tag vocabulary is in [How To Read Submission Lists](../../assignments/index.qmd#how-to-read-submission-lists).
+All nine files are [required]. The [A7 README](../../assignments/assignment07-dashboard/README.md) marks the brief ones with [brief — 1-3 focused bullets or sentences are enough]; the full tag vocabulary is in [How To Read Submission Lists](../../assignments/index.qmd#how-to-read-submission-lists).
 
-### 1. `dashboard-adaptation-note.md`
+### 1. `dashboard.qmd`
+
+The adapted copy of the personal-workspace Quarto starter. Make the allowed
+audience-facing text change here and retain the source with the evidence files.
+
+- **Verify:** render this exact submitted file in a fresh Codespace.
+
+### 2. `dashboard-adaptation-note.md`
 
 Audience, question, control, visualization, the element you changed, and the KT rationale. Pattern after the studio Step 1 and Step 2 outputs.
 
 - **Verify:** a peer can read this and identify your audience and question without seeing your code.
 
-### 2. `before-after-text.md`
+### 3. `before-after-text.md`
 
 The original text, the revised text, why the change helps the audience, and a confirmation that no analytic logic changed. Pattern after the studio Step 3 output.
 
 - **Verify:** the change is genuinely audience-facing text. If you cannot say "no analytic logic changed", the change does not belong in A7 (see [dash04](dash04-audience-and-ui-text.qmd)).
 
-### 3. `testing-log.md`
+### 4. `testing-log.md`
 
 Date tested, the command or render path you used, the values you tried, and the result. Pattern after the studio Step 4 output.
 
 - **Verify:** another student could reproduce your test by following your log.
 
-### 4. `limitation-note.md`
+### 5. `limitation-note.md`
 
 One sentence on what the dashboard does not support. Use the descriptive-vs-causal patterns from [eda05](../week07-eda-ai-audit/eda05-ai-audit-categories.qmd).
 
 - **Verify:** the sentence belongs *in or beside* the dashboard, not just in a separate file.
 
-### 5. `privacy-check.md`
+### 6. `privacy-check.md`
 
 Three sentences from [dash05](dash05-testing-privacy-and-shiny-demo.qmd): data source and classroom-use boundary, aggregate-only confirmation, no row-level data shared with AI.
 
 - **Verify:** three sentences, each specific.
 
-### 6. `dashboard-preview.png`
+### 7. `dashboard-preview.png`
 
 A screenshot or exported preview of the affected dashboard area (after the text change).
 
 - **Verify:** the preview clearly shows the revised audience-facing element. No row-level table previews.
 
-### 7. `reproducibility-note.md`
+### 8. `reproducibility-note.md`
 
 One paragraph naming the render command, the relative path, and whether the dashboard renders in a fresh Codespace.
 
 - **Verify:** the path is relative, and the note matches what `testing-log.md` says.
 
-### 8. `ai-use-note.md`
+### 9. `ai-use-note.md`
 
 What AI helped with (or a sentence saying you did not use it) and how you verified the result.
 
@@ -77,7 +84,7 @@ Before you click submit:
 - The preview screenshot shows the revised text change clearly.
 - The dashboard contains a visible limitation sentence (not just in a separate file).
 - No row-level data appears in any screenshot or shared output.
-- All eight files are committed and pushed.
+- All nine files are committed and pushed.
 
 ## A pathway decision template you can reuse
 
@@ -103,7 +110,8 @@ Reused from [dash05](dash05-testing-privacy-and-shiny-demo.qmd) for your referen
 |---|---|
 | Cached dataset (CSV) | `examples/nhanes-equity/data/nhanes_equity_v6.csv` |
 | Cached dataset (RDS) | `examples/nhanes-equity/data/nhanes_equity_v6.rds` |
-| Starter dashboard | `weeks/week08-dashboard-kt/dash03-starter-dashboard.qmd` |
+| Student starter dashboard | `assignments/assignment07-dashboard/dashboard-starter.qmd` |
+| Adapted submitted source | `assignments/assignment07-dashboard/submission/dashboard.qmd` |
 | Shiny exemplar (instructor demo only) | `examples/nhanes-equity/app/app.R` |
 | Adaptation template | `assignments/assignment07-dashboard/dashboard-adaptation-template.md` |
 | Submission folder | `assignments/assignment07-dashboard/submission/` |

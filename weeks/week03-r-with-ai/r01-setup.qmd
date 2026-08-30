@@ -25,8 +25,13 @@ The Codespace should open ready to use. If R, Quarto, required packages, or Copi
    * *Troubleshooting:* If the Chat asks you to "Sign In" or "Subscribe," your Student Pack is not active. Use your institutional login at `copilot.microsoft.com` or authenticate via your university email at `https://m365.cloud.microsoft/chat/`.
    
 <!-- AI-EDIT(2026-06-11): GAP-R345-10 — needs review -->
-## Check the Package Environment (renv)
-This project uses `renv` to record which R package versions the course expects. Use `renv::status()` to check whether the project environment matches the lockfile. Do not run `renv::snapshot()` unless the instructor asks, because it changes the recorded package state.
+## Check the Course Package Environment
+
+The personal workspace devcontainer installs the packages required for the
+course pathway. Do not initialize `renv`. In each analysis file, load the
+packages you use explicitly, and list them in the assignment's dependency note.
+If a required package is missing after rebuilding the container, copy the error
+message and ask your TA or instructor rather than installing packages at random.
 
 ## Interface Review: Where does R actually live?
 To learn R, we are going to start in the "sandbox." Here is how your screen is laid out:

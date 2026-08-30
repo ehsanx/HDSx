@@ -8,6 +8,27 @@ M1 turns a broad project idea into a scoped, feasible, and ethically grounded an
 
 Submit by the Week 6 deadline posted in Canvas. This milestone prepares the group for Week 7 preliminary analysis and Week 8 dashboard prototyping.
 
+## Points and Score Ownership
+
+M1 is worth **5 course points** and receives one group score. The checklist
+below guides the direct 0–5 score; no contribution multiplier or performance-band
+conversion is used.
+
+The five points are allocated across these broad criteria:
+
+| Criterion | Points |
+|---|---:|
+| Proposal scope, audience, KT purpose, and questions | 1 |
+| Data provenance, access, privacy, stewardship, and relevant equity risks | 1 |
+| Initial visual direction and risk of misinterpretation | 1 |
+| Feasibility and reproducibility plan | 1 |
+| AI-use audit and complete, synced submission evidence | 1 |
+| **Total** | **5** |
+
+These are broad judgments, not collections of micro-deductions. A
+substantively complete, internally consistent proposal can earn full credit
+without research-grade polish.
+
 ## Required Deliverables
 
 Create or update:
@@ -85,9 +106,9 @@ Use relative paths. Do not commit restricted, private, or identifiable data. If 
 
 AI may help brainstorm wording, search terms, or code structure. Students must verify data-source claims, privacy considerations, citations, and feasibility. Include an `ai-use-note.md` describing what AI helped with and what was checked manually.
 
-## Grading Checklist
+## Full-Credit Preparation Checklist
 
-This milestone is marked complete when:
+A substantively complete submission should show:
 
 - the question is specific and feasible
 - the audience and KT purpose are named

@@ -9,7 +9,9 @@ You have everything you need: the worked Quarto starter ([dash03](dash03-starter
 Take 2 minutes to confirm your Codespace is ready:
 
 1. The cached CSV resolves: `examples/nhanes-equity/data/nhanes_equity_v6.csv`.
-2. `dash03-starter-dashboard.qmd` renders cleanly with the default `selected_income`.
+2. You copied the personal-workspace starter to
+   `assignments/assignment07-dashboard/submission/dashboard.qmd`, and that copy
+   renders cleanly with the default `selected_income`.
 3. You have decided which `IncomeGroup` to set `selected_income` to for your adaptation (it does not have to be the default).
 
 ## Goal
@@ -52,7 +54,9 @@ Create `before-after-text.md` in the A7 submission folder: in the Explorer panel
 
 ### Step 4 — Apply the change and test (15 min)
 
-Edit your local copy of the starter file with the revised text. Then run the six-step test routine from [dash05](dash05-testing-privacy-and-shiny-demo.qmd):
+Edit `assignments/assignment07-dashboard/submission/dashboard.qmd` with the
+revised text. Then run the six-step test routine from
+[dash05](dash05-testing-privacy-and-shiny-demo.qmd):
 
 1. Render.
 2. Change the control to a different value.
@@ -97,6 +101,7 @@ You should leave class with draft versions of all the files A7 expects. Polish a
 ## Required studio outputs (drafts)
 
 - `dashboard-adaptation-note.md`
+- `dashboard.qmd`
 - `before-after-text.md`
 - `testing-log.md`
 - `limitation-note.md`

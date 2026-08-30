@@ -10,7 +10,7 @@ In `translation.ipynb`, load the same CSV used in the R example:
 ```python
 import pandas as pd
 
-nhanes = pd.read_csv("../../examples/nhanes-equity/data/nhanes_equity_v6.csv")
+nhanes = pd.read_csv("../../../examples/nhanes-equity/data/nhanes_equity_v6.csv")
 ```
 
 ## Inspect Before Summarising

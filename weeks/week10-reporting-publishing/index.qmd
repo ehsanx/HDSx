@@ -55,7 +55,12 @@ Week 9 turned one finding into a concise slide story. Week 10 expands the same e
 6. Decide whether the preview should stay private or can be public-safe.
 
 <!-- AI-EDIT(2026-06-11): TF-030, MIT-096 — D-003 render instructions for step 3 — needs review -->
-For step 3, always name the file you are rendering, for example: `quarto render weeks/week10-reporting-publishing/report-template.qmd`. In your own project, render your `report.qmd` the same way.
+For step 3, always name the file you are rendering. In your personal workspace,
+use:
+
+```bash
+quarto render assignments/assignment09-reporting/submission/report.qmd
+```
 
 {{< include /_snippets/render-how.qmd >}}
 

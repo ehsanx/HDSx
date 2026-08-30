@@ -18,17 +18,22 @@ This assignment introduces dashboard-style Knowledge Translation. You will run o
 ## Inputs
 
 - Week 8 index: `weeks/week08-dashboard-kt/index.qmd`
-- Required core artifact (the file you adapt): `weeks/week08-dashboard-kt/dash03-starter-dashboard.qmd`
+- Required core artifact in your personal workspace:
+  `assignments/assignment07-dashboard/dashboard-starter.qmd`
 - Walkthrough and reference: `weeks/week08-dashboard-kt/dash07-assignment-a7-and-reference.qmd`
 - Shiny exemplar (instructor demonstration only; not an A7 submission pathway): `examples/nhanes-equity/app/app.R`
-- Cached data: `examples/nhanes-equity/data/nhanes_equity_v6.rds`
-- CSV snapshot: `examples/nhanes-equity/data/nhanes_equity_v6.csv`
+- Cached data in your personal workspace: `examples/nhanes-equity/data/nhanes_equity_v6.rds`
+- CSV snapshot in your personal workspace: `examples/nhanes-equity/data/nhanes_equity_v6.csv`
 - Adaptation template: `assignments/assignment07-dashboard/dashboard-adaptation-template.md`
 
 ## Tasks
 
 1. Create or use the folder `assignments/assignment07-dashboard/submission/`.
-2. From the repository root, render the Quarto starter dashboard (`weeks/week08-dashboard-kt/dash03-starter-dashboard.qmd`). The Shiny exemplar is a demonstration and is not an approved A7 submission pathway without prior instructor approval.
+2. Copy `assignments/assignment07-dashboard/dashboard-starter.qmd` to
+   `assignments/assignment07-dashboard/submission/dashboard.qmd`. Adapt and
+   render this copy from the repository root. The Shiny exemplar is a
+   demonstration and is not an approved A7 submission pathway without prior
+   instructor approval.
 3. Choose one audience, such as a public-health analyst, student project team, or briefing group.
 4. Write one audience-specific dashboard question.
 5. Identify one control, filter, or dashboard-style interaction and the visualization it affects.
@@ -62,6 +67,7 @@ Submit these files:
 
 <!-- AI-EDIT(2026-06-11): TF-023/MIT-132/MIT-134 — brief/evidence labels so the log files are not over-built — needs review -->
 - `dashboard-adaptation-note.md` [required]: audience, question, control/interaction, visualization, changed element, and KT rationale.
+- `dashboard.qmd` [required]: the adapted Quarto source used to create the preview.
 - `before-after-text.md` [required] [brief — 1-3 focused bullets or sentences are enough]: original text and revised text.
 - `testing-log.md` [required] [brief — 1-3 focused bullets or sentences are enough]: command or render path used, date tested, and result. A few lines is enough.
 - `limitation-note.md` [required] [brief — 1-3 focused bullets or sentences are enough]: one limitation or caution suitable for the dashboard. One clear sentence is enough.
@@ -87,8 +93,10 @@ Canvas applies a 7-point rubric. This assignment is part of the best-5-of-7 set 
 | Interpretation and limitation are descriptive and non-causal | 1 |
 | Testing and reproducibility notes show a successful local check | 1 |
 | Privacy-safe publishing check is complete | 0.75 |
-| Preview, AI-use note, and required files are committed and synced | 1 |
+| Dashboard source, preview, AI-use note, and required files are committed and synced | 1 |
 
 ## Definition of Done
 
-You are done when the submitted notes let a reviewer identify the audience, control, visualization, text improvement, test result, and limitation without rerunning the app first.
+You are done when the submitted `dashboard.qmd`, preview, and notes let a
+reviewer identify the audience, control, visualization, text improvement, test
+result, and limitation and reproduce the preview if needed.

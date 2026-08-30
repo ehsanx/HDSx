@@ -45,7 +45,10 @@ Use [Activity: Data Intake Card](activity-data-intake-card.qmd).
 4. Write one KT framing sentence: who could use this dataset, and what decision or conversation could it support?
 5. Name one ethics, privacy, security, or stewardship issue that should be checked before publishing results.
 
-Student output: a completed Data Intake Card and one KT framing sentence.
+Student output: one completed Data Intake Card, including its KT framing
+sentence. Submit that card as the required, unweighted Complete/Needs Work
+Canvas checkpoint. It is a lightweight early-support check, not a
+percentage-weighted assignment and not an additional deliverable.
 
 ## Open Data Portals
 

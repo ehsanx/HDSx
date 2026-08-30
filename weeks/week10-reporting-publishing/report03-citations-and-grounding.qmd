@@ -26,7 +26,9 @@ If your project uses a different source, add the relevant bibliography entry to 
 
 <!-- AI-EDIT(2026-06-22): tester-note-conversion — converted leaked "Tester note" callout to hidden HTML comment (instructor/tester verification step, not student-facing)
 Tester note:
-Render `weeks/week10-reporting-publishing/report-template.qmd` and confirm the `@cdc-nhanes` citation resolves in the reference list.
+In your personal workspace, copy the A9 `report-template.qmd` and
+`references.bib` into the A9 submission folder, rename the report `report.qmd`,
+and confirm the `@cdc-nhanes` citation resolves in the rendered reference list.
 -->
 
 ## Grounding Audit

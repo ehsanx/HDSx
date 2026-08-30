@@ -26,7 +26,7 @@ These items require live course infrastructure rather than more drafting:
 | Week 0 | Asynchronous onboarding | `weeks/week00-onboarding/index.qmd` | Ready | Includes Canvas-posted orientation video/survey instructions, GitHub account guidance, fork workflow, support path, and Week 1 preparation. |
 | Week 1 | Health Data, KT & Ethics | `weeks/week01-health-data-ethics/index.qmd`; `activity-data-intake-card.qmd` | Ready | Data Intake Card and NHANES data spine frame provenance, ethics, stewardship, privacy, and KT. |
 | Week 2 | Modern Workflows | `weeks/week02-modern-workflows/index.qmd`; workflow subpages; `assignments/assignment01-workflows/README.md` | Ready | Student path is template repo, Fork, Codespaces from fork, commit/sync, submit fork link on Canvas. |
-| Week 3 | R with AI | `weeks/week03-r-with-ai/index.qmd`; `assignments/assignment02-r-with-ai/README.md` | Ready | Adds minimal `renv::status()`, `renv::snapshot()`, and `renv::restore()` awareness aligned with the dependency note. |
+| Week 3 | R with AI | `weeks/week03-r-with-ai/index.qmd`; `assignments/assignment02-r-with-ai/README.md` | Ready | Uses the shared devcontainer baseline, explicit package loading, and a short dependency note. |
 | Week 4 | Git & Collaboration | `weeks/week04-git-collaboration/index.qmd`; `assignments/assignment03-git/README.md`; `milestones/m0-group-formation/README.md` | Ready | Group repo setup now uses a forked group template and collaborator access; M0 is fully specified. |
 | Week 5 | Polyglot Awareness & R Deepening | `weeks/week05-polyglot-r-deepening/index.qmd`; `assignments/assignment04-polyglot/README.md` | Ready | R-first parity workflow, Python awareness, dependency notes, and AI audit expectations are present. |
 | Week 6 | Data Visualization | `weeks/week06-visualization/index.qmd`; `viz01`-`viz07` incremental pages; A5; M1 visual plan | Ready | Seven-page sequence (overview, grammar+first plot, worked example, misleading-design audit, AI prompts, studio, A5 walkthrough+reference). Answer keys live in the private HDSx-instructor repo (D-001); student-facing starter in `studio/`. <!-- AI-EDIT(2026-06-11): D-001 — needs review --> |
@@ -44,7 +44,7 @@ These items require live course infrastructure rather than more drafting:
 | Assignment | Week | Source | Status | Notes |
 |---|---:|---|---|---|
 | A1 | 2 | `assignments/assignment01-workflows/README.md` | Ready | Fork-based workflow, render, commit/sync, and fork link submission. |
-| A2 | 3 | `assignments/assignment02-r-with-ai/README.md` | Ready | R import/inspection, dplyr, function, AI audit, dependency note, and `renv::status()` awareness. |
+| A2 | 3 | `assignments/assignment02-r-with-ai/README.md` | Ready | R import/inspection, dplyr, function, AI audit, and dependency note using the devcontainer baseline. |
 | A3 | 4 | `assignments/assignment03-git/README.md` | Ready | Git, branches, pull request evidence, documentation edit, and M0 readiness. |
 | A4 | 5 | `assignments/assignment04-polyglot/README.md` | Ready | R/Python parity, helper files, dependency note, and AI-use note. |
 | A5 | 6 | `assignments/assignment05-visualization/README.md` | Ready | Flawed plot audit, corrected plot, caption, and M1 link. |
@@ -62,7 +62,7 @@ These items require live course infrastructure rather than more drafting:
 | M1 | `milestones/m1-proposal/README.md` | Ready | Proposal, Data Intake Card, initial visual plan, reproducibility plan, and AI-use note. |
 | M2 | `milestones/m2-preliminary-analysis/README.md` | Ready | Preliminary analysis, rendered output, Table 1, missingness, methods note, and AI audit. |
 | M3 | `milestones/m3-project-update/README.md` | Ready | Report draft, dashboard preview, reproducibility note, feedback request, and AI-use note. |
-| M4 | `milestones/m4-peer-review/README.md` | Ready | Peer review, reproducibility check, auditability check, KT feedback, and reviewer reflection. |
+| M4 | `milestones/m4-peer-review/README.md` | Ready | Peer review with a short embedded reviewer reflection, reproducibility check, auditability check, and KT feedback. |
 | M5 | `milestones/m5-presentation/README.md` | Ready | Slides, timing, rubric, source/limitations note, feedback record, and AI-use note. |
 | Final Portfolio | `milestones/final-portfolio/README.md` | Ready | Final report, dashboard-style KT product, checklist, repository access, sharing guidance, and AI-use audit. |
 

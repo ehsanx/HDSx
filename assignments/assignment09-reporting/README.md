@@ -15,9 +15,11 @@ This assignment expands a project finding into a short reproducible Quarto repor
 ## Inputs
 
 - Week 10 page: `weeks/week10-reporting-publishing/index.qmd`
-- Report template: `weeks/week10-reporting-publishing/report-template.qmd`
+- Report template in your personal workspace:
+  `assignments/assignment09-reporting/report-template.qmd`
 - Citations how-to: [Week 10 citations and grounding page](../../weeks/week10-reporting-publishing/report03-citations-and-grounding.qmd) — start here if you have not used `references.bib` before <!-- AI-EDIT(2026-06-11): MIT-140 — needs review -->
-- Bibliography example: `references.bib`
+- Bibliography starter in your personal workspace:
+  `assignments/assignment09-reporting/references.bib`
 - M3 connection: `milestones/m3-project-update/README.md`
 - Publishing checklist template: `assignments/assignment09-reporting/publishing-checklist-template.md`
 - Grounding audit template: `assignments/assignment09-reporting/grounding-audit-template.md`
@@ -25,7 +27,9 @@ This assignment expands a project finding into a short reproducible Quarto repor
 ## Tasks
 
 1. Create or use the folder `assignments/assignment09-reporting/submission/`.
-2. Start from the Week 10 report template structure.
+2. Copy `report-template.qmd` and `references.bib` from
+   `assignments/assignment09-reporting/` into its `submission/` folder. Rename
+   the report copy `report.qmd`, then edit the copies rather than the starters.
 3. Define one descriptive project question. If your project dataset is not ready, use the NHANES classroom dataset and explain that this is a practice report.
 4. Load the data with a relative path.
 5. Generate at least one table and one figure from code.
@@ -60,7 +64,7 @@ assignments/assignment09-reporting/submission/
 Submit these files:
 
 - `report.qmd`: rerunnable Quarto report.
-- `report.html`: rendered report. Committing this HTML file is a named exception (A8, A9, and M3 submission folders only) to the course rule that rendered outputs stay out of Git. <!-- AI-EDIT(2026-06-11): MIT-100 (D-006) — needs review -->
+- `report.html`: rendered report committed with its required source.
 - `references.bib`: bibliography entries used by the report.
 - `outputs/`: generated table or figure files if the report writes external outputs.
 - `publishing-checklist.md`: GitHub Pages or private preview check.

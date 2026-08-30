@@ -29,7 +29,8 @@ The rendered report.
 <!-- AI-EDIT(2026-06-11): WI-053 — D-003 — needs review -->
 After rendering, open the HTML file in browser preview. Confirm that the title, table, figure, citations, limitations, and references appear correctly before committing your work.
 
-Yes, commit this HTML file. A9 is one of the named exceptions (A8, A9, M3) to the course rule that rendered outputs stay out of Git — see the [Private Preview page](report04-private-preview.qmd). <!-- AI-EDIT(2026-06-11): MIT-100 — needs review -->
+Yes, commit this HTML file. The course rule is simple: when an assessment
+explicitly lists a rendered artifact, commit it with its source.
 
 - **Verify:** table, figure, citations, and limitations appear.
 
@@ -89,7 +90,11 @@ Groups may reuse work, but the files should be placed in the required folders wi
 For M3, place the report draft and dashboard-style KT product in the locations listed below so peers can find both during review:
 
 - **Report draft:** `milestones/m3-project-update/submission/report-draft.qmd` and `report-draft.html`.
-- **Dashboard/KT product:** the dashboard source stays where A7 created it, in `assignments/assignment07-dashboard/submission/`. Then `milestones/m3-project-update/submission/dashboard-preview.md` points reviewers to it with the file path plus a link or screenshot path. A static preview is enough; a live dashboard is not required.
+- **Dashboard/KT product:** the retained A7 source is
+  `assignments/assignment07-dashboard/submission/dashboard.qmd`. Then
+  `milestones/m3-project-update/submission/dashboard-preview.md` points
+  reviewers to that source plus its screenshot or rendered-preview path. A
+  static preview is enough; a live dashboard is not required.
 
 ## Feedback Request
 

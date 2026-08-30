@@ -28,7 +28,7 @@ Changed one sentence in README.md to clarify where the data file lives.
 No code lines were added or removed.
 
 ## .gitignore check
-Confirmed *.html is excluded; no new pattern needed.
+Confirmed secrets and temporary files are excluded. Required HTML remains committable.
 
 ## AI-use sentence
 I used Copilot Chat to summarize the diff; I re-read the diff myself

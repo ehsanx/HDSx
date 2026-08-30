@@ -5,10 +5,13 @@
 In your GitHub Codespace:
 
 <!-- AI-EDIT(2026-06-22): REVIEW-row141 (TF-017,MIT-060,WI-029) — named the repo (course HDSx repo) for this part per RA -->
-Do this in your own copy of the course `HDSx` repository — the same repo Codespace you have been using all week, not a separate or blank repo.
+Do this in your personal `HDSx-workspace` fork — the same Codespace you use for
+assignments, not the read-only course-book repository or a blank repo.
 
-1. In the Explorer panel, click the Week 5 folder (`weeks/week05-polyglot-r-deepening`) so it is highlighted. New files are created inside whichever folder is selected, so check this before creating or saving any file.
-2. Right-click the folder, choose **New File...**, and name the file `translation.ipynb`. Create the Python translation in `weeks/week05-polyglot-r-deepening/translation.ipynb`. Do not save it in the repository root unless the instructions explicitly say so.
+1. In the Explorer, select
+   `assignments/assignment04-polyglot/submission/`.
+2. Right-click that folder, choose **New File...**, and name the file
+   `translation.ipynb`. Do not save it at the repository root.
 3. Select the recommended Python kernel when VS Code asks.
 <!-- AI-EDIT(2026-06-22): REVIEW-row142 (TF-017) — added extension up-to-date check; RA found stale extensions made the notebook slow to run -->
 4. Before running anything, let the Codespace finish setting up. If VS Code shows an "Updating extensions" or "Installing extensions" message in the bottom-right corner, wait for it to finish — running the notebook before the Python and Jupyter extensions are up to date can make the first cell very slow to start. You can confirm in the Extensions panel that the Python and Jupyter extensions are installed and not showing a pending update.
@@ -57,4 +60,4 @@ Double-click `demo` in the Variables pane to open the Data Viewer. This is where
 | Variables pane is missing | Check that the Jupyter extension is enabled |
 | Notebook cell will not run | Select a Python kernel from the notebook toolbar |
 | First cell is very slow to start | Wait for the Python and Jupyter extensions to finish updating (check the Extensions panel), then try again |<!-- AI-EDIT(2026-06-22): REVIEW-row142 (TF-017) — Common Fixes entry for stale/updating extensions slowing the notebook -->
-| Package import fails | Check whether the package belongs in `requirements.txt` |
+| Package import fails | Check the course baseline in `.devcontainer/requirements.txt`; ask before adding a package |

@@ -24,6 +24,11 @@ Use a private repository when:
 
 For a private repository, grant course staff access and submit the private GitHub repository link on Canvas. The project still needs reproducibility instructions for course staff.
 
+Record the chosen route in `repository-access-note.md` using the field list in
+the [Final Portfolio brief](README.md#repository-access-note). The note lets the
+grader verify the submitted link and artifact paths without guessing; it does
+not require a justification for keeping the repository private.
+
 ## Safe Publishing Check
 
 Before making a repository public, confirm:
