@@ -8,8 +8,8 @@ book:
   author: 
   - name: M. Ehsan. Karim
     affiliation: School of Population and Public Health, The University of British Columbia
-  #- name: HDS-AI-KT team
-  #  affiliation: TBA
+  - name: AI-KT team
+    affiliation: "AI-KT team includes - Manya Jain, Rainie Fu, Md. Belal Hossain"
   reader-mode: true
   page-navigation: true
   twitter-card: true
