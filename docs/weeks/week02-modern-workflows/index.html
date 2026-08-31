@@ -338,7 +338,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../weeks/week03-r-with-ai/r09-assignment-mad-libs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment: The “Mad Libs” Report</span></a>
+  <a href="../../weeks/week03-r-with-ai/r09-assignment-mad-libs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 2: R With AI</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -842,7 +842,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week11-portfolio-surgery/port06-assignment-a10-final-portfolio.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment 10 and Final Portfolio</span></a>
+ <span class="menu-text">Portfolio Surgery and the Final Portfolio</span></a>
   </div>
 </li>
       </ul>
@@ -850,7 +850,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="true">
- <span class="menu-text">Weeks 12-13: Project Presentations</span></a>
+ <span class="menu-text">Project Presentation (Online)</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -859,13 +859,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week12-presentations/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 12: Term Project Presentations, Part 1</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../weeks/week13-presentations/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 13: Term Project Presentations, Part 2</span></a>
+ <span class="menu-text">Project Presentation (Narrated Deck)</span></a>
   </div>
 </li>
       </ul>
@@ -932,11 +926,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../assignments/assignment10-portfolio-surgery/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 10: Portfolio Surgery</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../milestones/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Milestones</span></a>
   </div>
 </li>
@@ -967,7 +956,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../milestones/m5-presentation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">M5: Final Presentation</span></a>
+  <a href="../../milestones/m5-presentation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Presentation (Final Portfolio Component)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -1247,44 +1236,43 @@ Key Terms This Week
 <p>The cached files are provided so early work can happen without internet access.</p>
 <p><strong>What to do here:</strong> read the code below as an example of documented data provenance — you are not required to run or modify it on this page (each week’s page states its own expectations). <!-- AI-EDIT(2026-06-11): GAP-OLDM-1, MIT-037 — needs review --></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">library</span>(readr)</span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb1-3"><a href="#cb1-3"></a></span>
-<span id="cb1-4"><a href="#cb1-4"></a>candidate_paths <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
-<span id="cb1-5"><a href="#cb1-5"></a>  <span class="st">"examples/nhanes-equity/data/nhanes_equity_v6.csv"</span>,</span>
-<span id="cb1-6"><a href="#cb1-6"></a>  <span class="st">"../../examples/nhanes-equity/data/nhanes_equity_v6.csv"</span></span>
-<span id="cb1-7"><a href="#cb1-7"></a>)</span>
-<span id="cb1-8"><a href="#cb1-8"></a></span>
-<span id="cb1-9"><a href="#cb1-9"></a>nhanes_path <span class="ot">&lt;-</span> candidate_paths[<span class="fu">file.exists</span>(candidate_paths)][<span class="dv">1</span>]</span>
-<span id="cb1-10"><a href="#cb1-10"></a><span class="cf">if</span> (<span class="fu">is.na</span>(nhanes_path)) {</span>
-<span id="cb1-11"><a href="#cb1-11"></a>  <span class="fu">stop</span>(<span class="st">"Could not find examples/nhanes-equity/data/nhanes_equity_v6.csv"</span>)</span>
-<span id="cb1-12"><a href="#cb1-12"></a>}</span>
-<span id="cb1-13"><a href="#cb1-13"></a></span>
-<span id="cb1-14"><a href="#cb1-14"></a>nhanes_spine <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(nhanes_path, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb1-15"><a href="#cb1-15"></a></span>
-<span id="cb1-16"><a href="#cb1-16"></a><span class="fu">dim</span>(nhanes_spine)</span>
-<span id="cb1-17"><a href="#cb1-17"></a><span class="co">#&gt; [1] 105626     18</span></span>
-<span id="cb1-18"><a href="#cb1-18"></a><span class="fu">glimpse</span>(nhanes_spine)</span>
-<span id="cb1-19"><a href="#cb1-19"></a><span class="co">#&gt; Rows: 105,626</span></span>
-<span id="cb1-20"><a href="#cb1-20"></a><span class="co">#&gt; Columns: 18</span></span>
-<span id="cb1-21"><a href="#cb1-21"></a><span class="co">#&gt; $ Cycle          &lt;chr&gt; "1999-2000", "1999-2000", "1999-2000", "1999-2000", "19…</span></span>
-<span id="cb1-22"><a href="#cb1-22"></a><span class="co">#&gt; $ BMI            &lt;dbl&gt; 14.90, 24.90, 17.63, NA, 29.10, 22.56, 29.39, 15.51, 18…</span></span>
-<span id="cb1-23"><a href="#cb1-23"></a><span class="co">#&gt; $ Weight         &lt;dbl&gt; 12.5, 75.4, 32.9, 13.3, 92.5, 59.2, 78.0, 40.7, 45.5, 1…</span></span>
-<span id="cb1-24"><a href="#cb1-24"></a><span class="co">#&gt; $ Height         &lt;dbl&gt; 91.6, 174.0, 136.6, NA, 178.3, 162.0, 162.9, 162.0, 156…</span></span>
-<span id="cb1-25"><a href="#cb1-25"></a><span class="co">#&gt; $ Waist          &lt;dbl&gt; 45.7, 98.0, 64.7, NA, 99.9, 81.6, 90.7, 64.1, 64.6, 108…</span></span>
-<span id="cb1-26"><a href="#cb1-26"></a><span class="co">#&gt; $ WeightMEC      &lt;dbl&gt; 10982.899, 28325.385, 46192.257, 10251.260, 99445.066, …</span></span>
-<span id="cb1-27"><a href="#cb1-27"></a><span class="co">#&gt; $ Strata         &lt;dbl&gt; 5, 1, 7, 2, 8, 2, 4, 6, 9, 7, 1, 6, 13, 12, 11, 11, 5, …</span></span>
-<span id="cb1-28"><a href="#cb1-28"></a><span class="co">#&gt; $ PSU            &lt;dbl&gt; 1, 3, 2, 1, 2, 2, 2, 1, 2, 1, 2, 2, 2, 1, 2, 1, 1, 1, 2…</span></span>
-<span id="cb1-29"><a href="#cb1-29"></a><span class="co">#&gt; $ Gender         &lt;chr&gt; "Female", "Male", "Female", "Male", "Male", "Female", "…</span></span>
-<span id="cb1-30"><a href="#cb1-30"></a><span class="co">#&gt; $ Race           &lt;chr&gt; "Non-Hispanic Black", "Non-Hispanic White", "Non-Hispan…</span></span>
-<span id="cb1-31"><a href="#cb1-31"></a><span class="co">#&gt; $ Education      &lt;chr&gt; NA, "College Grad", NA, NA, "College Grad", NA, "HS or …</span></span>
-<span id="cb1-32"><a href="#cb1-32"></a><span class="co">#&gt; $ Marital        &lt;chr&gt; NA, NA, NA, NA, "Married/Partner", "Never Married", "Ma…</span></span>
-<span id="cb1-33"><a href="#cb1-33"></a><span class="co">#&gt; $ Age            &lt;dbl&gt; 2, 77, 10, 1, 49, 19, 59, 13, 11, 43, 15, 37, 70, 81, 3…</span></span>
-<span id="cb1-34"><a href="#cb1-34"></a><span class="co">#&gt; $ PIR            &lt;dbl&gt; 0.86, 5.00, 1.47, 0.57, 5.00, 1.21, NA, 0.53, NA, NA, 1…</span></span>
-<span id="cb1-35"><a href="#cb1-35"></a><span class="co">#&gt; $ EducationClean &lt;chr&gt; NA, "College Grad", NA, NA, "College Grad", NA, "HS or …</span></span>
-<span id="cb1-36"><a href="#cb1-36"></a><span class="co">#&gt; $ MaritalClean   &lt;chr&gt; NA, NA, NA, NA, "Married/Partner", "Never Married", "Ma…</span></span>
-<span id="cb1-37"><a href="#cb1-37"></a><span class="co">#&gt; $ IncomeGroup    &lt;chr&gt; "Low Income (&lt;1.3)", "High Income (&gt;3.5)", "Middle Inco…</span></span>
-<span id="cb1-38"><a href="#cb1-38"></a><span class="co">#&gt; $ WHtR           &lt;dbl&gt; 0.4989083, 0.5632184, 0.4736457, NA, 0.5602916, 0.50370…</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">library</span>(tidyverse)  <span class="co"># AI-EDIT(2026-06-23): tidyverse-default — consolidated core library() calls into library(tidyverse)</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a>candidate_paths <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb1-4"><a href="#cb1-4"></a>  <span class="st">"examples/nhanes-equity/data/nhanes_equity_v6.csv"</span>,</span>
+<span id="cb1-5"><a href="#cb1-5"></a>  <span class="st">"../../examples/nhanes-equity/data/nhanes_equity_v6.csv"</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a>)</span>
+<span id="cb1-7"><a href="#cb1-7"></a></span>
+<span id="cb1-8"><a href="#cb1-8"></a>nhanes_path <span class="ot">&lt;-</span> candidate_paths[<span class="fu">file.exists</span>(candidate_paths)][<span class="dv">1</span>]</span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="cf">if</span> (<span class="fu">is.na</span>(nhanes_path)) {</span>
+<span id="cb1-10"><a href="#cb1-10"></a>  <span class="fu">stop</span>(<span class="st">"Could not find examples/nhanes-equity/data/nhanes_equity_v6.csv"</span>)</span>
+<span id="cb1-11"><a href="#cb1-11"></a>}</span>
+<span id="cb1-12"><a href="#cb1-12"></a></span>
+<span id="cb1-13"><a href="#cb1-13"></a>nhanes_spine <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(nhanes_path, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb1-14"><a href="#cb1-14"></a></span>
+<span id="cb1-15"><a href="#cb1-15"></a><span class="fu">dim</span>(nhanes_spine)</span>
+<span id="cb1-16"><a href="#cb1-16"></a><span class="co">#&gt; [1] 105626     18</span></span>
+<span id="cb1-17"><a href="#cb1-17"></a><span class="fu">glimpse</span>(nhanes_spine)</span>
+<span id="cb1-18"><a href="#cb1-18"></a><span class="co">#&gt; Rows: 105,626</span></span>
+<span id="cb1-19"><a href="#cb1-19"></a><span class="co">#&gt; Columns: 18</span></span>
+<span id="cb1-20"><a href="#cb1-20"></a><span class="co">#&gt; $ Cycle          &lt;chr&gt; "1999-2000", "1999-2000", "1999-2000", "1999-2000", "19…</span></span>
+<span id="cb1-21"><a href="#cb1-21"></a><span class="co">#&gt; $ BMI            &lt;dbl&gt; 14.90, 24.90, 17.63, NA, 29.10, 22.56, 29.39, 15.51, 18…</span></span>
+<span id="cb1-22"><a href="#cb1-22"></a><span class="co">#&gt; $ Weight         &lt;dbl&gt; 12.5, 75.4, 32.9, 13.3, 92.5, 59.2, 78.0, 40.7, 45.5, 1…</span></span>
+<span id="cb1-23"><a href="#cb1-23"></a><span class="co">#&gt; $ Height         &lt;dbl&gt; 91.6, 174.0, 136.6, NA, 178.3, 162.0, 162.9, 162.0, 156…</span></span>
+<span id="cb1-24"><a href="#cb1-24"></a><span class="co">#&gt; $ Waist          &lt;dbl&gt; 45.7, 98.0, 64.7, NA, 99.9, 81.6, 90.7, 64.1, 64.6, 108…</span></span>
+<span id="cb1-25"><a href="#cb1-25"></a><span class="co">#&gt; $ WeightMEC      &lt;dbl&gt; 10982.899, 28325.385, 46192.257, 10251.260, 99445.066, …</span></span>
+<span id="cb1-26"><a href="#cb1-26"></a><span class="co">#&gt; $ Strata         &lt;dbl&gt; 5, 1, 7, 2, 8, 2, 4, 6, 9, 7, 1, 6, 13, 12, 11, 11, 5, …</span></span>
+<span id="cb1-27"><a href="#cb1-27"></a><span class="co">#&gt; $ PSU            &lt;dbl&gt; 1, 3, 2, 1, 2, 2, 2, 1, 2, 1, 2, 2, 2, 1, 2, 1, 1, 1, 2…</span></span>
+<span id="cb1-28"><a href="#cb1-28"></a><span class="co">#&gt; $ Gender         &lt;chr&gt; "Female", "Male", "Female", "Male", "Male", "Female", "…</span></span>
+<span id="cb1-29"><a href="#cb1-29"></a><span class="co">#&gt; $ Race           &lt;chr&gt; "Non-Hispanic Black", "Non-Hispanic White", "Non-Hispan…</span></span>
+<span id="cb1-30"><a href="#cb1-30"></a><span class="co">#&gt; $ Education      &lt;chr&gt; NA, "College Grad", NA, NA, "College Grad", NA, "HS or …</span></span>
+<span id="cb1-31"><a href="#cb1-31"></a><span class="co">#&gt; $ Marital        &lt;chr&gt; NA, NA, NA, NA, "Married/Partner", "Never Married", "Ma…</span></span>
+<span id="cb1-32"><a href="#cb1-32"></a><span class="co">#&gt; $ Age            &lt;dbl&gt; 2, 77, 10, 1, 49, 19, 59, 13, 11, 43, 15, 37, 70, 81, 3…</span></span>
+<span id="cb1-33"><a href="#cb1-33"></a><span class="co">#&gt; $ PIR            &lt;dbl&gt; 0.86, 5.00, 1.47, 0.57, 5.00, 1.21, NA, 0.53, NA, NA, 1…</span></span>
+<span id="cb1-34"><a href="#cb1-34"></a><span class="co">#&gt; $ EducationClean &lt;chr&gt; NA, "College Grad", NA, NA, "College Grad", NA, "HS or …</span></span>
+<span id="cb1-35"><a href="#cb1-35"></a><span class="co">#&gt; $ MaritalClean   &lt;chr&gt; NA, NA, NA, NA, "Married/Partner", "Never Married", "Ma…</span></span>
+<span id="cb1-36"><a href="#cb1-36"></a><span class="co">#&gt; $ IncomeGroup    &lt;chr&gt; "Low Income (&lt;1.3)", "High Income (&gt;3.5)", "Middle Inco…</span></span>
+<span id="cb1-37"><a href="#cb1-37"></a><span class="co">#&gt; $ WHtR           &lt;dbl&gt; 0.4989083, 0.5632184, 0.4736457, NA, 0.5602916, 0.50370…</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section><section id="in-class-activity" class="level2"><h2 class="anchored" data-anchor-id="in-class-activity">In-Class Activity</h2>
 <ul>
@@ -1311,7 +1299,7 @@ Key Terms This Week
 <li>It is a temporary machine you borrow to do your work.</li>
 <li>It comes pre-installed with all the software you need (R, Python, Quarto), so you don’t have to install anything on your own laptop.</li>
 <li>
-<strong>Crucial difference:</strong> Just like a public library computer, it can be wiped clean. If you close the browser without sending your work back to your Cloud Drive, your changes may be lost.</li>
+<strong>Crucial difference:</strong> Saved changes remain in that Codespace when it stops, but they are not in your GitHub repository until you commit and sync them. A Codespace can later be deleted, so GitHub—not the Codespace—is the safe home for finished work.</li>
 </ul></section><section id="the-workflow" class="level3"><h3 class="anchored" data-anchor-id="the-workflow">The Workflow</h3>
 <ol type="1">
 <li>
@@ -1457,7 +1445,7 @@ Tip
 <li>
 <strong><code>data/</code> is read-only.</strong> Import from it; never save into it.</li>
 <li>
-<strong><code>output/</code> is generated.</strong> Your code writes cleaned data and figures here. In Week 3, you will export <code>output/clean_data.csv</code>.</li>
+<strong><code>output/</code> is generated.</strong> Your code writes cleaned data and figures here. In Week 3, you will export <code>output/summary_table.csv</code>.</li>
 <li>
 <strong>Use relative paths.</strong> Always refer to files relative to the project root (e.g., <code>"data/patients.csv"</code>), never absolute paths (e.g., <code>"/home/user/Documents/patients.csv"</code>). This ensures your code runs on any machine.</li>
 </ul>
@@ -1500,8 +1488,8 @@ Tip
 <p>Find a code chunk in the starter file. Make a small change — for example, change a number or add a comment. This is your first edit.</p>
 </section><section id="step-6-render" class="level3"><h3 class="anchored" data-anchor-id="step-6-render">Step 6: Render</h3>
 <!-- AI-EDIT(2026-06-11): TF-010/WI-014/D-003 — standard render instructions replace button-only step (Command Palette default, named-file command, output location) — needs review -->
-<!-- AI-EDIT(2026-06-22): REVIEW-row36 (TF-010,WI-014,D-003) — add run-cells-and-save prerequisite, Command Palette shortcut, and HTML output-format note -->
-<p><strong>Before you render:</strong> run your code chunks and save the file so the executed output is captured. Use the run button (▶) at the top-left of each code chunk to run it, or run them all from <strong>Run → Run All</strong> / the Command Palette, then save with <code>Ctrl+S</code> (<code>Cmd+S</code> on macOS). If you render without running and saving, the report may show your code without its results.</p>
+<!-- FINAL-CHECK(2026-08-24): corrected render semantics: save first; a full Quarto render executes chunks without a separate Run All prerequisite -->
+<p><strong>Before you render:</strong> save the file with <code>Ctrl+S</code> (<code>Cmd+S</code> on macOS). Rendering runs the code chunks from the start and captures their results, so you do not need to run every chunk first. Running chunks interactively is still useful for finding errors before a full render.</p>
 <p>To render, open the <strong>Command Palette</strong> — press <code>Ctrl+Shift+P</code> (Windows/Linux) or <code>Cmd+Shift+P</code> (macOS), or use <strong>View → Command Palette</strong> — and run <strong>Quarto: Render Document</strong>. If you are asked which output format to produce, choose <strong>HTML</strong>. The detailed steps and an always-works terminal fallback are below.</p>
 <!-- AI-EDIT(2026-06-11): D-003 — course-wide standard render instructions (reusable include) — needs review -->
 <div class="callout callout-style-default callout-tip callout-titled" title="How to render: the course default">
@@ -1538,7 +1526,7 @@ Where is my HTML file?
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>After rendering, your HTML file is saved to the <code>docs/</code> folder at the project root — not beside the <code>.qmd</code> file. To view it, right-click the file in the Explorer panel and choose the browser/open-preview option shown in the instructions, or start a local server from the terminal and open the URL shown. You cannot open the HTML by typing its name in the terminal.</p>
+<p>In your personal workspace, <code>practice_report.html</code> is saved beside <code>practice_report.qmd</code> at the repository root. Watch the render log for the <code>Output created:</code> line, then right-click the HTML file and choose <strong>Open Preview</strong> or <strong>Download</strong>. The course book uses a separate <code>docs/</code> output directory; your personal workspace does not.</p>
 </div>
 </div>
 <!-- AI-EDIT(2026-06-11): MIT-021 — TinyTeX warning is safe to ignore for HTML output — needs review -->
@@ -1626,7 +1614,7 @@ Warning
 <hr></section></section><section id="workflows10.qmd-stopping-your-codespace-saving-credits" class="level2"><h2 class="anchored" data-anchor-id="workflows10.qmd-stopping-your-codespace-saving-credits">
 <code>workflows10.qmd</code> Stopping Your Codespace (Saving Credits)</h2>
 <p><em>Deeper Dive: <a href="../../weeks/week02-modern-workflows/workflows10-stop-codespace.html">Stop Your Codespace</a>.</em> <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review --><!-- AI-EDIT(2026-06-22): REVIEW-row26,row27 — link label normalized to "Deeper Dive" (consistency rename) --></p>
-<p>GitHub Codespaces gives you a monthly allowance of free hours (approximately 60 core-hours). <strong>If you leave the browser tab open, the meter keeps running</strong>, even if you are not actively working.</p>
+<p>GitHub Free personal accounts currently include 120 core-hours per month. On the course’s default 2-core machine, that is about 60 hours of active runtime. <strong>If you leave the browser tab open, the meter keeps running</strong> until the Codespace reaches its idle timeout, even if you are not actively working.</p>
 <section id="the-right-way-to-stop" class="level3"><h3 class="anchored" data-anchor-id="the-right-way-to-stop">The Right Way to Stop</h3>
 <ol type="1">
 <li>Go to <a href="https://github.com/codespaces">github.com/codespaces</a>.</li>
@@ -1691,9 +1679,9 @@ Warning
 </ol>
 <hr></section><section id="workflows13.qmd-assignment-1-your-first-quarto-report" class="level2"><h2 class="anchored" data-anchor-id="workflows13.qmd-assignment-1-your-first-quarto-report">
 <code>workflows13.qmd</code> Assignment 1: Your First Quarto Report</h2>
-<p><strong>Due Friday 4 pm.</strong> Submit via Canvas.</p>
+<p><strong>Due Monday after the Week 2 class at 4 PM.</strong> Submit via Canvas.</p>
 <section id="task" class="level3"><h3 class="anchored" data-anchor-id="task">Task</h3>
-<p>Edit and render the starter <code>practice_report.qmd</code>, demonstrating that you can navigate your Codespace, edit Quarto, and commit your work.</p>
+<p>Edit and render the supplied root-level <code>practice_report.qmd</code>, demonstrating that you can navigate your personal workspace Codespace, edit Quarto, and commit your work. This is the same authoritative workflow as the <a href="../../assignments/assignment01-workflows/README.html">Assignment 1 brief</a>; there is no separate nested A1 submission.</p>
 </section><section id="step-by-step-workflow" class="level3"><h3 class="anchored" data-anchor-id="step-by-step-workflow">Step-by-Step Workflow</h3>
 <ol type="1">
 <li>
@@ -1726,7 +1714,7 @@ Warning
 <li>
 <strong>Verify</strong> on github.com that your commit appears in the repository.</li>
 <li>
-<strong>Submit</strong> your forked repository link on Canvas.</li>
+<strong>Submit</strong> your personal workspace repository link on Canvas. The synced commit must include the root-level <code>practice_report.qmd</code> and <code>practice_report.html</code>; no extra reflection or commit-evidence file is required.</li>
 </ol>
 <hr></section></section><section id="workflows14.qmd-quick-reference" class="level2"><h2 class="anchored" data-anchor-id="workflows14.qmd-quick-reference">
 <code>workflows14.qmd</code> Quick Reference</h2>

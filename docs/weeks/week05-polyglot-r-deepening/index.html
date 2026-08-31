@@ -338,7 +338,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../weeks/week03-r-with-ai/r09-assignment-mad-libs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment: The “Mad Libs” Report</span></a>
+  <a href="../../weeks/week03-r-with-ai/r09-assignment-mad-libs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 2: R With AI</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -842,7 +842,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week11-portfolio-surgery/port06-assignment-a10-final-portfolio.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment 10 and Final Portfolio</span></a>
+ <span class="menu-text">Portfolio Surgery and the Final Portfolio</span></a>
   </div>
 </li>
       </ul>
@@ -850,7 +850,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="true">
- <span class="menu-text">Weeks 12-13: Project Presentations</span></a>
+ <span class="menu-text">Project Presentation (Online)</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -859,13 +859,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week12-presentations/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 12: Term Project Presentations, Part 1</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../weeks/week13-presentations/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 13: Term Project Presentations, Part 2</span></a>
+ <span class="menu-text">Project Presentation (Narrated Deck)</span></a>
   </div>
 </li>
       </ul>
@@ -932,11 +926,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../assignments/assignment10-portfolio-surgery/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 10: Portfolio Surgery</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../milestones/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Milestones</span></a>
   </div>
 </li>
@@ -967,7 +956,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../milestones/m5-presentation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">M5: Final Presentation</span></a>
+  <a href="../../milestones/m5-presentation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Presentation (Final Portfolio Component)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -1129,7 +1118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>load and inspect a CSV with <code>pandas</code>;</li>
 <li>identify common R-to-Python translation traps;</li>
 <li>use AI one step at a time while auditing each translated output;</li>
-<li>document Python dependencies in <code>requirements.txt</code>;</li>
+<li>document approved Python dependencies in the workspace-root <code>.devcontainer/requirements.txt</code>;</li>
 <li>use Git to commit a clean translation workflow.</li>
 </ul></section><section id="connection" class="level2"><h2 class="anchored" data-anchor-id="connection">Connection</h2>
 <p>Week 4 made small changes reviewable through Git. This week uses that review mindset inside the analysis itself: first build a trusted R result, then translate one step at a time and compare. Next week you will turn those checked summaries into clearer visual explanations.</p>
@@ -1150,27 +1139,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The default classroom path is to use the cached data so the analysis work is reproducible without internet access.</p>
 <p><strong>What to do here:</strong> you may run the code below — it loads the cached CSV and prints two small summaries; reading it carefully is enough unless your week’s page asks for more. <!-- AI-EDIT(2026-06-11): MIT-025, MIT-050, MIT-061 — needs review --></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">library</span>(readr)</span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb1-3"><a href="#cb1-3"></a></span>
-<span id="cb1-4"><a href="#cb1-4"></a>candidate_paths <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
-<span id="cb1-5"><a href="#cb1-5"></a>  <span class="st">"examples/nhanes-equity/data/nhanes_equity_v6.csv"</span>,</span>
-<span id="cb1-6"><a href="#cb1-6"></a>  <span class="st">"../../examples/nhanes-equity/data/nhanes_equity_v6.csv"</span></span>
-<span id="cb1-7"><a href="#cb1-7"></a>)</span>
-<span id="cb1-8"><a href="#cb1-8"></a></span>
-<span id="cb1-9"><a href="#cb1-9"></a>nhanes_path <span class="ot">&lt;-</span> candidate_paths[<span class="fu">file.exists</span>(candidate_paths)][<span class="dv">1</span>]</span>
-<span id="cb1-10"><a href="#cb1-10"></a><span class="cf">if</span> (<span class="fu">is.na</span>(nhanes_path)) {</span>
-<span id="cb1-11"><a href="#cb1-11"></a>  <span class="fu">stop</span>(<span class="st">"Could not find examples/nhanes-equity/data/nhanes_equity_v6.csv"</span>)</span>
-<span id="cb1-12"><a href="#cb1-12"></a>}</span>
-<span id="cb1-13"><a href="#cb1-13"></a></span>
-<span id="cb1-14"><a href="#cb1-14"></a>nhanes_analysis <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(nhanes_path, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb1-15"><a href="#cb1-15"></a></span>
-<span id="cb1-16"><a href="#cb1-16"></a>nhanes_analysis <span class="sc">|&gt;</span></span>
-<span id="cb1-17"><a href="#cb1-17"></a>  <span class="fu">summarise</span>(</span>
-<span id="cb1-18"><a href="#cb1-18"></a>    <span class="at">rows =</span> <span class="fu">n</span>(),</span>
-<span id="cb1-19"><a href="#cb1-19"></a>    <span class="at">missing_bmi =</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(BMI)),</span>
-<span id="cb1-20"><a href="#cb1-20"></a>    <span class="at">missing_income =</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(IncomeGroup))</span>
-<span id="cb1-21"><a href="#cb1-21"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">library</span>(tidyverse) <span class="co"># AI-EDIT(2026-06-23): tidyverse-default — consolidated core library() calls into library(tidyverse)</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a>candidate_paths <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb1-4"><a href="#cb1-4"></a>  <span class="st">"examples/nhanes-equity/data/nhanes_equity_v6.csv"</span>,</span>
+<span id="cb1-5"><a href="#cb1-5"></a>  <span class="st">"../../examples/nhanes-equity/data/nhanes_equity_v6.csv"</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a>)</span>
+<span id="cb1-7"><a href="#cb1-7"></a></span>
+<span id="cb1-8"><a href="#cb1-8"></a>nhanes_path <span class="ot">&lt;-</span> candidate_paths[<span class="fu">file.exists</span>(candidate_paths)][<span class="dv">1</span>]</span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="cf">if</span> (<span class="fu">is.na</span>(nhanes_path)) {</span>
+<span id="cb1-10"><a href="#cb1-10"></a>  <span class="fu">stop</span>(<span class="st">"Could not find examples/nhanes-equity/data/nhanes_equity_v6.csv"</span>)</span>
+<span id="cb1-11"><a href="#cb1-11"></a>}</span>
+<span id="cb1-12"><a href="#cb1-12"></a></span>
+<span id="cb1-13"><a href="#cb1-13"></a>nhanes_analysis <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(nhanes_path, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb1-14"><a href="#cb1-14"></a></span>
+<span id="cb1-15"><a href="#cb1-15"></a>nhanes_analysis <span class="sc">|&gt;</span></span>
+<span id="cb1-16"><a href="#cb1-16"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb1-17"><a href="#cb1-17"></a>    <span class="at">rows =</span> <span class="fu">n</span>(),</span>
+<span id="cb1-18"><a href="#cb1-18"></a>    <span class="at">missing_bmi =</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(BMI)),</span>
+<span id="cb1-19"><a href="#cb1-19"></a>    <span class="at">missing_income =</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(IncomeGroup))</span>
+<span id="cb1-20"><a href="#cb1-20"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div data-pagedtable="false">
   <script data-pagedtable-source="" type="application/json">
@@ -1198,20 +1186,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section><section id="r-deepening-studio" class="level2"><h2 class="anchored" data-anchor-id="r-deepening-studio">R Deepening Studio</h2>
 <p>Start in R. Use the NHANES case-study CSV:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb3-1"><a href="#cb3-1"></a>examples/nhanes-equity/data/nhanes_equity_v6.csv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>If you are working from the Week 5 folder, the relative path is:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb4-1"><a href="#cb4-1"></a>../../examples/nhanes-equity/data/nhanes_equity_v6.csv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <!-- AI-EDIT(2026-06-11): MIT-052 — needs review -->
 <section id="where-to-write-your-r-code" class="level3"><h3 class="anchored" data-anchor-id="where-to-write-your-r-code">Where To Write Your R Code</h3>
-<p>You do not edit an existing file for this studio. Create one new R script named <code>week5.R</code>, saved inside the Week 5 folder (<code>weeks/week05-polyglot-r-deepening/</code>). Check the Explorer panel before saving so the file does not land in the repository root. For Assignment 4, the same code later moves into <code>polyglot-parity.qmd</code> inside <code>assignments/assignment04-polyglot/submission/</code>.</p>
+<p>Work directly in your personal workspace. Create <code>assignments/assignment04-polyglot/submission/polyglot-parity.qmd</code> and put the R studio code in R chunks there. This avoids creating a second <code>week5.R</code> file that would only need to be copied later.</p>
 </section><section id="r-pipeline-and-r-function" class="level3"><h3 class="anchored" data-anchor-id="r-pipeline-and-r-function">R Pipeline and R Function</h3>
-<p>The studio code — a <code>dplyr</code> pipeline and a small reusable function — lives in one place so there is a single copy to keep correct: work through Parts A and B of <a href="../../weeks/week05-polyglot-r-deepening/r-deepening-parity.html">R Deepening and Parity Check</a>. Type or paste each block into <code>week5.R</code> and run it.</p>
+<p>The studio code — a <code>dplyr</code> pipeline and a small reusable function — lives in one place so there is a single copy to keep correct: work through Parts A and B of <a href="../../weeks/week05-polyglot-r-deepening/r-deepening-parity.html">R Deepening and Parity Check</a>. Type or paste each block into R chunks in <code>polyglot-parity.qmd</code> and run it.</p>
 <p>Before translating, compare the pipeline output and the function output. They should have the same grouping labels and the same number of rows.</p>
 </section></section><section id="in-class-activity-r-first-python-second" class="level2"><h2 class="anchored" data-anchor-id="in-class-activity-r-first-python-second">In-Class Activity: R First, Python Second</h2>
 <p>Work in pairs. One partner reads the R output; the other reads the Python output.</p>
 <!-- AI-EDIT(2026-06-11): WI-028 — needs review -->
 <p>A parity check means confirming that the R result and Python result match on the important parts: row counts, column counts, grouping labels, missing values, and rounded summary values.</p>
 <!-- AI-EDIT(2026-06-11): TF-017 — needs review -->
-<p>R steps happen in your <code>week5.R</code> script. Python steps happen in your <code>translation.ipynb</code> notebook (see <a href="../../weeks/week05-polyglot-r-deepening/python02-environment.html">Python Environment</a> for how to create it and run cells). <code>pandas</code> comes preinstalled in the course Codespace — you do not need to install anything.</p>
+<p>R steps happen in <code>polyglot-parity.qmd</code>. Python steps happen in <code>translation.ipynb</code> in the same A4 submission folder (see <a href="../../weeks/week05-polyglot-r-deepening/python02-environment.html">Python Environment</a>). <code>pandas</code> comes preinstalled in the course Codespace.</p>
 <ol type="1">
 <li>Load the NHANES CSV in R and Python.</li>
 <li>Record raw row count, column count, and missing <code>BMI</code> count in both languages.</li>
@@ -1242,7 +1228,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ol>
 <p>For the explicit R mastery exercises — the worked pipeline, the reusable function, and the extra <code>dplyr</code> and function practice — use <a href="../../weeks/week05-polyglot-r-deepening/r-deepening-parity.html">R Deepening and Parity Check</a>. <!-- AI-EDIT(2026-06-11): GAP-R345-9 — needs review --></p>
 </section><section id="assignment-4" class="level2"><h2 class="anchored" data-anchor-id="assignment-4">Assignment 4</h2>
-<p>Complete <a href="../../assignments/assignment04-polyglot/README.html">Assignment 4: Polyglot Awareness &amp; R Deepening</a>.</p>
+<p>Complete <a href="../../assignments/assignment04-polyglot/README.html">Assignment 4: Polyglot Parity</a>.</p>
 <p>Submit a repository link on Canvas after committing:</p>
 <ul>
 <li>

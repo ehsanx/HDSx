@@ -316,7 +316,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../weeks/week03-r-with-ai/r09-assignment-mad-libs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment: The “Mad Libs” Report</span></a>
+  <a href="../../weeks/week03-r-with-ai/r09-assignment-mad-libs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 2: R With AI</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -820,7 +820,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week11-portfolio-surgery/port06-assignment-a10-final-portfolio.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment 10 and Final Portfolio</span></a>
+ <span class="menu-text">Portfolio Surgery and the Final Portfolio</span></a>
   </div>
 </li>
       </ul>
@@ -828,7 +828,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="true">
- <span class="menu-text">Weeks 12-13: Project Presentations</span></a>
+ <span class="menu-text">Project Presentation (Online)</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -837,13 +837,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week12-presentations/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 12: Term Project Presentations, Part 1</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../weeks/week13-presentations/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 13: Term Project Presentations, Part 2</span></a>
+ <span class="menu-text">Project Presentation (Narrated Deck)</span></a>
   </div>
 </li>
       </ul>
@@ -910,11 +904,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../assignments/assignment10-portfolio-surgery/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 10: Portfolio Surgery</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../milestones/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Milestones</span></a>
   </div>
 </li>
@@ -945,7 +934,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../milestones/m5-presentation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">M5: Final Presentation</span></a>
+  <a href="../../milestones/m5-presentation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Presentation (Final Portfolio Component)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -1136,21 +1125,25 @@ ul.task-list li input[type="checkbox"] {
 <td>Yes — same file</td>
 </tr>
 <tr class="even">
+<td>missingness table in <code>eda-note.qmd</code></td>
+<td>Export it as <code>missingness-summary.csv</code> for M2; it is not an extra A6 deliverable</td>
+</tr>
+<tr class="odd">
 <td><code>audit-note.md</code></td>
 <td>A6 only</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>provenance-stewardship-note.md</code></td>
 <td>Yes — feeds the M2 <code>methods-note.md</code></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>ai-use-note.md</code></td>
 <td>Yes — same filename in the M2 <code>submission/</code> folder</td>
 </tr>
 </tbody>
 </table>
 <!-- AI-EDIT(2026-06-11): TF-021, TF-059, MIT-076, WI-040 — needs review -->
-<p>A6 is your individual assignment submission. M2 is your group milestone submission. If you reuse a <code>.qmd</code> file, copy it into the correct submission folder/repository and use the required filename for each submission. M2 may build on one member’s A6 — note whose A6 it builds on in the M2 README (one attribution sentence is enough).</p>
+<p>A6 is your individual assignment submission. M2 is your group milestone submission. If you reuse a <code>.qmd</code> file, copy it into the correct submission folder/repository and use the required filename for each submission. M2 may build on one member’s A6; put one attribution sentence in the existing M2 <code>methods-note.md</code>.</p>
 <section id="how-to-move-your-a6-file-into-the-group-repository" class="level3">
 <h3 class="anchored" data-anchor-id="how-to-move-your-a6-file-into-the-group-repository">How to move your A6 file into the group repository</h3>
 <p>A6 lives in your individual repository; M2 lives in your group repository. Reusing a file means copying it between the two. The safe beginner path:</p>
@@ -1159,8 +1152,9 @@ ul.task-list li input[type="checkbox"] {
 <li>Open a Codespace on the <strong>group</strong> repository.</li>
 <li>Create the file with the M2 name and location — <code>milestones/m2-preliminary-analysis/submission/preliminary-analysis.qmd</code> — paste the contents, and save.</li>
 <li>Render the file in the group Codespace. If the data path does not resolve, copy the CSV into the group repository with the same relative folder structure, or update the relative path.</li>
+<li>Export the A6 missingness result by code as <code>milestones/m2-preliminary-analysis/submission/missingness-summary.csv</code>. This export is required for M2 only.</li>
 <li>Repeat for the other reused files, using the M2 filenames from the table above.</li>
-<li>Add one attribution sentence to the M2 README, for example: “The preliminary analysis builds on Jordan’s A6 <code>eda-note.qmd</code>.”</li>
+<li>Add one attribution sentence to M2 <code>methods-note.md</code>, for example: “The preliminary analysis builds on Jordan’s A6 <code>eda-note.qmd</code>.”</li>
 <li>Commit and Sync Changes in the group repository.</li>
 </ol>
 <p>Do not email files to yourself or drag them between browser windows — copying through the editor and committing in the group repository keeps every step visible in the project history.</p>
@@ -1224,7 +1218,7 @@ ul.task-list li input[type="checkbox"] {
 <li><code>table1.csv</code> is written by code (<code>write_csv(...)</code>).</li>
 <li>Missingness is reported <em>before</em> the Table 1, not after.</li>
 <li>The methods note avoids causal language and names the data as descriptive and unweighted.</li>
-<li>If you added any package beyond the course environment, run <code>renv::status()</code> and follow the <a href="../../weeks/week03-r-with-ai/index.html#minimal-renv-checkpoint">Week 3 renv checkpoint</a> — most students will not need this. <!-- AI-EDIT(2026-06-11): MIT-168 — needs review --></li>
+<li>Use the course devcontainer packages. If an additional package was approved, record it in your dependency note and the workspace setup so a fresh Codespace can install it.</li>
 <li>All six files are committed and pushed.</li>
 </ul>
 </section>

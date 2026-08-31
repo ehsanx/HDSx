@@ -316,7 +316,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../weeks/week03-r-with-ai/r09-assignment-mad-libs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment: The “Mad Libs” Report</span></a>
+  <a href="../../weeks/week03-r-with-ai/r09-assignment-mad-libs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 2: R With AI</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -820,7 +820,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week11-portfolio-surgery/port06-assignment-a10-final-portfolio.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment 10 and Final Portfolio</span></a>
+ <span class="menu-text">Portfolio Surgery and the Final Portfolio</span></a>
   </div>
 </li>
       </ul>
@@ -828,7 +828,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="true">
- <span class="menu-text">Weeks 12-13: Project Presentations</span></a>
+ <span class="menu-text">Project Presentation (Online)</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -837,13 +837,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week12-presentations/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 12: Term Project Presentations, Part 1</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../weeks/week13-presentations/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 13: Term Project Presentations, Part 2</span></a>
+ <span class="menu-text">Project Presentation (Narrated Deck)</span></a>
   </div>
 </li>
       </ul>
@@ -910,11 +904,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../assignments/assignment10-portfolio-surgery/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 10: Portfolio Surgery</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../milestones/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Milestones</span></a>
   </div>
 </li>
@@ -945,7 +934,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../milestones/m5-presentation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">M5: Final Presentation</span></a>
+  <a href="../../milestones/m5-presentation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Presentation (Final Portfolio Component)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -1102,7 +1091,7 @@ ul.task-list li input[type="checkbox"] {
 <ol type="1">
 <li><code>library(tidyverse)</code> runs without error. <!-- AI-EDIT(2026-06-23): tidyverse-default — consolidated core library() calls into library(tidyverse) --></li>
 <li>The cached data file resolves from the repository root: <code>examples/nhanes-equity/data/nhanes_equity_v6.csv</code>.</li>
-<li>Your <code>viz03-worked-example.qmd</code> renders cleanly.</li>
+<li>The rendered <a href="../../weeks/week06-visualization/viz03-worked-example.html">Week 6 worked example</a> opens in the course book; you do not need its source file in your personal workspace.</li>
 </ol>
 <p>If any of those three fail, raise it with your debugging partner before moving on.</p>
 </section>
@@ -1116,7 +1105,7 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Worked example to compare against: <a href="../../weeks/week06-visualization/viz03-worked-example.html"><code>weeks/week06-visualization/viz03-worked-example.qmd</code></a></li>
 <li>Dataset: <a href="https://github.com/ehsanx/HDSx/blob/main/examples/nhanes-equity/data/nhanes_equity_v6.csv"><code>examples/nhanes-equity/data/nhanes_equity_v6.csv</code> (view on GitHub)</a> <!-- AI-EDIT(2026-06-11): D-001/MIT-125 — starter relocated out of instructor/ — needs review --></li>
-<li>Flawed plot code (the artifact you will audit): <a href="https://github.com/ehsanx/HDSx/blob/main/weeks/week06-visualization/studio/flawed-plot-code.R"><code>weeks/week06-visualization/studio/flawed-plot-code.R</code> (view on GitHub)</a></li>
+<li>Flawed plot code in your personal workspace (the artifact you will audit): <code>assignments/assignment05-visualization/flawed-plot-code.R</code></li>
 </ul>
 <!-- AI-EDIT(2026-06-22): REVIEW-row161 — converted "Tester note" callout to hidden HTML comment so it stays in source for instructors/testers but is hidden from student-facing render -->
 <!--
@@ -1128,8 +1117,8 @@ Capture: a screenshot of the rendered flawed plot in the Codespaces Quarto previ
 <h2 class="anchored" data-anchor-id="activity-steps">Activity Steps</h2>
 <ol type="1">
 <li>Review the worked example and note how it labels the data source, statistic, and limitation.</li>
-<li>Open <code>studio/flawed-plot-code.R</code> and read the comments and output labels before you run it. <!-- AI-EDIT(2026-06-11): D-001/MIT-125 — needs review --> <!-- AI-EDIT(2026-06-11): MIT-067 — explicit run/preview steps and output path — needs review --></li>
-<li>Run the script: open an <strong>R terminal</strong> in your Codespace and, from the repository root, run <code>source("weeks/week06-visualization/studio/flawed-plot-code.R")</code>.</li>
+<li>In your personal workspace, open <code>assignments/assignment05-visualization/flawed-plot-code.R</code> and read the comments and output labels before you run it. <!-- AI-EDIT(2026-06-11): D-001/MIT-125 — needs review --> <!-- AI-EDIT(2026-06-11): MIT-067 — explicit run/preview steps and output path — needs review --></li>
+<li>Run the script from your personal workspace root with <code>source("assignments/assignment05-visualization/flawed-plot-code.R")</code>.</li>
 <li>Look at the figure. It may appear in a plot viewer pane. If it does not, no problem: the script also saves <code>flawed-plot.png</code> in your current working folder (run <code>getwd()</code> if you are unsure where that is). Find the PNG in the Explorer, right-click it, and choose <strong>Open Preview</strong>.</li>
 <li>List at least three issues that could mislead a reader. Tag each one with one of the audit categories below.</li>
 <li>Revise the plot so the title, scale, grouping, and caption match the evidence. Keep the cohort restriction explicit.</li>
@@ -1151,7 +1140,7 @@ Capture: a screenshot of the rendered flawed plot in the Codespaces Quarto previ
 <p>These are the draft files you produce in class. The Assignment 5 deliverable list (<a href="../../weeks/week06-visualization/viz07-assignment-a5-and-reference.html">viz07</a>) is the same set, polished.</p>
 <ul>
 <li><code>visual-audit-note.md</code> — at least three issues with category, why it matters, and the corrected approach.</li>
-<li><code>corrected-plot.qmd</code> — a rerunnable Quarto file that creates the corrected plot.</li>
+<li><code>visualization-audit.qmd</code> — a rerunnable Quarto file that creates the corrected plot and explains the revision.</li>
 <li><code>corrected-plot.png</code> — the exported corrected plot.</li>
 <li><code>caption.md</code> — a caption that states the statistic, data source, exclusions, and limitations.</li>
 <li><code>ai-use-note.md</code> — if you used AI, explain what it helped with and how you checked the result.</li>

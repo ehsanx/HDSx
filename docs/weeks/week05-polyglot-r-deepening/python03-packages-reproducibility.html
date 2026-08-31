@@ -351,7 +351,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../weeks/week03-r-with-ai/r09-assignment-mad-libs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment: The “Mad Libs” Report</span></a>
+  <a href="../../weeks/week03-r-with-ai/r09-assignment-mad-libs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 2: R With AI</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -855,7 +855,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week11-portfolio-surgery/port06-assignment-a10-final-portfolio.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment 10 and Final Portfolio</span></a>
+ <span class="menu-text">Portfolio Surgery and the Final Portfolio</span></a>
   </div>
 </li>
       </ul>
@@ -863,7 +863,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="true">
- <span class="menu-text">Weeks 12-13: Project Presentations</span></a>
+ <span class="menu-text">Project Presentation (Online)</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -872,13 +872,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week12-presentations/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 12: Term Project Presentations, Part 1</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../weeks/week13-presentations/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 13: Term Project Presentations, Part 2</span></a>
+ <span class="menu-text">Project Presentation (Narrated Deck)</span></a>
   </div>
 </li>
       </ul>
@@ -945,11 +939,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../assignments/assignment10-portfolio-surgery/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 10: Portfolio Surgery</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../milestones/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Milestones</span></a>
   </div>
 </li>
@@ -980,7 +969,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../milestones/m5-presentation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">M5: Final Presentation</span></a>
+  <a href="../../milestones/m5-presentation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Presentation (Final Portfolio Component)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -1166,7 +1155,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="why-requirements.txt-matters">Why <code>requirements.txt</code> Matters</h2>
 <p>Python projects record package dependencies in <code>requirements.txt</code>. This is the Python-side equivalent of saying, “Here is what another person must install before my code will run.”</p>
 <!-- AI-EDIT(2026-06-11): TF-017, WI-031 — needs review -->
-<p>The course Codespace already provides <code>pandas</code> and the notebook tools preinstalled, so you should not need to install or record anything for this week’s required work. Only edit <code>requirements.txt</code> if you add a Python package that is not already provided by the course environment.</p>
+<p>The course Codespace already provides <code>pandas</code> and the notebook tools, so you should not need to install anything for this week’s required work. Only edit <code>.devcontainer/requirements.txt</code> if an additional Python package has been approved.</p>
 <!-- AI-EDIT(2026-06-22): REVIEW-row143 (TF-017, WI-031) — tell students where requirements.txt lives in the Codespace -->
 <p>In the course Codespace this file lives at <code>.devcontainer/requirements.txt</code> (at the top level of your project). The file itself is simple — one package name per line. For example, a project that depends only on <code>pandas</code> would contain:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a href="#cb1-1"></a>pandas</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1176,11 +1165,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="course-rule" class="level2">
 <h2 class="anchored" data-anchor-id="course-rule">Course Rule</h2>
-<p>If you install or rely on a Python package for submitted work, record it in <code>requirements.txt</code>. Do not leave package installation as an undocumented memory from your current Codespace.</p>
+<p>If you rely on an approved additional Python package, record it in the root <code>.devcontainer/requirements.txt</code> and in your dependency note. Do not create a second submission-folder requirements file.</p>
 </section>
 <section id="r-connection" class="level2">
 <h2 class="anchored" data-anchor-id="r-connection">R Connection</h2>
-<p>R reproducibility is handled through project documentation and, later in the course, <code>renv</code>. Week 5 is a bridge: you should be able to explain where dependencies are recorded in both languages.</p>
+<p>R reproducibility uses the same devcontainer baseline plus explicit <code>library()</code> calls and dependency notes. Week 5 is a bridge: you should be able to explain where dependencies are recorded in both languages.</p>
 
 
 </section>

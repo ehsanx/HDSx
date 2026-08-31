@@ -351,7 +351,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../weeks/week03-r-with-ai/r09-assignment-mad-libs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment: The “Mad Libs” Report</span></a>
+  <a href="../../weeks/week03-r-with-ai/r09-assignment-mad-libs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 2: R With AI</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -855,7 +855,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week11-portfolio-surgery/port06-assignment-a10-final-portfolio.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment 10 and Final Portfolio</span></a>
+ <span class="menu-text">Portfolio Surgery and the Final Portfolio</span></a>
   </div>
 </li>
       </ul>
@@ -863,7 +863,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="true">
- <span class="menu-text">Weeks 12-13: Project Presentations</span></a>
+ <span class="menu-text">Project Presentation (Online)</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -872,13 +872,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week12-presentations/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 12: Term Project Presentations, Part 1</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../weeks/week13-presentations/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 13: Term Project Presentations, Part 2</span></a>
+ <span class="menu-text">Project Presentation (Narrated Deck)</span></a>
   </div>
 </li>
       </ul>
@@ -945,11 +939,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../assignments/assignment10-portfolio-surgery/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 10: Portfolio Surgery</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../milestones/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Milestones</span></a>
   </div>
 </li>
@@ -980,7 +969,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../milestones/m5-presentation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">M5: Final Presentation</span></a>
+  <a href="../../milestones/m5-presentation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Presentation (Final Portfolio Component)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -1094,7 +1083,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#where-this-fits" id="toc-where-this-fits" class="nav-link active" data-scroll-target="#where-this-fits">Where This Fits</a></li>
-  <li><a href="#render-the-starter" id="toc-render-the-starter" class="nav-link" data-scroll-target="#render-the-starter">Render the Starter</a></li>
+  <li><a href="#copy-then-render" id="toc-copy-then-render" class="nav-link" data-scroll-target="#copy-then-render">Copy, Then Render</a></li>
   <li><a href="#copy-the-starter-into-your-a8-folder" id="toc-copy-the-starter-into-your-a8-folder" class="nav-link" data-scroll-target="#copy-the-starter-into-your-a8-folder">Copy the Starter into Your A8 Folder</a></li>
   <li><a href="#the-three-slide-story" id="toc-the-three-slide-story" class="nav-link" data-scroll-target="#the-three-slide-story">The Three-Slide Story</a></li>
   <li><a href="#add-evidence" id="toc-add-evidence" class="nav-link" data-scroll-target="#add-evidence">Add Evidence</a></li>
@@ -1128,53 +1117,31 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="where-this-fits" class="level2">
 <h2 class="anchored" data-anchor-id="where-this-fits">Where This Fits</h2>
-<p>This page explains how to use the raw starter file, <a href="starter-slides.qmd">starter-slides.qmd</a>. The starter is a small revealjs deck that can render from the command line or the Quarto Render button.</p>
+<p>This page explains how to use the slide starter shipped in your personal workspace at <code>assignments/assignment08-communication/starter-slides.qmd</code>. The copy in this course book is a reference; do not assume it appears in the same Explorer as your personal work.</p>
 <p>You may also submit a structured slide outline for A8. Both options are graded identically — pick the format that fits where you are. <!-- AI-EDIT(2026-06-11): R2-06 — needs review --> The revealjs path is recommended if you want practice with Quarto slides before M5.</p>
 </section>
-<section id="render-the-starter" class="level2">
-<h2 class="anchored" data-anchor-id="render-the-starter">Render the Starter</h2>
-<!-- AI-EDIT(2026-06-11): TF-028, MIT-093, D-003 — RStudio mention removed; standard render include — needs review -->
-<p>To preview the starter as-is, render it by name. From the repository root, the terminal command is:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="ex">quarto</span> render weeks/week09-science-communication/starter-slides.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<!-- AI-EDIT(2026-06-11): D-003 — course-wide standard render instructions (reusable include) — needs review -->
-<div class="callout callout-style-default callout-tip callout-titled" title="How to render: the course default">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-How to render: the course default
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ol type="1">
-<li><p>Open the <code>.qmd</code> file you want to render, then open the <strong>Command Palette</strong> (<strong>View → Command Palette</strong>, or press <strong>Ctrl+Shift+P</strong> on Windows/Linux / <strong>Cmd+Shift+P</strong> on Mac) and run <strong>Quarto: Render Document</strong>. The Quarto extension renders the file and opens a preview pane. <!-- AI-EDIT(2026-06-22): REVIEW-row46 / D-003,GAP-R678-1 — added Command Palette keyboard shortcut (Ctrl+Shift+P / Cmd+Shift+P) so students can find it without hunting the menu --></p></li>
-<li><p><strong>Always-works fallback (terminal):</strong> type the render command with the file’s path as shown in the Explorer, for example:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a><span class="ex">quarto</span> render practice_report.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Always name the file — a bare <code>quarto render</code> rebuilds the <em>whole</em> project and takes much longer.</p></li>
-<li><p>If you see a <strong>Render</strong> (or <strong>Preview</strong>) button in the editor toolbar, it does the same thing as step 1.</p></li>
-</ol>
-<p><strong>Where did the output go?</strong> Watch the render log for the <code>Output created:</code> line — it names the exact <code>.html</code> file created. By default the file appears next to your <code>.qmd</code>; in projects that set an output directory (like this book’s <code>docs/</code> folder), it appears there instead. If no preview opened automatically, find that <code>.html</code> file in the Explorer, right-click it, and choose <strong>Download</strong> to open it in your browser (or <strong>Open Preview</strong> if available).</p>
-</div>
-</div>
-<p>The rendered file should appear beside the source as <code>starter-slides.html</code>.</p>
+<section id="copy-then-render" class="level2">
+<h2 class="anchored" data-anchor-id="copy-then-render">Copy, Then Render</h2>
+<p>The workspace starter is configured for its submitted location. Copy and rename it first using the steps below, then render the submitted <code>slides.qmd</code>; do not render or edit the untouched template in place.</p>
 <!-- AI-EDIT(2026-06-22): tester-note-conversion — converted leaked "Tester note" callout to hidden HTML comment (instructor/tester pre-release task, not student-facing)
-Tester note: Before release, render `weeks/week09-science-communication/starter-slides.qmd` in a clean Codespace and confirm that the title slide, source note, and bibliography entry appear.
+Tester note: Before release, copy the workspace starter into the A8 submission
+folder as `slides.qmd`, render that copy in a clean Codespace, and confirm that
+the title slide, source note, and bibliography entry appear.
 -->
 <!-- AI-EDIT(2026-06-11): TF-028, MIT-093, WI-050 — needs review -->
 </section>
 <section id="copy-the-starter-into-your-a8-folder" class="level2">
 <h2 class="anchored" data-anchor-id="copy-the-starter-into-your-a8-folder">Copy the Starter into Your A8 Folder</h2>
 <p>The starter stays in the weeks folder as a template. Your graded files belong in the assignment submission folder.</p>
-<p>Before editing, copy <code>weeks/week09-science-communication/starter-slides.qmd</code> into <code>assignments/assignment08-communication/submission/</code> and rename it <code>slides.qmd</code>. Render from the submission folder so the required <code>slides.qmd</code> and <code>slides.html</code> are created in the correct place.</p>
+<p>Before editing, copy <code>assignments/assignment08-communication/starter-slides.qmd</code> within your personal workspace into <code>assignments/assignment08-communication/submission/</code> and rename it <code>slides.qmd</code>. Render from the repository root so the required <code>slides.qmd</code> and <code>slides.html</code> are created in the correct folder.</p>
 <p>Step by step in VS Code:</p>
 <ol type="1">
-<li>In the Explorer, right-click <code>starter-slides.qmd</code> and choose <strong>Copy</strong>.</li>
+<li>In your personal workspace Explorer, open <code>assignments/assignment08-communication/</code>, right-click <code>starter-slides.qmd</code>, and choose <strong>Copy</strong>.</li>
 <li>Right-click the <code>assignments/assignment08-communication/submission/</code> folder and choose <strong>Paste</strong>.</li>
 <li>Right-click the pasted copy, choose <strong>Rename</strong>, and type <code>slides.qmd</code>.</li>
 <li>Edit <code>slides.qmd</code> there, then render it by name:</li>
 </ol>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="ex">quarto</span> render assignments/assignment08-communication/submission/slides.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="ex">quarto</span> render assignments/assignment08-communication/submission/slides.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>If you choose the outline path instead, name your file <code>slide-outline.qmd</code> in the same submission folder.</p>
 </section>
 <section id="the-three-slide-story" class="level2">
@@ -1196,9 +1163,9 @@ Tester note: Before release, render `weeks/week09-science-communication/starter-
 <li>include a screenshot or preview of the A7 dashboard output if it does not expose row-level data.</li>
 </ul>
 <p>Use relative paths for images. For example:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1"></a><span class="al">![](../../assignments/assignment05-visualization/submission/corrected-plot.png)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>If the path does not work, keep the figure beside your slide deck in the A8 submission folder and use a local relative path such as:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1"></a><span class="al">![](corrected-plot.png)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1"></a><span class="al">![](../../assignment05-visualization/submission/corrected-plot.png)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>That example is relative to the A8 <code>submission/</code> folder. If the path does not work, keep the figure beside your slide deck and use a local relative path such as:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1"></a><span class="al">![](corrected-plot.png)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="add-a-source-note" class="level2">
 <h2 class="anchored" data-anchor-id="add-a-source-note">Add a Source Note</h2>

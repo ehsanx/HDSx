@@ -317,7 +317,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../weeks/week03-r-with-ai/r09-assignment-mad-libs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment: The “Mad Libs” Report</span></a>
+  <a href="../../weeks/week03-r-with-ai/r09-assignment-mad-libs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 2: R With AI</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -821,7 +821,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week11-portfolio-surgery/port06-assignment-a10-final-portfolio.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment 10 and Final Portfolio</span></a>
+ <span class="menu-text">Portfolio Surgery and the Final Portfolio</span></a>
   </div>
 </li>
       </ul>
@@ -829,7 +829,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="true">
- <span class="menu-text">Weeks 12-13: Project Presentations</span></a>
+ <span class="menu-text">Project Presentation (Online)</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -838,13 +838,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week12-presentations/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 12: Term Project Presentations, Part 1</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../weeks/week13-presentations/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 13: Term Project Presentations, Part 2</span></a>
+ <span class="menu-text">Project Presentation (Narrated Deck)</span></a>
   </div>
 </li>
       </ul>
@@ -911,11 +905,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../assignments/assignment10-portfolio-surgery/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 10: Portfolio Surgery</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../milestones/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Milestones</span></a>
   </div>
 </li>
@@ -946,7 +935,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../milestones/m5-presentation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">M5: Final Presentation</span></a>
+  <a href="../../milestones/m5-presentation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Presentation (Final Portfolio Component)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -1118,17 +1107,17 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>This is enough for A9 and M3.</p>
 <!-- AI-EDIT(2026-06-11): MIT-100 — rendered-HTML exception ruling — needs review -->
-<div class="callout callout-style-default callout-note callout-titled" title="Rendered HTML: the one exception">
+<div class="callout callout-style-default callout-note callout-titled" title="Commit required rendered artifacts">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Rendered HTML: the one exception
+Commit required rendered artifacts
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The course <code>.gitignore</code> normally keeps rendered outputs out of Git. A8, A9, and M3 are the explicit exceptions: their <code>submission/</code> folders do commit the rendered HTML (<code>slides.html</code>, <code>report.html</code>, <code>report-draft.html</code>) so staff can grade it. Everywhere else, leave rendered files untracked.</p>
+<p>The submission list is authoritative. If an assignment or milestone explicitly requires a rendered HTML or PDF, commit it with the source so staff can inspect the work. Do not add global <code>*.html</code> or <code>*.pdf</code> patterns to the course workspace <code>.gitignore</code>.</p>
 </div>
 </div>
 <!-- AI-EDIT(2026-06-11): TF-033, MIT-099 — D-006 pre-commit privacy checklist — needs review -->
@@ -1138,8 +1127,8 @@ Rendered HTML: the one exception
 <p>Run this check every time, before you commit and sync:</p>
 <ol type="1">
 <li>Open the Source Control panel and read the list of staged files.</li>
-<li>Unstage anything that should not go online: raw row-level data files, credentials or tokens, <code>.RData</code> workspaces, OS junk such as <code>.DS_Store</code>, and rendered files outside the A8/A9/M3 <code>submission/</code> folders.</li>
-<li>Open <code>.gitignore</code> and confirm it covers your data folder and rendered outputs. If an unwanted file keeps reappearing, add it to <code>.gitignore</code> instead of unstaging it every time.</li>
+<li>Unstage anything that should not go online: raw restricted or row-level data, credentials or tokens, <code>.RData</code> workspaces, OS junk such as <code>.DS_Store</code>, and unrelated generated files. Keep every rendered artifact named in the assessment brief staged.</li>
+<li>Open <code>.gitignore</code> and confirm it covers secrets, machine-specific files, and temporary support folders without globally excluding required HTML or PDF. If an unwanted file keeps reappearing, add a narrow rule for that file type or path.</li>
 <li>Skim the rendered HTML one last time for private URLs, tokens, or row-level records in printed output.</li>
 </ol>
 <p>If any item fails, fix it before syncing. It is much easier to keep a file out of Git than to remove it after it has been pushed.</p>

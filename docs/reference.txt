@@ -4,5 +4,5 @@
   title = {{Health Data Science: AI and Knowledge Translation}},
   year = {2026},
   url = {https://ehsanx.github.io/HDSx/},
-  note = {Accessed on: May 14, 2026}
+  note = {Accessed on: August 31, 2026}
 }

@@ -317,7 +317,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../weeks/week03-r-with-ai/r09-assignment-mad-libs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment: The “Mad Libs” Report</span></a>
+  <a href="../../weeks/week03-r-with-ai/r09-assignment-mad-libs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 2: R With AI</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -821,7 +821,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week11-portfolio-surgery/port06-assignment-a10-final-portfolio.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment 10 and Final Portfolio</span></a>
+ <span class="menu-text">Portfolio Surgery and the Final Portfolio</span></a>
   </div>
 </li>
       </ul>
@@ -829,7 +829,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="true">
- <span class="menu-text">Weeks 12-13: Project Presentations</span></a>
+ <span class="menu-text">Project Presentation (Online)</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -838,13 +838,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week12-presentations/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 12: Term Project Presentations, Part 1</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../weeks/week13-presentations/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 13: Term Project Presentations, Part 2</span></a>
+ <span class="menu-text">Project Presentation (Narrated Deck)</span></a>
   </div>
 </li>
       </ul>
@@ -911,11 +905,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../assignments/assignment10-portfolio-surgery/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 10: Portfolio Surgery</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../milestones/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Milestones</span></a>
   </div>
 </li>
@@ -946,7 +935,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../milestones/m5-presentation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">M5: Final Presentation</span></a>
+  <a href="../../milestones/m5-presentation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Presentation (Final Portfolio Component)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -1061,7 +1050,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#verify-your-ai-extensions" id="toc-verify-your-ai-extensions" class="nav-link active" data-scroll-target="#verify-your-ai-extensions">Verify Your AI Extensions</a></li>
   <li><a href="#pick-a-chat-model" id="toc-pick-a-chat-model" class="nav-link" data-scroll-target="#pick-a-chat-model">Pick a Chat Model</a></li>
-  <li><a href="#check-the-package-environment-renv" id="toc-check-the-package-environment-renv" class="nav-link" data-scroll-target="#check-the-package-environment-renv">Check the Package Environment (renv)</a></li>
+  <li><a href="#check-the-course-package-environment" id="toc-check-the-course-package-environment" class="nav-link" data-scroll-target="#check-the-course-package-environment">Check the Course Package Environment</a></li>
   <li><a href="#interface-review-where-does-r-actually-live" id="toc-interface-review-where-does-r-actually-live" class="nav-link" data-scroll-target="#interface-review-where-does-r-actually-live">Interface Review: Where does R actually live?</a></li>
   <li><a href="#interface-review-working-with-.qmd-and-.rmd-files" id="toc-interface-review-working-with-.qmd-and-.rmd-files" class="nav-link" data-scroll-target="#interface-review-working-with-.qmd-and-.rmd-files">Interface Review: Working with .qmd and .Rmd files</a></li>
   </ul>
@@ -1116,9 +1105,9 @@ ul.task-list li input[type="checkbox"] {
 </ol>
 <!-- AI-EDIT(2026-06-11): GAP-R345-10 — needs review -->
 </section>
-<section id="check-the-package-environment-renv" class="level2">
-<h2 class="anchored" data-anchor-id="check-the-package-environment-renv">Check the Package Environment (renv)</h2>
-<p>This project uses <code>renv</code> to record which R package versions the course expects. Use <code>renv::status()</code> to check whether the project environment matches the lockfile. Do not run <code>renv::snapshot()</code> unless the instructor asks, because it changes the recorded package state.</p>
+<section id="check-the-course-package-environment" class="level2">
+<h2 class="anchored" data-anchor-id="check-the-course-package-environment">Check the Course Package Environment</h2>
+<p>The personal workspace devcontainer installs the packages required for the course pathway. Do not initialize <code>renv</code>. In each analysis file, load the packages you use explicitly, and list them in the assignment’s dependency note. If a required package is missing after rebuilding the container, copy the error message and ask your TA or instructor rather than installing packages at random.</p>
 </section>
 <section id="interface-review-where-does-r-actually-live" class="level2">
 <h2 class="anchored" data-anchor-id="interface-review-where-does-r-actually-live">Interface Review: Where does R actually live?</h2>

@@ -338,7 +338,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../weeks/week03-r-with-ai/r09-assignment-mad-libs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment: The “Mad Libs” Report</span></a>
+  <a href="../../weeks/week03-r-with-ai/r09-assignment-mad-libs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 2: R With AI</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -842,7 +842,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week11-portfolio-surgery/port06-assignment-a10-final-portfolio.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment 10 and Final Portfolio</span></a>
+ <span class="menu-text">Portfolio Surgery and the Final Portfolio</span></a>
   </div>
 </li>
       </ul>
@@ -850,7 +850,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="true">
- <span class="menu-text">Weeks 12-13: Project Presentations</span></a>
+ <span class="menu-text">Project Presentation (Online)</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -859,13 +859,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week12-presentations/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 12: Term Project Presentations, Part 1</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../weeks/week13-presentations/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 13: Term Project Presentations, Part 2</span></a>
+ <span class="menu-text">Project Presentation (Narrated Deck)</span></a>
   </div>
 </li>
       </ul>
@@ -932,11 +926,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../assignments/assignment10-portfolio-surgery/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 10: Portfolio Surgery</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../milestones/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Milestones</span></a>
   </div>
 </li>
@@ -967,7 +956,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../milestones/m5-presentation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">M5: Final Presentation</span></a>
+  <a href="../../milestones/m5-presentation/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Presentation (Final Portfolio Component)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -1183,27 +1172,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The default classroom path is to use the cached data so the analysis work is reproducible without internet access.</p>
 <p><strong>What to do here:</strong> you may run the code below — it loads the cached CSV and prints two small summaries; reading it carefully is enough unless your week’s page asks for more. <!-- AI-EDIT(2026-06-11): MIT-025, MIT-050, MIT-061 — needs review --></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">library</span>(readr)</span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb1-3"><a href="#cb1-3"></a></span>
-<span id="cb1-4"><a href="#cb1-4"></a>candidate_paths <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
-<span id="cb1-5"><a href="#cb1-5"></a>  <span class="st">"examples/nhanes-equity/data/nhanes_equity_v6.csv"</span>,</span>
-<span id="cb1-6"><a href="#cb1-6"></a>  <span class="st">"../../examples/nhanes-equity/data/nhanes_equity_v6.csv"</span></span>
-<span id="cb1-7"><a href="#cb1-7"></a>)</span>
-<span id="cb1-8"><a href="#cb1-8"></a></span>
-<span id="cb1-9"><a href="#cb1-9"></a>nhanes_path <span class="ot">&lt;-</span> candidate_paths[<span class="fu">file.exists</span>(candidate_paths)][<span class="dv">1</span>]</span>
-<span id="cb1-10"><a href="#cb1-10"></a><span class="cf">if</span> (<span class="fu">is.na</span>(nhanes_path)) {</span>
-<span id="cb1-11"><a href="#cb1-11"></a>  <span class="fu">stop</span>(<span class="st">"Could not find examples/nhanes-equity/data/nhanes_equity_v6.csv"</span>)</span>
-<span id="cb1-12"><a href="#cb1-12"></a>}</span>
-<span id="cb1-13"><a href="#cb1-13"></a></span>
-<span id="cb1-14"><a href="#cb1-14"></a>nhanes_analysis <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(nhanes_path, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb1-15"><a href="#cb1-15"></a></span>
-<span id="cb1-16"><a href="#cb1-16"></a>nhanes_analysis <span class="sc">|&gt;</span></span>
-<span id="cb1-17"><a href="#cb1-17"></a>  <span class="fu">summarise</span>(</span>
-<span id="cb1-18"><a href="#cb1-18"></a>    <span class="at">rows =</span> <span class="fu">n</span>(),</span>
-<span id="cb1-19"><a href="#cb1-19"></a>    <span class="at">missing_bmi =</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(BMI)),</span>
-<span id="cb1-20"><a href="#cb1-20"></a>    <span class="at">missing_income =</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(IncomeGroup))</span>
-<span id="cb1-21"><a href="#cb1-21"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">library</span>(tidyverse) <span class="co"># AI-EDIT(2026-06-23): tidyverse-default — consolidated core library() calls into library(tidyverse)</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a>candidate_paths <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb1-4"><a href="#cb1-4"></a>  <span class="st">"examples/nhanes-equity/data/nhanes_equity_v6.csv"</span>,</span>
+<span id="cb1-5"><a href="#cb1-5"></a>  <span class="st">"../../examples/nhanes-equity/data/nhanes_equity_v6.csv"</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a>)</span>
+<span id="cb1-7"><a href="#cb1-7"></a></span>
+<span id="cb1-8"><a href="#cb1-8"></a>nhanes_path <span class="ot">&lt;-</span> candidate_paths[<span class="fu">file.exists</span>(candidate_paths)][<span class="dv">1</span>]</span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="cf">if</span> (<span class="fu">is.na</span>(nhanes_path)) {</span>
+<span id="cb1-10"><a href="#cb1-10"></a>  <span class="fu">stop</span>(<span class="st">"Could not find examples/nhanes-equity/data/nhanes_equity_v6.csv"</span>)</span>
+<span id="cb1-11"><a href="#cb1-11"></a>}</span>
+<span id="cb1-12"><a href="#cb1-12"></a></span>
+<span id="cb1-13"><a href="#cb1-13"></a>nhanes_analysis <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(nhanes_path, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb1-14"><a href="#cb1-14"></a></span>
+<span id="cb1-15"><a href="#cb1-15"></a>nhanes_analysis <span class="sc">|&gt;</span></span>
+<span id="cb1-16"><a href="#cb1-16"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb1-17"><a href="#cb1-17"></a>    <span class="at">rows =</span> <span class="fu">n</span>(),</span>
+<span id="cb1-18"><a href="#cb1-18"></a>    <span class="at">missing_bmi =</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(BMI)),</span>
+<span id="cb1-19"><a href="#cb1-19"></a>    <span class="at">missing_income =</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(IncomeGroup))</span>
+<span id="cb1-20"><a href="#cb1-20"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div data-pagedtable="false">
   <script data-pagedtable-source="" type="application/json">
@@ -1280,15 +1268,16 @@ Tip
 <code>git3.qmd</code> Repo Hygiene: <code>.gitignore</code> and Relative Paths</h2>
 <p>Deeper Dive: <a href="../../weeks/week04-git-collaboration/git03-repo-hygiene.html">Repo Hygiene</a> <!-- AI-EDIT(2026-06-22): REVIEW-row102 / GAP-R345-3 — renamed link label 'Detail page' -> 'Deeper Dive' for cross-book consistency --></p>
 <section id="why-this-matters" class="level3"><h3 class="anchored" data-anchor-id="why-this-matters">Why This Matters</h3>
-<p>As your projects grow, you will generate files that should <em>not</em> be tracked: rendered HTML, temporary data caches, <code>.DS_Store</code>, API keys. Tracking these clutters your history and can leak sensitive information.</p>
+<p>As your projects grow, you will generate files that should <em>not</em> be tracked: temporary Quarto support folders, local caches, <code>.DS_Store</code>, and API keys. Rendered files explicitly required by an assessment are different: they are part of the evidence and must be committed.</p>
 </section><section id="gitignore-walkthrough" class="level3"><h3 class="anchored" data-anchor-id="gitignore-walkthrough">
 <code>.gitignore</code> Walkthrough</h3>
 <ol type="1">
 <li>Open (or create) the <code>.gitignore</code> file in the root of your repository.</li>
 <li>Add common patterns:</li>
 </ol>
-<pre><code># Rendered outputs
-*.html
+<pre><code># Quarto temporary/support files
+/.quarto/
+**/.quarto/
 *_files/
 
 # OS junk
@@ -1300,19 +1289,19 @@ Thumbs.db
 <!-- AI-EDIT(2026-06-11): MIT-037 — needs review -->
 <p><strong>What to do with this block:</strong> copy these patterns into your own <code>.gitignore</code> file. This is plain text, not R code — there is nothing to run.</p>
 <ol start="3" type="1">
-<li>Stage, commit with a message like <code>"Add .gitignore to exclude rendered files"</code>.</li>
+<li>Stage and commit with a message such as <code>"Add project gitignore rules"</code>.</li>
 </ol>
-<!-- AI-EDIT(2026-06-11): MIT-169 (D-006) — needs review --><div class="callout callout-style-default callout-note callout-titled" title="One named exception to the *.html rule">
+<!-- AI-EDIT(2026-06-11): MIT-169 (D-006) — needs review --><div class="callout callout-style-default callout-note callout-titled" title="Required renders are committed">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-One named exception to the *.html rule
+Required renders are committed
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Later in the course, the Assignment 8, Assignment 9, and Milestone 3 submission folders <strong>do</strong> commit rendered HTML so graders can read the work without rendering it. Those briefs say so explicitly. Everywhere else, keep rendered outputs excluded by <code>.gitignore</code>, exactly as taught here.</p>
+<p>Do <strong>not</strong> add global <code>*.html</code> or <code>*.pdf</code> patterns to the course workspace <code>.gitignore</code>. If an assignment or milestone explicitly lists a rendered HTML or PDF file, commit it with the source. For practice renders that are not requested, use Source Control to stage only the files named in the brief.</p>
 </div>
 </div>
 </section><section id="relative-paths" class="level3"><h3 class="anchored" data-anchor-id="relative-paths">Relative Paths</h3>
