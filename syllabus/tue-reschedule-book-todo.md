@@ -35,11 +35,12 @@ Course meeting day moved **Thursday → Tuesday, 11:00 AM–2:00 PM**.
 
 ### ⚠️ OPEN items to confirm before release
 
-1. **39 contact-hour rule (SPPH).** 11 live sessions × 3 h = **33 h**. UBC's requirement is
-   39 h (13 × 3 h). Moving presentations online makes them async, so SPPH must confirm the
-   online presentation + async peer-review (and async Week 0) count toward the remaining
-   ~6 h — or accept the reduced hours given the two calendar losses. This is the same
-   async-approval question already put to SPPH.
+1. ~~**39 contact-hour rule (SPPH).**~~ **RESOLVED 2026-08-30 — SPPH confirmed 11 teaching
+   days as final.** 11 live sessions × 3 h = 33 h synchronous, with Week 0, the online
+   narrated presentation, and the async peer-review week accepted. **The calendar is now
+   final: no part of the Tue restructure is deferred, and nothing in the book should still
+   describe the schedule as provisional or pending SPPH.** Close tracker item OPS-002 and
+   R3-01.
 2. **A7 deadline lands on the break Monday.** "Monday after class" for Week 8 (Tue Nov 3)
    = **Mon Nov 9**, inside the Nov 9–11 break. Decide: move to Nov 12, or state the break
    deadline is intentional. (Pre-existing pattern — see `assistant-playbook/newplan.md`.)
