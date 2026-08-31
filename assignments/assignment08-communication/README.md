@@ -16,9 +16,12 @@ This assignment turns one result from your analysis or dashboard into a short au
 
 - Week 9 page: `weeks/week09-science-communication/index.qmd`
 - Peer feedback page: `weeks/week09-science-communication/comm04-peer-feedback.qmd`
-- Renderable Week 9 slide starter: `weeks/week09-science-communication/starter-slides.qmd`
-- Slide starter: `assignments/assignment08-communication/slide-outline-template.qmd`
-- Peer feedback template: `assignments/assignment08-communication/peer-feedback-template.md`
+- Renderable slide starter in your personal workspace:
+  `assignments/assignment08-communication/starter-slides.qmd`
+- Slide-outline starter in your personal workspace:
+  `assignments/assignment08-communication/slide-outline-template.qmd`
+- Peer-feedback template in your personal workspace:
+  `assignments/assignment08-communication/peer-feedback-template.md`
 - Prior work from Assignment 5, 6, or 7
 - Submission folder: `assignments/assignment08-communication/submission/`
 
@@ -28,10 +31,18 @@ This assignment turns one result from your analysis or dashboard into a short au
 2. Choose one figure, table, or dashboard finding from prior work.
 3. Define the audience in one sentence.
 4. Write one plain-language takeaway that a non-technical reader can understand.
-5. Create either `slides.qmd` as a revealjs deck or `slide-outline.qmd` as a structured slide outline. If you choose the deck, copy `weeks/week09-science-communication/starter-slides.qmd` into `assignments/assignment08-communication/submission/` and rename it `slides.qmd` before editing — do not edit the starter in the weeks folder. <!-- AI-EDIT(2026-06-11): MIT-093 — needs review -->
+5. Create either `slides.qmd` as a revealjs deck or `slide-outline.qmd` as a
+   structured slide outline. Copy the corresponding starter from
+   `assignments/assignment08-communication/` in your personal workspace into
+   its `submission/` folder and rename it before editing. Do not edit the
+   original starter.
 6. Include 3-5 slides or slide sections: context, evidence, takeaway, limitation, and next step.
 7. Add one source note or citation for the dataset.
-8. Exchange peer feedback using the template, through the Canvas Discussion thread and your in-studio partner review. Peer feedback is due at the standard syllabus deadline — the Monday after the Week 9 class, 4:00 PM, the same deadline as this assignment. Feedback you receive can also inform your final-portfolio revision. <!-- AI-EDIT(2026-06-11): MIT-136 (R2-02) — needs review -->
+8. Complete the in-studio partner review early enough to make at least one A8
+   revision before submission. Also complete the Canvas Discussion exchange by
+   the standard syllabus deadline — Monday after the Week 9 class, 4:00 PM.
+   Canvas feedback may inform the presentation deck or final-portfolio revisions; it is not the
+   feedback source required before the initial A8 submission.
 9. Revise at least one sentence or slide based on feedback.
 10. Document any AI assistance used for simplification, slide wording, or feedback synthesis.
 
@@ -59,7 +70,8 @@ Submit these files:
 
 <!-- AI-EDIT(2026-06-11): GAP-FIN-2/MIT-137/MIT-100 (D-006) — needs review -->
 - `slides.qmd` or `slide-outline.qmd` [required]: source file for the communication product — submit one of the two.
-- `slides.html` or `slide-outline.html` [required]: rendered output. Committing this HTML file is a named exception (A8, A9, and M3 submission folders only) to the course rule that rendered outputs stay out of Git.
+- `slides.html` or `slide-outline.html` [required]: rendered output. Commit this
+  required HTML with its source.
 - `plain-language-summary.md` [required]: 150-250 word audience-facing summary.
 - `peer-feedback.md` [required]: feedback received and one revision made. Expected length: the completed feedback form plus one or two sentences describing the revision you made — do not write an essay.
 - `source-note.md` [required] [brief — 1-3 focused bullets or sentences are enough]: dataset/source note and citation information. <!-- AI-EDIT(2026-06-11): WI-078 (D-002) — needs review -->
@@ -86,3 +98,8 @@ Canvas applies a 7-point rubric. This assignment is part of the best-4-of-6 set 
 ## Definition of Done
 
 You are done when a peer can read the deck or outline, identify the main takeaway, see the evidence and limitation, and understand what changed after feedback.
+
+If you submit an outline for A8, it receives the same A8 score as a deck. The
+narrated presentation deck is a later stage and requires `slides.qmd`, so convert
+the revised A8 story into a renderable deck for the portfolio rather than treating
+the A8 outline as final slides.

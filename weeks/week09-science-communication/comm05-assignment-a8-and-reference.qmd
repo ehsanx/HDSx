@@ -4,7 +4,7 @@
 
 This page connects the Week 9 studio work to [Assignment 8](../../assignments/assignment08-communication/README.md). It does not add new deliverables. It explains what each required file should contain and how to check it before submitting.
 
-Assignment 8 is due the Monday after Week 9 class, 4 PM. It also gives you reusable material for the M5 presentation.
+Assignment 8 is due the Monday after Week 9 class, 4 PM. It also gives you reusable material for the final portfolio's narrated presentation deck.
 
 <!-- AI-EDIT(2026-06-22): Tester-note conversion — converted leaked "Tester note" callout to hidden HTML comment (instructor/tester instruction, not student-facing) -->
 <!-- Tester note: Check that the file names below match the current Assignment 8 README before release. -->
@@ -17,13 +17,21 @@ Each file goes in `assignments/assignment08-communication/submission/`.
 
 Use one of these options:
 
-- `slides.qmd`: a revealjs deck based on [starter-slides.qmd](starter-slides.qmd);
+- `slides.qmd`: a revealjs deck based on the personal-workspace
+  `assignments/assignment08-communication/starter-slides.qmd`;
 - `slide-outline.qmd`: a structured outline if you are not ready to render revealjs.
 
 <!-- AI-EDIT(2026-06-11): TF-028, MIT-093, WI-050, R2-06 — needs review -->
 Both options are graded identically — choose the format that fits where you are.
+If you choose the outline for A8, convert the revised outline into a renderable
+`slides.qmd` for the presentation deck. The outline remains fully eligible for the
+A8 score; the deck is the later slide-production stage.
 
-To create `slides.qmd`, copy `starter-slides.qmd` from the Week 9 folder into `assignments/assignment08-communication/submission/` and rename it before editing. Render from the submission folder so `slides.html` is created in the correct place. Step-by-step copy and rename instructions are in [comm03](comm03-revealjs-starter.qmd).
+To create `slides.qmd`, copy the starter within your personal workspace from
+`assignments/assignment08-communication/` into its `submission/` folder and
+rename it before editing. Render from the personal-workspace root so
+`slides.html` is created in the correct place. Step-by-step instructions are in
+[comm03](comm03-revealjs-starter.qmd).
 
 Include 3-5 slides or sections: context, evidence, takeaway, limitation, and next step.
 

@@ -9,12 +9,19 @@ In Week 9, feedback is not about personal preference. It is about whether the au
 <!-- AI-EDIT(2026-06-11): MIT-094, WI-051 (R2-02) — needs review -->
 ## How and When to Exchange Feedback
 
-Exchange peer feedback through the Canvas Discussion and in-studio partner review by the Monday after the Week 9 class, 4:00 PM — the same deadline as Assignment 8 — so you have time to revise before the deadline.
+Use the in-studio partner review as the pre-submission feedback source for A8.
+The Canvas Discussion exchange closes Monday after the Week 9 class at 4:00 PM,
+the same deadline as A8, and can support later presentation-deck or portfolio revision.
 
 Use both channels:
 
-1. **In-studio partner review (during the Week 9 class):** show your draft to a partner directly in your Codespace preview, or open the rendered HTML side by side. Fill in the feedback table together. This is your main chance to revise before submission.
-2. **Canvas Discussion (by the standard deadline above):** post your plain-language summary and your rendered slides or outline, then complete the feedback table for at least one classmate's post.
+1. **In-studio partner review (during the Week 9 class):** show your draft to a
+   partner, complete the feedback table, and make at least one documented A8
+   revision before submitting.
+2. **Canvas Discussion (by the standard deadline above):** post your
+   plain-language summary and rendered slides or outline, then complete the
+   feedback table for at least one classmate. Feedback arriving at the deadline
+   is for later revision, not the required pre-submission A8 change.
 
 You do not need to give classmates access to your repository. To share an in-progress deck, show your screen in studio, or download the rendered `slides.html` from the Explorer (right-click the file, then **Download**) and attach it to your Canvas Discussion post.
 

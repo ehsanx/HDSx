@@ -73,7 +73,7 @@ By the end of class each student has a draft slide deck or outline, a plain-lang
 ## Links
 
 - Assignment: [Assignment 8 - Scientific Communication](../../assignments/assignment08-communication/README.md)
-- Milestone bridge: [M5 - Final Presentation](../../milestones/m5-presentation/README.md)
+- Portfolio component: [Presentation (narrated deck)](../../milestones/m5-presentation/README.md)
 - Reusable starter: [starter-slides.qmd](starter-slides.qmd)
 
 ## Definition of Done
@@ -86,4 +86,4 @@ By the end of class each student has a draft slide deck or outline, a plain-lang
 
 ## What Students Leave With
 
-A short, audience-facing communication product that can be reused later in the M5 presentation and final portfolio.
+A short, audience-facing communication product that can be reused later in the narrated presentation deck and final portfolio.
