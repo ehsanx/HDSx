@@ -8,6 +8,33 @@ The final portfolio is the complete project record: report, code, data documenta
 
 Submit by the final portfolio deadline posted in Canvas. The syllabus deadline is the course final submission deadline unless Canvas states a more specific time.
 
+## Points and Score Ownership
+
+The Final Portfolio is worth **35 course points** and receives one group score.
+The existing portfolio and reproducibility checklists guide the direct 0–35
+score; no contribution multiplier, complicated adjustment formula, or
+performance-band conversion is used.
+
+The 35 points are allocated across five broad categories:
+
+| Criterion | Points |
+|---|---:|
+| Final report and evidence | 10 |
+| Reproducibility and traceability | 10 |
+| KT product and presentation alignment | 5 |
+| Provenance, stewardship, and limitations | 5 |
+| README, repository access, AI audit, risk list, and submission record | 5 |
+| **Total** | **35** |
+
+These categories are broad judgments, not containers for dozens of tiny
+deductions. The portfolio rewards coherent evidence and a workflow another
+person can understand and inspect. It does not reward statistical
+sophistication, public deployment, Shiny, publication-quality prose, or
+decorative polish. One underlying problem is assessed under the category that
+most directly owns it unless it causes genuinely separate required failures.
+
+The **narrated presentation deck** is a required part of the portfolio and is scored separately as the **Presentation** component (10 points); see [Presentation](../m5-presentation/README.md). It is submitted online with the portfolio on Dec 11 — there is no in-class presentation.
+
 ## Required Deliverables
 
 Create or update:
@@ -29,7 +56,7 @@ Your project repository should also include:
 - dashboard-style KT product or static preview
 - data provenance and stewardship documentation
 - reproducibility instructions
-- presentation slides or presentation summary
+- narrated presentation slide deck (5-7 slides, recorded narration)
 - clear README for the whole project
 
 <!-- AI-EDIT(2026-06-11): MIT-160, WI-075 — needs review -->
@@ -43,6 +70,20 @@ The three KT-product options, from heaviest to lightest:
 - **Screenshot** — an image file of the product committed to the repository, with a note saying which file or app it shows.
 
 Any of the three is acceptable for the final portfolio.
+
+## Repository Access Note
+
+Keep `repository-access-note.md` short. It must state:
+
+- repository URL and whether it is public or private;
+- latest submitted commit hash;
+- confirmation that course staff can open the repository;
+- if private, who granted staff access and the date access was checked;
+- if public, confirmation that the safe-publishing check was completed;
+- relative paths to the final report and dashboard/KT product.
+
+This note records access facts only; it is not a new reflection or project
+summary.
 
 <!-- AI-EDIT(2026-06-11): R2-11/R2-12 — needs review -->
 Revising earlier work is allowed and encouraged: the final portfolio is the right place to apply M4 feedback and improve assignments or milestone files you already submitted. Only the files listed above are prescribed. Beyond them, organize the repository however serves your project best, as long as the README explains the structure.
@@ -72,6 +113,8 @@ Use the [Final Portfolio Checklist](final-portfolio-checklist.md) to confirm:
 - all paths are relative
 - required packages are documented
 - report renders from source
+- every rendered artifact explicitly required for the portfolio is committed
+  with its source
 - dashboard or KT product can be opened or rerun, or its static preview is committed <!-- AI-EDIT(2026-06-11): MIT-160 — needs review -->
 - generated figures and tables can be traced to code
 - data provenance and access rules are documented
@@ -116,7 +159,7 @@ The final portfolio is ready for assessment when:
 - data provenance and limitations are transparent
 - repository is organized and reproducible
 - final outputs are committed and synced
-- presentation materials align with the final project
+- narrated presentation deck aligns with the final project
 - AI-use audit is complete
 - repository access route is clear
 

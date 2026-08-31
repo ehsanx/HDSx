@@ -149,10 +149,9 @@ book:
         - weeks/week11-portfolio-surgery/port04-peer-review-m4.qmd
         - weeks/week11-portfolio-surgery/port05-optional-pathways.qmd
         - weeks/week11-portfolio-surgery/port06-assignment-a10-final-portfolio.qmd
-    - part: "Weeks 12-13: Project Presentations"
+    - part: "Project Presentation (Online)"
       chapters:
         - weeks/week12-presentations/index.qmd
-        - weeks/week13-presentations/index.qmd
     - part: "Assignments and Milestones"
       chapters:
         - assignments/index.qmd

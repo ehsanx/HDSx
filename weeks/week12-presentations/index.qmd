@@ -1,78 +1,52 @@
-# Week 12: Term Project Presentations, Part 1 {.unnumbered}
+# Project Presentation (Narrated Deck) {.unnumbered}
 
 ## Overview
 
-Week 12 is the first final presentation block for [M5: Final Presentation](../../milestones/m5-presentation/README.md). Presentations should emphasize scientific clarity, knowledge translation, reproducibility, and auditability.
+The term-project presentation is a **narrated 5-7 slide deck submitted online with the [Final Portfolio](../../milestones/final-portfolio/README.md)** on Dec 11. There is no in-class presentation session. The deck is the knowledge-translation version of your project: it should emphasize scientific clarity, knowledge translation, reproducibility, and auditability.
 
-## Timing Rules
+Full requirements and the 10-point rubric are in the [Presentation brief](../../milestones/m5-presentation/README.md); this page is the how-to for recording and submitting it.
 
-Each presentation uses this timing:
+## What To Record
 
-- 7 minutes for the presentation
-- 3 minutes for questions
-- 1 minute for transition
+Record narration over your slides so a viewer can follow the story without you in the room. Any of these is acceptable:
 
-<!-- AI-EDIT(2026-06-11): MIT-107, WI-063 — needs review -->
-<!-- AI-EDIT(2026-06-22): MIT-107,WI-063 / REVIEW-row247 — standardized Canvas link placeholder; instructor to provide URL -->
-<!-- TODO: Canvas link (instructor to provide) -->
-Presentation order will be posted on Canvas (link to be provided by the teaching team). Check this page before presentation day and notify the teaching team if your group is missing. Groups presenting in Part 1 should arrive with rendered slides and the project repository link ready to share.
+- a narrated `slides.html` or `slides.pdf` export;
+- a short screen recording that walks through the slides with voice-over.
+
+Keep it to the length of a 5-7 slide talk. Aim for a clear spoken explanation of the audience, question, data, main finding, and limitation — not a read-aloud of every word on the slides.
 
 ## Slide Submission
 
-Before class, commit and sync:
+Before the portfolio deadline, commit and sync:
 
 ```text
 milestones/m5-presentation/submission/slides.qmd
 milestones/m5-presentation/submission/slides.html
 ```
 
-If you render to PDF instead of HTML, submit `slides.pdf`. Submit the GitHub repository link on Canvas with the latest commit hash and the slide path.
+If you render to PDF instead of HTML, submit `slides.pdf`. Commit the narrated recording alongside them. Submit the GitHub repository link on Canvas with the latest commit hash and the slide path.
 
 <!-- AI-EDIT(2026-06-11): TF-039, MIT-108, WI-062 — needs review -->
 ::: {.callout-note title="What is a commit hash?"}
 A commit hash is the unique identifier GitHub assigns every saved version of your work. It looks like `a3f92bc`. To find it, go to your repository on GitHub, click **Commits**, and copy the short code on the right. You can also run `git log --oneline -1` in the terminal.
 :::
 
-## Presentation Rubric
-
-Use this rubric while preparing and while giving peer feedback:
-
-- audience and KT purpose are clear
-- question is focused
-- data source and limitations are transparent
-- main visual is readable and evidence-based
-- interpretation is accurate and avoids unsupported causal language
-- privacy and stewardship risks are acknowledged
-- timing fits the presentation window
-- questions are answered with evidence and humility
-
-## Peer Feedback Form
-
-Complete one feedback note for each presentation you review.
-
-| Prompt | Feedback |
-|---|---|
-| Main message in one sentence |  |
-| Strongest evidence shown |  |
-| One interpretation or limitation to clarify |  |
-| One reproducibility or source question |  |
-| One audience-facing improvement |  |
-
 ## Slide Checklist
 
-Before presenting, check that:
+Before submitting, check that:
 
-- slides render on the presenting machine
-- fonts and figures are readable from a distance
-- every chart has a title, units, and limitation cue
-- source and data notes are visible
-- the final slide gives the audience a clear takeaway
-- backup notes include data source, cohort, and AI-use details
+- slides render from source in a fresh Codespace;
+- fonts and figures are readable on screen;
+- every chart has a title, units, and limitation cue;
+- source and data notes are visible;
+- the final slide gives the audience a clear takeaway;
+- the narration is audible and matches what is on screen;
+- backup notes include data source, cohort, and AI-use details.
 
 ## Portfolio Reminder
 
-After presenting, use peer questions to revise the final report, dashboard-style KT product, and [Final Portfolio Checklist](../../milestones/final-portfolio/final-portfolio-checklist.md).
+The presentation is scored as the **Presentation** component (10 points) of the Final Portfolio. Use the M4 peer feedback you received to revise the final report, dashboard-style KT product, and deck together, then confirm the [Final Portfolio Checklist](../../milestones/final-portfolio/final-portfolio-checklist.md) before submission.
 
 ## Definition Of Done
 
-Week 12 is done when Part 1 presentations are complete, peer feedback has been recorded, and presenting groups know which revisions to prioritize before the final portfolio.
+The presentation is done when the narrated slides are committed, rendered, and submitted with the Final Portfolio, and play without relying on local-only files.

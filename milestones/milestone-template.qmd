@@ -1,6 +1,6 @@
 # Milestone Template {.unnumbered}
 
-Use this template for project milestones M0-M5 and the Final Portfolio.
+Use this template for project milestones M0-M4, the Presentation, and the Final Portfolio.
 
 ## Deliverable
 

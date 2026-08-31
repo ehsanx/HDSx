@@ -51,7 +51,7 @@ The final portfolio is not a separate new analysis. It gathers the strongest ver
 - dashboard-style KT product or static preview;
 - data provenance and stewardship documentation;
 - reproducibility instructions;
-- presentation slides or presentation summary;
+- narrated presentation slide deck;
 - final AI-use audit;
 - clear README and repository access route.
 

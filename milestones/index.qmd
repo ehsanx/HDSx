@@ -26,8 +26,21 @@ For every milestone:
 | M2 | Week 7 | Preliminary analysis and Table 1-style summary | [M2: Preliminary Analysis](m2-preliminary-analysis/README.md) |
 | M3 | Week 10 | Draft report and dashboard-style update | [M3: Project Update](m3-project-update/README.md) |
 | M4 | Week 11 | Peer review and reproducibility feedback | [M4: Peer Review](m4-peer-review/README.md) |
-| M5 | Weeks 12-13 | Final presentation | [M5: Final Presentation](m5-presentation/README.md) |
+| Presentation | With Final Portfolio (Dec 11) | Narrated slide deck (online) | [Presentation](m5-presentation/README.md) |
 | Final Portfolio | Final deadline | Complete project record | [Final Portfolio](final-portfolio/README.md) |
+
+## Project Points and Score Ownership
+
+Project scores use direct points that match the course weights: M1–M4 are 5
+points each, the Presentation is 10 points, and the Final Portfolio is 35 points. Staff record
+a score directly from zero to the stated maximum using the existing checklist
+as the evidence guide; there is no separate performance-band conversion,
+contribution multiplier, or adjustment formula.
+
+Shared project artifacts receive one group score. Only a component that a brief
+already identifies as individually authored receives an individual score. The
+current M1–M4, Presentation, and Final Portfolio deliverables are shared project
+artifacts, so each currently receives one group score.
 
 ## Reproducibility Expectations
 

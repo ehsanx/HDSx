@@ -42,7 +42,7 @@ topics <- c(
   "Week 9: Communication of Scientific Findings",
   "Week 10: Writing & Publishing Reports",
   "Week 11: Portfolio Surgery",
-  "Weeks 12-13: Project Presentations"
+  "Project Presentation (with Final Portfolio)"
 )
 
 links <- c(
@@ -74,7 +74,7 @@ descriptions <- c(
   "Plain-language communication, revealjs slides, citations, and peer feedback.",
   "Dynamic Quarto reports, figures, tables, citations, limitations, and publishing workflow.",
   "Fresh-environment reproducibility testing, dependency repair, portfolio polish, and static dashboard extension.",
-  "Final project presentations, live Q&A, and peer review."
+  "Narrated slide deck submitted online with the Final Portfolio."
 )
 
 linked_topics <- paste0("<a href='", links, "'>", topics, "</a>")
