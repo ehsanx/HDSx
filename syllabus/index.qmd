@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Syllabus"
 ---
 
@@ -6,9 +6,8 @@ title: "Syllabus"
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(knitr)
 library(kableExtra)
-library(magrittr)
-options(knitr.table.format = "latex")
+.is_pdf <- knitr::is_latex_output()
+options(knitr.table.format = if (.is_pdf) "latex" else "pipe")
 ```
 
-{{< include syllabus-body.qmd >}}
-
+{{< include _syllabus-shared.qmd >}}
