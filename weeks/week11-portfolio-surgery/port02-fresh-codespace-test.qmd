@@ -4,7 +4,7 @@
 
 Test whether a project can run in a fresh environment and document the results and any failures before final submission.
 
-This page is the main Week 11 runbook. Use it for Assignment 10, M4 peer review, and final portfolio preparation.
+This page is the main Week 11 runbook. Use it for the Portfolio Surgery session, M4 peer review, and final portfolio preparation.
 
 <!-- AI-EDIT(2026-06-22): tester-note-conversion — converted instructor/tester-only "Tester note" callout to hidden HTML comment (pre-release guidance, not student-facing)
 Tester note:
@@ -42,7 +42,7 @@ Complete these steps in a new Codespace or equivalent clean environment. Work fr
 
 ## Failure Log
 
-Use this table for A10 and for peer review.
+Use this table for the Portfolio Surgery session and for peer review.
 
 | Check | Result | Evidence | Fix made | Owner |
 |---|---|---|---|---|

@@ -166,7 +166,6 @@ book:
         - assignments/assignment07-dashboard/README.md
         - assignments/assignment08-communication/README.md
         - assignments/assignment09-reporting/README.md
-        - assignments/assignment10-portfolio-surgery/README.md
         - milestones/index.qmd
         # AI-EDIT(2026-06-11): D-005 — milestone-template.qmd removed from student navigation (instructor authoring scaffold; file kept in repo) — needs review
         - milestones/m0-group-formation/README.md

@@ -11,8 +11,8 @@ The core pathway is a fresh Codespace reproducibility test, README and path repa
 
 <!-- AI-EDIT(2026-06-11): MIT-086, TF-001 — needs review -->
 ::: {.callout-important title="Required / Draft / Optional This Week"}
-- **Required (graded):** the [Assignment 10](../../assignments/assignment10-portfolio-surgery/README.md) files and the [M4 peer review](../../milestones/m4-peer-review/README.md), explained in [port06](port06-assignment-a10-final-portfolio.qmd).
-- **Draft (class work that feeds A10, not graded on its own):** the fresh-test failure log and repair notes from [port02](port02-fresh-codespace-test.qmd).
+- **Required (graded):** the [M4 peer review](../../milestones/m4-peer-review/README.md). Portfolio Surgery itself is an in-class working session (not separately graded); its outputs feed M4 and the Final Portfolio, as explained in [port06](port06-assignment-a10-final-portfolio.qmd).
+- **Draft (class work that feeds M4 and the portfolio, not graded on its own):** the fresh-test failure log and repair notes from [port02](port02-fresh-codespace-test.qmd).
 - **Optional / demo-only (no penalty for skipping):** the deployment and Python pathways in [port05](port05-optional-pathways.qmd).
 
 Tags like `[required]` and `[demo-only]` are defined in [How To Read Submission Lists](../../assignments/index.qmd#how-to-read-submission-lists).
@@ -43,9 +43,9 @@ Week 10 produced a report and M3 project update. Week 11 tests whether that work
 3. [port03 - README and Repo Hygiene](port03-readme-repo-hygiene.qmd)
 4. [port04 - Peer Review and M4](port04-peer-review-m4.qmd)
 5. [port05 - Optional Pathways](port05-optional-pathways.qmd)
-6. [port06 - Assignment 10 and Final Portfolio](port06-assignment-a10-final-portfolio.qmd)
+6. [port06 - Portfolio Surgery and the Final Portfolio](port06-assignment-a10-final-portfolio.qmd)
 
-The optional [static dashboard source file (view on GitHub)](https://github.com/ehsanx/HDSx/blob/main/weeks/week11-portfolio-surgery/static-dashboard-ojs.qmd) remains a demo-only example. It is not a required A10 or final portfolio pathway. <!-- AI-EDIT(2026-06-11): D-002/MIT-106 — needs review -->
+The optional [static dashboard source file (view on GitHub)](https://github.com/ehsanx/HDSx/blob/main/weeks/week11-portfolio-surgery/static-dashboard-ojs.qmd) remains a demo-only example. It is not a required final portfolio pathway. <!-- AI-EDIT(2026-06-11): D-002/MIT-106 — needs review -->
 
 ## Class Plan
 
@@ -59,11 +59,11 @@ The optional [static dashboard source file (view on GitHub)](https://github.com/
 
 ## Student Output
 
-By the end of class each group has a fresh-environment test log, a failure log, a repair summary, peer review notes, and a final risk list for A10 and final portfolio planning.
+By the end of class each group has a fresh-environment test log, a failure log, a repair summary, peer review notes, and a final risk list for M4 and final portfolio planning.
 
 ## Links
 
-- Assignment: [Assignment 10 - Portfolio Surgery](../../assignments/assignment10-portfolio-surgery/README.md)
+- Session guide: [Portfolio Surgery and the Final Portfolio](port06-assignment-a10-final-portfolio.qmd)
 - Milestone: [M4 - Peer Review](../../milestones/m4-peer-review/README.md)
 - Final package: [Final Portfolio](../../milestones/final-portfolio/README.md)
 

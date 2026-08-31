@@ -48,7 +48,7 @@ Students submit their GitHub repository link on Canvas after committing and sync
 
 ## Grading Checklist
 
-For Assignments 1-3, use Complete/Incomplete. For Assignments 4-10, use a practical 7-point checklist or a Complete/Needs Work checklist with the scored Canvas rubric.
+For Assignments 1-3, use Complete/Incomplete. For Assignments 4-9, use a practical 7-point checklist or a Complete/Needs Work checklist with the scored Canvas rubric.
 
 ## Definition of Done
 

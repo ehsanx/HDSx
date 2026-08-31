@@ -71,7 +71,7 @@ Submit your GitHub repository link on Canvas after committing and syncing the re
 
 ## Grading Checklist
 
-Canvas applies a 7-point rubric. This assignment is part of the best-5-of-7 set for Assignments 4-10. The full revealjs deck and the structured slide outline are graded identically — choosing the outline does not lower your possible score. <!-- AI-EDIT(2026-06-11): MIT-135 (R2-06) — needs review -->
+Canvas applies a 7-point rubric. This assignment is part of the best-4-of-6 set for Assignments 4-9. The full revealjs deck and the structured slide outline are graded identically — choosing the outline does not lower your possible score. <!-- AI-EDIT(2026-06-11): MIT-135 (R2-06) — needs review -->
 
 | Criterion | Points |
 |---|---:|

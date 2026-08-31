@@ -82,7 +82,7 @@ Submit your GitHub repository link on Canvas after committing and syncing the re
 
 ## Grading Checklist
 
-Canvas applies a 7-point rubric. This assignment is part of the best-5-of-7 set for Assignments 4-10:
+Canvas applies a 7-point rubric. This assignment is part of the best-4-of-6 set for Assignments 4-9:
 
 <!-- AI-EDIT(2026-06-11): MIT-133 — rubric restates documentation-only scope — needs review -->
 | Criterion | Points |
