@@ -1,5 +1,10 @@
 # M3: Project Update
 
+::: {.callout-tip title="See a worked example"}
+The [M3 submission in the NHANES worked example](../example-nhanes/m3.qmd) shows one illustrative version of this milestone. Use it for structure and depth — your project must be your own.
+:::
+
+
 ## Purpose
 
 M3 turns the preliminary analysis into a project draft that is ready for feedback. The update should show the current evidence, the intended KT product, and the main decisions that still need peer or instructor critique.

@@ -1,0 +1,142 @@
+---
+title: "Example: M1 — Project Proposal"
+---
+
+# Example: M1 — Project Proposal {.unnumbered}
+
+:::: {.callout-warning title="Illustrative example — do not copy"}
+This is **one** worked example on the class NHANES dataset, written by a *fictional* group, to show the expected **structure and depth** of a good submission. Your project must use **your own** question, data, audience, and analysis — do not copy this text or these files. This example lives in the public book for learning; graders assess your original work.
+::::
+
+Below is the *Cedar Equity Lab* group's `m1-proposal` submission from the worked NHANES example. See the [M1 brief](../m1-proposal/README.md) for what is required.
+
+
+---
+
+*File: `ai-use-note.md`*
+
+## AI-use note
+
+AI helped shorten the audience and KT-purpose paragraph. The group checked the
+dataset dimensions in R, verified the source and income-group derivation in the
+course files, and removed language that implied causality or national
+representation. The questions and feasibility decision were approved by all
+three group members.
+
+
+---
+
+*File: `data-intake-card.md`*
+
+## Data intake card
+
+- **Dataset:** NHANES Health Equity classroom dataset
+- **Source and steward:** CDC/National Center for Health Statistics, National
+  Health and Nutrition Examination Survey
+- **Access:** Prepared CSV committed at `data/nhanes_equity_v6.csv`; source
+  documentation at `https://wwwn.cdc.gov/nchs/nhanes/`; checked 2026-10-01
+- **Terms:** Public-use NHANES files; cite CDC/NCHS documentation
+- **Geography and time:** United States; cycles represented from 1999-2000
+  through 2017-2018 and 2021-2023
+- **Format and level:** CSV; row-level public-use-derived classroom records
+- **Unit of analysis:** One examination participant record within a survey
+  cycle
+- **Key variables:** `Age` in years; `BMI` in kg/m²; `IncomeGroup` derived from
+  the family income-to-poverty ratio; `Cycle` as the NHANES cycle label
+- **Privacy/security:** Use only aggregate outputs, avoid small-cell claims,
+  and do not upload row-level records to external AI tools
+- **Stewardship:** Describe group comparisons without stigma and keep the
+  prepared, unweighted classroom boundary beside results
+- **Indigenous Data Sovereignty relevance:** No specific Indigenous community,
+  service, territory, or identifier is part of the proposed comparison. We
+  will reassess CARE/OCAP relevance if the project scope changes.
+- **Known limitations:** Population inference requires the correct NHANES survey
+  design; the prepared file is not a causal dataset
+- **KT framing:** The data can identify a descriptive pattern worth discussing
+  while teaching the audience what the comparison cannot establish
+- **Citation:** CDC/NCHS, National Health and Nutrition Examination Survey,
+  `https://wwwn.cdc.gov/nchs/nhanes/`, accessed 2026-10-01
+
+AI could misstate the `IncomeGroup` cut-points or describe the group as an
+individual income measure. We checked the variable creation in the course
+case-study build script and will describe it as a derived category.
+
+
+---
+
+*File: `initial-visual-plan.md`*
+
+## Initial visual plan
+
+- Planned figure: a line plot of unweighted mean BMI across NHANES cycles, with
+  one line for each income group and visible cycle and BMI labels.
+- Audience purpose: help briefing staff see whether the small overall
+  income-group difference is similar across cycles or concentrated in a few
+  periods.
+- Misinterpretation risk: connected lines may be read as a causal trend or a
+  national estimate. The title and caption will say that the summary is
+  descriptive, unweighted, and based on the prepared classroom records.
+
+
+---
+
+*File: `proposal.md`*
+
+## Project proposal
+
+### Project and team
+
+**Title:** Income and BMI Patterns in NHANES Adults
+
+**Group:** Cedar Equity Lab — Maya Chen, Jordan Singh, and Alex Martin
+
+### Audience and KT purpose
+
+Our audience is municipal public-health staff preparing an internal
+health-equity briefing. The project will give them a simple descriptive view of
+income-group differences in the prepared dataset, while keeping the unweighted
+and non-causal limits visible. It is intended to support a discussion about
+what deserves closer survey-aware analysis, not an immediate policy decision.
+
+### Questions
+
+**Primary question:** How does mean BMI differ across income groups among
+adults age 20-80 in the prepared NHANES Health Equity classroom dataset?
+
+**Secondary question:** How does mean BMI vary across available NHANES cycles
+for one selected income group?
+
+### Data and planned output
+
+We will use the cached CSV derived from CDC/NCHS NHANES public-use files. The
+planned outputs are a Table 1-style summary, one cycle-by-income figure, a short
+Quarto report, and a small Quarto dashboard-style page with one editable income
+group.
+
+### Known limitations
+
+The cached file is a prepared classroom dataset. The proposed summaries are
+unweighted, will exclude some missing values after reporting them, and cannot
+support causal or national-population claims. A full NHANES analysis would
+require survey weights, strata, and primary sampling units.
+
+
+---
+
+*File: `reproducibility-plan.md`*
+
+## Reproducibility plan
+
+Expected folders are `data/`, `report/`, `dashboard/`, and `milestones/`. The
+cached public-use-derived CSV will be committed once under `data/` and treated
+as read-only. R source files will load `tidyverse` and `knitr` explicitly and
+use paths relative to the project root.
+
+Another student should be able to open the course Codespace, start at the
+repository root, and run `quarto render` on the named source. Generated tables,
+figures, and HTML files will be regenerated from code rather than edited by
+hand. Any added dependency will be recorded before use.
+
+Feasibility check: the CSV loaded successfully in the course environment with
+105,626 rows and 18 columns. R is the project language; a Python version is not
+needed for the proposed questions.

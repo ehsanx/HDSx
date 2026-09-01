@@ -1,5 +1,10 @@
 # Final Portfolio
 
+::: {.callout-tip title="See a worked example"}
+The [the Final Portfolio submission in the NHANES worked example](../example-nhanes/final.qmd) shows one illustrative version of this milestone. Use it for structure and depth — your project must be your own.
+:::
+
+
 ## Purpose
 
 The final portfolio is the complete project record: report, code, data documentation, dashboard-style KT product, presentation materials, reproducibility evidence, and AI-use audit. It should let another person understand what was done, why it matters, and how to rerun or inspect the work.

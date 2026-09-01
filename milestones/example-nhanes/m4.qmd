@@ -1,0 +1,136 @@
+---
+title: "Example: M4 — Peer Review"
+---
+
+# Example: M4 — Peer Review {.unnumbered}
+
+:::: {.callout-warning title="Illustrative example — do not copy"}
+This is **one** worked example on the class NHANES dataset, written by a *fictional* group, to show the expected **structure and depth** of a good submission. Your project must use **your own** question, data, audience, and analysis — do not copy this text or these files. This example lives in the public book for learning; graders assess your original work.
+::::
+
+Below is the *Cedar Equity Lab* group's `m4-peer-review` submission from the worked NHANES example. See the [M4 brief](../m4-peer-review/README.md) for what is required.
+
+
+---
+
+*File: `ai-use-note.md`*
+
+## AI-use note
+
+AI was not used to inspect the peer files or generate evidence. After the group
+completed the render and file checks, AI was used once to suggest a shorter
+heading order for the review. We compared the reorganized note with the files
+we actually opened and removed one generic suggestion that was not supported by
+the snapshot.
+
+
+---
+
+*File: `auditability-check.md`*
+
+## Auditability check
+
+- **Data provenance:** Partly clear. The project names a fictional community
+  health survey extract but gives no steward, version, access route, or variable
+  definition.
+- **AI disclosure:** Present and specific to shortening the limitation. The
+  note says the group checked the causal wording.
+- **Claim support:** Not yet sufficient. The 62% and 54% values cannot be
+  traced to code or data in the snapshot.
+- **Limitations:** Visible and appropriately descriptive. The denominator and
+  missing-response rule still need to be stated beside the result.
+
+
+---
+
+*File: `kt-feedback.md`*
+
+## KT feedback
+
+- **Audience fit:** The one-page comparison card is a reasonable format for
+  city planning staff, and the near/far wording is easier to understand than a
+  technical distance variable name.
+- **Plain language:** The main sentence is clear. Replace "reported good or very
+  good health more often" with the two percentages beside it so the size of the
+  difference stays visible.
+- **Visual clarity:** We could not assess the actual page because there is no
+  screenshot or render. A plain static preview would be enough for review.
+- **Actionability:** End with a modest next step, such as checking age and
+  mobility patterns before using the comparison in planning discussion.
+- **Privacy:** Keep the page aggregate. Do not display respondent rows, exact
+  addresses, or small neighbourhood cells in the preview.
+
+
+---
+
+*File: `peer-review.md`*
+
+## Peer review
+
+**Reviewed project:** Walking Access and Self-Rated Health, Northside Active
+Living Team
+
+### Two strengths
+
+1. The question and audience are focused. A city planning team can understand
+   why the near/far comparison might be useful for a first discussion.
+2. The draft does not claim that walking-route access causes better health. It
+   names age, mobility, neighbourhood conditions, and missing responses as
+   possible limitations.
+
+### Three prioritized revision suggestions
+
+1. **First, make the result reproducible.** Add the classroom data access path
+   and the code that produces 62% and 54%. The current report renders, but the
+   table is manually typed, so we could not check the denominators or missing
+   responses.
+2. **Add an openable KT preview.** A plain screenshot or rendered static page
+   is enough. The current text describes a selector, but a reviewer cannot see
+   the proposed labels, visual hierarchy, or limitation placement.
+3. **Clarify the denominator beside each percentage.** State whether missing
+   self-rated-health responses were excluded and whether 430 and 382 are the
+   denominators used for 62% and 54%. This will make the result easier to audit
+   and harder to overread.
+
+### Question for the group
+
+Will the final comparison keep the two distance categories supplied in the
+classroom extract, or will your team create a new cut-point? If it changes,
+please document why before updating the percentages.
+
+### Blocking reproducibility risk
+
+The absent data access step and calculation code would block final
+reproducibility. A reviewer can render the prose-only QMD but cannot regenerate
+or verify the central result.
+
+### Reviewer reflection
+
+- Reviewing this project reminded us that a document can render successfully
+  while its analysis is still not reproducible.
+- Missing self-rated-health responses and differences in age or mobility need
+  the most attention because they could change how the near/far comparison is
+  interpreted.
+- For our own project, we will open the README first, run the stated command,
+  and trace the main number to code before commenting on presentation quality.
+
+
+---
+
+*File: `reproducibility-check.md`*
+
+## Reproducibility check
+
+- **Report render:** Passed with `quarto render report-draft.qmd` from the
+  fictional M3 snapshot folder.
+- **Paths:** No absolute path appears in the QMD, but there is also no data path
+  or analysis script to test.
+- **Data access:** Not clear. The source is described only as a fictional
+  classroom survey extract and no file/access route is supplied.
+- **Figures and tables from code:** No. The central table is typed in Markdown
+  and the draft contains no code that calculates the percentages.
+- **KT product:** Could not be opened. `dashboard-preview.md` describes the
+  planned page but does not point to a screenshot, render, or source.
+- **Stopping point:** We completed the report render, then stopped the analytic
+  rerun because the data and calculation code were unavailable. The project
+  owner needs to add both and document the root run command.

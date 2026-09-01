@@ -1,5 +1,10 @@
 # M1: Project Proposal
 
+::: {.callout-tip title="See a worked example"}
+The [M1 submission in the NHANES worked example](../example-nhanes/m1.qmd) shows one illustrative version of this milestone. Use it for structure and depth — your project must be your own.
+:::
+
+
 ## Purpose
 
 M1 turns a broad project idea into a scoped, feasible, and ethically grounded analytic plan. The proposal should make the audience, data source, question, reproducibility plan, and first visualization direction clear enough for feedback.

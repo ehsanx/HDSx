@@ -1,0 +1,78 @@
+---
+title: "Example: M0 — Group Formation"
+---
+
+# Example: M0 — Group Formation {.unnumbered}
+
+:::: {.callout-warning title="Illustrative example — do not copy"}
+This is **one** worked example on the class NHANES dataset, written by a *fictional* group, to show the expected **structure and depth** of a good submission. Your project must use **your own** question, data, audience, and analysis — do not copy this text or these files. This example lives in the public book for learning; graders assess your original work.
+::::
+
+Below is the *Cedar Equity Lab* group's `m0-group-formation` submission from the worked NHANES example. See the [M0 brief](../m0-group-formation/README.md) for what is required.
+
+
+---
+
+*File: `ai-use-note.md`*
+
+## AI-use note
+
+AI was used to suggest headings for the communication plan. The group read and
+edited each norm, then independently tested repository and Codespace access.
+The group will not outsource source verification, interpretation of results,
+privacy decisions, or final approval of submitted claims to AI.
+
+
+---
+
+*File: `codespace-check.md`*
+
+## Codespace check
+
+- Tested by: Maya Chen, Jordan Singh, and Alex Martin
+- Test: opened the group Codespace, ran `quarto check`, and confirmed that R,
+  Quarto, and the tidyverse were available.
+- Result: passed for all three members.
+- Setup issue and plan: no current issue; package or path problems will be
+  recorded in the README before the next milestone.
+
+
+---
+
+*File: `communication-plan.md`*
+
+## Communication plan
+
+- Primary channel: the group's private course chat.
+- Response window: within 24 hours on weekdays and 48 hours on weekends.
+- Weekly check-in: 20 minutes after Tuesday class.
+- Decision record: one member adds dated decisions to the repository README or
+  the relevant milestone note; another member confirms the change in the pull
+  request.
+
+
+---
+
+*File: `group-formation.md`*
+
+## Group formation
+
+- Group name: Cedar Equity Lab
+- Student names: Maya Chen, Jordan Singh, Alex Martin
+- GitHub usernames: `mayac-hds`, `jsingh-data`, `alexm-publichealth`
+- Project area: Descriptive income and BMI patterns in the prepared NHANES classroom dataset.
+- Primary repository owner: Maya Chen (`mayac-hds`)
+
+
+---
+
+*File: `repo-access-evidence.md`*
+
+## Repository access evidence
+
+- Shared repository: `https://github.com/example-course/cedar-nhanes-equity`
+- All three group members confirmed that they could open the repository.
+- All three group members confirmed that they could open it in Codespaces.
+
+The URL above is a representative, non-live value in this static instructor
+sample. A real M0 submission must contain a working group repository URL.

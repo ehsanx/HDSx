@@ -8805,6 +8805,435 @@
     ]
   },
   {
+    "objectID": "milestones/example-nhanes/index.html",
+    "href": "milestones/example-nhanes/index.html",
+    "title": "Worked Example (NHANES)",
+    "section": "",
+    "text": "Worked Example (NHANES)\nTo make the milestone briefs concrete, this section shows one complete worked project — the fictional Cedar Equity Lab group studying income and BMI patterns in the class NHANES dataset — developed all the way from group formation to the final portfolio.\nRead it for the shape and quality of good work: how a question is scoped, how a Table 1 and missingness summary are presented, how limitations are stated, how AI use is documented, and how a peer review is written. Then build your own project on your own question and data.",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>57</span>  <span class='chapter-title'>Worked Example (NHANES)</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/index.html#the-milestones",
+    "href": "milestones/example-nhanes/index.html#the-milestones",
+    "title": "Worked Example (NHANES)",
+    "section": "The milestones",
+    "text": "The milestones\n\nM0 — Group Formation\nM1 — Project Proposal\nM2 — Preliminary Analysis\nM3 — Project Update\nM4 — Peer Review\nPresentation — Narrated Deck\nFinal Portfolio",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>57</span>  <span class='chapter-title'>Worked Example (NHANES)</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/m0.html",
+    "href": "milestones/example-nhanes/m0.html",
+    "title": "Example: M0 — Group Formation",
+    "section": "",
+    "text": "Example: M0 — Group Formation\nBelow is the Cedar Equity Lab group’s m0-group-formation submission from the worked NHANES example. See the M0 brief for what is required.\nFile: ai-use-note.md",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>58</span>  <span class='chapter-title'>Example: M0 — Group Formation</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/m0.html#ai-use-note",
+    "href": "milestones/example-nhanes/m0.html#ai-use-note",
+    "title": "Example: M0 — Group Formation",
+    "section": "AI-use note",
+    "text": "AI-use note\nAI was used to suggest headings for the communication plan. The group read and edited each norm, then independently tested repository and Codespace access. The group will not outsource source verification, interpretation of results, privacy decisions, or final approval of submitted claims to AI.\n\nFile: codespace-check.md",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>58</span>  <span class='chapter-title'>Example: M0 — Group Formation</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/m0.html#codespace-check",
+    "href": "milestones/example-nhanes/m0.html#codespace-check",
+    "title": "Example: M0 — Group Formation",
+    "section": "Codespace check",
+    "text": "Codespace check\n\nTested by: Maya Chen, Jordan Singh, and Alex Martin\nTest: opened the group Codespace, ran quarto check, and confirmed that R, Quarto, and the tidyverse were available.\nResult: passed for all three members.\nSetup issue and plan: no current issue; package or path problems will be recorded in the README before the next milestone.\n\n\nFile: communication-plan.md",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>58</span>  <span class='chapter-title'>Example: M0 — Group Formation</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/m0.html#communication-plan",
+    "href": "milestones/example-nhanes/m0.html#communication-plan",
+    "title": "Example: M0 — Group Formation",
+    "section": "Communication plan",
+    "text": "Communication plan\n\nPrimary channel: the group’s private course chat.\nResponse window: within 24 hours on weekdays and 48 hours on weekends.\nWeekly check-in: 20 minutes after Tuesday class.\nDecision record: one member adds dated decisions to the repository README or the relevant milestone note; another member confirms the change in the pull request.\n\n\nFile: group-formation.md",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>58</span>  <span class='chapter-title'>Example: M0 — Group Formation</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/m0.html#group-formation",
+    "href": "milestones/example-nhanes/m0.html#group-formation",
+    "title": "Example: M0 — Group Formation",
+    "section": "Group formation",
+    "text": "Group formation\n\nGroup name: Cedar Equity Lab\nStudent names: Maya Chen, Jordan Singh, Alex Martin\nGitHub usernames: mayac-hds, jsingh-data, alexm-publichealth\nProject area: Descriptive income and BMI patterns in the prepared NHANES classroom dataset.\nPrimary repository owner: Maya Chen (mayac-hds)\n\n\nFile: repo-access-evidence.md",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>58</span>  <span class='chapter-title'>Example: M0 — Group Formation</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/m0.html#repository-access-evidence",
+    "href": "milestones/example-nhanes/m0.html#repository-access-evidence",
+    "title": "Example: M0 — Group Formation",
+    "section": "Repository access evidence",
+    "text": "Repository access evidence\n\nShared repository: https://github.com/example-course/cedar-nhanes-equity\nAll three group members confirmed that they could open the repository.\nAll three group members confirmed that they could open it in Codespaces.\n\nThe URL above is a representative, non-live value in this static instructor sample. A real M0 submission must contain a working group repository URL.",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>58</span>  <span class='chapter-title'>Example: M0 — Group Formation</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/m1.html",
+    "href": "milestones/example-nhanes/m1.html",
+    "title": "Example: M1 — Project Proposal",
+    "section": "",
+    "text": "Example: M1 — Project Proposal\nBelow is the Cedar Equity Lab group’s m1-proposal submission from the worked NHANES example. See the M1 brief for what is required.\nFile: ai-use-note.md",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>59</span>  <span class='chapter-title'>Example: M1 — Project Proposal</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/m1.html#ai-use-note",
+    "href": "milestones/example-nhanes/m1.html#ai-use-note",
+    "title": "Example: M1 — Project Proposal",
+    "section": "AI-use note",
+    "text": "AI-use note\nAI helped shorten the audience and KT-purpose paragraph. The group checked the dataset dimensions in R, verified the source and income-group derivation in the course files, and removed language that implied causality or national representation. The questions and feasibility decision were approved by all three group members.\n\nFile: data-intake-card.md",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>59</span>  <span class='chapter-title'>Example: M1 — Project Proposal</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/m1.html#data-intake-card",
+    "href": "milestones/example-nhanes/m1.html#data-intake-card",
+    "title": "Example: M1 — Project Proposal",
+    "section": "Data intake card",
+    "text": "Data intake card\n\nDataset: NHANES Health Equity classroom dataset\nSource and steward: CDC/National Center for Health Statistics, National Health and Nutrition Examination Survey\nAccess: Prepared CSV committed at data/nhanes_equity_v6.csv; source documentation at https://wwwn.cdc.gov/nchs/nhanes/; checked 2026-10-01\nTerms: Public-use NHANES files; cite CDC/NCHS documentation\nGeography and time: United States; cycles represented from 1999-2000 through 2017-2018 and 2021-2023\nFormat and level: CSV; row-level public-use-derived classroom records\nUnit of analysis: One examination participant record within a survey cycle\nKey variables: Age in years; BMI in kg/m²; IncomeGroup derived from the family income-to-poverty ratio; Cycle as the NHANES cycle label\nPrivacy/security: Use only aggregate outputs, avoid small-cell claims, and do not upload row-level records to external AI tools\nStewardship: Describe group comparisons without stigma and keep the prepared, unweighted classroom boundary beside results\nIndigenous Data Sovereignty relevance: No specific Indigenous community, service, territory, or identifier is part of the proposed comparison. We will reassess CARE/OCAP relevance if the project scope changes.\nKnown limitations: Population inference requires the correct NHANES survey design; the prepared file is not a causal dataset\nKT framing: The data can identify a descriptive pattern worth discussing while teaching the audience what the comparison cannot establish\nCitation: CDC/NCHS, National Health and Nutrition Examination Survey, https://wwwn.cdc.gov/nchs/nhanes/, accessed 2026-10-01\n\nAI could misstate the IncomeGroup cut-points or describe the group as an individual income measure. We checked the variable creation in the course case-study build script and will describe it as a derived category.\n\nFile: initial-visual-plan.md",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>59</span>  <span class='chapter-title'>Example: M1 — Project Proposal</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/m1.html#initial-visual-plan",
+    "href": "milestones/example-nhanes/m1.html#initial-visual-plan",
+    "title": "Example: M1 — Project Proposal",
+    "section": "Initial visual plan",
+    "text": "Initial visual plan\n\nPlanned figure: a line plot of unweighted mean BMI across NHANES cycles, with one line for each income group and visible cycle and BMI labels.\nAudience purpose: help briefing staff see whether the small overall income-group difference is similar across cycles or concentrated in a few periods.\nMisinterpretation risk: connected lines may be read as a causal trend or a national estimate. The title and caption will say that the summary is descriptive, unweighted, and based on the prepared classroom records.\n\n\nFile: proposal.md",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>59</span>  <span class='chapter-title'>Example: M1 — Project Proposal</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/m1.html#project-proposal",
+    "href": "milestones/example-nhanes/m1.html#project-proposal",
+    "title": "Example: M1 — Project Proposal",
+    "section": "Project proposal",
+    "text": "Project proposal\n\nProject and team\nTitle: Income and BMI Patterns in NHANES Adults\nGroup: Cedar Equity Lab — Maya Chen, Jordan Singh, and Alex Martin\n\n\nAudience and KT purpose\nOur audience is municipal public-health staff preparing an internal health-equity briefing. The project will give them a simple descriptive view of income-group differences in the prepared dataset, while keeping the unweighted and non-causal limits visible. It is intended to support a discussion about what deserves closer survey-aware analysis, not an immediate policy decision.\n\n\nQuestions\nPrimary question: How does mean BMI differ across income groups among adults age 20-80 in the prepared NHANES Health Equity classroom dataset?\nSecondary question: How does mean BMI vary across available NHANES cycles for one selected income group?\n\n\nData and planned output\nWe will use the cached CSV derived from CDC/NCHS NHANES public-use files. The planned outputs are a Table 1-style summary, one cycle-by-income figure, a short Quarto report, and a small Quarto dashboard-style page with one editable income group.\n\n\nKnown limitations\nThe cached file is a prepared classroom dataset. The proposed summaries are unweighted, will exclude some missing values after reporting them, and cannot support causal or national-population claims. A full NHANES analysis would require survey weights, strata, and primary sampling units.\n\nFile: reproducibility-plan.md",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>59</span>  <span class='chapter-title'>Example: M1 — Project Proposal</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/m1.html#reproducibility-plan",
+    "href": "milestones/example-nhanes/m1.html#reproducibility-plan",
+    "title": "Example: M1 — Project Proposal",
+    "section": "Reproducibility plan",
+    "text": "Reproducibility plan\nExpected folders are data/, report/, dashboard/, and milestones/. The cached public-use-derived CSV will be committed once under data/ and treated as read-only. R source files will load tidyverse and knitr explicitly and use paths relative to the project root.\nAnother student should be able to open the course Codespace, start at the repository root, and run quarto render on the named source. Generated tables, figures, and HTML files will be regenerated from code rather than edited by hand. Any added dependency will be recorded before use.\nFeasibility check: the CSV loaded successfully in the course environment with 105,626 rows and 18 columns. R is the project language; a Python version is not needed for the proposed questions.",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>59</span>  <span class='chapter-title'>Example: M1 — Project Proposal</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/m2.html",
+    "href": "milestones/example-nhanes/m2.html",
+    "title": "Example: M2 — Preliminary Analysis",
+    "section": "",
+    "text": "Example: M2 — Preliminary Analysis\nBelow is the Cedar Equity Lab group’s m2-preliminary-analysis submission from the worked NHANES example. See the M2 brief for what is required.\nFile: ai-use-note.md",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>60</span>  <span class='chapter-title'>Example: M2 — Preliminary Analysis</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/m2.html#ai-use-note",
+    "href": "milestones/example-nhanes/m2.html#ai-use-note",
+    "title": "Example: M2 — Preliminary Analysis",
+    "section": "AI-use note",
+    "text": "AI-use note\nAI suggested a tidyverse outline for the grouped summary and a shorter first draft of the interpretation. We independently checked:\n\nthe prepared-file and adult-cohort row counts;\nmissingness before complete-case exclusions;\nthe income-group labels and the N, means, and standard deviations in the CSV export;\nthat the rendered figure matches the grouped data; and\nthat the final prose says descriptive and unweighted and makes no causal or national-population claim.\n\n\nFile: methods-note.md",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>60</span>  <span class='chapter-title'>Example: M2 — Preliminary Analysis</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/m2.html#methods-note",
+    "href": "milestones/example-nhanes/m2.html#methods-note",
+    "title": "Example: M2 — Preliminary Analysis",
+    "section": "Methods note",
+    "text": "Methods note\nWe used the prepared NHANES Health Equity classroom CSV and restricted the cohort to ages 20-80, inclusive. We reported missingness for the key variables before selecting complete records for age, BMI, and income group. The grouped summary reports N, BMI mean (SD), and age mean (SD) by IncomeGroup; the figure shows unweighted mean BMI by income group and cycle. These results describe the prepared classroom records and cannot support causal or national-population claims.\nThe preliminary analysis builds on Jordan’s A6 eda-note.qmd; the group rechecked the cohort, denominators, exports, and wording before reuse.\n\nFile: missingness-summary.csv — view the data table\n\nFile: preliminary-analysis.html — view the rendered output\n\nFile: table1.csv — view the data table",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>60</span>  <span class='chapter-title'>Example: M2 — Preliminary Analysis</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/m3.html",
+    "href": "milestones/example-nhanes/m3.html",
+    "title": "Example: M3 — Project Update",
+    "section": "",
+    "text": "Example: M3 — Project Update\nBelow is the Cedar Equity Lab group’s m3-project-update submission from the worked NHANES example. See the M3 brief for what is required.\nFile: ai-use-note.md",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>61</span>  <span class='chapter-title'>Example: M3 — Project Update</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/m3.html#ai-use-note",
+    "href": "milestones/example-nhanes/m3.html#ai-use-note",
+    "title": "Example: M3 — Project Update",
+    "section": "AI-use note",
+    "text": "AI-use note\nAI helped propose a shorter ordering for the draft report and flagged two sentences as potentially causal. The group checked every displayed number against the rendered table, confirmed the CDC/NCHS citation in references.bib, reran the report and dashboard, and rewrote the interpretation to say descriptive, unweighted, and modest.\n\nFile: dashboard-preview.md",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>61</span>  <span class='chapter-title'>Example: M3 — Project Update</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/m3.html#dashboard-preview",
+    "href": "milestones/example-nhanes/m3.html#dashboard-preview",
+    "title": "Example: M3 — Project Update",
+    "section": "Dashboard preview",
+    "text": "Dashboard preview\n\nCurrent source: dashboard/dashboard.qmd\nRendered preview: dashboard/dashboard.html\nIntended audience: municipal public-health staff preparing an internal health-equity briefing\nFeature: change the single selected_income value and re-render to update the table, title, and cycle plot\nLimitation/privacy caution: the page shows aggregate, unweighted classroom summaries only; it does not expose row-level data or support causal or national-population claims\n\n\nFile: feedback-request.md",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>61</span>  <span class='chapter-title'>Example: M3 — Project Update</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/m3.html#feedback-request",
+    "href": "milestones/example-nhanes/m3.html#feedback-request",
+    "title": "Example: M3 — Project Update",
+    "section": "Feedback request",
+    "text": "Feedback request\nPlease focus on these questions:\n\nCorrectness: Do the complete-case counts in the report agree with the table and figure?\nInterpretation: Is the difference described as modest and descriptive, without implying causality or national representation?\nVisual clarity: Does the cycle figure make the small group difference understandable without exaggerating it?\nReproducibility: Are the root render commands and data path clear enough to follow in a fresh Codespace?\nAudience fit: Would a municipal public-health briefing team understand what question this result should prompt next?\n\n\nFile: project-update.md",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>61</span>  <span class='chapter-title'>Example: M3 — Project Update</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/m3.html#project-update",
+    "href": "milestones/example-nhanes/m3.html#project-update",
+    "title": "Example: M3 — Project Update",
+    "section": "Project update",
+    "text": "Project update\n\nCurrent title: Income and BMI Patterns in NHANES Adults\nAudience: Municipal public-health staff preparing an internal health-equity briefing\nRefined primary question: How does mean BMI differ across income groups among adults age 20-80 in the prepared classroom dataset?\nData and sample: Cached CDC/NCHS NHANES-derived classroom CSV; 57,137 adult rows before missing BMI and income-group exclusions\nStable finding: Mean BMI is about 28.6 in the high-income group, 29.4 in the low-income group, and 29.3 in the middle-income group in the complete adult records.\nChoice needing review: Does the cycle-by-income figure help the audience understand the small difference without making it look more important than it is?\nNext steps: Apply peer feedback, align the dashboard wording with the report, complete a fresh-environment render, and turn the story into M5 slides.\n\n\nFile: report-draft.html — view the rendered output\n\nFile: reproducibility-note.md",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>61</span>  <span class='chapter-title'>Example: M3 — Project Update</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/m3.html#reproducibility-note",
+    "href": "milestones/example-nhanes/m3.html#reproducibility-note",
+    "title": "Example: M3 — Project Update",
+    "section": "Reproducibility note",
+    "text": "Reproducibility note\nFrom the project root in the course Codespace, run quarto render milestones/m3-project-update/submission/report-draft.qmd and quarto render dashboard/dashboard.qmd. Both sources load the committed CSV at data/nhanes_equity_v6.csv using a relative path and require only tidyverse and knitr. The current renders completed without a manual data or path step.",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>61</span>  <span class='chapter-title'>Example: M3 — Project Update</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/m4.html",
+    "href": "milestones/example-nhanes/m4.html",
+    "title": "Example: M4 — Peer Review",
+    "section": "",
+    "text": "Example: M4 — Peer Review\nBelow is the Cedar Equity Lab group’s m4-peer-review submission from the worked NHANES example. See the M4 brief for what is required.\nFile: ai-use-note.md",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>62</span>  <span class='chapter-title'>Example: M4 — Peer Review</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/m4.html#ai-use-note",
+    "href": "milestones/example-nhanes/m4.html#ai-use-note",
+    "title": "Example: M4 — Peer Review",
+    "section": "AI-use note",
+    "text": "AI-use note\nAI was not used to inspect the peer files or generate evidence. After the group completed the render and file checks, AI was used once to suggest a shorter heading order for the review. We compared the reorganized note with the files we actually opened and removed one generic suggestion that was not supported by the snapshot.\n\nFile: auditability-check.md",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>62</span>  <span class='chapter-title'>Example: M4 — Peer Review</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/m4.html#auditability-check",
+    "href": "milestones/example-nhanes/m4.html#auditability-check",
+    "title": "Example: M4 — Peer Review",
+    "section": "Auditability check",
+    "text": "Auditability check\n\nData provenance: Partly clear. The project names a fictional community health survey extract but gives no steward, version, access route, or variable definition.\nAI disclosure: Present and specific to shortening the limitation. The note says the group checked the causal wording.\nClaim support: Not yet sufficient. The 62% and 54% values cannot be traced to code or data in the snapshot.\nLimitations: Visible and appropriately descriptive. The denominator and missing-response rule still need to be stated beside the result.\n\n\nFile: kt-feedback.md",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>62</span>  <span class='chapter-title'>Example: M4 — Peer Review</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/m4.html#kt-feedback",
+    "href": "milestones/example-nhanes/m4.html#kt-feedback",
+    "title": "Example: M4 — Peer Review",
+    "section": "KT feedback",
+    "text": "KT feedback\n\nAudience fit: The one-page comparison card is a reasonable format for city planning staff, and the near/far wording is easier to understand than a technical distance variable name.\nPlain language: The main sentence is clear. Replace “reported good or very good health more often” with the two percentages beside it so the size of the difference stays visible.\nVisual clarity: We could not assess the actual page because there is no screenshot or render. A plain static preview would be enough for review.\nActionability: End with a modest next step, such as checking age and mobility patterns before using the comparison in planning discussion.\nPrivacy: Keep the page aggregate. Do not display respondent rows, exact addresses, or small neighbourhood cells in the preview.\n\n\nFile: peer-review.md",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>62</span>  <span class='chapter-title'>Example: M4 — Peer Review</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/m4.html#peer-review",
+    "href": "milestones/example-nhanes/m4.html#peer-review",
+    "title": "Example: M4 — Peer Review",
+    "section": "Peer review",
+    "text": "Peer review\nReviewed project: Walking Access and Self-Rated Health, Northside Active Living Team\n\nTwo strengths\n\nThe question and audience are focused. A city planning team can understand why the near/far comparison might be useful for a first discussion.\nThe draft does not claim that walking-route access causes better health. It names age, mobility, neighbourhood conditions, and missing responses as possible limitations.\n\n\n\nThree prioritized revision suggestions\n\nFirst, make the result reproducible. Add the classroom data access path and the code that produces 62% and 54%. The current report renders, but the table is manually typed, so we could not check the denominators or missing responses.\nAdd an openable KT preview. A plain screenshot or rendered static page is enough. The current text describes a selector, but a reviewer cannot see the proposed labels, visual hierarchy, or limitation placement.\nClarify the denominator beside each percentage. State whether missing self-rated-health responses were excluded and whether 430 and 382 are the denominators used for 62% and 54%. This will make the result easier to audit and harder to overread.\n\n\n\nQuestion for the group\nWill the final comparison keep the two distance categories supplied in the classroom extract, or will your team create a new cut-point? If it changes, please document why before updating the percentages.\n\n\nBlocking reproducibility risk\nThe absent data access step and calculation code would block final reproducibility. A reviewer can render the prose-only QMD but cannot regenerate or verify the central result.\n\n\nReviewer reflection\n\nReviewing this project reminded us that a document can render successfully while its analysis is still not reproducible.\nMissing self-rated-health responses and differences in age or mobility need the most attention because they could change how the near/far comparison is interpreted.\nFor our own project, we will open the README first, run the stated command, and trace the main number to code before commenting on presentation quality.\n\n\nFile: reproducibility-check.md",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>62</span>  <span class='chapter-title'>Example: M4 — Peer Review</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/m4.html#reproducibility-check",
+    "href": "milestones/example-nhanes/m4.html#reproducibility-check",
+    "title": "Example: M4 — Peer Review",
+    "section": "Reproducibility check",
+    "text": "Reproducibility check\n\nReport render: Passed with quarto render report-draft.qmd from the fictional M3 snapshot folder.\nPaths: No absolute path appears in the QMD, but there is also no data path or analysis script to test.\nData access: Not clear. The source is described only as a fictional classroom survey extract and no file/access route is supplied.\nFigures and tables from code: No. The central table is typed in Markdown and the draft contains no code that calculates the percentages.\nKT product: Could not be opened. dashboard-preview.md describes the planned page but does not point to a screenshot, render, or source.\nStopping point: We completed the report render, then stopped the analytic rerun because the data and calculation code were unavailable. The project owner needs to add both and document the root run command.",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>62</span>  <span class='chapter-title'>Example: M4 — Peer Review</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/m5.html",
+    "href": "milestones/example-nhanes/m5.html",
+    "title": "Example: Presentation — Narrated Deck",
+    "section": "",
+    "text": "Example: Presentation — Narrated Deck\nBelow is the Cedar Equity Lab group’s m5-presentation submission from the worked NHANES example. See the Presentation brief for what is required.\nFile: ai-use-note.md",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>63</span>  <span class='chapter-title'>Example: Presentation — Narrated Deck</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/m5.html#ai-use-note",
+    "href": "milestones/example-nhanes/m5.html#ai-use-note",
+    "title": "Example: Presentation — Narrated Deck",
+    "section": "AI-use note",
+    "text": "AI-use note\nAI suggested shorter slide titles and identified jargon in the first draft. The group checked the 57,137 cohort count, missingness values, three displayed means, figure labels, and source note against the final report and rendered slides. We rejected a suggested phrase that implied income predicted BMI.\n\nFile: peer-feedback-received.md",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>63</span>  <span class='chapter-title'>Example: Presentation — Narrated Deck</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/m5.html#peer-feedback-received-on-the-nhanes-project",
+    "href": "milestones/example-nhanes/m5.html#peer-feedback-received-on-the-nhanes-project",
+    "title": "Example: Presentation — Narrated Deck",
+    "section": "Peer feedback received on the NHANES project",
+    "text": "Peer feedback received on the NHANES project\nThis is inward-facing feedback on our NHANES project. It is separate from the outward-facing M4 review we wrote about the Northside Active Living project.\n\nSource: River Health Team’s review of our M3 report and KT preview.\nFeedback received: Say explicitly that the overall difference is small; use “Average BMI (kg/m²)” rather than “Mean BMI” in the audience-facing dashboard; and keep the unweighted limitation beside the figure.\nChanges made: We added “modest/small” to the report and slides, expanded the dashboard label and units, and placed the descriptive/unweighted caution in the dashboard figure caption and limitation section.\nSuggestion not adopted: The reviewers suggested a second dashboard control for age range. We kept one income-group control because the current audience question is answered without added complexity.\n\n\nFile: presentation-checklist.md",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>63</span>  <span class='chapter-title'>Example: Presentation — Narrated Deck</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/m5.html#presentation-checklist",
+    "href": "milestones/example-nhanes/m5.html#presentation-checklist",
+    "title": "Example: Presentation — Narrated Deck",
+    "section": "Presentation checklist",
+    "text": "Presentation checklist\n\nSix-slide story fits a seven-minute practice run.\nAudience, question, and KT purpose are visible near the start.\nData source, adult cohort, and missingness are stated.\nMain figure title, units, source boundary, and limitation are readable.\nInterpretation remains descriptive and non-causal.\nPrivacy and stewardship caution is included in the source note.\nSlides render from the project root without local-only files.\nFinal slide gives a practical next analytic question.\nBackup notes include source, cohort, and AI-use details.\n\n\nFile: slides.html — view the rendered output\n\nFile: source-and-limitations-note.md",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>63</span>  <span class='chapter-title'>Example: Presentation — Narrated Deck</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/m5.html#source-and-limitations-note",
+    "href": "milestones/example-nhanes/m5.html#source-and-limitations-note",
+    "title": "Example: Presentation — Narrated Deck",
+    "section": "Source and limitations note",
+    "text": "Source and limitations note\n\nSource: Prepared classroom snapshot derived from CDC/NCHS National Health and Nutrition Examination Survey public-use files; https://wwwn.cdc.gov/nchs/nhanes/\nInclusion/exclusion: Ages 20-80 inclusive; grouped results use non-missing age, BMI, and income group; cycle figure also requires a non-missing cycle\nClaim type: Descriptive and unweighted, not predictive or causal\nPrivacy/stewardship caution: Show aggregate results only, avoid stigmatizing income groups, and do not upload row-level records to AI tools\nLimitation to say aloud: The analysis does not use the NHANES survey design and is not a national estimate",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>63</span>  <span class='chapter-title'>Example: Presentation — Narrated Deck</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/final.html",
+    "href": "milestones/example-nhanes/final.html",
+    "title": "Example: Final Portfolio",
+    "section": "",
+    "text": "Example: Final Portfolio\nBelow is the Cedar Equity Lab group’s final-portfolio submission from the worked NHANES example. See the Final Portfolio brief for what is required.\nFile: ai-use-note.md",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>64</span>  <span class='chapter-title'>Example: Final Portfolio</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/final.html#final-project-ai-use-audit",
+    "href": "milestones/example-nhanes/final.html#final-project-ai-use-audit",
+    "title": "Example: Final Portfolio",
+    "section": "Final project AI-use audit",
+    "text": "Final project AI-use audit\n\nMajor uses\n\nShortened the audience and KT-purpose language in M1.\nSuggested an initial tidyverse outline for the M2 grouped summary.\nHelped reorder the M3 report and identify potentially causal wording.\nSuggested shorter slide titles and flagged jargon before M5.\nHelped organize, but not perform, the outward-facing M4 review.\n\n\n\nChecks completed by the group\n\nRecomputed the adult cohort, missingness counts, complete-case Ns, means, and standard deviations from the committed CSV.\nConfirmed that report, dashboard, and slide figures come from code and agree with the displayed results.\nChecked the CDC/NCHS source citation and the prepared-classroom provenance statement.\nTested all three final render commands from the project root.\nReviewed AI-assisted prose for causal, population-level, stigmatizing, or unsupported language.\nDid not upload row-level data to any AI tool.\n\nThe group, not the AI tool, approved every submitted number, citation, code chunk, interpretation, and sharing decision.\n\nFile: final-portfolio-checklist.md",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>64</span>  <span class='chapter-title'>Example: Final Portfolio</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/final.html#final-portfolio-checklist",
+    "href": "milestones/example-nhanes/final.html#final-portfolio-checklist",
+    "title": "Example: Final Portfolio",
+    "section": "Final Portfolio Checklist",
+    "text": "Final Portfolio Checklist\n\nRepository access\n\nRepository route is recorded for course staff.\nRepresentative latest commit hash is recorded.\nFinal artifact paths are listed in repository-access-note.md.\nSafe-publishing check is documented.\n\n\n\nProject README\n\nREADME names the audience, purpose, questions, and main finding.\nREADME explains the folder structure.\nREADME gives the three core render commands.\nREADME names the required R packages and data boundary.\n\n\n\nData and stewardship\n\nCDC/NCHS NHANES is cited.\nThe cached access method and classroom-use boundary are documented.\nPrivacy, aggregate-output, and stewardship cautions are stated.\nThe model contains no credentials or private data.\n\n\n\nReproducibility\n\nPaths are relative to the project root.\nFinal report renders from source.\nFinal dashboard-style page renders from source.\nFinal slides render from source.\nTables and figures are generated by code.\nDependencies are limited to tidyverse and knitr in the supported course environment.\nKnown analytic and communication risks are recorded.\n\n\n\nCommunication and AI use\n\nReport states the question, data, methods, findings, and limitations.\nKT page and slides use the same audience and claim boundary.\nMain findings agree across the report, KT page, and slides.\nMajor AI-assisted tasks and manual checks are recorded.\n\n\n\nSubmission facts\n\nRepresentative repository link and commit hash are included.\nFinal report path is included.\nDashboard/KT product path is included.\nFinal checklist path is included.\n\n\nFile: final-risk-list.md",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>64</span>  <span class='chapter-title'>Example: Final Portfolio</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/final.html#final-risk-list",
+    "href": "milestones/example-nhanes/final.html#final-risk-list",
+    "title": "Example: Final Portfolio",
+    "section": "Final risk list",
+    "text": "Final risk list\nNo known render or repository-organization blocker remains after the final test. The remaining risks are interpretation limits rather than hidden failures:\n\nThe prepared classroom analysis is unweighted and is not a national NHANES estimate.\nComplete-case grouped results exclude records with missing BMI or income group; missingness is reported but not modelled.\nIncome-group comparisons can be stigmatizing if the modest descriptive difference is presented without context.\nA future change to the cached data would require rerendering the report, dashboard, and slides together.\n\n\nFile: repository-access-note.md",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>64</span>  <span class='chapter-title'>Example: Final Portfolio</span>"
+    ]
+  },
+  {
+    "objectID": "milestones/example-nhanes/final.html#repository-access-note",
+    "href": "milestones/example-nhanes/final.html#repository-access-note",
+    "title": "Example: Final Portfolio",
+    "section": "Repository access note",
+    "text": "Repository access note\n\nRepository URL: https://github.com/example-course/cedar-nhanes-equity\nVisibility: private\nLatest submitted commit: a3f92bc\nStaff access: representative course-staff access was granted by Maya Chen and checked on 2026-12-10\nFinal report: report/report.qmd and report/report.html\nDashboard/KT product: dashboard/dashboard.qmd and dashboard/dashboard.html\nPresentation: milestones/m5-presentation/submission/slides.qmd and slides.html\n\nThe URL, hash, and access date are clearly representative values in this static instructor sample. A real student submission must provide live, verifiable facts.\n\nProject report: report.html — view it\n\nProject dashboard: dashboard.html — view it",
+    "crumbs": [
+      "Worked Example (NHANES)",
+      "<span class='chapter-number'>64</span>  <span class='chapter-title'>Example: Final Portfolio</span>"
+    ]
+  },
+  {
     "objectID": "references/data-sources/nhis.html",
     "href": "references/data-sources/nhis.html",
     "title": "NHIS",

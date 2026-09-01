@@ -1,0 +1,84 @@
+---
+title: "Example: Presentation — Narrated Deck"
+---
+
+# Example: Presentation — Narrated Deck {.unnumbered}
+
+:::: {.callout-warning title="Illustrative example — do not copy"}
+This is **one** worked example on the class NHANES dataset, written by a *fictional* group, to show the expected **structure and depth** of a good submission. Your project must use **your own** question, data, audience, and analysis — do not copy this text or these files. This example lives in the public book for learning; graders assess your original work.
+::::
+
+Below is the *Cedar Equity Lab* group's `m5-presentation` submission from the worked NHANES example. See the [Presentation brief](../m5-presentation/README.md) for what is required.
+
+
+---
+
+*File: `ai-use-note.md`*
+
+## AI-use note
+
+AI suggested shorter slide titles and identified jargon in the first draft.
+The group checked the 57,137 cohort count, missingness values, three displayed
+means, figure labels, and source note against the final report and rendered
+slides. We rejected a suggested phrase that implied income predicted BMI.
+
+
+---
+
+*File: `peer-feedback-received.md`*
+
+## Peer feedback received on the NHANES project
+
+This is inward-facing feedback on our NHANES project. It is separate from the
+outward-facing M4 review we wrote about the Northside Active Living project.
+
+- **Source:** River Health Team's review of our M3 report and KT preview.
+- **Feedback received:** Say explicitly that the overall difference is small;
+  use “Average BMI (kg/m²)” rather than “Mean BMI” in the audience-facing
+  dashboard; and keep the unweighted limitation beside the figure.
+- **Changes made:** We added “modest/small” to the report and slides, expanded
+  the dashboard label and units, and placed the descriptive/unweighted caution
+  in the dashboard figure caption and limitation section.
+- **Suggestion not adopted:** The reviewers suggested a second dashboard
+  control for age range. We kept one income-group control because the current
+  audience question is answered without added complexity.
+
+
+---
+
+*File: `presentation-checklist.md`*
+
+## Presentation checklist
+
+- [x] Six-slide story fits a seven-minute practice run.
+- [x] Audience, question, and KT purpose are visible near the start.
+- [x] Data source, adult cohort, and missingness are stated.
+- [x] Main figure title, units, source boundary, and limitation are readable.
+- [x] Interpretation remains descriptive and non-causal.
+- [x] Privacy and stewardship caution is included in the source note.
+- [x] Slides render from the project root without local-only files.
+- [x] Final slide gives a practical next analytic question.
+- [x] Backup notes include source, cohort, and AI-use details.
+
+
+---
+
+*File: `slides.html`* — [view the rendered output](files/m5/slides.html)
+
+
+---
+
+*File: `source-and-limitations-note.md`*
+
+## Source and limitations note
+
+- **Source:** Prepared classroom snapshot derived from CDC/NCHS National
+  Health and Nutrition Examination Survey public-use files;
+  `https://wwwn.cdc.gov/nchs/nhanes/`
+- **Inclusion/exclusion:** Ages 20-80 inclusive; grouped results use non-missing
+  age, BMI, and income group; cycle figure also requires a non-missing cycle
+- **Claim type:** Descriptive and unweighted, not predictive or causal
+- **Privacy/stewardship caution:** Show aggregate results only, avoid
+  stigmatizing income groups, and do not upload row-level records to AI tools
+- **Limitation to say aloud:** The analysis does not use the NHANES survey
+  design and is not a national estimate

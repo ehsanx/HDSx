@@ -1,0 +1,23 @@
+---
+title: "Worked Example (NHANES)"
+---
+
+# Worked Example (NHANES) {.unnumbered}
+
+:::: {.callout-warning title="Illustrative example — do not copy"}
+This is **one** worked example on the class NHANES dataset, written by a *fictional* group, to show the expected **structure and depth** of a good submission. Your project must use **your own** question, data, audience, and analysis — do not copy this text or these files. This example lives in the public book for learning; graders assess your original work.
+::::
+
+To make the milestone briefs concrete, this section shows **one complete worked project** — the fictional *Cedar Equity Lab* group studying income and BMI patterns in the class NHANES dataset — developed all the way from group formation to the final portfolio.
+
+Read it for the **shape and quality** of good work: how a question is scoped, how a Table 1 and missingness summary are presented, how limitations are stated, how AI use is documented, and how a peer review is written. Then build **your own** project on **your own** question and data.
+
+## The milestones
+
+- [M0 — Group Formation](m0.qmd)
+- [M1 — Project Proposal](m1.qmd)
+- [M2 — Preliminary Analysis](m2.qmd)
+- [M3 — Project Update](m3.qmd)
+- [M4 — Peer Review](m4.qmd)
+- [Presentation — Narrated Deck](m5.qmd)
+- [Final Portfolio](final.qmd)

@@ -1,0 +1,104 @@
+---
+title: "Example: M3 — Project Update"
+---
+
+# Example: M3 — Project Update {.unnumbered}
+
+:::: {.callout-warning title="Illustrative example — do not copy"}
+This is **one** worked example on the class NHANES dataset, written by a *fictional* group, to show the expected **structure and depth** of a good submission. Your project must use **your own** question, data, audience, and analysis — do not copy this text or these files. This example lives in the public book for learning; graders assess your original work.
+::::
+
+Below is the *Cedar Equity Lab* group's `m3-project-update` submission from the worked NHANES example. See the [M3 brief](../m3-project-update/README.md) for what is required.
+
+
+---
+
+*File: `ai-use-note.md`*
+
+## AI-use note
+
+AI helped propose a shorter ordering for the draft report and flagged two
+sentences as potentially causal. The group checked every displayed number
+against the rendered table, confirmed the CDC/NCHS citation in
+`references.bib`, reran the report and dashboard, and rewrote the interpretation
+to say descriptive, unweighted, and modest.
+
+
+---
+
+*File: `dashboard-preview.md`*
+
+## Dashboard preview
+
+- Current source: `dashboard/dashboard.qmd`
+- Rendered preview: `dashboard/dashboard.html`
+- Intended audience: municipal public-health staff preparing an internal
+  health-equity briefing
+- Feature: change the single `selected_income` value and re-render to update the
+  table, title, and cycle plot
+- Limitation/privacy caution: the page shows aggregate, unweighted classroom
+  summaries only; it does not expose row-level data or support causal or
+  national-population claims
+
+
+---
+
+*File: `feedback-request.md`*
+
+## Feedback request
+
+Please focus on these questions:
+
+- **Correctness:** Do the complete-case counts in the report agree with the
+  table and figure?
+- **Interpretation:** Is the difference described as modest and descriptive,
+  without implying causality or national representation?
+- **Visual clarity:** Does the cycle figure make the small group difference
+  understandable without exaggerating it?
+- **Reproducibility:** Are the root render commands and data path clear enough
+  to follow in a fresh Codespace?
+- **Audience fit:** Would a municipal public-health briefing team understand
+  what question this result should prompt next?
+
+
+---
+
+*File: `project-update.md`*
+
+## Project update
+
+- **Current title:** Income and BMI Patterns in NHANES Adults
+- **Audience:** Municipal public-health staff preparing an internal
+  health-equity briefing
+- **Refined primary question:** How does mean BMI differ across income groups
+  among adults age 20-80 in the prepared classroom dataset?
+- **Data and sample:** Cached CDC/NCHS NHANES-derived classroom CSV; 57,137
+  adult rows before missing BMI and income-group exclusions
+- **Stable finding:** Mean BMI is about 28.6 in the high-income group, 29.4 in
+  the low-income group, and 29.3 in the middle-income group in the complete
+  adult records.
+- **Choice needing review:** Does the cycle-by-income figure help the audience
+  understand the small difference without making it look more important than
+  it is?
+- **Next steps:** Apply peer feedback, align the dashboard wording with the
+  report, complete a fresh-environment render, and turn the story into M5
+  slides.
+
+
+---
+
+*File: `report-draft.html`* — [view the rendered output](files/m3/report-draft.html)
+
+
+---
+
+*File: `reproducibility-note.md`*
+
+## Reproducibility note
+
+From the project root in the course Codespace, run
+`quarto render milestones/m3-project-update/submission/report-draft.qmd` and
+`quarto render dashboard/dashboard.qmd`. Both sources load the committed CSV
+at `data/nhanes_equity_v6.csv` using a relative path and require only
+`tidyverse` and `knitr`. The current renders completed without a manual data or
+path step.

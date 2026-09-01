@@ -1,5 +1,10 @@
 # Presentation (Final Portfolio Component)
 
+::: {.callout-tip title="See a worked example"}
+The [the Presentation submission in the NHANES worked example](../example-nhanes/m5.qmd) shows one illustrative version of this milestone. Use it for structure and depth — your project must be your own.
+:::
+
+
 ## Purpose
 
 The presentation is the knowledge-translation slide version of the final project, submitted as a **narrated 5-7 slide deck** and scored as the Presentation component (10 points) of the [Final Portfolio](../final-portfolio/README.md). It should explain the audience, question, data, one or two main findings, limitations, and the practical meaning of the work without overclaiming.

@@ -176,6 +176,16 @@ book:
         # AI-EDIT(2026-06-11): D-007 — render the two final-portfolio guidance files as book pages (links to them previously served raw .md) — needs review
         - milestones/final-portfolio/final-portfolio-checklist.md
         - milestones/final-portfolio/repository-sharing-guidance.md
+    - part: "Worked Example (NHANES)"
+      chapters:
+        - milestones/example-nhanes/index.qmd
+        - milestones/example-nhanes/m0.qmd
+        - milestones/example-nhanes/m1.qmd
+        - milestones/example-nhanes/m2.qmd
+        - milestones/example-nhanes/m3.qmd
+        - milestones/example-nhanes/m4.qmd
+        - milestones/example-nhanes/m5.qmd
+        - milestones/example-nhanes/final.qmd
     - part: "Reference: Data Sources"
       chapters:
         - references/data-sources/nhis.qmd

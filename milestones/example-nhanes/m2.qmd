@@ -1,0 +1,62 @@
+---
+title: "Example: M2 — Preliminary Analysis"
+---
+
+# Example: M2 — Preliminary Analysis {.unnumbered}
+
+:::: {.callout-warning title="Illustrative example — do not copy"}
+This is **one** worked example on the class NHANES dataset, written by a *fictional* group, to show the expected **structure and depth** of a good submission. Your project must use **your own** question, data, audience, and analysis — do not copy this text or these files. This example lives in the public book for learning; graders assess your original work.
+::::
+
+Below is the *Cedar Equity Lab* group's `m2-preliminary-analysis` submission from the worked NHANES example. See the [M2 brief](../m2-preliminary-analysis/README.md) for what is required.
+
+
+---
+
+*File: `ai-use-note.md`*
+
+## AI-use note
+
+AI suggested a tidyverse outline for the grouped summary and a shorter first
+draft of the interpretation. We independently checked:
+
+1. the prepared-file and adult-cohort row counts;
+2. missingness before complete-case exclusions;
+3. the income-group labels and the N, means, and standard deviations in the
+   CSV export;
+4. that the rendered figure matches the grouped data; and
+5. that the final prose says descriptive and unweighted and makes no causal or
+   national-population claim.
+
+
+---
+
+*File: `methods-note.md`*
+
+## Methods note
+
+We used the prepared NHANES Health Equity classroom CSV and restricted the
+cohort to ages 20-80, inclusive. We reported missingness for the key variables
+before selecting complete records for age, BMI, and income group. The grouped
+summary reports N, BMI mean (SD), and age mean (SD) by `IncomeGroup`; the figure
+shows unweighted mean BMI by income group and cycle. These results describe the
+prepared classroom records and cannot support causal or national-population
+claims.
+
+The preliminary analysis builds on Jordan's A6 `eda-note.qmd`; the group
+rechecked the cohort, denominators, exports, and wording before reuse.
+
+
+---
+
+*File: `missingness-summary.csv`* — [view the data table](files/m2/missingness-summary.csv)
+
+
+---
+
+*File: `preliminary-analysis.html`* — [view the rendered output](files/m2/preliminary-analysis.html)
+
+
+---
+
+*File: `table1.csv`* — [view the data table](files/m2/table1.csv)

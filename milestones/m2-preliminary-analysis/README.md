@@ -1,5 +1,10 @@
 # M2: Preliminary Analysis
 
+::: {.callout-tip title="See a worked example"}
+The [M2 submission in the NHANES worked example](../example-nhanes/m2.qmd) shows one illustrative version of this milestone. Use it for structure and depth — your project must be your own.
+:::
+
+
 ## Purpose
 
 M2 checks that the project can move from proposal to evidence. The milestone should show a documented cohort or analytic sample, a missingness check, a descriptive summary, and a careful interpretation that avoids overclaiming.

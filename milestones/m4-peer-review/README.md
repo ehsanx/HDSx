@@ -1,5 +1,10 @@
 # M4: Peer Review
 
+::: {.callout-tip title="See a worked example"}
+The [M4 submission in the NHANES worked example](../example-nhanes/m4.qmd) shows one illustrative version of this milestone. Use it for structure and depth — your project must be your own.
+:::
+
+
 ## Purpose
 
 M4 gives each team structured feedback on correctness, reproducibility, interpretation, and audience fit before final submission. The review should be specific, respectful, and useful enough that the receiving group can act on it.

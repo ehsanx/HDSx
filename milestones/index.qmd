@@ -4,6 +4,11 @@ title: "Milestones"
 
 # Milestones
 
+::: {.callout-tip title="Worked example"}
+New to milestones? Skim the [NHANES worked example](example-nhanes/index.qmd) — one complete illustrative project from M0 to the Final Portfolio.
+:::
+
+
 Milestones move the term project from team setup to final portfolio. They are short checkpoints, not separate side projects. Each one should make the next stage easier to complete and easier for another person to review.
 
 ## Submission Contract
