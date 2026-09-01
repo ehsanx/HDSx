@@ -85,13 +85,12 @@ Tools required for graded work will be selected and tested for use in Codespaces
 
 ```{r contacts, echo=FALSE}
 contacts <- data.frame(
-  Field = c("Role:", "Name:", "Email:", "Office:", "Hours:"),
+  Field = c("Course developer:", "Affiliation:", "Course instructor:", "Contact & office hours:"),
   Detail = c(
-    "Course Instructor",
     "Dr. M. Ehsan Karim",
-    "ehsan.karim@ubc.ca",
-    "Appointments by request",
-    "Weekly instructor and TA support times will be posted on Canvas"
+    "School of Population and Public Health, University of British Columbia",
+    "See Canvas for the instructor teaching your offering",
+    "Instructor and TA contact details and support times are posted on Canvas"
   )
 )
 
@@ -113,7 +112,7 @@ if (.is_pdf) {
 
 **Other Instructional Staff:** TBA. To communicate with the computing TA, attend weekly classes and specified drop-in hours (as announced in Canvas).
 
-### Instructor Biographical Statement
+### About the Course Developer
 
 Dr. M. Ehsan Karim is an Associate Professor in Health Data Science at the UBC School of Population and Public Health (SPPH), a Scientist at the Centre for Advancing Health Outcomes, an associate member of the Department of Statistics (UBC), and a previous Michael Smith Foundation for Health Research (MSFHR) Scholar. He obtained his PhD in Statistics from the University of British Columbia and completed his postgraduate training in the Department of Epidemiology, Biostatistics, and Occupational Health at McGill University. His current research focuses on causal inference, real-world observational data analyses, and applications of machine learning approaches in epidemiologic studies.
 
