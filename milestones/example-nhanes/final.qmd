@@ -145,3 +145,5 @@ facts.
 ---
 
 *Project dashboard: `dashboard.html`* — [view it](files/final/dashboard.html)
+
+*Optional interactive version — Shiny app (demonstration only):* the course includes a runnable **Shiny** dashboard built on the same NHANES data. A live app needs a server, so it runs in a GitHub Codespace or locally — not on this static site. View or download the source to try it yourself: [`examples/nhanes-equity/app/app.R` (on GitHub)](https://github.com/ehsanx/HDSx/blob/main/examples/nhanes-equity/app/app.R). A live app is **optional**; a static dashboard like the one above is the required deliverable.
