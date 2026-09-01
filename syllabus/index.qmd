@@ -1,13 +1,69 @@
 ---
-title: "Syllabus"
+title: "Course Overview"
 ---
 
-```{r syllabus-setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
-library(knitr)
-library(kableExtra)
-.is_pdf <- knitr::is_latex_output()
-options(knitr.table.format = if (.is_pdf) "latex" else "pipe")
-```
+# Course Overview {.unnumbered}
 
-{{< include _syllabus-shared.qmd >}}
+**Health Data Science: AI and Knowledge Translation** is a beginner-friendly, open course that teaches you to work with real health data using R, Quarto, Git, GitHub Codespaces, and AI coding assistants — and to communicate results clearly, reproducibly, and responsibly.
+
+::: {.callout-note}
+This is an **open educational resource (OER)**. You can follow it independently, or an instructor may adopt it for a specific course. If you are taking this in a specific offering, that course's **Canvas (or equivalent) is the source of truth** for the schedule, deadlines, grading, and your instructor's contact details. This overview intentionally leaves those out so the material stays useful to any learner.
+:::
+
+## What you'll learn
+
+By working through this course you will be able to:
+
+1. Explain key ethical, privacy, security, Indigenous Data Sovereignty, and knowledge-translation issues in health data science, including responsible use of generative AI tools.
+2. Use GitHub Codespaces, Quarto, Git, and GitHub to organize, document, version, and reproduce a small health-data analysis.
+3. Import, clean, summarize, and visualize health-related data using R and the tidyverse.
+4. Read and compare short Python/pandas examples with AI assistance, recognize common R↔Python translation traps, and explain when Python may be the more appropriate tool.
+5. Use generative AI as a coding assistant while critically auditing its output for coding errors, hallucinated claims, bias, security risks, and reproducibility problems.
+6. Conduct a bounded exploratory data analysis and communicate descriptive findings using clear tables, figures, narrative interpretation, and appropriate limitations.
+7. Create a dashboard-style knowledge-translation product and a reproducible Quarto report for a defined audience.
+8. Use a shared devcontainer and dependency documentation so analyses can be rerun in a fresh Codespace.
+9. Give constructive peer feedback on the clarity, reproducibility, auditability, and knowledge-translation value of a project.
+
+## Who it's for
+
+**No prior experience required.** This is a "Zero to AI Co-Pilot" course: you do not need previous experience with R, Python, statistics, or programming. Comfort with a web browser, basic file management, and a willingness to troubleshoot are assumed; everything else is taught from the ground up.
+
+## How the course works
+
+- **Cloud-first.** All coding runs in **GitHub Codespaces** — a cloud computer you reach from any modern web browser. No local installation is required.
+- **R is the core language**, with **Quarto** for reproducible documents; short **Python/pandas** examples build polyglot awareness.
+- **AI as a co-pilot, always audited.** You use LLMs to draft, debug, and translate code, then check their output against your data and the documentation.
+- **Reproducible by default.** Work is version-controlled with Git and designed to re-run in a fresh environment.
+
+## What the course is built around
+
+1. **The Full Data Lifecycle** — from ethical data access and cleaning to secure cloud computing and publication.
+2. **Reproducible Science** — Git-based workflows, a shared environment, explicit dependency notes, and literate programming in Quarto.
+3. **AI-Augmented Workflows** — using LLMs as coding co-pilots while auditing their output for errors, hallucinations, bias, security risks, and reproducibility failures.
+4. **Knowledge Translation (KT)** — the "last mile": turning results into dashboard-style products, visual stories, plain-language summaries, and policy-ready reports.
+5. **Real-World Health Data** — hands-on work with messy, real datasets (for example, NHANES) rather than toy examples.
+
+## Weekly topics
+
+The material is a weekly progression; each week pairs a short concept seminar with hands-on studio work.
+
+| Week | Topic |
+|---|---|
+| 0 | Onboarding: accounts, orientation, and setup (self-paced) |
+| 1 | Health data, knowledge translation, and ethics |
+| 2 | Modern research workflows: Codespaces, Quarto, Git |
+| 3 | R with AI: data, functions, the tidyverse, debugging |
+| 4 | Git and collaboration: commits, branches, pull requests |
+| 5 | Polyglot awareness and R deepening (Python/pandas) |
+| 6 | Data visualization and AI-assisted visual audits |
+| 7 | Exploratory analysis, Table 1, and AI auditing |
+| 8 | Dashboard prototypes for knowledge translation |
+| 9 | Communicating scientific findings |
+| 10 | Writing and publishing reproducible reports |
+| 11 | Portfolio surgery: reproducibility stress-testing |
+
+Use the sidebar to work through each week.
+
+## About the developer
+
+This open course was developed by **Dr. M. Ehsan Karim** (School of Population and Public Health, University of British Columbia), with the AI-KT team (Manya Jain, Rainie Fu, Md. Belal Hossain). It is shared as an open educational resource for learners and adopting instructors.

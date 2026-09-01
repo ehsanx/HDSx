@@ -24,9 +24,9 @@ book:
 
   chapters:
     - index.qmd
-    - part: "Course Operations"
+    - part: "About the Course"
       chapters:
-        - course-operations/index.qmd
+        - syllabus/index.qmd
     - part: "Week 0: Asynchronous Onboarding"
       chapters:
         - weeks/week00-onboarding/index.qmd
