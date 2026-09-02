@@ -36,3 +36,10 @@ Follow these steps
 
     <!-- AI-EDIT(2026-06-11): WI-024, MIT-040 — needs review -->
     After using the rescue step, go back to the file and confirm that the line you deleted is still present.
+
+<!-- AI-EDIT(2026-09-01): optional course screencast (YouTube ID: oxfWtFHit5o) — HTML-only so the PDF/DOCX build is unaffected -->
+::: {.content-visible when-format="html"}
+## Video walkthrough (optional) {.unnumbered}
+
+{{< video https://youtu.be/oxfWtFHit5o >}}
+:::

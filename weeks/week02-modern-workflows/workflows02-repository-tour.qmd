@@ -35,3 +35,10 @@ If you can see it in your fork, it is safely stored in the cloud.
 
 <!-- AI-EDIT(2026-06-11): GAP-MBH-5 — stop-and-check when expected files are missing — needs review -->
 You should see `practice_report.qmd`, `README.md`, and a `data/` folder. If you do not see these, stop and ask for help before continuing. You may be in the wrong repository, the wrong branch, or the starter files may not have loaded correctly.
+
+<!-- AI-EDIT(2026-09-01): optional course screencast (YouTube ID: VtyyuYjbdHc) — HTML-only so the PDF/DOCX build is unaffected -->
+::: {.content-visible when-format="html"}
+## Video walkthrough (optional) {.unnumbered}
+
+{{< video https://youtu.be/VtyyuYjbdHc >}}
+:::

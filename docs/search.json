@@ -247,6 +247,17 @@
     ]
   },
   {
+    "objectID": "weeks/week00-onboarding/index.html#video-walkthrough-optional",
+    "href": "weeks/week00-onboarding/index.html#video-walkthrough-optional",
+    "title": "Week 0: Asynchronous Onboarding",
+    "section": "Video walkthrough (optional)",
+    "text": "Video walkthrough (optional)",
+    "crumbs": [
+      "Week 0: Asynchronous Onboarding",
+      "Week 0: Asynchronous Onboarding"
+    ]
+  },
+  {
     "objectID": "weeks/week01-health-data-ethics/index.html",
     "href": "weeks/week01-health-data-ethics/index.html",
     "title": "Health Data & Ethics",
@@ -764,6 +775,17 @@
     ]
   },
   {
+    "objectID": "weeks/week02-modern-workflows/workflows02-repository-tour.html#video-walkthrough-optional",
+    "href": "weeks/week02-modern-workflows/workflows02-repository-tour.html#video-walkthrough-optional",
+    "title": "Tour of the Repository",
+    "section": "Video walkthrough (optional)",
+    "text": "Video walkthrough (optional)",
+    "crumbs": [
+      "Week 2: Modern Workflows",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Tour of the Repository</span>"
+    ]
+  },
+  {
     "objectID": "weeks/week02-modern-workflows/workflows03-open-codespace.html",
     "href": "weeks/week02-modern-workflows/workflows03-open-codespace.html",
     "title": "Opening Your First Codespace",
@@ -791,6 +813,17 @@
     "title": "Opening Your First Codespace",
     "section": "The “Boot Up” Phase",
     "text": "The “Boot Up” Phase\nWait 2–3 minutes.\n\nWhat is happening? GitHub is silently installing R, Python, Quarto, and all the course libraries for you.\nThe Analogy: Think of this as the “ventilation system” starting up in a lab. It takes a moment to get the environment ready.\n\nSuccess: You should see VS Code (a dark-themed code editor) appear in your browser window.\n\n\n\n\n\n\n\nThe TOOLCHAIN SELF-TEST\n\n\n\nThe setup runs automatically — you do not need to start anything. Near the end of the build, a block titled TOOLCHAIN SELF-TEST prints in the terminal. It lists version numbers for R, Quarto, and Python, then runs quarto check.\n\nIf you do not see it (or scrolled past it): open the Command Palette (F1) and run Codespaces: View Creation Log to see the full build output.\nIf the self-test shows errors: do not try to install software yourself. Rebuild the environment instead — see Troubleshooting: Rebuild Container — and ask for help if it still fails.",
+    "crumbs": [
+      "Week 2: Modern Workflows",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Opening Your First Codespace</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week02-modern-workflows/workflows03-open-codespace.html#video-walkthrough-optional",
+    "href": "weeks/week02-modern-workflows/workflows03-open-codespace.html#video-walkthrough-optional",
+    "title": "Opening Your First Codespace",
+    "section": "Video walkthrough (optional)",
+    "text": "Video walkthrough (optional)",
     "crumbs": [
       "Week 2: Modern Workflows",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Opening Your First Codespace</span>"
@@ -967,6 +1000,17 @@
     "title": "The Magic Moment: Render Quarto",
     "section": "If it fails (Troubleshooting)",
     "text": "If it fails (Troubleshooting)\nRendering involves many moving parts, so it sometimes gets stuck.\n\nThe “Wait” Rule: If nothing happens for 20 seconds, the background process might be initializing. Give it a moment.\nThe “Retry” Rule: Sometimes the connection hiccups. Run Quarto: Render Document one more time.\nThe “No Button” Rule: The Render button sometimes does not appear in a fresh or stale Codespace. You do not need it — the Command Palette and terminal methods above always work. \nThe “TeX Warning” Rule: If you see a warning that no TeX installation was found, you can ignore it as long as your HTML file was created successfully. Only run quarto install tinytex if you need to produce PDF output. \nThe “Red Text” Rule: Look at the Terminal tab at the bottom. If you see red text, it is an error message. Read it—it usually tells you exactly what went wrong (e.g., “File not found” or “Syntax error”).\n\nStill stuck after trying these rules? See Troubleshooting: Rebuild Container for the step-by-step fix with screenshots.",
+    "crumbs": [
+      "Week 2: Modern Workflows",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>The Magic Moment: Render Quarto</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week02-modern-workflows/workflows07-render-quarto.html#video-walkthrough-optional",
+    "href": "weeks/week02-modern-workflows/workflows07-render-quarto.html#video-walkthrough-optional",
+    "title": "The Magic Moment: Render Quarto",
+    "section": "Video walkthrough (optional)",
+    "text": "Video walkthrough (optional)",
     "crumbs": [
       "Week 2: Modern Workflows",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>The Magic Moment: Render Quarto</span>"
@@ -1725,7 +1769,7 @@
     "href": "weeks/week04-git-collaboration/git02-tutorial.html",
     "title": "Time Travel",
     "section": "",
-    "text": "Follow these steps\n\nEdit: Make a change to your code, any file in the repo will do, and save the file.\n\nKey things to note are that the open file tab has changed colors, this shows that github has acknowledged that the file has been changed.\nCommit: Stage and Commit in the Source Control tab.\nAs we have seen from the previous tutorial, open up the git tab as indicated by the orange-peach highlight. When a file is changed you will be presented with the screen below.\nTo stage a change, press the + icon.\n\nYour menu should look like this now;\n\nThen when you are ready to commit, you can click the big green button! You can also click the down arrow on the big green button to see more options, as well as the commit option. We will discuss those other options later.\n\nBreak: Delete the code you just added and save.\n\nRescue: Right-click the file in Source Control again, then click the Discard Changes option. \n\nThis will revert the file back to what it was before. This can recover data that your computer potentially cannot, its a very powerful in git and showcases one aspect of how git operates. It is a record of all your work and saved chunks.\n\nAfter using the rescue step, go back to the file and confirm that the line you deleted is still present.",
+    "text": "Video walkthrough (optional)\nFollow these steps",
     "crumbs": [
       "Week 4: Git & Collaboration",
       "Time Travel"
@@ -1747,7 +1791,7 @@
     "href": "weeks/week04-git-collaboration/git04-branching.html",
     "title": "Branching",
     "section": "",
-    "text": "A branch is a safe parallel version of your code. Think of it as a safe parallel universe for your project: you can experiment freely there without touching the stable main version. Before creating a new branch, confirm you are currently on main unless the instructions tell you otherwise.\n\nCreate:\n\nClick branch name (bottom-left).\n\n\nSafety check: before you go further, read the name shown in that bottom-left corner. It should say main. If it shows something else, click it and select main first, so your new branch starts from the stable version.\nThis will pop up a menu where you have the option to Create new branch.\n\nSelect this and call it first-branch. Note branch names may not have any spaces and limited special characters, the system will let you know if a name is invalid.\n\n\nSafety check: look at the bottom-left corner again. It should now show first-branch. If it still says main, the branch was not created — repeat the step before making any edits.\n\nWork: Make changes, like those in the previous tutorial and commit your changes on your branch.\nSwitch: Click the branch button on the bottom left again and once this menu pops up, select main. Note that your changes vanish (they are safely in the other branch). If you decide to switch back to your branch, your changes will reappear. This is amazing for multitasking on different features and keeping code clean.",
+    "text": "Video walkthrough (optional)\nA branch is a safe parallel version of your code. Think of it as a safe parallel universe for your project: you can experiment freely there without touching the stable main version. Before creating a new branch, confirm you are currently on main unless the instructions tell you otherwise.\nClick branch name (bottom-left).\nSafety check: before you go further, read the name shown in that bottom-left corner. It should say main. If it shows something else, click it and select main first, so your new branch starts from the stable version.\nThis will pop up a menu where you have the option to Create new branch.\nSelect this and call it first-branch. Note branch names may not have any spaces and limited special characters, the system will let you know if a name is invalid.\nSafety check: look at the bottom-left corner again. It should now show first-branch. If it still says main, the branch was not created — repeat the step before making any edits.",
     "crumbs": [
       "Week 4: Git & Collaboration",
       "Branching"
@@ -1758,7 +1802,7 @@
     "href": "weeks/week04-git-collaboration/git05-pull-requests.html",
     "title": "Pull Requests",
     "section": "",
-    "text": "A Pull Request (PR) is a GitHub feature that says: “I have changes on a branch. Please review them before they go into main.” PRs are how professional teams and researchers collaborate. You will use them for peer review later in this course. This is also the best way to merge your own changes into main: it forces you to see what has changed, so you can check what you are submitting to the main branch — the backbone, or “trunk,” of the tree.\n\nSync: Click “Sync Changes” to push your branch to GitHub. This can be blue or green or say publish branch or not. Whichever the case, clicking this button will make everything on your computer update to the online github repo.\n\nCommit saves a checkpoint inside your local Codespace. Push or Sync Changes sends that checkpoint back to GitHub so it is visible in the online repository.\n\nPR: Go to your repo on github online and click “Compare & pull request.”\n\nWe are then presented with the screen below. Press the big green button “New Pull Request”\n\n\nNote: GitHub does not always show this screen. Sometimes clicking Compare & pull request takes you straight to the comparison/create screen. If that happens, nothing is wrong — skip ahead to choosing your branches and creating the pull request.\nThen you are presented this menu. This shows all the different branches that can be merged into main. Select on the one you want to merge into main.\n\n\nBefore creating the Pull Request, check the base repository and base branch carefully. Do not open a PR into the original course repository unless the instructor explicitly asks you to. The base is where your changes will land (it should be main in your own repository); the compare (also called head) is the branch holding your changes.\nOnce you select the one, you can make a pull request! Select this.\n\nMerge: Review the diff, then click “Merge pull request.” If there are merge conflicts, ask AI the best way to resolve them.\n\nFor this week’s practice pull requests, merge your own PR right away — you do not need to wait for a teammate or TA to review it. You will practice reviewing each other’s pull requests later, in Milestone 4.",
+    "text": "Video walkthrough (optional)\nA Pull Request (PR) is a GitHub feature that says: “I have changes on a branch. Please review them before they go into main.” PRs are how professional teams and researchers collaborate. You will use them for peer review later in this course. This is also the best way to merge your own changes into main: it forces you to see what has changed, so you can check what you are submitting to the main branch — the backbone, or “trunk,” of the tree.",
     "crumbs": [
       "Week 4: Git & Collaboration",
       "Pull Requests"
@@ -1935,6 +1979,17 @@
     "title": "Polyglot Awareness & R Deepening",
     "section": "Knowledge Check",
     "text": "Knowledge Check\nBefore leaving Week 5, answer these:\n\nWhat is one analysis task you would keep in R?\nWhat is one task where Python may be useful?\nWhat are three parity checks you ran?\nWhat did AI help translate, and how did you verify it?\nWhat changed in your Git history from the beginning to the end of the week?",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "Polyglot Awareness & R Deepening"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/index.html#video-walkthrough-optional",
+    "href": "weeks/week05-polyglot-r-deepening/index.html#video-walkthrough-optional",
+    "title": "Polyglot Awareness & R Deepening",
+    "section": "Video walkthrough (optional)",
+    "text": "Video walkthrough (optional)",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
       "Polyglot Awareness & R Deepening"
@@ -2150,6 +2205,17 @@
     ]
   },
   {
+    "objectID": "weeks/week05-polyglot-r-deepening/python02-environment.html#video-walkthrough-optional",
+    "href": "weeks/week05-polyglot-r-deepening/python02-environment.html#video-walkthrough-optional",
+    "title": "Python Environment",
+    "section": "Video walkthrough (optional)",
+    "text": "Video walkthrough (optional)",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Python Environment</span>"
+    ]
+  },
+  {
     "objectID": "weeks/week05-polyglot-r-deepening/python03-packages-reproducibility.html",
     "href": "weeks/week05-polyglot-r-deepening/python03-packages-reproducibility.html",
     "title": "Packages and Reproducibility",
@@ -2265,6 +2331,17 @@
     "title": "Translation Traps",
     "section": "Audit Habit",
     "text": "Audit Habit\nWhen a translated result differs, check indexing, indentation, assignment/comparison, missingness handling, and grouping variables before assuming one language is “wrong.”",
+    "crumbs": [
+      "Week 5: Polyglot Awareness & R Deepening",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Translation Traps</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/week05-polyglot-r-deepening/python04-translation-traps.html#video-walkthrough-optional",
+    "href": "weeks/week05-polyglot-r-deepening/python04-translation-traps.html#video-walkthrough-optional",
+    "title": "Translation Traps",
+    "section": "Video walkthrough (optional)",
+    "text": "Video walkthrough (optional)",
     "crumbs": [
       "Week 5: Polyglot Awareness & R Deepening",
       "<span class='chapter-number'>27</span>  <span class='chapter-title'>Translation Traps</span>"

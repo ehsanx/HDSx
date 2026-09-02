@@ -38,3 +38,10 @@ A **Pull Request (PR)** is a GitHub feature that says: *"I have changes on a bra
     For this week's practice pull requests, merge your own PR right away --- you do not need to wait for a teammate or TA to review it. You will practice reviewing each other's pull requests later, in Milestone 4.
 
     ![](../../assets/images/git5/git6_6.png)
+
+<!-- AI-EDIT(2026-09-01): optional course screencast (YouTube ID: TQe3gEKhEDA) — HTML-only so the PDF/DOCX build is unaffected -->
+::: {.content-visible when-format="html"}
+## Video walkthrough (optional) {.unnumbered}
+
+{{< video https://youtu.be/TQe3gEKhEDA >}}
+:::

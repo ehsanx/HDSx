@@ -59,3 +59,10 @@ Rendering involves many moving parts, so it sometimes gets stuck.
 -   **The "Red Text" Rule:** Look at the **Terminal** tab at the bottom. If you see red text, it is an error message. Read it—it usually tells you exactly what went wrong (e.g., "File not found" or "Syntax error").
 
 Still stuck after trying these rules? See [Troubleshooting: Rebuild Container](workflows09-troubleshooting.qmd) for the step-by-step fix with screenshots. <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review -->
+
+<!-- AI-EDIT(2026-09-01): optional course screencast (YouTube ID: XILaoaswLdI) — HTML-only so the PDF/DOCX build is unaffected -->
+::: {.content-visible when-format="html"}
+## Video walkthrough (optional) {.unnumbered}
+
+{{< video https://youtu.be/XILaoaswLdI >}}
+:::

@@ -71,3 +71,10 @@ nhanes["BMI"].isna().sum()
 ## Audit Habit
 
 When a translated result differs, check indexing, indentation, assignment/comparison, missingness handling, and grouping variables before assuming one language is "wrong."
+
+<!-- AI-EDIT(2026-09-01): optional course screencast (YouTube ID: EfzryQCDFjE) — HTML-only so the PDF/DOCX build is unaffected -->
+::: {.content-visible when-format="html"}
+## Video walkthrough (optional) {.unnumbered}
+
+{{< video https://youtu.be/EfzryQCDFjE >}}
+:::

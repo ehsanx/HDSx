@@ -40,3 +40,10 @@ The setup runs **automatically** --- you do not need to start anything. Near the
 - **If you do not see it (or scrolled past it):** open the Command Palette (`F1`) and run **Codespaces: View Creation Log** to see the full build output.
 - **If the self-test shows errors:** do not try to install software yourself. Rebuild the environment instead --- see [Troubleshooting: Rebuild Container](workflows09-troubleshooting.qmd) --- and ask for help if it still fails.
 :::
+
+<!-- AI-EDIT(2026-09-01): optional course screencast (YouTube ID: A7LDoku1CrA) — HTML-only so the PDF/DOCX build is unaffected -->
+::: {.content-visible when-format="html"}
+## Video walkthrough (optional) {.unnumbered}
+
+{{< video https://youtu.be/A7LDoku1CrA >}}
+:::

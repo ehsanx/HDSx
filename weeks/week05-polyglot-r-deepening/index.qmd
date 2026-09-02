@@ -126,3 +126,10 @@ Before leaving Week 5, answer these:
 3. What are three parity checks you ran?
 4. What did AI help translate, and how did you verify it?
 5. What changed in your Git history from the beginning to the end of the week?
+
+<!-- AI-EDIT(2026-09-01): optional course screencast (YouTube ID: xWmXQz2ddhk) — HTML-only so the PDF/DOCX build is unaffected -->
+::: {.content-visible when-format="html"}
+## Video walkthrough (optional) {.unnumbered}
+
+{{< video https://youtu.be/xWmXQz2ddhk >}}
+:::

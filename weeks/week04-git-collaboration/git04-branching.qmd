@@ -28,3 +28,10 @@ Select this and call it first-branch. Note branch names may not have any spaces 
 3.  **Switch:** Click the branch button on the bottom left again and once this menu pops up, select `main`. Note that your changes vanish (they are safely in the other branch). If you decide to switch back to your branch, your changes will reappear. This is amazing for multitasking on different features and keeping code clean.
 
     ![](../../assets/images/git4/git4_5.png)
+
+<!-- AI-EDIT(2026-09-01): optional course screencast (YouTube ID: gX886DGLdqw) — HTML-only so the PDF/DOCX build is unaffected -->
+::: {.content-visible when-format="html"}
+## Video walkthrough (optional) {.unnumbered}
+
+{{< video https://youtu.be/gX886DGLdqw >}}
+:::
