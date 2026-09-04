@@ -14,3 +14,5 @@ _site/
 # archives (the 2026-08-25 delivery is 132 MB, over GitHub's 100 MB per-file limit).
 # Keep the index/notes alongside them tracked; never the archive itself.
 course-operations/internal2/*.zip
+syllabus/v4-vs-book-reconciliation.md
+HANDOFF.md
