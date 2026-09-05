@@ -16,3 +16,5 @@ _site/
 course-operations/internal2/*.zip
 syllabus/v4-vs-book-reconciliation.md
 HANDOFF.md
+
+**/*.quarto_ipynb
