@@ -1,0 +1,30 @@
+The **NHANES Health Equity data spine** is the recurring dataset thread for this course. In the early weeks, use it only as a documented public-health data artifact: provenance, ethics, file organization, and reproducible paths.
+
+- Cached RDS: `examples/nhanes-equity/data/nhanes_equity_v6.rds`
+- CSV snapshot: `examples/nhanes-equity/data/nhanes_equity_v6.csv`
+- Case-study README: `examples/nhanes-equity/README.md`
+
+The cached files are provided so early work can happen without internet access.
+
+**What to do here:** read the code below as an example of documented data provenance — you are not required to run or modify it on this page (each week's page states its own expectations). <!-- AI-EDIT(2026-06-11): GAP-OLDM-1, MIT-037 — needs review -->
+
+```{r}
+#| message: false
+#| warning: false
+library(tidyverse)  # AI-EDIT(2026-06-23): tidyverse-default — consolidated core library() calls into library(tidyverse)
+
+candidate_paths <- c(
+  "examples/nhanes-equity/data/nhanes_equity_v6.csv",
+  "../../examples/nhanes-equity/data/nhanes_equity_v6.csv"
+)
+
+nhanes_path <- candidate_paths[file.exists(candidate_paths)][1]
+if (is.na(nhanes_path)) {
+  stop("Could not find examples/nhanes-equity/data/nhanes_equity_v6.csv")
+}
+
+nhanes_spine <- read_csv(nhanes_path, show_col_types = FALSE)
+
+dim(nhanes_spine)
+glimpse(nhanes_spine)
+```

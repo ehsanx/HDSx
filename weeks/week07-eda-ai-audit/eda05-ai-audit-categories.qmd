@@ -1,0 +1,96 @@
+# Four Audit Categories for AI-Drafted EDA {.unnumbered}
+
+## Where this fits
+
+You have a clean Table 1 ([eda03](eda03-worked-example.qmd)) and a clear-eyed view of what each statistic claims ([eda04](eda04-descriptive-statistics-claims.qmd)). This page introduces the four categories you will use to organize your audit of AI-drafted EDA work — both in this week's [studio](eda06-studio-planted-errors.qmd) and in every future descriptive analysis you submit.
+
+## The four categories
+
+| Category | The question it asks |
+|---|---|
+| **Correctness** | Does the code do what the prose says it does? |
+| **Reproducibility** | Could another person rerun this in a fresh Codespace and get the same output? |
+| **Interpretation** | Does the narrative overclaim what the descriptive table can support? |
+| **Stewardship** | Does the work respect data provenance, privacy, and classroom-use boundaries? |
+
+Each issue you find during an audit should be tagged with one of these four. A
+complete A6 audit note covers **all four categories** at least once across its
+five or more issues.
+
+## Beginner-level examples for each
+
+### Correctness
+
+- **Before:** Column labeled "Mean BMI" but code uses `median()`.
+- **After:** Either rename the column or change the function. Pick one and document it.
+
+- **Before:** Cohort prose says "adults" but the filter uses `Age >= 0, Age <= 80`.
+- **After:** Decide what "adults" means (typically `Age >= 20`) and make the filter match the prose.
+
+### Reproducibility
+
+- **Before:** A path like `"C:/Users/me/Downloads/nhanes.csv"` in the code chunk.
+- **After:** A relative path like `"examples/nhanes-equity/data/nhanes_equity_v6.csv"`, with the candidate-path pattern used in the worked example so the chunk runs from either the repo root or the week folder.
+
+- **Before:** Missing `library(...)` calls. The chunk works in your Codespace because you ran `library(tidyverse)` earlier, but a fresh render fails.
+- **After:** Every chunk that uses a package names its `library(...)` calls explicitly.
+
+### Interpretation
+
+- **Before:** "The table proves that income group causes differences in BMI."
+- **After:** "Mean BMI differed across income groups in this prepared classroom dataset. This descriptive comparison cannot establish cause."
+
+- **Before:** "Because missing values were removed, the table is unbiased and ready for publication."
+- **After:** "Complete-case filtering removed `X` rows. If the missingness is related to BMI or income, the complete-case summary may be biased."
+
+### Stewardship
+
+- **Before:** Submitted notebook pastes a row-level NHANES record into an external AI chat to "ask for a Table 1."
+- **After:** Aggregate to group counts before any external AI is used. Never share row-level health data with external tools.
+
+- **Before:** The methods note does not name the data source, the access method, or the classroom-use context.
+- **After:** The methods note says: prepared NHANES Health Equity CSV snapshot, derived from public-use NHANES files, for classroom learning only.
+
+<!-- AI-EDIT(2026-06-11): TF-020, MIT-075 — needs review -->
+::: {.callout-note title="Stewardship includes Indigenous Data Sovereignty"}
+Provenance questions do not stop at "where did the file come from?" If a dataset includes Indigenous identifiers, communities, lands, or governance-relevant content, the stewardship audit must also ask who has rights over that data. Revisit the OCAP and CARE principles from [Week 1](../week01-health-data-ethics/index.qmd#indigenous-data-sovereignty) and flag the relevance in your provenance/stewardship note. The classroom NHANES snapshot does not include Indigenous identifiers, but the audit habit is to check rather than assume.
+:::
+
+## What goes in an audit note
+
+Each issue you flag should have three things:
+
+1. **What** the problem is (one sentence).
+2. **Why it matters** in terms of correctness, reproducibility, interpretation, or stewardship.
+3. **How** you corrected it (one sentence, or a small code block).
+
+This is the structure that A6 expects, and the studio is your rehearsal.
+
+## A worked audit note line
+
+> **Issue 3.** The interpretation says "income group causes differences in BMI." This is an **interpretation** problem because a descriptive summary cannot support a causal claim. Corrected: "Mean BMI differed across income groups in the classroom dataset; the comparison is descriptive and does not establish cause."
+
+## Stewardship recap: what goes in the provenance statement
+
+The provenance/stewardship statement you produce for A6 (and reuse in M2) should name:
+
+- the data source (prepared NHANES Health Equity classroom CSV);
+- the source of the source (derived from public-use NHANES files at the CDC);
+- the access method (cached in the repo, no internet access required for class work);
+- the classroom-use boundary (descriptive learning only, not population inference);
+- one privacy or stewardship caution (e.g., no row-level data uploaded to external AI tools).
+
+Five sentences, written carefully once, reused everywhere.
+
+## The audit habit
+
+Every time you accept AI-drafted EDA code or prose, run through the four categories:
+
+1. Does the code match the prose? (correctness)
+2. Will it rerun in a fresh Codespace? (reproducibility)
+3. Does any sentence overclaim? (interpretation)
+4. Is the data and AI use respectful of the source and privacy? (stewardship)
+
+## Where this goes next
+
+[eda06](eda06-studio-planted-errors.qmd) is the in-class studio where you apply these four categories to a deliberately flawed Table 1 starter.

@@ -1,0 +1,179 @@
+# Health Data & Ethics {.unnumbered}
+
+## Overview
+
+Week 1 sets the ethical and communication foundation for the whole course. Health data science does not end when code runs or a p-value appears; it ends when evidence is translated responsibly for a real audience. This week introduces open health data, data provenance, stewardship, privacy, responsible AI use, Indigenous Data Sovereignty awareness, and Knowledge Translation (KT) as the "last mile" of analysis.
+
+<!-- AI-EDIT(2026-06-11): TF-007, MIT-007, WI-006 — needs review -->
+Health data means information related to health, health care, populations, conditions, services, or outcomes. In this course, we primarily work with tabular data and focus on where it came from, who it represents, and how it can be communicated responsibly.
+
+This is an awareness-heavy week. There is no coding, no dashboard running, and no app setup. The NHANES case study appears only as a data/provenance artifact so you can practice evaluating a dataset before using it.
+
+## Learning Objectives
+
+By the end of this week, you should be able to:
+
+- identify credible open health data portals;
+- distinguish microdata from aggregated indicators;
+- complete a Data Intake Card for a public health dataset;
+- record basic provenance, licensing, access, and citation information;
+- name privacy, security, and stewardship risks that can still apply to public data;
+- explain why AI summaries must be checked against source documentation;
+- recognize when Indigenous Data Sovereignty, OCAP, or CARE principles may be relevant;
+- frame a dataset as the start of a KT product, not just as a file to analyze.
+
+## Connection
+
+This first week asks, "Should we use this data, and how should we describe it?" Next week asks, "How do we organize the files so another person can reproduce our work?" Later weeks return to the same NHANES case study through analysis, visualization, EDA, and dashboard design.
+
+## Case Study Data Spine
+
+<!-- AI-EDIT(2026-06-11): WI-007 — needs review -->
+The file paths and code below are shown only as examples of where the dataset lives in the course repository. In Week 1, you do not need to run this code. Your task is to understand the dataset's source, documentation, and responsible-use considerations.
+
+{{< include ../../examples/nhanes-equity/snippets/case-study-data-only.qmd >}}
+
+For Week 1, treat the NHANES case study as a provenance and stewardship example only. Do not run the app. Do not rebuild the data. Do not upload row-level data to an AI tool.
+
+## In-Class Activity
+
+Use [Activity: Data Intake Card](activity-data-intake-card.qmd).
+
+1. Choose one approved public health dataset or use the shared NHANES case-study example.
+2. Find the dataset publisher, documentation, access page, and citation guidance.
+3. Complete the Data Intake Card.
+4. Write one KT framing sentence: who could use this dataset, and what decision or conversation could it support?
+5. Name one ethics, privacy, security, or stewardship issue that should be checked before publishing results.
+
+Student output: one completed Data Intake Card, including its KT framing
+sentence. Submit that card as the required, unweighted Complete/Needs Work
+Canvas checkpoint. It is a lightweight early-support check, not a
+percentage-weighted assignment and not an additional deliverable.
+
+## Open Data Portals
+
+Open data can accelerate public health learning when the source, meaning, and limits of the data are clear. Start with reputable portals that provide documentation, terms of use, and stable links.
+
+Recommended starter portals:
+
+<!-- AI-EDIT(2026-06-11): TF-008, MIT-164 — portal names linked to course reference pages; note about the Data Sources part added below the list — needs review -->
+- CDC/NCHS public-use survey data, such as [NHANES](../../references/data-sources/nhanes.qmd) or [NHIS](../../references/data-sources/nhis.qmd);
+- [WHO Global Health Observatory](../../references/data-sources/gho.qmd) for aggregated international indicators;
+- [BC Data Catalogue](../../references/data-sources/bc-data-catalogue.qmd) for provincial open data;
+- [Government of Canada Open Government Portal](../../references/data-sources/open-portal.qmd) for Canadian datasets.
+
+Each link above goes to that source's page in the Reference: Data Sources part of this book, which also covers other sources you may use later in the course.
+
+When you land on a dataset page, look for:
+
+- publisher or steward;
+- population, geography, and time coverage;
+- data level, such as microdata or aggregated indicators;
+- documentation, codebook, or methodology notes;
+- license or terms of use;
+- citation recommendation;
+- last updated date or access date.
+
+## Provenance
+
+Provenance means the traceable story of where data came from and how it reached your project. A dataset is not just a filename. It has a steward, collection context, transformations, limitations, and documentation.
+
+For every dataset, record:
+
+- original source page;
+- local file path if a copy is stored in the repository;
+- date accessed;
+- file format;
+- variables you plan to use;
+- known limitations or cautions;
+- citation or attribution language.
+
+The Data Intake Card is the course habit that makes provenance visible.
+
+## Stewardship
+
+Stewardship means using data in a way that respects the people, communities, and institutions represented by the data. Public data still requires care.
+
+Ask:
+
+- Could a group be stigmatized by a careless summary?
+- Are small cells or rare combinations being exposed?
+- Does the dataset include populations for whom special governance principles may apply?
+- Are limitations visible enough for a non-technical audience?
+- Does the planned KT product support understanding rather than overclaiming?
+
+## Privacy And Security
+
+In this course, Week 1 uses public, de-identified, or aggregated data only. Still, avoid treating "public" as the same as "risk-free."
+
+Course rules:
+
+- Do not upload row-level health data to AI tools. Row-level data means individual records, where each row may represent one person, visit, survey response, or observation. Even if names are removed, individual-level records can still create privacy risks. <!-- AI-EDIT(2026-06-11): MIT-012, WI-008 — needs review -->
+- Do not attempt re-identification.
+- Do not publish small-cell claims.
+- Do not copy data into public repositories unless the license and course instructions allow it.
+- Do not use absolute local paths that reveal a personal machine or user name.
+
+## Responsible AI
+
+AI tools may help you draft plain-language summaries or identify questions to ask about documentation. They are not source documentation.
+
+<!-- AI-EDIT(2026-06-11): TF-009 — needs review -->
+AI tools can also hallucinate: they can state plausible-sounding but wrong variable definitions or data facts with full confidence. They can also repeat biases from their training data. That is why Week 1 asks you to verify every definition against the source documentation, not against an AI summary.
+
+Acceptable Week 1 AI use:
+
+- asking for a plain-language explanation of a term from a codebook;
+- drafting a first pass of a dataset description;
+- generating a checklist of questions to verify.
+
+<!-- AI-EDIT(2026-06-11): GAP-MBH-4 — needs review -->
+You can get useful AI help without uploading any data. Share the structure instead: column names, variable types, and a made-up example row. You can also share your code and your error messages. Never paste the real rows. The AI helps with code and wording; you run everything locally against the real data yourself.
+
+Required checks:
+
+- cite the official source, not the AI output;
+- verify variable meanings in documentation;
+- include an AI-use note if AI helped draft your card;
+- revise AI language that overstates certainty or hides limitations.
+
+## Indigenous Data Sovereignty
+
+Indigenous Data Sovereignty refers to the rights and interests of Indigenous Peoples in data about their peoples, lands, resources, and knowledges. Two frameworks students should recognize are:
+
+- OCAP: ownership, control, access, and possession, specific to First Nations contexts in Canada;
+- CARE: collective benefit, authority to control, responsibility, and ethics.
+
+Week 1 expectation: if a dataset includes Indigenous identifiers, communities, lands, or governance-relevant content, flag that on the Data Intake Card and review the source guidance before using or publishing analysis. For example, a variable indicating First Nations, Métis, or Inuit identity would require extra care and review of source guidance. <!-- AI-EDIT(2026-06-11): WI-009, MIT-009 — needs review -->
+
+## Formats And Metadata
+
+Common formats:
+
+- CSV: rectangular rows and columns;
+- JSON: nested data, common for APIs;
+- XLSX: spreadsheet files that may contain formatting and hidden assumptions;
+- RDS: R-specific saved objects;
+- GeoJSON or shapefiles: spatial data for maps.
+
+Metadata explains what the file means. It may include variable definitions, units, missing-value codes, collection methods, survey design variables, and weighting instructions. A dataset without metadata is risky for analysis because column names alone rarely tell the full story.
+
+## KT Framing
+
+KT asks who needs the information, what decision or conversation it supports, and how the evidence should be communicated. A Week 1 KT framing sentence can be simple:
+
+> This dataset could help [audience] understand [health issue] so they can [decision, planning task, or conversation], with the limitation that [key caution].
+
+Example:
+
+> The NHANES classroom dataset could help students understand how BMI summaries differ across income groups while practicing clear limitations about descriptive, unweighted survey summaries.
+
+## What Students Leave With
+
+By the end of Week 1, you should have:
+
+- one completed Data Intake Card;
+- one KT framing sentence;
+- one ethics or stewardship caution;
+- a clear understanding that the NHANES case study starts as a data artifact, not an app to run;
+- readiness to place files into a reproducible project structure in Week 2.

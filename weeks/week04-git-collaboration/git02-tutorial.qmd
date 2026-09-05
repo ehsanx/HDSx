@@ -1,0 +1,38 @@
+# Time Travel {.unnumbered}
+
+Follow these steps
+
+1.  **Edit:** Make a change to your code, any file in the repo will do, and save the file.
+
+    ![](../../assets/images/git2/git2_1.png)
+
+    Key things to note are that the open file tab has changed colors, this shows that github has acknowledged that the file has been changed.
+
+2.  **Commit:** Stage and Commit in the Source Control tab.
+
+    As we have seen from the previous tutorial, open up the git tab as indicated by the orange-peach highlight. When a file is changed you will be presented with the screen below.
+
+    **To stage a change, press the + icon.**
+
+    ![](../../assets/images/git2/git2_2.png)
+
+    Your menu should look like this now;
+
+    ![](../../assets/images/git2/git2_3.png)
+
+    Then when you are ready to commit, you can click the big green button! You can also click the down arrow on the big green button to see more options, as well as the commit option. We will discuss those other options later.
+
+    ![](../../assets/images/git2/git2_4.png)
+
+3.  **Break:** Delete the code you just added and save.
+
+    ![](../../assets/images/git2/git2_5.png)
+
+4.  **Rescue:** Right-click the file in Source Control again, then click the **Discard Changes** option. <!-- AI-EDIT(2026-06-11): MIT-040 — needs review -->
+
+    ![](../../assets/images/git2/git2_6.png)
+
+    This will revert the file back to what it was before. This can recover data that your computer potentially cannot, its a very powerful in git and showcases one aspect of how git operates. It is a record of all your work and saved chunks.
+
+    <!-- AI-EDIT(2026-06-11): WI-024, MIT-040 — needs review -->
+    After using the rescue step, go back to the file and confirm that the line you deleted is still present.

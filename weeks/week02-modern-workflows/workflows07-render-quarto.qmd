@@ -1,0 +1,61 @@
+# The Magic Moment: Render Quarto
+
+## Why do we "Render"?
+
+In the old days, you would run code, copy a graph, save it as a JPG, and paste it into Word. If the data changed, you had to redo every step manually.
+
+**The Better Way:** Think of your code (`.qmd` file) as a **Recipe** and the final report (HTML/PDF) as the **Meal**. \* **Editing:** You don't change the meal; you change the recipe. \* **Rendering:** This is the "cooking" process. When you click **Render**, the computer follows your instructions from scratch to create a fresh meal.
+
+This is the secret to reproducibility: if you give your recipe to a friend, they can cook the exact same meal.
+
+## Step 1 — Open the file
+
+1.  Go to the **Explorer** pane (Left side).
+2.  Locate and click on the file:
+
+```         
+practice_report.qmd
+```
+
+This will open the "Source Code" in the center Editor window. You will see a mix of normal text and code chunks.
+
+## Step 2 — Edit name (The YAML Header)
+
+Look at the very top of the file. You will see a block of text sandwiched between three dashes (`---`). This is called the **YAML Header**. It controls the document's metadata.
+
+Find the line that says `author:`
+
+```         
+author: "Your Name"
+```
+
+**Task:** Delete "Your Name" and type your actual name inside the quotes. Do not remove the quotes!
+
+## Step 3 — Render
+
+<!-- AI-EDIT(2026-06-11): D-003/TF-010/MIT-019/MIT-020/GAP-R678-1 — Command Palette default + terminal fallback + output location; replaces button-only instructions — needs review -->
+{{< include /_snippets/render-how.qmd >}}
+
+After you start the render, **observe:**
+
+-   **The Terminal (Bottom):** You will see text scrolling quickly. This is your code chunks executing.
+-   **The Preview (Right):** A new pane should appear showing a beautiful, formatted report with your name on it.
+
+<!-- AI-EDIT(2026-06-22): REVIEW-row47 / WI-012,TF-010 — corrected output location: student starter project has no output-dir, so practice_report.html lands beside the .qmd (NOT docs/). The docs/ folder is book-repo-only. Matches /_snippets/render-how.qmd. -->
+::: {.callout-note title="Where is my HTML file?"}
+For your `practice_report.qmd`, the rendered file (`practice_report.html`) is saved **right next to the `.qmd` file** in the Explorer panel. Watch the render log for the `Output created:` line --- it names the exact file. To view it, right-click the `.html` file in the Explorer and choose **Download** (or **Open Preview** if available); typing the file name in the terminal will not open it. (In some larger projects an output directory is configured so the file lands there instead, but your practice project does not set one.)
+:::
+
+**Congratulations!** You just performed "Knowledge Translation"—turning raw code into a human-readable document.
+
+## If it fails (Troubleshooting)
+
+Rendering involves many moving parts, so it sometimes gets stuck.
+
+-   **The "Wait" Rule:** If nothing happens for 20 seconds, the background process might be initializing. Give it a moment.
+-   **The "Retry" Rule:** Sometimes the connection hiccups. Run **Quarto: Render Document** one more time.
+-   **The "No Button" Rule:** The Render button sometimes does not appear in a fresh or stale Codespace. You do not need it — the Command Palette and terminal methods above always work. <!-- AI-EDIT(2026-06-11): D-003/GAP-R678-1 — missing-button fallback — needs review -->
+-   **The "TeX Warning" Rule:** If you see a warning that no TeX installation was found, you can ignore it as long as your HTML file was created successfully. Only run `quarto install tinytex` if you need to produce PDF output. <!-- AI-EDIT(2026-06-11): WI-013/MIT-021 — needs review -->
+-   **The "Red Text" Rule:** Look at the **Terminal** tab at the bottom. If you see red text, it is an error message. Read it—it usually tells you exactly what went wrong (e.g., "File not found" or "Syntax error").
+
+Still stuck after trying these rules? See [Troubleshooting: Rebuild Container](workflows09-troubleshooting.qmd) for the step-by-step fix with screenshots. <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review -->

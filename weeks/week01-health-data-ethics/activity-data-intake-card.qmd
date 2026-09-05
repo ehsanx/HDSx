@@ -1,0 +1,144 @@
+# Activity: Data Intake Card {.unnumbered}
+
+## Goal
+
+Evaluate whether a health dataset is usable, ethical, documented, and appropriate for reproducible analysis. This activity is about judgment and documentation. No coding is required.
+
+## Approved Portals
+
+Choose one dataset or indicator page from one of these portals:
+
+<!-- AI-EDIT(2026-06-11): TF-008, MIT-164 — portal names linked to course reference pages — needs review -->
+- CDC/NCHS public-use survey data, such as [NHANES](../../references/data-sources/nhanes.qmd) or [NHIS](../../references/data-sources/nhis.qmd);
+- [WHO Global Health Observatory](../../references/data-sources/gho.qmd);
+- [BC Data Catalogue](../../references/data-sources/bc-data-catalogue.qmd);
+- [Government of Canada Open Government Portal](../../references/data-sources/open-portal.qmd).
+
+Each link goes to that source's page in the Reference: Data Sources part of this book.
+
+The NHANES Health Equity data spine may be used as the shared classroom example.
+
+## Student Template
+
+Copy this template into your notes.
+
+```yaml
+dataset_name: ""
+publisher_org: ""
+permalink_url: ""
+date_accessed: "YYYY-MM-DD"
+license_terms: ""
+geography: ""
+time_coverage: ""
+data_level: ""   # microdata / aggregated indicator / unknown
+file_format: ""  # CSV / RDS / XLSX / JSON / other
+metadata_or_codebook: ""
+variables_of_interest:
+  - name: ""
+    definition: ""
+    unit: ""
+    caveat: ""
+known_limitations:
+  - ""
+privacy_security_notes: ""
+stewardship_notes: ""
+indigenous_data_relevance: "no / yes / unknown"
+kt_framing_sentence: ""
+how_to_cite: ""
+ai_use_note: ""
+```
+
+<!-- AI-EDIT(2026-06-11): WI-010 — needs review -->
+Use `unknown` if you cannot confidently answer a field after checking the source documentation. Do not guess. Briefly state what you checked.
+
+## Completed Example
+
+```yaml
+dataset_name: "NHANES Health Equity classroom dataset"
+publisher_org: "CDC / National Center for Health Statistics"
+permalink_url: "https://wwwn.cdc.gov/nchs/nhanes/"
+date_accessed: "YYYY-MM-DD"
+license_terms: "Public-use NHANES files; cite CDC/NCHS documentation"
+geography: "United States"
+time_coverage: "Multiple NHANES cycles represented in the prepared class file"
+data_level: "Microdata-derived classroom dataset"
+file_format: "CSV and RDS cached in examples/nhanes-equity/data/"
+metadata_or_codebook: "CDC/NCHS NHANES documentation and case-study README"
+variables_of_interest:
+  - name: "BMI"
+    definition: "Body mass index from NHANES body measures data"
+    unit: "kg/m^2"
+    caveat: "Use descriptively unless survey design and weights are handled correctly"
+known_limitations:
+  - "Prepared class dataset is for classroom analysis and should not be treated as a causal analysis"
+  - "Population inference requires attention to NHANES survey design and weights"
+privacy_security_notes: "Use public-use data responsibly, avoid small-cell claims, and do not upload row-level data to AI tools"
+stewardship_notes: "State limitations plainly and avoid stigmatizing group comparisons"
+indigenous_data_relevance: "unknown in the prepared class example; check source documentation for any project dataset"
+kt_framing_sentence: "This dataset can help students practice describing health equity patterns while learning to state limits clearly"
+how_to_cite: "Cite CDC/NCHS NHANES documentation and the course case-study README"
+ai_use_note: "AI may help draft plain-language wording, but source documentation must be checked directly"
+```
+
+<!-- AI-EDIT(2026-06-22): REVIEW-row19, SS-005 — removed redundant screenshot placeholder; the completed YAML example above already shows a fully filled-in Data Intake Card, so the SS-005 image is not required -->
+
+<!-- AI-EDIT(2026-06-11): MIT-011, MIT-165 — needs review -->
+For `how_to_cite`, follow the course citation pattern: source organization, dataset name and cycle, publisher, URL, and access date. For example:
+
+> Centers for Disease Control and Prevention (CDC), National Center for Health Statistics. National Health and Nutrition Examination Survey (NHANES) 2017-2018 Documentation. Hyattsville, MD: U.S. Department of Health and Human Services. https://wwwn.cdc.gov/nchs/nhanes/ (accessed 2026-06-11).
+
+## Completion Checklist
+
+To be marked complete, your card must include:
+
+- stable source link or access date;
+- publisher or steward;
+- license or terms of use;
+- geography and time coverage;
+- data level and file format;
+- documentation or codebook location;
+- at least one documented variable definition;
+- a 1-2 sentence note on how an AI tool could misrepresent or bias that variable, such as wrong category labels, outdated coding, or overgeneralization; <!-- AI-EDIT(2026-06-11): MIT-010, MIT-165 — needs review -->
+- one limitation or stewardship risk;
+- one privacy or security note;
+- Indigenous Data Sovereignty relevance marked as no, yes, or unknown;
+- KT framing sentence;
+- AI-use note.
+
+<!-- AI-EDIT(2026-06-22): REVIEW-row22, SS-006 — placeholder retained; this image illustrates the "yes" Indigenous-relevance case (OCAP/CARE), which the "unknown" completed example does not cover. RA confirmed it still needs to be generated. Asset not yet present in repo. -->
+<!-- TODO-SCREENSHOT: uncomment when the asset exists:
+![Example of a Data Intake Card flagging an Indigenous identifier variable, with the relevance field marked yes and a note to review source guidance](../../assets/images/week01/indigenous-flag-example.png){fig-alt="Data Intake Card excerpt with the indigenous_data_relevance field set to yes and a stewardship note pointing to OCAP and CARE guidance"}
+-->
+
+## Scoring Guide
+
+| Rating | Evidence |
+|---|---|
+| Complete | Source, publisher, terms, metadata, variable definition, limitation, stewardship note, KT framing, and AI-use note are present and grounded in documentation. |
+| Needs work | Source documentation is missing, license terms are unclear, variable definitions are guessed, risks are absent, or AI-written text is not checked against official documentation. |
+
+## Submission
+
+Submit the completed card in Canvas under the Week 1 module as a **required,
+unweighted Complete/Needs Work checkpoint**. It carries no percentage weight
+and has no granular rubric. Its purpose is to identify setup, access, or
+workflow trouble early enough for the TA or instructor to help before later
+assignments build on it.
+
+Submit only the completed card; no screenshot, reflection, or additional setup
+evidence is required. Starting in Week 2, keep a copy in your course repository
+as:
+
+```text
+data-intake-card.md
+```
+
+## Reproducibility Check
+
+Before submitting, check:
+
+- the link opens or the access date is recorded;
+- the publisher and license are named;
+- variable definitions come from documentation, not guesses;
+- file format and data level are named;
+- the AI-use note says what AI helped with and how the text was checked.

@@ -1,0 +1,63 @@
+# Python Environment
+
+## Create A Notebook
+
+In your GitHub Codespace:
+
+<!-- AI-EDIT(2026-06-22): REVIEW-row141 (TF-017,MIT-060,WI-029) — named the repo (course HDSx repo) for this part per RA -->
+Do this in your personal `HDSx-workspace` fork — the same Codespace you use for
+assignments, not the read-only course-book repository or a blank repo.
+
+1. In the Explorer, select
+   `assignments/assignment04-polyglot/submission/`.
+2. Right-click that folder, choose **New File...**, and name the file
+   `translation.ipynb`. Do not save it at the repository root.
+3. Select the recommended Python kernel when VS Code asks.
+<!-- AI-EDIT(2026-06-22): REVIEW-row142 (TF-017) — added extension up-to-date check; RA found stale extensions made the notebook slow to run -->
+4. Before running anything, let the Codespace finish setting up. If VS Code shows an "Updating extensions" or "Installing extensions" message in the bottom-right corner, wait for it to finish — running the notebook before the Python and Jupyter extensions are up to date can make the first cell very slow to start. You can confirm in the Extensions panel that the Python and Jupyter extensions are installed and not showing a pending update.
+5. Run this first cell by clicking the play button to the left of the cell (or pressing `Shift+Enter`). The output appears directly below the cell:
+
+```python
+print("Hello from Python. My Week 5 notebook is running.")
+```
+
+## Use The Variables Pane
+
+The Variables pane helps you audit Python objects the way the Environment pane helps you audit R objects.
+
+Run this cell:
+
+```python
+age = 25
+course = "HDSx"
+```
+
+Then open the notebook Variables pane and check that both variables appear.
+
+## Load A Tiny DataFrame
+
+<!-- AI-EDIT(2026-06-11): TF-017 — needs review -->
+`pandas` comes preinstalled in the course Codespace, so the import below just works — you do not need to install anything.
+
+```python
+import pandas as pd
+
+demo = pd.DataFrame({
+    "group": ["A", "A", "B"],
+    "value": [10, 15, 20]
+})
+
+demo
+```
+
+Double-click `demo` in the Variables pane to open the Data Viewer. This is where you will inspect row counts, column names, and translated outputs later in the week.
+
+## Common Fixes
+
+| Problem | First thing to try |
+|---|---|
+| No kernel appears | Wait for the Codespace to finish starting, then reload the window |
+| Variables pane is missing | Check that the Jupyter extension is enabled |
+| Notebook cell will not run | Select a Python kernel from the notebook toolbar |
+| First cell is very slow to start | Wait for the Python and Jupyter extensions to finish updating (check the Extensions panel), then try again |<!-- AI-EDIT(2026-06-22): REVIEW-row142 (TF-017) — Common Fixes entry for stale/updating extensions slowing the notebook -->
+| Package import fails | Check the course baseline in `.devcontainer/requirements.txt`; ask before adding a package |

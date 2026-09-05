@@ -1,0 +1,12 @@
+{
+  "hash": "dbe22a94216f5caec0da29b29989e6b6",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "# Tutorial 9: Creating Reusable Python Scripts\n\n## When to Use a Script\n\nUse a `.py` script for reusable functions (like data cleaning) that you want to use across different notebooks.\n\n1.  Create a new file: `helpers.py`.\n\n2.  Add a cleaning function:\n\n\n    ::: {#474449c4 .cell execution_count=1}\n    ``` {.python .cell-code}\n      # # weeks/week05-polyglot-r-deepening/helpers.py\n      # from pathlib import Path\n      # import pandas as pd\n      # \n      # def load_and_preview(path, n=5):\n      #     p = Path(path)\n      #     if not p.exists():\n      #         raise FileNotFoundError(f\"Could not find file: {p.resolve()}\")\n      #     df = pd.read_csv(p)\n      #     print(df.head(n))\n      #     return df\n    ```\n    :::\n    \n    \n3.  **Import it** in your notebook:\n\n\n    ::: {#1df43d0d .cell execution_count=2}\n    ``` {.python .cell-code}\n    # from helpers import load_and_preview\n    # load_and_preview(\"data/patients.csv\")\n    ```\n    :::\n    \n    \n",
+    "supporting": [
+      "python09-reusable-scripts_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

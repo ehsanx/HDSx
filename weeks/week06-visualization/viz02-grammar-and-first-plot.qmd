@@ -1,0 +1,96 @@
+# Grammar of a ggplot, and Your First Plot {.unnumbered}
+
+## Where this fits
+
+[viz01](viz01-overview-and-goals.qmd) framed visualization as a claim about evidence. This page teaches the five moving parts of any `ggplot2` figure and walks you through your first plot on the NHANES Health Equity CSV. Everything builds from these five parts.
+
+## The five moving parts
+
+Every ggplot is built from the same five ingredients. You will see all five in the worked example on the next page, so the names matter.
+
+| Part | What it answers | A beginner-friendly analogy |
+|---|---|---|
+| **Data** | What table are we plotting? | The contents of one box |
+| **Mapping (`aes`)** | Which variable goes where (x, y, color, group)? | Telling R which column to draw on which axis |
+| **Geometry (`geom_*`)** | What kind of mark (point, line, bar)? | The shape of the ink on the page |
+| **Scale and coordinates** | How are values stretched along an axis? | The ruler under the ink |
+| **Labels and theme** | What does the reader see in plain text? | The caption around the picture |
+
+If a reader cannot answer "which statistic? across what groups? with what limitation?" from your figure, one of these five parts is doing too little.
+
+## Setup
+
+Open your Codespace and start a new code chunk in a `.qmd` file. Run:
+
+<!-- AI-EDIT(2026-06-23): tidyverse-default — consolidated core library() calls into library(tidyverse) -->
+```{r}
+#| eval: false
+library(tidyverse)
+```
+
+::: {.callout-warning}
+`library(tidyverse)` is required every session. If you see "could not find function `ggplot`", run the `library()` line first.
+:::
+
+## Load the cached NHANES CSV
+
+This is the same file you will use for the worked example and your A5 deliverable. The candidate-path pattern below works whether your `.qmd` is at the repository root or under `weeks/week06-visualization/`.
+
+```{r}
+#| eval: false
+candidate_paths <- c(
+  "examples/nhanes-equity/data/nhanes_equity_v6.csv",
+  "../../examples/nhanes-equity/data/nhanes_equity_v6.csv"
+)
+data_path <- candidate_paths[file.exists(candidate_paths)][1]
+nhanes <- read_csv(data_path, show_col_types = FALSE)
+
+glimpse(nhanes)
+```
+
+`glimpse()` shows the column names and types. Read them carefully. Misspelling a column name (e.g., `bmi` when the data has `BMI`) is the #1 source of broken ggplots in this course.
+
+<!-- AI-EDIT(2026-06-22): tester-note-conversion — converted leaked "Tester note" callout to hidden HTML comment (tester instruction, not student content)
+Tester note — Capture: a screenshot of the Codespaces Quarto preview after `glimpse(nhanes)` runs, showing the column names. New students rely on this to spot case-sensitive column names like `BMI` and `IncomeGroup`.
+-->
+
+## Your first plot
+
+Here is the smallest meaningful ggplot you can build from this dataset: a scatter of one numeric variable against age, with no grouping and no transformation. Try it as is, then change `Weight` to `BMI` or `Height` and re-render.
+
+```{r}
+#| eval: false
+ggplot(nhanes, aes(x = Age, y = Weight)) +
+  geom_point(alpha = 0.2) +
+  labs(
+    title = "Weight by age, NHANES Health Equity classroom dataset",
+    subtitle = "One point per record; unweighted, descriptive only",
+    x = "Age (years)",
+    y = "Weight (kg)"
+  ) +
+  theme_minimal()
+```
+
+Map the five parts onto this code so the grammar feels concrete:
+
+- **Data:** `nhanes`
+- **Mapping:** `aes(x = Age, y = Weight)`
+- **Geometry:** `geom_point(alpha = 0.2)` (translucent points so overlap is visible)
+- **Scale and coordinates:** the default linear axes (you have not changed them)
+- **Labels and theme:** `labs(...) + theme_minimal()`
+
+<!-- AI-EDIT(2026-06-22): tester-note-conversion — converted leaked "Tester note" callout to hidden HTML comment (tester instruction, not student content)
+Tester note — Capture: a screenshot of the rendered scatter plot. Confirm the axis labels read "Age (years)" and "Weight (kg)" so students can compare against their own first attempt.
+-->
+
+## Three things to check on every plot
+
+After you run any ggplot, ask:
+
+1. **Column names match the data.** Did `glimpse()` confirm `BMI` is uppercase, not `bmi`?
+2. **Axes tell a clear story.** Are the units readable? Is the range honest?
+3. **Title and subtitle match what is plotted.** Does the title overstate ("BMI rises with age across Canada")? If yes, soften it ("Weight by age in the prepared classroom dataset").
+
+## Where this goes next
+
+[viz03](viz03-worked-example.qmd) is the first end-to-end worked example: load the CSV, prepare a small descriptive summary, render a labeled figure, and write a caption.

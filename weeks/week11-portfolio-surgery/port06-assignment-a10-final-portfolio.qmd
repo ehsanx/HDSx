@@ -1,0 +1,96 @@
+# Portfolio Surgery and the Final Portfolio {.unnumbered}
+
+## Where This Fits
+
+This page connects the Week 11 [Portfolio Surgery](index.qmd) session to [M4 peer review](../../milestones/m4-peer-review/README.md) and the [Final Portfolio](../../milestones/final-portfolio/README.md). Portfolio Surgery is an in-class working session, not a separately graded assignment: the artifacts you produce here feed your M4 peer review and your Final Portfolio. It does not add new deliverables.
+
+<!-- AI-EDIT(2026-08-30): Assignment 10 dropped as a graded item in the Tue reschedule. Portfolio Surgery survives as this Week 11 in-class session; its outputs feed M4 and the Final Portfolio. -->
+
+## What To Produce in the Session
+
+Work through these in your project repository. They are working artifacts for M4 and the portfolio, not a separate graded submission.
+
+### Fresh-environment reproducibility test
+
+Document the fresh-environment test using [port02](port02-fresh-codespace-test.qmd). Record the latest commit hash, environment, commands, and result.
+
+If every reproducibility check passes, that is a good outcome: document the checks you ran and their results, and note that no failures were found. You are not penalised for having nothing to repair — do not invent a failure or make an unnecessary change just to have something to log.
+
+### Failure log
+
+List any failures before repairs: warnings, broken paths, missing packages, unclear README steps, citation issues, and stale outputs. Give each failure evidence and a result after repair or triage.
+
+### Repairs
+
+Name any files you changed and why, or state that no repairs were required. This can be short.
+
+| File changed | Reason | Verification |
+|---|---|---|
+| `README.md` | Added render command | Followed command in fresh Codespace |
+
+### Peer review (feeds M4)
+
+Record the feedback you received or gave, keeping it specific and actionable. Your [M4 peer review](../../milestones/m4-peer-review/README.md) is the graded milestone; see [port04](port04-peer-review-m4.qmd) for how the session feeds it.
+
+### Final risk list
+
+Name remaining risks or state that no known risks remain. Honest risk lists are better than hidden problems. This carries directly into the Final Portfolio.
+
+### AI-use note
+
+State what AI helped with and how any repairs or wording were checked.
+
+## Final Portfolio Bridge
+
+<!-- AI-EDIT(2026-06-11): TF-035, MIT-104 — needs review -->
+The revision target is all of it — the analysis project, the report, the dashboard-style KT product, and the repository with its README — not just one piece.
+
+The final portfolio is not a separate new analysis. It gathers the strongest version of:
+
+- final report source and rendered output;
+- dashboard-style KT product or static preview;
+- data provenance and stewardship documentation;
+- reproducibility instructions;
+- narrated presentation slide deck;
+- final AI-use audit;
+- clear README and repository access route.
+
+Your dashboard-style KT product may be submitted as a static preview; a live dashboard is not required. <!-- AI-EDIT(2026-06-11): WI-075 (R2-07) — needs review -->
+
+Use the [Final Portfolio Checklist](../../milestones/final-portfolio/final-portfolio-checklist.md) before submission.
+
+<!-- AI-EDIT(2026-06-11): GAP-R911-3 (R2-11), GAP-R911-4 (R2-12) — needs review -->
+Two rules make this easier:
+
+- **You may revise earlier work — and you are encouraged to.** If feedback on an earlier assignment showed you a better way, fix it before it goes into the portfolio. The portfolio is graded on the strongest version of your work, not the first version you submitted.
+- **Required files are prescribed; the rest of the structure is yours.** The checklist names the files every portfolio must contain. Beyond those files, your group is free to organize and present the portfolio however serves your project best.
+
+<!-- AI-EDIT(2026-06-11): TF-037, MIT-105 — needs review -->
+Not sure what "strong" looks like? A weak portfolio is a pile of files the reader must decode. A strong portfolio leads with a README that answers what the project is, who it is for, what was found, and how to rerun it. See the side-by-side [weak vs strong README example](port03-readme-repo-hygiene.qmd#weak-vs-strong-a-readme-example).
+
+## Public or Private Repository
+
+Use [Repository Sharing Guidance](../../milestones/final-portfolio/repository-sharing-guidance.md). Private repositories are appropriate when public sharing would create data, privacy, licensing, or stewardship risk.
+
+Public is not better by default. Reviewable, safe, and reproducible is the target.
+
+## Before You Finish the Session
+
+Check:
+
+- fresh environment test attempted;
+- any failures logged before repair, or passing checks documented;
+- report and KT product rerun or failure clearly explained;
+- README matches the tested workflow;
+- M4 feedback is recorded;
+- final risk list is honest.
+
+## Before Final Portfolio
+
+After Portfolio Surgery, focus on:
+
+- repairing any remaining blockers;
+- aligning presentation slides with final report claims;
+- checking repository access;
+- confirming public/private sharing choice;
+- syncing the final commit before Canvas submission.

@@ -1,0 +1,14 @@
+# Assignment 2: R With AI
+
+<!-- AI-EDIT(2026-06-11): MIT-032 — needs review -->
+1.  Open the [Assignment 2 README](../../assignments/assignment02-r-with-ai/README.md) for the full instructions, then copy the starter file (`assignments/assignment02-r-with-ai/starter-analysis.qmd`) into your submission folder as `analysis-note.qmd`.
+
+2.  In your personal workspace, import the NHANES dataset at `examples/nhanes-equity/data/nhanes_equity_v6.csv`. <!-- AI-EDIT(2026-06-11): MIT-032 — needs review -->
+
+3.  Use the **Pipe** to filter and summarize one variable.
+
+4.  **Audit:** Add a `#` comment explaining your prompt.
+
+5.  **Render** the file to HTML.
+
+6.  **Commit and Push** to GitHub.

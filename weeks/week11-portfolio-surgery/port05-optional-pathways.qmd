@@ -1,0 +1,62 @@
+# Optional Pathways {.unnumbered}
+
+<!-- AI-EDIT(2026-06-11): WI-061 (D-002) — needs review -->
+{{< include /_snippets/demo-only.qmd >}}
+
+The advanced deployment and Python-flavoured pathways are optional demonstrations. Complete the required portfolio polish first, then explore optional pathways only if you have time and instructor approval.
+
+<!-- AI-EDIT(2026-06-11): WI-076 (D-002) — needs review -->
+Everything on this page is [optional — include only if relevant to your project]. Skipping it carries no penalty (tag vocabulary: [How To Read Submission Lists](../../assignments/index.qmd#how-to-read-submission-lists)).
+
+## Keep the Core First
+
+Optional pathways are only useful after the core portfolio works:
+
+- report renders;
+- dashboard-style KT product opens or runs;
+- README explains the workflow;
+- data source and limitations are clear;
+- fresh environment test has been attempted.
+
+Do not switch tools in Week 11 unless the change reduces risk or the instructor has approved the pathway.
+
+## Optional Shiny
+
+Shiny can support richer interactivity, but it introduces extra testing and deployment questions. Use it only when the audience need justifies a running app and the group can document how to launch it.
+
+For this course, the NHANES Shiny app is an exemplar and demonstration. It is not the default required pathway for every project.
+
+## Optional Static Dashboard
+
+<!-- AI-EDIT(2026-06-11): D-002/MIT-106 — link previously served raw .qmd from the published book; now labeled as a source file on GitHub — needs review -->
+The source file [static-dashboard-ojs.qmd (view on GitHub)](https://github.com/ehsanx/HDSx/blob/main/weeks/week11-portfolio-surgery/static-dashboard-ojs.qmd) demonstrates a no-server dashboard that reads the NHANES CSV snapshot in the browser. It is a *source file to read or run yourself*, not a page of this book; the instructor demonstrates the rendered version in class. It is useful as an optional portfolio extension after the required report and KT product are reproducible.
+
+This file remains demo-only in this pass. Do not treat it as a portfolio requirement.
+
+## Optional Python
+
+Python may be useful for a small extension if it supports the project and runs in Codespaces. Keep it awareness-level unless the group has a clear reason and a documented environment.
+
+If Python is included, document:
+
+- where the Python code lives;
+- how to run it;
+- which packages are required;
+- what outputs it creates;
+- how it connects to the R/Quarto core.
+
+## Public Deployment
+
+Public deployment is optional and should follow the Week 10 rule: private preview unless public-safe.
+
+Before public sharing, check:
+
+- no restricted data;
+- no credentials;
+- no row-level sensitive examples;
+- aggregate outputs only;
+- README explains data use and limitations.
+
+## Decision Rule
+
+Use the simplest pathway that serves the audience and can be reproduced by course staff. Optional tools are welcome only when they make the project clearer, not when they make the project harder to review.

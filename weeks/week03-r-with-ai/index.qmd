@@ -1,0 +1,525 @@
+# Week 3: R with AI {.unnumbered}
+
+## Overview
+
+**Summary:** In Week 2 you learned how to use your Codespace, edit a Quarto document, and make your first commit. Now you learn how to speak R---not by memorizing syntax, but by directing an AI co-pilot and *auditing* what it writes. Your job is to be the pilot: you decide what the analysis should do, the AI drafts the code, and you verify every line before it flies.
+
+<!-- AI-EDIT(2026-06-11): TF-013, MIT-030, WI-017 — needs review -->
+**What is R?** R is the main programming language we use in this course for cleaning, summarizing, and visualizing health data. GitHub and Codespaces provide the workspace; R is the tool we use inside that workspace to work with data.
+
+**Learning Objectives:**
+
+- Understand that R is a calculator that needs specific, case-sensitive instructions.
+- Load packages with `library()` and explain why this is needed each session.
+- Explain how the course devcontainer and dependency notes make package use visible.
+- Use core constructs: variables (assignment), functions (with arguments), and the pipe (`%>%` / `|>`).
+- Perform basic data transformations using `dplyr` verbs: `filter()`, `select()`, `mutate()`, `summarise()`, `group_by()`.
+- Inspect a dataset on first contact: structure, dimensions, missingness.
+- Identify control flow (`if/else`, loops) in AI-generated code and audit whether it is correct.
+- Write and adapt a simple custom function.
+- Apply an AI safety checklist to catch hallucinations, wrong column names, and unsafe operations.
+- Document your analysis in Quarto by weaving code chunks with Markdown narrative.
+- Commit incrementally as you work (reinforcing Week 2 Git basics).
+
+## Connection
+
+Week 2 made the project structure reproducible. This week you use that structure to load, inspect, summarize, and audit R code with AI support. Next week you will put those edits under version control.
+
+Before you start, make sure your tools are ready: [The Setup (The Cockpit)](r01-setup.qmd). <!-- AI-EDIT(2026-06-11): GAP-R345-1 — needs review -->
+<!-- AI-EDIT(2026-06-22): REVIEW-row55, GAP-R345-1 — RA requests an added screenshot on the linked Setup page (r01-setup.qmd); image not available to insert. NEEDS-RA-SCREENSHOT -->
+<!-- TODO: RA to provide screenshot for r01-setup.qmd (referenced by REVIEW-row55) -->
+
+<!-- AI-EDIT(2026-06-11): TF-013, MIT-025, WI-018 — needs review -->
+::: {.callout-note title="How to use the code blocks on this page"}
+For each code block below, follow the label above it: **Read** means inspect only, **Run** means execute it as written, **Modify** means make the requested change, and **Copy** means place it in the assignment file named in the instructions.
+:::
+
+## Case Study Data Analysis
+
+**What to do with this code (the case-study block below):** Run — it loads the cached NHANES CSV and prints two summaries. You do not need to modify it this week. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review -->
+
+{{< include ../../examples/nhanes-equity/snippets/case-study-data-analysis.qmd >}}
+
+## In-Class Activity
+
+- Load the CSV snapshot and inspect column names, row count, and missingness.
+- Summarize one numeric variable and one grouping variable with clear `NA` handling.
+- Ask an AI assistant to comment on your code, then audit whether the comments match the actual operations.
+- Note one place where an AI assistant could hallucinate a variable name or overstate what the descriptive summary means.
+
+Student output: a short Quarto note with one data inspection, one summary, and one AI-audit comment. Assignment link: [Assignment 2](../../assignments/assignment02-r-with-ai/README.md).
+
+---
+
+<!-- AI-EDIT(2026-06-11): MIT-033, GAP-R345-1 — needs review -->
+## Packages: Opening the Toolbox
+
+Deeper dive: [Packages (The Toolbox)](r02-packages.qmd).
+
+### Install vs Load
+
+- `install.packages("tidyverse")` — **buying** the toolbox. Done once per environment (already done in your course Codespace).
+- `library(tidyverse)` — **opening** the toolbox. Required every time you restart R or reopen your Codespace.
+
+**What to do with this code:** Run — execute it as written every time you reopen your Codespace. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review -->
+
+<!-- AI-EDIT(2026-06-22): REVIEW-row59, MIT-025 — clarify you must be inside an R session (the `>` prompt) before running library() -->
+**Where to run this:** First start R so you are *inside* an R session. Open a terminal in VS Code (**Terminal → New Terminal**), type `R`, and press Enter. You should now see the R prompt, which looks like `>`. Then type the line below at that `>` prompt (you can also run it from the R Console or a code chunk in your `.qmd`).
+
+```{r, eval=FALSE}
+library(tidyverse)
+```
+
+::: {.callout-note}
+If you see an error like `there is no package called 'tidyverse'`, the package is not installed in your Codespace. Use the Canvas support channel or office hours and include the full error message.
+:::
+
+### Course Environment and Dependency Note
+
+The personal workspace devcontainer is the supported course environment. It
+installs the R and Python packages used by the required pathway, so you do not
+need to initialize `renv`, create a lockfile, or install packages for Assignment
+2.
+
+For every submitted analysis:
+
+1. Load each R package explicitly with `library(...)` in the Quarto source.
+2. Name the packages you used in `dependency-note.md`.
+3. State whether you used only the course defaults.
+4. If you think you need another package, ask the instructor or TA before adding
+   it. Record an approved addition in the workspace devcontainer setup and in
+   your dependency note so a fresh Codespace can reproduce it.
+
+For Assignment 2, a complete dependency note can be as short as:
+
+```text
+Packages used: tidyverse. No packages were added beyond the course Codespace baseline.
+```
+
+The test is practical: your document must render in a fresh course Codespace.
+
+---
+
+<!-- AI-EDIT(2026-06-11): MIT-033, GAP-R345-1 — needs review -->
+## Core Constructs: Boxes, Toasters, and the Assembly Line
+
+Deeper dives: [Basics: Boxes & Toasters](r03-basics.qmd); the pipe is also covered in [Control Flow](r04-control-flow.qmd).
+
+### Variables: The Labeled Box
+
+R has no memory unless you store results in a named box using `<-`.
+
+**What to do with this code:** Run — type it in the Console, then check the Environment pane to see your new "boxes". <!-- AI-EDIT(2026-06-11): MIT-025 — needs review -->
+
+```{r, eval=FALSE}
+patient_age <- 55
+clinic_name <- "Vancouver General"
+```
+
+::: {.callout-warning}
+**Case sensitivity:** `Age`, `age`, and `AGE` are three different boxes. This is one of the most common bugs in AI-generated code. Always check that column names match your data exactly.
+:::
+
+### Functions: The Toaster
+
+A function takes **input** and returns **output**. Arguments (inside the parentheses) control its behaviour.
+
+**What to do with this code:** Run — execute it as written. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review -->
+
+```{r, eval=FALSE}
+mean(c(72, 85, 90), na.rm = TRUE)
+```
+
+- `c(72, 85, 90)` is the input (a vector of numbers).
+- `na.rm = TRUE` tells R to ignore missing values. **Always look for this** when auditing AI code that works with health data --- missingness is the norm, not the exception.
+
+### The Pipe: The Assembly Line
+
+The pipe passes the result of one step into the next. Think of it as **"and then..."**
+
+**What to do with this code:** Read — `data` here is a placeholder, so this block will not run as-is. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review -->
+
+```{r, eval=FALSE}
+data %>%
+  filter(age > 65) %>%
+  summarise(mean_bmi = mean(bmi, na.rm = TRUE))
+```
+
+Read this as: *"Take the data, and then keep only patients over 65, and then calculate the average BMI."*
+
+::: {.callout-tip}
+You will see two pipe symbols in the wild: `%>%` (from the `magrittr` / `tidyverse` packages) and `|>` (built into R 4.1+). They do the same thing for our purposes. If AI generates the other one, don't panic --- both work in your Codespace.
+:::
+
+---
+
+<!-- AI-EDIT(2026-06-11): MIT-033, GAP-R345-1 — needs review -->
+## Data Import and First Contact
+
+Deeper dive: [The Loading Dock (Data Import)](r05-data-import.qmd).
+
+### Loading Data
+
+Use relative paths so your code runs on any machine (including your grader's Codespace).
+
+**What to do with this code:** Modify — replace the path with the relative path to your own file, then run it. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review -->
+
+```{r, eval=FALSE}
+my_data <- read_csv("data/patients.csv")
+```
+
+**How to get the path right:** Right-click the file in the VS Code Explorer → **Copy Relative Path** → paste it into your code.
+
+**AI Prompt:**
+
+> Read the CSV file at "data/patients.csv" and save it as `my_data`. Use the `readr` package.
+
+### First Contact: Inspect Before You Analyze
+
+Never start analysis without looking at your data. Run these four checks:
+
+**What to do with this code:** Run — execute it as written once your data is loaded. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review -->
+
+<!-- AI-EDIT(2026-06-22): REVIEW-row69, MIT-025 — note that glimpse() needs tidyverse loaded and state where to run -->
+Run these in your assignment `.qmd` (as a code chunk) or at the R `>` prompt, using the course workspace repo. `glimpse()` comes from `tidyverse`, so if you get `could not find function "glimpse"`, run `library(tidyverse)` first.
+
+```{r, eval=FALSE}
+# How big is it?
+dim(my_data)          # rows x columns
+
+# What are the column names and types?
+glimpse(my_data)
+
+# Quick summary statistics
+summary(my_data)
+
+# How much is missing?
+colSums(is.na(my_data))
+```
+
+Open the **Environment** pane (top-right in RStudio or via the R extension) to see your variables and click a data frame to view it in a grid.
+
+::: {.callout-warning}
+**Health data reality:** Real datasets like NHANES have substantial missingness. Knowing *where* and *how much* is missing is not optional --- it shapes every downstream decision.
+
+<!-- AI-EDIT(2026-06-11): MIT-034 — needs review -->
+A concrete example: in NHANES, income questions are skipped far more often than age questions. If you silently drop rows with missing income, your "average" quietly excludes many of the very people a health-equity analysis is trying to describe. Handling missingness carefully is part of responsible data stewardship, not just a coding chore.
+:::
+
+---
+
+## Data Transformation: The Five `dplyr` Verbs <!-- AI-EDIT(2026-06-11): MIT-033 — needs review -->
+
+These five verbs are the core of data wrangling in R. You will use them in nearly every assignment and in your term project.
+
+**What to do with the code in this section:** Modify — swap in your own dataset and column names, then run each block. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review -->
+
+### `filter()` — Keep rows that match a condition
+
+```{r, eval=FALSE}
+# Patients aged 65 and older
+seniors <- my_data %>% filter(age >= 65)
+```
+
+### `select()` — Keep (or drop) columns
+
+```{r, eval=FALSE}
+# Keep only ID, age, and BMI
+slim <- my_data %>% select(id, age, bmi)
+```
+
+### `mutate()` — Create or modify a column
+
+```{r, eval=FALSE}
+# Add a BMI category column
+my_data <- my_data %>%
+  mutate(bmi_category = case_when(
+    bmi < 18.5 ~ "Underweight",
+    bmi < 25   ~ "Normal",
+    bmi < 30   ~ "Overweight",
+    TRUE       ~ "Obese"
+  ))
+```
+
+### `summarise()` — Collapse rows into a summary
+
+```{r, eval=FALSE}
+my_data %>% summarise(mean_age = mean(age, na.rm = TRUE))
+```
+
+### `group_by()` + `summarise()` — Summaries by group
+
+```{r, eval=FALSE}
+my_data %>%
+  group_by(sex) %>%
+  summarise(
+    n = n(),
+    mean_bmi = mean(bmi, na.rm = TRUE)
+  )
+```
+
+**AI Prompt:**
+
+> Using `dplyr`, filter my dataset to patients over 65, group by sex, and calculate the mean BMI for each group. Handle missing values.
+
+::: {.callout-tip}
+**Audit the AI output:** After running the AI-generated code, check that (a) the column names match your actual data, (b) `na.rm = TRUE` is present where needed, and (c) the row counts make sense (e.g., the filtered data should be smaller than the original).
+:::
+
+**Git checkpoint:** You have now loaded, inspected, and transformed data. Stage your `.qmd`, write a commit message describing what you did, and commit. Don't wait until the end.
+
+---
+
+<!-- AI-EDIT(2026-06-11): MIT-033, GAP-R345-1 — needs review -->
+## Control Flow: Auditing AI Decisions
+
+Deeper dive: [Control Flow](r04-control-flow.qmd).
+
+You will not write many `if/else` blocks or loops by hand. But AI frequently generates them, so you need to **read** them.
+
+**What to do with the code in this section:** Read — these are patterns to recognize in AI output; you do not need to run them. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review -->
+
+### If/Else: The Fork in the Road
+
+```{r, eval=FALSE}
+if (mean_age > 50) {
+  print("Older cohort")
+} else {
+  print("Younger cohort")
+}
+```
+
+**Audit question:** Is the threshold (50) appropriate for my research question, or did the AI pick an arbitrary number?
+
+### Loops: The Treadmill
+
+```{r, eval=FALSE}
+for (col in c("age", "bmi", "sbp")) {
+  print(summary(my_data[[col]]))
+}
+```
+
+**Audit questions:** Does the loop have a clear end condition? Could this be replaced with a simpler vectorized operation (e.g., `summarise(across(...))`)?
+
+::: {.callout-note}
+In R, loops are rarely the best tool. If AI gives you a loop, ask: *"Can this be done without a loop using dplyr or purrr?"* The answer is usually yes.
+:::
+
+---
+
+## Writing a Simple Function <!-- AI-EDIT(2026-06-11): MIT-033 — needs review -->
+
+The syllabus asks you to write at least one custom function. A function packages a repeated task so you don't copy-paste code.
+
+### Example: A Reusable Summary
+
+**What to do with this code:** Run, then Modify — run it as written on your data, then change one thing as described in "Your Task" below. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review -->
+
+```{r, eval=FALSE}
+summarise_column <- function(data, column_name) {
+  data %>%
+    summarise(
+      n_total   = n(),
+      n_missing = sum(is.na(.data[[column_name]])),
+      mean_val  = mean(.data[[column_name]], na.rm = TRUE),
+      sd_val    = sd(.data[[column_name]], na.rm = TRUE)
+    )
+}
+
+# Use it
+summarise_column(my_data, "bmi")
+summarise_column(my_data, "age")
+```
+
+### Your Task
+
+1. Ask your AI co-pilot to write a function that takes a data frame and a column name and returns summary statistics.
+2. **Audit the code:** Does it handle `NA`? Does it work on a numeric column? What happens if you pass a categorical column?
+3. **Adapt it:** Change one thing (e.g., add a median, or add a `group_by` argument). This is the difference between accepting code blindly and understanding it.
+
+**AI Prompt:**
+
+> Write an R function called `summarise_column` that takes a data frame and a column name (as a string) and returns the count, number of missing values, mean, and standard deviation. Then show me how to call it on the "bmi" column of `my_data`.
+
+---
+
+<!-- AI-EDIT(2026-06-11): MIT-033, GAP-R345-1 — needs review -->
+## Debugging: Reading the Red Text
+
+Deeper dive: [The Detective (Debugging)](r06-debugging.qmd).
+
+Errors are normal. AI makes mistakes, you make typos, and data surprises you.
+
+### The "Fix It" Loop
+
+1. **Read** the error message. Look for keywords: `not found`, `unexpected`, `non-numeric`.
+2. **Copy** the full error text.
+3. **Paste** it into your AI chat and ask:
+
+> Here is an R error from my Codespace: [paste]. Explain what went wrong in one sentence and give corrected code.
+
+### Common Errors and What They Mean
+
+| Error message | Likely cause |
+|---|---|
+| `object 'X' not found` | Typo in variable name, or you forgot to run an earlier chunk |
+| `could not find function "X"` | Forgot `library(tidyverse)` or misspelled the function |
+| `non-numeric argument to binary operator` | Trying to do math on a text/factor column |
+| `unexpected symbol` | Missing comma, parenthesis, or pipe |
+
+::: {.callout-warning}
+**AI debugging guardrail:** When AI suggests a fix, re-read the corrected code before running it. Does the fix address the *actual* error, or did AI rewrite the whole chunk and change your logic?
+
+<!-- AI-EDIT(2026-06-11): WI-019 — needs review -->
+When asking AI for help, explicitly say: *"Do not change the logic or intended result of my code. Explain any suggested change before rewriting it."*
+:::
+
+---
+
+<!-- AI-EDIT(2026-06-11): MIT-033, GAP-R345-1 — needs review -->
+## AI Safety: The Audit Checklist
+
+Deeper dive: [AI Safety: The Audit Checklist](r07-ai-audit-checklist.qmd).
+
+Every time you accept AI-generated code, run through this checklist:
+
+1. **Column names:** Are they spelled exactly as they appear in `glimpse(my_data)`?
+2. **Data types:** Is the code doing math only on numeric columns?
+3. **Missingness:** Is `na.rm = TRUE` present where needed?
+4. **Privacy:** Does the code avoid printing individual patient rows that could be identifiable?
+5. **Logic:** Does the code do what *you* intended, or what the AI *assumed* you meant?
+
+### The Paper Trail Rule
+
+Deeper dive: [The Paper Trail (Comments)](r08-comments.qmd). <!-- AI-EDIT(2026-06-11): GAP-R345-1 — needs review -->
+
+Every time you use AI to write a code chunk, add a `#` comment above it explaining what you asked for and what you verified:
+
+**What to do with this code:** Read — then imitate this comment pattern above your own AI-assisted chunks. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review -->
+
+```{r, eval=FALSE}
+# AI prompt: "Calculate mean BMI by sex, handling NAs"
+# Verified: column names match, na.rm = TRUE present, output has 2 rows (M/F)
+my_data %>%
+  group_by(sex) %>%
+  summarise(mean_bmi = mean(bmi, na.rm = TRUE))
+```
+
+This comment trail is your audit log. It demonstrates accountability (required by the course AI policy) and helps you debug later.
+
+---
+
+## Exporting Clean Data <!-- AI-EDIT(2026-06-11): MIT-033 — needs review -->
+
+After cleaning and transforming, save your work so future weeks can pick up where you left off.
+
+**What to do with this code:** Run — it creates `output/clean_data.csv`; create the `output/` folder first if it does not exist. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review -->
+
+```{r, eval=FALSE}
+# Save a clean version for Week 4 and beyond
+write_csv(my_data, "output/clean_data.csv")
+```
+
+::: {.callout-tip}
+**Reproducibility habit:** Your Quarto document should contain *every step* from raw data to clean export. Anyone (including your grader) should be able to render it from scratch and get the same `clean_data.csv`.
+:::
+
+**Git checkpoint:** Your analysis is complete. Stage, commit with a clear message (e.g., `"Complete Week 3: load, inspect, transform, and export patient data"`), and Sync.
+
+---
+
+## Literate Analysis in Quarto <!-- AI-EDIT(2026-06-11): MIT-033 — needs review -->
+
+Your `.qmd` file is not just code --- it is a **document**. Weave narrative around your code chunks to explain what you are doing and why.
+
+### Pattern
+
+**What to do with this code:** Read — a pattern to imitate in your own document, not text to paste as-is. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review -->
+
+````markdown
+## Data Inspection
+
+We begin by examining the structure of the dataset to understand
+variable types and missingness before any transformations.
+
+```{{r, eval=FALSE}}
+glimpse(my_data)
+colSums(is.na(my_data))
+```
+
+
+The dataset contains `nrow(my_data)` observations across
+`ncol(my_data)` variables. Notably, BMI is missing for
+approximately 12% of records, which we handle with `na.rm = TRUE`
+in downstream summaries.
+````
+
+This interleaving of code and prose is **literate programming** --- the methodology that underpins reproducible research in this course. Practice it now; you will need it for your term project report (Week 10) and final portfolio.
+
+---
+
+## Knowledge Check <!-- AI-EDIT(2026-06-11): MIT-033 — needs review -->
+
+1. What is the difference between `install.packages()` and `library()`?
+2. Why is `na.rm = TRUE` important when working with health data?
+3. What does `my_data %>% filter(age > 65) %>% summarise(n = n())` do? Read it aloud using "and then."
+4. Name the five core `dplyr` verbs and what each does in one sentence.
+5. You see the error `object 'BMI' not found` but your column is called `bmi`. What went wrong?
+6. What is the difference between `%>%` and `|>`? Does it matter for this course?
+7. Why should you write `#` comments above AI-generated code?
+8. What four checks should you run immediately after loading a new dataset?
+
+---
+
+<!-- AI-EDIT(2026-06-11): MIT-032, MIT-033, GAP-R345-1 — needs review -->
+## Assignment 2: R With AI
+
+Full instructions: [Assignment 2 README](../../assignments/assignment02-r-with-ai/README.md). Short version: [Assignment 2 walkthrough](r09-assignment-mad-libs.qmd).
+
+**Task:** Build a short Quarto report that loads, inspects, transforms, and summarizes a health dataset --- using your AI co-pilot for code generation and your own judgment for verification.
+
+### Step-by-Step Workflow
+
+<!-- AI-EDIT(2026-06-11): MIT-032 — needs review -->
+1. Open the [Assignment 2 README](../../assignments/assignment02-r-with-ai/README.md) and follow its setup steps: copy the starter file (`assignments/assignment02-r-with-ai/starter-analysis.qmd`) into your submission folder as `analysis-note.qmd`. The dataset is `examples/nhanes-equity/data/nhanes_equity_v6.csv` ([view on GitHub](https://github.com/ehsanx/HDSx/blob/main/examples/nhanes-equity/data/nhanes_equity_v6.csv)).
+2. **Load packages and data:** Use AI to write the `library()` and `read_csv()` calls. Verify the data loaded correctly with `dim()` and `glimpse()`.
+3. **Inspect missingness:** Run `colSums(is.na(...))`. Add a Markdown paragraph interpreting what you see.
+4. **Transform:** Use `dplyr` verbs to:
+   - Filter to a meaningful subgroup (e.g., age ≥ 18).
+   - Create at least one new column with `mutate()`.
+   - Produce a grouped summary with `group_by()` + `summarise()`.
+5. **Write a function:** Create (or adapt from AI) a reusable summary function. Call it on at least two different columns.
+6. **Export:** Save your summary table to `output/summary_table.csv`.
+7. **Document:** Every code chunk should have:
+   - A `#` comment stating what you asked the AI and what you verified.
+   - A Markdown paragraph below interpreting the result.
+8. **Render** the document to verify it runs cleanly from top to bottom.
+9. **Git:** Stage, write a descriptive commit message, Commit, and Sync.
+
+### Deliverable
+
+A rendered `.qmd` that a reader can follow as a narrative: what data you started with, what you did to it, what you found, and why your decisions were justified.
+
+---
+
+<!-- AI-EDIT(2026-06-11): MIT-033, GAP-R345-1 — needs review -->
+## Quick Reference
+
+See also: [Final Summary Checklist](r10-final-checklist.qmd).
+
+| Concept | R code | Notes |
+|---|---|---|
+| Load packages | `library(tidyverse)` | Every session |
+| Read CSV | `read_csv("data/file.csv")` | Use relative paths |
+| Assignment | `x <- 5` | The `<-` arrow stores a value |
+| Inspect structure | `glimpse(df)` | Column names, types, preview |
+| Dimensions | `dim(df)` | Rows × columns |
+| Summary stats | `summary(df)` | Min, median, mean, max, NAs |
+| Check missingness | `colSums(is.na(df))` | Count NAs per column |
+| Filter rows | `filter(df, age > 65)` | Keep matching rows |
+| Select columns | `select(df, id, age, bmi)` | Keep named columns |
+| New column | `mutate(df, bmi_cat = ...)` | Create or modify |
+| Summarize | `summarise(df, m = mean(x, na.rm = TRUE))` | Collapse to one row |
+| Group + summarize | `group_by(df, sex) %>% summarise(...)` | Per-group summaries |
+| Export | `write_csv(df, "output/clean.csv")` | Save for later |
+| Pipe | `%>%` or `|>` | "And then..." |

@@ -1,0 +1,119 @@
+# In-Class Studio: Dashboard Adaptation {.unnumbered}
+
+## Where this fits
+
+You have everything you need: the worked Quarto starter ([dash03](dash03-starter-dashboard.qmd)), the rule for allowed changes ([dash04](dash04-audience-and-ui-text.qmd)), and the testing and privacy routines ([dash05](dash05-testing-privacy-and-shiny-demo.qmd)). This page is the in-class studio — about 60 minutes of structured work that produces draft versions of every Assignment 7 deliverable.
+
+## Before you start
+
+Take 2 minutes to confirm your Codespace is ready:
+
+1. The cached CSV resolves: `examples/nhanes-equity/data/nhanes_equity_v6.csv`.
+2. You copied the personal-workspace starter to
+   `assignments/assignment07-dashboard/submission/dashboard.qmd`, and that copy
+   renders cleanly with the default `selected_income`.
+3. You have decided which `IncomeGroup` to set `selected_income` to for your adaptation (it does not have to be the default).
+
+## Goal
+
+Produce draft versions of every A7 file from the Quarto starter. Tomorrow's polish will make them assignment-ready; today's work makes sure the bones are there.
+
+## The 60-minute studio sequence
+
+You will move through six short steps. Each step produces one or two artifacts.
+
+### Step 1 — Audience and question (10 min)
+
+Write two short paragraphs in `dashboard-adaptation-note.md`:
+
+- **Audience.** One specific role and what they need to decide.
+- **Question.** Phrased the way the audience would phrase it.
+
+Use the templates from [dash02](dash02-from-eda-to-prototype.qmd). Be specific.
+
+### Step 2 — Identify your control and visualization (5 min)
+
+In the same note, add:
+
+- **Control.** One control and the values it can take.
+- **Visualization.** One chart and what it shows when the control changes.
+
+For most students, this is the existing `selected_income` control and the line chart of mean BMI by cycle from the starter. That is fine.
+
+### Step 3 — Pick one audience-facing change (10 min)
+
+Read your starter file with the eyes of your stated audience. Find one element that could be clearer — a label, a caption, a help text line, a README sentence, or a limitation. Pick the one that would help the audience most.
+
+<!-- AI-EDIT(2026-06-11): MIT-084, WI-045 — needs review -->
+Create `before-after-text.md` in the A7 submission folder: in the Explorer panel, expand `assignments/assignment07-dashboard/`, right-click the `submission` folder, and choose **New File**. Include the original wording, your revised wording, and one sentence explaining why the revision is clearer for the audience. In full, the file needs:
+
+- The original text.
+- The revised text.
+- One sentence on why the change helps.
+- One sentence confirming no analytic logic changed (see [dash04](dash04-audience-and-ui-text.qmd)).
+
+### Step 4 — Apply the change and test (15 min)
+
+Edit `assignments/assignment07-dashboard/submission/dashboard.qmd` with the
+revised text. Then run the six-step test routine from
+[dash05](dash05-testing-privacy-and-shiny-demo.qmd):
+
+1. Render.
+2. Change the control to a different value.
+3. Render again.
+4. Verify the caption.
+5. Open the HTML preview.
+6. Record the test in `testing-log.md`.
+
+<!-- AI-EDIT(2026-06-22): tester-note-conversion — converted leaked "Tester note" callout to hidden HTML comment (preserved for instructors/testers; redundant with the required screenshot output already listed for students). -->
+<!--
+Tester note:
+Capture: a screenshot of the rendered "after" state showing the revised audience-facing element clearly visible. Beginners need to see what a successful adaptation looks like before they attempt their own.
+-->
+
+### Step 5 — Write the limitation and privacy check (10 min)
+
+In `limitation-note.md`, write **one sentence** stating what the dashboard does *not* support. Use the pattern from [eda05](../week07-eda-ai-audit/eda05-ai-audit-categories.qmd) on descriptive-vs-causal.
+
+In `privacy-check.md`, write the **three sentences** from [dash05](dash05-testing-privacy-and-shiny-demo.qmd):
+
+- One naming the data source and classroom-use boundary.
+- One confirming aggregate-only outputs.
+- One confirming no row-level data was shared with external AI.
+
+<!-- AI-EDIT(2026-06-11): WI-044 — needs review -->
+`testing-log.md`, `limitation-note.md`, and `privacy-check.md` are brief evidence files. One to three focused sentences or bullets are enough unless the assignment asks for more.
+
+### Step 6 — Reproducibility and AI use (10 min)
+
+In `reproducibility-note.md`, write one paragraph naming:
+
+- The command or render path you used.
+- The relative path to the dataset.
+- A sentence on whether the dashboard renders in a fresh Codespace.
+
+In `ai-use-note.md`, name what AI helped with (if anything) and how you verified the result.
+
+## At the end of the studio
+
+You should leave class with draft versions of all the files A7 expects. Polish at home and submit by the Monday 4 PM deadline.
+
+## Required studio outputs (drafts)
+
+- `dashboard-adaptation-note.md`
+- `dashboard.qmd`
+- `before-after-text.md`
+- `testing-log.md`
+- `limitation-note.md`
+- `privacy-check.md`
+- `reproducibility-note.md`
+- `ai-use-note.md`
+- One screenshot of the rendered "after" state (this becomes `dashboard-preview.png` after a final render)
+
+## Completion check
+
+You are done with the studio when a peer can read your `dashboard-adaptation-note.md` and identify your audience, your question, your control, your visualization, your text change, and your test result — without rerunning the dashboard first.
+
+## Where this goes next
+
+[dash07](dash07-assignment-a7-and-reference.qmd) walks through how each studio file becomes the corresponding A7 deliverable and what verification each file needs before submission.

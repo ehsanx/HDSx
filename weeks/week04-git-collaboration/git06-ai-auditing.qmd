@@ -1,0 +1,50 @@
+# AI Auditing {.unnumbered}
+
+Use these prompts with your AI assistant:
+
+-   **Audit:** "I am about to commit these changes. Explain what I changed in plain English. Did I delete anything important?"
+
+    Use this to spot accidental deletions or unintended edits before you commit.
+
+-   **Scribe:** "Based on this diff, write a one-sentence, professional commit message for my Quarto document."
+
+    Check that the message captures the **intent** (e.g., `"Filter patient cohort to age ≥ 65 per protocol"`), not just the action (`"changed line 42"`).
+
+-   **Panic:** "VS Code shows this error: \[PASTE ERROR\]. What does it mean in simple terms and what buttons should I click?"
+
+    Never run random terminal commands suggested by an AI (especially `--force` or `reset --hard`). Prefer the VS Code visual interface, which is safer. If the AI suggests a terminal command, ask it for the GUI equivalent first.
+
+<!-- AI-EDIT(2026-06-11): MIT-049, WI-026, TF-057 — needs review -->
+
+## From Prompts to Submission Files
+
+The three prompts above produce text you will reuse as evidence in [Assignment 3](../../assignments/assignment03-git/README.md). After using AI to explain your diff or draft a commit message, copy the useful part into `git-audit-note.md`. For `pull-request-evidence.md`, paste the PR link or screenshot filename and one sentence explaining what the PR shows.
+
+For example, `git-audit-note.md` could look like:
+
+``` text
+## Diff summary (AI-assisted, verified by me)
+Changed one sentence in README.md to clarify where the data file lives.
+No code lines were added or removed.
+
+## .gitignore check
+Confirmed secrets and temporary files are excluded. Required HTML remains committable.
+
+## AI-use sentence
+I used Copilot Chat to summarize the diff; I re-read the diff myself
+and confirmed the summary is accurate.
+
+## M0 readiness
+All group members can open the shared repo and have committed at least once.
+```
+
+And `pull-request-evidence.md` could look like:
+
+``` text
+PR link: https://github.com/your-username/your-repo/pull/1
+Branch: docs/git-audit-note
+Final commit hash: a1b2c3d
+What the PR shows: a documentation-only edit to one README sentence.
+```
+
+Both files go in `assignments/assignment03-git/submission/`.

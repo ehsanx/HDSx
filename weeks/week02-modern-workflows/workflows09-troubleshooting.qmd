@@ -1,0 +1,39 @@
+# Troubleshooting: Rebuild Container
+
+Sometimes the cloud computer gets "stuck." Maybe the terminal froze, or R crashed.
+
+**The Fix:** We don't fix broken computers; we get new ones. "Rebuilding the Container" is the cloud equivalent of **"Have you tried turning it off and on again?"**—but better, because it gives you a fresh machine while keeping your files safe.
+
+## When to use this?
+
+If things break:
+
+-   **Terminal frozen:** You type, but nothing appears.
+-   **Render fails:** You get weird errors that make no sense.
+-   **Environment issues:** R or Python can't find a package that was there yesterday.
+
+One warning that does **not** need a rebuild: "no TeX installation was found." That one is harmless as long as your HTML file was created — see the TeX Warning rule in [Render with Quarto](workflows07-render-quarto.qmd). <!-- AI-EDIT(2026-06-11): TF-054 — needs review -->
+
+Before you rebuild, commit and sync your saved work first --- see [Commit Your Work](workflows08-commit-work.qmd) for the steps with screenshots. <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review -->
+
+## Steps
+
+1.  **Open the Command Palette**
+    -   Press `F1` (or `Ctrl+Shift+P` on Windows / `Cmd+Shift+P` on Mac).
+    -   A search bar will appear at the very top of the screen. This is the "God Mode" search bar for VS Code.
+2.  **Search**
+    -   Type: `Rebuild Container`
+3.  **Execute**
+    -   Click on the option that says: **Codespaces: Rebuild Container**
+4.  **Wait (\~2-5 minutes)**
+    -   The screen will reload.
+    -   **Don't Panic:** You might see a black screen with scrolling text logs. This is normal: it is reinstalling the software.
+    -   When your files reappear in the Explorer, you are ready to go.
+
+**Did I lose my work?**
+
+-   **Saved files:** No. Anything you pressed `Ctrl+S` on is safe.
+
+-   **Unsaved typing:** Yes.
+
+-   **R Memory:** Yes. You will need to re-run your code chunks from the top.

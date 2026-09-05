@@ -1,0 +1,81 @@
+# Week 8: Dashboard Prototypes for KT {.unnumbered}
+
+## Overview
+
+This is the first app-forward week. You will move from audited EDA outputs (Week 7) to a small dashboard-style Knowledge Translation product that helps a defined audience explore one descriptive question.
+
+The **required core** pathway is the [Quarto starter dashboard](dash03-starter-dashboard.qmd): it renders reliably in every Codespace, makes the analysis visible, and is the file you will adapt for Assignment 7. The Shiny exemplar discussed on [dash05](dash05-testing-privacy-and-shiny-demo.qmd) is a **demonstration only** — your instructor will run it in class; you are not required to install Shiny, run the app, or produce A7 deliverables from it.
+
+<!-- AI-EDIT(2026-06-11): MIT-086, TF-001 — needs review -->
+::: {.callout-important title="Required / Draft / Optional This Week"}
+- **Required (graded):** the nine [Assignment 7](../../assignments/assignment07-dashboard/README.md) files, explained one by one in [dash07](dash07-assignment-a7-and-reference.qmd).
+- **Draft (studio work that feeds A7, not graded on its own):** the render note, audience sentence, before/after text, testing log, and limitation statement from [dash06](dash06-studio-dashboard-adaptation.qmd).
+- **Demo-only (not graded, do not build on it):** the Shiny exemplar on [dash05](dash05-testing-privacy-and-shiny-demo.qmd) — watch it; do not submit A7 work from it.
+
+Tags like `[required]` and `[demo-only]` are defined in [How To Read Submission Lists](../../assignments/index.qmd#how-to-read-submission-lists).
+:::
+
+## Objectives
+
+By the end of the week you can:
+
+- explain the difference between a static report, a Quarto dashboard-style product, and a Shiny app;
+- render the Quarto starter dashboard locally and adapt one audience-facing element;
+- apply the 1-1-1-1-1 rule to translate one Week 7 finding into a dashboard prototype;
+- distinguish text/UI changes (allowed for A7) from analytic changes (not allowed for A7);
+- test a dashboard locally and record what was checked;
+- apply privacy-safe publishing guidance before sharing any health-data product.
+
+## Connection
+
+Week 7 established an auditable descriptive foundation. Week 8 asks how a non-technical audience will encounter that evidence in a dashboard. Week 9 turns one dashboard finding into a concise scientific communication product.
+
+## Dashboard Case Study: NHANES Equity
+
+{{< include ../../examples/nhanes-equity/snippets/case-study-dashboard.qmd >}}
+
+## Reading order
+
+1. [dash01 — What a Dashboard Is, and Three Pathways](dash01-overview-and-pathways.qmd)
+2. [dash02 — From One Finding to a Prototype: The 1-1-1-1-1 Rule](dash02-from-eda-to-prototype.qmd)
+3. [dash03 — Starter Dashboard (required core artifact)](dash03-starter-dashboard.qmd)
+4. [dash04 — Audience-Facing Text: What You Can and Cannot Change for A7](dash04-audience-and-ui-text.qmd)
+5. [dash05 — Testing, Privacy-Safe Publishing, and the Shiny Demo](dash05-testing-privacy-and-shiny-demo.qmd)
+6. [dash06 — In-Class Studio: Dashboard Adaptation](dash06-studio-dashboard-adaptation.qmd)
+7. [dash07 — Assignment 7 Walkthrough and Reference](dash07-assignment-a7-and-reference.qmd)
+
+## Class plan
+
+1. Render the [Quarto starter dashboard](dash03-starter-dashboard.qmd) from the repository root.
+2. Choose a stakeholder audience and write one question that audience could answer from the dashboard.
+3. Identify one control, title, caption, help text, or interpretation note to revise.
+4. Improve that audience-facing text without changing analytic logic.
+5. Re-render the dashboard with a different `selected_income` value and record the test result.
+6. Watch the optional Shiny exemplar demonstration ([dash05](dash05-testing-privacy-and-shiny-demo.qmd)) — for awareness only, not for A7.
+
+## Student output
+
+By the end of class each student has a local render note, an audience sentence, a before/after text change, a testing log entry, and a limitation statement — the studio drafts of every Assignment 7 file.
+
+## Links
+
+- Assignment: [Assignment 7 — Dashboard KT Prototype](../../assignments/assignment07-dashboard/README.md)
+
+## Definition of done
+
+- The Quarto starter dashboard renders locally from the cached NHANES data.
+- The audience-facing change improves clarity without changing the analysis.
+- The testing log records how the dashboard was checked in Codespaces.
+- The privacy-safe publishing note avoids row-level data sharing, small-cell claims, and causal overreach.
+- No A7 submission uses the Shiny app as its primary deliverable.
+
+## What students leave with
+
+A tested dashboard adaptation note and a decision rule for the term project: use the simplest pathway that serves the audience, with the Quarto pathway as the supported default and any other pathway requiring instructor approval.
+
+<!--
+AI-EDIT(2026-06-11): D-001 — needs review.
+Maintainer note: this week has no instructor key files to gate. If instructor-only example
+dashboards or speaker notes are added later, put them in the private HDSx-instructor repository
+(see its MAINTENANCE notes), never in this public repo.
+-->

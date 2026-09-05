@@ -1,0 +1,18 @@
+The **NHANES Health Equity Dashboard** is now the foreground case study. Use it as a small knowledge-translation product built on the cached NHANES equity dataset.
+
+- App code: `examples/nhanes-equity/app/app.R`
+- Cached data: `examples/nhanes-equity/data/nhanes_equity_v6.rds` and `examples/nhanes-equity/data/nhanes_equity_v6.csv`
+- Optional rebuild script: `examples/nhanes-equity/scripts/build_nhanes_equity.R`
+
+Run the dashboard from the repository root:
+
+```r
+shiny::runApp("examples/nhanes-equity/app")
+```
+
+The app is offline-first: it loads the local RDS cache when available. Rebuilding from CDC uses `nhanesA`, requires internet access, and is optional unless assigned.
+
+Companion materials:
+
+- Week 10 report template: `weeks/week10-reporting-publishing/report-template.qmd`
+- Week 11 static dashboard demo: `weeks/week11-portfolio-surgery/static-dashboard-ojs.qmd`

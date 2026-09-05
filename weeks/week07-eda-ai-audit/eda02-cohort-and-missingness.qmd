@@ -1,0 +1,114 @@
+# Cohort and Missingness {.unnumbered}
+
+## Where this fits
+
+[eda01](eda01-overview-and-goals.qmd) named the four artifacts your EDA work produces. This page covers the first two: how to define and document an analysis cohort, and how to report missingness *before* you summarize anything. Both habits are the foundation of every Table 1 you will make for the rest of the term.
+
+## Why cohort definition comes first
+
+A dataset is not an analysis sample. The NHANES Health Equity CSV contains records of all ages, with some variables intentionally coded as `NA`. If you summarize without restricting, you are answering a question the data cannot answer cleanly.
+
+A cohort definition is a one-sentence answer to *"who is in this analysis?"* — written down before you compute any statistics. Common examples:
+
+- "Adults age 20-80 in the prepared classroom dataset."
+- "Female respondents with non-missing BMI."
+- "Records from NHANES cycles 2013-2014 and 2015-2016."
+
+Each restriction has a reason. The reason goes in the methods note.
+
+## Documenting the cohort in code
+
+This pattern shows up in the [worked example](eda03-worked-example.qmd). You will reuse it for A6 and M2.
+
+```{r}
+#| eval: false
+# AI-EDIT(2026-06-23): tidyverse-default — consolidated core library() calls into library(tidyverse)
+library(tidyverse)
+library(knitr)
+
+candidate_paths <- c(
+  "examples/nhanes-equity/data/nhanes_equity_v6.csv",
+  "../../examples/nhanes-equity/data/nhanes_equity_v6.csv"
+)
+data_path <- candidate_paths[file.exists(candidate_paths)][1]
+nhanes <- read_csv(data_path, show_col_types = FALSE)
+
+analysis_df <- nhanes |>
+  filter(Age >= 20, Age <= 80)
+
+cohort_counts <- tibble(
+  step = c("Prepared CSV rows", "After age 20-80 restriction"),
+  n = c(nrow(nhanes), nrow(analysis_df))
+)
+
+kable(cohort_counts)
+```
+
+The `cohort_counts` table is your **flow diagram in text form**. It shows N before and after each restriction. If a peer asks "how many people are in your analysis?", this table is the answer.
+
+<!-- AI-EDIT(2026-06-22): tester-note-conversion — converted leaked "Tester note" callout to hidden HTML comment (QA/screenshot instruction, not student-facing content)
+Tester note
+Capture: a screenshot of the rendered `cohort_counts` table in the Quarto preview. Beginners often skip this step; seeing it labeled clearly helps them recognize what they are missing.
+-->
+
+## Why missingness comes before the summary
+
+A complete-case summary silently drops rows. If you compute `mean(BMI, na.rm = TRUE)` without first showing how many BMI values were missing, your reader has no idea how representative the mean is.
+
+The audit habit is: **report missingness first, then summarize, then interpret.** Never the other order.
+
+## Counting missingness
+
+The cleanest beginner pattern:
+
+```{r}
+#| eval: false
+key_vars <- c("BMI", "Age", "IncomeGroup", "Gender", "Race", "Cycle")
+
+missingness <- tibble(variable = key_vars) |>
+  mutate(
+    missing_n = vapply(analysis_df[key_vars], function(x) sum(is.na(x)), numeric(1)),
+    missing_percent = round(100 * missing_n / nrow(analysis_df), 1)
+  )
+
+kable(missingness)
+```
+
+This produces a small table: one row per key variable, with the missing count and the percent missing. Three rules apply when you write or accept code like this:
+
+1. **Pick `key_vars` deliberately.** Only include variables you will actually use in the Table 1 or downstream summary.
+2. **Use the denominator from the cohort, not the raw dataset.** Missingness as a percent of *your cohort* tells the right story.
+3. **Report it, even if it is small.** A row that says "BMI missing: 2 (0.1%)" is still informative.
+
+<!-- AI-EDIT(2026-06-22): tester-note-conversion — converted leaked "Tester note" callout to hidden HTML comment (QA/screenshot instruction, not student-facing content)
+Tester note
+Capture: a screenshot of the rendered `missingness` table for the adult cohort. Beginners need to see what "percent missing per variable" actually looks like.
+-->
+
+## What "complete-case" means and why it can bias the summary
+
+After you see the missingness table, you have a choice. The simplest path is **complete-case analysis**: drop rows where any key variable is missing. This is what most beginner tutorials show.
+
+That choice is reasonable for a classroom Table 1, but it is not automatically unbiased. If the rows you drop are systematically different from the rows you keep (for example, people with missing income may be different from people with reported income), your summary tilts in a direction you cannot see from the table alone.
+
+The honest move is to:
+
+1. Report missingness *first*.
+2. Filter to complete cases *with the missingness disclosed*.
+3. Add a sentence in the methods note acknowledging the complete-case assumption.
+
+You will see this exact sequence in the [worked example](eda03-worked-example.qmd).
+
+## A short audit habit
+
+After you produce a cohort plus missingness table, ask three questions:
+
+1. Could a reader tell who was excluded and why?
+2. Is the percent missing reported for every variable in the downstream Table 1?
+3. Did I describe the cohort *before* I described the summary?
+
+If any answer is "no", revise before the table.
+
+## Where this goes next
+
+[eda03](eda03-worked-example.qmd) is the first end-to-end worked example: cohort, missingness, Table 1, methods note — all four artifacts in one rerunnable Quarto document.

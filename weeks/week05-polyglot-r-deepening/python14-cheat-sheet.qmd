@@ -1,0 +1,25 @@
+# R To Python Cheatsheet
+
+Use this as a translation aid, not as a substitute for checking outputs.
+
+| Task | R | Python |
+|---|---|---|
+| Load package | `library(dplyr)` | `import pandas as pd` |
+| Read CSV | `read_csv("file.csv")` | `pd.read_csv("file.csv")` |
+| First rows | `head(df)` | `df.head()` |
+| Row count | `nrow(df)` | `len(df)` or `df.shape[0]` |
+| Column names | `names(df)` | `df.columns.tolist()` |
+| Select columns | `select(df, BMI, Gender)` | `df[["BMI", "Gender"]]` |
+| Filter rows | `filter(df, Age >= 20)` | `df[df["Age"] >= 20]` |
+| Missing values | `sum(is.na(df$BMI))` | `df["BMI"].isna().sum()` |
+| Group summary | `group_by(...) |> summarise(...)` | `.groupby(...).agg(...)` |
+| New column | `mutate(df, whtr = Waist / Height)` | `df["whtr"] = df["Waist"] / df["Height"]` |
+| Sort rows | `arrange(df, IncomeGroup)` | `df.sort_values("IncomeGroup")` |
+| Unique values | `unique(df$Gender)` | `df["Gender"].unique()` |
+
+<!-- AI-EDIT(2026-06-11): MIT-059 — needs review -->
+**Dependency note:** `read_csv()` comes from the `readr` package, not `dplyr`. Load it with `library(readr)`, or use `library(tidyverse)` to get `readr` and `dplyr` together. On the Python side, every command in this table needs `import pandas as pd` first.
+
+## Translation Rule
+
+The translation is not finished when the code runs. It is finished when the R and Python outputs have been compared and the comparison is documented.

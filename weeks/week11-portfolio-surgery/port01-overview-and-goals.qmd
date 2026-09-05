@@ -1,0 +1,53 @@
+# Surgery Goals {.unnumbered}
+
+## Where This Fits
+
+Portfolio surgery is the week when you stop asking, "What else can we add?" and start asking, "What would fail for a reviewer?"
+
+<!-- AI-EDIT(2026-06-11): TF-034, MIT-103, WI-059 — needs review -->
+Portfolio surgery means revising existing work so it is reproducible, readable, professional, privacy-safe, and understandable to someone outside the course. In practice, that is four kinds of work: fixing what is broken, simplifying what is confusing, documenting what is undocumented, and polishing what is rough.
+
+The strongest final projects are not the ones with the most tools. They are the ones another person can open, rerun, inspect, and understand.
+
+## The Core Standard
+
+<!-- AI-EDIT(2026-06-11): TF-035 — needs review -->
+The surgery covers all of it — the analysis code, the report, the dashboard-style KT product, the README, and the repository itself. You are not revising just one piece; you are revising everything a reviewer will touch.
+
+By the end of this week, the group should know:
+
+- whether the report renders;
+- whether the dashboard-style KT product opens or runs;
+- whether paths are relative;
+- whether data access is documented;
+- whether citations resolve;
+- whether AI-use notes are specific;
+- whether README instructions match reality.
+
+## Do Not Add New Work Unless It Reduces Risk
+
+Good Week 11 changes:
+
+- fix a broken path;
+- add a missing package note;
+- rewrite unclear README steps;
+- regenerate stale outputs;
+- document a known limitation;
+- remove an unsupported claim.
+
+Risky Week 11 changes:
+
+- replacing the dashboard pathway;
+- adding a new package without documenting it;
+- adding a new analysis that is not needed for the report;
+- switching to public publishing without privacy review.
+
+## Group Artifact Mindset
+
+M4 and the final portfolio are group project artifacts unless a brief explicitly says otherwise. Divide roles during testing, but keep the repository evidence in one shared place.
+
+## Check Yourself
+
+At the end of the week, a reviewer should be able to say:
+
+> I can find the report, open the KT product, trace the data source, understand the limitation, and see what still might fail.

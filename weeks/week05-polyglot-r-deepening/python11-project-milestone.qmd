@@ -1,0 +1,33 @@
+# Proposal Readiness
+
+## Why This Belongs In Week 5
+
+Before the project proposal is due, you should know whether your chosen dataset can be loaded, inspected, and explained in the course workflow. Week 5 adds one extra test: can you verify the basic data shape in both R and Python?
+
+## Proposal Readiness Checklist
+
+Your proposal should include:
+
+- a focused health-data question;
+- the dataset name and source;
+- a brief provenance and stewardship note;
+- a feasibility check showing the file can load in a Codespace;
+- one or two planned descriptive summaries or visualizations;
+- any known privacy, licensing, or access limitations.
+
+## Feasibility Check
+
+For your project dataset, record:
+
+| Check | What to write |
+|---|---|
+| File path | relative path from the repo root |
+| File format | CSV, RDS, Excel, API, or other |
+| Row and column count | basic shape after loading |
+| Key variables | names and meanings of the fields you expect to use |
+| Missingness concern | one variable where missing values may matter |
+| R/Python check | whether both languages can load the file |
+
+## Student Output
+
+Add this feasibility check to your project proposal notes. If your dataset does not load cleanly yet, describe the blocker honestly instead of hiding it.

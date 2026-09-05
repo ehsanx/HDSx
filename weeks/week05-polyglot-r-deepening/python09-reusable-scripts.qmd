@@ -1,0 +1,54 @@
+# Reusable Python Scripts
+
+## Notebook or Script?
+
+Use a notebook when you are exploring, explaining, and checking outputs. Use a script when you have a helper function that should be reused without copying and pasting.
+
+This mirrors the R pattern from Week 3: once a chunk of code has a clear job, turn it into a named function.
+
+## Create `helpers.py`
+
+<!-- AI-EDIT(2026-06-11): MIT-060 — needs review -->
+In your personal workspace Explorer, select
+`assignments/assignment04-polyglot/submission/`. Create `helpers.py` there,
+beside `translation.ipynb`; a root-level copy will break the import below.
+
+```python
+from pathlib import Path
+import pandas as pd
+
+
+def load_and_preview(path, n_rows=5):
+    """Load a CSV, print its shape, and return the first rows."""
+    csv_path = Path(path)
+    if not csv_path.exists():
+        raise FileNotFoundError(f"Could not find file: {csv_path}")
+
+    data = pd.read_csv(csv_path)
+    print(f"Loaded {data.shape[0]} rows and {data.shape[1]} columns")
+    return data.head(n_rows)
+```
+
+## Import It In A Notebook
+
+In `translation.ipynb`, import and use the helper:
+
+```python
+from helpers import load_and_preview
+
+preview = load_and_preview("../../../examples/nhanes-equity/data/nhanes_equity_v6.csv")
+preview
+```
+
+## Reproducibility Check
+
+Before committing:
+
+- verify that `helpers.py` is saved in the same folder as your notebook;
+- rerun the notebook from a fresh kernel;
+- check that the relative path starts from the notebook location;
+- commit both files together with a message such as `Add Week 5 Python helper`.
+
+## Student Output
+
+For Assignment 4, your reusable script should contain at least one function that is actually called from the notebook. A function that is written but never used does not demonstrate reproducibility.

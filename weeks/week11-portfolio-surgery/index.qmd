@@ -1,0 +1,80 @@
+# Week 11: Portfolio Surgery {.unnumbered}
+
+## Overview
+
+This week is about making the project survive review. The goal is not to add features. The goal is to find and repair the failures that would stop another person from opening, rendering, understanding, or trusting the final portfolio.
+
+<!-- AI-EDIT(2026-06-11): TF-034 — needs review -->
+Portfolio surgery means fixing, simplifying, documenting, and polishing the work you already have — not building something new.
+
+The core pathway is a fresh Codespace reproducibility test, README and path repair, peer review, and final risk list. Advanced deployment pathways stay optional and demo-only.
+
+<!-- AI-EDIT(2026-06-11): MIT-086, TF-001 — needs review -->
+::: {.callout-important title="Required / Draft / Optional This Week"}
+- **Required (graded):** the [M4 peer review](../../milestones/m4-peer-review/README.md). Portfolio Surgery itself is an in-class working session (not separately graded); its outputs feed M4 and the Final Portfolio, as explained in [port06](port06-assignment-a10-final-portfolio.qmd).
+- **Draft (class work that feeds M4 and the portfolio, not graded on its own):** the fresh-test failure log and repair notes from [port02](port02-fresh-codespace-test.qmd).
+- **Optional / demo-only (no penalty for skipping):** the deployment and Python pathways in [port05](port05-optional-pathways.qmd).
+
+Tags like `[required]` and `[demo-only]` are defined in [How To Read Submission Lists](../../assignments/index.qmd#how-to-read-submission-lists).
+:::
+
+## Objectives
+
+By the end of the week you can:
+
+- run a project in a fresh Codespace using only documented instructions;
+- log failures before repairing them;
+- improve README, path, dependency, citation, and output hygiene;
+- use M4 peer review to find correctness, reproducibility, auditability, and KT risks;
+- decide whether optional deployment pathways are worth pursuing after the core portfolio works.
+
+## Connection
+
+Week 10 produced a report and M3 project update. Week 11 tests whether that work can be reviewed in a fresh environment. The narrated presentation deck and final portfolio revisions then turn that evidence into the submitted portfolio.
+
+## Dashboard Case Study: NHANES Equity
+
+{{< include ../../examples/nhanes-equity/snippets/case-study-dashboard.qmd >}}
+
+## Reading Order
+
+1. [port01 - Surgery Goals](port01-overview-and-goals.qmd)
+2. [port02 - Fresh Codespace Test](port02-fresh-codespace-test.qmd)
+3. [port03 - README and Repo Hygiene](port03-readme-repo-hygiene.qmd)
+4. [port04 - Peer Review and M4](port04-peer-review-m4.qmd)
+5. [port05 - Optional Pathways](port05-optional-pathways.qmd)
+6. [port06 - Portfolio Surgery and the Final Portfolio](port06-assignment-a10-final-portfolio.qmd)
+
+The optional [static dashboard source file (view on GitHub)](https://github.com/ehsanx/HDSx/blob/main/weeks/week11-portfolio-surgery/static-dashboard-ojs.qmd) remains a demo-only example. It is not a required final portfolio pathway. <!-- AI-EDIT(2026-06-11): D-002/MIT-106 — needs review -->
+
+## Class Plan
+
+1. Open the project in a fresh Codespace or clean equivalent environment.
+2. Follow the README exactly.
+3. Render the report and open or run the dashboard-style KT product.
+4. Log failures before fixing them.
+5. Repair README, path, dependency, citation, or stale-output issues.
+6. Exchange M4 peer review focused on reproducibility and audience fit.
+7. Write the final risk list.
+
+## Student Output
+
+By the end of class each group has a fresh-environment test log, a failure log, a repair summary, peer review notes, and a final risk list for M4 and final portfolio planning.
+
+## Links
+
+- Session guide: [Portfolio Surgery and the Final Portfolio](port06-assignment-a10-final-portfolio.qmd)
+- Milestone: [M4 - Peer Review](../../milestones/m4-peer-review/README.md)
+- Final package: [Final Portfolio](../../milestones/final-portfolio/README.md)
+
+## Definition of Done
+
+- A fresh environment test was attempted.
+- Failures were logged before repair.
+- README and path issues were corrected or documented.
+- M4 feedback is specific enough for the receiving group to act on.
+- Remaining risks are named rather than hidden.
+
+## What Students Leave With
+
+A project that is closer to final submission because it has been tested, repaired, reviewed, and triaged.

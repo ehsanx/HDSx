@@ -1,0 +1,290 @@
+# Git & Collaboration {.unnumbered}
+
+## Overview
+
+**Summary:** You already know how to save files and make a basic commit in your Codespace. Now, learn to use Git as a *time machine* and *collaboration engine* for your analysis---tracking every change, safely undoing mistakes, working with teammates through branches and Pull Requests, and keeping a professional audit trail of your research workflow.
+
+**Learning Objectives:**
+
+-   Distinguish between saving a file and taking a version-control "snapshot" (commit).
+-   Read code differences (diffs) to see exactly what changed.
+-   Use the Codespaces Source Control UI to revert to a previous working version.
+-   Create and switch branches to isolate experimental work.
+-   Open a Pull Request on GitHub and understand its role in peer review.
+-   Configure `.gitignore` and use relative paths for repo hygiene.
+-   Use AI to translate diffs into clear, professional audit logs.
+-   Set up a group repository and agree on collaboration norms for the term project.
+
+## Connection
+
+Week 3 focused on writing and auditing small R summaries. This week treats each edit as a reviewable change with a clear history. Next week you will compare equivalent summaries across R and Python.
+
+## Case Study Data Analysis
+
+{{< include ../../examples/nhanes-equity/snippets/case-study-data-analysis.qmd >}}
+
+<!-- AI-EDIT(2026-06-11): MIT-037 — needs review -->
+**What to do with the code above:** read it --- you do not need to run or modify it this week. This week's focus is tracking *changes* to files like this one, not the analysis itself.
+
+## In-Class Activity
+
+- Create a branch for a tiny dashboard documentation change.
+- Edit only a label, caption, or README sentence; do not change analytic logic.
+- Open a pull request and use the diff to verify the change is limited.
+- In the pull request description, state how you verified the change is documentation-only.
+
+Student output: a documentation-only pull request with a short audit note. Assignment link: [Assignment 3](../../assignments/assignment03-git/README.md).
+
+------------------------------------------------------------------------
+
+## `git1.qmd` Concepts: The "Save Game" of Reproducible Science
+
+Deeper Dive: [Git Basics](git01-concepts.qmd) <!-- AI-EDIT(2026-06-22): REVIEW-row100 / GAP-R345-2 — renamed link label 'Detail page' -> 'Deeper Dive' for cross-book consistency -->
+
+### Why Git Matters in Health Research
+
+-   **The audit trail:** Why `analysis_final_v3.qmd` is unsafe in health research; Git gives you a permanent, searchable history.
+-   **The timeline:** Your repository is a sequence of safe checkpoints (commits). Each commit records *who* changed *what* and *why*.
+-   **Reading the diff:** Red = removed. Green = added. This is the visual language of reproducibility.
+
+### Quick Recap (from Week 2)
+
+You already know how to stage, commit, and sync in your Codespace. This week, we go deeper: branching, collaboration, and building habits that will carry through your term project.
+
+------------------------------------------------------------------------
+
+## `git2.qmd` Tutorial: Time Travel in Codespaces
+
+Deeper Dive: [Time Travel](git02-tutorial.qmd) <!-- AI-EDIT(2026-06-22): REVIEW-row101 / GAP-R345-2 — renamed link label 'Detail page' -> 'Deeper Dive' for cross-book consistency -->
+
+*Scenario:* We will intentionally break last week's R script and use Git to rescue it.
+
+### Step 1: Verify Your Baseline
+
+Open your `.qmd` from last week. Make a small, meaningful edit (e.g., improve a comment). Stage (**+**), write a descriptive commit message, and commit (**✔**). This is your safety net.
+
+### Step 2: The Disaster
+
+Delete a crucial line of R code in a chunk (e.g., the line that loads the data). **Save** the file (Ctrl/Cmd + S).
+
+### Step 3: Assess the Damage
+
+Open **Source Control** → click the modified file → view the side-by-side **diff** to see exactly what changed. Practice reading the red (removed) and green (added) lines.
+
+### Step 4: The Undo Button
+
+Hover over the file name in the Source Control panel and click **Discard Changes** (the curved arrow) to restore the file to the **last committed** version.
+
+::: callout-tip
+**Key takeaway:** Saving writes to disk. Committing writes to *history*. Only committed work can be recovered by Git.
+:::
+
+------------------------------------------------------------------------
+
+## `git3.qmd` Repo Hygiene: `.gitignore` and Relative Paths
+
+Deeper Dive: [Repo Hygiene](git03-repo-hygiene.qmd) <!-- AI-EDIT(2026-06-22): REVIEW-row102 / GAP-R345-3 — renamed link label 'Detail page' -> 'Deeper Dive' for cross-book consistency -->
+
+### Why This Matters
+
+As your projects grow, you will generate files that should *not* be tracked:
+temporary Quarto support folders, local caches, `.DS_Store`, and API keys.
+Rendered files explicitly required by an assessment are different: they are
+part of the evidence and must be committed.
+
+### `.gitignore` Walkthrough
+
+1.  Open (or create) the `.gitignore` file in the root of your repository.
+2.  Add common patterns:
+
+```         
+# Quarto temporary/support files
+/.quarto/
+**/.quarto/
+*_files/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Sensitive
+.env
+```
+
+<!-- AI-EDIT(2026-06-11): MIT-037 — needs review -->
+**What to do with this block:** copy these patterns into your own `.gitignore` file. This is plain text, not R code --- there is nothing to run.
+
+3.  Stage and commit with a message such as `"Add project gitignore rules"`.
+
+<!-- AI-EDIT(2026-06-11): MIT-169 (D-006) — needs review -->
+::: {.callout-note title="Required renders are committed"}
+Do **not** add global `*.html` or `*.pdf` patterns to the course workspace
+`.gitignore`. If an assignment or milestone explicitly lists a rendered HTML or
+PDF file, commit it with the source. For practice renders that are not requested,
+use Source Control to stage only the files named in the brief.
+:::
+
+### Relative Paths
+
+Always use **relative paths** in your code (e.g., `read.csv("data/nhanes.csv")`), never absolute paths (e.g., `read.csv("/home/user/Documents/nhanes.csv")`). This ensures your analysis runs on *any* machine---including your grader's Codespace.
+
+::: callout-warning
+**Reproducibility rule:** Your term project must run from start to finish in a *fresh* Codespace. Absolute paths guarantee failure.
+:::
+
+------------------------------------------------------------------------
+
+## `git4.qmd` Branching: Safe Experimentation
+
+Deeper Dive: [Branching](git04-branching.qmd) <!-- AI-EDIT(2026-06-22): REVIEW-row105 / GAP-R345-2 — renamed link label 'Detail page' -> 'Deeper Dive' for cross-book consistency -->
+
+### Concept
+
+A **branch** is a parallel copy of your project. You can experiment freely on a branch without affecting the stable `main` version. When your experiment works, you **merge** it back.
+
+Think of it like a lab notebook: `main` is your clean, published record. A branch is your scratch pad.
+
+### Tutorial: Create and Merge a Branch in VS Code
+
+#### Step 1: Create a Branch
+
+-   Click the branch name in the bottom-left corner of VS Code (it likely says `main`).
+-   Select **Create new branch...** and name it something descriptive: `add-age-filter`.
+
+#### Step 2: Make Changes on the Branch
+
+-   Edit your `.qmd` (e.g., add a line of code that filters data by age).
+-   Stage and commit on this branch.
+
+#### Step 3: Switch Back to `main`
+
+-   Click the branch name again → select `main`. Notice your recent edits *disappear* from the file. They are safely stored on the other branch.
+
+
+------------------------------------------------------------------------
+
+## `git5.qmd` Pull Requests: The Peer Review Gateway
+
+Deeper Dive: [Pull Requests](git05-pull-requests.qmd) <!-- AI-EDIT(2026-06-22): REVIEW-row106 / GAP-R345-2 — renamed link label 'Detail page' -> 'Deeper Dive' for cross-book consistency -->
+
+### What Is a Pull Request?
+
+A **Pull Request (PR)** is a GitHub feature that says: *"I have changes on a branch. Please review them before they go into `main`."* PRs are how professional teams and researchers collaborate. You will use them for peer review later in this course.
+
+### Tutorial: Open Your First PR
+
+1.  After committing changes to a branch (see `git4.qmd`), click **Sync Changes** to push the branch to GitHub.
+2.  Open your repository on **github.com**. You should see a banner: *"add-age-filter had recent pushes."* Click **Compare & pull request**.
+3.  Write a title and short description explaining what you changed and why.
+4.  Click **Create pull request**.
+5.  For now, review the diff on GitHub, then click **Merge pull request** and complete the merge yourself --- practice PRs do not need to wait for review. You will practice reviewing each other's pull requests later, in Milestone 4. <!-- AI-EDIT(2026-06-11): GAP-R345-13 — needs review -->
+
+::: callout-tip
+**Collaboration norm:** In your term project, agree with your group that changes go through PRs rather than directly to `main`. This creates a built-in review step.
+:::
+
+------------------------------------------------------------------------
+
+## `git6.qmd` AI Auditing for Version Control
+
+Deeper Dive: [AI Auditing](git06-ai-auditing.qmd) <!-- AI-EDIT(2026-06-22): REVIEW-row108 / GAP-R345-2 — renamed link label 'Detail page' -> 'Deeper Dive' for cross-book consistency -->
+
+Treat the LLM as a **Git Translator** that explains diffs and drafts audit-quality messages.
+
+### `git6a.qmd` Scenario A: Diff Translation (Pre-Commit Audit)
+
+**Prompt:**
+
+> "I am about to commit these changes. Explain what I changed in plain English. Did I delete anything important?"
+
+Use this to spot accidental deletions or unintended edits before you commit.
+
+### `git6b.qmd` Scenario B: Auto-Scribe Commit Messages
+
+**Prompt:**
+
+> "Based on this diff, write a one-sentence, professional commit message for my Quarto document."
+
+Check that the message captures the **intent** (e.g., `"Filter patient cohort to age ≥ 65 per protocol"`), not just the action (`"changed line 42"`).
+
+### `git6c.qmd` Scenario C: Panic Translator (Error Handling)
+
+**Prompt:**
+
+> "VS Code in my GitHub Codespace showed this Git error: \[paste\]. What does it mean in simple terms, and which **buttons in the VS Code UI** should I click to fix it?"
+
+::: callout-warning
+**Strict Guardrail:** Never run random terminal commands suggested by an AI (especially `--force` or `reset --hard`). Prefer the VS Code visual interface, which is safer. If the AI suggests a terminal command, ask it for the GUI equivalent first.
+:::
+
+------------------------------------------------------------------------
+
+## `git7.qmd` Setting Up Your Group Repository
+
+Deeper Dive: [Setting Up Your Group Repository](git07-group-repository.qmd) <!-- AI-EDIT(2026-06-22): REVIEW-row109 / GAP-R345-2 — renamed link label 'Detail page' -> 'Deeper Dive'; page-removal question flagged separately -->
+
+This week you form your term project groups (**Milestone 0**). Use this session to establish your collaboration workflow.
+
+### Steps
+
+1.  **One member** opens the group project template repository linked from Canvas and creates a fork for the group.
+2.  That member adds teammates as collaborators on the group fork.
+3.  All other members accept the collaborator invitation and launch a Codespace from the group fork.
+4.  As a group, agree on norms:
+    -   All changes go through **branches → PRs** (no direct pushes to `main`).
+    -   Commit messages should be descriptive (use the AI auto-scribe technique).
+    -   Keep the repo clean: use `.gitignore`, relative paths, and a clear folder structure.
+5.  Each member makes a small "hello" commit (e.g., add your name to the `README.md`) and pushes it to verify access.
+
+::: callout-note
+**Milestone 0 due Monday (Week 4 deadline posted in Canvas):** Record your group formation on Canvas and ensure everyone can commit to the shared repository.
+:::
+
+------------------------------------------------------------------------
+
+## `git8.qmd` Knowledge Check
+
+Deeper Dive: [Knowledge Check](git08-knowledge-check.qmd) <!-- AI-EDIT(2026-06-22): REVIEW-row110 / GAP-R345-2 — renamed link label 'Detail page' -> 'Deeper Dive'; page-removal question flagged separately -->
+
+1.  What is the difference between **saving** a file and **committing** it?
+2.  What does a red line indicate in a diff?
+3.  Which button restores the last **committed** version of a file?
+4.  Why should you use a `.gitignore` file?
+5.  What is the purpose of a **branch**?
+6.  How does a **Pull Request** support peer review?
+7.  Why are relative paths essential for reproducibility?
+
+------------------------------------------------------------------------
+
+## `git9.qmd` Practice Exercise: The Full Workflow Drill
+
+Deeper Dive: [Practice Exercise: Full Workflow](git09-practice-exercise.qmd) <!-- AI-EDIT(2026-06-22): REVIEW-row111 / GAP-R345-2 — renamed link label 'Detail page' -> 'Deeper Dive' for cross-book consistency -->
+
+1.  Open your Codespace from last week.
+2.  Create a `.gitignore` file with sensible defaults for your project. **Commit.**
+3.  Create a new branch called `practice-edit`.
+4.  On the branch, make a small improvement to your R script (e.g., add a clarifying comment or improve a variable name).
+5.  Use an AI model to draft a clear commit message from your diff. **Commit** on the branch.
+6.  Push the branch and open a **Pull Request** on GitHub.
+7.  Review the PR diff on GitHub, then merge it.
+8.  Back on `main`, intentionally introduce a breaking typo and **Save**.
+9.  Use **Discard Changes** to recover the last working version.
+
+------------------------------------------------------------------------
+
+## `git10.qmd` Quick Reference: Common Git Actions in VS Code
+
+Deeper Dive: [Quick Reference](git10-quick-reference.qmd) <!-- AI-EDIT(2026-06-22): REVIEW-row112 / GAP-R345-2 — renamed link label 'Detail page' -> 'Deeper Dive' for cross-book consistency -->
+
+| Action | How |
+|------------------------------------|------------------------------------|
+| **Stage changes** | Source Control → hover file → click **+** |
+| **Commit** | Type message → click **✔** |
+| **View diff** | Click file name in Source Control |
+| **Discard uncommitted edits** | Hover file → click **curved arrow** (Discard Changes) |
+| **Create a branch** | Click branch name (bottom-left) → **Create new branch...** |
+| **Switch branches** | Click branch name → select target branch |
+| **Merge a branch** | Command Palette → `Git: Merge Branch...` |
+| **Push / Sync** | Click **Sync Changes** in status bar |
+| **Open a Pull Request** | Push branch → go to github.com → **Compare & pull request** |
+| **Add to `.gitignore`** | Edit `.gitignore` in repo root → stage + commit |

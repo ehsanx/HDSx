@@ -1,0 +1,88 @@
+# Audience-Facing Text: What You Can and Cannot Change for A7 {.unnumbered}
+
+## Where this fits
+
+[dash03](dash03-starter-dashboard.qmd) is the file you will adapt for Assignment 7. This page draws the line between **audience-facing text changes** (allowed for A7) and **analytic changes** (not allowed for A7). Knowing where that line is keeps the assignment focused and keeps your audit trail clean.
+
+## The rule, in one sentence
+
+For Assignment 7, you may change anything the audience reads. You may not change anything the analysis computes.
+
+## Allowed changes (text-only)
+
+These are the kinds of changes the A7 rubric rewards. They sharpen the audience experience without touching the analysis.
+
+- **Rename a label.** "Cycle" becomes "Survey wave (NHANES cycle)" so a non-expert audience knows what to read.
+- **Expand a caption.** A two-word caption becomes a one-sentence caption that names the statistic, source, exclusions, and limitation.
+- **Add a help text line.** Beside the control, a sentence that says "This dashboard summarizes adults age 20-80 from the prepared classroom dataset."
+- **Add a limitation sentence.** Beside the figure, one sentence on what the artifact does not support.
+- **Improve a README sentence.** A README that says "Dashboard for NHANES" becomes "Descriptive dashboard of unweighted mean BMI by income group across NHANES cycles, for classroom use."
+- **Adjust a title for the audience.** A neutral title becomes one that names the audience-facing question.
+
+## Not allowed for A7 (analytic-only changes)
+
+These changes touch the analysis. They are not part of A7. If you find a real analytic issue while testing, raise it with your instructor — do not silently change it.
+
+- **Changing the cohort filter.** Switching from `Age >= 20` to `Age >= 18` is an analytic decision.
+- **Adding or removing a survey weight.** Switching from unweighted to weighted is an analytic decision.
+- **Adding a regression line.** Smoothing across cycles is an analytic decision (and usually inappropriate — see [viz04](../week06-visualization/viz04-misleading-design.qmd)).
+- **Replacing `mean()` with `median()`.** Changing the central tendency statistic is an analytic decision.
+- **Changing the grouping variable.** Switching from `IncomeGroup` to `Education` is an analytic decision.
+
+If you are unsure whether a change is text or analytic, ask: "would a reader looking at the rendered HTML notice this change if I didn't tell them?" If yes, it is probably text. If the *numbers* change, it is analytic.
+
+## Before / after examples
+
+### Before / after: a label
+
+**Before:** `selectInput("strat_var1", "Primary Grouping (Rows):", ...)`
+
+**After:** `selectInput("strat_var1", "Compare across (rows of the chart):", ...)`
+
+The label is friendlier to a non-technical audience. The variable, choices, and computation are unchanged.
+
+### Before / after: a caption
+
+**Before:** `caption = "BMI by income"`
+
+**After:** `caption = "Mean BMI by income group across five NHANES cycles. Adults age 20-80 in the prepared classroom dataset. Unweighted descriptive summary; records with missing BMI, income, or cycle are excluded."`
+
+The caption now names the statistic, source, cohort, exclusions, and disclosure. The figure itself is unchanged.
+
+### Before / after: a help text line
+
+**Before:** (no help text near the control)
+
+**After:** Right under the control: `> This dashboard uses adults age 20-80. To see a different income group, change the value and re-render.`
+
+The audience now understands what the artifact covers and how to use it.
+
+### Before / after: a README sentence
+
+**Before:** `# Dashboard`
+
+**After:** `# NHANES Health Equity Classroom Dashboard
+
+Descriptive, unweighted mean BMI by income group across NHANES cycles. For classroom learning; not for population inference.`
+
+The README now names the audience and the boundary.
+
+## What to record in your A7 `before-after-text.md`
+
+A7 asks you to submit one before-after text change.
+
+<!-- AI-EDIT(2026-06-11): MIT-084, WI-045 — needs review -->
+Create `before-after-text.md` in the A7 submission folder. In the Explorer panel of your Codespace, expand `assignments/assignment07-dashboard/`, right-click the `submission` folder, choose **New File**, and name it `before-after-text.md`. Plain Markdown is fine — a short heading for each part below is enough.
+
+For that file, paste:
+
+- the **original text** verbatim,
+- the **revised text** verbatim,
+- one sentence on **why** the change helps the audience,
+- one sentence confirming **no analytic logic was changed**.
+
+That last sentence is what keeps the audit trail clean.
+
+## Where this goes next
+
+[dash05](dash05-testing-privacy-and-shiny-demo.qmd) covers how to test the starter dashboard locally, how to keep your publishing privacy-safe, and (briefly) the Shiny exemplar your instructor will demo in class.

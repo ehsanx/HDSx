@@ -1,0 +1,24 @@
+# Knowledge Check
+
+Answer these in a Markdown cell or short Quarto note.
+
+1. Why is Week 5 called "polyglot awareness" rather than "Python replacement"?
+2. Name one task where R is the better default for this course.
+3. Name one task where Python might be useful.
+4. Why does `my_list[1]` return the second item in Python?
+5. What is the difference between `=` and `==`?
+6. What does `requirements.txt` document?
+7. What is the One Step, One Cell rule?
+8. What are three parity checks you should run after translating R code to Python?
+9. Why should notebook outputs be cleared before committing?
+10. What does `reticulate` allow R to do?
+
+## Short Applied Check
+
+Given the R expression:
+
+```r
+mean(nhanes$BMI, na.rm = TRUE)
+```
+
+Write the Python/pandas equivalent and name the missingness check you would run before trusting it.
