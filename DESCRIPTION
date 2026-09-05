@@ -1,0 +1,5 @@
+Package: hdsx
+Type: Project
+Title: SPPH 381H course site
+Imports:
+    downlit
