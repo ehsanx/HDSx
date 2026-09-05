@@ -33,7 +33,7 @@ jobs:
 
       - name: Install R packages
         if: github.event.action != 'closed'
-        uses: r-lib/actions/setup-r-dependencies@v2
+        uses: r-lib/actions/setup-renv@v2
         with:
           cache: true
           cache-version: 1
