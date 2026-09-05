@@ -23,6 +23,7 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
         with:
           version: pre-release
+          tinytex: true
 
       - name: Set up R
         if: github.event.action != 'closed'
@@ -35,7 +36,6 @@ jobs:
         if: github.event.action != 'closed'
         uses: r-lib/actions/setup-renv@v2
         with:
-          cache: true
           cache-version: 1
 
       - name: Render site
@@ -45,5 +45,5 @@ jobs:
       - name: Deploy PR preview
         uses: rossjrw/pr-preview-action@v1
         with:
-          source-dir: _site
+          source-dir: docs
           action: auto
