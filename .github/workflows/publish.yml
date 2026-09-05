@@ -31,9 +31,18 @@ jobs:
         with:
           cache-version: 1
 
-      - name: Publish to GitHub Pages
-        uses: quarto-dev/quarto-actions/publish@v2
+      - name: Render site
+        run: quarto render
+
+      - name: Disable Jekyll processing of the rendered site
+        run: touch docs/.nojekyll
+
+      # GitHub Pages serves this repo from the gh-pages branch, /docs folder.
+      # `quarto publish gh-pages` can only write to the branch root, so the
+      # rendered docs/ is pushed into docs/ on gh-pages instead.
+      - name: Deploy to gh-pages/docs
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          target: gh-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          folder: docs
+          target-folder: docs
