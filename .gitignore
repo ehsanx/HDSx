@@ -3,6 +3,11 @@
 _book/
 _site/
 .quarto/
+# site is rendered in the gh-pages branch
+docs/*
+
+# local rendered html files
+**.html
 
 /.quarto/
 .claude/
