@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.3">
-
+<meta name="generator" content="quarto-1.11.3">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-
 <title>Week 3: R with AI – Health Data Science: AI and Knowledge Translation</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -60,7 +60,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 </style>
 
-
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
@@ -76,11 +75,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e44360b8a8db1e130c7792fece1c8032.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-3154a52da2b13509d7b4f2c9febd40cf.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-e4ad1f76bc0b1915fe8526f0cf4c069b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
+<link href="../../site_libs/bootstrap/bootstrap-ed8467d10139bfa8b13b4c59e7f12d03.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
@@ -106,39 +104,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script>
-<link href="../../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+}</script><link href="../../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
 <script src="../../site_libs/pagedtable-1.1/js/pagedtable.js"></script>
-
-
 <meta name="twitter:title" content="Week 3: R with AI – Health Data Science: AI and Knowledge Translation">
 <meta name="twitter:description" content="">
 <meta name="twitter:card" content="summary">
 </head>
-
-<body class="nav-sidebar docked quarto-light">
+<body class="nav-sidebar docked quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week03-r-with-ai/index.html">Week 3: R with AI</a></li><li class="breadcrumb-item"><a href="../../weeks/week03-r-with-ai/index.html">Week 3: R with AI</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
-  </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="../../">Health Data Science: AI and Knowledge Translation</a> 
         <div class="sidebar-tools-main tools-wide">
@@ -159,7 +147,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">The Project</span></a>
@@ -167,47 +155,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">About the Course</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">About the Course</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../syllabus/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Course Overview</span></a>
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Week 0: Asynchronous Onboarding</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Week 0: Asynchronous Onboarding</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week00-onboarding/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 0: Asynchronous Onboarding</span></a>
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Week 1: Health Data, KT &amp; Ethics</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-controls="quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-3-label">Week 1: Health Data, KT &amp; Ethics</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-3" aria-labelledby="quarto-sidebar-section-3-label" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week01-health-data-ethics/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Health Data &amp; Ethics</span></a>
@@ -220,17 +199,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
- <span class="menu-text">Week 2: Modern Workflows</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-controls="quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-4-label">Week 2: Modern Workflows</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-4" aria-labelledby="quarto-sidebar-section-4-label" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week02-modern-workflows/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Modern Workflows</span></a>
@@ -292,17 +268,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
- <span class="menu-text">Week 3: R with AI</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-controls="quarto-sidebar-section-5" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-5-label">Week 3: R with AI</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-5" aria-labelledby="quarto-sidebar-section-5-label" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week03-r-with-ai/index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Week 3: R with AI</span></a>
@@ -359,17 +332,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
- <span class="menu-text">Week 4: Git &amp; Collaboration</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-controls="quarto-sidebar-section-6" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-6-label">Week 4: Git &amp; Collaboration</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-6" aria-labelledby="quarto-sidebar-section-6-label" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week04-git-collaboration/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Git &amp; Collaboration</span></a>
@@ -436,17 +406,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
- <span class="menu-text">Week 5: Polyglot Awareness &amp; R Deepening</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-controls="quarto-sidebar-section-7" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-7-label">Week 5: Polyglot Awareness &amp; R Deepening</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-7" aria-labelledby="quarto-sidebar-section-7-label" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Polyglot Awareness &amp; R Deepening</span></a>
@@ -528,17 +495,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
- <span class="menu-text">Week 6: Data Visualization</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-controls="quarto-sidebar-section-8" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-8-label">Week 6: Data Visualization</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-8" aria-labelledby="quarto-sidebar-section-8-label" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week06-visualization/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 6: Data Visualization</span></a>
@@ -587,17 +551,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
- <span class="menu-text">Week 7: EDA, Table 1 &amp; AI Auditing</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-controls="quarto-sidebar-section-9" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-9-label">Week 7: EDA, Table 1 &amp; AI Auditing</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-9" aria-labelledby="quarto-sidebar-section-9-label" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week07-eda-ai-audit/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 7: EDA, Table 1 &amp; AI Auditing</span></a>
@@ -646,17 +607,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
- <span class="menu-text">Week 8: Dashboard Prototypes for KT</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" aria-controls="quarto-sidebar-section-10" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-10-label">Week 8: Dashboard Prototypes for KT</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-10" aria-labelledby="quarto-sidebar-section-10-label" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week08-dashboard-kt/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 8: Dashboard Prototypes for KT</span></a>
@@ -705,17 +663,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true">
- <span class="menu-text">Week 9: Communication of Scientific Findings</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" aria-controls="quarto-sidebar-section-11" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-11-label">Week 9: Communication of Scientific Findings</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-11" aria-labelledby="quarto-sidebar-section-11-label" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week09-science-communication/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 9: Communication of Scientific Findings</span></a>
@@ -752,17 +707,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="true">
- <span class="menu-text">Week 10: Writing &amp; Publishing Reports</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" aria-controls="quarto-sidebar-section-12" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-12-label">Week 10: Writing &amp; Publishing Reports</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-12" aria-labelledby="quarto-sidebar-section-12-label" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week10-reporting-publishing/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 10: Writing &amp; Publishing Reports</span></a>
@@ -805,17 +757,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="true">
- <span class="menu-text">Week 11: Portfolio Surgery</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" aria-controls="quarto-sidebar-section-13" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-13-label">Week 11: Portfolio Surgery</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-13" aria-labelledby="quarto-sidebar-section-13-label" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week11-portfolio-surgery/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 11: Portfolio Surgery</span></a>
@@ -858,34 +807,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="true">
- <span class="menu-text">Project Presentation (Online)</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" aria-controls="quarto-sidebar-section-14" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-14-label">Project Presentation (Online)</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-14" aria-labelledby="quarto-sidebar-section-14-label" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week12-presentations/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Project Presentation (Narrated Deck)</span></a>
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="true">
- <span class="menu-text">Assignments and Milestones</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" aria-controls="quarto-sidebar-section-15" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-15-label">Assignments and Milestones</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-15" aria-labelledby="quarto-sidebar-section-15-label" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../assignments/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Assignments</span></a>
@@ -987,17 +930,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="true">
- <span class="menu-text">Worked Example (NHANES)</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" aria-controls="quarto-sidebar-section-16" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-16-label">Worked Example (NHANES)</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-16" aria-labelledby="quarto-sidebar-section-16-label" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../milestones/example-nhanes/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Worked Example (NHANES)</span></a>
   </div>
@@ -1038,17 +978,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="true">
- <span class="menu-text">Reference: Data Sources</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" aria-controls="quarto-sidebar-section-17" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-17-label">Reference: Data Sources</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-17" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-17" aria-labelledby="quarto-sidebar-section-17-label" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../references/data-sources/nhis.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">NHIS</span></a>
@@ -1121,84 +1058,98 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
     </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+</div>
+</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+<li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#connection" id="toc-connection" class="nav-link" data-scroll-target="#connection">Connection</a></li>
   <li><a href="#case-study-data-analysis" id="toc-case-study-data-analysis" class="nav-link" data-scroll-target="#case-study-data-analysis">Case Study Data Analysis</a></li>
   <li><a href="#in-class-activity" id="toc-in-class-activity" class="nav-link" data-scroll-target="#in-class-activity">In-Class Activity</a></li>
-  <li><a href="#packages-opening-the-toolbox" id="toc-packages-opening-the-toolbox" class="nav-link" data-scroll-target="#packages-opening-the-toolbox">Packages: Opening the Toolbox</a>
+  <li>
+<a href="#packages-opening-the-toolbox" id="toc-packages-opening-the-toolbox" class="nav-link" data-scroll-target="#packages-opening-the-toolbox">Packages: Opening the Toolbox</a>
   <ul class="collapse">
-  <li><a href="#install-vs-load" id="toc-install-vs-load" class="nav-link" data-scroll-target="#install-vs-load">Install vs Load</a></li>
+<li><a href="#install-vs-load" id="toc-install-vs-load" class="nav-link" data-scroll-target="#install-vs-load">Install vs Load</a></li>
   <li><a href="#course-environment-and-dependency-note" id="toc-course-environment-and-dependency-note" class="nav-link" data-scroll-target="#course-environment-and-dependency-note">Course Environment and Dependency Note</a></li>
-  </ul></li>
-  <li><a href="#core-constructs-boxes-toasters-and-the-assembly-line" id="toc-core-constructs-boxes-toasters-and-the-assembly-line" class="nav-link" data-scroll-target="#core-constructs-boxes-toasters-and-the-assembly-line">Core Constructs: Boxes, Toasters, and the Assembly Line</a>
+  </ul>
+</li>
+  <li>
+<a href="#core-constructs-boxes-toasters-and-the-assembly-line" id="toc-core-constructs-boxes-toasters-and-the-assembly-line" class="nav-link" data-scroll-target="#core-constructs-boxes-toasters-and-the-assembly-line">Core Constructs: Boxes, Toasters, and the Assembly Line</a>
   <ul class="collapse">
-  <li><a href="#variables-the-labeled-box" id="toc-variables-the-labeled-box" class="nav-link" data-scroll-target="#variables-the-labeled-box">Variables: The Labeled Box</a></li>
+<li><a href="#variables-the-labeled-box" id="toc-variables-the-labeled-box" class="nav-link" data-scroll-target="#variables-the-labeled-box">Variables: The Labeled Box</a></li>
   <li><a href="#functions-the-toaster" id="toc-functions-the-toaster" class="nav-link" data-scroll-target="#functions-the-toaster">Functions: The Toaster</a></li>
   <li><a href="#the-pipe-the-assembly-line" id="toc-the-pipe-the-assembly-line" class="nav-link" data-scroll-target="#the-pipe-the-assembly-line">The Pipe: The Assembly Line</a></li>
-  </ul></li>
-  <li><a href="#data-import-and-first-contact" id="toc-data-import-and-first-contact" class="nav-link" data-scroll-target="#data-import-and-first-contact">Data Import and First Contact</a>
+  </ul>
+</li>
+  <li>
+<a href="#data-import-and-first-contact" id="toc-data-import-and-first-contact" class="nav-link" data-scroll-target="#data-import-and-first-contact">Data Import and First Contact</a>
   <ul class="collapse">
-  <li><a href="#loading-data" id="toc-loading-data" class="nav-link" data-scroll-target="#loading-data">Loading Data</a></li>
+<li><a href="#loading-data" id="toc-loading-data" class="nav-link" data-scroll-target="#loading-data">Loading Data</a></li>
   <li><a href="#first-contact-inspect-before-you-analyze" id="toc-first-contact-inspect-before-you-analyze" class="nav-link" data-scroll-target="#first-contact-inspect-before-you-analyze">First Contact: Inspect Before You Analyze</a></li>
-  </ul></li>
-  <li><a href="#data-transformation-the-five-dplyr-verbs" id="toc-data-transformation-the-five-dplyr-verbs" class="nav-link" data-scroll-target="#data-transformation-the-five-dplyr-verbs">Data Transformation: The Five <code>dplyr</code> Verbs <!-- AI-EDIT(2026-06-11): MIT-033 — needs review --></a>
+  </ul>
+</li>
+  <li>
+<a href="#data-transformation-the-five-dplyr-verbs" id="toc-data-transformation-the-five-dplyr-verbs" class="nav-link" data-scroll-target="#data-transformation-the-five-dplyr-verbs">Data Transformation: The Five <code>dplyr</code> Verbs <!-- AI-EDIT(2026-06-11): MIT-033 — needs review --></a>
   <ul class="collapse">
-  <li><a href="#filter-keep-rows-that-match-a-condition" id="toc-filter-keep-rows-that-match-a-condition" class="nav-link" data-scroll-target="#filter-keep-rows-that-match-a-condition"><code>filter()</code> — Keep rows that match a condition</a></li>
+<li><a href="#filter-keep-rows-that-match-a-condition" id="toc-filter-keep-rows-that-match-a-condition" class="nav-link" data-scroll-target="#filter-keep-rows-that-match-a-condition"><code>filter()</code> — Keep rows that match a condition</a></li>
   <li><a href="#select-keep-or-drop-columns" id="toc-select-keep-or-drop-columns" class="nav-link" data-scroll-target="#select-keep-or-drop-columns"><code>select()</code> — Keep (or drop) columns</a></li>
   <li><a href="#mutate-create-or-modify-a-column" id="toc-mutate-create-or-modify-a-column" class="nav-link" data-scroll-target="#mutate-create-or-modify-a-column"><code>mutate()</code> — Create or modify a column</a></li>
   <li><a href="#summarise-collapse-rows-into-a-summary" id="toc-summarise-collapse-rows-into-a-summary" class="nav-link" data-scroll-target="#summarise-collapse-rows-into-a-summary"><code>summarise()</code> — Collapse rows into a summary</a></li>
   <li><a href="#group_by-summarise-summaries-by-group" id="toc-group_by-summarise-summaries-by-group" class="nav-link" data-scroll-target="#group_by-summarise-summaries-by-group"><code>group_by()</code> + <code>summarise()</code> — Summaries by group</a></li>
-  </ul></li>
-  <li><a href="#control-flow-auditing-ai-decisions" id="toc-control-flow-auditing-ai-decisions" class="nav-link" data-scroll-target="#control-flow-auditing-ai-decisions">Control Flow: Auditing AI Decisions</a>
-  <ul class="collapse">
-  <li><a href="#ifelse-the-fork-in-the-road" id="toc-ifelse-the-fork-in-the-road" class="nav-link" data-scroll-target="#ifelse-the-fork-in-the-road">If/Else: The Fork in the Road</a></li>
-  <li><a href="#loops-the-treadmill" id="toc-loops-the-treadmill" class="nav-link" data-scroll-target="#loops-the-treadmill">Loops: The Treadmill</a></li>
-  </ul></li>
-  <li><a href="#writing-a-simple-function" id="toc-writing-a-simple-function" class="nav-link" data-scroll-target="#writing-a-simple-function">Writing a Simple Function <!-- AI-EDIT(2026-06-11): MIT-033 — needs review --></a>
-  <ul class="collapse">
-  <li><a href="#example-a-reusable-summary" id="toc-example-a-reusable-summary" class="nav-link" data-scroll-target="#example-a-reusable-summary">Example: A Reusable Summary</a></li>
-  <li><a href="#your-task" id="toc-your-task" class="nav-link" data-scroll-target="#your-task">Your Task</a></li>
-  </ul></li>
-  <li><a href="#debugging-reading-the-red-text" id="toc-debugging-reading-the-red-text" class="nav-link" data-scroll-target="#debugging-reading-the-red-text">Debugging: Reading the Red Text</a>
-  <ul class="collapse">
-  <li><a href="#the-fix-it-loop" id="toc-the-fix-it-loop" class="nav-link" data-scroll-target="#the-fix-it-loop">The “Fix It” Loop</a></li>
-  <li><a href="#common-errors-and-what-they-mean" id="toc-common-errors-and-what-they-mean" class="nav-link" data-scroll-target="#common-errors-and-what-they-mean">Common Errors and What They Mean</a></li>
-  </ul></li>
-  <li><a href="#ai-safety-the-audit-checklist" id="toc-ai-safety-the-audit-checklist" class="nav-link" data-scroll-target="#ai-safety-the-audit-checklist">AI Safety: The Audit Checklist</a>
-  <ul class="collapse">
-  <li><a href="#the-paper-trail-rule" id="toc-the-paper-trail-rule" class="nav-link" data-scroll-target="#the-paper-trail-rule">The Paper Trail Rule</a></li>
-  </ul></li>
-  <li><a href="#exporting-clean-data" id="toc-exporting-clean-data" class="nav-link" data-scroll-target="#exporting-clean-data">Exporting Clean Data <!-- AI-EDIT(2026-06-11): MIT-033 — needs review --></a></li>
-  <li><a href="#literate-analysis-in-quarto" id="toc-literate-analysis-in-quarto" class="nav-link" data-scroll-target="#literate-analysis-in-quarto">Literate Analysis in Quarto <!-- AI-EDIT(2026-06-11): MIT-033 — needs review --></a>
-  <ul class="collapse">
-  <li><a href="#pattern" id="toc-pattern" class="nav-link" data-scroll-target="#pattern">Pattern</a></li>
-  </ul></li>
-  <li><a href="#knowledge-check" id="toc-knowledge-check" class="nav-link" data-scroll-target="#knowledge-check">Knowledge Check <!-- AI-EDIT(2026-06-11): MIT-033 — needs review --></a></li>
-  <li><a href="#assignment-2-r-with-ai" id="toc-assignment-2-r-with-ai" class="nav-link" data-scroll-target="#assignment-2-r-with-ai">Assignment 2: R With AI</a>
-  <ul class="collapse">
-  <li><a href="#step-by-step-workflow" id="toc-step-by-step-workflow" class="nav-link" data-scroll-target="#step-by-step-workflow">Step-by-Step Workflow</a></li>
-  <li><a href="#deliverable" id="toc-deliverable" class="nav-link" data-scroll-target="#deliverable">Deliverable</a></li>
-  </ul></li>
-  <li><a href="#quick-reference" id="toc-quick-reference" class="nav-link" data-scroll-target="#quick-reference">Quick Reference</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ehsanx/HDSx/edit/main/weeks/week03-r-with-ai/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ehsanx/HDSx/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+</li>
+  <li>
+<a href="#control-flow-auditing-ai-decisions" id="toc-control-flow-auditing-ai-decisions" class="nav-link" data-scroll-target="#control-flow-auditing-ai-decisions">Control Flow: Auditing AI Decisions</a>
+  <ul class="collapse">
+<li><a href="#ifelse-the-fork-in-the-road" id="toc-ifelse-the-fork-in-the-road" class="nav-link" data-scroll-target="#ifelse-the-fork-in-the-road">If/Else: The Fork in the Road</a></li>
+  <li><a href="#loops-the-treadmill" id="toc-loops-the-treadmill" class="nav-link" data-scroll-target="#loops-the-treadmill">Loops: The Treadmill</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#writing-a-simple-function" id="toc-writing-a-simple-function" class="nav-link" data-scroll-target="#writing-a-simple-function">Writing a Simple Function <!-- AI-EDIT(2026-06-11): MIT-033 — needs review --></a>
+  <ul class="collapse">
+<li><a href="#example-a-reusable-summary" id="toc-example-a-reusable-summary" class="nav-link" data-scroll-target="#example-a-reusable-summary">Example: A Reusable Summary</a></li>
+  <li><a href="#your-task" id="toc-your-task" class="nav-link" data-scroll-target="#your-task">Your Task</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#debugging-reading-the-red-text" id="toc-debugging-reading-the-red-text" class="nav-link" data-scroll-target="#debugging-reading-the-red-text">Debugging: Reading the Red Text</a>
+  <ul class="collapse">
+<li><a href="#the-fix-it-loop" id="toc-the-fix-it-loop" class="nav-link" data-scroll-target="#the-fix-it-loop">The “Fix It” Loop</a></li>
+  <li><a href="#common-errors-and-what-they-mean" id="toc-common-errors-and-what-they-mean" class="nav-link" data-scroll-target="#common-errors-and-what-they-mean">Common Errors and What They Mean</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#ai-safety-the-audit-checklist" id="toc-ai-safety-the-audit-checklist" class="nav-link" data-scroll-target="#ai-safety-the-audit-checklist">AI Safety: The Audit Checklist</a>
+  <ul class="collapse">
+<li><a href="#the-paper-trail-rule" id="toc-the-paper-trail-rule" class="nav-link" data-scroll-target="#the-paper-trail-rule">The Paper Trail Rule</a></li>
+  </ul>
+</li>
+  <li><a href="#exporting-clean-data" id="toc-exporting-clean-data" class="nav-link" data-scroll-target="#exporting-clean-data">Exporting Clean Data <!-- AI-EDIT(2026-06-11): MIT-033 — needs review --></a></li>
+  <li>
+<a href="#literate-analysis-in-quarto" id="toc-literate-analysis-in-quarto" class="nav-link" data-scroll-target="#literate-analysis-in-quarto">Literate Analysis in Quarto <!-- AI-EDIT(2026-06-11): MIT-033 — needs review --></a>
+  <ul class="collapse">
+<li><a href="#pattern" id="toc-pattern" class="nav-link" data-scroll-target="#pattern">Pattern</a></li>
+  </ul>
+</li>
+  <li><a href="#knowledge-check" id="toc-knowledge-check" class="nav-link" data-scroll-target="#knowledge-check">Knowledge Check <!-- AI-EDIT(2026-06-11): MIT-033 — needs review --></a></li>
+  <li>
+<a href="#assignment-2-r-with-ai" id="toc-assignment-2-r-with-ai" class="nav-link" data-scroll-target="#assignment-2-r-with-ai">Assignment 2: R With AI</a>
+  <ul class="collapse">
+<li><a href="#step-by-step-workflow" id="toc-step-by-step-workflow" class="nav-link" data-scroll-target="#step-by-step-workflow">Step-by-Step Workflow</a></li>
+  <li><a href="#deliverable" id="toc-deliverable" class="nav-link" data-scroll-target="#deliverable">Deliverable</a></li>
+  </ul>
+</li>
+  <li><a href="#quick-reference" id="toc-quick-reference" class="nav-link" data-scroll-target="#quick-reference">Quick Reference</a></li>
+  </ul><div class="toc-actions"><ul><li><a href="https://github.com/ehsanx/HDSx/edit/main/weeks/week03-r-with-ai/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ehsanx/HDSx/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week03-r-with-ai/index.html">Week 3: R with AI</a></li><li class="breadcrumb-item"><a href="../../weeks/week03-r-with-ai/index.html">Week 3: R with AI</a></li></ol></nav>
-<div class="quarto-title">
+<main class="content" id="quarto-document-content" tabindex="-1"><header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week03-r-with-ai/index.html">Week 3: R with AI</a></li><li class="breadcrumb-item"><a href="../../weeks/week03-r-with-ai/index.html">Week 3: R with AI</a></li></ol></nav><div class="quarto-title">
 <h1 class="title">Week 3: R with AI</h1>
 </div>
 
@@ -1213,31 +1164,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   
 
 
-</header>
-
-
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+</header><section id="overview" class="level2"><h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p><strong>Summary:</strong> In Week 2 you learned how to use your Codespace, edit a Quarto document, and make your first commit. Now you learn how to speak R—not by memorizing syntax, but by directing an AI co-pilot and <em>auditing</em> what it writes. Your job is to be the pilot: you decide what the analysis should do, the AI drafts the code, and you verify every line before it flies.</p>
 <!-- AI-EDIT(2026-06-11): TF-013, MIT-030, WI-017 — needs review -->
 <p><strong>What is R?</strong> R is the main programming language we use in this course for cleaning, summarizing, and visualizing health data. GitHub and Codespaces provide the workspace; R is the tool we use inside that workspace to work with data.</p>
 <p><strong>Learning Objectives:</strong></p>
 <ul>
 <li>Understand that R is a calculator that needs specific, case-sensitive instructions.</li>
-<li>Load packages with <code>library()</code> and explain why this is needed each session.</li>
+<li>Load packages with <code><a href="https://rdrr.io/r/base/library.html">library()</a></code> and explain why this is needed each session.</li>
 <li>Explain how the course devcontainer and dependency notes make package use visible.</li>
 <li>Use core constructs: variables (assignment), functions (with arguments), and the pipe (<code>%&gt;%</code> / <code>|&gt;</code>).</li>
-<li>Perform basic data transformations using <code>dplyr</code> verbs: <code>filter()</code>, <code>select()</code>, <code>mutate()</code>, <code>summarise()</code>, <code>group_by()</code>.</li>
+<li>Perform basic data transformations using <code>dplyr</code> verbs: <code><a href="https://rdrr.io/r/stats/filter.html">filter()</a></code>, <code>select()</code>, <code>mutate()</code>, <code>summarise()</code>, <code>group_by()</code>.</li>
 <li>Inspect a dataset on first contact: structure, dimensions, missingness.</li>
 <li>Identify control flow (<code>if/else</code>, loops) in AI-generated code and audit whether it is correct.</li>
 <li>Write and adapt a simple custom function.</li>
 <li>Apply an AI safety checklist to catch hallucinations, wrong column names, and unsafe operations.</li>
 <li>Document your analysis in Quarto by weaving code chunks with Markdown narrative.</li>
 <li>Commit incrementally as you work (reinforcing Week 2 Git basics).</li>
-</ul>
-</section>
-<section id="connection" class="level2">
-<h2 class="anchored" data-anchor-id="connection">Connection</h2>
+</ul></section><section id="connection" class="level2"><h2 class="anchored" data-anchor-id="connection">Connection</h2>
 <p>Week 2 made the project structure reproducible. This week you use that structure to load, inspect, summarize, and audit R code with AI support. Next week you will put those edits under version control.</p>
 <p>Before you start, make sure your tools are ready: <a href="../../weeks/week03-r-with-ai/r01-setup.html">The Setup (The Cockpit)</a>. <!-- AI-EDIT(2026-06-11): GAP-R345-1 — needs review --> <!-- AI-EDIT(2026-06-22): REVIEW-row55, GAP-R345-1 — RA requests an added screenshot on the linked Setup page (r01-setup.qmd); image not available to insert. NEEDS-RA-SCREENSHOT --> <!-- TODO: RA to provide screenshot for r01-setup.qmd (referenced by REVIEW-row55) --></p>
 <!-- AI-EDIT(2026-06-11): TF-013, MIT-025, WI-018 — needs review -->
@@ -1254,40 +1198,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>For each code block below, follow the label above it: <strong>Read</strong> means inspect only, <strong>Run</strong> means execute it as written, <strong>Modify</strong> means make the requested change, and <strong>Copy</strong> means place it in the assignment file named in the instructions.</p>
 </div>
 </div>
-</section>
-<section id="case-study-data-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="case-study-data-analysis">Case Study Data Analysis</h2>
+</section><section id="case-study-data-analysis" class="level2"><h2 class="anchored" data-anchor-id="case-study-data-analysis">Case Study Data Analysis</h2>
 <p><strong>What to do with this code (the case-study block below):</strong> Run — it loads the cached NHANES CSV and prints two summaries. You do not need to modify it this week. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review --></p>
 <p>The <strong>NHANES Health Equity data spine</strong> now supports code-reading, EDA, visualization, and reproducibility checks. Use the cached CSV/RDS for routine class work; a CDC retrieval script exists for advanced users.</p>
 <!-- AI-EDIT(2026-06-11): MIT-036 — direct GitHub links so students can open the files without hunting through folders — needs review -->
 <ul>
-<li>Cached RDS: <a href="https://github.com/ehsanx/HDSx/blob/main/examples/nhanes-equity/data/nhanes_equity_v6.rds"><code>examples/nhanes-equity/data/nhanes_equity_v6.rds</code></a></li>
-<li>CSV snapshot: <a href="https://github.com/ehsanx/HDSx/blob/main/examples/nhanes-equity/data/nhanes_equity_v6.csv"><code>examples/nhanes-equity/data/nhanes_equity_v6.csv</code></a></li>
-<li>Case-study README: <a href="https://github.com/ehsanx/HDSx/blob/main/examples/nhanes-equity/README.md"><code>examples/nhanes-equity/README.md</code></a></li>
+<li>Cached RDS: <a href="https://github.com/ehsanx/HDSx/blob/main/examples/nhanes-equity/data/nhanes_equity_v6.rds"><code>examples/nhanes-equity/data/nhanes_equity_v6.rds</code></a>
+</li>
+<li>CSV snapshot: <a href="https://github.com/ehsanx/HDSx/blob/main/examples/nhanes-equity/data/nhanes_equity_v6.csv"><code>examples/nhanes-equity/data/nhanes_equity_v6.csv</code></a>
+</li>
+<li>Case-study README: <a href="https://github.com/ehsanx/HDSx/blob/main/examples/nhanes-equity/README.md"><code>examples/nhanes-equity/README.md</code></a>
+</li>
 </ul>
 <p>The default classroom path is to use the cached data so the analysis work is reproducible without internet access.</p>
 <p><strong>What to do here:</strong> you may run the code below — it loads the cached CSV and prints two small summaries; reading it carefully is enough unless your week’s page asks for more. <!-- AI-EDIT(2026-06-11): MIT-025, MIT-050, MIT-061 — needs review --></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">library</span>(tidyverse) <span class="co"># AI-EDIT(2026-06-23): tidyverse-default — consolidated core library() calls into library(tidyverse)</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a></span>
-<span id="cb1-3"><a href="#cb1-3"></a>candidate_paths <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
-<span id="cb1-4"><a href="#cb1-4"></a>  <span class="st">"examples/nhanes-equity/data/nhanes_equity_v6.csv"</span>,</span>
-<span id="cb1-5"><a href="#cb1-5"></a>  <span class="st">"../../examples/nhanes-equity/data/nhanes_equity_v6.csv"</span></span>
-<span id="cb1-6"><a href="#cb1-6"></a>)</span>
-<span id="cb1-7"><a href="#cb1-7"></a></span>
-<span id="cb1-8"><a href="#cb1-8"></a>nhanes_path <span class="ot">&lt;-</span> candidate_paths[<span class="fu">file.exists</span>(candidate_paths)][<span class="dv">1</span>]</span>
-<span id="cb1-9"><a href="#cb1-9"></a><span class="cf">if</span> (<span class="fu">is.na</span>(nhanes_path)) {</span>
-<span id="cb1-10"><a href="#cb1-10"></a>  <span class="fu">stop</span>(<span class="st">"Could not find examples/nhanes-equity/data/nhanes_equity_v6.csv"</span>)</span>
-<span id="cb1-11"><a href="#cb1-11"></a>}</span>
-<span id="cb1-12"><a href="#cb1-12"></a></span>
-<span id="cb1-13"><a href="#cb1-13"></a>nhanes_analysis <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(nhanes_path, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb1-14"><a href="#cb1-14"></a></span>
-<span id="cb1-15"><a href="#cb1-15"></a>nhanes_analysis <span class="sc">|&gt;</span></span>
-<span id="cb1-16"><a href="#cb1-16"></a>  <span class="fu">summarise</span>(</span>
-<span id="cb1-17"><a href="#cb1-17"></a>    <span class="at">rows =</span> <span class="fu">n</span>(),</span>
-<span id="cb1-18"><a href="#cb1-18"></a>    <span class="at">missing_bmi =</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(BMI)),</span>
-<span id="cb1-19"><a href="#cb1-19"></a>    <span class="at">missing_income =</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(IncomeGroup))</span>
-<span id="cb1-20"><a href="#cb1-20"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-label="1"></a><span class="fu">library</span>(tidyverse) <span class="co"># AI-EDIT(2026-06-23): tidyverse-default — consolidated core library() calls into library(tidyverse)</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-label="2"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-label="3"></a>candidate_paths <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb1-4"><a href="#cb1-4" aria-label="4"></a>  <span class="st">"examples/nhanes-equity/data/nhanes_equity_v6.csv"</span>,</span>
+<span id="cb1-5"><a href="#cb1-5" aria-label="5"></a>  <span class="st">"../../examples/nhanes-equity/data/nhanes_equity_v6.csv"</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-label="6"></a>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-label="7"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-label="8"></a>nhanes_path <span class="ot">&lt;-</span> candidate_paths[<span class="fu">file.exists</span>(candidate_paths)][<span class="dv">1</span>]</span>
+<span id="cb1-9"><a href="#cb1-9" aria-label="9"></a><span class="cf">if</span> (<span class="fu">is.na</span>(nhanes_path)) {</span>
+<span id="cb1-10"><a href="#cb1-10" aria-label="10"></a>  <span class="fu">stop</span>(<span class="st">"Could not find examples/nhanes-equity/data/nhanes_equity_v6.csv"</span>)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-label="11"></a>}</span>
+<span id="cb1-12"><a href="#cb1-12" aria-label="12"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-label="13"></a>nhanes_analysis <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(nhanes_path, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-label="14"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-label="15"></a>nhanes_analysis <span class="sc">|&gt;</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-label="16"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb1-17"><a href="#cb1-17" aria-label="17"></a>    <span class="at">rows =</span> <span class="fu">n</span>(),</span>
+<span id="cb1-18"><a href="#cb1-18" aria-label="18"></a>    <span class="at">missing_bmi =</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(BMI)),</span>
+<span id="cb1-19"><a href="#cb1-19" aria-label="19"></a>    <span class="at">missing_income =</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(IncomeGroup))</span>
+<span id="cb1-20"><a href="#cb1-20" aria-label="20"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div data-pagedtable="false">
   <script data-pagedtable-source="" type="application/json">
@@ -1295,15 +1240,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 </div>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a></span>
-<span id="cb2-2"><a href="#cb2-2"></a>nhanes_analysis <span class="sc">|&gt;</span></span>
-<span id="cb2-3"><a href="#cb2-3"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(BMI), <span class="sc">!</span><span class="fu">is.na</span>(IncomeGroup), Age <span class="sc">&gt;=</span> <span class="dv">20</span>, Age <span class="sc">&lt;=</span> <span class="dv">80</span>) <span class="sc">|&gt;</span></span>
-<span id="cb2-4"><a href="#cb2-4"></a>  <span class="fu">group_by</span>(IncomeGroup) <span class="sc">|&gt;</span></span>
-<span id="cb2-5"><a href="#cb2-5"></a>  <span class="fu">summarise</span>(</span>
-<span id="cb2-6"><a href="#cb2-6"></a>    <span class="at">n =</span> <span class="fu">n</span>(),</span>
-<span id="cb2-7"><a href="#cb2-7"></a>    <span class="at">mean_bmi =</span> <span class="fu">round</span>(<span class="fu">mean</span>(BMI), <span class="dv">1</span>),</span>
-<span id="cb2-8"><a href="#cb2-8"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
-<span id="cb2-9"><a href="#cb2-9"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-label="1"></a></span>
+<span id="cb2-2"><a href="#cb2-2" aria-label="2"></a>nhanes_analysis <span class="sc">|&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-label="3"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(BMI), <span class="sc">!</span><span class="fu">is.na</span>(IncomeGroup), Age <span class="sc">&gt;=</span> <span class="dv">20</span>, Age <span class="sc">&lt;=</span> <span class="dv">80</span>) <span class="sc">|&gt;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-label="4"></a>  <span class="fu">group_by</span>(IncomeGroup) <span class="sc">|&gt;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-label="5"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb2-6"><a href="#cb2-6" aria-label="6"></a>    <span class="at">n =</span> <span class="fu">n</span>(),</span>
+<span id="cb2-7"><a href="#cb2-7" aria-label="7"></a>    <span class="at">mean_bmi =</span> <span class="fu">round</span>(<span class="fu">mean</span>(BMI), <span class="dv">1</span>),</span>
+<span id="cb2-8"><a href="#cb2-8" aria-label="8"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-label="9"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div data-pagedtable="false">
   <script data-pagedtable-source="" type="application/json">
@@ -1312,9 +1257,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-</section>
-<section id="in-class-activity" class="level2">
-<h2 class="anchored" data-anchor-id="in-class-activity">In-Class Activity</h2>
+</section><section id="in-class-activity" class="level2"><h2 class="anchored" data-anchor-id="in-class-activity">In-Class Activity</h2>
 <ul>
 <li>Load the CSV snapshot and inspect column names, row count, and missingness.</li>
 <li>Summarize one numeric variable and one grouping variable with clear <code>NA</code> handling.</li>
@@ -1323,22 +1266,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <p>Student output: a short Quarto note with one data inspection, one summary, and one AI-audit comment. Assignment link: <a href="../../assignments/assignment02-r-with-ai/README.html">Assignment 2</a>.</p>
 <hr>
-<!-- AI-EDIT(2026-06-11): MIT-033, GAP-R345-1 — needs review -->
-</section>
-<section id="packages-opening-the-toolbox" class="level2">
-<h2 class="anchored" data-anchor-id="packages-opening-the-toolbox">Packages: Opening the Toolbox</h2>
+<!-- AI-EDIT(2026-06-11): MIT-033, GAP-R345-1 — needs review --></section><section id="packages-opening-the-toolbox" class="level2"><h2 class="anchored" data-anchor-id="packages-opening-the-toolbox">Packages: Opening the Toolbox</h2>
 <p>Deeper dive: <a href="../../weeks/week03-r-with-ai/r02-packages.html">Packages (The Toolbox)</a>.</p>
-<section id="install-vs-load" class="level3">
-<h3 class="anchored" data-anchor-id="install-vs-load">Install vs Load</h3>
+<section id="install-vs-load" class="level3"><h3 class="anchored" data-anchor-id="install-vs-load">Install vs Load</h3>
 <ul>
-<li><code>install.packages("tidyverse")</code> — <strong>buying</strong> the toolbox. Done once per environment (already done in your course Codespace).</li>
-<li><code>library(tidyverse)</code> — <strong>opening</strong> the toolbox. Required every time you restart R or reopen your Codespace.</li>
+<li>
+<code>install.packages("tidyverse")</code> — <strong>buying</strong> the toolbox. Done once per environment (already done in your course Codespace).</li>
+<li>
+<code><a href="https://tidyverse.tidyverse.org">library(tidyverse)</a></code> — <strong>opening</strong> the toolbox. Required every time you restart R or reopen your Codespace.</li>
 </ul>
 <p><strong>What to do with this code:</strong> Run — execute it as written every time you reopen your Codespace. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review --></p>
 <!-- AI-EDIT(2026-06-22): REVIEW-row59, MIT-025 — clarify you must be inside an R session (the `>` prompt) before running library() -->
 <p><strong>Where to run this:</strong> First start R so you are <em>inside</em> an R session. Open a terminal in VS Code (<strong>Terminal → New Terminal</strong>), type <code>R</code>, and press Enter. You should now see the R prompt, which looks like <code>&gt;</code>. Then type the line below at that <code>&gt;</code> prompt (you can also run it from the R Console or a code chunk in your <code>.qmd</code>).</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-label="1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -1353,34 +1294,27 @@ Note
 <p>If you see an error like <code>there is no package called 'tidyverse'</code>, the package is not installed in your Codespace. Use the Canvas support channel or office hours and include the full error message.</p>
 </div>
 </div>
-</section>
-<section id="course-environment-and-dependency-note" class="level3">
-<h3 class="anchored" data-anchor-id="course-environment-and-dependency-note">Course Environment and Dependency Note</h3>
+</section><section id="course-environment-and-dependency-note" class="level3"><h3 class="anchored" data-anchor-id="course-environment-and-dependency-note">Course Environment and Dependency Note</h3>
 <p>The personal workspace devcontainer is the supported course environment. It installs the R and Python packages used by the required pathway, so you do not need to initialize <code>renv</code>, create a lockfile, or install packages for Assignment 2.</p>
 <p>For every submitted analysis:</p>
 <ol type="1">
-<li>Load each R package explicitly with <code>library(...)</code> in the Quarto source.</li>
+<li>Load each R package explicitly with <code><a href="https://rdrr.io/r/base/library.html">library(...)</a></code> in the Quarto source.</li>
 <li>Name the packages you used in <code>dependency-note.md</code>.</li>
 <li>State whether you used only the course defaults.</li>
 <li>If you think you need another package, ask the instructor or TA before adding it. Record an approved addition in the workspace devcontainer setup and in your dependency note so a fresh Codespace can reproduce it.</li>
 </ol>
 <p>For Assignment 2, a complete dependency note can be as short as:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb4-1"><a href="#cb4-1"></a>Packages used: tidyverse. No packages were added beyond the course Codespace baseline.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb4-1"><a href="#cb4-1" aria-label="1"></a>Packages used: tidyverse. No packages were added beyond the course Codespace baseline.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>The test is practical: your document must render in a fresh course Codespace.</p>
 <hr>
-<!-- AI-EDIT(2026-06-11): MIT-033, GAP-R345-1 — needs review -->
-</section>
-</section>
-<section id="core-constructs-boxes-toasters-and-the-assembly-line" class="level2">
-<h2 class="anchored" data-anchor-id="core-constructs-boxes-toasters-and-the-assembly-line">Core Constructs: Boxes, Toasters, and the Assembly Line</h2>
+<!-- AI-EDIT(2026-06-11): MIT-033, GAP-R345-1 — needs review --></section></section><section id="core-constructs-boxes-toasters-and-the-assembly-line" class="level2"><h2 class="anchored" data-anchor-id="core-constructs-boxes-toasters-and-the-assembly-line">Core Constructs: Boxes, Toasters, and the Assembly Line</h2>
 <p>Deeper dives: <a href="../../weeks/week03-r-with-ai/r03-basics.html">Basics: Boxes &amp; Toasters</a>; the pipe is also covered in <a href="../../weeks/week03-r-with-ai/r04-control-flow.html">Control Flow</a>.</p>
-<section id="variables-the-labeled-box" class="level3">
-<h3 class="anchored" data-anchor-id="variables-the-labeled-box">Variables: The Labeled Box</h3>
+<section id="variables-the-labeled-box" class="level3"><h3 class="anchored" data-anchor-id="variables-the-labeled-box">Variables: The Labeled Box</h3>
 <p>R has no memory unless you store results in a named box using <code>&lt;-</code>.</p>
 <p><strong>What to do with this code:</strong> Run — type it in the Console, then check the Environment pane to see your new “boxes”. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review --></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>patient_age <span class="ot">&lt;-</span> <span class="dv">55</span></span>
-<span id="cb5-2"><a href="#cb5-2"></a>clinic_name <span class="ot">&lt;-</span> <span class="st">"Vancouver General"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-label="1"></a>patient_age <span class="ot">&lt;-</span> <span class="dv">55</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-label="2"></a>clinic_name <span class="ot">&lt;-</span> <span class="st">"Vancouver General"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -1395,27 +1329,24 @@ Warning
 <p><strong>Case sensitivity:</strong> <code>Age</code>, <code>age</code>, and <code>AGE</code> are three different boxes. This is one of the most common bugs in AI-generated code. Always check that column names match your data exactly.</p>
 </div>
 </div>
-</section>
-<section id="functions-the-toaster" class="level3">
-<h3 class="anchored" data-anchor-id="functions-the-toaster">Functions: The Toaster</h3>
+</section><section id="functions-the-toaster" class="level3"><h3 class="anchored" data-anchor-id="functions-the-toaster">Functions: The Toaster</h3>
 <p>A function takes <strong>input</strong> and returns <strong>output</strong>. Arguments (inside the parentheses) control its behaviour.</p>
 <p><strong>What to do with this code:</strong> Run — execute it as written. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review --></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="fu">mean</span>(<span class="fu">c</span>(<span class="dv">72</span>, <span class="dv">85</span>, <span class="dv">90</span>), <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-label="1"></a><span class="fu">mean</span>(<span class="fu">c</span>(<span class="dv">72</span>, <span class="dv">85</span>, <span class="dv">90</span>), <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <ul>
-<li><code>c(72, 85, 90)</code> is the input (a vector of numbers).</li>
-<li><code>na.rm = TRUE</code> tells R to ignore missing values. <strong>Always look for this</strong> when auditing AI code that works with health data — missingness is the norm, not the exception.</li>
-</ul>
-</section>
-<section id="the-pipe-the-assembly-line" class="level3">
-<h3 class="anchored" data-anchor-id="the-pipe-the-assembly-line">The Pipe: The Assembly Line</h3>
+<li>
+<code>c(72, 85, 90)</code> is the input (a vector of numbers).</li>
+<li>
+<code>na.rm = TRUE</code> tells R to ignore missing values. <strong>Always look for this</strong> when auditing AI code that works with health data — missingness is the norm, not the exception.</li>
+</ul></section><section id="the-pipe-the-assembly-line" class="level3"><h3 class="anchored" data-anchor-id="the-pipe-the-assembly-line">The Pipe: The Assembly Line</h3>
 <p>The pipe passes the result of one step into the next. Think of it as <strong>“and then…”</strong></p>
 <p><strong>What to do with this code:</strong> Read — <code>data</code> here is a placeholder, so this block will not run as-is. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review --></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a>data <span class="sc">%&gt;%</span></span>
-<span id="cb7-2"><a href="#cb7-2"></a>  <span class="fu">filter</span>(age <span class="sc">&gt;</span> <span class="dv">65</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb7-3"><a href="#cb7-3"></a>  <span class="fu">summarise</span>(<span class="at">mean_bmi =</span> <span class="fu">mean</span>(bmi, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-label="1"></a>data <span class="sc">%&gt;%</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-label="2"></a>  <span class="fu">filter</span>(age <span class="sc">&gt;</span> <span class="dv">65</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-label="3"></a>  <span class="fu">summarise</span>(<span class="at">mean_bmi =</span> <span class="fu">mean</span>(bmi, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Read this as: <em>“Take the data, and then keep only patients over 65, and then calculate the average BMI.”</em></p>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -1432,43 +1363,36 @@ Tip
 </div>
 </div>
 <hr>
-<!-- AI-EDIT(2026-06-11): MIT-033, GAP-R345-1 — needs review -->
-</section>
-</section>
-<section id="data-import-and-first-contact" class="level2">
-<h2 class="anchored" data-anchor-id="data-import-and-first-contact">Data Import and First Contact</h2>
+<!-- AI-EDIT(2026-06-11): MIT-033, GAP-R345-1 — needs review --></section></section><section id="data-import-and-first-contact" class="level2"><h2 class="anchored" data-anchor-id="data-import-and-first-contact">Data Import and First Contact</h2>
 <p>Deeper dive: <a href="../../weeks/week03-r-with-ai/r05-data-import.html">The Loading Dock (Data Import)</a>.</p>
-<section id="loading-data" class="level3">
-<h3 class="anchored" data-anchor-id="loading-data">Loading Data</h3>
+<section id="loading-data" class="level3"><h3 class="anchored" data-anchor-id="loading-data">Loading Data</h3>
 <p>Use relative paths so your code runs on any machine (including your grader’s Codespace).</p>
 <p><strong>What to do with this code:</strong> Modify — replace the path with the relative path to your own file, then run it. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review --></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a>my_data <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/patients.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-label="1"></a>my_data <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/patients.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p><strong>How to get the path right:</strong> Right-click the file in the VS Code Explorer → <strong>Copy Relative Path</strong> → paste it into your code.</p>
 <p><strong>AI Prompt:</strong></p>
 <blockquote class="blockquote">
 <p>Read the CSV file at “data/patients.csv” and save it as <code>my_data</code>. Use the <code>readr</code> package.</p>
 </blockquote>
-</section>
-<section id="first-contact-inspect-before-you-analyze" class="level3">
-<h3 class="anchored" data-anchor-id="first-contact-inspect-before-you-analyze">First Contact: Inspect Before You Analyze</h3>
+</section><section id="first-contact-inspect-before-you-analyze" class="level3"><h3 class="anchored" data-anchor-id="first-contact-inspect-before-you-analyze">First Contact: Inspect Before You Analyze</h3>
 <p>Never start analysis without looking at your data. Run these four checks:</p>
 <p><strong>What to do with this code:</strong> Run — execute it as written once your data is loaded. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review --></p>
 <!-- AI-EDIT(2026-06-22): REVIEW-row69, MIT-025 — note that glimpse() needs tidyverse loaded and state where to run -->
-<p>Run these in your assignment <code>.qmd</code> (as a code chunk) or at the R <code>&gt;</code> prompt, using the course workspace repo. <code>glimpse()</code> comes from <code>tidyverse</code>, so if you get <code>could not find function "glimpse"</code>, run <code>library(tidyverse)</code> first.</p>
+<p>Run these in your assignment <code>.qmd</code> (as a code chunk) or at the R <code>&gt;</code> prompt, using the course workspace repo. <code>glimpse()</code> comes from <code>tidyverse</code>, so if you get <code>could not find function "glimpse"</code>, run <code><a href="https://tidyverse.tidyverse.org">library(tidyverse)</a></code> first.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="co"># How big is it?</span></span>
-<span id="cb9-2"><a href="#cb9-2"></a><span class="fu">dim</span>(my_data)          <span class="co"># rows x columns</span></span>
-<span id="cb9-3"><a href="#cb9-3"></a></span>
-<span id="cb9-4"><a href="#cb9-4"></a><span class="co"># What are the column names and types?</span></span>
-<span id="cb9-5"><a href="#cb9-5"></a><span class="fu">glimpse</span>(my_data)</span>
-<span id="cb9-6"><a href="#cb9-6"></a></span>
-<span id="cb9-7"><a href="#cb9-7"></a><span class="co"># Quick summary statistics</span></span>
-<span id="cb9-8"><a href="#cb9-8"></a><span class="fu">summary</span>(my_data)</span>
-<span id="cb9-9"><a href="#cb9-9"></a></span>
-<span id="cb9-10"><a href="#cb9-10"></a><span class="co"># How much is missing?</span></span>
-<span id="cb9-11"><a href="#cb9-11"></a><span class="fu">colSums</span>(<span class="fu">is.na</span>(my_data))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-label="1"></a><span class="co"># How big is it?</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-label="2"></a><span class="fu">dim</span>(my_data)          <span class="co"># rows x columns</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-label="3"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-label="4"></a><span class="co"># What are the column names and types?</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-label="5"></a><span class="fu">glimpse</span>(my_data)</span>
+<span id="cb9-6"><a href="#cb9-6" aria-label="6"></a></span>
+<span id="cb9-7"><a href="#cb9-7" aria-label="7"></a><span class="co"># Quick summary statistics</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-label="8"></a><span class="fu">summary</span>(my_data)</span>
+<span id="cb9-9"><a href="#cb9-9" aria-label="9"></a></span>
+<span id="cb9-10"><a href="#cb9-10" aria-label="10"></a><span class="co"># How much is missing?</span></span>
+<span id="cb9-11"><a href="#cb9-11" aria-label="11"></a><span class="fu">colSums</span>(<span class="fu">is.na</span>(my_data))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Open the <strong>Environment</strong> pane (top-right in RStudio or via the R extension) to see your variables and click a data frame to view it in a grid.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
@@ -1486,55 +1410,48 @@ Warning
 <p>A concrete example: in NHANES, income questions are skipped far more often than age questions. If you silently drop rows with missing income, your “average” quietly excludes many of the very people a health-equity analysis is trying to describe. Handling missingness carefully is part of responsible data stewardship, not just a coding chore.</p>
 </div>
 </div>
-<hr>
-</section>
-</section>
-<section id="data-transformation-the-five-dplyr-verbs" class="level2">
-<h2 class="anchored" data-anchor-id="data-transformation-the-five-dplyr-verbs">Data Transformation: The Five <code>dplyr</code> Verbs <!-- AI-EDIT(2026-06-11): MIT-033 — needs review --></h2>
+<hr></section></section><section id="data-transformation-the-five-dplyr-verbs" class="level2"><h2 class="anchored" data-anchor-id="data-transformation-the-five-dplyr-verbs">Data Transformation: The Five <code>dplyr</code> Verbs <!-- AI-EDIT(2026-06-11): MIT-033 — needs review -->
+</h2>
 <p>These five verbs are the core of data wrangling in R. You will use them in nearly every assignment and in your term project.</p>
 <p><strong>What to do with the code in this section:</strong> Modify — swap in your own dataset and column names, then run each block. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review --></p>
-<section id="filter-keep-rows-that-match-a-condition" class="level3">
-<h3 class="anchored" data-anchor-id="filter-keep-rows-that-match-a-condition"><code>filter()</code> — Keep rows that match a condition</h3>
+<section id="filter-keep-rows-that-match-a-condition" class="level3"><h3 class="anchored" data-anchor-id="filter-keep-rows-that-match-a-condition">
+<code>filter()</code> — Keep rows that match a condition</h3>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="co"># Patients aged 65 and older</span></span>
-<span id="cb10-2"><a href="#cb10-2"></a>seniors <span class="ot">&lt;-</span> my_data <span class="sc">%&gt;%</span> <span class="fu">filter</span>(age <span class="sc">&gt;=</span> <span class="dv">65</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-label="1"></a><span class="co"># Patients aged 65 and older</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-label="2"></a>seniors <span class="ot">&lt;-</span> my_data <span class="sc">%&gt;%</span> <span class="fu">filter</span>(age <span class="sc">&gt;=</span> <span class="dv">65</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-</section>
-<section id="select-keep-or-drop-columns" class="level3">
-<h3 class="anchored" data-anchor-id="select-keep-or-drop-columns"><code>select()</code> — Keep (or drop) columns</h3>
+</section><section id="select-keep-or-drop-columns" class="level3"><h3 class="anchored" data-anchor-id="select-keep-or-drop-columns">
+<code>select()</code> — Keep (or drop) columns</h3>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a><span class="co"># Keep only ID, age, and BMI</span></span>
-<span id="cb11-2"><a href="#cb11-2"></a>slim <span class="ot">&lt;-</span> my_data <span class="sc">%&gt;%</span> <span class="fu">select</span>(id, age, bmi)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-label="1"></a><span class="co"># Keep only ID, age, and BMI</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-label="2"></a>slim <span class="ot">&lt;-</span> my_data <span class="sc">%&gt;%</span> <span class="fu">select</span>(id, age, bmi)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-</section>
-<section id="mutate-create-or-modify-a-column" class="level3">
-<h3 class="anchored" data-anchor-id="mutate-create-or-modify-a-column"><code>mutate()</code> — Create or modify a column</h3>
+</section><section id="mutate-create-or-modify-a-column" class="level3"><h3 class="anchored" data-anchor-id="mutate-create-or-modify-a-column">
+<code>mutate()</code> — Create or modify a column</h3>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a><span class="co"># Add a BMI category column</span></span>
-<span id="cb12-2"><a href="#cb12-2"></a>my_data <span class="ot">&lt;-</span> my_data <span class="sc">%&gt;%</span></span>
-<span id="cb12-3"><a href="#cb12-3"></a>  <span class="fu">mutate</span>(<span class="at">bmi_category =</span> <span class="fu">case_when</span>(</span>
-<span id="cb12-4"><a href="#cb12-4"></a>    bmi <span class="sc">&lt;</span> <span class="fl">18.5</span> <span class="sc">~</span> <span class="st">"Underweight"</span>,</span>
-<span id="cb12-5"><a href="#cb12-5"></a>    bmi <span class="sc">&lt;</span> <span class="dv">25</span>   <span class="sc">~</span> <span class="st">"Normal"</span>,</span>
-<span id="cb12-6"><a href="#cb12-6"></a>    bmi <span class="sc">&lt;</span> <span class="dv">30</span>   <span class="sc">~</span> <span class="st">"Overweight"</span>,</span>
-<span id="cb12-7"><a href="#cb12-7"></a>    <span class="cn">TRUE</span>       <span class="sc">~</span> <span class="st">"Obese"</span></span>
-<span id="cb12-8"><a href="#cb12-8"></a>  ))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-label="1"></a><span class="co"># Add a BMI category column</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-label="2"></a>my_data <span class="ot">&lt;-</span> my_data <span class="sc">%&gt;%</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-label="3"></a>  <span class="fu">mutate</span>(<span class="at">bmi_category =</span> <span class="fu">case_when</span>(</span>
+<span id="cb12-4"><a href="#cb12-4" aria-label="4"></a>    bmi <span class="sc">&lt;</span> <span class="fl">18.5</span> <span class="sc">~</span> <span class="st">"Underweight"</span>,</span>
+<span id="cb12-5"><a href="#cb12-5" aria-label="5"></a>    bmi <span class="sc">&lt;</span> <span class="dv">25</span>   <span class="sc">~</span> <span class="st">"Normal"</span>,</span>
+<span id="cb12-6"><a href="#cb12-6" aria-label="6"></a>    bmi <span class="sc">&lt;</span> <span class="dv">30</span>   <span class="sc">~</span> <span class="st">"Overweight"</span>,</span>
+<span id="cb12-7"><a href="#cb12-7" aria-label="7"></a>    <span class="cn">TRUE</span>       <span class="sc">~</span> <span class="st">"Obese"</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-label="8"></a>  ))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-</section>
-<section id="summarise-collapse-rows-into-a-summary" class="level3">
-<h3 class="anchored" data-anchor-id="summarise-collapse-rows-into-a-summary"><code>summarise()</code> — Collapse rows into a summary</h3>
+</section><section id="summarise-collapse-rows-into-a-summary" class="level3"><h3 class="anchored" data-anchor-id="summarise-collapse-rows-into-a-summary">
+<code>summarise()</code> — Collapse rows into a summary</h3>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a>my_data <span class="sc">%&gt;%</span> <span class="fu">summarise</span>(<span class="at">mean_age =</span> <span class="fu">mean</span>(age, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-label="1"></a>my_data <span class="sc">%&gt;%</span> <span class="fu">summarise</span>(<span class="at">mean_age =</span> <span class="fu">mean</span>(age, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-</section>
-<section id="group_by-summarise-summaries-by-group" class="level3">
-<h3 class="anchored" data-anchor-id="group_by-summarise-summaries-by-group"><code>group_by()</code> + <code>summarise()</code> — Summaries by group</h3>
+</section><section id="group_by-summarise-summaries-by-group" class="level3"><h3 class="anchored" data-anchor-id="group_by-summarise-summaries-by-group">
+<code>group_by()</code> + <code>summarise()</code> — Summaries by group</h3>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a>my_data <span class="sc">%&gt;%</span></span>
-<span id="cb14-2"><a href="#cb14-2"></a>  <span class="fu">group_by</span>(sex) <span class="sc">%&gt;%</span></span>
-<span id="cb14-3"><a href="#cb14-3"></a>  <span class="fu">summarise</span>(</span>
-<span id="cb14-4"><a href="#cb14-4"></a>    <span class="at">n =</span> <span class="fu">n</span>(),</span>
-<span id="cb14-5"><a href="#cb14-5"></a>    <span class="at">mean_bmi =</span> <span class="fu">mean</span>(bmi, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb14-6"><a href="#cb14-6"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-label="1"></a>my_data <span class="sc">%&gt;%</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-label="2"></a>  <span class="fu">group_by</span>(sex) <span class="sc">%&gt;%</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-label="3"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb14-4"><a href="#cb14-4" aria-label="4"></a>    <span class="at">n =</span> <span class="fu">n</span>(),</span>
+<span id="cb14-5"><a href="#cb14-5" aria-label="5"></a>    <span class="at">mean_bmi =</span> <span class="fu">mean</span>(bmi, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb14-6"><a href="#cb14-6" aria-label="6"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p><strong>AI Prompt:</strong></p>
 <blockquote class="blockquote">
@@ -1555,31 +1472,24 @@ Tip
 </div>
 <p><strong>Git checkpoint:</strong> You have now loaded, inspected, and transformed data. Stage your <code>.qmd</code>, write a commit message describing what you did, and commit. Don’t wait until the end.</p>
 <hr>
-<!-- AI-EDIT(2026-06-11): MIT-033, GAP-R345-1 — needs review -->
-</section>
-</section>
-<section id="control-flow-auditing-ai-decisions" class="level2">
-<h2 class="anchored" data-anchor-id="control-flow-auditing-ai-decisions">Control Flow: Auditing AI Decisions</h2>
+<!-- AI-EDIT(2026-06-11): MIT-033, GAP-R345-1 — needs review --></section></section><section id="control-flow-auditing-ai-decisions" class="level2"><h2 class="anchored" data-anchor-id="control-flow-auditing-ai-decisions">Control Flow: Auditing AI Decisions</h2>
 <p>Deeper dive: <a href="../../weeks/week03-r-with-ai/r04-control-flow.html">Control Flow</a>.</p>
 <p>You will not write many <code>if/else</code> blocks or loops by hand. But AI frequently generates them, so you need to <strong>read</strong> them.</p>
 <p><strong>What to do with the code in this section:</strong> Read — these are patterns to recognize in AI output; you do not need to run them. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review --></p>
-<section id="ifelse-the-fork-in-the-road" class="level3">
-<h3 class="anchored" data-anchor-id="ifelse-the-fork-in-the-road">If/Else: The Fork in the Road</h3>
+<section id="ifelse-the-fork-in-the-road" class="level3"><h3 class="anchored" data-anchor-id="ifelse-the-fork-in-the-road">If/Else: The Fork in the Road</h3>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a><span class="cf">if</span> (mean_age <span class="sc">&gt;</span> <span class="dv">50</span>) {</span>
-<span id="cb15-2"><a href="#cb15-2"></a>  <span class="fu">print</span>(<span class="st">"Older cohort"</span>)</span>
-<span id="cb15-3"><a href="#cb15-3"></a>} <span class="cf">else</span> {</span>
-<span id="cb15-4"><a href="#cb15-4"></a>  <span class="fu">print</span>(<span class="st">"Younger cohort"</span>)</span>
-<span id="cb15-5"><a href="#cb15-5"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-label="1"></a><span class="cf">if</span> (mean_age <span class="sc">&gt;</span> <span class="dv">50</span>) {</span>
+<span id="cb15-2"><a href="#cb15-2" aria-label="2"></a>  <span class="fu">print</span>(<span class="st">"Older cohort"</span>)</span>
+<span id="cb15-3"><a href="#cb15-3" aria-label="3"></a>} <span class="cf">else</span> {</span>
+<span id="cb15-4"><a href="#cb15-4" aria-label="4"></a>  <span class="fu">print</span>(<span class="st">"Younger cohort"</span>)</span>
+<span id="cb15-5"><a href="#cb15-5" aria-label="5"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p><strong>Audit question:</strong> Is the threshold (50) appropriate for my research question, or did the AI pick an arbitrary number?</p>
-</section>
-<section id="loops-the-treadmill" class="level3">
-<h3 class="anchored" data-anchor-id="loops-the-treadmill">Loops: The Treadmill</h3>
+</section><section id="loops-the-treadmill" class="level3"><h3 class="anchored" data-anchor-id="loops-the-treadmill">Loops: The Treadmill</h3>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a><span class="cf">for</span> (col <span class="cf">in</span> <span class="fu">c</span>(<span class="st">"age"</span>, <span class="st">"bmi"</span>, <span class="st">"sbp"</span>)) {</span>
-<span id="cb16-2"><a href="#cb16-2"></a>  <span class="fu">print</span>(<span class="fu">summary</span>(my_data[[col]]))</span>
-<span id="cb16-3"><a href="#cb16-3"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-label="1"></a><span class="cf">for</span> (col <span class="cf">in</span> <span class="fu">c</span>(<span class="st">"age"</span>, <span class="st">"bmi"</span>, <span class="st">"sbp"</span>)) {</span>
+<span id="cb16-2"><a href="#cb16-2" aria-label="2"></a>  <span class="fu">print</span>(<span class="fu">summary</span>(my_data[[col]]))</span>
+<span id="cb16-3"><a href="#cb16-3" aria-label="3"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p><strong>Audit questions:</strong> Does the loop have a clear end condition? Could this be replaced with a simpler vectorized operation (e.g., <code>summarise(across(...))</code>)?</p>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -1595,74 +1505,64 @@ Note
 <p>In R, loops are rarely the best tool. If AI gives you a loop, ask: <em>“Can this be done without a loop using dplyr or purrr?”</em> The answer is usually yes.</p>
 </div>
 </div>
-<hr>
-</section>
-</section>
-<section id="writing-a-simple-function" class="level2">
-<h2 class="anchored" data-anchor-id="writing-a-simple-function">Writing a Simple Function <!-- AI-EDIT(2026-06-11): MIT-033 — needs review --></h2>
+<hr></section></section><section id="writing-a-simple-function" class="level2"><h2 class="anchored" data-anchor-id="writing-a-simple-function">Writing a Simple Function <!-- AI-EDIT(2026-06-11): MIT-033 — needs review -->
+</h2>
 <p>The syllabus asks you to write at least one custom function. A function packages a repeated task so you don’t copy-paste code.</p>
-<section id="example-a-reusable-summary" class="level3">
-<h3 class="anchored" data-anchor-id="example-a-reusable-summary">Example: A Reusable Summary</h3>
+<section id="example-a-reusable-summary" class="level3"><h3 class="anchored" data-anchor-id="example-a-reusable-summary">Example: A Reusable Summary</h3>
 <p><strong>What to do with this code:</strong> Run, then Modify — run it as written on your data, then change one thing as described in “Your Task” below. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review --></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a>summarise_column <span class="ot">&lt;-</span> <span class="cf">function</span>(data, column_name) {</span>
-<span id="cb17-2"><a href="#cb17-2"></a>  data <span class="sc">%&gt;%</span></span>
-<span id="cb17-3"><a href="#cb17-3"></a>    <span class="fu">summarise</span>(</span>
-<span id="cb17-4"><a href="#cb17-4"></a>      <span class="at">n_total   =</span> <span class="fu">n</span>(),</span>
-<span id="cb17-5"><a href="#cb17-5"></a>      <span class="at">n_missing =</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(.data[[column_name]])),</span>
-<span id="cb17-6"><a href="#cb17-6"></a>      <span class="at">mean_val  =</span> <span class="fu">mean</span>(.data[[column_name]], <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb17-7"><a href="#cb17-7"></a>      <span class="at">sd_val    =</span> <span class="fu">sd</span>(.data[[column_name]], <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb17-8"><a href="#cb17-8"></a>    )</span>
-<span id="cb17-9"><a href="#cb17-9"></a>}</span>
-<span id="cb17-10"><a href="#cb17-10"></a></span>
-<span id="cb17-11"><a href="#cb17-11"></a><span class="co"># Use it</span></span>
-<span id="cb17-12"><a href="#cb17-12"></a><span class="fu">summarise_column</span>(my_data, <span class="st">"bmi"</span>)</span>
-<span id="cb17-13"><a href="#cb17-13"></a><span class="fu">summarise_column</span>(my_data, <span class="st">"age"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-label="1"></a>summarise_column <span class="ot">&lt;-</span> <span class="cf">function</span>(data, column_name) {</span>
+<span id="cb17-2"><a href="#cb17-2" aria-label="2"></a>  data <span class="sc">%&gt;%</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-label="3"></a>    <span class="fu">summarise</span>(</span>
+<span id="cb17-4"><a href="#cb17-4" aria-label="4"></a>      <span class="at">n_total   =</span> <span class="fu">n</span>(),</span>
+<span id="cb17-5"><a href="#cb17-5" aria-label="5"></a>      <span class="at">n_missing =</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(.data[[column_name]])),</span>
+<span id="cb17-6"><a href="#cb17-6" aria-label="6"></a>      <span class="at">mean_val  =</span> <span class="fu">mean</span>(.data[[column_name]], <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb17-7"><a href="#cb17-7" aria-label="7"></a>      <span class="at">sd_val    =</span> <span class="fu">sd</span>(.data[[column_name]], <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb17-8"><a href="#cb17-8" aria-label="8"></a>    )</span>
+<span id="cb17-9"><a href="#cb17-9" aria-label="9"></a>}</span>
+<span id="cb17-10"><a href="#cb17-10" aria-label="10"></a></span>
+<span id="cb17-11"><a href="#cb17-11" aria-label="11"></a><span class="co"># Use it</span></span>
+<span id="cb17-12"><a href="#cb17-12" aria-label="12"></a><span class="fu">summarise_column</span>(my_data, <span class="st">"bmi"</span>)</span>
+<span id="cb17-13"><a href="#cb17-13" aria-label="13"></a><span class="fu">summarise_column</span>(my_data, <span class="st">"age"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-</section>
-<section id="your-task" class="level3">
-<h3 class="anchored" data-anchor-id="your-task">Your Task</h3>
+</section><section id="your-task" class="level3"><h3 class="anchored" data-anchor-id="your-task">Your Task</h3>
 <ol type="1">
 <li>Ask your AI co-pilot to write a function that takes a data frame and a column name and returns summary statistics.</li>
-<li><strong>Audit the code:</strong> Does it handle <code>NA</code>? Does it work on a numeric column? What happens if you pass a categorical column?</li>
-<li><strong>Adapt it:</strong> Change one thing (e.g., add a median, or add a <code>group_by</code> argument). This is the difference between accepting code blindly and understanding it.</li>
+<li>
+<strong>Audit the code:</strong> Does it handle <code>NA</code>? Does it work on a numeric column? What happens if you pass a categorical column?</li>
+<li>
+<strong>Adapt it:</strong> Change one thing (e.g., add a median, or add a <code>group_by</code> argument). This is the difference between accepting code blindly and understanding it.</li>
 </ol>
 <p><strong>AI Prompt:</strong></p>
 <blockquote class="blockquote">
 <p>Write an R function called <code>summarise_column</code> that takes a data frame and a column name (as a string) and returns the count, number of missing values, mean, and standard deviation. Then show me how to call it on the “bmi” column of <code>my_data</code>.</p>
 </blockquote>
 <hr>
-<!-- AI-EDIT(2026-06-11): MIT-033, GAP-R345-1 — needs review -->
-</section>
-</section>
-<section id="debugging-reading-the-red-text" class="level2">
-<h2 class="anchored" data-anchor-id="debugging-reading-the-red-text">Debugging: Reading the Red Text</h2>
+<!-- AI-EDIT(2026-06-11): MIT-033, GAP-R345-1 — needs review --></section></section><section id="debugging-reading-the-red-text" class="level2"><h2 class="anchored" data-anchor-id="debugging-reading-the-red-text">Debugging: Reading the Red Text</h2>
 <p>Deeper dive: <a href="../../weeks/week03-r-with-ai/r06-debugging.html">The Detective (Debugging)</a>.</p>
 <p>Errors are normal. AI makes mistakes, you make typos, and data surprises you.</p>
-<section id="the-fix-it-loop" class="level3">
-<h3 class="anchored" data-anchor-id="the-fix-it-loop">The “Fix It” Loop</h3>
+<section id="the-fix-it-loop" class="level3"><h3 class="anchored" data-anchor-id="the-fix-it-loop">The “Fix It” Loop</h3>
 <ol type="1">
-<li><strong>Read</strong> the error message. Look for keywords: <code>not found</code>, <code>unexpected</code>, <code>non-numeric</code>.</li>
-<li><strong>Copy</strong> the full error text.</li>
-<li><strong>Paste</strong> it into your AI chat and ask:</li>
+<li>
+<strong>Read</strong> the error message. Look for keywords: <code>not found</code>, <code>unexpected</code>, <code>non-numeric</code>.</li>
+<li>
+<strong>Copy</strong> the full error text.</li>
+<li>
+<strong>Paste</strong> it into your AI chat and ask:</li>
 </ol>
 <blockquote class="blockquote">
 <p>Here is an R error from my Codespace: [paste]. Explain what went wrong in one sentence and give corrected code.</p>
 </blockquote>
-</section>
-<section id="common-errors-and-what-they-mean" class="level3">
-<h3 class="anchored" data-anchor-id="common-errors-and-what-they-mean">Common Errors and What They Mean</h3>
+</section><section id="common-errors-and-what-they-mean" class="level3"><h3 class="anchored" data-anchor-id="common-errors-and-what-they-mean">Common Errors and What They Mean</h3>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
 <col style="width: 50%">
 </colgroup>
-<thead>
-<tr class="header">
+<thead><tr class="header">
 <th>Error message</th>
 <th>Likely cause</th>
-</tr>
-</thead>
+</tr></thead>
 <tbody>
 <tr class="odd">
 <td><code>object 'X' not found</code></td>
@@ -1670,7 +1570,7 @@ Note
 </tr>
 <tr class="even">
 <td><code>could not find function "X"</code></td>
-<td>Forgot <code>library(tidyverse)</code> or misspelled the function</td>
+<td>Forgot <code><a href="https://tidyverse.tidyverse.org">library(tidyverse)</a></code> or misspelled the function</td>
 </tr>
 <tr class="odd">
 <td><code>non-numeric argument to binary operator</code></td>
@@ -1698,43 +1598,40 @@ Warning
 </div>
 </div>
 <hr>
-<!-- AI-EDIT(2026-06-11): MIT-033, GAP-R345-1 — needs review -->
-</section>
-</section>
-<section id="ai-safety-the-audit-checklist" class="level2">
-<h2 class="anchored" data-anchor-id="ai-safety-the-audit-checklist">AI Safety: The Audit Checklist</h2>
+<!-- AI-EDIT(2026-06-11): MIT-033, GAP-R345-1 — needs review --></section></section><section id="ai-safety-the-audit-checklist" class="level2"><h2 class="anchored" data-anchor-id="ai-safety-the-audit-checklist">AI Safety: The Audit Checklist</h2>
 <p>Deeper dive: <a href="../../weeks/week03-r-with-ai/r07-ai-audit-checklist.html">AI Safety: The Audit Checklist</a>.</p>
 <p>Every time you accept AI-generated code, run through this checklist:</p>
 <ol type="1">
-<li><strong>Column names:</strong> Are they spelled exactly as they appear in <code>glimpse(my_data)</code>?</li>
-<li><strong>Data types:</strong> Is the code doing math only on numeric columns?</li>
-<li><strong>Missingness:</strong> Is <code>na.rm = TRUE</code> present where needed?</li>
-<li><strong>Privacy:</strong> Does the code avoid printing individual patient rows that could be identifiable?</li>
-<li><strong>Logic:</strong> Does the code do what <em>you</em> intended, or what the AI <em>assumed</em> you meant?</li>
+<li>
+<strong>Column names:</strong> Are they spelled exactly as they appear in <code>glimpse(my_data)</code>?</li>
+<li>
+<strong>Data types:</strong> Is the code doing math only on numeric columns?</li>
+<li>
+<strong>Missingness:</strong> Is <code>na.rm = TRUE</code> present where needed?</li>
+<li>
+<strong>Privacy:</strong> Does the code avoid printing individual patient rows that could be identifiable?</li>
+<li>
+<strong>Logic:</strong> Does the code do what <em>you</em> intended, or what the AI <em>assumed</em> you meant?</li>
 </ol>
-<section id="the-paper-trail-rule" class="level3">
-<h3 class="anchored" data-anchor-id="the-paper-trail-rule">The Paper Trail Rule</h3>
+<section id="the-paper-trail-rule" class="level3"><h3 class="anchored" data-anchor-id="the-paper-trail-rule">The Paper Trail Rule</h3>
 <p>Deeper dive: <a href="../../weeks/week03-r-with-ai/r08-comments.html">The Paper Trail (Comments)</a>. <!-- AI-EDIT(2026-06-11): GAP-R345-1 — needs review --></p>
 <p>Every time you use AI to write a code chunk, add a <code>#</code> comment above it explaining what you asked for and what you verified:</p>
 <p><strong>What to do with this code:</strong> Read — then imitate this comment pattern above your own AI-assisted chunks. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review --></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a><span class="co"># AI prompt: "Calculate mean BMI by sex, handling NAs"</span></span>
-<span id="cb18-2"><a href="#cb18-2"></a><span class="co"># Verified: column names match, na.rm = TRUE present, output has 2 rows (M/F)</span></span>
-<span id="cb18-3"><a href="#cb18-3"></a>my_data <span class="sc">%&gt;%</span></span>
-<span id="cb18-4"><a href="#cb18-4"></a>  <span class="fu">group_by</span>(sex) <span class="sc">%&gt;%</span></span>
-<span id="cb18-5"><a href="#cb18-5"></a>  <span class="fu">summarise</span>(<span class="at">mean_bmi =</span> <span class="fu">mean</span>(bmi, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-label="1"></a><span class="co"># AI prompt: "Calculate mean BMI by sex, handling NAs"</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-label="2"></a><span class="co"># Verified: column names match, na.rm = TRUE present, output has 2 rows (M/F)</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-label="3"></a>my_data <span class="sc">%&gt;%</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-label="4"></a>  <span class="fu">group_by</span>(sex) <span class="sc">%&gt;%</span></span>
+<span id="cb18-5"><a href="#cb18-5" aria-label="5"></a>  <span class="fu">summarise</span>(<span class="at">mean_bmi =</span> <span class="fu">mean</span>(bmi, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>This comment trail is your audit log. It demonstrates accountability (required by the course AI policy) and helps you debug later.</p>
-<hr>
-</section>
-</section>
-<section id="exporting-clean-data" class="level2">
-<h2 class="anchored" data-anchor-id="exporting-clean-data">Exporting Clean Data <!-- AI-EDIT(2026-06-11): MIT-033 — needs review --></h2>
+<hr></section></section><section id="exporting-clean-data" class="level2"><h2 class="anchored" data-anchor-id="exporting-clean-data">Exporting Clean Data <!-- AI-EDIT(2026-06-11): MIT-033 — needs review -->
+</h2>
 <p>After cleaning and transforming, save your work so future weeks can pick up where you left off.</p>
 <p><strong>What to do with this code:</strong> Run — it creates <code>output/clean_data.csv</code>; create the <code>output/</code> folder first if it does not exist. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review --></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1"></a><span class="co"># Save a clean version for Week 4 and beyond</span></span>
-<span id="cb19-2"><a href="#cb19-2"></a><span class="fu">write_csv</span>(my_data, <span class="st">"output/clean_data.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-label="1"></a><span class="co"># Save a clean version for Week 4 and beyond</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-label="2"></a><span class="fu">write_csv</span>(my_data, <span class="st">"output/clean_data.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -1750,37 +1647,31 @@ Tip
 </div>
 </div>
 <p><strong>Git checkpoint:</strong> Your analysis is complete. Stage, commit with a clear message (e.g., <code>"Complete Week 3: load, inspect, transform, and export patient data"</code>), and Sync.</p>
-<hr>
-</section>
-<section id="literate-analysis-in-quarto" class="level2">
-<h2 class="anchored" data-anchor-id="literate-analysis-in-quarto">Literate Analysis in Quarto <!-- AI-EDIT(2026-06-11): MIT-033 — needs review --></h2>
+<hr></section><section id="literate-analysis-in-quarto" class="level2"><h2 class="anchored" data-anchor-id="literate-analysis-in-quarto">Literate Analysis in Quarto <!-- AI-EDIT(2026-06-11): MIT-033 — needs review -->
+</h2>
 <p>Your <code>.qmd</code> file is not just code — it is a <strong>document</strong>. Weave narrative around your code chunks to explain what you are doing and why.</p>
-<section id="pattern" class="level3">
-<h3 class="anchored" data-anchor-id="pattern">Pattern</h3>
+<section id="pattern" class="level3"><h3 class="anchored" data-anchor-id="pattern">Pattern</h3>
 <p><strong>What to do with this code:</strong> Read — a pattern to imitate in your own document, not text to paste as-is. <!-- AI-EDIT(2026-06-11): MIT-025 — needs review --></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb20-1"><a href="#cb20-1"></a><span class="fu">## Data Inspection</span></span>
-<span id="cb20-2"><a href="#cb20-2"></a></span>
-<span id="cb20-3"><a href="#cb20-3"></a>We begin by examining the structure of the dataset to understand</span>
-<span id="cb20-4"><a href="#cb20-4"></a>variable types and missingness before any transformations.</span>
-<span id="cb20-5"><a href="#cb20-5"></a></span>
-<span id="cb20-6"><a href="#cb20-6"></a><span class="in">```{r, eval=FALSE}</span></span>
-<span id="cb20-7"><a href="#cb20-7"></a><span class="fu">glimpse</span>(my_data)</span>
-<span id="cb20-8"><a href="#cb20-8"></a><span class="fu">colSums</span>(<span class="fu">is.na</span>(my_data))</span>
-<span id="cb20-9"><a href="#cb20-9"></a><span class="in">```</span></span>
-<span id="cb20-10"><a href="#cb20-10"></a></span>
-<span id="cb20-11"><a href="#cb20-11"></a></span>
-<span id="cb20-12"><a href="#cb20-12"></a>The dataset contains <span class="in">`nrow(my_data)`</span> observations across</span>
-<span id="cb20-13"><a href="#cb20-13"></a><span class="in">`ncol(my_data)`</span> variables. Notably, BMI is missing for</span>
-<span id="cb20-14"><a href="#cb20-14"></a>approximately 12% of records, which we handle with <span class="in">`na.rm = TRUE`</span></span>
-<span id="cb20-15"><a href="#cb20-15"></a>in downstream summaries.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb20-1"><a href="#cb20-1" aria-label="1"></a><span class="fu">## Data Inspection</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-label="2"></a></span>
+<span id="cb20-3"><a href="#cb20-3" aria-label="3"></a>We begin by examining the structure of the dataset to understand</span>
+<span id="cb20-4"><a href="#cb20-4" aria-label="4"></a>variable types and missingness before any transformations.</span>
+<span id="cb20-5"><a href="#cb20-5" aria-label="5"></a></span>
+<span id="cb20-6"><a href="#cb20-6" aria-label="6"></a><span class="in">```{r, eval=FALSE}</span></span>
+<span id="cb20-7"><a href="#cb20-7" aria-label="7"></a><span class="fu">glimpse</span>(my_data)</span>
+<span id="cb20-8"><a href="#cb20-8" aria-label="8"></a><span class="fu">colSums</span>(<span class="fu">is.na</span>(my_data))</span>
+<span id="cb20-9"><a href="#cb20-9" aria-label="9"></a><span class="in">```</span></span>
+<span id="cb20-10"><a href="#cb20-10" aria-label="10"></a></span>
+<span id="cb20-11"><a href="#cb20-11" aria-label="11"></a></span>
+<span id="cb20-12"><a href="#cb20-12" aria-label="12"></a>The dataset contains <span class="in">`nrow(my_data)`</span> observations across</span>
+<span id="cb20-13"><a href="#cb20-13" aria-label="13"></a><span class="in">`ncol(my_data)`</span> variables. Notably, BMI is missing for</span>
+<span id="cb20-14"><a href="#cb20-14" aria-label="14"></a>approximately 12% of records, which we handle with <span class="in">`na.rm = TRUE`</span></span>
+<span id="cb20-15"><a href="#cb20-15" aria-label="15"></a>in downstream summaries.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>This interleaving of code and prose is <strong>literate programming</strong> — the methodology that underpins reproducible research in this course. Practice it now; you will need it for your term project report (Week 10) and final portfolio.</p>
-<hr>
-</section>
-</section>
-<section id="knowledge-check" class="level2">
-<h2 class="anchored" data-anchor-id="knowledge-check">Knowledge Check <!-- AI-EDIT(2026-06-11): MIT-033 — needs review --></h2>
+<hr></section></section><section id="knowledge-check" class="level2"><h2 class="anchored" data-anchor-id="knowledge-check">Knowledge Check <!-- AI-EDIT(2026-06-11): MIT-033 — needs review -->
+</h2>
 <ol type="1">
-<li>What is the difference between <code>install.packages()</code> and <code>library()</code>?</li>
+<li>What is the difference between <code><a href="https://rdrr.io/r/utils/install.packages.html">install.packages()</a></code> and <code><a href="https://rdrr.io/r/base/library.html">library()</a></code>?</li>
 <li>Why is <code>na.rm = TRUE</code> important when working with health data?</li>
 <li>What does <code>my_data %&gt;% filter(age &gt; 65) %&gt;% summarise(n = n())</code> do? Read it aloud using “and then.”</li>
 <li>Name the five core <code>dplyr</code> verbs and what each does in one sentence.</li>
@@ -1790,45 +1681,44 @@ Tip
 <li>What four checks should you run immediately after loading a new dataset?</li>
 </ol>
 <hr>
-<!-- AI-EDIT(2026-06-11): MIT-032, MIT-033, GAP-R345-1 — needs review -->
-</section>
-<section id="assignment-2-r-with-ai" class="level2">
-<h2 class="anchored" data-anchor-id="assignment-2-r-with-ai">Assignment 2: R With AI</h2>
+<!-- AI-EDIT(2026-06-11): MIT-032, MIT-033, GAP-R345-1 — needs review --></section><section id="assignment-2-r-with-ai" class="level2"><h2 class="anchored" data-anchor-id="assignment-2-r-with-ai">Assignment 2: R With AI</h2>
 <p>Full instructions: <a href="../../assignments/assignment02-r-with-ai/README.html">Assignment 2 README</a>. Short version: <a href="../../weeks/week03-r-with-ai/r09-assignment-mad-libs.html">Assignment 2 walkthrough</a>.</p>
 <p><strong>Task:</strong> Build a short Quarto report that loads, inspects, transforms, and summarizes a health dataset — using your AI co-pilot for code generation and your own judgment for verification.</p>
-<section id="step-by-step-workflow" class="level3">
-<h3 class="anchored" data-anchor-id="step-by-step-workflow">Step-by-Step Workflow</h3>
+<section id="step-by-step-workflow" class="level3"><h3 class="anchored" data-anchor-id="step-by-step-workflow">Step-by-Step Workflow</h3>
 <!-- AI-EDIT(2026-06-11): MIT-032 — needs review -->
 <ol type="1">
 <li>Open the <a href="../../assignments/assignment02-r-with-ai/README.html">Assignment 2 README</a> and follow its setup steps: copy the starter file (<code>assignments/assignment02-r-with-ai/starter-analysis.qmd</code>) into your submission folder as <code>analysis-note.qmd</code>. The dataset is <code>examples/nhanes-equity/data/nhanes_equity_v6.csv</code> (<a href="https://github.com/ehsanx/HDSx/blob/main/examples/nhanes-equity/data/nhanes_equity_v6.csv">view on GitHub</a>).</li>
-<li><strong>Load packages and data:</strong> Use AI to write the <code>library()</code> and <code>read_csv()</code> calls. Verify the data loaded correctly with <code>dim()</code> and <code>glimpse()</code>.</li>
-<li><strong>Inspect missingness:</strong> Run <code>colSums(is.na(...))</code>. Add a Markdown paragraph interpreting what you see.</li>
-<li><strong>Transform:</strong> Use <code>dplyr</code> verbs to:
+<li>
+<strong>Load packages and data:</strong> Use AI to write the <code><a href="https://rdrr.io/r/base/library.html">library()</a></code> and <code>read_csv()</code> calls. Verify the data loaded correctly with <code><a href="https://rdrr.io/r/base/dim.html">dim()</a></code> and <code>glimpse()</code>.</li>
+<li>
+<strong>Inspect missingness:</strong> Run <code>colSums(is.na(...))</code>. Add a Markdown paragraph interpreting what you see.</li>
+<li>
+<strong>Transform:</strong> Use <code>dplyr</code> verbs to:
 <ul>
 <li>Filter to a meaningful subgroup (e.g., age ≥ 18).</li>
 <li>Create at least one new column with <code>mutate()</code>.</li>
 <li>Produce a grouped summary with <code>group_by()</code> + <code>summarise()</code>.</li>
-</ul></li>
-<li><strong>Write a function:</strong> Create (or adapt from AI) a reusable summary function. Call it on at least two different columns.</li>
-<li><strong>Export:</strong> Save your summary table to <code>output/summary_table.csv</code>.</li>
-<li><strong>Document:</strong> Every code chunk should have:
+</ul>
+</li>
+<li>
+<strong>Write a function:</strong> Create (or adapt from AI) a reusable summary function. Call it on at least two different columns.</li>
+<li>
+<strong>Export:</strong> Save your summary table to <code>output/summary_table.csv</code>.</li>
+<li>
+<strong>Document:</strong> Every code chunk should have:
 <ul>
 <li>A <code>#</code> comment stating what you asked the AI and what you verified.</li>
 <li>A Markdown paragraph below interpreting the result.</li>
-</ul></li>
-<li><strong>Render</strong> the document to verify it runs cleanly from top to bottom.</li>
-<li><strong>Git:</strong> Stage, write a descriptive commit message, Commit, and Sync.</li>
-</ol>
-</section>
-<section id="deliverable" class="level3">
-<h3 class="anchored" data-anchor-id="deliverable">Deliverable</h3>
+</ul>
+</li>
+<li>
+<strong>Render</strong> the document to verify it runs cleanly from top to bottom.</li>
+<li>
+<strong>Git:</strong> Stage, write a descriptive commit message, Commit, and Sync.</li>
+</ol></section><section id="deliverable" class="level3"><h3 class="anchored" data-anchor-id="deliverable">Deliverable</h3>
 <p>A rendered <code>.qmd</code> that a reader can follow as a narrative: what data you started with, what you did to it, what you found, and why your decisions were justified.</p>
 <hr>
-<!-- AI-EDIT(2026-06-11): MIT-033, GAP-R345-1 — needs review -->
-</section>
-</section>
-<section id="quick-reference" class="level2">
-<h2 class="anchored" data-anchor-id="quick-reference">Quick Reference</h2>
+<!-- AI-EDIT(2026-06-11): MIT-033, GAP-R345-1 — needs review --></section></section><section id="quick-reference" class="level2"><h2 class="anchored" data-anchor-id="quick-reference">Quick Reference</h2>
 <p>See also: <a href="../../weeks/week03-r-with-ai/r10-final-checklist.html">Final Summary Checklist</a>.</p>
 <table class="caption-top table">
 <colgroup>
@@ -1836,17 +1726,15 @@ Tip
 <col style="width: 33%">
 <col style="width: 33%">
 </colgroup>
-<thead>
-<tr class="header">
+<thead><tr class="header">
 <th>Concept</th>
 <th>R code</th>
 <th>Notes</th>
-</tr>
-</thead>
+</tr></thead>
 <tbody>
 <tr class="odd">
 <td>Load packages</td>
-<td><code>library(tidyverse)</code></td>
+<td><code><a href="https://tidyverse.tidyverse.org">library(tidyverse)</a></code></td>
 <td>Every session</td>
 </tr>
 <tr class="even">
@@ -1911,17 +1799,16 @@ Tip
 </tr>
 <tr class="even">
 <td>Pipe</td>
-<td><code>%&gt;%</code> or <code>|&gt;</code></td>
+<td>
+<code>%&gt;%</code> or <code>|&gt;</code>
+</td>
 <td>“And then…”</td>
 </tr>
 </tbody>
 </table>
 
 
-</section>
-
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
@@ -2013,16 +1900,16 @@ Tip
     }
     function toggleCodeHandler(show) {
       return function(e) {
-        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-        for (let i=0; i<detailsSrc.length; i++) {
-          const details = detailsSrc[i].parentElement;
+        const cellDetails = window.document.querySelectorAll(".cell details.code-fold");
+        for (let i=0; i<cellDetails.length; i++) {
+          const details = cellDetails[i];
           if (show) {
             details.open = true;
           } else {
             details.removeAttribute("open");
           }
         }
-        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const cellCodeDivs = window.document.querySelectorAll(".cell div.sourceCode.cell-code");
         const fromCls = show ? "hidden" : "unhidden";
         const toCls = show ? "unhidden" : "hidden";
         for (let i=0; i<cellCodeDivs.length; i++) {
@@ -2371,9 +2258,7 @@ Tip
       }
     }
   });
-  </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
+  </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
       <a href="../../weeks/week02-modern-workflows/workflows11-checklist.html" class="pagination-link" aria-label="Final Checklist">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Final Checklist</span></span>
       </a>          
@@ -2385,7 +2270,6 @@ Tip
   </div>
 </nav>
 </div> <!-- /content -->
-
 
 
 

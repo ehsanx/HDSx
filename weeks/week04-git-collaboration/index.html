@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.3">
-
+<meta name="generator" content="quarto-1.11.3">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-
 <title>Git &amp; Collaboration – Health Data Science: AI and Knowledge Translation</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -60,7 +60,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 </style>
 
-
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
@@ -76,11 +75,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e44360b8a8db1e130c7792fece1c8032.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-3154a52da2b13509d7b4f2c9febd40cf.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-e4ad1f76bc0b1915fe8526f0cf4c069b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
+<link href="../../site_libs/bootstrap/bootstrap-ed8467d10139bfa8b13b4c59e7f12d03.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
@@ -106,39 +104,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script>
-<link href="../../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+}</script><link href="../../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
 <script src="../../site_libs/pagedtable-1.1/js/pagedtable.js"></script>
-
-
 <meta name="twitter:title" content="Git &amp; Collaboration – Health Data Science: AI and Knowledge Translation">
 <meta name="twitter:description" content="">
 <meta name="twitter:card" content="summary">
 </head>
-
-<body class="nav-sidebar docked quarto-light">
+<body class="nav-sidebar docked quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week04-git-collaboration/index.html">Week 4: Git &amp; Collaboration</a></li><li class="breadcrumb-item"><a href="../../weeks/week04-git-collaboration/index.html">Git &amp; Collaboration</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
-  </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="../../">Health Data Science: AI and Knowledge Translation</a> 
         <div class="sidebar-tools-main tools-wide">
@@ -159,7 +147,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">The Project</span></a>
@@ -167,47 +155,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">About the Course</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">About the Course</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../syllabus/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Course Overview</span></a>
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Week 0: Asynchronous Onboarding</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Week 0: Asynchronous Onboarding</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week00-onboarding/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 0: Asynchronous Onboarding</span></a>
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Week 1: Health Data, KT &amp; Ethics</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-controls="quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-3-label">Week 1: Health Data, KT &amp; Ethics</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-3" aria-labelledby="quarto-sidebar-section-3-label" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week01-health-data-ethics/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Health Data &amp; Ethics</span></a>
@@ -220,17 +199,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
- <span class="menu-text">Week 2: Modern Workflows</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-controls="quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-4-label">Week 2: Modern Workflows</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-4" aria-labelledby="quarto-sidebar-section-4-label" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week02-modern-workflows/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Modern Workflows</span></a>
@@ -292,17 +268,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
- <span class="menu-text">Week 3: R with AI</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-controls="quarto-sidebar-section-5" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-5-label">Week 3: R with AI</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-5" aria-labelledby="quarto-sidebar-section-5-label" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week03-r-with-ai/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 3: R with AI</span></a>
@@ -359,17 +332,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
- <span class="menu-text">Week 4: Git &amp; Collaboration</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-controls="quarto-sidebar-section-6" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-6-label">Week 4: Git &amp; Collaboration</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-6" aria-labelledby="quarto-sidebar-section-6-label" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week04-git-collaboration/index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Git &amp; Collaboration</span></a>
@@ -436,17 +406,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
- <span class="menu-text">Week 5: Polyglot Awareness &amp; R Deepening</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-controls="quarto-sidebar-section-7" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-7-label">Week 5: Polyglot Awareness &amp; R Deepening</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-7" aria-labelledby="quarto-sidebar-section-7-label" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week05-polyglot-r-deepening/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Polyglot Awareness &amp; R Deepening</span></a>
@@ -528,17 +495,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
- <span class="menu-text">Week 6: Data Visualization</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-controls="quarto-sidebar-section-8" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-8-label">Week 6: Data Visualization</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-8" aria-labelledby="quarto-sidebar-section-8-label" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week06-visualization/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 6: Data Visualization</span></a>
@@ -587,17 +551,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
- <span class="menu-text">Week 7: EDA, Table 1 &amp; AI Auditing</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-controls="quarto-sidebar-section-9" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-9-label">Week 7: EDA, Table 1 &amp; AI Auditing</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-9" aria-labelledby="quarto-sidebar-section-9-label" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week07-eda-ai-audit/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 7: EDA, Table 1 &amp; AI Auditing</span></a>
@@ -646,17 +607,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
- <span class="menu-text">Week 8: Dashboard Prototypes for KT</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" aria-controls="quarto-sidebar-section-10" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-10-label">Week 8: Dashboard Prototypes for KT</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-10" aria-labelledby="quarto-sidebar-section-10-label" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week08-dashboard-kt/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 8: Dashboard Prototypes for KT</span></a>
@@ -705,17 +663,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true">
- <span class="menu-text">Week 9: Communication of Scientific Findings</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" aria-controls="quarto-sidebar-section-11" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-11-label">Week 9: Communication of Scientific Findings</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-11" aria-labelledby="quarto-sidebar-section-11-label" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week09-science-communication/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 9: Communication of Scientific Findings</span></a>
@@ -752,17 +707,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="true">
- <span class="menu-text">Week 10: Writing &amp; Publishing Reports</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" aria-controls="quarto-sidebar-section-12" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-12-label">Week 10: Writing &amp; Publishing Reports</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-12" aria-labelledby="quarto-sidebar-section-12-label" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week10-reporting-publishing/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 10: Writing &amp; Publishing Reports</span></a>
@@ -805,17 +757,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="true">
- <span class="menu-text">Week 11: Portfolio Surgery</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" aria-controls="quarto-sidebar-section-13" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-13-label">Week 11: Portfolio Surgery</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-13" aria-labelledby="quarto-sidebar-section-13-label" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week11-portfolio-surgery/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 11: Portfolio Surgery</span></a>
@@ -858,34 +807,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="true">
- <span class="menu-text">Project Presentation (Online)</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" aria-controls="quarto-sidebar-section-14" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-14-label">Project Presentation (Online)</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-14" aria-labelledby="quarto-sidebar-section-14-label" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../weeks/week12-presentations/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Project Presentation (Narrated Deck)</span></a>
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="true">
- <span class="menu-text">Assignments and Milestones</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" aria-controls="quarto-sidebar-section-15" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-15-label">Assignments and Milestones</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-15" aria-labelledby="quarto-sidebar-section-15-label" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../assignments/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Assignments</span></a>
@@ -987,17 +930,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="true">
- <span class="menu-text">Worked Example (NHANES)</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" aria-controls="quarto-sidebar-section-16" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-16-label">Worked Example (NHANES)</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-16" aria-labelledby="quarto-sidebar-section-16-label" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../milestones/example-nhanes/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Worked Example (NHANES)</span></a>
   </div>
@@ -1038,17 +978,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="true">
- <span class="menu-text">Reference: Data Sources</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" aria-controls="quarto-sidebar-section-17" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-17-label">Reference: Data Sources</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-17" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-17" aria-labelledby="quarto-sidebar-section-17-label" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../references/data-sources/nhis.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">NHIS</span></a>
@@ -1121,70 +1058,78 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
     </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+</div>
+</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+<li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#connection" id="toc-connection" class="nav-link" data-scroll-target="#connection">Connection</a></li>
   <li><a href="#case-study-data-analysis" id="toc-case-study-data-analysis" class="nav-link" data-scroll-target="#case-study-data-analysis">Case Study Data Analysis</a></li>
   <li><a href="#in-class-activity" id="toc-in-class-activity" class="nav-link" data-scroll-target="#in-class-activity">In-Class Activity</a></li>
-  <li><a href="#git1.qmd-concepts-the-save-game-of-reproducible-science" id="toc-git1.qmd-concepts-the-save-game-of-reproducible-science" class="nav-link" data-scroll-target="#git1.qmd-concepts-the-save-game-of-reproducible-science"><code>git1.qmd</code> Concepts: The “Save Game” of Reproducible Science</a>
+  <li>
+<a href="#git1.qmd-concepts-the-save-game-of-reproducible-science" id="toc-git1.qmd-concepts-the-save-game-of-reproducible-science" class="nav-link" data-scroll-target="#git1.qmd-concepts-the-save-game-of-reproducible-science"><code>git1.qmd</code> Concepts: The “Save Game” of Reproducible Science</a>
   <ul class="collapse">
-  <li><a href="#why-git-matters-in-health-research" id="toc-why-git-matters-in-health-research" class="nav-link" data-scroll-target="#why-git-matters-in-health-research">Why Git Matters in Health Research</a></li>
+<li><a href="#why-git-matters-in-health-research" id="toc-why-git-matters-in-health-research" class="nav-link" data-scroll-target="#why-git-matters-in-health-research">Why Git Matters in Health Research</a></li>
   <li><a href="#quick-recap-from-week-2" id="toc-quick-recap-from-week-2" class="nav-link" data-scroll-target="#quick-recap-from-week-2">Quick Recap (from Week 2)</a></li>
-  </ul></li>
-  <li><a href="#git2.qmd-tutorial-time-travel-in-codespaces" id="toc-git2.qmd-tutorial-time-travel-in-codespaces" class="nav-link" data-scroll-target="#git2.qmd-tutorial-time-travel-in-codespaces"><code>git2.qmd</code> Tutorial: Time Travel in Codespaces</a>
+  </ul>
+</li>
+  <li>
+<a href="#git2.qmd-tutorial-time-travel-in-codespaces" id="toc-git2.qmd-tutorial-time-travel-in-codespaces" class="nav-link" data-scroll-target="#git2.qmd-tutorial-time-travel-in-codespaces"><code>git2.qmd</code> Tutorial: Time Travel in Codespaces</a>
   <ul class="collapse">
-  <li><a href="#step-1-verify-your-baseline" id="toc-step-1-verify-your-baseline" class="nav-link" data-scroll-target="#step-1-verify-your-baseline">Step 1: Verify Your Baseline</a></li>
+<li><a href="#step-1-verify-your-baseline" id="toc-step-1-verify-your-baseline" class="nav-link" data-scroll-target="#step-1-verify-your-baseline">Step 1: Verify Your Baseline</a></li>
   <li><a href="#step-2-the-disaster" id="toc-step-2-the-disaster" class="nav-link" data-scroll-target="#step-2-the-disaster">Step 2: The Disaster</a></li>
   <li><a href="#step-3-assess-the-damage" id="toc-step-3-assess-the-damage" class="nav-link" data-scroll-target="#step-3-assess-the-damage">Step 3: Assess the Damage</a></li>
   <li><a href="#step-4-the-undo-button" id="toc-step-4-the-undo-button" class="nav-link" data-scroll-target="#step-4-the-undo-button">Step 4: The Undo Button</a></li>
-  </ul></li>
-  <li><a href="#git3.qmd-repo-hygiene-.gitignore-and-relative-paths" id="toc-git3.qmd-repo-hygiene-.gitignore-and-relative-paths" class="nav-link" data-scroll-target="#git3.qmd-repo-hygiene-.gitignore-and-relative-paths"><code>git3.qmd</code> Repo Hygiene: <code>.gitignore</code> and Relative Paths</a>
+  </ul>
+</li>
+  <li>
+<a href="#git3.qmd-repo-hygiene-.gitignore-and-relative-paths" id="toc-git3.qmd-repo-hygiene-.gitignore-and-relative-paths" class="nav-link" data-scroll-target="#git3.qmd-repo-hygiene-.gitignore-and-relative-paths"><code>git3.qmd</code> Repo Hygiene: <code>.gitignore</code> and Relative Paths</a>
   <ul class="collapse">
-  <li><a href="#why-this-matters" id="toc-why-this-matters" class="nav-link" data-scroll-target="#why-this-matters">Why This Matters</a></li>
+<li><a href="#why-this-matters" id="toc-why-this-matters" class="nav-link" data-scroll-target="#why-this-matters">Why This Matters</a></li>
   <li><a href="#gitignore-walkthrough" id="toc-gitignore-walkthrough" class="nav-link" data-scroll-target="#gitignore-walkthrough"><code>.gitignore</code> Walkthrough</a></li>
   <li><a href="#relative-paths" id="toc-relative-paths" class="nav-link" data-scroll-target="#relative-paths">Relative Paths</a></li>
-  </ul></li>
-  <li><a href="#git4.qmd-branching-safe-experimentation" id="toc-git4.qmd-branching-safe-experimentation" class="nav-link" data-scroll-target="#git4.qmd-branching-safe-experimentation"><code>git4.qmd</code> Branching: Safe Experimentation</a>
+  </ul>
+</li>
+  <li>
+<a href="#git4.qmd-branching-safe-experimentation" id="toc-git4.qmd-branching-safe-experimentation" class="nav-link" data-scroll-target="#git4.qmd-branching-safe-experimentation"><code>git4.qmd</code> Branching: Safe Experimentation</a>
   <ul class="collapse">
-  <li><a href="#concept" id="toc-concept" class="nav-link" data-scroll-target="#concept">Concept</a></li>
+<li><a href="#concept" id="toc-concept" class="nav-link" data-scroll-target="#concept">Concept</a></li>
   <li><a href="#tutorial-create-and-merge-a-branch-in-vs-code" id="toc-tutorial-create-and-merge-a-branch-in-vs-code" class="nav-link" data-scroll-target="#tutorial-create-and-merge-a-branch-in-vs-code">Tutorial: Create and Merge a Branch in VS Code</a></li>
-  </ul></li>
-  <li><a href="#git5.qmd-pull-requests-the-peer-review-gateway" id="toc-git5.qmd-pull-requests-the-peer-review-gateway" class="nav-link" data-scroll-target="#git5.qmd-pull-requests-the-peer-review-gateway"><code>git5.qmd</code> Pull Requests: The Peer Review Gateway</a>
+  </ul>
+</li>
+  <li>
+<a href="#git5.qmd-pull-requests-the-peer-review-gateway" id="toc-git5.qmd-pull-requests-the-peer-review-gateway" class="nav-link" data-scroll-target="#git5.qmd-pull-requests-the-peer-review-gateway"><code>git5.qmd</code> Pull Requests: The Peer Review Gateway</a>
   <ul class="collapse">
-  <li><a href="#what-is-a-pull-request" id="toc-what-is-a-pull-request" class="nav-link" data-scroll-target="#what-is-a-pull-request">What Is a Pull Request?</a></li>
+<li><a href="#what-is-a-pull-request" id="toc-what-is-a-pull-request" class="nav-link" data-scroll-target="#what-is-a-pull-request">What Is a Pull Request?</a></li>
   <li><a href="#tutorial-open-your-first-pr" id="toc-tutorial-open-your-first-pr" class="nav-link" data-scroll-target="#tutorial-open-your-first-pr">Tutorial: Open Your First PR</a></li>
-  </ul></li>
-  <li><a href="#git6.qmd-ai-auditing-for-version-control" id="toc-git6.qmd-ai-auditing-for-version-control" class="nav-link" data-scroll-target="#git6.qmd-ai-auditing-for-version-control"><code>git6.qmd</code> AI Auditing for Version Control</a>
+  </ul>
+</li>
+  <li>
+<a href="#git6.qmd-ai-auditing-for-version-control" id="toc-git6.qmd-ai-auditing-for-version-control" class="nav-link" data-scroll-target="#git6.qmd-ai-auditing-for-version-control"><code>git6.qmd</code> AI Auditing for Version Control</a>
   <ul class="collapse">
-  <li><a href="#git6a.qmd-scenario-a-diff-translation-pre-commit-audit" id="toc-git6a.qmd-scenario-a-diff-translation-pre-commit-audit" class="nav-link" data-scroll-target="#git6a.qmd-scenario-a-diff-translation-pre-commit-audit"><code>git6a.qmd</code> Scenario A: Diff Translation (Pre-Commit Audit)</a></li>
+<li><a href="#git6a.qmd-scenario-a-diff-translation-pre-commit-audit" id="toc-git6a.qmd-scenario-a-diff-translation-pre-commit-audit" class="nav-link" data-scroll-target="#git6a.qmd-scenario-a-diff-translation-pre-commit-audit"><code>git6a.qmd</code> Scenario A: Diff Translation (Pre-Commit Audit)</a></li>
   <li><a href="#git6b.qmd-scenario-b-auto-scribe-commit-messages" id="toc-git6b.qmd-scenario-b-auto-scribe-commit-messages" class="nav-link" data-scroll-target="#git6b.qmd-scenario-b-auto-scribe-commit-messages"><code>git6b.qmd</code> Scenario B: Auto-Scribe Commit Messages</a></li>
   <li><a href="#git6c.qmd-scenario-c-panic-translator-error-handling" id="toc-git6c.qmd-scenario-c-panic-translator-error-handling" class="nav-link" data-scroll-target="#git6c.qmd-scenario-c-panic-translator-error-handling"><code>git6c.qmd</code> Scenario C: Panic Translator (Error Handling)</a></li>
-  </ul></li>
-  <li><a href="#git7.qmd-setting-up-your-group-repository" id="toc-git7.qmd-setting-up-your-group-repository" class="nav-link" data-scroll-target="#git7.qmd-setting-up-your-group-repository"><code>git7.qmd</code> Setting Up Your Group Repository</a>
+  </ul>
+</li>
+  <li>
+<a href="#git7.qmd-setting-up-your-group-repository" id="toc-git7.qmd-setting-up-your-group-repository" class="nav-link" data-scroll-target="#git7.qmd-setting-up-your-group-repository"><code>git7.qmd</code> Setting Up Your Group Repository</a>
   <ul class="collapse">
-  <li><a href="#steps" id="toc-steps" class="nav-link" data-scroll-target="#steps">Steps</a></li>
-  </ul></li>
+<li><a href="#steps" id="toc-steps" class="nav-link" data-scroll-target="#steps">Steps</a></li>
+  </ul>
+</li>
   <li><a href="#git8.qmd-knowledge-check" id="toc-git8.qmd-knowledge-check" class="nav-link" data-scroll-target="#git8.qmd-knowledge-check"><code>git8.qmd</code> Knowledge Check</a></li>
   <li><a href="#git9.qmd-practice-exercise-the-full-workflow-drill" id="toc-git9.qmd-practice-exercise-the-full-workflow-drill" class="nav-link" data-scroll-target="#git9.qmd-practice-exercise-the-full-workflow-drill"><code>git9.qmd</code> Practice Exercise: The Full Workflow Drill</a></li>
   <li><a href="#git10.qmd-quick-reference-common-git-actions-in-vs-code" id="toc-git10.qmd-quick-reference-common-git-actions-in-vs-code" class="nav-link" data-scroll-target="#git10.qmd-quick-reference-common-git-actions-in-vs-code"><code>git10.qmd</code> Quick Reference: Common Git Actions in VS Code</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ehsanx/HDSx/edit/main/weeks/week04-git-collaboration/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ehsanx/HDSx/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+  </ul><div class="toc-actions"><ul><li><a href="https://github.com/ehsanx/HDSx/edit/main/weeks/week04-git-collaboration/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ehsanx/HDSx/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week04-git-collaboration/index.html">Week 4: Git &amp; Collaboration</a></li><li class="breadcrumb-item"><a href="../../weeks/week04-git-collaboration/index.html">Git &amp; Collaboration</a></li></ol></nav>
-<div class="quarto-title">
+<main class="content" id="quarto-document-content" tabindex="-1"><header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week04-git-collaboration/index.html">Week 4: Git &amp; Collaboration</a></li><li class="breadcrumb-item"><a href="../../weeks/week04-git-collaboration/index.html">Git &amp; Collaboration</a></li></ol></nav><div class="quarto-title">
 <h1 class="title">Git &amp; Collaboration</h1>
 </div>
 
@@ -1199,11 +1144,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   
 
 
-</header>
-
-
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+</header><section id="overview" class="level2"><h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p><strong>Summary:</strong> You already know how to save files and make a basic commit in your Codespace. Now, learn to use Git as a <em>time machine</em> and <em>collaboration engine</em> for your analysis—tracking every change, safely undoing mistakes, working with teammates through branches and Pull Requests, and keeping a professional audit trail of your research workflow.</p>
 <p><strong>Learning Objectives:</strong></p>
 <ul>
@@ -1215,44 +1156,42 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Configure <code>.gitignore</code> and use relative paths for repo hygiene.</li>
 <li>Use AI to translate diffs into clear, professional audit logs.</li>
 <li>Set up a group repository and agree on collaboration norms for the term project.</li>
-</ul>
-</section>
-<section id="connection" class="level2">
-<h2 class="anchored" data-anchor-id="connection">Connection</h2>
+</ul></section><section id="connection" class="level2"><h2 class="anchored" data-anchor-id="connection">Connection</h2>
 <p>Week 3 focused on writing and auditing small R summaries. This week treats each edit as a reviewable change with a clear history. Next week you will compare equivalent summaries across R and Python.</p>
-</section>
-<section id="case-study-data-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="case-study-data-analysis">Case Study Data Analysis</h2>
+</section><section id="case-study-data-analysis" class="level2"><h2 class="anchored" data-anchor-id="case-study-data-analysis">Case Study Data Analysis</h2>
 <p>The <strong>NHANES Health Equity data spine</strong> now supports code-reading, EDA, visualization, and reproducibility checks. Use the cached CSV/RDS for routine class work; a CDC retrieval script exists for advanced users.</p>
 <!-- AI-EDIT(2026-06-11): MIT-036 — direct GitHub links so students can open the files without hunting through folders — needs review -->
 <ul>
-<li>Cached RDS: <a href="https://github.com/ehsanx/HDSx/blob/main/examples/nhanes-equity/data/nhanes_equity_v6.rds"><code>examples/nhanes-equity/data/nhanes_equity_v6.rds</code></a></li>
-<li>CSV snapshot: <a href="https://github.com/ehsanx/HDSx/blob/main/examples/nhanes-equity/data/nhanes_equity_v6.csv"><code>examples/nhanes-equity/data/nhanes_equity_v6.csv</code></a></li>
-<li>Case-study README: <a href="https://github.com/ehsanx/HDSx/blob/main/examples/nhanes-equity/README.md"><code>examples/nhanes-equity/README.md</code></a></li>
+<li>Cached RDS: <a href="https://github.com/ehsanx/HDSx/blob/main/examples/nhanes-equity/data/nhanes_equity_v6.rds"><code>examples/nhanes-equity/data/nhanes_equity_v6.rds</code></a>
+</li>
+<li>CSV snapshot: <a href="https://github.com/ehsanx/HDSx/blob/main/examples/nhanes-equity/data/nhanes_equity_v6.csv"><code>examples/nhanes-equity/data/nhanes_equity_v6.csv</code></a>
+</li>
+<li>Case-study README: <a href="https://github.com/ehsanx/HDSx/blob/main/examples/nhanes-equity/README.md"><code>examples/nhanes-equity/README.md</code></a>
+</li>
 </ul>
 <p>The default classroom path is to use the cached data so the analysis work is reproducible without internet access.</p>
 <p><strong>What to do here:</strong> you may run the code below — it loads the cached CSV and prints two small summaries; reading it carefully is enough unless your week’s page asks for more. <!-- AI-EDIT(2026-06-11): MIT-025, MIT-050, MIT-061 — needs review --></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">library</span>(tidyverse) <span class="co"># AI-EDIT(2026-06-23): tidyverse-default — consolidated core library() calls into library(tidyverse)</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a></span>
-<span id="cb1-3"><a href="#cb1-3"></a>candidate_paths <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
-<span id="cb1-4"><a href="#cb1-4"></a>  <span class="st">"examples/nhanes-equity/data/nhanes_equity_v6.csv"</span>,</span>
-<span id="cb1-5"><a href="#cb1-5"></a>  <span class="st">"../../examples/nhanes-equity/data/nhanes_equity_v6.csv"</span></span>
-<span id="cb1-6"><a href="#cb1-6"></a>)</span>
-<span id="cb1-7"><a href="#cb1-7"></a></span>
-<span id="cb1-8"><a href="#cb1-8"></a>nhanes_path <span class="ot">&lt;-</span> candidate_paths[<span class="fu">file.exists</span>(candidate_paths)][<span class="dv">1</span>]</span>
-<span id="cb1-9"><a href="#cb1-9"></a><span class="cf">if</span> (<span class="fu">is.na</span>(nhanes_path)) {</span>
-<span id="cb1-10"><a href="#cb1-10"></a>  <span class="fu">stop</span>(<span class="st">"Could not find examples/nhanes-equity/data/nhanes_equity_v6.csv"</span>)</span>
-<span id="cb1-11"><a href="#cb1-11"></a>}</span>
-<span id="cb1-12"><a href="#cb1-12"></a></span>
-<span id="cb1-13"><a href="#cb1-13"></a>nhanes_analysis <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(nhanes_path, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb1-14"><a href="#cb1-14"></a></span>
-<span id="cb1-15"><a href="#cb1-15"></a>nhanes_analysis <span class="sc">|&gt;</span></span>
-<span id="cb1-16"><a href="#cb1-16"></a>  <span class="fu">summarise</span>(</span>
-<span id="cb1-17"><a href="#cb1-17"></a>    <span class="at">rows =</span> <span class="fu">n</span>(),</span>
-<span id="cb1-18"><a href="#cb1-18"></a>    <span class="at">missing_bmi =</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(BMI)),</span>
-<span id="cb1-19"><a href="#cb1-19"></a>    <span class="at">missing_income =</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(IncomeGroup))</span>
-<span id="cb1-20"><a href="#cb1-20"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-label="1"></a><span class="fu">library</span>(tidyverse) <span class="co"># AI-EDIT(2026-06-23): tidyverse-default — consolidated core library() calls into library(tidyverse)</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-label="2"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-label="3"></a>candidate_paths <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb1-4"><a href="#cb1-4" aria-label="4"></a>  <span class="st">"examples/nhanes-equity/data/nhanes_equity_v6.csv"</span>,</span>
+<span id="cb1-5"><a href="#cb1-5" aria-label="5"></a>  <span class="st">"../../examples/nhanes-equity/data/nhanes_equity_v6.csv"</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-label="6"></a>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-label="7"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-label="8"></a>nhanes_path <span class="ot">&lt;-</span> candidate_paths[<span class="fu">file.exists</span>(candidate_paths)][<span class="dv">1</span>]</span>
+<span id="cb1-9"><a href="#cb1-9" aria-label="9"></a><span class="cf">if</span> (<span class="fu">is.na</span>(nhanes_path)) {</span>
+<span id="cb1-10"><a href="#cb1-10" aria-label="10"></a>  <span class="fu">stop</span>(<span class="st">"Could not find examples/nhanes-equity/data/nhanes_equity_v6.csv"</span>)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-label="11"></a>}</span>
+<span id="cb1-12"><a href="#cb1-12" aria-label="12"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-label="13"></a>nhanes_analysis <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(nhanes_path, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-label="14"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-label="15"></a>nhanes_analysis <span class="sc">|&gt;</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-label="16"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb1-17"><a href="#cb1-17" aria-label="17"></a>    <span class="at">rows =</span> <span class="fu">n</span>(),</span>
+<span id="cb1-18"><a href="#cb1-18" aria-label="18"></a>    <span class="at">missing_bmi =</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(BMI)),</span>
+<span id="cb1-19"><a href="#cb1-19" aria-label="19"></a>    <span class="at">missing_income =</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(IncomeGroup))</span>
+<span id="cb1-20"><a href="#cb1-20" aria-label="20"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div data-pagedtable="false">
   <script data-pagedtable-source="" type="application/json">
@@ -1260,15 +1199,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 </div>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a></span>
-<span id="cb2-2"><a href="#cb2-2"></a>nhanes_analysis <span class="sc">|&gt;</span></span>
-<span id="cb2-3"><a href="#cb2-3"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(BMI), <span class="sc">!</span><span class="fu">is.na</span>(IncomeGroup), Age <span class="sc">&gt;=</span> <span class="dv">20</span>, Age <span class="sc">&lt;=</span> <span class="dv">80</span>) <span class="sc">|&gt;</span></span>
-<span id="cb2-4"><a href="#cb2-4"></a>  <span class="fu">group_by</span>(IncomeGroup) <span class="sc">|&gt;</span></span>
-<span id="cb2-5"><a href="#cb2-5"></a>  <span class="fu">summarise</span>(</span>
-<span id="cb2-6"><a href="#cb2-6"></a>    <span class="at">n =</span> <span class="fu">n</span>(),</span>
-<span id="cb2-7"><a href="#cb2-7"></a>    <span class="at">mean_bmi =</span> <span class="fu">round</span>(<span class="fu">mean</span>(BMI), <span class="dv">1</span>),</span>
-<span id="cb2-8"><a href="#cb2-8"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
-<span id="cb2-9"><a href="#cb2-9"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-label="1"></a></span>
+<span id="cb2-2"><a href="#cb2-2" aria-label="2"></a>nhanes_analysis <span class="sc">|&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-label="3"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(BMI), <span class="sc">!</span><span class="fu">is.na</span>(IncomeGroup), Age <span class="sc">&gt;=</span> <span class="dv">20</span>, Age <span class="sc">&lt;=</span> <span class="dv">80</span>) <span class="sc">|&gt;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-label="4"></a>  <span class="fu">group_by</span>(IncomeGroup) <span class="sc">|&gt;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-label="5"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb2-6"><a href="#cb2-6" aria-label="6"></a>    <span class="at">n =</span> <span class="fu">n</span>(),</span>
+<span id="cb2-7"><a href="#cb2-7" aria-label="7"></a>    <span class="at">mean_bmi =</span> <span class="fu">round</span>(<span class="fu">mean</span>(BMI), <span class="dv">1</span>),</span>
+<span id="cb2-8"><a href="#cb2-8" aria-label="8"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-label="9"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div data-pagedtable="false">
   <script data-pagedtable-source="" type="application/json">
@@ -1279,9 +1218,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <!-- AI-EDIT(2026-06-11): MIT-037 — needs review -->
 <p><strong>What to do with the code above:</strong> read it — you do not need to run or modify it this week. This week’s focus is tracking <em>changes</em> to files like this one, not the analysis itself.</p>
-</section>
-<section id="in-class-activity" class="level2">
-<h2 class="anchored" data-anchor-id="in-class-activity">In-Class Activity</h2>
+</section><section id="in-class-activity" class="level2"><h2 class="anchored" data-anchor-id="in-class-activity">In-Class Activity</h2>
 <ul>
 <li>Create a branch for a tiny dashboard documentation change.</li>
 <li>Edit only a label, caption, or README sentence; do not change analytic logic.</li>
@@ -1289,43 +1226,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>In the pull request description, state how you verified the change is documentation-only.</li>
 </ul>
 <p>Student output: a documentation-only pull request with a short audit note. Assignment link: <a href="../../assignments/assignment03-git/README.html">Assignment 3</a>.</p>
-<hr>
-</section>
-<section id="git1.qmd-concepts-the-save-game-of-reproducible-science" class="level2">
-<h2 class="anchored" data-anchor-id="git1.qmd-concepts-the-save-game-of-reproducible-science"><code>git1.qmd</code> Concepts: The “Save Game” of Reproducible Science</h2>
+<hr></section><section id="git1.qmd-concepts-the-save-game-of-reproducible-science" class="level2"><h2 class="anchored" data-anchor-id="git1.qmd-concepts-the-save-game-of-reproducible-science">
+<code>git1.qmd</code> Concepts: The “Save Game” of Reproducible Science</h2>
 <p>Deeper Dive: <a href="../../weeks/week04-git-collaboration/git01-concepts.html">Git Basics</a> <!-- AI-EDIT(2026-06-22): REVIEW-row100 / GAP-R345-2 — renamed link label 'Detail page' -> 'Deeper Dive' for cross-book consistency --></p>
-<section id="why-git-matters-in-health-research" class="level3">
-<h3 class="anchored" data-anchor-id="why-git-matters-in-health-research">Why Git Matters in Health Research</h3>
+<section id="why-git-matters-in-health-research" class="level3"><h3 class="anchored" data-anchor-id="why-git-matters-in-health-research">Why Git Matters in Health Research</h3>
 <ul>
-<li><strong>The audit trail:</strong> Why <code>analysis_final_v3.qmd</code> is unsafe in health research; Git gives you a permanent, searchable history.</li>
-<li><strong>The timeline:</strong> Your repository is a sequence of safe checkpoints (commits). Each commit records <em>who</em> changed <em>what</em> and <em>why</em>.</li>
-<li><strong>Reading the diff:</strong> Red = removed. Green = added. This is the visual language of reproducibility.</li>
-</ul>
-</section>
-<section id="quick-recap-from-week-2" class="level3">
-<h3 class="anchored" data-anchor-id="quick-recap-from-week-2">Quick Recap (from Week 2)</h3>
+<li>
+<strong>The audit trail:</strong> Why <code>analysis_final_v3.qmd</code> is unsafe in health research; Git gives you a permanent, searchable history.</li>
+<li>
+<strong>The timeline:</strong> Your repository is a sequence of safe checkpoints (commits). Each commit records <em>who</em> changed <em>what</em> and <em>why</em>.</li>
+<li>
+<strong>Reading the diff:</strong> Red = removed. Green = added. This is the visual language of reproducibility.</li>
+</ul></section><section id="quick-recap-from-week-2" class="level3"><h3 class="anchored" data-anchor-id="quick-recap-from-week-2">Quick Recap (from Week 2)</h3>
 <p>You already know how to stage, commit, and sync in your Codespace. This week, we go deeper: branching, collaboration, and building habits that will carry through your term project.</p>
-<hr>
-</section>
-</section>
-<section id="git2.qmd-tutorial-time-travel-in-codespaces" class="level2">
-<h2 class="anchored" data-anchor-id="git2.qmd-tutorial-time-travel-in-codespaces"><code>git2.qmd</code> Tutorial: Time Travel in Codespaces</h2>
+<hr></section></section><section id="git2.qmd-tutorial-time-travel-in-codespaces" class="level2"><h2 class="anchored" data-anchor-id="git2.qmd-tutorial-time-travel-in-codespaces">
+<code>git2.qmd</code> Tutorial: Time Travel in Codespaces</h2>
 <p>Deeper Dive: <a href="../../weeks/week04-git-collaboration/git02-tutorial.html">Time Travel</a> <!-- AI-EDIT(2026-06-22): REVIEW-row101 / GAP-R345-2 — renamed link label 'Detail page' -> 'Deeper Dive' for cross-book consistency --></p>
 <p><em>Scenario:</em> We will intentionally break last week’s R script and use Git to rescue it.</p>
-<section id="step-1-verify-your-baseline" class="level3">
-<h3 class="anchored" data-anchor-id="step-1-verify-your-baseline">Step 1: Verify Your Baseline</h3>
+<section id="step-1-verify-your-baseline" class="level3"><h3 class="anchored" data-anchor-id="step-1-verify-your-baseline">Step 1: Verify Your Baseline</h3>
 <p>Open your <code>.qmd</code> from last week. Make a small, meaningful edit (e.g., improve a comment). Stage (<strong>+</strong>), write a descriptive commit message, and commit (<strong>✔</strong>). This is your safety net.</p>
-</section>
-<section id="step-2-the-disaster" class="level3">
-<h3 class="anchored" data-anchor-id="step-2-the-disaster">Step 2: The Disaster</h3>
+</section><section id="step-2-the-disaster" class="level3"><h3 class="anchored" data-anchor-id="step-2-the-disaster">Step 2: The Disaster</h3>
 <p>Delete a crucial line of R code in a chunk (e.g., the line that loads the data). <strong>Save</strong> the file (Ctrl/Cmd + S).</p>
-</section>
-<section id="step-3-assess-the-damage" class="level3">
-<h3 class="anchored" data-anchor-id="step-3-assess-the-damage">Step 3: Assess the Damage</h3>
+</section><section id="step-3-assess-the-damage" class="level3"><h3 class="anchored" data-anchor-id="step-3-assess-the-damage">Step 3: Assess the Damage</h3>
 <p>Open <strong>Source Control</strong> → click the modified file → view the side-by-side <strong>diff</strong> to see exactly what changed. Practice reading the red (removed) and green (added) lines.</p>
-</section>
-<section id="step-4-the-undo-button" class="level3">
-<h3 class="anchored" data-anchor-id="step-4-the-undo-button">Step 4: The Undo Button</h3>
+</section><section id="step-4-the-undo-button" class="level3"><h3 class="anchored" data-anchor-id="step-4-the-undo-button">Step 4: The Undo Button</h3>
 <p>Hover over the file name in the Source Control panel and click <strong>Discard Changes</strong> (the curved arrow) to restore the file to the <strong>last committed</strong> version.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -1340,18 +1264,13 @@ Tip
 <p><strong>Key takeaway:</strong> Saving writes to disk. Committing writes to <em>history</em>. Only committed work can be recovered by Git.</p>
 </div>
 </div>
-<hr>
-</section>
-</section>
-<section id="git3.qmd-repo-hygiene-.gitignore-and-relative-paths" class="level2">
-<h2 class="anchored" data-anchor-id="git3.qmd-repo-hygiene-.gitignore-and-relative-paths"><code>git3.qmd</code> Repo Hygiene: <code>.gitignore</code> and Relative Paths</h2>
+<hr></section></section><section id="git3.qmd-repo-hygiene-.gitignore-and-relative-paths" class="level2"><h2 class="anchored" data-anchor-id="git3.qmd-repo-hygiene-.gitignore-and-relative-paths">
+<code>git3.qmd</code> Repo Hygiene: <code>.gitignore</code> and Relative Paths</h2>
 <p>Deeper Dive: <a href="../../weeks/week04-git-collaboration/git03-repo-hygiene.html">Repo Hygiene</a> <!-- AI-EDIT(2026-06-22): REVIEW-row102 / GAP-R345-3 — renamed link label 'Detail page' -> 'Deeper Dive' for cross-book consistency --></p>
-<section id="why-this-matters" class="level3">
-<h3 class="anchored" data-anchor-id="why-this-matters">Why This Matters</h3>
+<section id="why-this-matters" class="level3"><h3 class="anchored" data-anchor-id="why-this-matters">Why This Matters</h3>
 <p>As your projects grow, you will generate files that should <em>not</em> be tracked: temporary Quarto support folders, local caches, <code>.DS_Store</code>, and API keys. Rendered files explicitly required by an assessment are different: they are part of the evidence and must be committed.</p>
-</section>
-<section id="gitignore-walkthrough" class="level3">
-<h3 class="anchored" data-anchor-id="gitignore-walkthrough"><code>.gitignore</code> Walkthrough</h3>
+</section><section id="gitignore-walkthrough" class="level3"><h3 class="anchored" data-anchor-id="gitignore-walkthrough">
+<code>.gitignore</code> Walkthrough</h3>
 <ol type="1">
 <li>Open (or create) the <code>.gitignore</code> file in the root of your repository.</li>
 <li>Add common patterns:</li>
@@ -1372,8 +1291,7 @@ Thumbs.db
 <ol start="3" type="1">
 <li>Stage and commit with a message such as <code>"Add project gitignore rules"</code>.</li>
 </ol>
-<!-- AI-EDIT(2026-06-11): MIT-169 (D-006) — needs review -->
-<div class="callout callout-style-default callout-note callout-titled" title="Required renders are committed">
+<!-- AI-EDIT(2026-06-11): MIT-169 (D-006) — needs review --><div class="callout callout-style-default callout-note callout-titled" title="Required renders are committed">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -1386,9 +1304,7 @@ Thumbs.db
 <p>Do <strong>not</strong> add global <code>*.html</code> or <code>*.pdf</code> patterns to the course workspace <code>.gitignore</code>. If an assignment or milestone explicitly lists a rendered HTML or PDF file, commit it with the source. For practice renders that are not requested, use Source Control to stage only the files named in the brief.</p>
 </div>
 </div>
-</section>
-<section id="relative-paths" class="level3">
-<h3 class="anchored" data-anchor-id="relative-paths">Relative Paths</h3>
+</section><section id="relative-paths" class="level3"><h3 class="anchored" data-anchor-id="relative-paths">Relative Paths</h3>
 <p>Always use <strong>relative paths</strong> in your code (e.g., <code>read.csv("data/nhanes.csv")</code>), never absolute paths (e.g., <code>read.csv("/home/user/Documents/nhanes.csv")</code>). This ensures your analysis runs on <em>any</em> machine—including your grader’s Codespace.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -1403,57 +1319,39 @@ Warning
 <p><strong>Reproducibility rule:</strong> Your term project must run from start to finish in a <em>fresh</em> Codespace. Absolute paths guarantee failure.</p>
 </div>
 </div>
-<hr>
-</section>
-</section>
-<section id="git4.qmd-branching-safe-experimentation" class="level2">
-<h2 class="anchored" data-anchor-id="git4.qmd-branching-safe-experimentation"><code>git4.qmd</code> Branching: Safe Experimentation</h2>
+<hr></section></section><section id="git4.qmd-branching-safe-experimentation" class="level2"><h2 class="anchored" data-anchor-id="git4.qmd-branching-safe-experimentation">
+<code>git4.qmd</code> Branching: Safe Experimentation</h2>
 <p>Deeper Dive: <a href="../../weeks/week04-git-collaboration/git04-branching.html">Branching</a> <!-- AI-EDIT(2026-06-22): REVIEW-row105 / GAP-R345-2 — renamed link label 'Detail page' -> 'Deeper Dive' for cross-book consistency --></p>
-<section id="concept" class="level3">
-<h3 class="anchored" data-anchor-id="concept">Concept</h3>
+<section id="concept" class="level3"><h3 class="anchored" data-anchor-id="concept">Concept</h3>
 <p>A <strong>branch</strong> is a parallel copy of your project. You can experiment freely on a branch without affecting the stable <code>main</code> version. When your experiment works, you <strong>merge</strong> it back.</p>
 <p>Think of it like a lab notebook: <code>main</code> is your clean, published record. A branch is your scratch pad.</p>
-</section>
-<section id="tutorial-create-and-merge-a-branch-in-vs-code" class="level3">
-<h3 class="anchored" data-anchor-id="tutorial-create-and-merge-a-branch-in-vs-code">Tutorial: Create and Merge a Branch in VS Code</h3>
-<section id="step-1-create-a-branch" class="level4">
-<h4 class="anchored" data-anchor-id="step-1-create-a-branch">Step 1: Create a Branch</h4>
+</section><section id="tutorial-create-and-merge-a-branch-in-vs-code" class="level3"><h3 class="anchored" data-anchor-id="tutorial-create-and-merge-a-branch-in-vs-code">Tutorial: Create and Merge a Branch in VS Code</h3>
+<section id="step-1-create-a-branch" class="level4"><h4 class="anchored" data-anchor-id="step-1-create-a-branch">Step 1: Create a Branch</h4>
 <ul>
 <li>Click the branch name in the bottom-left corner of VS Code (it likely says <code>main</code>).</li>
 <li>Select <strong>Create new branch…</strong> and name it something descriptive: <code>add-age-filter</code>.</li>
-</ul>
-</section>
-<section id="step-2-make-changes-on-the-branch" class="level4">
-<h4 class="anchored" data-anchor-id="step-2-make-changes-on-the-branch">Step 2: Make Changes on the Branch</h4>
+</ul></section><section id="step-2-make-changes-on-the-branch" class="level4"><h4 class="anchored" data-anchor-id="step-2-make-changes-on-the-branch">Step 2: Make Changes on the Branch</h4>
 <ul>
 <li>Edit your <code>.qmd</code> (e.g., add a line of code that filters data by age).</li>
 <li>Stage and commit on this branch.</li>
-</ul>
-</section>
-<section id="step-3-switch-back-to-main" class="level4">
-<h4 class="anchored" data-anchor-id="step-3-switch-back-to-main">Step 3: Switch Back to <code>main</code></h4>
+</ul></section><section id="step-3-switch-back-to-main" class="level4"><h4 class="anchored" data-anchor-id="step-3-switch-back-to-main">Step 3: Switch Back to <code>main</code>
+</h4>
 <ul>
 <li>Click the branch name again → select <code>main</code>. Notice your recent edits <em>disappear</em> from the file. They are safely stored on the other branch.</li>
 </ul>
-<hr>
-</section>
-</section>
-</section>
-<section id="git5.qmd-pull-requests-the-peer-review-gateway" class="level2">
-<h2 class="anchored" data-anchor-id="git5.qmd-pull-requests-the-peer-review-gateway"><code>git5.qmd</code> Pull Requests: The Peer Review Gateway</h2>
+<hr></section></section></section><section id="git5.qmd-pull-requests-the-peer-review-gateway" class="level2"><h2 class="anchored" data-anchor-id="git5.qmd-pull-requests-the-peer-review-gateway">
+<code>git5.qmd</code> Pull Requests: The Peer Review Gateway</h2>
 <p>Deeper Dive: <a href="../../weeks/week04-git-collaboration/git05-pull-requests.html">Pull Requests</a> <!-- AI-EDIT(2026-06-22): REVIEW-row106 / GAP-R345-2 — renamed link label 'Detail page' -> 'Deeper Dive' for cross-book consistency --></p>
-<section id="what-is-a-pull-request" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-a-pull-request">What Is a Pull Request?</h3>
+<section id="what-is-a-pull-request" class="level3"><h3 class="anchored" data-anchor-id="what-is-a-pull-request">What Is a Pull Request?</h3>
 <p>A <strong>Pull Request (PR)</strong> is a GitHub feature that says: <em>“I have changes on a branch. Please review them before they go into <code>main</code>.”</em> PRs are how professional teams and researchers collaborate. You will use them for peer review later in this course.</p>
-</section>
-<section id="tutorial-open-your-first-pr" class="level3">
-<h3 class="anchored" data-anchor-id="tutorial-open-your-first-pr">Tutorial: Open Your First PR</h3>
+</section><section id="tutorial-open-your-first-pr" class="level3"><h3 class="anchored" data-anchor-id="tutorial-open-your-first-pr">Tutorial: Open Your First PR</h3>
 <ol type="1">
 <li>After committing changes to a branch (see <code>git4.qmd</code>), click <strong>Sync Changes</strong> to push the branch to GitHub.</li>
 <li>Open your repository on <strong>github.com</strong>. You should see a banner: <em>“add-age-filter had recent pushes.”</em> Click <strong>Compare &amp; pull request</strong>.</li>
 <li>Write a title and short description explaining what you changed and why.</li>
 <li>Click <strong>Create pull request</strong>.</li>
-<li>For now, review the diff on GitHub, then click <strong>Merge pull request</strong> and complete the merge yourself — practice PRs do not need to wait for review. You will practice reviewing each other’s pull requests later, in Milestone 4. <!-- AI-EDIT(2026-06-11): GAP-R345-13 — needs review --></li>
+<li>For now, review the diff on GitHub, then click <strong>Merge pull request</strong> and complete the merge yourself — practice PRs do not need to wait for review. You will practice reviewing each other’s pull requests later, in Milestone 4. <!-- AI-EDIT(2026-06-11): GAP-R345-13 — needs review -->
+</li>
 </ol>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -1468,31 +1366,26 @@ Tip
 <p><strong>Collaboration norm:</strong> In your term project, agree with your group that changes go through PRs rather than directly to <code>main</code>. This creates a built-in review step.</p>
 </div>
 </div>
-<hr>
-</section>
-</section>
-<section id="git6.qmd-ai-auditing-for-version-control" class="level2">
-<h2 class="anchored" data-anchor-id="git6.qmd-ai-auditing-for-version-control"><code>git6.qmd</code> AI Auditing for Version Control</h2>
+<hr></section></section><section id="git6.qmd-ai-auditing-for-version-control" class="level2"><h2 class="anchored" data-anchor-id="git6.qmd-ai-auditing-for-version-control">
+<code>git6.qmd</code> AI Auditing for Version Control</h2>
 <p>Deeper Dive: <a href="../../weeks/week04-git-collaboration/git06-ai-auditing.html">AI Auditing</a> <!-- AI-EDIT(2026-06-22): REVIEW-row108 / GAP-R345-2 — renamed link label 'Detail page' -> 'Deeper Dive' for cross-book consistency --></p>
 <p>Treat the LLM as a <strong>Git Translator</strong> that explains diffs and drafts audit-quality messages.</p>
-<section id="git6a.qmd-scenario-a-diff-translation-pre-commit-audit" class="level3">
-<h3 class="anchored" data-anchor-id="git6a.qmd-scenario-a-diff-translation-pre-commit-audit"><code>git6a.qmd</code> Scenario A: Diff Translation (Pre-Commit Audit)</h3>
+<section id="git6a.qmd-scenario-a-diff-translation-pre-commit-audit" class="level3"><h3 class="anchored" data-anchor-id="git6a.qmd-scenario-a-diff-translation-pre-commit-audit">
+<code>git6a.qmd</code> Scenario A: Diff Translation (Pre-Commit Audit)</h3>
 <p><strong>Prompt:</strong></p>
 <blockquote class="blockquote">
 <p>“I am about to commit these changes. Explain what I changed in plain English. Did I delete anything important?”</p>
 </blockquote>
 <p>Use this to spot accidental deletions or unintended edits before you commit.</p>
-</section>
-<section id="git6b.qmd-scenario-b-auto-scribe-commit-messages" class="level3">
-<h3 class="anchored" data-anchor-id="git6b.qmd-scenario-b-auto-scribe-commit-messages"><code>git6b.qmd</code> Scenario B: Auto-Scribe Commit Messages</h3>
+</section><section id="git6b.qmd-scenario-b-auto-scribe-commit-messages" class="level3"><h3 class="anchored" data-anchor-id="git6b.qmd-scenario-b-auto-scribe-commit-messages">
+<code>git6b.qmd</code> Scenario B: Auto-Scribe Commit Messages</h3>
 <p><strong>Prompt:</strong></p>
 <blockquote class="blockquote">
 <p>“Based on this diff, write a one-sentence, professional commit message for my Quarto document.”</p>
 </blockquote>
 <p>Check that the message captures the <strong>intent</strong> (e.g., <code>"Filter patient cohort to age ≥ 65 per protocol"</code>), not just the action (<code>"changed line 42"</code>).</p>
-</section>
-<section id="git6c.qmd-scenario-c-panic-translator-error-handling" class="level3">
-<h3 class="anchored" data-anchor-id="git6c.qmd-scenario-c-panic-translator-error-handling"><code>git6c.qmd</code> Scenario C: Panic Translator (Error Handling)</h3>
+</section><section id="git6c.qmd-scenario-c-panic-translator-error-handling" class="level3"><h3 class="anchored" data-anchor-id="git6c.qmd-scenario-c-panic-translator-error-handling">
+<code>git6c.qmd</code> Scenario C: Panic Translator (Error Handling)</h3>
 <p><strong>Prompt:</strong></p>
 <blockquote class="blockquote">
 <p>“VS Code in my GitHub Codespace showed this Git error: [paste]. What does it mean in simple terms, and which <strong>buttons in the VS Code UI</strong> should I click to fix it?”</p>
@@ -1510,17 +1403,14 @@ Warning
 <p><strong>Strict Guardrail:</strong> Never run random terminal commands suggested by an AI (especially <code>--force</code> or <code>reset --hard</code>). Prefer the VS Code visual interface, which is safer. If the AI suggests a terminal command, ask it for the GUI equivalent first.</p>
 </div>
 </div>
-<hr>
-</section>
-</section>
-<section id="git7.qmd-setting-up-your-group-repository" class="level2">
-<h2 class="anchored" data-anchor-id="git7.qmd-setting-up-your-group-repository"><code>git7.qmd</code> Setting Up Your Group Repository</h2>
+<hr></section></section><section id="git7.qmd-setting-up-your-group-repository" class="level2"><h2 class="anchored" data-anchor-id="git7.qmd-setting-up-your-group-repository">
+<code>git7.qmd</code> Setting Up Your Group Repository</h2>
 <p>Deeper Dive: <a href="../../weeks/week04-git-collaboration/git07-group-repository.html">Setting Up Your Group Repository</a> <!-- AI-EDIT(2026-06-22): REVIEW-row109 / GAP-R345-2 — renamed link label 'Detail page' -> 'Deeper Dive'; page-removal question flagged separately --></p>
 <p>This week you form your term project groups (<strong>Milestone 0</strong>). Use this session to establish your collaboration workflow.</p>
-<section id="steps" class="level3">
-<h3 class="anchored" data-anchor-id="steps">Steps</h3>
+<section id="steps" class="level3"><h3 class="anchored" data-anchor-id="steps">Steps</h3>
 <ol type="1">
-<li><strong>One member</strong> opens the group project template repository linked from Canvas and creates a fork for the group.</li>
+<li>
+<strong>One member</strong> opens the group project template repository linked from Canvas and creates a fork for the group.</li>
 <li>That member adds teammates as collaborators on the group fork.</li>
 <li>All other members accept the collaborator invitation and launch a Codespace from the group fork.</li>
 <li>As a group, agree on norms:
@@ -1528,7 +1418,8 @@ Warning
 <li>All changes go through <strong>branches → PRs</strong> (no direct pushes to <code>main</code>).</li>
 <li>Commit messages should be descriptive (use the AI auto-scribe technique).</li>
 <li>Keep the repo clean: use <code>.gitignore</code>, relative paths, and a clear folder structure.</li>
-</ul></li>
+</ul>
+</li>
 <li>Each member makes a small “hello” commit (e.g., add your name to the <code>README.md</code>) and pushes it to verify access.</li>
 </ol>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -1544,11 +1435,8 @@ Note
 <p><strong>Milestone 0 due Monday (Week 4 deadline posted in Canvas):</strong> Record your group formation on Canvas and ensure everyone can commit to the shared repository.</p>
 </div>
 </div>
-<hr>
-</section>
-</section>
-<section id="git8.qmd-knowledge-check" class="level2">
-<h2 class="anchored" data-anchor-id="git8.qmd-knowledge-check"><code>git8.qmd</code> Knowledge Check</h2>
+<hr></section></section><section id="git8.qmd-knowledge-check" class="level2"><h2 class="anchored" data-anchor-id="git8.qmd-knowledge-check">
+<code>git8.qmd</code> Knowledge Check</h2>
 <p>Deeper Dive: <a href="../../weeks/week04-git-collaboration/git08-knowledge-check.html">Knowledge Check</a> <!-- AI-EDIT(2026-06-22): REVIEW-row110 / GAP-R345-2 — renamed link label 'Detail page' -> 'Deeper Dive'; page-removal question flagged separately --></p>
 <ol type="1">
 <li>What is the difference between <strong>saving</strong> a file and <strong>committing</strong> it?</li>
@@ -1559,14 +1447,13 @@ Note
 <li>How does a <strong>Pull Request</strong> support peer review?</li>
 <li>Why are relative paths essential for reproducibility?</li>
 </ol>
-<hr>
-</section>
-<section id="git9.qmd-practice-exercise-the-full-workflow-drill" class="level2">
-<h2 class="anchored" data-anchor-id="git9.qmd-practice-exercise-the-full-workflow-drill"><code>git9.qmd</code> Practice Exercise: The Full Workflow Drill</h2>
+<hr></section><section id="git9.qmd-practice-exercise-the-full-workflow-drill" class="level2"><h2 class="anchored" data-anchor-id="git9.qmd-practice-exercise-the-full-workflow-drill">
+<code>git9.qmd</code> Practice Exercise: The Full Workflow Drill</h2>
 <p>Deeper Dive: <a href="../../weeks/week04-git-collaboration/git09-practice-exercise.html">Practice Exercise: Full Workflow</a> <!-- AI-EDIT(2026-06-22): REVIEW-row111 / GAP-R345-2 — renamed link label 'Detail page' -> 'Deeper Dive' for cross-book consistency --></p>
 <ol type="1">
 <li>Open your Codespace from last week.</li>
-<li>Create a <code>.gitignore</code> file with sensible defaults for your project. <strong>Commit.</strong></li>
+<li>Create a <code>.gitignore</code> file with sensible defaults for your project. <strong>Commit.</strong>
+</li>
 <li>Create a new branch called <code>practice-edit</code>.</li>
 <li>On the branch, make a small improvement to your R script (e.g., add a clarifying comment or improve a variable name).</li>
 <li>Use an AI model to draft a clear commit message from your diff. <strong>Commit</strong> on the branch.</li>
@@ -1575,30 +1462,28 @@ Note
 <li>Back on <code>main</code>, intentionally introduce a breaking typo and <strong>Save</strong>.</li>
 <li>Use <strong>Discard Changes</strong> to recover the last working version.</li>
 </ol>
-<hr>
-</section>
-<section id="git10.qmd-quick-reference-common-git-actions-in-vs-code" class="level2">
-<h2 class="anchored" data-anchor-id="git10.qmd-quick-reference-common-git-actions-in-vs-code"><code>git10.qmd</code> Quick Reference: Common Git Actions in VS Code</h2>
+<hr></section><section id="git10.qmd-quick-reference-common-git-actions-in-vs-code" class="level2"><h2 class="anchored" data-anchor-id="git10.qmd-quick-reference-common-git-actions-in-vs-code">
+<code>git10.qmd</code> Quick Reference: Common Git Actions in VS Code</h2>
 <p>Deeper Dive: <a href="../../weeks/week04-git-collaboration/git10-quick-reference.html">Quick Reference</a> <!-- AI-EDIT(2026-06-22): REVIEW-row112 / GAP-R345-2 — renamed link label 'Detail page' -> 'Deeper Dive' for cross-book consistency --></p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
 <col style="width: 50%">
 </colgroup>
-<thead>
-<tr class="header">
+<thead><tr class="header">
 <th>Action</th>
 <th>How</th>
-</tr>
-</thead>
+</tr></thead>
 <tbody>
 <tr class="odd">
 <td><strong>Stage changes</strong></td>
-<td>Source Control → hover file → click <strong>+</strong></td>
+<td>Source Control → hover file → click <strong>+</strong>
+</td>
 </tr>
 <tr class="even">
 <td><strong>Commit</strong></td>
-<td>Type message → click <strong>✔</strong></td>
+<td>Type message → click <strong>✔</strong>
+</td>
 </tr>
 <tr class="odd">
 <td><strong>View diff</strong></td>
@@ -1610,7 +1495,8 @@ Note
 </tr>
 <tr class="odd">
 <td><strong>Create a branch</strong></td>
-<td>Click branch name (bottom-left) → <strong>Create new branch…</strong></td>
+<td>Click branch name (bottom-left) → <strong>Create new branch…</strong>
+</td>
 </tr>
 <tr class="even">
 <td><strong>Switch branches</strong></td>
@@ -1618,7 +1504,8 @@ Note
 </tr>
 <tr class="odd">
 <td><strong>Merge a branch</strong></td>
-<td>Command Palette → <code>Git: Merge Branch...</code></td>
+<td>Command Palette → <code>Git: Merge Branch...</code>
+</td>
 </tr>
 <tr class="even">
 <td><strong>Push / Sync</strong></td>
@@ -1626,7 +1513,8 @@ Note
 </tr>
 <tr class="odd">
 <td><strong>Open a Pull Request</strong></td>
-<td>Push branch → go to github.com → <strong>Compare &amp; pull request</strong></td>
+<td>Push branch → go to github.com → <strong>Compare &amp; pull request</strong>
+</td>
 </tr>
 <tr class="even">
 <td><strong>Add to <code>.gitignore</code></strong></td>
@@ -1636,10 +1524,7 @@ Note
 </table>
 
 
-</section>
-
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
@@ -1731,16 +1616,16 @@ Note
     }
     function toggleCodeHandler(show) {
       return function(e) {
-        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-        for (let i=0; i<detailsSrc.length; i++) {
-          const details = detailsSrc[i].parentElement;
+        const cellDetails = window.document.querySelectorAll(".cell details.code-fold");
+        for (let i=0; i<cellDetails.length; i++) {
+          const details = cellDetails[i];
           if (show) {
             details.open = true;
           } else {
             details.removeAttribute("open");
           }
         }
-        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const cellCodeDivs = window.document.querySelectorAll(".cell div.sourceCode.cell-code");
         const fromCls = show ? "hidden" : "unhidden";
         const toCls = show ? "unhidden" : "hidden";
         for (let i=0; i<cellCodeDivs.length; i++) {
@@ -2089,9 +1974,7 @@ Note
       }
     }
   });
-  </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
+  </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
       <a href="../../weeks/week03-r-with-ai/r10-final-checklist.html" class="pagination-link" aria-label="Final Summary Checklist">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Final Summary Checklist</span></span>
       </a>          
@@ -2103,7 +1986,6 @@ Note
   </div>
 </nav>
 </div> <!-- /content -->
-
 
 
 
