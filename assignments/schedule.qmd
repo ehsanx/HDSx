@@ -1,0 +1,78 @@
+# Assignment Schedule {.unnumbered}
+
+One page for everything you submit this term: what is due, when, and whether it is your own work or your project group's. Click a deliverable to open its full brief.
+
+::: {.callout-important title="Canvas is the source of truth"}
+The dates below follow the Sept-Dec 2026 syllabus rule: **weekly assignments are due the Monday after class at 4:00 PM**, and milestone dates come from the syllabus milestone table. If Canvas shows a different date or time, Canvas wins.
+:::
+
+## How to read this page
+
+- **Individual** items are the weekly assignments. You submit them alone.
+- **Group** items are the term-project milestones. One submission per project group.
+- **Taught in** links to the week whose class prepares you for that deliverable.
+- Grading rules (Complete/Incomplete, best 4 of 6, project points) are explained on the [Assignments](index.qmd) and [Milestones](../milestones/index.qmd) pages.
+
+## Term at a glance
+
+| Due | Type | Deliverable | Taught in | Grading |
+|:---|:---|:---|:---|:---|
+| Before Tue Sept 15 | Individual | [Week 0 onboarding tasks](../weeks/week00-onboarding/index.qmd) | [Week 0](../weeks/week00-onboarding/index.qmd) | Not graded; must be done before the first class |
+| Week 1 module on Canvas | Individual | [Data Intake Card](../weeks/week01-health-data-ethics/activity-data-intake-card.qmd) | [Week 1 (Sept 15)](../weeks/week01-health-data-ethics/index.qmd) | Required checkpoint, unweighted |
+| Mon Sept 28, 4 PM | Individual | [A1: Modern Workflows](assignment01-workflows/README.md) | [Week 2 (Sept 22)](../weeks/week02-modern-workflows/index.qmd) | Complete/Incomplete |
+| Mon Oct 5, 4 PM | Individual | [A2: R With AI](assignment02-r-with-ai/README.md) | [Week 3 (Sept 29)](../weeks/week03-r-with-ai/index.qmd) | Complete/Incomplete |
+| Mon Oct 12, 4 PM † | Individual | [A3: Git Collaboration](assignment03-git/README.md) | [Week 4 (Oct 6)](../weeks/week04-git-collaboration/index.qmd) | Complete/Incomplete |
+| Mon Oct 12, 4 PM † | **Group** | [M0: Group Formation](../milestones/m0-group-formation/README.md) | [Week 4 (Oct 6)](../weeks/week04-git-collaboration/index.qmd) | Complete/Incomplete |
+| Mon Oct 19, 4 PM | Individual | [A4: Polyglot Parity](assignment04-polyglot/README.md) | [Week 5 (Oct 13)](../weeks/week05-polyglot-r-deepening/index.qmd) | Best 4 of 6 |
+| Mon Oct 26, 4 PM | Individual | [A5: Visualization Audit](assignment05-visualization/README.md) | [Week 6 (Oct 20)](../weeks/week06-visualization/index.qmd) | Best 4 of 6 |
+| Mon Oct 26, 4 PM | **Group** | [M1: Project Proposal](../milestones/m1-proposal/README.md) | [Week 6 (Oct 20)](../weeks/week06-visualization/index.qmd) | 5 points |
+| Mon Nov 2, 4 PM | Individual | [A6: EDA and AI Audit](assignment06-eda-ai-audit/README.md) | [Week 7 (Oct 27)](../weeks/week07-eda-ai-audit/index.qmd) | Best 4 of 6 |
+| Mon Nov 2, 4 PM | **Group** | [M2: Preliminary Analysis](../milestones/m2-preliminary-analysis/README.md) | [Week 7 (Oct 27)](../weeks/week07-eda-ai-audit/index.qmd) | 5 points |
+| Mon Nov 9, 4 PM † | Individual | [A7: Dashboard KT Prototype](assignment07-dashboard/README.md) | [Week 8 (Nov 3)](../weeks/week08-dashboard-kt/index.qmd) | Best 4 of 6 |
+| Mon Nov 23, 4 PM | Individual | [A8: Scientific Communication](assignment08-communication/README.md) | [Week 9 (Nov 17)](../weeks/week09-science-communication/index.qmd) | Best 4 of 6 |
+| Mon Nov 23, 4 PM | **Group** | [M3: Project Update (draft)](../milestones/m3-project-update/README.md) | [Week 10 (Nov 24)](../weeks/week10-reporting-publishing/index.qmd) | 5 points |
+| Mon Nov 30, 4 PM | Individual | [A9: Reproducible Report](assignment09-reporting/README.md) | [Week 10 (Nov 24)](../weeks/week10-reporting-publishing/index.qmd) | Best 4 of 6 |
+| Mon Nov 30, 4 PM | **Group** | [M4: Peer Review](../milestones/m4-peer-review/README.md) | [Week 11 (Dec 1)](../weeks/week11-portfolio-surgery/index.qmd) | 5 points |
+| Tue Dec 1 | — | No new submission. Week 11 class is portfolio surgery and acting on M4 feedback. | [Week 11 (Dec 1)](../weeks/week11-portfolio-surgery/index.qmd) | — |
+| Fri Dec 11, 4 PM | **Group** | [Presentation: narrated 5-7 slide deck](../milestones/m5-presentation/README.md) | [Week 11 (Dec 1)](../weeks/week11-portfolio-surgery/index.qmd) | 10 points |
+| Fri Dec 11, 4 PM | **Group** | [Final Portfolio](../milestones/final-portfolio/README.md) | [Week 11 (Dec 1)](../weeks/week11-portfolio-surgery/index.qmd) | 35 points |
+
+† These Mondays are UBC closure days (Oct 12 is Thanksgiving; Nov 9 falls in the Nov 9-11 mid-term break). The "Monday after class" rule lands on them, so check Canvas for the confirmed date and time.
+
+There is no class on Tue Nov 10 (mid-term break). Week 9 meets Tue Nov 17.
+
+## Individual assignments only
+
+Nine weekly assignments, all due Monday at 4 PM. Assignments 1-3 are pass/fail gates; only the best four scores from Assignments 4-9 count (8.75% each, 35% total).
+
+| Due | Assignment | Brief |
+|:---|:---|:---|
+| Mon Sept 28 | Assignment 1: Modern Workflows | [A1 brief](assignment01-workflows/README.md) |
+| Mon Oct 5 | Assignment 2: R With AI | [A2 brief](assignment02-r-with-ai/README.md) |
+| Mon Oct 12 † | Assignment 3: Git Collaboration | [A3 brief](assignment03-git/README.md) |
+| Mon Oct 19 | Assignment 4: Polyglot Parity | [A4 brief](assignment04-polyglot/README.md) |
+| Mon Oct 26 | Assignment 5: Visualization Audit | [A5 brief](assignment05-visualization/README.md) |
+| Mon Nov 2 | Assignment 6: EDA and AI Audit | [A6 brief](assignment06-eda-ai-audit/README.md) |
+| Mon Nov 9 † | Assignment 7: Dashboard KT Prototype | [A7 brief](assignment07-dashboard/README.md) |
+| Mon Nov 23 | Assignment 8: Scientific Communication | [A8 brief](assignment08-communication/README.md) |
+| Mon Nov 30 | Assignment 9: Reproducible Report | [A9 brief](assignment09-reporting/README.md) |
+
+## Group milestones only
+
+Seven project checkpoints, one submission per group. M1-M4 are 5 points each; the Presentation and Final Portfolio are submitted together on Dec 11.
+
+| Due | Milestone | Brief |
+|:---|:---|:---|
+| Mon Oct 12 † | M0: Group Formation | [M0 brief](../milestones/m0-group-formation/README.md) |
+| Mon Oct 26 | M1: Project Proposal | [M1 brief](../milestones/m1-proposal/README.md) |
+| Mon Nov 2 | M2: Preliminary Analysis | [M2 brief](../milestones/m2-preliminary-analysis/README.md) |
+| Mon Nov 23 | M3: Project Update (draft) | [M3 brief](../milestones/m3-project-update/README.md) |
+| Mon Nov 30 | M4: Peer Review | [M4 brief](../milestones/m4-peer-review/README.md) |
+| Fri Dec 11 | Presentation (narrated slide deck) | [Presentation brief](../milestones/m5-presentation/README.md) |
+| Fri Dec 11 | Final Portfolio | [Final Portfolio brief](../milestones/final-portfolio/README.md) |
+
+New to milestones? The [NHANES worked example](../milestones/example-nhanes/index.qmd) walks one project from M0 to the Final Portfolio.
+
+## For the instructor: setting up Canvas
+
+Every row in the [term at a glance](#term-at-a-glance) table maps to one Canvas assignment with the listed due date at 4:00 PM. Weekly assignments are individual submissions; milestones are group submissions (one per project group), with the Presentation and Final Portfolio as two Canvas items sharing the Dec 11 deadline. Weeks 0 and 1 hold the two ungraded checkpoints. Resolve the two † dates before publishing the Canvas calendar.

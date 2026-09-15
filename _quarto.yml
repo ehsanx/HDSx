@@ -153,6 +153,7 @@ book:
         - weeks/week12-presentations/index.qmd
     - part: "Assignments and Milestones"
       chapters:
+        - assignments/schedule.qmd
         - assignments/index.qmd
         # AI-EDIT(2026-06-11): D-005 — assignment-template.qmd removed from student navigation (instructor authoring scaffold; file kept in repo) — needs review
         - assignments/assignment01-workflows/README.md
