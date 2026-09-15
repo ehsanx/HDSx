@@ -6814,6 +6814,72 @@
     ]
   },
   {
+    "objectID": "assignments/schedule.html",
+    "href": "assignments/schedule.html",
+    "title": "Assignment Schedule",
+    "section": "",
+    "text": "How to read this page\nOne page for everything you submit this term: what is due, when, and whether it is your own work or your project group’s. Click a deliverable to open its full brief.",
+    "crumbs": [
+      "Assignments and Milestones",
+      "Assignment Schedule"
+    ]
+  },
+  {
+    "objectID": "assignments/schedule.html#how-to-read-this-page",
+    "href": "assignments/schedule.html#how-to-read-this-page",
+    "title": "Assignment Schedule",
+    "section": "",
+    "text": "Individual items are the weekly assignments. You submit them alone.\nGroup items are the term-project milestones. One submission per project group.\nTaught in links to the week whose class prepares you for that deliverable.\nGrading rules (Complete/Incomplete, best 4 of 6, project points) are explained on the Assignments and Milestones pages.",
+    "crumbs": [
+      "Assignments and Milestones",
+      "Assignment Schedule"
+    ]
+  },
+  {
+    "objectID": "assignments/schedule.html#term-at-a-glance",
+    "href": "assignments/schedule.html#term-at-a-glance",
+    "title": "Assignment Schedule",
+    "section": "Term at a glance",
+    "text": "Term at a glance\n\n\n\nDue\nType\nDeliverable\nTaught in\nGrading\n\n\n\n\nBefore Tue Sept 15\nIndividual\nWeek 0 onboarding tasks\nWeek 0\nNot graded; must be done before the first class\n\n\nWeek 1 module on Canvas\nIndividual\nData Intake Card\nWeek 1 (Sept 15)\nRequired checkpoint, unweighted\n\n\nMon Sept 28, 4 PM\nIndividual\nA1: Modern Workflows\nWeek 2 (Sept 22)\nComplete/Incomplete\n\n\nMon Oct 5, 4 PM\nIndividual\nA2: R With AI\nWeek 3 (Sept 29)\nComplete/Incomplete\n\n\nMon Oct 12, 4 PM †\nIndividual\nA3: Git Collaboration\nWeek 4 (Oct 6)\nComplete/Incomplete\n\n\nMon Oct 12, 4 PM †\nGroup\nM0: Group Formation\nWeek 4 (Oct 6)\nComplete/Incomplete\n\n\nMon Oct 19, 4 PM\nIndividual\nA4: Polyglot Parity\nWeek 5 (Oct 13)\nBest 4 of 6\n\n\nMon Oct 26, 4 PM\nIndividual\nA5: Visualization Audit\nWeek 6 (Oct 20)\nBest 4 of 6\n\n\nMon Oct 26, 4 PM\nGroup\nM1: Project Proposal\nWeek 6 (Oct 20)\n5 points\n\n\nMon Nov 2, 4 PM\nIndividual\nA6: EDA and AI Audit\nWeek 7 (Oct 27)\nBest 4 of 6\n\n\nMon Nov 2, 4 PM\nGroup\nM2: Preliminary Analysis\nWeek 7 (Oct 27)\n5 points\n\n\nMon Nov 9, 4 PM †\nIndividual\nA7: Dashboard KT Prototype\nWeek 8 (Nov 3)\nBest 4 of 6\n\n\nMon Nov 23, 4 PM\nIndividual\nA8: Scientific Communication\nWeek 9 (Nov 17)\nBest 4 of 6\n\n\nMon Nov 23, 4 PM\nGroup\nM3: Project Update (draft)\nWeek 10 (Nov 24)\n5 points\n\n\nMon Nov 30, 4 PM\nIndividual\nA9: Reproducible Report\nWeek 10 (Nov 24)\nBest 4 of 6\n\n\nMon Nov 30, 4 PM\nGroup\nM4: Peer Review\nWeek 11 (Dec 1)\n5 points\n\n\nTue Dec 1\n—\nNo new submission. Week 11 class is portfolio surgery and acting on M4 feedback.\nWeek 11 (Dec 1)\n—\n\n\nFri Dec 11, 4 PM\nGroup\nPresentation: narrated 5-7 slide deck\nWeek 11 (Dec 1)\n10 points\n\n\nFri Dec 11, 4 PM\nGroup\nFinal Portfolio\nWeek 11 (Dec 1)\n35 points\n\n\n\n† These Mondays are UBC closure days (Oct 12 is Thanksgiving; Nov 9 falls in the Nov 9-11 mid-term break). The “Monday after class” rule lands on them, so check Canvas for the confirmed date and time.\nThere is no class on Tue Nov 10 (mid-term break). Week 9 meets Tue Nov 17.",
+    "crumbs": [
+      "Assignments and Milestones",
+      "Assignment Schedule"
+    ]
+  },
+  {
+    "objectID": "assignments/schedule.html#individual-assignments-only",
+    "href": "assignments/schedule.html#individual-assignments-only",
+    "title": "Assignment Schedule",
+    "section": "Individual assignments only",
+    "text": "Individual assignments only\nNine weekly assignments, all due Monday at 4 PM. Assignments 1-3 are pass/fail gates; only the best four scores from Assignments 4-9 count (8.75% each, 35% total).\n\n\n\nDue\nAssignment\nBrief\n\n\n\n\nMon Sept 28\nAssignment 1: Modern Workflows\nA1 brief\n\n\nMon Oct 5\nAssignment 2: R With AI\nA2 brief\n\n\nMon Oct 12 †\nAssignment 3: Git Collaboration\nA3 brief\n\n\nMon Oct 19\nAssignment 4: Polyglot Parity\nA4 brief\n\n\nMon Oct 26\nAssignment 5: Visualization Audit\nA5 brief\n\n\nMon Nov 2\nAssignment 6: EDA and AI Audit\nA6 brief\n\n\nMon Nov 9 †\nAssignment 7: Dashboard KT Prototype\nA7 brief\n\n\nMon Nov 23\nAssignment 8: Scientific Communication\nA8 brief\n\n\nMon Nov 30\nAssignment 9: Reproducible Report\nA9 brief",
+    "crumbs": [
+      "Assignments and Milestones",
+      "Assignment Schedule"
+    ]
+  },
+  {
+    "objectID": "assignments/schedule.html#group-milestones-only",
+    "href": "assignments/schedule.html#group-milestones-only",
+    "title": "Assignment Schedule",
+    "section": "Group milestones only",
+    "text": "Group milestones only\nSeven project checkpoints, one submission per group. M1-M4 are 5 points each; the Presentation and Final Portfolio are submitted together on Dec 11.\n\n\n\nDue\nMilestone\nBrief\n\n\n\n\nMon Oct 12 †\nM0: Group Formation\nM0 brief\n\n\nMon Oct 26\nM1: Project Proposal\nM1 brief\n\n\nMon Nov 2\nM2: Preliminary Analysis\nM2 brief\n\n\nMon Nov 23\nM3: Project Update (draft)\nM3 brief\n\n\nMon Nov 30\nM4: Peer Review\nM4 brief\n\n\nFri Dec 11\nPresentation (narrated slide deck)\nPresentation brief\n\n\nFri Dec 11\nFinal Portfolio\nFinal Portfolio brief\n\n\n\nNew to milestones? The NHANES worked example walks one project from M0 to the Final Portfolio.",
+    "crumbs": [
+      "Assignments and Milestones",
+      "Assignment Schedule"
+    ]
+  },
+  {
+    "objectID": "assignments/schedule.html#for-the-instructor-setting-up-canvas",
+    "href": "assignments/schedule.html#for-the-instructor-setting-up-canvas",
+    "title": "Assignment Schedule",
+    "section": "For the instructor: setting up Canvas",
+    "text": "For the instructor: setting up Canvas\nEvery row in the term at a glance table maps to one Canvas assignment with the listed due date at 4:00 PM. Weekly assignments are individual submissions; milestones are group submissions (one per project group), with the Presentation and Final Portfolio as two Canvas items sharing the Dec 11 deadline. Weeks 0 and 1 hold the two ungraded checkpoints. Resolve the two † dates before publishing the Canvas calendar.",
+    "crumbs": [
+      "Assignments and Milestones",
+      "Assignment Schedule"
+    ]
+  },
+  {
     "objectID": "assignments/index.html",
     "href": "assignments/index.html",
     "title": "Assignments",
