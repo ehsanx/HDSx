@@ -1075,10 +1075,11 @@ ul.task-list li input[type="checkbox"] {
 
 <!-- AI-EDIT(2026-06-11): TF-016, MIT-047, MIT-167, TF-057 — needs review -->
 <p>This page supports <strong>Milestone 0 (group formation)</strong> — see the <a href="../../milestones/m0-group-formation/README.html">M0 README</a> for the full deliverables. Your group does not create a blank repository from scratch: you start from the group project template.</p>
+<!-- AI-EDIT(2026-10-06): M0 fork -> template — the group repo is created with "Use this template" (private), not a fork, to match the HDSx-project-template README; a fork of the public template stays public and its PRs default to the template — needs review -->
 <ol type="1">
-<li><strong>Fork the template:</strong> One member opens the group project template repository (linked from Canvas) and creates a fork for the group. A fork is the group’s own copy of the template. If you cannot access Canvas, ask the teaching team for the template link.</li>
-<li><strong>Invite:</strong> That member adds the other teammates as collaborators on the group fork; others accept the invite.</li>
-<li><strong>Clone:</strong> Everyone launches their own Codespace from the group fork.</li>
+<li><strong>Create from the template:</strong> One member opens the <a href="https://github.com/ehsanx/HDSx-project-template">group project template</a> (also linked from Canvas) and clicks <strong>Use this template → Create a new repository</strong>. Set yourself as the owner, name the repository for your group, and choose <strong>Private</strong>. The new repository is the group’s own copy of the template. Do not fork the template: a fork of a public repository stays public, and its pull requests point back at the course template by default.</li>
+<li><strong>Invite:</strong> That member adds the other teammates as collaborators (<strong>Settings → Collaborators</strong>) on the group repository, and adds the teaching team as instructed on Canvas; others accept the invite.</li>
+<li><strong>Clone:</strong> Everyone launches their own Codespace from the group repository.</li>
 <li><strong>Norms:</strong> Agree: “No direct pushes to <code>main</code>” — all changes go through branches and pull requests.</li>
 <li><strong>Test:</strong> Everyone makes a small <code>README.md</code> update (for example, add your name) to verify access.</li>
 </ol>

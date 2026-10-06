@@ -1414,11 +1414,12 @@ Warning
 <p>Deeper Dive: <a href="../../weeks/week04-git-collaboration/git07-group-repository.html">Setting Up Your Group Repository</a> <!-- AI-EDIT(2026-06-22): REVIEW-row109 / GAP-R345-2 — renamed link label 'Detail page' -> 'Deeper Dive'; page-removal question flagged separately --></p>
 <p>This week you form your term project groups (<strong>Milestone 0</strong>). Use this session to establish your collaboration workflow.</p>
 <section id="steps" class="level3"><h3 class="anchored" data-anchor-id="steps">Steps</h3>
+<!-- AI-EDIT(2026-10-06): M0 fork -> template — the group repo is created with "Use this template" (private), not a fork, to match the HDSx-project-template README; a fork of the public template stays public and its PRs default to the template — needs review -->
 <ol type="1">
 <li>
-<strong>One member</strong> opens the group project template repository linked from Canvas and creates a fork for the group.</li>
-<li>That member adds teammates as collaborators on the group fork.</li>
-<li>All other members accept the collaborator invitation and launch a Codespace from the group fork.</li>
+<strong>One member</strong> opens the <a href="https://github.com/ehsanx/HDSx-project-template">group project template</a> (also linked from Canvas) and clicks <strong>Use this template → Create a new repository</strong>. Set yourself as the owner, name the repository for your group, and choose <strong>Private</strong>. Do not fork the template: a fork of a public repository stays public, and its pull requests point back at the course template by default.</li>
+<li>That member adds teammates as collaborators (<strong>Settings → Collaborators</strong>) on the group repository, and adds the teaching team as instructed on Canvas.</li>
+<li>All other members accept the collaborator invitation and launch a Codespace from the group repository.</li>
 <li>As a group, agree on norms:
 <ul>
 <li>All changes go through <strong>branches → PRs</strong> (no direct pushes to <code>main</code>).</li>
