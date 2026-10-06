@@ -227,9 +227,10 @@ This week you form your term project groups (**Milestone 0**). Use this session 
 
 ### Steps
 
-1.  **One member** opens the group project template repository linked from Canvas and creates a fork for the group.
-2.  That member adds teammates as collaborators on the group fork.
-3.  All other members accept the collaborator invitation and launch a Codespace from the group fork.
+<!-- AI-EDIT(2026-10-06): M0 fork -> template — the group repo is created with "Use this template" (private), not a fork, to match the HDSx-project-template README; a fork of the public template stays public and its PRs default to the template — needs review -->
+1.  **One member** opens the [group project template](https://github.com/ehsanx/HDSx-project-template) (also linked from Canvas) and clicks **Use this template → Create a new repository**. Set yourself as the owner, name the repository for your group, and choose **Private**. Do not fork the template: a fork of a public repository stays public, and its pull requests point back at the course template by default.
+2.  That member adds teammates as collaborators (**Settings → Collaborators**) on the group repository, and adds the teaching team as instructed on Canvas.
+3.  All other members accept the collaborator invitation and launch a Codespace from the group repository.
 4.  As a group, agree on norms:
     -   All changes go through **branches → PRs** (no direct pushes to `main`).
     -   Commit messages should be descriptive (use the AI auto-scribe technique).

@@ -10,7 +10,8 @@ The [M0 submission in the NHANES worked example](../example-nhanes/m0.qmd) shows
 Project groups are 3–4 students. M0 makes sure every project team has a working collaboration setup before analytic work begins. By the end of this milestone, each group should know who is on the team, where the shared repository lives, how communication will happen, and how the team will handle reproducibility and AI use.
 
 <!-- AI-EDIT(2026-06-11): MIT-047 (R2-01, M0 portion) — needs review -->
-Your shared repository starts as a fork of the group project template linked from Canvas — do not build it as a blank repository. The fork steps are walked through on the [Week 4 group repository page](../../weeks/week04-git-collaboration/git07-group-repository.qmd).
+<!-- AI-EDIT(2026-10-06): M0 fork -> template — "Use this template" (private) replaces "fork", matching the HDSx-project-template README — needs review -->
+Your shared repository starts as a private copy of the [group project template](https://github.com/ehsanx/HDSx-project-template) (also linked from Canvas), made with **Use this template → Create a new repository** — do not fork it, and do not build it as a blank repository. The steps are walked through on the [Week 4 group repository page](../../weeks/week04-git-collaboration/git07-group-repository.qmd).
 
 ## Due Timing
 
