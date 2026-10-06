@@ -1,3 +1,5 @@
+.DS_Store
+
 .Rhistory
 .Rproj.user/
 _book/
@@ -24,3 +26,6 @@ syllabus/v4-vs-book-reconciliation.md
 HANDOFF.md
 
 **/*.quarto_ipynb
+
+# personal teaching notes
+notes.md
