@@ -1,6 +1,7 @@
 <!-- AI-EDIT(2026-06-11): D-003 — course-wide standard render instructions (reusable include) — needs review -->
+<!-- AI-EDIT(2026-10-21): course image Codespace — the format menu, click-to-view tabs and Download replace the preview pane, which stays blank in the browser Codespace and is switched off there; text only, since six pages include this — needs review -->
 ::: {.callout-tip title="How to render: the course default"}
-1. Open the `.qmd` file you want to render, then open the **Command Palette** (**View → Command Palette**, or press **Ctrl+Shift+P** on Windows/Linux / **Cmd+Shift+P** on Mac) and run **Quarto: Render Document**. The Quarto extension renders the file and opens a preview pane. <!-- AI-EDIT(2026-06-22): REVIEW-row46 / D-003,GAP-R678-1 — added Command Palette keyboard shortcut (Ctrl+Shift+P / Cmd+Shift+P) so students can find it without hunting the menu -->
+1. Save the `.qmd` file you want to render, then open the **Command Palette** (**View → Command Palette**, or press **Ctrl+Shift+P** on Windows/Linux / **Cmd+Shift+P** on Mac) and run **Quarto: Render Document**. When a menu asks which format, choose **Render HTML** (or **Render PDF (Typst)** for a PDF). <!-- AI-EDIT(2026-06-22): REVIEW-row46 / D-003,GAP-R678-1 — added Command Palette keyboard shortcut (Ctrl+Shift+P / Cmd+Shift+P) so students can find it without hunting the menu -->
 2. **Always-works fallback (terminal):** type the render command with the file's path as shown in the Explorer, for example:
 
    ```bash
@@ -8,7 +9,9 @@
    ```
 
    Always name the file — a bare `quarto render` rebuilds the *whole* project and takes much longer.
-3. If you see a **Render** (or **Preview**) button in the editor toolbar, it does the same thing as step 1.
+3. The **Preview** button at the top-right of the editor renders too, in the format the file asks for, without the menu.
 
-**Where did the output go?** Watch the render log for the `Output created:` line — it names the exact `.html` file created. By default the file appears next to your `.qmd`; in projects that set an output directory (like this book's `docs/` folder), it appears there instead. If no preview opened automatically, find that `.html` file in the Explorer, right-click it, and choose **Download** to open it in your browser (or **Open Preview** if available).
+**Where did the output go?** Watch the render log for the `Output created:` line — it names the exact file created. By default the file appears next to your `.qmd`; in projects that set an output directory (like this book's `docs/` folder), it appears there instead.
+
+**To look at it,** click the file in the Explorer: an `.html` or `.pdf` opens in a tab inside VS Code. After you render again, close that tab and click the file again. To open it in your own browser instead (for example, slides to present full screen, or a page to print), right-click it and choose **Download**.
 :::
