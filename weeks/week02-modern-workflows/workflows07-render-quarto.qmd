@@ -31,31 +31,80 @@ author: "Your Name"
 
 **Task:** Delete "Your Name" and type your actual name inside the quotes. Do not remove the quotes!
 
-## Step 3 — Render
+<!-- AI-EDIT(2026-10-21): course image Codespace — new Step 3 (Run Cell), click-to-view Step 5 and the optional PDF section replace the preview pane, which stays blank in the browser Codespace; screenshots from a fresh Codespace on 2026-10-21 — needs review -->
+## Step 3 — Run a code chunk
+
+Before you render the whole report, you can try one chunk at a time. A **Run Cell** link sits above each grey R code chunk.
+
+![**Run Cell** above each R chunk](../../assets/images/workflow7/run-cell.png)
+
+Click **Run Cell** above the first chunk. The first time, R starts in the terminal at the bottom, prints `[sess] Connected to VS Code`, and then runs your code.
+
+![The first **Run Cell**: R starts, connects, and shows the first rows of the data](../../assets/images/workflow7/run-cell-output.png)
+
+Click **Run Cell** above the chart chunk. The plot opens in an **R Plot** tab next to your file.
+
+![A plot from **Run Cell** in the **R Plot** tab](../../assets/images/workflow7/plot-tab.jpg)
+
+## Step 4 — Render
 
 <!-- AI-EDIT(2026-06-11): D-003/TF-010/MIT-019/MIT-020/GAP-R678-1 — Command Palette default + terminal fallback + output location; replaces button-only instructions — needs review -->
 {{< include /_snippets/render-how.qmd >}}
 
-After you start the render, **observe:**
+![Run **Quarto: Render Document** from the Command Palette](../../assets/images/workflow7/render-command.png)
 
--   **The Terminal (Bottom):** You will see text scrolling quickly. This is your code chunks executing.
--   **The Preview (Right):** A new pane should appear showing a beautiful, formatted report with your name on it.
+![Choose **Render HTML**](../../assets/images/workflow7/render-menu.png)
+
+After you start the render, **observe the Terminal (Bottom):** you will see text scrolling quickly. This is your code chunks executing. When it prints **Output created: practice_report.html**, your report is ready.
+
+![The render finishes with "Output created: practice_report.html"](../../assets/images/workflow7/render-done.png)
+
+## Step 5 — Look at your report
 
 <!-- AI-EDIT(2026-06-22): REVIEW-row47 / WI-012,TF-010 — corrected output location: student starter project has no output-dir, so practice_report.html lands beside the .qmd (NOT docs/). The docs/ folder is book-repo-only. Matches /_snippets/render-how.qmd. -->
-::: {.callout-note title="Where is my HTML file?"}
-For your `practice_report.qmd`, the rendered file (`practice_report.html`) is saved **right next to the `.qmd` file** in the Explorer panel. Watch the render log for the `Output created:` line --- it names the exact file. To view it, right-click the `.html` file in the Explorer and choose **Download** (or **Open Preview** if available); typing the file name in the terminal will not open it. (In some larger projects an output directory is configured so the file lands there instead, but your practice project does not set one.)
+The rendered file, `practice_report.html`, is saved **right next to the `.qmd` file** in the Explorer panel. Click it: it opens in a tab inside VS Code, showing a beautiful, formatted report with your name on it.
+
+![Click `practice_report.html`: it opens in a tab](../../assets/images/workflow7/html-tab.png)
+
+![Your chart in the rendered report](../../assets/images/workflow7/html-chart.png)
+
+::: {.callout-tip title="After you render again"}
+The tab does not update by itself. Close it and click `practice_report.html` again to see your changes. To open the report in your own browser instead, right-click the file and choose **Download**.
 :::
 
 **Congratulations!** You just performed "Knowledge Translation"—turning raw code into a human-readable document.
+
+## Want a PDF? (optional)
+
+Run **Quarto: Render Document** again and choose **Render PDF (Typst)**. Typst comes with Quarto, is fast, and keeps characters such as Greek letters and emoji that the LaTeX option can silently drop.
+
+![Choose **Render PDF (Typst)**](../../assets/images/workflow7/render-menu-typst.png)
+
+![Typst finishes with "Output created: practice_report.pdf"](../../assets/images/workflow7/typst-done.png)
+
+Click `practice_report.pdf` in the Explorer. It opens in a PDF tab.
+
+![Click the `.pdf` file: it opens in a PDF tab](../../assets/images/workflow7/pdf-tab.png)
 
 ## If it fails (Troubleshooting)
 
 Rendering involves many moving parts, so it sometimes gets stuck.
 
+<!-- AI-EDIT(2026-10-21): course image Codespace — two harmless notices students meet while rendering, kept as they are on purpose — needs review -->
+::: {.callout-note title="These are not errors"}
+-   **"Problems 1" and a yellow file name** while your `.html` is open: VS Code is checking the page styling that Quarto wrote. Your report is fine, and the note goes away when you close the tab.
+
+    ![A styling note in **Problems**: safe to ignore](../../assets/images/workflow7/problems-note.png)
+
+-   **Notifications under the bell** in the bottom-right corner: a suggested extension, a question about "git fetch", or a note asking you to support the PDF viewer's makers. You do not need any of them, and you never need to pay anything. Close each one with its **×**.
+
+    ![Notifications you can close](../../assets/images/workflow7/notifications.png)
+:::
+
 -   **The "Wait" Rule:** If nothing happens for 20 seconds, the background process might be initializing. Give it a moment.
 -   **The "Retry" Rule:** Sometimes the connection hiccups. Run **Quarto: Render Document** one more time.
 -   **The "No Button" Rule:** The Render button sometimes does not appear in a fresh or stale Codespace. You do not need it — the Command Palette and terminal methods above always work. <!-- AI-EDIT(2026-06-11): D-003/GAP-R678-1 — missing-button fallback — needs review -->
--   **The "TeX Warning" Rule:** If you see a warning that no TeX installation was found, you can ignore it as long as your HTML file was created successfully. Only run `quarto install tinytex` if you need to produce PDF output. <!-- AI-EDIT(2026-06-11): WI-013/MIT-021 — needs review -->
+-   **The "PDF" Rule:** For a PDF, choose **Render PDF (Typst)**. Everything a PDF needs is already installed, so do not install anything. <!-- AI-EDIT(2026-10-21): replaces the "TeX Warning" rule: TinyTeX now comes with the Codespace, and Typst is the course's PDF route — needs review -->
 -   **The "Red Text" Rule:** Look at the **Terminal** tab at the bottom. If you see red text, it is an error message. Read it—it usually tells you exactly what went wrong (e.g., "File not found" or "Syntax error").
 
 Still stuck after trying these rules? See [Troubleshooting: Rebuild Container](workflows09-troubleshooting.qmd) for the step-by-step fix with screenshots. <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review -->

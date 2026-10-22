@@ -136,7 +136,7 @@ If you do not see these, stop and ask for help before continuing. You may be in 
 2. Select the **Codespaces** tab.
 3. Click **Create codespace on main**.
 
-The first launch takes 2--3 minutes while the environment builds. Subsequent launches are faster.
+The first launch takes about 5 minutes while the environment downloads. When VS Code opens, click **Trust Folder & Continue**, then wait until the bottom bar shows **Quarto** with a version number (the Deeper Dive has screenshots). Subsequent launches are faster. <!-- AI-EDIT(2026-10-21): prebuilt course image — wait time, trust box and ready check, matching workflows03 — needs review -->
 
 ::: {.callout-note}
 **Reopening an existing Codespace:** After you stop or close your Codespace, do **not** create a new one each time. Go to [github.com/codespaces](https://github.com/codespaces), find your existing Codespace, and click its name to restart it. Creating multiple Codespaces wastes your hours and causes confusion.
@@ -297,20 +297,16 @@ To render, open the **Command Palette** --- press `Ctrl+Shift+P` (Windows/Linux)
 
 {{< include /_snippets/render-how.qmd >}}
 
-A preview pane appears showing your formatted report with code output embedded.
+Click `practice_report.html` in the Explorer to see your formatted report, with code output embedded, in a tab. <!-- AI-EDIT(2026-10-21): course image Codespace — click-to-view replaces the preview pane and Open Preview; the "Seeing a TeX warning?" callout is gone because TinyTeX now comes with the Codespace — needs review -->
 
 <!-- AI-EDIT(2026-06-11): WI-012/TF-010 — where the rendered HTML lands and how to open it — needs review -->
 ::: {.callout-note title="Where is my HTML file?"}
 In your personal workspace, `practice_report.html` is saved beside
 `practice_report.qmd` at the repository root. Watch the render log for the
-`Output created:` line, then right-click the HTML file and choose **Open
-Preview** or **Download**. The course book uses a separate `docs/` output
-directory; your personal workspace does not.
-:::
-
-<!-- AI-EDIT(2026-06-11): MIT-021 — TinyTeX warning is safe to ignore for HTML output — needs review -->
-::: {.callout-note title="Seeing a TeX warning?"}
-If you see a warning that no TeX installation was found, you can ignore it as long as your HTML file was created successfully. TinyTeX is only needed for PDF output --- do not install anything.
+`Output created:` line, then click the HTML file to open it in a tab, or
+right-click it and choose **Download** to open it in your own browser. The
+course book uses a separate `docs/` output directory; your personal workspace
+does not.
 :::
 
 ::: {.callout-tip}

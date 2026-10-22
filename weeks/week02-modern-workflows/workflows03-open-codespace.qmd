@@ -24,21 +24,53 @@ This process is like walking into the library and turning on a computer. Start f
 
     ![Create Codespace](../../assets/images/workflow3/create.png)
 
+<!-- AI-EDIT(2026-10-21): the Codespace now starts from a prebuilt course image (HDSx-workspace .devcontainer/) — wait time, trust box and ready check replace the 2–3 minute build and the TOOLCHAIN SELF-TEST callout, whose output no longer appears on screen (setup finishes before the editor opens); screenshots from a fresh Codespace on 2026-10-21 — needs review -->
 ## The "Boot Up" Phase
 
-**Wait 2–3 minutes.**
+**Wait about 5 minutes the first time.**
 
--   **What is happening?** GitHub is silently installing R, Python, Quarto, and all the course libraries for you.
+-   **What is happening?** GitHub is downloading a computer that already has R, Python, Quarto, and all the course libraries installed. Nothing is installed while you wait.
 -   **The Analogy:** Think of this as the "ventilation system" starting up in a lab. It takes a moment to get the environment ready.
 
-**Success:** You should see **VS Code** (a dark-themed code editor) appear in your browser window.
+While it starts, the bottom-left corner says **Opening Remote…**.
 
-<!-- AI-EDIT(2026-06-11): MIT-018 — self-test runs automatically; what to expect and the View Creation Log fallback — needs review -->
-::: {.callout-note title="The TOOLCHAIN SELF-TEST"}
-The setup runs **automatically** --- you do not need to start anything. Near the end of the build, a block titled **`TOOLCHAIN SELF-TEST`** prints in the terminal. It lists version numbers for R, Quarto, and Python, then runs `quarto check`.
+![Still starting: **Opening Remote…** in the bottom-left corner](../../assets/images/workflow3/loading.jpg)
 
-- **If you do not see it (or scrolled past it):** open the Command Palette (`F1`) and run **Codespaces: View Creation Log** to see the full build output.
-- **If the self-test shows errors:** do not try to install software yourself. Rebuild the environment instead --- see [Troubleshooting: Rebuild Container](workflows09-troubleshooting.qmd) --- and ask for help if it still fails.
+## Trust the Folder
+
+When **VS Code** appears in your browser window, a box asks: **Do you trust the authors of the files in this folder?** These are the course files, so click **Trust Folder & Continue**.
+
+![Click **Trust Folder & Continue**](../../assets/images/workflow3/trust.png)
+
+If you clicked **Cancel** or closed the box, VS Code stays in **Restricted Mode**: a grey banner sits at the top and the course tools stay switched off.
+
+![The banner you see until you trust the folder](../../assets/images/workflow3/restricted-banner.png)
+
+To fix it, click **Manage** in that banner, then click **Trust**.
+
+![Click **Trust** under "In a Trusted Folder"](../../assets/images/workflow3/trust-manage.png)
+
+## Is It Ready?
+
+VS Code keeps loading its tools for a few seconds after it appears. Watch the **bottom bar**:
+
+-   **Not ready yet:** a spinning message, such as **Activating Extensions…** or **Refreshing … environments**.
+
+    ![Still loading: a spinning message in the bottom bar](../../assets/images/workflow3/status-loading.png)
+
+-   **Ready:** the spinning message is gone and **Quarto** shows a version number.
+
+    ![Ready: **Quarto** and its version in the bottom bar](../../assets/images/workflow3/status-ready.png)
+
+**Success:** Your Codespace is ready. When you open a `.qmd` file later, a **Run Cell** link appears above each R code chunk.
+
+::: {.callout-note title="If it never gets ready"}
+If the bottom bar still has not shown **Quarto** after a couple of minutes:
+
+- Open the Command Palette (`F1`) and run **Codespaces: View Creation Log**. Send the log to the instructor.
+- Do not try to install software yourself. Rebuild the environment instead --- see [Troubleshooting: Rebuild Container](workflows09-troubleshooting.qmd) --- and ask for help if it still fails.
+
+![Run **Codespaces: View Creation Log**](../../assets/images/workflow3/creation-log.png)
 :::
 
 <!-- AI-EDIT(2026-09-01): optional course screencast (YouTube ID: A7LDoku1CrA) — HTML-only so the PDF/DOCX build is unaffected -->

@@ -21,7 +21,7 @@ The A7 deliverable list asks for a `testing-log.md`. Use the routine below for t
 2. **Change the control.** Edit `selected_income` to a different value from `available_income_groups`. Save the file.
 3. **Render again.** Confirm the title, table, and plot all updated.
 4. **Verify the caption.** The caption should still name the dataset, exclusions, and limitation.
-5. **Open the HTML preview.** If no preview opened automatically, find the rendered `.html` file in the Explorer (the render log's `Output created:` line names it), right-click it, and choose **Open Preview** — or **Download** to open it in your browser. If **Open With** only offers a text editor showing raw HTML code, the render still worked — use **Open Preview** or **Download** instead. Confirm the rendered page looks correct in the browser, not just in the editor. <!-- AI-EDIT(2026-06-11): MIT-079 — needs review -->
+5. **Open the HTML preview.** Find the rendered `.html` file in the Explorer (the render log's `Output created:` line names it) and click it: it opens in a tab inside VS Code. After each render, close that tab and click the file again. To check it in your own browser too, right-click the file and choose **Download**. Confirm the rendered page looks correct, not just the code in the editor. <!-- AI-EDIT(2026-06-11): MIT-079 — needs review --> <!-- AI-EDIT(2026-10-21): course image Codespace — click-to-view replaces Open Preview, which no longer exists there — needs review -->
 6. **Record the test.** In `testing-log.md`, note the date, the command or render path used, the values you tried, and the result.
 
 <!-- AI-EDIT(2026-06-11): MIT-078, MIT-080 — needs review -->
