@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.11.5">
+<meta name="generator" content="quarto-1.11.6">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -40,11 +40,12 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../weeks/week02-modern-workflows/workflows02-repository-tour.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-3b9ea68436acb9022c2fbce6dbb58b06.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-35fc0813589bbfbfa0b8ec974497eeb2.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-6683833e1cfaa06abe54c81c85cdbcdf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -1056,6 +1057,8 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#steps" id="toc-steps" class="nav-link active" data-scroll-target="#steps">Steps</a></li>
   <li><a href="#the-boot-up-phase" id="toc-the-boot-up-phase" class="nav-link" data-scroll-target="#the-boot-up-phase">The “Boot Up” Phase</a></li>
+  <li><a href="#trust-the-folder" id="toc-trust-the-folder" class="nav-link" data-scroll-target="#trust-the-folder">Trust the Folder</a></li>
+  <li><a href="#is-it-ready" id="toc-is-it-ready" class="nav-link" data-scroll-target="#is-it-ready">Is It Ready?</a></li>
   <li><a href="#video-walkthrough-optional" id="toc-video-walkthrough-optional" class="nav-link" data-scroll-target="#video-walkthrough-optional">Video walkthrough (optional)</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ehsanx/HDSx/edit/main/weeks/week02-modern-workflows/workflows03-open-codespace.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ehsanx/HDSx/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -1119,31 +1122,88 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div></li>
 </ol>
+<!-- AI-EDIT(2026-10-21): the Codespace now starts from a prebuilt course image (HDSx-workspace .devcontainer/) — wait time, trust box and ready check replace the 2–3 minute build and the TOOLCHAIN SELF-TEST callout, whose output no longer appears on screen (setup finishes before the editor opens); screenshots from a fresh Codespace on 2026-10-21 — needs review -->
 </section>
 <section id="the-boot-up-phase" class="level2">
 <h2 class="anchored" data-anchor-id="the-boot-up-phase">The “Boot Up” Phase</h2>
-<p><strong>Wait 2–3 minutes.</strong></p>
+<p><strong>Wait about 5 minutes the first time.</strong></p>
 <ul>
-<li><strong>What is happening?</strong> GitHub is silently installing R, Python, Quarto, and all the course libraries for you.</li>
+<li><strong>What is happening?</strong> GitHub is downloading a computer that already has R, Python, Quarto, and all the course libraries installed. Nothing is installed while you wait.</li>
 <li><strong>The Analogy:</strong> Think of this as the “ventilation system” starting up in a lab. It takes a moment to get the environment ready.</li>
 </ul>
-<p><strong>Success:</strong> You should see <strong>VS Code</strong> (a dark-themed code editor) appear in your browser window.</p>
-<!-- AI-EDIT(2026-06-11): MIT-018 — self-test runs automatically; what to expect and the View Creation Log fallback — needs review -->
-<div class="callout callout-style-default callout-note callout-titled" title="The TOOLCHAIN SELF-TEST">
+<p>While it starts, the bottom-left corner says <strong>Opening Remote…</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/images/workflow3/loading.jpg" class="img-fluid figure-img"></p>
+<figcaption>Still starting: <strong>Opening Remote…</strong> in the bottom-left corner</figcaption>
+</figure>
+</div>
+</section>
+<section id="trust-the-folder" class="level2">
+<h2 class="anchored" data-anchor-id="trust-the-folder">Trust the Folder</h2>
+<p>When <strong>VS Code</strong> appears in your browser window, a box asks: <strong>Do you trust the authors of the files in this folder?</strong> These are the course files, so click <strong>Trust Folder &amp; Continue</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/images/workflow3/trust.png" class="img-fluid figure-img"></p>
+<figcaption>Click <strong>Trust Folder &amp; Continue</strong></figcaption>
+</figure>
+</div>
+<p>If you clicked <strong>Cancel</strong> or closed the box, VS Code stays in <strong>Restricted Mode</strong>: a grey banner sits at the top and the course tools stay switched off.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/images/workflow3/restricted-banner.png" class="img-fluid figure-img"></p>
+<figcaption>The banner you see until you trust the folder</figcaption>
+</figure>
+</div>
+<p>To fix it, click <strong>Manage</strong> in that banner, then click <strong>Trust</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/images/workflow3/trust-manage.png" class="img-fluid figure-img"></p>
+<figcaption>Click <strong>Trust</strong> under “In a Trusted Folder”</figcaption>
+</figure>
+</div>
+</section>
+<section id="is-it-ready" class="level2">
+<h2 class="anchored" data-anchor-id="is-it-ready">Is It Ready?</h2>
+<p>VS Code keeps loading its tools for a few seconds after it appears. Watch the <strong>bottom bar</strong>:</p>
+<ul>
+<li><p><strong>Not ready yet:</strong> a spinning message, such as <strong>Activating Extensions…</strong> or <strong>Refreshing … environments</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/images/workflow3/status-loading.png" class="img-fluid figure-img"></p>
+<figcaption>Still loading: a spinning message in the bottom bar</figcaption>
+</figure>
+</div></li>
+<li><p><strong>Ready:</strong> the spinning message is gone and <strong>Quarto</strong> shows a version number.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/images/workflow3/status-ready.png" class="img-fluid figure-img"></p>
+<figcaption>Ready: <strong>Quarto</strong> and its version in the bottom bar</figcaption>
+</figure>
+</div></li>
+</ul>
+<p><strong>Success:</strong> Your Codespace is ready. When you open a <code>.qmd</code> file later, a <strong>Run Cell</strong> link appears above each R code chunk.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="If it never gets ready">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>The TOOLCHAIN SELF-TEST
+<span class="screen-reader-only">Note</span>If it never gets ready
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The setup runs <strong>automatically</strong> — you do not need to start anything. Near the end of the build, a block titled <strong><code>TOOLCHAIN SELF-TEST</code></strong> prints in the terminal. It lists version numbers for R, Quarto, and Python, then runs <code>quarto check</code>.</p>
+<p>If the bottom bar still has not shown <strong>Quarto</strong> after a couple of minutes:</p>
 <ul>
-<li><strong>If you do not see it (or scrolled past it):</strong> open the Command Palette (<code>F1</code>) and run <strong>Codespaces: View Creation Log</strong> to see the full build output.</li>
-<li><strong>If the self-test shows errors:</strong> do not try to install software yourself. Rebuild the environment instead — see <a href="../../weeks/week02-modern-workflows/workflows09-troubleshooting.html">Troubleshooting: Rebuild Container</a> — and ask for help if it still fails.</li>
+<li>Open the Command Palette (<code>F1</code>) and run <strong>Codespaces: View Creation Log</strong>. Send the log to the instructor.</li>
+<li>Do not try to install software yourself. Rebuild the environment instead — see <a href="../../weeks/week02-modern-workflows/workflows09-troubleshooting.html">Troubleshooting: Rebuild Container</a> — and ask for help if it still fails.</li>
 </ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/images/workflow3/creation-log.png" class="img-fluid figure-img"></p>
+<figcaption>Run <strong>Codespaces: View Creation Log</strong></figcaption>
+</figure>
+</div>
 </div>
 </div>
 <!-- AI-EDIT(2026-09-01): optional course screencast (YouTube ID: A7LDoku1CrA) — HTML-only so the PDF/DOCX build is unaffected -->
@@ -1606,6 +1666,9 @@ ul.task-list li input[type="checkbox"] {
       }
     }
   });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
   </script>
 <nav class="page-navigation" aria-label="Page">
   <div class="nav-page nav-page-previous">

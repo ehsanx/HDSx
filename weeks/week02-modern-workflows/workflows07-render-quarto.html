@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.11.5">
+<meta name="generator" content="quarto-1.11.6">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -75,11 +75,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../weeks/week02-modern-workflows/workflows06-files-folders.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-3b9ea68436acb9022c2fbce6dbb58b06.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-35fc0813589bbfbfa0b8ec974497eeb2.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-6683833e1cfaa06abe54c81c85cdbcdf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -114,7 +115,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <meta name="twitter:title" content="The Magic Moment: Render Quarto – Health Data Science: AI and Knowledge Translation">
 <meta name="twitter:description" content="">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="../../assets/images/workflow7/run-cell.png">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-sidebar docked quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
@@ -1091,7 +1093,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#why-do-we-render" id="toc-why-do-we-render" class="nav-link active" data-scroll-target="#why-do-we-render">Why do we “Render”?</a></li>
   <li><a href="#step-1-open-the-file" id="toc-step-1-open-the-file" class="nav-link" data-scroll-target="#step-1-open-the-file">Step 1 — Open the file</a></li>
   <li><a href="#step-2-edit-name-the-yaml-header" id="toc-step-2-edit-name-the-yaml-header" class="nav-link" data-scroll-target="#step-2-edit-name-the-yaml-header">Step 2 — Edit name (The YAML Header)</a></li>
-  <li><a href="#step-3-render" id="toc-step-3-render" class="nav-link" data-scroll-target="#step-3-render">Step 3 — Render</a></li>
+  <li><a href="#step-3-run-a-code-chunk" id="toc-step-3-run-a-code-chunk" class="nav-link" data-scroll-target="#step-3-run-a-code-chunk">Step 3 — Run a code chunk</a></li>
+  <li><a href="#step-4-render" id="toc-step-4-render" class="nav-link" data-scroll-target="#step-4-render">Step 4 — Render</a></li>
+  <li><a href="#step-5-look-at-your-report" id="toc-step-5-look-at-your-report" class="nav-link" data-scroll-target="#step-5-look-at-your-report">Step 5 — Look at your report</a></li>
+  <li><a href="#want-a-pdf-optional" id="toc-want-a-pdf-optional" class="nav-link" data-scroll-target="#want-a-pdf-optional">Want a PDF? (optional)</a></li>
   <li><a href="#if-it-fails-troubleshooting" id="toc-if-it-fails-troubleshooting" class="nav-link" data-scroll-target="#if-it-fails-troubleshooting">If it fails (Troubleshooting)</a></li>
   <li><a href="#video-walkthrough-optional" id="toc-video-walkthrough-optional" class="nav-link" data-scroll-target="#video-walkthrough-optional">Video walkthrough (optional)</a></li>
   </ul>
@@ -1140,11 +1145,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Find the line that says <code>author:</code></p>
 <pre><code>author: "Your Name"</code></pre>
 <p><strong>Task:</strong> Delete “Your Name” and type your actual name inside the quotes. Do not remove the quotes!</p>
+<!-- AI-EDIT(2026-10-21): course image Codespace — new Step 3 (Run Cell), click-to-view Step 5 and the optional PDF section replace the preview pane, which stays blank in the browser Codespace; screenshots from a fresh Codespace on 2026-10-21 — needs review -->
 </section>
-<section id="step-3-render" class="level2">
-<h2 class="anchored" data-anchor-id="step-3-render">Step 3 — Render</h2>
+<section id="step-3-run-a-code-chunk" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-run-a-code-chunk">Step 3 — Run a code chunk</h2>
+<p>Before you render the whole report, you can try one chunk at a time. A <strong>Run Cell</strong> link sits above each grey R code chunk.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/images/workflow7/run-cell.png" class="img-fluid figure-img"></p>
+<figcaption><strong>Run Cell</strong> above each R chunk</figcaption>
+</figure>
+</div>
+<p>Click <strong>Run Cell</strong> above the first chunk. The first time, R starts in the terminal at the bottom, prints <code>[sess] Connected to VS Code</code>, and then runs your code.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/images/workflow7/run-cell-output.png" class="img-fluid figure-img"></p>
+<figcaption>The first <strong>Run Cell</strong>: R starts, connects, and shows the first rows of the data</figcaption>
+</figure>
+</div>
+<p>Click <strong>Run Cell</strong> above the chart chunk. The plot opens in an <strong>R Plot</strong> tab next to your file.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/images/workflow7/plot-tab.jpg" class="img-fluid figure-img"></p>
+<figcaption>A plot from <strong>Run Cell</strong> in the <strong>R Plot</strong> tab</figcaption>
+</figure>
+</div>
+</section>
+<section id="step-4-render" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-render">Step 4 — Render</h2>
 <!-- AI-EDIT(2026-06-11): D-003/TF-010/MIT-019/MIT-020/GAP-R678-1 — Command Palette default + terminal fallback + output location; replaces button-only instructions — needs review -->
 <!-- AI-EDIT(2026-06-11): D-003 — course-wide standard render instructions (reusable include) — needs review -->
+<!-- AI-EDIT(2026-10-21): course image Codespace — the format menu, click-to-view tabs and Download replace the preview pane, which stays blank in the browser Codespace and is switched off there; text only, since six pages include this — needs review -->
+<!-- When you edit this file: pages that run R code (dash03, Week 2 index) keep a frozen copy of it in _freeze/ and show the old text until they re-execute. Re-render them, or change the page itself. -->
 <div class="callout callout-style-default callout-tip callout-titled" title="How to render: the course default">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1156,44 +1188,127 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="callout-body-container callout-body">
 <ol type="1">
-<li><p>Open the <code>.qmd</code> file you want to render, then open the <strong>Command Palette</strong> (<strong>View → Command Palette</strong>, or press <strong>Ctrl+Shift+P</strong> on Windows/Linux / <strong>Cmd+Shift+P</strong> on Mac) and run <strong>Quarto: Render Document</strong>. The Quarto extension renders the file and opens a preview pane. <!-- AI-EDIT(2026-06-22): REVIEW-row46 / D-003,GAP-R678-1 — added Command Palette keyboard shortcut (Ctrl+Shift+P / Cmd+Shift+P) so students can find it without hunting the menu --></p></li>
+<li><p>Save the <code>.qmd</code> file you want to render, then open the <strong>Command Palette</strong> (<strong>View → Command Palette</strong>, or press <strong>Ctrl+Shift+P</strong> on Windows/Linux / <strong>Cmd+Shift+P</strong> on Mac) and run <strong>Quarto: Render Document</strong>. When a menu asks which format, choose <strong>Render HTML</strong> (or <strong>Render PDF (Typst)</strong> for a PDF). <!-- AI-EDIT(2026-06-22): REVIEW-row46 / D-003,GAP-R678-1 — added Command Palette keyboard shortcut (Ctrl+Shift+P / Cmd+Shift+P) so students can find it without hunting the menu --></p></li>
 <li><p><strong>Always-works fallback (terminal):</strong> type the render command with the file’s path as shown in the Explorer, for example:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-label="1"></a><span class="ex">quarto</span> render practice_report.qmd</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Always name the file — a bare <code>quarto render</code> rebuilds the <em>whole</em> project and takes much longer.</p></li>
-<li><p>If you see a <strong>Render</strong> (or <strong>Preview</strong>) button in the editor toolbar, it does the same thing as step 1.</p></li>
+<li><p>The <strong>Preview</strong> button at the top-right of the editor renders too, in the format the file asks for, without the menu.</p></li>
 </ol>
-<p><strong>Where did the output go?</strong> Watch the render log for the <code>Output created:</code> line — it names the exact <code>.html</code> file created. By default the file appears next to your <code>.qmd</code>; in projects that set an output directory (like this book’s <code>docs/</code> folder), it appears there instead. If no preview opened automatically, find that <code>.html</code> file in the Explorer, right-click it, and choose <strong>Download</strong> to open it in your browser (or <strong>Open Preview</strong> if available).</p>
+<p><strong>Where did the output go?</strong> Watch the render log for the <code>Output created:</code> line — it names the exact file created. By default the file appears next to your <code>.qmd</code>; in projects that set an output directory (like this book’s <code>docs/</code> folder), it appears there instead.</p>
+<p><strong>To look at it,</strong> click the file in the Explorer: an <code>.html</code> or <code>.pdf</code> opens in a tab inside VS Code. After you render again, close that tab and click the file again. To open it in your own browser instead (for example, slides to present full screen, or a page to print), right-click it and choose <strong>Download</strong>.</p>
 </div>
 </div>
-<p>After you start the render, <strong>observe:</strong></p>
-<ul>
-<li><strong>The Terminal (Bottom):</strong> You will see text scrolling quickly. This is your code chunks executing.</li>
-<li><strong>The Preview (Right):</strong> A new pane should appear showing a beautiful, formatted report with your name on it.</li>
-</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/images/workflow7/render-command.png" class="img-fluid figure-img"></p>
+<figcaption>Run <strong>Quarto: Render Document</strong> from the Command Palette</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/images/workflow7/render-menu.png" class="img-fluid figure-img"></p>
+<figcaption>Choose <strong>Render HTML</strong></figcaption>
+</figure>
+</div>
+<p>After you start the render, <strong>observe the Terminal (Bottom):</strong> you will see text scrolling quickly. This is your code chunks executing. When it prints <strong>Output created: practice_report.html</strong>, your report is ready.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/images/workflow7/render-done.png" class="img-fluid figure-img"></p>
+<figcaption>The render finishes with “Output created: practice_report.html”</figcaption>
+</figure>
+</div>
+</section>
+<section id="step-5-look-at-your-report" class="level2">
+<h2 class="anchored" data-anchor-id="step-5-look-at-your-report">Step 5 — Look at your report</h2>
 <!-- AI-EDIT(2026-06-22): REVIEW-row47 / WI-012,TF-010 — corrected output location: student starter project has no output-dir, so practice_report.html lands beside the .qmd (NOT docs/). The docs/ folder is book-repo-only. Matches /_snippets/render-how.qmd. -->
-<div class="callout callout-style-default callout-note callout-titled" title="Where is my HTML file?">
+<p>The rendered file, <code>practice_report.html</code>, is saved <strong>right next to the <code>.qmd</code> file</strong> in the Explorer panel. Click it: it opens in a tab inside VS Code, showing a beautiful, formatted report with your name on it.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/images/workflow7/html-tab.png" class="img-fluid figure-img"></p>
+<figcaption>Click <code>practice_report.html</code>: it opens in a tab</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/images/workflow7/html-chart.png" class="img-fluid figure-img"></p>
+<figcaption>Your chart in the rendered report</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="After you render again">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Where is my HTML file?
+<span class="screen-reader-only">Tip</span>After you render again
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>For your <code>practice_report.qmd</code>, the rendered file (<code>practice_report.html</code>) is saved <strong>right next to the <code>.qmd</code> file</strong> in the Explorer panel. Watch the render log for the <code>Output created:</code> line — it names the exact file. To view it, right-click the <code>.html</code> file in the Explorer and choose <strong>Download</strong> (or <strong>Open Preview</strong> if available); typing the file name in the terminal will not open it. (In some larger projects an output directory is configured so the file lands there instead, but your practice project does not set one.)</p>
+<p>The tab does not update by itself. Close it and click <code>practice_report.html</code> again to see your changes. To open the report in your own browser instead, right-click the file and choose <strong>Download</strong>.</p>
 </div>
 </div>
 <p><strong>Congratulations!</strong> You just performed “Knowledge Translation”—turning raw code into a human-readable document.</p>
 </section>
+<section id="want-a-pdf-optional" class="level2">
+<h2 class="anchored" data-anchor-id="want-a-pdf-optional">Want a PDF? (optional)</h2>
+<p>Run <strong>Quarto: Render Document</strong> again and choose <strong>Render PDF (Typst)</strong>. Typst comes with Quarto, is fast, and keeps characters such as Greek letters and emoji that the LaTeX option can silently drop.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/images/workflow7/render-menu-typst.png" class="img-fluid figure-img"></p>
+<figcaption>Choose <strong>Render PDF (Typst)</strong></figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/images/workflow7/typst-done.png" class="img-fluid figure-img"></p>
+<figcaption>Typst finishes with “Output created: practice_report.pdf”</figcaption>
+</figure>
+</div>
+<p>Click <code>practice_report.pdf</code> in the Explorer. It opens in a PDF tab.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/images/workflow7/pdf-tab.png" class="img-fluid figure-img"></p>
+<figcaption>Click the <code>.pdf</code> file: it opens in a PDF tab</figcaption>
+</figure>
+</div>
+</section>
 <section id="if-it-fails-troubleshooting" class="level2">
 <h2 class="anchored" data-anchor-id="if-it-fails-troubleshooting">If it fails (Troubleshooting)</h2>
 <p>Rendering involves many moving parts, so it sometimes gets stuck.</p>
+<!-- AI-EDIT(2026-10-21): course image Codespace — two harmless notices students meet while rendering, kept as they are on purpose — needs review -->
+<div class="callout callout-style-default callout-note callout-titled" title="These are not errors">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>These are not errors
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><p><strong>“Problems 1” and a yellow file name</strong> while your <code>.html</code> is open: VS Code is checking the page styling that Quarto wrote. Your report is fine, and the note goes away when you close the tab.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/images/workflow7/problems-note.png" class="img-fluid figure-img"></p>
+<figcaption>A styling note in <strong>Problems</strong>: safe to ignore</figcaption>
+</figure>
+</div></li>
+<li><p><strong>Notifications under the bell</strong> in the bottom-right corner: a suggested extension, a question about “git fetch”, or a note asking you to support the PDF viewer’s makers. You do not need any of them, and you never need to pay anything. Close each one with its <strong>×</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/images/workflow7/notifications.png" class="img-fluid figure-img"></p>
+<figcaption>Notifications you can close</figcaption>
+</figure>
+</div></li>
+</ul>
+</div>
+</div>
 <ul>
 <li><strong>The “Wait” Rule:</strong> If nothing happens for 20 seconds, the background process might be initializing. Give it a moment.</li>
 <li><strong>The “Retry” Rule:</strong> Sometimes the connection hiccups. Run <strong>Quarto: Render Document</strong> one more time.</li>
 <li><strong>The “No Button” Rule:</strong> The Render button sometimes does not appear in a fresh or stale Codespace. You do not need it — the Command Palette and terminal methods above always work. <!-- AI-EDIT(2026-06-11): D-003/GAP-R678-1 — missing-button fallback — needs review --></li>
-<li><strong>The “TeX Warning” Rule:</strong> If you see a warning that no TeX installation was found, you can ignore it as long as your HTML file was created successfully. Only run <code>quarto install tinytex</code> if you need to produce PDF output. <!-- AI-EDIT(2026-06-11): WI-013/MIT-021 — needs review --></li>
+<li><strong>The “PDF” Rule:</strong> For a PDF, choose <strong>Render PDF (Typst)</strong>. Everything a PDF needs is already installed, so do not install anything. <!-- AI-EDIT(2026-10-21): replaces the "TeX Warning" rule: TinyTeX now comes with the Codespace, and Typst is the course's PDF route — needs review --></li>
 <li><strong>The “Red Text” Rule:</strong> Look at the <strong>Terminal</strong> tab at the bottom. If you see red text, it is an error message. Read it—it usually tells you exactly what went wrong (e.g., “File not found” or “Syntax error”).</li>
 </ul>
 <p>Still stuck after trying these rules? See <a href="../../weeks/week02-modern-workflows/workflows09-troubleshooting.html">Troubleshooting: Rebuild Container</a> for the step-by-step fix with screenshots. <!-- AI-EDIT(2026-06-11): GAP-MBH-3 — needs review --></p>
@@ -1657,6 +1772,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       }
     }
   });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
   </script>
 <nav class="page-navigation" aria-label="Page">
   <div class="nav-page nav-page-previous">

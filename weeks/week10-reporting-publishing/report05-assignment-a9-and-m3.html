@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.11.5">
+<meta name="generator" content="quarto-1.11.6">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -75,11 +75,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../weeks/week10-reporting-publishing/report04-private-preview.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-3b9ea68436acb9022c2fbce6dbb58b06.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-35fc0813589bbfbfa0b8ec974497eeb2.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-6683833e1cfaa06abe54c81c85cdbcdf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -1147,6 +1148,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- AI-EDIT(2026-06-11): TF-030, MIT-096 — D-003 exact render command and output location — needs review -->
 <p>To render it, always name the file, for example: <code>quarto render assignments/assignment09-reporting/submission/report.qmd</code>.</p>
 <!-- AI-EDIT(2026-06-11): D-003 — course-wide standard render instructions (reusable include) — needs review -->
+<!-- AI-EDIT(2026-10-21): course image Codespace — the format menu, click-to-view tabs and Download replace the preview pane, which stays blank in the browser Codespace and is switched off there; text only, since six pages include this — needs review -->
+<!-- When you edit this file: pages that run R code (dash03, Week 2 index) keep a frozen copy of it in _freeze/ and show the old text until they re-execute. Re-render them, or change the page itself. -->
 <div class="callout callout-style-default callout-tip callout-titled" title="How to render: the course default">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1158,13 +1161,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="callout-body-container callout-body">
 <ol type="1">
-<li><p>Open the <code>.qmd</code> file you want to render, then open the <strong>Command Palette</strong> (<strong>View → Command Palette</strong>, or press <strong>Ctrl+Shift+P</strong> on Windows/Linux / <strong>Cmd+Shift+P</strong> on Mac) and run <strong>Quarto: Render Document</strong>. The Quarto extension renders the file and opens a preview pane. <!-- AI-EDIT(2026-06-22): REVIEW-row46 / D-003,GAP-R678-1 — added Command Palette keyboard shortcut (Ctrl+Shift+P / Cmd+Shift+P) so students can find it without hunting the menu --></p></li>
+<li><p>Save the <code>.qmd</code> file you want to render, then open the <strong>Command Palette</strong> (<strong>View → Command Palette</strong>, or press <strong>Ctrl+Shift+P</strong> on Windows/Linux / <strong>Cmd+Shift+P</strong> on Mac) and run <strong>Quarto: Render Document</strong>. When a menu asks which format, choose <strong>Render HTML</strong> (or <strong>Render PDF (Typst)</strong> for a PDF). <!-- AI-EDIT(2026-06-22): REVIEW-row46 / D-003,GAP-R678-1 — added Command Palette keyboard shortcut (Ctrl+Shift+P / Cmd+Shift+P) so students can find it without hunting the menu --></p></li>
 <li><p><strong>Always-works fallback (terminal):</strong> type the render command with the file’s path as shown in the Explorer, for example:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-label="1"></a><span class="ex">quarto</span> render practice_report.qmd</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Always name the file — a bare <code>quarto render</code> rebuilds the <em>whole</em> project and takes much longer.</p></li>
-<li><p>If you see a <strong>Render</strong> (or <strong>Preview</strong>) button in the editor toolbar, it does the same thing as step 1.</p></li>
+<li><p>The <strong>Preview</strong> button at the top-right of the editor renders too, in the format the file asks for, without the menu.</p></li>
 </ol>
-<p><strong>Where did the output go?</strong> Watch the render log for the <code>Output created:</code> line — it names the exact <code>.html</code> file created. By default the file appears next to your <code>.qmd</code>; in projects that set an output directory (like this book’s <code>docs/</code> folder), it appears there instead. If no preview opened automatically, find that <code>.html</code> file in the Explorer, right-click it, and choose <strong>Download</strong> to open it in your browser (or <strong>Open Preview</strong> if available).</p>
+<p><strong>Where did the output go?</strong> Watch the render log for the <code>Output created:</code> line — it names the exact file created. By default the file appears next to your <code>.qmd</code>; in projects that set an output directory (like this book’s <code>docs/</code> folder), it appears there instead.</p>
+<p><strong>To look at it,</strong> click the file in the Explorer: an <code>.html</code> or <code>.pdf</code> opens in a tab inside VS Code. After you render again, close that tab and click the file again. To open it in your own browser instead (for example, slides to present full screen, or a page to print), right-click it and choose <strong>Download</strong>.</p>
 </div>
 </div>
 </section>
@@ -1741,6 +1745,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       }
     }
   });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
   </script>
 <nav class="page-navigation" aria-label="Page">
   <div class="nav-page nav-page-previous">
